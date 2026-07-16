@@ -1,1 +1,0 @@
-{"step": "10", "intent": "finalize", "decision": "run_complete_with_warnings", "evidence": "0 fits, 0 bumped fits, 0 near-misses; 2 survivors silently dropped (both pharma <60 score); flag [low-quality-source] for off-target Indeed Apify queries", "funnel": {"raw": 500, "deduped": 363, "filtered": 2, "scored": 2, "fits": 0, "bumped_fits": 0, "near_misses": 0, "silent_drops": 2}}
