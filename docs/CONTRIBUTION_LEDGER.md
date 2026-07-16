@@ -77,3 +77,19 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   JSON pass conditions; cond.path lacks the symmetric containment guard;
   digest/file_contains/traversal test gaps; failure detail wording).
 - **Merge:** squash `7505403`.
+
+## PR 6/12 — Verification Loops 3 and 4 (PR #7)
+
+- **Outcome:** Loop 3 independent-evidence rules (README never counts toward
+  the 2/3-origin thresholds; absence claims need complete recorded search
+  coverage; unsupported claims surfaced + excluded from percentages) and
+  Loop 4 six-variant stability comparison preserving disagreement verbatim.
+- **Tests:** pytest 66 passed / 1 deselected incl. regression tests for the
+  fixed blocking finding and a claim-serialization roundtrip; ruff clean;
+  mypy strict clean (23 files); CI green.
+- **Independent review:** REQUEST_CHANGES — blocking HIGH finding confirmed
+  (self-described origins counted toward independence thresholds → false
+  "supported" possible). Fixed in `1d99851`; re-review APPROVE with
+  empirical confirmation. This defect also existed in the superseded
+  monolithic implementation — caught by this PR's review.
+- **Merge:** squash `54886dd`.
