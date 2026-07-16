@@ -27,6 +27,15 @@ class BudgetExhausted(LoopEngineeringError):
     """The run's time/token/iteration budget is spent."""
 
 
+class CircuitOpen(LoopEngineeringError):
+    """A circuit breaker tripped. Carries the exact unblock requirement."""
+
+    def __init__(self, reason: str, unblock_requirement: str) -> None:
+        super().__init__(f"{reason} — unblock: {unblock_requirement}")
+        self.reason = reason
+        self.unblock_requirement = unblock_requirement
+
+
 class ScopeViolation(LoopEngineeringError):
     """Work attempted outside the contract's scope or allowed actions."""
 

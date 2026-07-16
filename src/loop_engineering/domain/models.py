@@ -50,6 +50,29 @@ class RunStatus(enum.StrEnum):
     FAILED = "FAILED"
 
 
+class GateAVerdict(enum.StrEnum):
+    COMPLETE = "COMPLETE"
+    INCOMPLETE = "INCOMPLETE"
+    INTERRUPTED = "INTERRUPTED"
+    EVIDENCE_MISSING = "EVIDENCE_MISSING"
+
+
+class GoalMatchVerdict(enum.StrEnum):
+    GOAL_MATCH = "GOAL_MATCH"
+    GOAL_MATCH_WITH_CAVEATS = "GOAL_MATCH_WITH_CAVEATS"
+    PARTIAL_MATCH = "PARTIAL_MATCH"
+    GOAL_MISMATCH = "GOAL_MISMATCH"
+    NOT_PROVEN = "NOT_PROVEN"
+    INCOMPLETE = "INCOMPLETE"
+    INTERRUPTED = "INTERRUPTED"
+
+
+#: Verdicts that may be delivered as success (PD-06).
+DELIVERABLE_VERDICTS: frozenset[GoalMatchVerdict] = frozenset(
+    {GoalMatchVerdict.GOAL_MATCH, GoalMatchVerdict.GOAL_MATCH_WITH_CAVEATS}
+)
+
+
 class ClaimImpact(enum.StrEnum):
     NORMAL = "NORMAL"
     HIGH = "HIGH"
