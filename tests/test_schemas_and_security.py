@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+from pathlib import Path
 
 import jsonschema
 import pytest
@@ -16,6 +17,7 @@ from loop_engineering.domain.models import (
     Task,
     utc_now,
 )
+from loop_engineering.verification.loop1_task import verify_task
 
 SCHEMAS = REPO_ROOT / "schemas"
 
@@ -53,6 +55,23 @@ def test_run_state_matches_schema() -> None:
         updated_at=utc_now(),
     )
     jsonschema.validate(state.to_dict(), load_schema("run-state.schema.json"))
+
+
+def test_verification_result_matches_schema(tmp_path: Path) -> None:
+    (tmp_path / "artifacts").mkdir()
+    (tmp_path / "evidence").mkdir()
+    (tmp_path / "artifacts" / "a.json").write_text("{}", encoding="utf-8")
+    task = Task(
+        task_id="t1",
+        goal_requirement="req",
+        action="act",
+        expected_artifact="a.json",
+        evidence_required=[],
+        pass_condition=PassCondition(type="json_valid"),
+        failure_condition="fc",
+    )
+    result = verify_task(task, tmp_path)
+    jsonschema.validate(result.to_dict(), load_schema("verification.schema.json"))
 
 
 SECRET_PATTERNS = [

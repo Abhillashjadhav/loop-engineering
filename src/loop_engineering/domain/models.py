@@ -140,6 +140,46 @@ class Task:
 
 
 @dataclass
+class CheckResult:
+    name: str
+    passed: bool
+    detail: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"name": self.name, "passed": self.passed, "detail": self.detail}
+
+
+@dataclass
+class VerificationResult:
+    """Result of one verification check (any loop or the E2E reviewer)."""
+
+    verification_id: str
+    loop: str
+    subject_id: str
+    verifier_role: str
+    passed: bool
+    checks: list[CheckResult]
+    verified_at: str
+    executor_role: str | None = None
+    artifact_digest: str | None = None
+    failure_reason: str | None = None
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "verification_id": self.verification_id,
+            "loop": self.loop,
+            "subject_id": self.subject_id,
+            "verifier_role": self.verifier_role,
+            "executor_role": self.executor_role,
+            "passed": self.passed,
+            "checks": [c.to_dict() for c in self.checks],
+            "artifact_digest": self.artifact_digest,
+            "failure_reason": self.failure_reason,
+            "verified_at": self.verified_at,
+        }
+
+
+@dataclass
 class RunState:
     """Persisted run state; written via atomic replacement after every significant action."""
 

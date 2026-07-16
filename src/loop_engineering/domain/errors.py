@@ -15,6 +15,10 @@ class InvalidTransition(LoopEngineeringError):
     """An atomic task attempted a status transition the state machine forbids."""
 
 
+class SelfVerificationError(LoopEngineeringError):
+    """The executor role attempted to verify its own work (PD-04)."""
+
+
 class SequencingViolation(LoopEngineeringError):
     """A next task was requested while a prior task is unverified or failed (PD-04)."""
 
