@@ -9,3 +9,7 @@ class LoopEngineeringError(Exception):
 
 class ContractViolation(LoopEngineeringError):
     """The goal contract was mutated, its digest mismatches, or it failed validation."""
+
+
+class BudgetExhausted(LoopEngineeringError):
+    """The run's time/token/iteration budget is spent."""

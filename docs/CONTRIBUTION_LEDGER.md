@@ -22,3 +22,16 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
 - **Independent review:** APPROVE (high finding — wrong preservation pointer —
   fixed before merge; nits recorded in the PR thread).
 - **Merge:** squash `f0dce63`.
+
+## PR 2/12 — Goal Contract: schema, digest locking, immutability (PR #3)
+
+- **Outcome:** digest-locked goal contract (canonical sha256, tamper
+  detection, approved amendments with recorded trail), goal-contract JSON
+  Schema, domain error base, shared timestamp.
+- **Tests:** pytest 12 passed / 1 deselected (digest determinism, tamper
+  detection, amendment rules, roundtrip, schema self-validity); ruff clean;
+  mypy strict clean (12 files); CI green.
+- **Independent review:** APPROVE (no blocking findings; nits: schema not
+  shipped in wheels — editable-install limitation deferred to release docs;
+  format checker not enforced; digest pattern on amendment trail).
+- **Merge:** squash `2612b54`.

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Abhillashjadhav/loop-engineering/schemas/run-state.schema.json",
+  "title": "RunState",
+  "description": "Persistent state of one run. Written with atomic file replacement after every significant action.",
+  "type": "object",
+  "required": [
+    "goal_id",
+    "run_id",
+    "contract_digest",
+    "status",
+    "created_at",
+    "updated_at",
+    "iterations",
+    "human_interventions",
+    "human_active_minutes"
+  ],
+  "properties": {
+    "goal_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "contract_digest": { "type": "string" },
+    "status": {
+      "enum": ["CREATED", "PLANNED", "RUNNING", "BLOCKED", "INTERRUPTED", "REPAIRING", "COMPLETE", "FAILED"]
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "current_task_id": { "type": ["string", "null"] },
+    "iterations": { "type": "integer", "minimum": 0 },
+    "human_interventions": { "type": "integer", "minimum": 0 },
+    "human_active_minutes": { "type": "number", "minimum": 0 },
+    "budget_spent": {
+      "type": "object",
+      "properties": {
+        "iterations": { "type": "integer" },
+        "minutes": { "type": "number" },
+        "tokens": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "flags": { "type": "array", "items": { "type": "string" } },
+    "blocked_reason": { "type": ["string", "null"] },
+    "unblock_requirement": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}
