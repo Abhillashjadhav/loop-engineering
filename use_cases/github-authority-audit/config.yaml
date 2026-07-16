@@ -1,0 +1,47 @@
+# Configuration for the github-authority-audit use case.
+# A use case is configuration + a module under src/loop_engineering/use_cases/ —
+# never a new repository or a rewritten runtime.
+
+use_case: github-authority-audit
+module: loop_engineering.use_cases.github_authority_audit.runner:AuditUseCase
+
+identity:
+  min_matched_attributes: 2          # never assume identity from a URL alone
+  block_on_collision: true
+
+evidence:
+  normal_claim_min_sources: 2
+  high_impact_claim_min_sources: 3
+  readme_is_independent: false       # a README statement is not corroboration
+  absence_requires_search_coverage: true
+
+classification:
+  slop_risk_floor: 70                # LIKELY_SHALLOW_OR_TEMPLATED requires >= 70
+  slop_confidence_floor: 70          # ... AND confidence >= 70
+  min_classification_confidence: 40  # below this everything is INSUFFICIENT_EVIDENCE
+  negative_requires_counter_evidence_review: true
+
+ai_share:
+  allowed_ranges: ["0-25", "25-50", "50-75", "75-100", "INSUFFICIENT_EVIDENCE"]
+  exact_percentages_forbidden: true  # PD-04 / PD-08: no provenance, no precise number
+
+stability:
+  replication_count: 6
+  skeptical_slop_floor: 65
+
+aggregation:
+  active_maintenance_window_days: 548
+  active_weight_commit_cap: 500
+  exclude_forks_from_authored_scoring: true
+  stars_are_distribution_signal_only: true
+
+fairness:
+  - use only public sources; cite every material claim
+  - preserve URLs, retrieval dates, and content hashes
+  - distinguish fact, observation, inference, and unknown
+  - never state a person "does not understand GenAI" from repository evidence alone
+  - never accuse a person of deception
+  - never identify exact private contribution or AI-tool use without evidence
+  - assess artifacts and public claims, not personality
+  - include the strongest counter-evidence against every negative classification
+  - if the evidence is weak, say so

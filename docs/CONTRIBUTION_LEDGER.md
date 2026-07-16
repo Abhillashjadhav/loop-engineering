@@ -153,3 +153,22 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   regression test; nits: lexical page sort, silent missing-candidates file,
   test filename breadth).
 - **Merge:** squash `e1ccaad`.
+
+## PR 11/12 — AI-slop rubric, scoring and portfolio aggregation (PR #12)
+
+- **Outcome:** ten-dimension deterministic rubric; AI-assistance and slop risk
+  as separate axes; triple-gated negative classification (slop >= 70 AND
+  confidence >= 70 AND recorded counter-evidence); exact AI-authorship
+  percentages rejected (bands only); dual-weighted person aggregation with an
+  explicit cannot-conclude list.
+- **Tests:** pytest 113 passed / 1 deselected (popularity-is-not-quality,
+  AI-assistance-is-not-slop, triple gate, banding, percentage rejection,
+  dual-weighted aggregation over planted fixtures); ruff clean; mypy strict
+  clean (36 files); CI green. errors.py byte-identical to the verified
+  complete implementation.
+- **Independent review:** APPROVE (verified: no fairness-gate bypass; stars
+  never feed technical scores; count-weighted 40% vs active-weighted 4.2%
+  shallow share shows high-star dumps cannot dominate; clock pinned in the
+  aggregation test per finding; regex phrasing gaps recorded as
+  defense-in-depth nits).
+- **Merge:** squash `65967e5`.
