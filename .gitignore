@@ -6,7 +6,12 @@ __pycache__/
 venv/
 .venv/
 *.egg-info/
-outputs/trajectory.jsonl
-data/validation_runs/
-data/validation_jds/
+build/
+dist/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+/runs/
+/outputs/
+/contracts/
 .claude/worktrees/

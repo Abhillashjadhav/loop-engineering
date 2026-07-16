@@ -1,7 +1,0 @@
-pyyaml
-pypdf
-reportlab
-cryptography
-markdown
-pytest
-requests
