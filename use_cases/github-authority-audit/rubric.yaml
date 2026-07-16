@@ -1,0 +1,84 @@
+# The AI-slop mechanism: 10 observable dimensions (spec §10).
+# An inspector records observable signals; deterministic code in
+# src/loop_engineering/use_cases/github_authority_audit/rubric.py converts
+# signals into these dimension scores with the formulas noted below.
+# AI assistance, simple code, curation, tutorials, and popularity are NEVER
+# equated with slop.
+
+dimensions:
+  - key: claim_functionality_integrity
+    polarity: quality
+    question: Do README claims match executable code and tests?
+    formula: 100 * readme_claims_code_backed / readme_claims_total (neutral 50 when no claims)
+
+  - key: original_problem_decision_content
+    polarity: quality
+    question: Is there original logic, product reasoning, architecture rationale,
+      or meaningful adaptation?
+    formula: 20 * original_logic_notes + 20 if meaningful_adaptation
+
+  - key: template_duplication_risk
+    polarity: risk
+    question: Repeated structure, near-identical apps, boilerplate, copied examples,
+      mass-generated variants?
+    formula: 0.6 * template_similarity_pct + 0.4 * boilerplate_share_pct
+
+  - key: engineering_depth
+    polarity: quality
+    question: Error handling, data flow, state, security, performance, integration,
+      edge cases?
+    formula: 16 per depth marker (of 5) + integration_complexity/3 * 20
+
+  - key: verification_depth
+    polarity: quality
+    question: Tests, evals, fixtures, CI, golden cases, failure handling?
+    formula: min(40, 8*test_files) + 20*ci + 15*eval_fixtures + 10*golden_cases
+      + 15*failure_handling_tested
+
+  - key: runnable_integrity
+    polarity: quality
+    question: Reproducible setup, valid dependencies, secrets policy, current APIs,
+      successful smoke path?
+    formula: 20 per runnable marker (of 5)
+
+  - key: development_evolution
+    polarity: quality
+    question: Iterative commits, repairs, refactors, issue responses, release
+      progression versus one-shot dump?
+    formula: min(40, 2*distinct_commit_days) + min(30, 6*refactor_commits)
+      + min(15, 3*issue_responses) + min(15, 5*releases); capped at 15 if one_shot_dump
+
+  - key: maintenance_stewardship
+    polarity: quality
+    question: Updates, issue handling, dependency maintenance, deprecations,
+      documentation corrections?
+    formula: min(40, 10*dependency_updates) + min(30, 6*issue_responses)
+      + min(15, 5*docs_corrections) + 15*deprecations_handled
+
+  - key: architecture_proportionality
+    polarity: quality
+    question: Appropriate complexity versus decorative agents/frameworks/abstractions?
+    formula: 100 - 20*(abstraction_layers-2 if >2) - 30 if not complexity_justified
+
+  - key: educational_value
+    polarity: quality
+    question: Clear explanation, trade-offs, limitations, useful runnable learning —
+      even when the code is simple?
+    formula: explanation_quality/3*40 + 20*tradeoffs + 20*limitations + 20*runnable_learning
+
+derived_scores:
+  human_reasoning_evidence: 0.40*original + 0.25*depth + 0.20*evolution + 0.15*proportionality
+  technical_proficiency: 0.35*depth + 0.25*verification + 0.25*runnable + 0.15*proportionality
+  ai_assistance_likelihood: 30*one_shot_dump + 0.25*commit_msg_uniformity_pct
+    + min(25, 8*mass_generated_siblings) + 20*ai_tool_attribution
+  ai_slop_risk: 0.30*(100-claim_integrity) + 0.15*template_risk + 0.15*(100-original)
+    + 0.10*(100-depth) + 0.10*(100-verification) + 0.10*(100-runnable)
+    + 0.10*(100-evolution)
+  distribution_strength: banded log scale over stars + 2*forks (reach signal, not quality)
+  confidence: share of expected signals recorded; capped at 20 for inaccessible repos
+
+notes:
+  - ai_assistance_likelihood and ai_slop_risk are different axes; AI-assisted work
+    may be technically strong and useful
+  - the estimated_ai_assisted_code_share_range is a conservative band, never a
+    precise percentage, and is never used directly as the slop score

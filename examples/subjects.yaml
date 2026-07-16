@@ -1,0 +1,22 @@
+# The two initial live subjects (spec §10).
+# Identity is NOT assumed from the candidate URL: the audit requires at least
+# two matching public profile attributes before analysing any repository.
+# Fill expected_attributes from public profiles you already trust (e.g. the
+# person's own site/LinkedIn/X linking to the GitHub account), then run with
+# a live-capable environment or pre-fetched snapshots.
+subjects:
+  - slug: aakash-gupta
+    display_name: Aakash Gupta
+    candidate_login: aakashg          # candidate only — must be verified
+    expected_attributes:
+      name: Aakash Gupta
+      bio_keywords: [product]
+      # add at least one more verifiable attribute from a trusted public link,
+      # e.g. blog: <their site that links back to this GitHub account>
+  - slug: shubham-saboo
+    display_name: Shubham Saboo
+    candidate_login: Shubhamsaboo     # candidate only — must be verified
+    expected_attributes:
+      name: Shubham Saboo
+      bio_keywords: [ai]
+      # add at least one more verifiable attribute from a trusted public link

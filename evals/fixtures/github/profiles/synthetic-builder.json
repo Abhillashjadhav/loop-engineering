@@ -1,0 +1,24 @@
+{
+  "login": "synthetic-builder",
+  "name": "Sam Builder",
+  "company": "Acme AI",
+  "blog": "https://sambuilder.dev",
+  "twitter": "sam_builds",
+  "location": "Berlin",
+  "bio": "AI platform engineering. Evals, agents, retrieval. Building in public.",
+  "followers": 2100,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/synthetic-builder",
+      "excerpt": "profile: Sam Builder, Acme AI, sambuilder.dev, @sam_builds",
+      "retrieved_at": "2026-07-16T08:00:00+00:00"
+    },
+    {
+      "origin": "external_profile",
+      "url": "https://sambuilder.dev/about",
+      "excerpt": "personal site links back to github.com/synthetic-builder",
+      "retrieved_at": "2026-07-16T08:00:00+00:00"
+    }
+  ]
+}

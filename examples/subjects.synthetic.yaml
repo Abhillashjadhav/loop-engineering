@@ -1,0 +1,16 @@
+# Synthetic subjects backed by evals/fixtures/github — the offline/CI path.
+subjects:
+  - slug: builder
+    display_name: Sam Builder (synthetic)
+    candidate_login: synthetic-builder
+    expected_attributes:
+      name: Sam Builder
+      blog: sambuilder.dev
+      twitter: sam_builds
+  - slug: templater
+    display_name: Tee Templater (synthetic)
+    candidate_login: synthetic-templater
+    expected_attributes:
+      name: Tee Templater
+      blog: promptpacks.example
+      twitter: tee_prompts
