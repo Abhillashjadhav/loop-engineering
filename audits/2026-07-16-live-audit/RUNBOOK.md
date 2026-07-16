@@ -25,8 +25,20 @@ output loads through the engine's data source** before exiting (it also
 supports `--verify` to re-check and `--self-test` for an offline layout check,
 which passes in CI conditions: "self-test: PASSED").
 
-Unauthenticated rate limit is 60 req/h — export `GITHUB_TOKEN` (read-only
-public scope) if either subject has many repositories.
+**`GITHUB_TOKEN` is required in practice** (read-only public scope): the
+script now also captures per-repo content (README, root file listing,
+workflows, tags, last-100 commit metadata) and derives the mechanical rubric
+signals — roughly 6 API calls per original repository (~700 calls for these
+two subjects). The unauthenticated 60 req/h limit WILL truncate the harvest
+(observed 2026-07-16: Shubhamsaboo stopped at 100/183 with zeroed commit
+counts). Run:
+
+```bash
+export GITHUB_TOKEN=<your read-only token>
+```
+
+before the harvest command, and confirm the script ends with `verify: PASSED`
+(a MISMATCH/FAILED line means re-run — it is safe to re-run in place).
 
 ## Step 2 — tell the audit session "snapshots are pushed"
 
