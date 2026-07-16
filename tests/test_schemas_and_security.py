@@ -9,6 +9,14 @@ import jsonschema
 import pytest
 from tests.conftest import REPO_ROOT
 
+from loop_engineering.domain.models import (
+    PassCondition,
+    RunState,
+    RunStatus,
+    Task,
+    utc_now,
+)
+
 SCHEMAS = REPO_ROOT / "schemas"
 
 
@@ -19,6 +27,32 @@ def load_schema(name: str) -> dict:  # type: ignore[type-arg]
 def test_all_schemas_are_valid_jsonschema() -> None:
     for path in SCHEMAS.glob("*.schema.json"):
         jsonschema.Draft202012Validator.check_schema(load_schema(path.name))
+
+
+def test_task_serialization_matches_schema() -> None:
+    task = Task(
+        task_id="t1",
+        goal_requirement="req",
+        action="act",
+        expected_artifact="a.json",
+        evidence_required=["e.txt"],
+        pass_condition=PassCondition(type="json_has_keys", keys=["k"]),
+        failure_condition="fc",
+    )
+    jsonschema.validate(task.to_dict(), load_schema("task.schema.json"))
+    assert Task.from_dict(task.to_dict()).to_dict() == task.to_dict()
+
+
+def test_run_state_matches_schema() -> None:
+    state = RunState(
+        goal_id="g",
+        run_id="r",
+        contract_digest="sha256:00",
+        status=RunStatus.RUNNING,
+        created_at=utc_now(),
+        updated_at=utc_now(),
+    )
+    jsonschema.validate(state.to_dict(), load_schema("run-state.schema.json"))
 
 
 SECRET_PATTERNS = [
