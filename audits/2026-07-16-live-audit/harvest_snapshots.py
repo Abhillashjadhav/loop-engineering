@@ -179,11 +179,117 @@ def harvest_subject(subject: dict, out: Path) -> None:
     )
 
 
+def verify_snapshots(out: Path, subjects: list[dict]) -> int:
+    """Validate a harvested snapshot dir loads through the engine's data source."""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
+    from loop_engineering.use_cases.github_authority_audit.datasource import FixtureDataSource
+    from loop_engineering.use_cases.github_authority_audit.inventory import build_inventory
+
+    ds = FixtureDataSource(out)
+    failures = 0
+    for subject in subjects:
+        login, slug = subject["candidate_login"], subject["slug"]
+        profile = ds.profile(login)
+        for key in ("login", "name", "blog", "bio", "public_repos"):
+            if key not in profile:
+                print(f"FAIL {login}: profile missing {key!r}")
+                failures += 1
+        inventory = build_inventory(login, ds.repositories(login))
+        counts = inventory.counts()
+        expected = profile.get("public_repos")
+        marker = "OK " if counts["total"] == expected else "MISMATCH"
+        print(
+            f"{marker} {slug}: {counts['total']} repos harvested "
+            f"(profile public_repos={expected}) -> {counts}"
+        )
+        if counts["total"] != expected:
+            failures += 1
+        empty_signals = sum(1 for r in inventory.authored if not r.signals)
+        if empty_signals:
+            print(
+                f"NOTE {slug}: {empty_signals} authored repo(s) have no recorded signals yet — "
+                "they will classify INSUFFICIENT_EVIDENCE until the inspection stage runs"
+            )
+    print("verify:", "FAILED" if failures else "PASSED")
+    return 1 if failures else 0
+
+
+def self_test() -> int:
+    """Prove the output layout satisfies the engine's FixtureDataSource contract
+    without touching the network (stubbed API responses)."""
+    import tempfile
+    import unittest.mock as mock
+
+    profile_stub = {
+        "login": "stub-user",
+        "name": "Stub User",
+        "company": None,
+        "blog": "https://stub.example",
+        "twitter_username": "stub",
+        "location": None,
+        "bio": "stub bio",
+        "followers": 1,
+        "public_repos": 1,
+        "html_url": "https://github.com/stub-user",
+    }
+    listing_stub = [
+        {
+            "name": "stub-repo",
+            "fork": False,
+            "archived": False,
+            "mirror_url": None,
+            "stargazers_count": 3,
+            "forks_count": 1,
+            "language": "Python",
+            "size": 42,
+            "created_at": "2026-01-01T00:00:00Z",
+            "pushed_at": "2026-07-01T00:00:00Z",
+            "open_issues_count": 0,
+            "license": {"spdx_id": "MIT"},
+        }
+    ]
+    responses = iter(
+        [
+            (profile_stub, json.dumps(profile_stub)),
+            (listing_stub, json.dumps(listing_stub)),
+            ([], "[]"),  # listing page 2 -> empty, ends pagination
+            ([{"login": "stub-user"}], "[]"),  # contributors
+        ]
+    )
+    with (
+        tempfile.TemporaryDirectory() as tmp,
+        mock.patch(f"{__name__}._get", side_effect=lambda url: next(responses)),
+        mock.patch(f"{__name__}._commit_count", return_value=7),
+        mock.patch(f"{__name__}._contributors", return_value=1),
+        mock.patch(f"{__name__}.time") as faketime,
+    ):
+        faketime.sleep = lambda *_: None
+        out = Path(tmp) / "snapshots"
+        harvest_subject(
+            {"candidate_login": "stub-user", "slug": "stub"},
+            out,
+        )
+        rc = verify_snapshots(
+            out, [{"candidate_login": "stub-user", "slug": "stub"}]
+        )
+        if rc == 0:
+            record = json.loads((out / "repos" / "stub-user" / "page-1.json").read_text())[0]
+            assert record["commit_count"] == 7 and record["license"] == "MIT"
+            print("self-test: PASSED (layout satisfies FixtureDataSource contract)")
+        return rc
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--subjects", required=True)
+    ap.add_argument("--subjects")
     ap.add_argument("--out", default="snapshots")
+    ap.add_argument("--verify", action="store_true", help="validate an existing --out dir")
+    ap.add_argument("--self-test", action="store_true", help="offline layout self-test")
     args = ap.parse_args()
+    if args.self_test:
+        return self_test()
+    if not args.subjects:
+        sys.exit("--subjects is required (except with --self-test)")
     try:
         import yaml  # type: ignore[import-untyped]
 
@@ -191,10 +297,12 @@ def main() -> int:
     except ModuleNotFoundError:
         sys.exit("pip install pyyaml first")
     out = Path(args.out)
+    if args.verify:
+        return verify_snapshots(out, subjects)
     for subject in subjects:
         harvest_subject(subject, out)
     print(f"done -> {out}/ ; next: signal inspection, then run with --fixtures {out}")
-    return 0
+    return verify_snapshots(out, subjects)
 
 
 if __name__ == "__main__":
