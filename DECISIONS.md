@@ -2,7 +2,8 @@
 
 One line per meaningful architectural choice. Format: "YYYY-MM-DD: Chose X over Y because Z."
 
-- 2026-07-16: Repurposed this repo from the job-search-agent seed content to Loop Engineering V1 on branch `claude/loop-engineering-v1-j513lb`, because the build specification defines this repository's shape; the seed content remains intact on `main`.
+- 2026-07-16: Repurposed this repo from the job-search-agent seed content to Loop Engineering V1, because the build specification defines this repository's shape; the seed content is preserved at commit `98e755b` (branch `backup/job-search-seed`), and the complete first-pass V1 implementation is preserved on branch `claude/loop-engineering-v1-j513lb` @ `99f8734`.
+- 2026-07-16: Delivered V1 as a series of 12 focused PRs (each from the latest merged `main`, with its own tests, CI run, and independent read-only review) instead of the original monolithic PR #1, per operator instruction; PR #1 closed unmerged as superseded. Evidence per PR lives in `docs/CONTRIBUTION_LEDGER.md`.
 - 2026-07-16: PRD derived from the authoritative build specification instead of the 5-question interview because the spec carries locked, pre-approved product decisions (PD-01..PD-08) and the run is autonomous.
 - 2026-07-16: Chose stdlib + PyYAML + jsonschema over any framework because file-backed JSON/JSONL/YAML state is a locked constraint and minimal dependencies keep mypy-strict and offline CI tractable.
 - 2026-07-16: Chose dataclasses + explicit enum state machines over an ORM/state library because task transitions must be auditable and testable deterministically.
