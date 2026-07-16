@@ -1,0 +1,54 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "gpt3_book_sandbox",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 5,
+    "original_logic_notes": 2,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 40,
+    "boilerplate_share_pct": 30,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 1,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 1,
+    "issue_responses": 3,
+    "dependency_updates": 1,
+    "docs_corrections": 3,
+    "ai_share_evidence": "No AI-generation markers (2021-era repo): multi-year human maintenance (2021-2025), human typos in the README ('applicaiton', 'accessbile', 'enviroment'), and external human contributors (Randy Zwitch, Sandra Kublik) with merged patch PRs.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox",
+        "excerpt": "Metadata: Python, 129 stars, 45 forks, 24 commits by 3 contributors over 10 distinct days (created 2021-08-20, last pushed 2025-07-14), default branch master, no CI, no tests, runnable setup documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox/commits",
+        "excerpt": "2021-08-20 'Merge pull request #1 from SandraKublik/patch-1'; 2021-08-31 'Merge pull request #2 from randyzwitch/patch-1 — Update gpt_app.py'; 2021-12-07 'Fixed Broken Links'; 2023-03-09 'chore: updated the opneai model'; 2025-07-14 'Merge pull request #8 ... Update README.md'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox/tree/master",
+        "excerpt": "Root entries: CONTRIBUTE.md (7387 bytes), GPT-3_Sandbox/ (dir), Programming_with_GPT-3/ (dir), README.md — matches the sandbox-plus-book-examples structure the README describes."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox#readme",
+        "excerpt": "'This sandbox is an open-source tool to enable anyone turn their GPT-3 app ideas into reality with just a few lines of Python code ... built on top of Streamlit' ... 'You need access to the OpenAI API Key to play with this Sandbox' ... local setup: 'cd email_generation ... pip install -r requirements.txt ... streamlit run gpt_app.py'."
+      }
+    ],
+    "evidence_conflicts": [
+      "README clone command and all deep links point at 'Shubhamsaboo/kairos_gpt3' while the snapshot repo is 'gpt3_book_sandbox' — a rename artifact; the documented clone target name no longer matches the repo.",
+      "requirements.txt is referenced by the setup steps but sits inside a subdirectory; no deps file exists at the root listing, so the deps_valid condition (root deps file) is not met and the key is omitted."
+    ]
+  },
+  "notes": "Companion sandbox to the O'Reilly GPT-3 book (formerly kairos_gpt3): the two content directories and CONTRIBUTE.md in the root listing back the claimed structure, and the commit history shows genuine multi-year maintenance including merged external contributor PRs (#1, #2, #8), broken-link and typo fixes, a requirements update, and an OpenAI model update in 2023. Setup steps are complete though the clone URL still uses the pre-rename repo name. The sibling repo gpt3_sandbox (same 2021-08-20 creation date, near-identical name, empty README) appears to be a duplicate of this project; README boilerplate is shared with the owner's docarray-nocode/javascript_wizard template family."
+}

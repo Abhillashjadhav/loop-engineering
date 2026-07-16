@@ -1,0 +1,78 @@
+{
+  "login": "aakashg",
+  "repo": "pm-claude-skills",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 5,
+    "original_logic_notes": 3,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 50,
+    "boilerplate_share_pct": 25,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 2,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "Sixteen skill-add commits carry round-timestamp author dates from 2026-03-10 out to 2026-09-12 — beyond both pushed_at (2026-03-04) and the audit date — yet sit before the 2026-03-03 'Remove 15 extra skills' commit in the parent chain, an incoherent, re-dated timeline; counter-evidence: the March 3-4 commits describe substantive editorial passes ('Rewrite all 5 skills with full examples, good/bad comparisons, and anti-patterns').",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/pm-claude-skills",
+        "excerpt": "page-1.json: created 2026-02-27T00:06:25Z, pushed 2026-03-04T23:02:41Z, 89 stars, 34 forks, MIT license, no primary language."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-claude-skills/commits",
+        "excerpt": "25 commits: 'Add 5 PM skills: LinkedIn writer, idea validator, prompt engineer, design reviewer, status updates' (2026-02-27), 'Remove 15 extra skills, add MIT LICENSE and badges' (2026-03-03), 'Enhance all 5 skills with targeted improvements for their biggest gaps' (2026-03-04)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-claude-skills/tree/main",
+        "excerpt": "Root: CONTRIBUTING.md (2002 B), LICENSE (1069 B), README.md (6768 B), skills/ (dir), templates/ (dir) — skills directory and the SKILL template location both exist as the README claims."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-claude-skills#readme",
+        "excerpt": "'5 production-ready Claude Code skills for product managers. Drop them in .claude/skills/ and they work immediately.' Table names all five with per-skill SKILL.md paths; setup includes a verification step ('ls .claude/skills/')."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-claude-skills/commits",
+        "excerpt": "'Remove 15 extra skills' is a curation decision — the maintainer cut scope to 5 polished skills rather than shipping 20 shallow ones; 'Improve setup instructions with one-liner install, verification, and troubleshooting' shows usability iteration."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-claude-skills#readme",
+        "excerpt": "The 'How to Create Your Own Skill' section is a genuine 5-step methodology with a full SKILL.md template inline, plus design rationale: 'CLAUDE.md loads every session; skills load only when triggered.'"
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-claude-skills/tree/main",
+        "excerpt": "CONTRIBUTING.md and templates/ exist, backing the contribution workflow the README describes — infrastructure beyond a one-shot content dump."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Deliberate scope-cut from 20 to 5 skills with subsequent per-skill enhancement passes is the opposite of mass-generation padding",
+        "Three install options plus a verification command make setup fully reproducible",
+        "Inline skill-authoring guide and template constitute original teaching structure, not boilerplate"
+      ],
+      "review_notes": "Negative reading rests on the re-dated commit timeline (skill adds dated into Sep 2026 that were 'removed' by a commit dated Mar 2026) shared with sibling repos — a simulated-cadence pattern. Against that, the surviving content is curated, the claimed 5 skills and template are structurally corroborated, and the editorial commits describe real quality work. Prompt/skill libraries are legitimate deliverables under the fairness rules."
+    },
+    "evidence_conflicts": [
+      "Parent-chain order vs author dates is incoherent: 16 skill-add commits dated 2026-03-10..2026-09-12 (some in the future) are ancestors of the 'Remove 15 extra skills' commit dated 2026-03-03, and pushed_at is 2026-03-04 — history was re-dated.",
+      "Same-second batch commits across siblings: 'Polish all skills and README for professional tone' 2026-03-04T23:04:13Z here vs 23:04:15/23:04:17 in pm-claude-code-setup and pm-prompt-library."
+    ]
+  },
+  "notes": "Five-skill Claude Code pack whose claimed skills, template, and contribution docs are corroborated by the root listing and commit history, with a real curation pass that cut 15 weaker skills. The commit timeline is fabricated (adds dated to Sep 2026 preceding a Mar 2026 removal; pushes ended 2026-03-04), part of a synchronized cadence-simulation across three sibling repos. Content quality is decent tutorial/toolkit material with an original skill-authoring guide; the funnel to the paid newsletter is present but the free skills are self-contained."
+}

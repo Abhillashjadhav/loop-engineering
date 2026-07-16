@@ -1,0 +1,96 @@
+{
+  "repo": "hermes-pm-toolkit",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 75.0,
+      "polarity": "quality",
+      "evidence": "6/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 30.0,
+      "polarity": "risk",
+      "evidence": "template similarity 40%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 2.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=True"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 47.4,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 42.5,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 52.8,
+    "educational_value": 46.7,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 75.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Complete, reproducible install path (concrete cp/mkdir commands to ~/.hermes/)",
+        "Concepts like REVISIT IF flip conditions and self-updating memory files are original design ideas not seen in generic prompt packs",
+        "Observable files and directories match the README tree exactly at the level the snapshot exposes"
+      ],
+      "review_notes": "Negative reading: 14-minute total commit history is a pure one-shot publish and the three SKILL.md files cannot be verified from the root listing. But everything observable is consistent with the claims, the repo is honest about being a small three-skill starter, and 13 forks indicate others found it usable. One-shot publishing of finished companion material is this portfolio's normal pattern, not deception per se."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "Two commits 14 minutes apart on 2026-05-01, no AI co-author trailers \u2014 a one-shot publish; counter-evidence: distinctive original concepts (REVISIT IF flip conditions, self-writing skills that append to USER.md) and a claimed first-person rollout ('The order I ran the use cases in') suggest authored, used material.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

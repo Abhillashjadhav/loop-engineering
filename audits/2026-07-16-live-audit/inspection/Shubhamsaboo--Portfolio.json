@@ -1,0 +1,71 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "Portfolio",
+  "signals": {
+    "readme_claims_total": 13,
+    "readme_claims_code_backed": 13,
+    "original_logic_notes": 2,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 5,
+    "boilerplate_share_pct": 5,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 1,
+    "ai_share_evidence": "No generation markers; 2020-era upload long before codegen tools, and the README carries hand-typed spelling errors ('Pyhton', 'Sytem', 'Anlaysis', 'Pregent') that counter-indicate machine generation.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/Portfolio",
+        "excerpt": "Metadata: HTML, 52 stars, 14 forks, 3 commits on a single day (created and pushed 2020-05-01), 2 contributors, no deps, no CI."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/Portfolio/commits",
+        "excerpt": "'Initial commit' (2020-05-01 05:54), 'Update README.md' (05:55), 'All Projects' (05:56) — the entire archive landed in one upload."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/Portfolio/tree/master",
+        "excerpt": "13 project directories matching the README table one-for-one, e.g. 'DataX - Human Pose Based Gait Recognition', 'FinTech Casestudy - New Account Fraud Detection', 'Indian Society & Culture - Factors Contributing to India's Informal Economy'."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/Portfolio#readme",
+        "excerpt": "'These projects were pursued during my time at Plaksha Tech Leaders Fellowship from 2019 to 2020' — 13-row table listing skill, domain, project, mentor, and tools per project."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/Portfolio/tree/master",
+        "excerpt": "Every one of the 13 projects claimed in the README has a corresponding directory in the root listing — the curation is fully backed by artifacts."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/Portfolio#readme",
+        "excerpt": "Per-project mentor and tool attributions (named professors at UC Berkeley, Purdue, Michigan) are specific, checkable details rather than vague claims."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "One-for-one match between the README's 13 claimed projects and the 13 directories in the listing",
+        "It is an archive of completed 2019-2020 fellowship coursework, so a single-day upload is the expected shape, not a red flag"
+      ],
+      "review_notes": "The single-day, three-commit history could read as a one-shot dump, but for a coursework archive that is the honest pattern. Curation is explicitly not slop under the fairness rules. Minor defects: two table rows (IPL analysis, soil texture) link to the wrong or duplicated directory paths."
+    },
+    "evidence_conflicts": [
+      "README table's 'IPL Data Analysis' row links to the '2014 General Elections' directory path even though a correct 'Data Driven Design Thinking - IPL Data Analysis' directory exists in the listing — a link error, not a missing artifact."
+    ]
+  },
+  "notes": "A 2020 coursework portfolio: 13 fellowship projects (analytics, ML, design thinking, case studies) each present as a directory and cataloged in a README table with mentors and tools, so all curation claims are artifact-backed. Uploaded in a single day as an archive, which is appropriate for its purpose; hand-typed typos and 2020 vintage rule out machine generation. Not runnable software and carries no setup docs — it is a curated record, judged as such."
+}

@@ -1,0 +1,78 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "chatgpt-discord",
+  "signals": {
+    "readme_claims_total": 4,
+    "readme_claims_code_backed": 2,
+    "original_logic_notes": 0,
+    "meaningful_adaptation": false,
+    "template_similarity_pct": 50,
+    "boilerplate_share_pct": 50,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No direct generation markers in commits (2023 web-UI edits: 'Update chatgpt.py', 'Update README.md'); the README's TOC-without-content 'guide' reads like a pasted article outline, but authorship cannot be determined from the snapshot; counter-evidence: the code was revisited in 2024 ('Updated the Code').",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord",
+        "excerpt": "Metadata: Python, 2 stars, 1 fork, 6 commits by 1 contributor over 2 distinct days (created 2023-03-29, last pushed 2024-09-21), no CI, no tests, deps declared."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord/commits",
+        "excerpt": "2023-03-29: two 'Initial commit' entries, 'Update README.md' x2, 'Update chatgpt.py'; 2024-09-21 'Updated the Code' — one return visit eighteen months later."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord/tree/main",
+        "excerpt": "Root entries: README.md, chatgpt.py (753 bytes), config.py (79 bytes), main.py (630 bytes), requirements.txt (18 bytes) — a minimal but complete runnable bot layout."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord#readme",
+        "excerpt": "'Building a ChatGPT Discord Bot: A Step-by-Step Guide' with a 13-item Table of Contents (Prerequisites ... Troubleshooting Common Issues, Conclusion), followed only by three 'Instructions to Use' steps: venv, 'Install the necessary libraries from requirements.txt', 'Run the main.py script'."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord/tree/main",
+        "excerpt": "The actual bot code exists and is coherent for the purpose: main.py, chatgpt.py, config.py, requirements.txt — everything the run instructions need is present."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord#readme",
+        "excerpt": "The three concrete usage steps are complete and reference real files ('requirements.txt', 'main.py'), so a reader can run the bot even though the tutorial sections are missing."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/chatgpt-discord/commits",
+        "excerpt": "'Updated the Code' on 2024-09-21 shows the owner maintained the code well after publication."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The runnable artifact matches the run instructions exactly (main.py, requirements.txt present), so the functional claim is honest.",
+        "A later 2024 code update shows minimal but real maintenance.",
+        "A tiny personal utility bot is simple content, which the fairness rules exclude from slop."
+      ],
+      "review_notes": "The one genuinely unbacked element is the '13-section step-by-step guide' framing: the TOC promises content that is absent from the README. Everything else (small working bot with install/run steps) checks out at the structural level."
+    },
+    "evidence_conflicts": [
+      "README advertises a 13-section step-by-step guide via its Table of Contents, but the 1.4KB README contains none of those sections — only the three usage steps exist."
+    ]
+  },
+  "notes": "A minimal ChatGPT Discord bot (three small Python files plus requirements.txt) with complete run instructions, created in 2023 and touched once in 2024. The README frames itself as a full step-by-step guide with a 13-item TOC, but none of those sections exist — the guide claim is unbacked while the runnable-bot claim is backed by the file listing. Simple content, honest at the code level, oversold at the doc level."
+}

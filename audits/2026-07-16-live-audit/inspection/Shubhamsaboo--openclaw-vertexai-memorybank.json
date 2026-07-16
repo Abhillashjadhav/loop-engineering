@@ -1,0 +1,74 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "openclaw-vertexai-memorybank",
+  "signals": {
+    "readme_claims_total": 12,
+    "readme_claims_code_backed": 10,
+    "original_logic_notes": 5,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 5,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "integration_complexity": 3,
+    "issue_responses": 5,
+    "dependency_updates": 1,
+    "docs_corrections": 4,
+    "ai_share_evidence": "Generation markers: contributor 'Zaf' matches the README's own example agent name for user 'alan' ({user_id: 'alan', agent_name: 'zaf'}), suggesting some commits were authored via an AI agent, and the Feb 2026 commit block has uniformly round-minute :00 timestamps consistent with scripted/backfilled history. Counter-evidence: five reviewed PR merges, multi-week iteration, rationale-bearing commit messages, and three distinct contributors.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/openclaw-vertexai-memorybank",
+        "excerpt": "Metadata: TypeScript, 146 stars, 26 forks, 31 commits over 19 distinct days, 3 contributors, MIT license, deps declared, runnable setup documented, created 2026-03-11, pushed 2026-03-20."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/openclaw-vertexai-memorybank/commits",
+        "excerpt": "'feat: plugin registration — auto-recall and auto-capture lifecycle hooks' (2026-02-19), 'feat: CLI — memorybank-status, search, list, sync, remember, forget' (2026-02-24), 'refactor: simplify memory_correct with retry + GET-before-create' (PR #6, 2026-03-12), 'Merge pull request #8 ... add User-Agent header' (2026-03-16)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/openclaw-vertexai-memorybank/tree/main",
+        "excerpt": "Root entries: index.ts (40 KB), openclaw.plugin.json (plugin manifest with config schema), package.json, package-lock.json, tsconfig.json, README.md (14 KB), FAQ.md (15 KB), architecture.jpg, LICENSE, .gitignore."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/openclaw-vertexai-memorybank#readme",
+        "excerpt": "'Auto-recall: Before each turn, relevant memories are retrieved via similarity search ... Noise filter skips capture when user message < 20 chars ... Scope is immutable once set on a memory, so choose your scoping strategy before backfilling.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/openclaw-vertexai-memorybank/commits",
+        "excerpt": "PRs #1, #4, #5, #6, #8 merged with descriptive bodies (e.g. 'Replaces the complex delete+regenerate+recover flow'), plus external-contributor fixes to README install instructions — a real review workflow, not a dump."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/openclaw-vertexai-memorybank/tree/main",
+        "excerpt": "FAQ.md (15 KB) and architecture.jpg exist as separate maintained artifacts backing the README's troubleshooting and diagram claims."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Feature claims are individually traceable to dated feature commits (agent tools, CLI commands, file sync, noise filter, few-shot topic labels)",
+        "Design rationale and disclosed limitations (unofficial-product disclaimer, scope immutability, install-order pitfall, cost caveats) show real product reasoning"
+      ],
+      "review_notes": "The timestamp anomaly and agent-named contributor point to AI-assisted and possibly backfilled early history, but per fairness rules AI-assisted work is not slop; the later history shows organic multi-contributor review. Substantively this is the strongest repo in the batch."
+    },
+    "evidence_conflicts": [
+      "Repo created_at is 2026-03-11 but the earliest commits are dated 2026-02-10 through 2026-03-01 with uniformly round-minute :00:00 timestamps — history predates repo creation, consistent with locally developed or backfilled commits pushed at publication; commits from 2026-03-11 onward have natural timestamps."
+    ]
+  },
+  "notes": "Substantial OpenClaw plugin bridging Vertex AI Memory Bank: a 14 KB README with config tables, trade-off discussion (scoping, token cost, retrieval pricing) and explicit limitations, backed by a 40 KB index.ts, plugin manifest, 15 KB FAQ, and feature-by-feature commit history including five merged PRs from three contributors. Two anomalies recorded: pre-creation, round-timestamp early commits suggesting a backfilled import, and a contributor named 'Zaf' matching the README's example AI agent name — indicating AI-assisted development, which is not penalized. Claims about Vertex-side behavior and pricing are the only ones not verifiable offline."
+}

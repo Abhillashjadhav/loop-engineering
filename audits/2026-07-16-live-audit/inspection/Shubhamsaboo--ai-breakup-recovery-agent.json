@@ -1,0 +1,82 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "ai-breakup-recovery-agent",
+  "signals": {
+    "readme_claims_total": 8,
+    "readme_claims_code_backed": 5,
+    "original_logic_notes": 2,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 60,
+    "boilerplate_share_pct": 70,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": false,
+    "secrets_policy_ok": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 1,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 2,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "15 of 21 commits authored by gpt-engineer-app[bot]/lovable-dev[bot] (Lovable app builder, 'Use tech stack vite_react_shadcn_ts'); counter-evidence: human contributor priyanshm07 added the FastAPI backend across PRs #1-#2 and the owner merged PRs and hand-edited the README.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent",
+        "excerpt": "Metadata: TypeScript, 15 stars, 3 forks, 21 commits by 3 contributors over 3 distinct days (created 2025-04-11, pushed 2025-04-13), no CI, no tests, deps declared."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/commits",
+        "excerpt": "2025-04-11 gpt-engineer-app[bot] 'Use tech stack vite_react_shadcn_ts' ... 'Refactor: Integrate OpenAI GPT-4o API calls' ... 'Refactor: Integrate Gemini API calls'; 2025-04-12 priyanshm07 'feature : backend api integrated(fastapi)'; 2025-04-12 'Merge pull request #2 ... fix : folder structure updated'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/tree/main",
+        "excerpt": "Root entries: .gitignore, README.md, backend/, client/, package-lock.json, package.json — full-stack layout matching the claimed FastAPI backend + React frontend."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent#readme",
+        "excerpt": "'Multi-Agent Team: Therapist Agent... Closure Agent... Routine Planner Agent... Brutal Honesty Agent'; 'Backend: FastAPI with Python; Frontend: Vite + React + TypeScript + Shadcn UI; AI Models: Gemini 2.0 Flash'."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/commits",
+        "excerpt": "Real human iteration after the bot scaffold: priyanshm07 'feature : backend api integrated(fastapi)', 'fix : UI fixed', 'fix : folder structure updated' — the FastAPI backend claimed in the README was hand-built by a contributor, not generated."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/tree/main",
+        "excerpt": "backend/ and client/ directories exist as separate trees, corroborating the claimed architecture beyond the Lovable scaffold."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent#readme",
+        "excerpt": "README documents a concrete API surface ('Endpoint: POST /analyze/ — Accepts user input and optional images ... Returns structured emotional analysis') and links a working demo video."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The FastAPI backend was human-written by a named contributor across two reviewed-and-merged PRs, so the repo is more than a one-shot AI dump.",
+        "Root listing matches the claimed full-stack architecture (backend/ + client/), and a demo video is linked.",
+        "The multi-agent product concept (therapist/closure/routine/brutal-honesty team) is an original product idea, and AI-assisted work is not slop under the fairness rules."
+      ],
+      "review_notes": "The negative reading (unattributed AI scaffold, broken setup path) is tempered by genuine human backend work, merged contributor PRs, and a coherent product design. Scored as an AI-assisted prototype with real follow-through, not mass-generated filler."
+    },
+    "evidence_conflicts": [
+      "README clone command points at 'break-up-recovery-squad-ai' but the repo is 'ai-breakup-recovery-agent'; setup as written does not clone this repo.",
+      "README install steps reference a 'frontend' directory; root listing shows 'client' instead.",
+      "README states the app 'uses Gemini 2.0 Flash' while bot commits alternate between 'Integrate OpenAI GPT-4o API calls' and 'Integrate Gemini API calls'; final model wiring is not observable from the snapshot."
+    ]
+  },
+  "notes": "Lovable/gpt-engineer bot generated the initial full-stack scaffold (15 of 21 commits) with no AI attribution in the README, followed by real human backend integration via two merged contributor PRs. Root listing corroborates the claimed FastAPI+React architecture, but the README's clone URL and folder names do not match the actual repo, so setup is not reproducible as written. Also duplicated as starter_ai_agents/ai_breakup_recovery_agent inside the owner's awesome-llm-apps collection."
+}

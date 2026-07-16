@@ -1,0 +1,74 @@
+{
+ "login": "aakashg",
+ "repo": "hermes-pm-toolkit",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 40,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "Two commits 14 minutes apart on 2026-05-01, no AI co-author trailers \u2014 a one-shot publish; counter-evidence: distinctive original concepts (REVISIT IF flip conditions, self-writing skills that append to USER.md) and a claimed first-person rollout ('The order I ran the use cases in') suggest authored, used material.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit",
+    "excerpt": "page-1.json: created 2026-05-01T20:02:36Z, pushed 2026-05-01T20:16:07Z (14-minute total history), 13 stars, 13 forks, MIT, size 17."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit/commits",
+    "excerpt": "2 commits, both 2026-05-01: 'Initial toolkit: SOUL, USER, three skills, 30-day rollout' and 'Link README to Monday Gap post'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit/tree/main",
+    "excerpt": "Root: SOUL.md (2779 B), 30-day-rollout.md (5835 B), LICENSE, README.md, and dirs decisions/, memories/, signals/, skills/ \u2014 matching the README's tree; the three inner SKILL.md files are named in the initial commit message but not visible in the root listing."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit/#readme",
+    "excerpt": "'Self-writing skills for product managers running on the Hermes agent runtime... drop this folder into ~/.hermes/'. Install section gives complete copy commands; '/decision-log \u2014 log a decision with a REVISIT IF flip condition'."
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit/tree/main",
+    "excerpt": "SOUL.md and 30-day-rollout.md exist at claimed paths with non-trivial sizes, and all four claimed directories are present."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit/#readme",
+    "excerpt": "Original mechanics rather than generic prompt-pack copy: flip-condition decision logs, memory files the skills update themselves, and a staged 30-day adoption arc ('Week 4 is when the compounding shows up. Most people quit before week 4.')."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/hermes-pm-toolkit/commits",
+    "excerpt": "Initial commit message enumerates the exact claimed contents ('SOUL, USER, three skills, 30-day rollout'), consistent with the README rather than inflated beyond it."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Complete, reproducible install path (concrete cp/mkdir commands to ~/.hermes/)",
+    "Concepts like REVISIT IF flip conditions and self-updating memory files are original design ideas not seen in generic prompt packs",
+    "Observable files and directories match the README tree exactly at the level the snapshot exposes"
+   ],
+   "review_notes": "Negative reading: 14-minute total commit history is a pure one-shot publish and the three SKILL.md files cannot be verified from the root listing. But everything observable is consistent with the claims, the repo is honest about being a small three-skill starter, and 13 forks indicate others found it usable. One-shot publishing of finished companion material is this portfolio's normal pattern, not deception per se."
+  }
+ },
+ "notes": "One-shot companion toolkit (two commits, 14 minutes) packaging three PM skills for the Hermes agent runtime, with SOUL.md, the 30-day rollout doc, and all four claimed directories confirmed in the root listing; the inner SKILL.md files are corroborated only by the initial commit message. Original touches include REVISIT IF flip-condition decision logs and self-updating memory files, plus a complete reproducible install path. No tradeoffs or limitations are discussed."
+}

@@ -1,0 +1,76 @@
+{
+ "login": "aakashg",
+ "repo": "claude-routines-and-agents-pm-pack",
+ "signals": {
+  "readme_claims_total": 12,
+  "readme_claims_code_backed": 11,
+  "original_logic_notes": 5,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 35,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 1,
+  "ai_share_evidence": "All 18 commits on a single day (2026-04-21), no AI co-author trailers; counter-evidence: commit messages carry granular, experience-shaped refinements ('warn against always_allow as first-deploy default', 'add Windows paths for Obsidian/Logseq', 'cost scaling scenarios 1x/10x/50x/100x') that imply deliberate editorial passes over lived usage.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack",
+    "excerpt": "page-1.json: created 2026-04-21T21:47:20Z, pushed 2026-04-21T22:29:36Z (42-minute window), 13 stars, 3 forks, size 77, no license field recorded."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/commits",
+    "excerpt": "18 commits on 2026-04-21: 'Initial commit: Claude Routines + Managed Agents PM Pack', then targeted passes: 'SECURITY: add explicit do NOT connect deny list', 'prompt-injection: add tool-use attack to threat model', 'TRADEOFFS: add cost scaling scenarios (1x/10x/50x/100x)'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/tree/main",
+    "excerpt": "Root: QUICKSTART.md, SECURITY.md (5186 B), TRADEOFFS.md (5370 B), prompt-injection-mitigation.md (6746 B), team-rollout-4-week-plan.md, appendix-connector-ids.md, plus dirs cowork-tasks/, managed-agents/, measurement/, routines/, sample-outputs/ \u2014 matching the README tree."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/#readme",
+    "excerpt": "'Honest expectations: ~1-2% of runs fail silently... This isn't zero-error data work. Judgment tasks only.' Security guidance: 'Remove unused connectors (important \u2014 Claude can use any connected tool without asking)'."
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/tree/main",
+    "excerpt": "Dedicated SECURITY.md, TRADEOFFS.md, and prompt-injection-mitigation.md files at real sizes \u2014 governance depth rare in prompt-pack repos."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/commits",
+    "excerpt": "Commit-level references to inner files (cowork/02-local-brief, managed-agents/03-transcript, measurement/week-4-review) corroborate the README's directory tree beyond the top level."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/#readme",
+    "excerpt": "Original decision tree routes readers by pain point ('Pick one. Not three. Not all nine.'), plus a three-surface comparison table and the stateless-run problem with a concrete fix."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Security and tradeoff documentation is unusually deep and specific for this repo class",
+    "Commit messages reference inner files across all five claimed directories, corroborating structure the root listing alone cannot show",
+    "Failure rates, plan limits, and cost scaling are disclosed against the repo's promotional interest"
+   ],
+   "review_notes": "One-day, 42-minute publish window is the negative signal; content signals cut the other way \u2014 the pack shows operational specificity (Windows paths, connector deny lists, silent-failure rates) suggesting the material was developed and tested before being published in a burst."
+  }
+ },
+ "notes": "The strongest repo in this set: nine-prompt automation pack with dedicated SECURITY, TRADEOFFS, and prompt-injection docs, a pain-point decision tree, and disclosed failure rates and plan limits. Published in a single 42-minute burst on 2026-04-21, but commit messages reference inner files across all claimed directories, corroborating the README tree. Shares the portfolio's companion-repo format with distinct, operationally specific content."
+}

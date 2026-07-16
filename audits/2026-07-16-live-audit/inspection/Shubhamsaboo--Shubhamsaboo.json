@@ -1,0 +1,69 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "Shubhamsaboo",
+  "signals": {
+    "readme_claims_total": 6,
+    "readme_claims_code_backed": 1,
+    "original_logic_notes": 1,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 30,
+    "boilerplate_share_pct": 15,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No AI-generation markers; 32 small README edits across 14 distinct days spanning 2021-2025 show sustained hand curation. One automated commit is by 'blog-post-bot' via the declared blog-post-workflow.yml GitHub Action — disclosed automation, not covert generation.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/Shubhamsaboo",
+        "excerpt": "Metadata: profile repo, 99 stars, 32 commits over 14 distinct days, created 2021-10-04, pushed 2025-12-14, 2 contributors (owner + bot), CI present, no deps."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/Shubhamsaboo/commits",
+        "excerpt": "'Create blog-post-workflow.yml' (2021-10-04), 'Updated with the latest blog posts' by author blog-post-bot (2021-10-04), then years of edits: 'Revise personal introduction in README.md ... Removed outdated job titles' (2025-09-16), 'Fix typo in README.md' (2025-11-09), 'Fix formatting issues in README.md' (2025-12-14)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/Shubhamsaboo/tree/main",
+        "excerpt": "Root entries: .github/ (workflows), README.md, bg_book.png — the standard shape of a GitHub profile README repo."
+      },
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/Shubhamsaboo/Shubhamsaboo/.github/workflows",
+        "excerpt": "workflows-listing.json shows one workflow: .github/workflows/blog-post-workflow.yml (628 bytes) — the blog-feed automation referenced by the bot commit."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/Shubhamsaboo#readme",
+        "excerpt": "'I run the open-source Awesome LLM Apps ... Senior AI Product Manager at Google Cloud ... Co-author of GPT-3: The Ultimate Guide ... Angel investing in the early-stage AI Agent startups (typical cheque size: $25-50k)'."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/Shubhamsaboo",
+        "excerpt": "The one claim checkable against saved portfolio data holds: awesome-llm-apps exists in this account's metadata snapshot with 122,625 stars and 1,080 commits."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Four-plus years of dated, incremental README revisions including removing outdated job titles — self-correcting rather than inflating",
+        "The flagship claim (running awesome-llm-apps) is corroborated by the account's own metadata snapshot"
+      ],
+      "review_notes": "Low code-backed ratio is inherent to a profile README: employment, book authorship, newsletter, and investing claims point off-GitHub and are simply not verifiable from the saved artifacts; they are recorded as unverified, not as false."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "GitHub profile README repo maintained by hand from 2021 through 2025, with a declared blog-post GitHub Action (one bot commit) and a history that includes removing outdated job titles. Of six biographical claims only the awesome-llm-apps ownership is verifiable from saved artifacts (it is, at 122K stars in the metadata snapshot); the rest are external biography, unverifiable offline by nature. No red flags beyond that inherent unverifiability."
+}

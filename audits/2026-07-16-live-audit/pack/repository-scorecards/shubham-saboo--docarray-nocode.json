@@ -1,0 +1,88 @@
+{
+  "repo": "docarray-nocode",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "4/5 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "1 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 46.0,
+      "polarity": "risk",
+      "evidence": "template similarity 50%, boilerplate share 40%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 6.7,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 1/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 2.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=True"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 5.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 1 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 66.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 33.1,
+    "technical_proficiency": 27.3,
+    "ai_assistance_likelihood": 42.5,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 57.0,
+    "educational_value": 66.7,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 80.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "No AI-generation markers (2022, pre-agent tooling); human typos in the README ('Leraning Resources', 'Docuemtnation') and a same-day wording-fix commit point to hand-written docs.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

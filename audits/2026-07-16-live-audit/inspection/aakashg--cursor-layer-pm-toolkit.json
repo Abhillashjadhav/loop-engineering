@@ -1,0 +1,74 @@
+{
+ "login": "aakashg",
+ "repo": "cursor-layer-pm-toolkit",
+ "signals": {
+  "readme_claims_total": 9,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 40,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 1,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 1,
+  "ai_share_evidence": "1 of 2 commits carries 'Co-Authored-By: Claude Opus 4.6' (the .DS_Store/link fix); counter-evidence: the three-stage framework and per-prototype data-sensitivity callouts read as product-specific reasoning in the author's established newsletter voice.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit",
+    "excerpt": "page-1.json: created 2026-05-20T19:00:09Z, pushed 2026-05-21T20:46:55Z, 1 star, 1 fork, MIT, size 19 \u2014 the smallest and least-visible toolkit in the portfolio."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/commits",
+    "excerpt": "Only 2 commits: 'Initial commit: cursor-layer PM toolkit' (2026-05-20) and 'Fix .DS_Store gitignore and update post link to specific URL' (2026-05-20, Claude Opus 4.6 co-authored)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/tree/main",
+    "excerpt": "Root: .gitignore, LICENSE, README.md (3660 B), and dirs audit/, design-spec/, prototypes/ \u2014 the three claimed sections exist as directories, but the 7 specific inner files (audit CSV, worked example, scoring rubric, 3 prototypes, design spec) are not observable from the root listing."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/#readme",
+    "excerpt": "'Higher isn't always better. Deep research, long-form generation, and exploratory chat belong at Stage 1. The audit helps you find features that are stuck at the wrong stage, not push everything to Stage 3.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/#readme",
+    "excerpt": "Original three-stage framework (Destination / Embedded / Cursor Layer) with an explicit anti-hype caveat, plus per-prototype DLP and data-sensitivity warnings ('check your DLP and AI-use policies before piping production screenshots anywhere')."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/tree/main",
+    "excerpt": "Directory structure (audit/, design-spec/, prototypes/) matches the README's three claimed content sections one-for-one."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/commits",
+    "excerpt": "A same-week follow-up fix commit shows minimal but real post-publish attention rather than total abandonment."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "The three-stage framework with its 'higher isn't always better' tradeoff is original product reasoning, not generic template text",
+    "Data-sensitivity and employer-policy warnings are disclosed against promotional interest",
+    "Directory structure corroborates the README's claimed sections at the level the snapshot can see"
+   ],
+   "review_notes": "The negative reading rests on the one-shot two-commit history and the fact that 7 of 9 claimed inner files cannot be verified from the root listing \u2014 recorded as weakly backed rather than false. Nothing in the observable content contradicts the claims; the evidence is simply shallow."
+  }
+ },
+ "notes": "Small two-commit companion toolkit for a newsletter post on cursor-layer AI interfaces. The README carries an original three-stage framework with genuine tradeoff nuance and data-sensitivity warnings, but only the three top-level directories are verifiable \u2014 the seven specific inner files it promises are not observable from the snapshot, so most content claims rest on the README alone. One of the two commits is openly Claude co-authored."
+}

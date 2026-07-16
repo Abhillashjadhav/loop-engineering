@@ -1,0 +1,58 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "jina_finetuner_notebooks",
+  "signals": {
+    "explanation_quality": 0,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "setup_reproducible": false,
+    "template_similarity_pct": 10,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 1,
+    "ai_share_evidence": "No generation markers; 7 iterative commits across 5 distinct days in Jan-Feb 2022 ('feat: added new section', 'fix: added a new flag', 'fix: spelling', 'fix:errors with release') indicate hand-edited notebooks; era predates common AI codegen.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks",
+        "excerpt": "Metadata: Jupyter Notebook, 6 stars, 7 commits over 5 distinct days, created 2022-01-25, pushed 2022-02-14, 1 contributor, no deps file, no README (readme_length 0)."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks/commits",
+        "excerpt": "'Initial Commit' (2022-01-25), 'feat: added new section' (2022-01-25), 'fix: added a new flag' (2022-01-26), 'feat: Added new notebook' (2022-02-01), 'fix: spelling' (2022-02-02), 'fix:errors with release' (2022-02-14)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks/tree/main",
+        "excerpt": "Root entries: Finetuner_ImageSimilarityDetection.ipynb (17 KB), Finetuner_W&B.ipynb (9 KB) — two notebooks only, no README.md."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks/commits",
+        "excerpt": "Edits spread across three weeks including a release-tracking fix ('fix:errors with release') show the notebooks were maintained against the upstream Jina Finetuner releases, not dumped once."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks",
+        "excerpt": "Small scope is consistent with a companion-notebook repo (author co-wrote a Jina neural-search book per portfolio context); notebooks are the deliverable."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Iterative, dated fixes across five distinct days including release-compatibility maintenance",
+        "Notebook sizes (17 KB and 9 KB) indicate substantive content, and tutorial notebooks are a legitimate deliverable on their own"
+      ],
+      "review_notes": "The negative reading is limited to missing documentation (no README, no setup steps). Notebook internals were not captured in the snapshot, so no code-quality or originality judgment is recorded — less, not more."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "README.md is absent from the snapshot, so only commit- and listing-derived signals are recorded and notebook internals could not be assessed. The repo is two Jina Finetuner tutorial notebooks (image similarity, W&B integration) iterated over five distinct days in early 2022, including a fix tracking an upstream release. Minimal but coherent notebook collection; the only gap is zero documentation."
+}

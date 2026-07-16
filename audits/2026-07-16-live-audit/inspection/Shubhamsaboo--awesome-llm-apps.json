@@ -1,0 +1,58 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "awesome-llm-apps",
+  "signals": {
+    "readme_claims_total": 10,
+    "readme_claims_code_backed": 8,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 20,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 3,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 16,
+    "dependency_updates": 2,
+    "docs_corrections": 5,
+    "ai_share_evidence": "Generation markers: many recent commits authored by 'ci' and one by 'Claude' ('Upgrade travel planner agent team to agno 2.x (CVE-2026-35002)'), plus branch names like 'codex/...' and 'claude/...' indicating agent-assisted authoring; counter-evidence: 86 contributors, 16 PR merges in the last 100 commits including external human contributors (GeneralJerel, Ming Chen, TechTide AI), and fixes derived from 'a live self-run'.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+        "excerpt": "Metadata: Python, 122625 stars, 18092 forks, 1080 commits by 86 contributors, 29 open issues, CI enabled, Apache-2.0 license, created 2024-04-29, last pushed 2026-07-14, runnable setup documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/commits",
+        "excerpt": "Sustained curation and maintenance: 2026-07-08 'ci: three named checks per skills PR — evals, lint, security scan'; 2026-06-13 'fix: update broken relative links across crash courses and agents'; 2026-05-21 merge of external PR #820 'fix: guard against empty choices and None message in DeepSeek API responses'; 2026-05-03 'Upgrade travel planner agent team to agno 2.x (CVE-2026-35002)'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main",
+        "excerpt": "Root directories match every advertised category: advanced_ai_agents, advanced_llm_apps, agent_skills, ai_agent_framework_crash_course, always_on_agents, generative_ui_agents, mcp_ai_agents, rag_tutorials, starter_ai_agents, voice_ai_agents, plus LICENSE (11357 bytes, Apache-2 size) and docs/."
+      },
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/.github/workflows",
+        "excerpt": "workflows-listing.json shows claude.yml (1087 bytes) and skill-evals.yml (2168 bytes) — corroborates the README claim that skills pass 'a security + eval CI gate'."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps#readme",
+        "excerpt": "'100+ open-source AI agents, agent skills, and RAG apps. Hand-built, tested end-to-end, Apache-2.0.' ... 'Every skill ships real code and passes a security + eval CI gate.' README lists ~100 concrete app entries with in-repo relative links across 14 categories."
+      }
+    ],
+    "evidence_conflicts": [
+      "README claims apps are 'tested end-to-end' but snapshot metadata records has_tests=false and test_files=0 at repo scope; testing appears to run through the skills CI gate (skill-evals.yml) and per-app self-runs rather than a repo-wide test suite.",
+      "Two catalog entries are external repos by other authors (Openwork, Voice Dictation Agent, both marked '↗ external'), so '100+' includes a small number of items not hosted in this repo."
+    ]
+  },
+  "notes": "Large, genuinely maintained tutorial/collection hub: the root listing reproduces every category the README promises, CI workflows back the claimed skills eval/security gate, and the last 100 commits show two years of curation, external PR merges, broken-link fixes, a CVE-driven dependency upgrade, and eval tooling. Much recent authoring is visibly agent-assisted ('ci' and 'Claude' commit authors, codex/claude branch names) without README attribution, and the 'tested end-to-end' claim rests on skills CI rather than visible repo-wide tests. For a collection repo the examples are the deliverable, and the promised structure is verifiably present."
+}

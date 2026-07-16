@@ -1,0 +1,77 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "customer-center-analytics-nlp",
+  "signals": {
+    "readme_claims_total": 2,
+    "readme_claims_code_backed": 1,
+    "original_logic_notes": 0,
+    "meaningful_adaptation": false,
+    "template_similarity_pct": 80,
+    "boilerplate_share_pct": 70,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 2,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 1,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No AI-generation markers (2022, pre-agent era); 18 human commits iterating app.py across 5 distinct days ('Update app.py' x7, 'chore: update app.py' x5) indicate hand-tuned code; README is blog-teaser prose for a published Towards AI article.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp",
+        "excerpt": "Metadata: Python, 9 stars, 4 forks, 18 commits by 1 contributor over 5 distinct days (created 2022-09-18, pushed 2022-10-15), no CI, no tests, deps declared, runnable setup not documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/commits",
+        "excerpt": "2022-09-18 'feat: initial commit', 'chore: updated requirements.txt'; 2022-09-24/25/29 repeated 'Update app.py' / 'chore: update app.py'; 2022-10-15 'Update README.md' x2 — several weeks of iteration on one script."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/tree/main",
+        "excerpt": "Root entries: README.md, app.py (5704 bytes), poster.png, requirements.txt — single-script repo with no setup docs."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp#readme",
+        "excerpt": "'Detect Business Insights From Customer Support Conversations Using AI — Learn how to analyze customer conversations with just 15 lines of Python code!' ... 'Read the full article here!' (towardsai.net); no install or usage instructions."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/commits",
+        "excerpt": "18 commits over five distinct days including a requirements.txt update — sustained hand iteration, not a one-shot dump."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/tree/main",
+        "excerpt": "app.py (5.7KB) and requirements.txt are real deliverables backing the article-companion purpose."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp#readme",
+        "excerpt": "The repo is explicitly a companion to a published tutorial ('Read the full article here!'), so instructional depth intentionally lives in the article."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Commit history shows weeks of genuine iteration on the code, the opposite of a generated dump.",
+        "Tutorial/blog-companion repos are legitimate simple content under the fairness rules.",
+        "The code artifact exists and exceeds what the teaser promises in size."
+      ],
+      "review_notes": "Template similarity is with the owner's own article-companion repos (ai-linkedin-post-scanner is near-identical in README structure), which reflects a consistent blog series format rather than mass generation. The '15 lines of Python' hook refers to the article's core snippet; the shipped app.py is 5.7KB, which is a marketing simplification rather than a falsifiable fabrication."
+    },
+    "evidence_conflicts": [
+      "README hook says 'just 15 lines of Python code' while the shipped app.py is 5704 bytes; the teaser refers to the article's core snippet, not the full app."
+    ]
+  },
+  "notes": "Article-companion repo for a Towards AI tutorial: teaser README with no setup steps, one real 5.7KB Streamlit-style script, and 18 genuinely iterative commits over a month including a requirements update. README structure is near-identical to sibling article repo ai-linkedin-post-scanner (same template family as zero-shot-image-classifier). Simple tutorial content with honest artifacts; the only stretch is the '15 lines' marketing hook."
+}

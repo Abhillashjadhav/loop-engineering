@@ -1,0 +1,51 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "docarray-nocode",
+  "signals": {
+    "readme_claims_total": 5,
+    "readme_claims_code_backed": 4,
+    "original_logic_notes": 1,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 50,
+    "boilerplate_share_pct": 40,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 1,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 1,
+    "ai_share_evidence": "No AI-generation markers (2022, pre-agent tooling); human typos in the README ('Leraning Resources', 'Docuemtnation') and a same-day wording-fix commit point to hand-written docs.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/docarray-nocode",
+        "excerpt": "Metadata: Python, 3 stars, 1 fork, 4 commits by 1 contributor on 1 day (created and pushed 2022-01-17), no CI, no tests, deps declared, runnable setup documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/docarray-nocode/commits",
+        "excerpt": "2022-01-17: 'Initial commit', 'Initial Commit', 'Fix:wordings', 'Feat: Dynamic data selection' — all four commits within a single day, including one feature refinement and one docs fix."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/docarray-nocode/tree/main",
+        "excerpt": "Root entries: README.md, app.py (2205 bytes), data/ (dir), docarray-banner.png, requirements.txt — matches the claimed Streamlit app plus bundled sample data."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/docarray-nocode#readme",
+        "excerpt": "'A simple nocode interface to build a search prototype on your own data in just three simple steps' ... 'pip install -r requirements.txt' ... 'streamlit run app.py' ... 'Note - For now, it only supports text data.'"
+      }
+    ],
+    "evidence_conflicts": []
+  },
+  "notes": "Small single-day Streamlit utility that puts a nocode UI over Jina's DocArray: the claimed app, sample data directory, and requirements file are all present, install/run steps are complete, and the README explicitly discloses the text-only limitation. README scaffolding (emoji headers, clone/venv boilerplate paragraph) is shared nearly verbatim with the owner's gpt3_book_sandbox template family, but the app itself is a distinct, modest original artifact. Human authorship indicated by README typos and a same-day wording fix."
+}

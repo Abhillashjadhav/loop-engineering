@@ -1,0 +1,77 @@
+{
+  "login": "aakashg",
+  "repo": "pm-github-starter-kit",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 4,
+    "original_logic_notes": 2,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 35,
+    "boilerplate_share_pct": 30,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 1,
+    "ai_share_evidence": "No generation markers in the four commit messages; timestamps are irregular and clustered over two real days (2026-02-26/27) matching pushed_at, and one follow-up fix ('Fix article links to point to correct URL') shows human post-publish correction. Counter: the near-complete initial drop ('Initial commit: PM GitHub starter kit' then 'Update README with blog post content') is consistent with content prepared elsewhere, likely AI-assisted.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/pm-github-starter-kit",
+        "excerpt": "page-1.json: created 2026-02-26T23:44:54Z, pushed 2026-02-27T19:09:52Z, 27 stars, 84 forks, no detected license (README asserts a subscriber-only custom license)."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-github-starter-kit/commits",
+        "excerpt": "4 commits total: 'Initial commit: PM GitHub starter kit' (2026-02-26), 'Update README with blog post content and PM GitHub framework', 'Add subscriber-only notice', 'Fix article links to point to correct URL' (2026-02-27)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-github-starter-kit/tree/main",
+        "excerpt": "Root: .gitignore (155 B), CHECKLIST.md (1805 B), README.md (3947 B), prompts/ (dir), templates/ (dir) — checklist, prompts and templates directories exist as claimed."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-github-starter-kit#readme",
+        "excerpt": "'Profile templates, project README templates, AI coding prompts, and a 3-week checklist'; unverifiable stats: '24% of PM candidates have a GitHub. The latest PMs I placed at OpenAI, Anthropic, and Meta AI all had one.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-github-starter-kit/tree/main",
+        "excerpt": "The advertised deliverables (CHECKLIST.md, templates/, prompts/, .gitignore) are all present in the root listing — for a starter-kit repo the docs are the product."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-github-starter-kit/commits",
+        "excerpt": "'Fix article links to point to correct URL' one day after launch shows the author checked and corrected the published artifact."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-github-starter-kit#readme",
+        "excerpt": "'What to Avoid' gives candid original advice against gaming signals: 'Green square farming — hiring managers click the squares. Empty commits are an anti-signal.'"
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "All structural claims (templates, prompts, checklist) are corroborated by the root listing; 84 forks indicate the kit is actually used",
+        "Original 6-point 'What Makes a Great PM GitHub' framework and anti-pattern list reflect practitioner judgment",
+        "Post-publish link fix and subscriber-notice commits show minimal but real maintenance"
+      ],
+      "review_notes": "Negative signals are the unverifiable marketing stats (24% claim, placement name-drops of OpenAI/Anthropic/Meta) and a two-day, four-commit content drop gated as 'paid subscribers only' while public. None of that makes the content slop: it is a small, coherent, fully-present curation kit. The unbacked claims are about the author's off-platform track record, not about the repo's contents."
+    },
+    "evidence_conflicts": [
+      "README's License section says 'For personal use by Product Growth subscribers only. Do not redistribute or share publicly' while the repo is public with 84 forks and the API metadata records no license."
+    ]
+  },
+  "notes": "Small two-day content drop: profile/README templates, four AI prompts, and a 3-week checklist, all physically present and matching the README tree. The framework advice is original and candid, but headline claims ('24% of PM candidates', placements at OpenAI/Anthropic/Meta) are unverifiable from artifacts, and a subscriber-only license notice sits awkwardly on a public, 84-fork repo. Minimal maintenance (one link-fix commit); no fabricated-date pattern here."
+}

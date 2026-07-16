@@ -1,0 +1,59 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "gpt3_sandbox",
+  "signals": {
+    "explanation_quality": 0,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "template_similarity_pct": 15,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 1,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No generation markers observed; 12 human-scale commits across 6 distinct days spanning 2021-08 to 2023-03 with maintenance work (typo fixes, broken-link fixes, model rename) counter-indicate one-shot generation; 2021-2023 era predates common AI codegen conventions.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3_sandbox",
+        "excerpt": "Metadata: Python, 6 stars, 11 forks, 12 commits over 6 distinct days, created 2021-08-20, pushed 2023-03-09, 1 contributor, deps declared, no README (readme_length 0)."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/commits",
+        "excerpt": "'Initial Commit' (2021-08-20), 'Fixed broken links' (2021-08-26), 'Fixed Typos' (2021-08-31), 'chore: updated model name' (2022-04-05), 'Update requirements.txt' / 'Update model_training_service.py' (2023-03-09)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/tree/main",
+        "excerpt": "Root entries: __init__.py, ai.png, app1.py, app2.py, gpt_app.py, model_training_service.py, requirements.txt, training_data.py — flat Python sandbox, no README.md present."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/commits",
+        "excerpt": "Revisited over ~18 months after initial commit ('chore: updated model name' 2022-04, five file updates 2023-03) — maintained, not abandoned dump."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/tree/main",
+        "excerpt": "Distinct purpose-named modules (model_training_service.py, training_data.py, two app variants) plus requirements.txt suggest a real, if small, working sandbox."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Maintenance commits span 2021-2023 including a model-name update after OpenAI deprecations, showing ongoing care",
+        "requirements.txt and structured module names indicate runnable code rather than a content dump"
+      ],
+      "review_notes": "The main negative is the missing README (no docs, no setup, no key-handling guidance), not the code itself. Commit cadence and file structure are the strongest points in the repo's favor; nothing in the saved artifacts suggests fabricated content."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "README.md is absent from the snapshot, so only commit- and listing-derived signals are recorded; all README-dependent keys are set to their observed-absent values or omitted. The saved artifacts show a small flat GPT-3 Python sandbox (two app variants, a training service module, requirements.txt) with 12 commits over six distinct days across 2021-2023 including later maintenance. Main gap is zero documentation; no signs of mass generation or fabrication."
+}

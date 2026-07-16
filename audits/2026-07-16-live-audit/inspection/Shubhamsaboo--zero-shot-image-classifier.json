@@ -1,0 +1,63 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "zero-shot-image-classifier",
+  "signals": {
+    "readme_claims_total": 2,
+    "readme_claims_code_backed": 1,
+    "original_logic_notes": 0,
+    "template_similarity_pct": 10,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 0,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 1,
+    "ai_share_evidence": "No AI-generation markers; Jan 2023 single-day upload ('Add files via upload' via web UI) as a companion to a beginner tutorial — too small and too early for meaningful codegen inference either way.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/zero-shot-image-classifier",
+        "excerpt": "Metadata: Python, 3 stars, 3 commits on 1 distinct day (created and pushed 2023-01-01), 1 contributor, deps declared, runnable setup NOT documented, readme_length 260."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/zero-shot-image-classifier/commits",
+        "excerpt": "'feat: Initial Commit' (2023-01-01 10:39), 'Add files via upload' (10:48), 'Update README.md' (10:50) — one-morning upload."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/zero-shot-image-classifier/tree/main",
+        "excerpt": "Root entries: app.py (1.7 KB), requirements.txt, cover.jpeg, README.md."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/zero-shot-image-classifier#readme",
+        "excerpt": "'Build a Zero-shot Image Classifier in 15 Minutes or Less: A Beginner's Guide — Easily Build and Deploy an Image Classifier with Hugging Face and Streamlit!' — headline and cover image only, no body content."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/zero-shot-image-classifier/tree/main",
+        "excerpt": "app.py and requirements.txt exist, matching the headline claim that a Hugging Face + Streamlit classifier app is provided."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The single substantive claim (a working classifier app exists) is backed by app.py plus a deps file",
+        "Simple beginner content is explicitly not slop under the fairness rules; the repo claims nothing it does not ship"
+      ],
+      "review_notes": "The README is a headline for an external tutorial with zero instructions in-repo, so explanation and reproducibility scores are floor values. requirements.txt exists but is never referenced by the README, so deps_valid is omitted. Nothing fabricated; simply minimal."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "One-morning January 2023 companion repo for a beginner tutorial: a headline-only 260-character README, a 1.7 KB Streamlit/Hugging Face app.py, requirements.txt, and a cover image. The app's existence backs the headline claim, but there are no usage or install instructions in-repo, so it scores zero on explanation and reproducibility. Minimal honest demo with no template reuse, no generation markers, and no inflated claims."
+}

@@ -1,0 +1,51 @@
+{
+ "login": "aakashg",
+ "repo": "cups-task",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 3,
+  "original_logic_notes": 1,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": false,
+  "setup_reproducible": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "No AI markers: code artifacts date to 2014, predating AI codegen; the only recent activity is a 2026-02-26 README rewrite in polished newsletter-era prose ('Rewrite README with context on the research and PM relevance').",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/aakashg/cups-task",
+    "excerpt": "page-1.json: created 2014-07-21T22:27:10Z, pushed 2026-02-26T23:56:43Z, language 'Visual Basic 6.0', 2 stars, size 1085."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/cups-task/commits",
+    "excerpt": "3 commits: 'Initial' and 'Create README.md' (2014-07-21), then 'Rewrite README with context on the research and PM relevance' (2026-02-26) \u2014 a 12-year gap."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/cups-task/tree/main",
+    "excerpt": "Root: CupsTask.frm/.frx/.vbp/.vbw, Instruction.frm/.frx, CupsTask.exe (126 KB), 'Cups Instructions.doc', three research PDFs (Levin & Hart 2003; Cerebral Cortex 2008; 'Neural correlates of adaptive decision making...'), material/ dir."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/cups-task/#readme",
+    "excerpt": "'A computerized implementation of Levin & Weller's Cups Task \u2014 a behavioral economics tool for measuring risky decision-making under gains and losses.' Claims 'Built With Visual Basic 6.0 [and] PEBL'."
+   }
+  ],
+  "evidence_conflicts": [
+   "README 'Built With ... PEBL (Psychology Experiment Building Language)' has no visible PEBL artifact in the root listing (VB6 sources and .exe only; PEBL files may be inside the unexpanded material/ dir)."
+  ]
+ },
+ "notes": "Genuine 2014 Visual Basic 6 implementation of a behavioral-economics research task, with the VB6 sources, compiled exe, instruction forms, and the three cited research PDFs all present in the repo. The 2026 README rewrite adds a PM-relevance framing, presumably to fit the portfolio narrative, but claims are grounded except the PEBL mention, which no visible root artifact backs. No usage or run instructions are provided."
+}

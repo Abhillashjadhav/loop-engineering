@@ -1,0 +1,62 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "awesome-ai-agent-prompts",
+  "signals": {
+    "original_logic_notes": 0,
+    "explanation_quality": 0,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No content to assess for generation markers either way: the repo consists of a single 'Initial commit' (2025-08-13) that added only an MIT LICENSE; there is no README, code, or prompt content.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts",
+        "excerpt": "Metadata: no language detected, 13 stars, 3 forks, 1 commit by 1 contributor on 1 day (created and last pushed 2025-08-13), MIT license, readme_length 0, no CI, no tests, no deps."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts/commits",
+        "excerpt": "Entire history is one commit: 2025-08-13T15:35:16Z Shubham Saboo 'Initial commit'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts/tree/main",
+        "excerpt": "Root contains exactly one entry: LICENSE (1070 bytes). No README, no prompts, no directories."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts#readme",
+        "excerpt": "No README exists, therefore the repo itself makes zero claims — there is nothing overstated or fabricated in the artifact; the only promise is implied by the repo name."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts",
+        "excerpt": "Modest visibility (13 stars) and no releases or promotion signals in the metadata; it reads as a reserved placeholder rather than a promoted empty shell."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts/tree/main",
+        "excerpt": "The single artifact committed is an MIT LICENSE, consistent with GitHub's repo-initialization flow for a project intended to be filled in later."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "With no README, the repo asserts nothing, so there are no unbacked claims — only an evocative name.",
+        "The state is consistent with an unstarted placeholder created via GitHub's 'Initial commit' license flow, not with a generated content dump."
+      ],
+      "review_notes": "Negative reading is 'name-squatting an awesome-* title with zero content'; the fairest characterization is an empty placeholder that gathered 13 stars presumably off the owner's reputation. No content exists to classify as original, template, or AI-generated."
+    },
+    "evidence_conflicts": [
+      "The repo name promises a prompt collection ('awesome-ai-agent-prompts') but the file listing shows only a LICENSE; the name and contents disagree."
+    ]
+  },
+  "notes": "README.md is absent, so only commit- and listing-derived items are recorded. The repo is an empty placeholder: one 'Initial commit' on 2025-08-13 adding a lone MIT LICENSE, with no prompts, docs, or code ever added despite the 'awesome-*' collection name and 13 stars. No claims exist to verify; readme-derived signals are omitted accordingly."
+}

@@ -1,0 +1,77 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "gemini-artboard",
+  "signals": {
+    "readme_claims_total": 10,
+    "readme_claims_code_backed": 3,
+    "original_logic_notes": 3,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 15,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "Single-day 4-commit drop (2026-02-20) with clean conventional-commit messages, a pattern consistent with agent-assisted authoring, but no explicit generation markers (no bot authors, no tool credits); counter-evidence: the README argues design tradeoffs and extensibility rationale ('the out-of-the-box generation quality is constrained by this simplicity') in an authored voice, and one commit adds hand-tuned prompt engineering ('feat: add detailed canvas rendering instructions').",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard",
+        "excerpt": "Metadata: HTML, 72 stars, 13 forks, 4 commits by 1 contributor on 1 day (created and pushed 2026-02-20), no CI, no tests, no declared deps, runnable setup documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard/commits",
+        "excerpt": "2026-02-20: 'feat: Initial Gemini Artboard commit', 'docs: Add gemini_artboard.png and link it in the README.', 'feat: add detailed canvas rendering instructions', 'docs: update README'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard/tree/main",
+        "excerpt": "Root entries: README.md, gemini_artboard.png, index.html (43999 bytes) — exactly the 'single HTML file, no build step, no framework' the README claims."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard#readme",
+        "excerpt": "'Zero dependencies: Single HTML file, no build step, no framework' ... 'Paste your Gemini API key. Get it at AI Studio' ... 'the out-of-the-box generation quality is constrained by this simplicity compared to full-fledged Vibe coding tools ... you can always put more effort into building out your own prompt harness'."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard/tree/main",
+        "excerpt": "index.html is a single 43999-byte file at root with no package manifest, lockfile, or build config alongside it — directly backing the headline 'Zero dependencies: Single HTML file, no build step, no framework' claim, and large enough to plausibly contain the described feature set."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard/commits",
+        "excerpt": "'feat: add detailed canvas rendering instructions' (2026-02-20) is a substantive hand-tuned prompt-engineering refinement on top of the initial commit — iteration on generation quality, not a bare dump."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/gemini-artboard#readme",
+        "excerpt": "'the out-of-the-box generation quality is constrained by this simplicity compared to full-fledged Vibe coding tools ... you can always put more effort into building out your own prompt harness' — the README voluntarily discloses limitations and tradeoffs instead of overselling."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The strongest, highest-impact claim (zero-dependency single HTML file) is fully verified by the root listing: index.html at 44KB with no manifest, lockfile, or build tooling present.",
+        "The README candidly discloses the quality-versus-simplicity limitation and per-model speed tradeoffs, the opposite of fabricated capability claims.",
+        "Commit history shows same-day iteration on generation quality ('feat: add detailed canvas rendering instructions'), consistent with the features being real and actively tuned."
+      ],
+      "review_notes": "The low backed ratio (3 of 10) reflects a snapshot verification limit, not observed fabrication: the individual feature claims (SSE streaming, auto error recovery, 60fps loop, model selector, preset chips) all live inside index.html, whose content was not captured in the snapshot, so they could not be independently corroborated and were conservatively counted as unbacked. Nothing in the saved artifacts contradicts any claim; every claim that is checkable from the listing, commits, or metadata checks out."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "A deliberately minimal single-file creative-coding playground: the 44KB index.html in the root listing directly backs the headline zero-dependency claim, setup and API-key handling are documented, and the README candidly discusses the quality-versus-simplicity tradeoff and model-speed tradeoffs. Most individual feature claims (SSE streaming, auto error recovery, 60fps loop) live inside index.html and cannot be independently verified from the snapshot, so code-backed count is conservative. One-day 4-commit creation with polished conventional commits; no attribution of AI assistance either way."
+}

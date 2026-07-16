@@ -1,0 +1,67 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "repotovideo",
+  "signals": {
+    "readme_claims_total": 10,
+    "readme_claims_code_backed": 7,
+    "original_logic_notes": 3,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 10,
+    "boilerplate_share_pct": 15,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 3,
+    "issue_responses": 0,
+    "dependency_updates": 1,
+    "docs_corrections": 4,
+    "ai_share_evidence": "Generation markers: polished emoji-heavy README and verbose conventional-commit subjects are consistent with AI-assisted authoring (2026 era). Counter-evidence: 10 commits across 3 distinct days with iterative engineering passes (gitignore cleanup, model upgrade, 'Enhance pipeline robustness with improved input validation, Gemini output parsing, and error handling') rather than one dump.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/repotovideo",
+        "excerpt": "Metadata: TypeScript, 40 stars, 17 forks, 10 commits over 3 distinct days, 1 contributor, MIT license, deps declared, runnable setup documented, created 2026-02-18, pushed 2026-02-20."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/repotovideo/commits",
+        "excerpt": "'feat: Initial commit with web frontend, Python API, and video gen logic' (2026-02-18), 'feat: Enhance pipeline robustness with improved input validation, Gemini output parsing, and error handling' (2026-02-19), 'feat: upgrade the model to Gemini 3.1 Pro' (2026-02-19), 'deps: update Python dependencies' (2026-02-19)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/repotovideo/tree/main",
+        "excerpt": "Root entries: generate.py (CLI entry, 4.7 KB), apps/ (claimed api/video/web split), package.json, .gitignore, LICENSE, app_demo.png — matches the README's top-level structure claims."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/repotovideo#readme",
+        "excerpt": "'Analyzes any GitHub repository and generates a short, high-energy promo video ... The AI adapts the video based on repo maturity' with a scene-count table (Viral 10K+ stars: 6 scenes; New <100: 4 scenes, problem-focused hook)."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/repotovideo/commits",
+        "excerpt": "'docs: Replace local video embed with a YouTube link in README and delete the local video file' — the demo video existed as a real tracked file before being moved to YouTube."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Feature and pipeline claims map to dated feature/robustness commits, and the root listing matches the documented structure",
+        "Original product reasoning is visible: adaptive scene selection by repo maturity, per-scene TTS tone guidance, music/voice option design"
+      ],
+      "review_notes": "Recorded because sub-root structure (apps/api, apps/video, apps/web internals) is not visible in the top-level listing, leaving ~3 of 10 claims (voiceover internals, bundled music tracks, web UI details) corroborated only by commit messages. Nothing found contradicting the claims."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "A 2026 repo-to-promo-video generator (Gemini analysis + TTS + Remotion rendering) with a thorough README covering install, CLI and web usage, explicit GEMINI_API_KEY handling, and a maturity-adaptive scene design table showing real product reasoning. Root listing and commit history back the structure and pipeline claims; sub-directory internals were not captured, so deeper claims rest on commit messages. Likely AI-assisted authorship (not penalized); no limitations section is the main documentation gap."
+}

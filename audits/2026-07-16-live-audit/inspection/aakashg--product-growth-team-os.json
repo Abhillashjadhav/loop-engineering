@@ -1,0 +1,79 @@
+{
+  "login": "aakashg",
+  "repo": "product-growth-team-os",
+  "signals": {
+    "readme_claims_total": 9,
+    "readme_claims_code_backed": 7,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 15,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 3,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No explicit generation markers; commits cluster in three real evening sessions (2026-05-06 to 05-09) with idiosyncratic, human-flavored messages ('Hannah-fidelity refactor: extend the example repo's load-bearing patterns') and dense same-evening bursts consistent with AI-assisted drafting under active human curation.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/product-growth-team-os",
+        "excerpt": "page-1.json: created 2026-05-06T21:43:48Z, pushed 2026-05-09T03:10:35Z, 28 stars, 16 forks, license NOASSERTION (custom CC BY-NC 4.0 per README), no primary language."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/product-growth-team-os/commits",
+        "excerpt": "14 commits over 3 days: 'Initial release: Product Growth Team OS Starter Kit', 'Exclude Notion template and deep dive from public repo' (2026-05-06), 'Add Sensitive-Data Control Checklist as a shipped PDF', 'Harden upgrade-to-team-os skill with auto-detection and validation gates' (2026-05-07), 'Point deep-dive link to the published article URL' (2026-05-09)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/product-growth-team-os/tree/main",
+        "excerpt": "Root: CLAUDE.md (8348 B), MINIMAL-SETUP.md (5980 B), pm-os-migration.md (8337 B), SECURITY.md (4937 B), CONTRIBUTING.md, LICENSE (647 B), .claude/, .github/, product-development/, team/ — the minimal-setup, migration, and security docs all exist as claimed."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/product-growth-team-os#readme",
+        "excerpt": "'This repo extends Hannah's open-source Team OS example repo (CC BY-NC 4.0) with shared skills, analytics templates, adoption tools, and a PM-OS migration path'; Credits section itemizes exactly which patterns are Hannah's, Gabor Meyer's, Dave Killeen's, and which are 'Aakash extensions'."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/product-growth-team-os#readme",
+        "excerpt": "Line-item attribution of borrowed vs original work ('Structure: Hannah Stulberg's open-source Team OS... Aakash extensions: 5 shared skills, PII rules, MINIMAL-SETUP path...') — the opposite of passing derived work off as original."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/product-growth-team-os/commits",
+        "excerpt": "'Exclude Notion template and deep dive from public repo' and 'Tighten cross-references and ship case-study permissions registry' show deliberate scoping and a permissions registry for case-study content."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/product-growth-team-os/tree/main",
+        "excerpt": "SECURITY.md (4937 B) and a hardened upgrade skill back the README's PII-safe-by-default and security-reporting claims."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Exemplary attribution: credits and license explicitly separate Hannah Stulberg's CC BY-NC structure from the named Aakash extensions",
+        "Real 3-day iteration with corrective commits, sensitive-data checklist, and a case-study permissions registry",
+        "Portability section honestly de-couples the value from any one AI vendor ('The harness is swappable. The institutional memory isn't.')"
+      ],
+      "review_notes": "Overall reading is positive; counter-evidence review included for completeness because the deep registry claims (feature-index.yaml, data-catalog.yaml) are only visible in the README's own tree, not independently corroborated by the saved root listing (they live in an unsnapshotted subdirectory). Commits about hardening the upgrade skill and shipping downloadables partially corroborate the deeper structure."
+    },
+    "evidence_conflicts": [
+      "Portfolio survey records has_ci=true, but no workflows-listing.json was saved and the README's .github tree shows only pull_request_template.md — CI presence is unconfirmed in the snapshot.",
+      "The two registry files (feature-index.yaml, data-catalog.yaml) are claimed as the system's core but appear only in the README tree; the saved root listing cannot see into product-development/ to confirm them."
+    ]
+  },
+  "notes": "A team knowledge-base starter kit that openly extends Hannah Stulberg's CC BY-NC Team OS repo, with a line-item credits section separating borrowed structure from the author's named extensions — the best attribution practice in this portfolio. Built over three real days with corrective commits, a SECURITY.md, PII rules, and a sensitive-data checklist; MINIMAL-SETUP and migration docs exist in the root listing as claimed. Deep-structure claims (the two YAML registries) rest on the README tree alone since subdirectories were not snapshotted, and the survey's has_ci flag is unconfirmed."
+}

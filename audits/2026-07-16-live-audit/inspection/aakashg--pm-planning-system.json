@@ -1,0 +1,79 @@
+{
+  "login": "aakashg",
+  "repo": "pm-planning-system",
+  "signals": {
+    "readme_claims_total": 8,
+    "readme_claims_code_backed": 8,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 25,
+    "boilerplate_share_pct": 15,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "All 21 commits landed in a 34-minute window (2026-04-14T23:03:31Z-23:37:17Z) with 1-2 second spacing and uniformly polished messages — consistent with an AI/scripted batch publication; counter-evidence: two distinct passes are visible (initial build at 23:03, then a substantive expansion pass at 23:37 adding observability, cost, privacy, and NPS-guardrail content per file), and the docs encode specific practitioner judgment rather than generic filler.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/pm-planning-system",
+        "excerpt": "page-1.json: created 2026-04-14T22:58:24Z, pushed 2026-04-14T23:35:41Z (entire life ~37 minutes), 49 stars, 40 forks, language TypeScript, no detected license despite README stating 'License: MIT'."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-planning-system/commits",
+        "excerpt": "21 commits, e.g. 'Add worked example: AI search with Good/Bad/Reject behavior contract' (23:03:37), 'Add pricing page demo module with vitest coverage' (23:03:42), then 'Expand rollout playbook: objection handling, risk matrix, 30/60/90 checkpoints, kill criteria' (23:37:13)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-planning-system/tree/main",
+        "excerpt": "Root: CLAUDE.md (8228 B), planning/, rollout/, .claude/, src/, package.json (150 B), package-lock.json, vitest.config.ts — the planning system plus a real TypeScript demo module with test config."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-planning-system#readme",
+        "excerpt": "'What This Isn't: A code generator — the skill file reviews plans, it doesn't write code... A substitute for strategy, user research, or stakeholder alignment — this is the artifact layer, not the thinking layer.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-planning-system#readme",
+        "excerpt": "Explicit scope honesty ('What This Is / What This Isn't'), a program kill-switch ('Measured engineer NPS is a program guardrail; if the program costs engineers more than it saves, it ends'), and assumption-labeling guidance for aspiring PMs."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-planning-system/tree/main",
+        "excerpt": "vitest.config.ts and package.json alongside src/ show the demo module is set up to actually run tests — rare in this portfolio."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-planning-system/commits",
+        "excerpt": "The 23:37 expansion pass deepened every artifact with concrete concerns ('Expand PLANNING-TEMPLATE: baseline, statistical plan, observability, cost, privacy, reviewers') — a revision cycle, not a single dump."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "All eight README claims (template, two worked examples, three rollout docs, CLAUDE.md, review skill) map to listed directories and per-file commits",
+        "Unusually honest framing: What This Isn't section, engineer-NPS kill criteria, PM-zone vs engineering-zone boundary",
+        "Test scaffolding (vitest) exists for the demo module, and the AI-feature example carries a Good/Bad/Reject behavior contract — original structure"
+      ],
+      "review_notes": "The negative reading is the 34-minute total repo lifetime with machine-paced commits — a one-evening AI-assisted publication whose granular commit messages simulate an incremental build. Under the fairness rules AI-assisted work is not slop, and the content itself is coherent, original, and fully backed; the risk is only that commit granularity overstates development history."
+    },
+    "evidence_conflicts": [
+      "README 'What's Inside' tree omits src/, package.json, and vitest.config.ts that appear in the root listing (undocumented demo-module scaffolding).",
+      "Portfolio survey records has_tests=false, but the root listing contains vitest.config.ts and a commit claims 'pricing page demo module with vitest coverage'.",
+      "README says 'License: MIT' but the API metadata records no license file detected."
+    ]
+  },
+  "notes": "A one-evening publication (all 21 commits within 34 minutes, machine-paced) of a genuinely well-structured PM planning system: fill-in template, two worked examples including an AI behavior contract, rollout playbook with kill criteria, and a vitest-scaffolded demo module. Every README claim is structurally backed and the What Is/Isn't framing is unusually honest. Main caveats: commit granularity simulates an incremental build that did not happen over time, and the stated MIT license is not detected in metadata."
+}

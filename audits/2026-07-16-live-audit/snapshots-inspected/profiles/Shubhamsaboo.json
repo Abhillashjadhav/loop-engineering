@@ -1,0 +1,31 @@
+{
+ "login": "Shubhamsaboo",
+ "name": "Shubham Saboo",
+ "company": "Google",
+ "blog": "https://www.theunwindai.com/",
+ "twitter": "Saboo_Shubham_",
+ "location": null,
+ "bio": "Senior AI PM @ Google Cloud | Building open-source repository of practical world class tutorials on AI Agents, RAG and LLMs ⏳",
+ "followers": 9121,
+ "public_repos": 183,
+ "evidence_links": [
+  {
+   "origin": "github_profile",
+   "url": "https://github.com/Shubhamsaboo",
+   "excerpt": "profile: Shubham Saboo, https://www.theunwindai.com/",
+   "retrieved_at": "2026-07-16T17:00:20.519747+00:00"
+  },
+  {
+   "origin": "social_media",
+   "url": "https://www.threads.com/@saboo_shubham_/post/DNmbKh3OdPv",
+   "excerpt": "Subject's own Threads account (@saboo_shubham_) posts github.com/Shubhamsaboo/awesome-llm-apps as his own work ('I have created 100+ production-ready AI Agents… Awesome LLM Apps just hit 60k+ stars') — person->login direction; see identity-evidence.md row 2",
+   "retrieved_at": "2026-07-16T15:00:46+00:00"
+  },
+  {
+   "origin": "external_site",
+   "url": "https://raw.githubusercontent.com/Shubhamsaboo/awesome-llm-apps/main/README.md",
+   "excerpt": "awesome-llm-apps README banner links to theunwindai.com (the subject's Unwind AI property), closing the site<->repo loop — sha256:0c784831cba41b2e…, retrieved 2026-07-16T15:00:46Z",
+   "retrieved_at": "2026-07-16T15:00:46+00:00"
+  }
+ ]
+}

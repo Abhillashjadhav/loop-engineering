@@ -1,0 +1,68 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "weekly-report-analysis",
+  "signals": {
+    "readme_claims_total": 3,
+    "readme_claims_code_backed": 2,
+    "original_logic_notes": 1,
+    "template_similarity_pct": 15,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 3,
+    "ai_share_evidence": "No AI-generation markers; late-2022 era, 9 small commits across 2 distinct days plus a logo touch-up a month later ('chore: updated logo', Jan 2023) — hand-iterated micro-project.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/weekly-report-analysis",
+        "excerpt": "Metadata: Python, 1 star, 9 commits over 2 distinct days, 1 contributor, MIT license, deps declared, runnable setup NOT documented, created 2022-12-09, pushed 2023-01-12."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/weekly-report-analysis/commits",
+        "excerpt": "'Initial commit' and 'feat: Initial Commit' (2022-12-09), 'Update README.md' x3 (2022-12-09), 'Update app.py' x2 (2022-12-09), 'Delete logo.png' / 'chore: updated logo' (2023-01-12)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/weekly-report-analysis/tree/main",
+        "excerpt": "Root entries: app.py (2 KB), requirements.txt, workflow.png (544 KB), logo.png, LICENSE, README.md."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/weekly-report-analysis#readme",
+        "excerpt": "'Application has two endpoints: 1. Summarization Endpoint ... summarize all of them into one report ... 2. Q/A Endpoint: A generic question answering endpoint that can answer any questions by looking at the context of the report.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/weekly-report-analysis/tree/main",
+        "excerpt": "The claimed workflow diagram exists (workflow.png), app.py and requirements.txt are present, and an MIT LICENSE was added — the small claim set is materially backed."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/weekly-report-analysis/commits",
+        "excerpt": "Same-day README and app.py iteration plus a return visit a month later for the logo — worked on across sessions rather than dumped once."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Every physical artifact the README references (workflow diagram, app) is present in the listing",
+        "Iterated within the day and revisited a month later; modest scope honestly presented with no inflated claims"
+      ],
+      "review_notes": "The negative reading is documentation thinness: no install/run steps (requirements.txt exists but the README never references it, so deps_valid is omitted) and no statement of what powers the summarization/Q-A. The two-endpoint claim is credited as backed only jointly by app.py's existence since file content was not captured."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "Tiny two-endpoint report-summarization/Q-A app from Dec 2022: a 667-character README describing the two endpoints plus a workflow diagram, with app.py, requirements.txt, and the diagram all present in the listing. No setup or usage instructions at all, so it is not reproducible from the README alone, and the endpoint internals could not be checked because code content was not snapshotted. Small and thin but honestly scoped, with no template reuse or generation markers."
+}

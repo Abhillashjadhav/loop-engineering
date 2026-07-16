@@ -1,0 +1,96 @@
+{
+  "repo": "customer-center-analytics-nlp",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "1/2 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 76.0,
+      "polarity": "risk",
+      "evidence": "template similarity 80%, boilerplate share 70%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 10.0,
+      "polarity": "quality",
+      "evidence": "5 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 10.0,
+      "polarity": "quality",
+      "evidence": "1 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "explanation quality 1/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 17.0,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 23.0,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 80.4,
+    "educational_value": 13.3,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "LIKELY_SHALLOW_OR_TEMPLATED",
+    "value_labels": [],
+    "rationale": "ai_slop_risk 80 >= 70 with confidence 75 >= 70; counter-evidence reviewed and recorded",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Commit history shows weeks of genuine iteration on the code, the opposite of a generated dump.",
+        "Tutorial/blog-companion repos are legitimate simple content under the fairness rules.",
+        "The code artifact exists and exceeds what the teaser promises in size."
+      ],
+      "review_notes": "Template similarity is with the owner's own article-companion repos (ai-linkedin-post-scanner is near-identical in README structure), which reflects a consistent blog series format rather than mass generation. The '15 lines of Python' hook refers to the article's core snippet; the shipped app.py is 5.7KB, which is a marketing simplification rather than a falsifiable fabrication."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "No AI-generation markers (2022, pre-agent era); 18 human commits iterating app.py across 5 distinct days ('Update app.py' x7, 'chore: update app.py' x5) indicate hand-tuned code; README is blog-teaser prose for a published Towards AI article.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

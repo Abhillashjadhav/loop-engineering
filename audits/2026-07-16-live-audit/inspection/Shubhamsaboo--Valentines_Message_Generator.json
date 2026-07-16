@@ -1,0 +1,71 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "Valentines_Message_Generator",
+  "signals": {
+    "readme_claims_total": 4,
+    "readme_claims_code_backed": 3,
+    "original_logic_notes": 1,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 70,
+    "boilerplate_share_pct": 65,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 1,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "integration_complexity": 1,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No AI-generation markers; 2022 pre-codegen era. Four same-day commits all titled 'Initial Commit' indicate a quick single-day build shipped for Valentine's Day 2022; the README is cloned from the author's own sibling demo template, a human copy-paste pattern.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/Valentines_Message_Generator",
+        "excerpt": "Metadata: Python, 7 stars, 4 commits on 1 distinct day, created and pushed 2022-02-13, 1 contributor, deps declared, runnable setup documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/Valentines_Message_Generator/commits",
+        "excerpt": "'Initial commit' (2022-02-13 08:35), 'Initial Commit' (08:54), 'Initial Commit' (08:58), 'Initial Commit' (09:12) — all four commits on the same morning, uniform messages."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/Valentines_Message_Generator/tree/main",
+        "excerpt": "Root entries: app.py, gpt3_prompt.py, image_preproc.py, card_template.png, font.ttf, logo.png, artifact.png, requirements.txt, README.md."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/Valentines_Message_Generator#readme",
+        "excerpt": "'Valentines's Message Generator powered by GPT-3 ... Try out the Live Application ... pip install -r requirements.txt ... streamlit run app.py' — same section skeleton and prose as the javascript_wizard README."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/Valentines_Message_Generator/tree/main",
+        "excerpt": "image_preproc.py, card_template.png, and font.ttf form a bespoke card-image rendering pipeline not present in the sibling repo — repo-specific work beyond the templated docs."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/Valentines_Message_Generator#readme",
+        "excerpt": "Interface screenshot claim is backed by artifact.png (1.6 MB) in the listing, and setup steps reference the shipped requirements.txt accurately."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "A distinct image-preprocessing pipeline (preproc module, card template, bundled font) shows original work under the templated README",
+        "Shipped the day before Valentine's Day 2022 — a coherent seasonal demo, and simple content is not slop under the fairness rules"
+      ],
+      "review_notes": "The negative signals (single-day history, four uniform 'Initial Commit' messages, ~90% templated README) describe a quick hobby demo with reused docs, not fabricated or mass-generated content. Only the Streamlit live-app URL is unverifiable from saved artifacts."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "Single-day GPT-3 Streamlit demo from Valentine's Day 2022 whose README is near-identical to the author's javascript_wizard template (names and links swapped), but whose file listing shows bespoke card-generation work (image_preproc.py, card template, font) that the sibling lacks. Setup instructions are complete and match the shipped files; 3 of 4 concrete claims are artifact-backed, with the live-app URL unverifiable offline. Uniform 'Initial Commit' messages and one-day history mark it as a quick demo, not a maintained project."
+}

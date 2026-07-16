@@ -1,0 +1,98 @@
+{
+  "repo": "pm-claude-skills",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 71.4,
+      "polarity": "quality",
+      "evidence": "5/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 40.0,
+      "polarity": "risk",
+      "evidence": "template similarity 50%, boilerplate share 25%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 38.0,
+      "polarity": "quality",
+      "evidence": "19 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 86.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 54.6,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 17.0,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 51.8,
+    "educational_value": 86.7,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 71.4,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Deliberate scope-cut from 20 to 5 skills with subsequent per-skill enhancement passes is the opposite of mass-generation padding",
+        "Three install options plus a verification command make setup fully reproducible",
+        "Inline skill-authoring guide and template constitute original teaching structure, not boilerplate"
+      ],
+      "review_notes": "Negative reading rests on the re-dated commit timeline (skill adds dated into Sep 2026 that were 'removed' by a commit dated Mar 2026) shared with sibling repos \u2014 a simulated-cadence pattern. Against that, the surviving content is curated, the claimed 5 skills and template are structurally corroborated, and the editorial commits describe real quality work. Prompt/skill libraries are legitimate deliverables under the fairness rules."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "Sixteen skill-add commits carry round-timestamp author dates from 2026-03-10 out to 2026-09-12 \u2014 beyond both pushed_at (2026-03-04) and the audit date \u2014 yet sit before the 2026-03-03 'Remove 15 extra skills' commit in the parent chain, an incoherent, re-dated timeline; counter-evidence: the March 3-4 commits describe substantive editorial passes ('Rewrite all 5 skills with full examples, good/bad comparisons, and anti-patterns').",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

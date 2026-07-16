@@ -1,0 +1,95 @@
+{
+  "repo": "Shubhamsaboo",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 16.7,
+      "polarity": "quality",
+      "evidence": "1/6 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "1 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 24.0,
+      "polarity": "risk",
+      "evidence": "template similarity 30%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "14 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 10.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "explanation quality 1/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 36.6,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 10.2,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 72.8,
+    "educational_value": 13.3,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 16.7,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "LIKELY_SHALLOW_OR_TEMPLATED",
+    "value_labels": [],
+    "rationale": "ai_slop_risk 73 >= 70 with confidence 75 >= 70; counter-evidence reviewed and recorded",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Four-plus years of dated, incremental README revisions including removing outdated job titles \u2014 self-correcting rather than inflating",
+        "The flagship claim (running awesome-llm-apps) is corroborated by the account's own metadata snapshot"
+      ],
+      "review_notes": "Low code-backed ratio is inherent to a profile README: employment, book authorship, newsletter, and investing claims point off-GitHub and are simply not verifiable from the saved artifacts; they are recorded as unverified, not as false."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "No AI-generation markers; 32 small README edits across 14 distinct days spanning 2021-2025 show sustained hand curation. One automated commit is by 'blog-post-bot' via the declared blog-post-workflow.yml GitHub Action \u2014 disclosed automation, not covert generation.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

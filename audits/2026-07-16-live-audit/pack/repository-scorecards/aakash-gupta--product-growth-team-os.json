@@ -1,0 +1,98 @@
+{
+  "repo": "product-growth-team-os",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 77.8,
+      "polarity": "quality",
+      "evidence": "7/9 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 13.0,
+      "polarity": "risk",
+      "evidence": "template similarity 15%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 12.0,
+      "polarity": "quality",
+      "evidence": "3 distinct commit day(s), 1 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 10.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 54.4,
+    "technical_proficiency": 22.0,
+    "ai_assistance_likelihood": 1.8,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 43.4,
+    "educational_value": 100.0,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 77.8,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Exemplary attribution: credits and license explicitly separate Hannah Stulberg's CC BY-NC structure from the named Aakash extensions",
+        "Real 3-day iteration with corrective commits, sensitive-data checklist, and a case-study permissions registry",
+        "Portability section honestly de-couples the value from any one AI vendor ('The harness is swappable. The institutional memory isn't.')"
+      ],
+      "review_notes": "Overall reading is positive; counter-evidence review included for completeness because the deep registry claims (feature-index.yaml, data-catalog.yaml) are only visible in the README's own tree, not independently corroborated by the saved root listing (they live in an unsnapshotted subdirectory). Commits about hardening the upgrade skill and shipping downloadables partially corroborate the deeper structure."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "No explicit generation markers; commits cluster in three real evening sessions (2026-05-06 to 05-09) with idiosyncratic, human-flavored messages ('Hannah-fidelity refactor: extend the example repo's load-bearing patterns') and dense same-evening bursts consistent with AI-assisted drafting under active human curation.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

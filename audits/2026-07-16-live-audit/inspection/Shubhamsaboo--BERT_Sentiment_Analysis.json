@@ -1,0 +1,74 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "BERT_Sentiment_Analysis",
+  "signals": {
+    "readme_claims_total": 4,
+    "readme_claims_code_backed": 2,
+    "original_logic_notes": 1,
+    "meaningful_adaptation": false,
+    "template_similarity_pct": 40,
+    "boilerplate_share_pct": 50,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No AI-generation markers (2020 repo, pre-LLM tooling); the 'BERT Overview' section closely mirrors the TF Hub model-card description (copied reference text), while the dataset/split/metrics sections read as hand-written notes.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis",
+        "excerpt": "Metadata: Python, 2 stars, 0 forks, 3 commits by 2 contributors over 2 distinct days (created 2020-07-05, pushed 2020-07-08), default branch master, no CI, no tests, no declared deps."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis/commits",
+        "excerpt": "2020-07-05 'Initial commit', 'Update README.md'; 2020-07-08 'Latest Code' — three commits total, then untouched."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis/tree/master",
+        "excerpt": "Root entries: Code/ (dir), Data/ (dir), README.md — the claimed model/dataset work lives behind two directories; no requirements or run scripts at root."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis#readme",
+        "excerpt": "'IMDB movie review dataset consisting of 50K movie reviews' ... 'BERT Base Uncased English (bert_en_uncased_L-12_H-768_A-12)' ... 'Training Data - 90% of 50K movie reviews (45k), Validation Data - 10% (5k)', 'Loss Function - Binary Crossentropy'."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis#readme",
+        "excerpt": "The README honestly documents concrete experimental choices (exact TF Hub model ID, 90/10 split, binary cross-entropy) rather than inflating results — no accuracy or performance claims are made at all."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis/tree/master",
+        "excerpt": "Code/ and Data/ directories exist, matching the two things the README describes."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis",
+        "excerpt": "A 2-star 2020 learning repo with no promotion signals; nothing in the metadata suggests it was presented as more than a personal exercise."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "No results are claimed, so nothing is overstated; the README documents setup choices only.",
+        "Simple educational content is explicitly not slop under the fairness rules, and the repo never sought visibility (2 stars, no forks)."
+      ],
+      "review_notes": "The negative signals (copied model-card paragraph, no run instructions, three commits) describe an old personal learning artifact, not deceptive output. Recorded modest scores rather than a negative classification."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "A 2020 three-commit learning repo: README documents the IMDB dataset, the exact TF Hub BERT model, the 90/10 split, and the loss function, with Code/ and Data/ directories present but no run or install instructions. Roughly half the README is reference text mirroring the TF Hub model card. No results are claimed, so the modest artifacts fully cover the modest claims."
+}

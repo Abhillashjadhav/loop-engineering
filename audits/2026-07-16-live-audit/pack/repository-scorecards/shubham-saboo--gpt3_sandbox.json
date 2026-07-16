@@ -1,0 +1,95 @@
+{
+  "repo": "gpt3_sandbox",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "no explicit README claims found; neutral 50"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 9.0,
+      "polarity": "risk",
+      "evidence": "template similarity 15%, boilerplate share 0%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 12.0,
+      "polarity": "quality",
+      "evidence": "6 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1 dependency update(s), 0 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 0/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 17.4,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 4.2,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 70.2,
+    "educational_value": 0.0,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 60.7
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Maintenance commits span 2021-2023 including a model-name update after OpenAI deprecations, showing ongoing care",
+        "requirements.txt and structured module names indicate runnable code rather than a content dump"
+      ],
+      "review_notes": "The main negative is the missing README (no docs, no setup, no key-handling guidance), not the code itself. Commit cadence and file structure are the strongest points in the repo's favor; nothing in the saved artifacts suggests fabricated content."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "No generation markers observed; 12 human-scale commits across 6 distinct days spanning 2021-08 to 2023-03 with maintenance work (typo fixes, broken-link fixes, model rename) counter-indicate one-shot generation; 2021-2023 era predates common AI codegen conventions.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

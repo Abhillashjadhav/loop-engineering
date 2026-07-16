@@ -1,0 +1,98 @@
+{
+  "repo": "pm-github-workflow-repo",
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "10/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "5 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 16.0,
+      "polarity": "risk",
+      "evidence": "template similarity 20%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 6.7,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 1/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "32 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 15.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 9 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 64.7,
+    "technical_proficiency": 32.3,
+    "ai_assistance_likelihood": 0.5,
+    "ai_assistance_confidence": 100.0,
+    "ai_slop_risk": 31.7,
+    "educational_value": 100.0,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 100.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The re-dated history is disclosed inside the repo itself and is the pedagogical point (a practice repo for reading git history), not concealed resume-padding",
+        "Every README claim maps to an on-disk artifact, including a real gitleaks CI workflow and a PM-specific secrets/PII .gitignore",
+        "Documented reverted experiment and doc-vs-history contradiction fixes show unusual epistemic care"
+      ],
+      "review_notes": "The only structurally negative signal \u2014 synthetic backdated commits \u2014 is explicitly acknowledged in a commit message and consistent with the repo's stated purpose ('Practice repo... the history is the lesson'). Judged on saved artifacts, this is the strongest repo in the set: 10/10 claims backed, real CI, tradeoffs and limitations discussed, and a worked failure included."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 100.0,
+    "evidence_and_counter_evidence": "Author dates from 2026-01-06 predate repo creation (2026-06-03) with evenly spaced synthetic intervals \u2014 but the repo discloses this in-history ('align content dates with commit dates after history re-date') and the README frames the history itself as the teaching artifact; counter-evidence: the June 2-3 real-date commits are dense, self-critical fix passes ('fix every doc-vs-git-history contradiction') characteristic of careful human review.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

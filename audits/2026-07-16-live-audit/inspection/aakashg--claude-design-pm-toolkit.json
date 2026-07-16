@@ -1,0 +1,75 @@
+{
+ "login": "aakashg",
+ "repo": "claude-design-pm-toolkit",
+ "signals": {
+  "readme_claims_total": 18,
+  "readme_claims_code_backed": 15,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 40,
+  "boilerplate_share_pct": 20,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "integration_complexity": 1,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 2,
+  "ai_share_evidence": "All 27 commits land on a single day (2026-04-24) with no AI co-author trailers \u2014 a burst pattern consistent with an AI-assisted one-day build; counter-evidence: messages show file-specific editorial judgment across multiple passes (WCAG contrast, prefers-reduced-motion, i18n, 'anti-copy taboos'), i.e. iterative refinement rather than a single dump.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit",
+    "excerpt": "page-1.json: created 2026-04-24T20:56:26Z, pushed 2026-04-24T23:12:41Z (2h16m active window), 11 stars, 7 forks, MIT, size 102."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit/commits",
+    "excerpt": "27 commits on 2026-04-24, from 'Initial: 6 copy-paste prompts from the Claude Design article' through per-file refinements ('05_design_system: add 3 alt typography sets + WCAG ratios on dark tokens'; '12_error_recovery: add WCAG/a11y failure recovery + reduced-motion fix') to 'CHANGELOG: collapse to single v1.0.0 release entry'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit/tree/main",
+    "excerpt": "20 root entries: 15 numbered prompt/reference files 01_investor_demo.md..15_research_prototype.md (6.9-17.8 KB each), CHEATSHEET.md, CHANGELOG.md, LICENSE, README.md \u2014 matching the README's file tables."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit/#readme",
+    "excerpt": "'Honest costs: A fully built hi-fi page with refinements runs ~$2-7 in Claude tokens... Heavy sessions... can burn 95% of a weekly Pro quota.' Also: 'Who this is NOT for: designers doing precision work in Figma. Claude Design is a first-draft tool.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit/commits",
+    "excerpt": "Same-day but multi-pass: files created early (e.g. 'Add 12_error_recovery') were revisited later the same day ('12_error_recovery: add WCAG/a11y failure recovery'), plus two URL corrections \u2014 an editing loop, not one push."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit/tree/main",
+    "excerpt": "File sizes vary meaningfully (6,920 to 17,806 bytes), inconsistent with cloned boilerplate stamped 15 times."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/claude-design-pm-toolkit/#readme",
+    "excerpt": "Discloses limits and costs against its own interest ('first-draft tool', quota burn warning) and maps each file to specific sections of the companion article."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "27 same-day commits show iterative refinement passes over already-created files, not a single dump",
+    "Unusually candid cost/limitation disclosure for a promotional companion repo",
+    "Prompt files ARE the deliverable for this repo class, and the listing confirms all 17 promised files at non-trivial sizes"
+   ],
+   "review_notes": "The one-day build window is the main concern, but the commit trail demonstrates real editorial iteration within it. Unverifiable claims are marketing-flavored ones ('exports to PPTX', 'cuts engineering implementation time in half'), not the core file-content claims, which the root listing backs."
+  }
+ },
+ "notes": "Prompt-toolkit companion to a newsletter article: 15 numbered prompt/reference files plus cheatsheet and changelog, all confirmed in the root listing at substantial sizes. Built entirely on 2026-04-24 in ~2 hours across 27 commits, but with visible multi-pass refinement (WCAG, i18n, reduced-motion fixes) and unusually honest cost/limitation disclosure. Shares the portfolio's companion-repo house format though its content is distinct."
+}

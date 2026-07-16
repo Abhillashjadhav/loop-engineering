@@ -1,0 +1,79 @@
+{
+  "login": "aakashg",
+  "repo": "pm-github-workflow-repo",
+  "signals": {
+    "readme_claims_total": 10,
+    "readme_claims_code_backed": 10,
+    "original_logic_notes": 5,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 20,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 1,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 9,
+    "ai_share_evidence": "Author dates from 2026-01-06 predate repo creation (2026-06-03) with evenly spaced synthetic intervals — but the repo discloses this in-history ('align content dates with commit dates after history re-date') and the README frames the history itself as the teaching artifact; counter-evidence: the June 2-3 real-date commits are dense, self-critical fix passes ('fix every doc-vs-git-history contradiction') characteristic of careful human review.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo",
+        "excerpt": "page-1.json: created 2026-06-03T00:56:22Z, pushed 2026-06-03T18:11:58Z, 2 stars, 5 forks, MIT license — a fresh practice repo, all real pushes within one day."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo/commits",
+        "excerpt": "42 commits: 'prd-reviewer v2: check for hypothesis vs feature description' through 'prd-reviewer v7', 'round 3 - add worked example + lead-with-audience rule (score: 79% -> 90%)', 'round 5 - revert word-count cap (82% -> 90%, restored best)', and 'align content dates with commit dates after history re-date' (2026-06-02)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo/tree/main",
+        "excerpt": "Root: CLAUDE.md, CONTRIBUTING.md, LICENSE, README.md, .gitattributes, .gitignore (2576 B, PM/PII-tuned), plus skills/, evals/, autoresearch/, examples/, decisions/, docs/, .github/ — every directory in the README tree exists."
+      },
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo/.github/workflows",
+        "excerpt": "workflows-listing.json shows gitleaks.yml (927 B) — the 'secret scanning on push/PR' claim is backed by an actual workflow file."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo#readme",
+        "excerpt": "'Explore the history. This is the whole point - the history is the lesson... a PRD reviewer skill evolving v1 → v7 (then hardened with later fixes), a CLAUDE.md growing then getting pruned, eval criteria tightening, and a full autoresearch run (41% → 90%, with one failed experiment reverted).'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo/commits",
+        "excerpt": "Nine real-date hardening commits on June 2-3: 'remove stray .aws-credentials-test; tighten .aws glob', 'README: fix history-distance claim, tree drift, and two link issues', 'fix self-contradictory verdict rubric' — accuracy-driven self-correction."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-github-workflow-repo#readme",
+        "excerpt": "Documents its own failure case: 'round-log 41% → 90%, one reverted experiment', and scopes its limits: 'this .gitignore is tuned to *this* repo's layout... add a !path/to/your-file line for anything of yours that's wrongly ignored.'"
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The re-dated history is disclosed inside the repo itself and is the pedagogical point (a practice repo for reading git history), not concealed resume-padding",
+        "Every README claim maps to an on-disk artifact, including a real gitleaks CI workflow and a PM-specific secrets/PII .gitignore",
+        "Documented reverted experiment and doc-vs-history contradiction fixes show unusual epistemic care"
+      ],
+      "review_notes": "The only structurally negative signal — synthetic backdated commits — is explicitly acknowledged in a commit message and consistent with the repo's stated purpose ('Practice repo... the history is the lesson'). Judged on saved artifacts, this is the strongest repo in the set: 10/10 claims backed, real CI, tradeoffs and limitations discussed, and a worked failure included."
+    },
+    "evidence_conflicts": [
+      "Commit author dates begin 2026-01-06, five months before the repo's created_at (2026-06-03); the repo discloses this via the commit 'align content dates with commit dates after history re-date' — a deliberate, disclosed simulation for teaching, not hidden fabrication."
+    ]
+  },
+  "notes": "A teaching/practice repo where the git history itself is the curriculum: a PRD-reviewer skill versioned v1-v7, an eval-scored prompt-optimization run (41%->90% with a documented reverted experiment), and a gitleaks CI workflow that is actually present. All ten README claims are backed by listed artifacts; explanation quality, tradeoffs, and limitations disclosure are the best in this portfolio. The pre-creation author dates are synthetic but disclosed in-history as an intentional 're-date' for the exercise."
+}

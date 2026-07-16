@@ -1,0 +1,79 @@
+{
+  "login": "aakashg",
+  "repo": "pm-prompt-library",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 4,
+    "original_logic_notes": 2,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 50,
+    "boilerplate_share_pct": 25,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 2,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 1,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "Twenty prompt-add commits carry round-timestamp author dates on a near-weekly cadence out to 2026-09-07 — beyond pushed_at (2026-04-10) and the audit date — indicating re-dated history; the merged branch 'claude/targeted-improvements-5xPSU' (PR #1, 2026-04-10) is a direct marker of Claude-generated maintenance. Counter-evidence: the 25 prompt names in commits match the README's numbered table one-for-one, and the April PR shows post-release upkeep.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/pm-prompt-library",
+        "excerpt": "page-1.json: created 2026-02-27T00:06:22Z, pushed 2026-04-10T18:46:46Z, 11 stars, 12 forks, MIT license, no primary language (markdown prompt library)."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-prompt-library/commits",
+        "excerpt": "31 commits: 'Add 5 PM prompts: user stories, competitive teardown, launch risk, metrics, stakeholder updates' (2026-02-27), then 20 individual adds ('Add prd reviewer prompt', 'Add api spec reviewer prompt' author-dated 2026-09-07), and 'Merge pull request #1 from aakashg/claude/targeted-improvements-5xPSU' (2026-04-10)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-prompt-library/tree/main",
+        "excerpt": "Root: CONTRIBUTING.md (1906 B), LICENSE (1069 B), README.md (7154 B), prompts/ (dir) — flat single-directory library matching the claimed structure."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-prompt-library#readme",
+        "excerpt": "'25 battle-tested AI prompts for product managers... Each prompt tested across 50+ real PM scenarios.' Badge asserts 'prompts-25'; six category tables link numbered files prompts/01-user-story-generator.md through prompts/25-api-spec-reviewer.md."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-prompt-library/commits",
+        "excerpt": "Exactly 25 distinct prompt-add commits whose names map one-to-one onto the README's numbered table, plus real post-release maintenance in April 2026 ('Update TEMPLATE.md', 'Update README.md' via merged PR #1)."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-prompt-library#readme",
+        "excerpt": "'Tips for Writing Better Prompts' teaches eight concrete techniques (role-setting, do/don't constraints, reasoning-before-conclusion, consistent [BRACKET CAPS] placeholders) — original instructional content beyond the prompt list."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-prompt-library/tree/main",
+        "excerpt": "CONTRIBUTING.md exists and the README points contributors at prompts/TEMPLATE.md, backing a real contribution pathway."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The core claim — 25 named prompts in 6 categories — is fully corroborated by 25 matching per-prompt commits and the prompts/ directory",
+        "Post-release maintenance actually happened (PR #1 merged 2026-04-10, a month after the main push window)",
+        "The prompt-writing tips section is substantive teaching content; prompt libraries are legitimate deliverables under the fairness rules"
+      ],
+      "review_notes": "Negative signals: fabricated near-weekly author dates running into the future (Sep 2026), same-second batch commits synchronized with two sibling repos, and unverifiable marketing claims ('battle-tested', 'tested across 50+ real PM scenarios') with no test artifacts. None of these undercut the existence or coherence of the 25 prompts themselves; the misleading element is cadence and testing claims, not content."
+    },
+    "evidence_conflicts": [
+      "Commit author dates run to 2026-09-07, after both pushed_at (2026-04-10T18:46:46Z) and the audit date (2026-07-16) — re-dated history simulating weekly releases.",
+      "'Each prompt tested across 50+ real PM scenarios' has no supporting artifact anywhere in the listing or history.",
+      "Batch-synchronized housekeeping with siblings: 'Add MIT LICENSE and badges to README' 2026-03-03T22:10:27Z and 'Polish all prompts and README for professional tone' 2026-03-04T23:04:17Z land within seconds of identical commits in pm-claude-code-setup and pm-claude-skills."
+    ]
+  },
+  "notes": "A 25-prompt PM library whose inventory claim is fully backed (25 matching per-prompt commits, numbered files in a prompts/ directory) and which received real post-release maintenance via a merged Claude-branch PR in April. The commit cadence is fabricated — weekly author dates running to Sep 2026 on a repo last pushed in April — matching the simulation pattern of its two sibling repos, and the 'tested across 50+ scenarios' claim has no artifact support. As curation/prompt content it is legitimate and usable; the integrity issues are timestamps and testing claims."
+}

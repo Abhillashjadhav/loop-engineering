@@ -1,0 +1,78 @@
+{
+  "login": "aakashg",
+  "repo": "pm-claude-code-setup",
+  "signals": {
+    "readme_claims_total": 9,
+    "readme_claims_code_backed": 6,
+    "original_logic_notes": 3,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 45,
+    "boilerplate_share_pct": 25,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 2,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "Round-timestamp author dates (e.g. 'Add quickstart guide' 2026-08-03T16:14:00Z, 'Add OKR template' 2026-07-18T18:59:00Z) postdate the repo's last push (2026-03-04) and even the audit date, indicating re-dated/scripted commit metadata; counter-evidence: the 2026-03-04 block shows nine same-day iterative rewrites with substantive rationale ('Remove PRD section from CLAUDE.md — belongs in prd-writer skill').",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/aakashg/pm-claude-code-setup",
+        "excerpt": "page-1.json: created 2026-02-27T00:06:23Z, pushed 2026-03-04T23:12:39Z, 144 stars, 40 forks, MIT license, no primary language (markdown content repo)."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-claude-code-setup/commits",
+        "excerpt": "23 commits incl. 'Rebuild CLAUDE.md with pro patterns from power-user research' (2026-03-04), 'Add competitive analysis skill', 'Add metrics definer skill', 'Add launch checklist skill' — six skill-add commits and four template-add commits match the README's '6 PM skills, and 4 templates' claim."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-claude-code-setup/tree/main",
+        "excerpt": "Root: .claude/ (dir), CLAUDE.md (3025 B), LICENSE (1069 B), QUICKSTART.md (1578 B), README.md (9732 B), templates/ (dir) — CLAUDE.md, skills dir, templates dir and quickstart all present as claimed."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-claude-code-setup#readme",
+        "excerpt": "'Includes a CLAUDE.md context file, 6 PM skills, and 4 templates. Takes 60 seconds to set up.' Plus an upsell: 'The full PM Operating System goes further: 41+ skills... refined over 100+ iterations.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/aakashg/pm-claude-code-setup/commits",
+        "excerpt": "Genuine iterative editing on 2026-03-04: 'Slim down CLAUDE.md to pure config, move how-to content to README', 'Replace PRD-centric output standards with behavioral rules' — real curation decisions, not a single dump."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/aakashg/pm-claude-code-setup#readme",
+        "excerpt": "Troubleshooting section gives specific, accurate operational guidance ('Skills must be at .claude/skills/<skill-name>/SKILL.md (exact casing matters)', hook exit codes 0/2) showing hands-on tool knowledge."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/aakashg/pm-claude-code-setup/tree/main",
+        "excerpt": "Everything the free README promises is physically present in the listing (CLAUDE.md, QUICKSTART.md, templates/, .claude/); the deliverable for a config/toolkit repo is the docs themselves."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Substantive same-day iteration on 2026-03-04 with reasoned commit messages, plus 40 forks / 144 stars of real usage signal",
+        "All shipped artifacts (CLAUDE.md, 6 skills, 4 templates, quickstart) are corroborated by root listing and per-item commits",
+        "Troubleshooting and sub-agent-chaining sections contain accurate practitioner detail beyond generic template text"
+      ],
+      "review_notes": "The main negative is fabricated commit cadence (author dates through Aug 2026 on a repo last pushed 2026-03-04) shared with two sibling repos, plus a persistent paid-newsletter funnel. The content itself is a coherent, complete, PM-adapted Claude Code starter; the re-dating misleads about maintenance cadence, not about what the repo contains."
+    },
+    "evidence_conflicts": [
+      "Commit author dates run to 2026-08-03, after both the repo's pushed_at (2026-03-04T23:12:39Z) and the audit date (2026-07-16) — history has been re-dated to simulate an ongoing release cadence.",
+      "Batch-synchronized commits across sibling repos: 'Add MIT LICENSE and badges to README' at 22:10:25 and 'Reframe free vs paid messaging' at 00:25:52 land within seconds of identical messages in pm-claude-skills and pm-prompt-library."
+    ]
+  },
+  "notes": "A complete, reproducible Claude Code starter kit for PMs whose claimed artifacts (CLAUDE.md, 6 skills, 4 templates, quickstart) are all corroborated by the root listing and per-item commits. Its main integrity issue is metadata, not content: author dates are fabricated out to Aug 2026 (past pushed_at and the audit date) to simulate steady cadence, in lockstep with two sibling repos. Marketing funnel to a paid 'PM OS' is persistent but the free deliverable is genuinely functional."
+}

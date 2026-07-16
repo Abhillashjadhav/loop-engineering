@@ -1,0 +1,56 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "gpt3-text-generation",
+  "signals": {
+    "readme_claims_total": 6,
+    "readme_claims_code_backed": 5,
+    "original_logic_notes": 1,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 50,
+    "boilerplate_share_pct": 40,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No AI-generation markers (2022, pre-agent tooling); conventional feat/chore commit style over three distinct days with a test-case update ('chore: updated the test cases') indicates a hand-built Jina Hub executor workflow.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3-text-generation",
+        "excerpt": "Metadata: Jupyter Notebook, 10 stars, 0 forks, 7 commits by 1 contributor over 3 distinct days (created 2022-06-20, pushed 2022-07-09), CI true, tests true (1 test file), deps declared, 1 release, runnable setup documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/gpt3-text-generation/commits",
+        "excerpt": "2022-06-20 'initial commit', 'chore: updated the executor name', 'chore: updated the test cases'; 2022-06-28 'feat: added the colab notebook'; 2022-07-09 'chore: updated README'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/gpt3-text-generation/tree/main",
+        "excerpt": "Root entries: .github/, Jina_GPT3.ipynb, README.md, config.yml, executor.py (1205 bytes), manifest.yml, requirements.txt, tests/ — the standard Jina Hub executor package layout with tests."
+      },
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/Shubhamsaboo/gpt3-text-generation/.github/workflows",
+        "excerpt": "workflows-listing.json shows ci.yml (122 bytes) and cd.yml (378 bytes) — CI and CD pipelines exist for the executor."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/gpt3-text-generation#readme",
+        "excerpt": "'You need access to the OpenAI API Key to use this Executor ... you can pass it as uses_with: {'api_key': 'value'}' with three usage modes ('jinahub+sandbox://', 'jinahub+docker://', 'jinahub://') and a worked ad-copy example."
+      }
+    ],
+    "evidence_conflicts": []
+  },
+  "notes": "A small, well-packaged Jina Hub executor wrapping the GPT-3 API: root listing shows the full executor scaffold (executor.py, config.yml, manifest.yml, tests/, requirements.txt), CI/CD workflows exist, and the README's usage snippets, key-handling guidance, and Colab notebook link are all corroborated by files or commits. Structure follows the standard Jina executor template, so structural similarity is moderate by design; the original contribution is modest (packaging plus a notebook) but honestly scoped. One of the few repos in this portfolio with tests and CI."
+}

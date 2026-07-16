@@ -1,0 +1,79 @@
+{
+ "login": "aakashg",
+ "repo": "awesome-ai-pm",
+ "signals": {
+  "readme_claims_total": 15,
+  "readme_claims_code_backed": 14,
+  "original_logic_notes": 5,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 35,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": false,
+  "runnable_learning": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "One commit carries a Claude Opus 4.6 co-author trailer; 14 'Add ... section' commits have artificial round-:00-second author dates (2026-03-05..2026-09-04), most post-dating the last real push (2026-03-03) and several post-dating the audit date \u2014 a scripted/backfilled history marker; counter-evidence: the content itself shows consistent domain-specific PM judgment and an authorial voice matching the owner's other repos.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/aakashg/awesome-ai-pm",
+    "excerpt": "page-1.json: created 2026-02-27T00:40:03Z, pushed 2026-03-03T22:22:16Z, 16 stars, 7 forks, MIT license, size 19."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/awesome-ai-pm/commits",
+    "excerpt": "'Add comprehensive AI PM guide' (2026-02-27T00:44:57Z, realistic seconds) then 14 section-add commits all with :00 seconds, e.g. 'Add build vs buy section' dated 2026-09-04T23:25:00Z \u2014 after both the repo's pushed_at (2026-03-03) and the audit date (2026-07-16)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/awesome-ai-pm/tree/main",
+    "excerpt": "Root: CONTRIBUTING.md (1064 B), LICENSE (1069 B), README.md (36280 B) \u2014 the 36 KB README is the deliverable."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/awesome-ai-pm#readme",
+    "excerpt": "'A curated guide to AI product management.' All 13 TOC sections are present, plus appended sections (Glossary, Case Studies, Build vs Buy) containing original tables such as the AI Product Maturity Model (Manual->Adaptive)."
+   }
+  ],
+  "evidence_conflicts": [
+   "Commit author dates (14 commits, 2026-03-05..2026-09-04, all with :00 seconds) contradict page-1.json pushed_at 2026-03-03T22:22:16Z and the audit date 2026-07-16 \u2014 the appearance of months of steady curation ('days: 16' in the portfolio survey) is manufactured; the entire content was actually pushed by 2026-03-03.",
+   "README 'Weekly Reading List ... Updated regularly' conflicts with no pushes since 2026-03-03 (over 4 months before the audit date).",
+   "README structure: the 'Built and maintained by' footer sits mid-file (line ~424) with 10+ sections appended after it, consistent with automated section appends rather than edited placement.",
+   "Cross-repo: this README's Templates table says pm-prompt-library has '5 battle-tested prompts' while the profile README says '25 battle-tested AI prompts' for the same repo."
+  ],
+  "counter_evidence": [
+   {
+    "origin": "readme",
+    "url": "https://github.com/aakashg/awesome-ai-pm#readme",
+    "excerpt": "Original frameworks with real substance: AI pricing models table with per-model risk column ('Power users crush margins'), the AI Feature Decision Tree, interview-mix percentages 'based on 100+ AI PM interviews', and a Build-vs-Buy matrix."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/aakashg/awesome-ai-pm/tree/main",
+    "excerpt": "CONTRIBUTING.md and MIT LICENSE present \u2014 maintained-project scaffolding, and the 36 KB README is far beyond a stub list."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/aakashg/awesome-ai-pm/commits",
+    "excerpt": "The initial commit 'Add comprehensive AI PM guide' (2026-02-27T00:44:57Z) and 'Add LICENSE, CONTRIBUTING.md, and badges' (2026-03-03, Claude co-author disclosed) carry genuine timestamps \u2014 the underlying content itself is real even if its cadence is not."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Content quality is genuine: multiple original PM frameworks (maturity model, decision tree, pricing-risk table) that go beyond generic awesome-list boilerplate",
+    "All 13 promised TOC sections are actually delivered in the file",
+    "Curation with commentary is a legitimate deliverable under the fairness rules and is not slop"
+   ],
+   "review_notes": "The negative finding is narrowly about the fabricated commit-date cadence, not about the content. The guide is substantive, original, and coherently authored; the misrepresentation is confined to git metadata simulating months of ongoing maintenance that did not occur."
+  }
+ },
+ "notes": "Substantial 36 KB curated AI-PM guide with genuinely original frameworks (pricing risk table, maturity model, decision tree), heavily cross-linked to the author's own newsletter. The serious red flag is metadata, not content: 14 of 16 commits carry artificial round-second author dates running to 2026-09-04 \u2014 after the repo's last actual push (2026-03-03) and after the audit date \u2014 manufacturing an appearance of months of steady curation. Content claims are otherwise well backed by the README itself."
+}

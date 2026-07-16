@@ -1,0 +1,75 @@
+{
+  "login": "Shubhamsaboo",
+  "repo": "ai-linkedin-post-scanner",
+  "signals": {
+    "readme_claims_total": 2,
+    "readme_claims_code_backed": 1,
+    "original_logic_notes": 0,
+    "meaningful_adaptation": false,
+    "template_similarity_pct": 80,
+    "boilerplate_share_pct": 70,
+    "explanation_quality": 1,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": false,
+    "setup_reproducible": false,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 2,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 0,
+    "ai_share_evidence": "No AI-generation markers: 2022 repo (pre-agent tooling), commits are manual web-UI edits ('Add files via upload', 'Update app.py'); README is human blog-teaser prose tied to a published Towards AI article.",
+    "evidence": [
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner",
+        "excerpt": "Metadata: Python, 9 stars, 5 forks, 5 commits by 1 contributor over 2 distinct days (created 2022-10-15, pushed 2022-10-17), no CI, no tests, deps declared, runnable setup not documented."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/commits",
+        "excerpt": "2022-10-15 'Initial commit', 'Add files via upload', 'Update README.md'; 2022-10-17 'Update README.md', 'Update app.py' — a two-day drop with no later maintenance."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/tree/main",
+        "excerpt": "Root entries: README.md, app.py (4143 bytes), cover.png, requirements.txt — a single-script repo with no install or usage docs."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner#readme",
+        "excerpt": "'Scan LinkedIn posts to analyze Emotions, Sentiments, and Trends using AI ... with just a few lines of Python code' ... 'Read the full article here!' (towardsai.net link); no setup or usage instructions in the README itself."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/tree/main",
+        "excerpt": "app.py is a real 4.1KB code artifact plus requirements.txt — the promised analysis code exists in the repo, not just in the article."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner#readme",
+        "excerpt": "The repo is explicitly a companion to a published tutorial article ('Read the full article here!'), so the how-to content deliberately lives in the article rather than the README."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/commits",
+        "excerpt": "'Update app.py' two days after upload shows a follow-up code fix rather than a pure fire-and-forget dump."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The deliverable (app.py + requirements.txt) actually exists and matches the article-companion purpose.",
+        "Blog-companion repos are simple content by design; under the fairness rules tutorials and simple content are not slop.",
+        "A code follow-up edit exists after the initial upload."
+      ],
+      "review_notes": "The heavy template similarity is with the owner's other article-companion repos, which is normal for a tutorial series. The main genuine weakness is that the README makes capability claims (emotions/sentiments/trends analysis) that can only be partially verified from the listing since neither README nor snapshot shows app.py content or setup steps."
+    },
+    "evidence_conflicts": []
+  },
+  "notes": "Two-day blog-companion repo for a Towards AI article: teaser prose, cover image, and a link out, with a real 4.1KB app.py and requirements.txt but no setup instructions in the README. README structure is near-identical to sibling article repos customer-center-analytics-nlp (and similar to zero-shot-image-classifier), indicating a reused personal article-repo template. Simple tutorial content, not slop, but the specific analysis claims are only structurally corroborated."
+}
