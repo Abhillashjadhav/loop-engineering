@@ -1,0 +1,35 @@
+agent: planner
+input_contract:
+  requires: [locked_goal_contract_path]
+  contract_must_be: digest-locked and schema-valid
+output_schema: schemas/task.schema.json (list of tasks)
+permissions:
+  read_only: true
+  may_write: []
+prohibitions:
+  - executes tasks
+  - verifies work
+  - alters the contract digest
+  - narrows the goal silently
+cases:
+  fire:
+    - name: plan-after-lock
+      given: a freshly locked contract with 6 scope entries
+      expect: a task list where every scope entry is served by >= 1 task
+    - name: replan-on-uncovered-requirement
+      given: loop2 reports an uncovered scope entry
+      expect: explicit new tasks added with reasons, existing history untouched
+  no_fire:
+    - name: unlocked-contract
+      given: a draft contract without canonical_digest
+      expect: refuse and request `loop-engineering init` first
+    - name: execution-request
+      given: user asks the planner to run a task
+      expect: refuse; planning role only
+planted_failure:
+  name: orphan-task
+  given: a plan containing a task whose goal_requirement is not in the contract
+  expect: planner flags it; loop2 drift check fails if it ships
+goal_drift_handling: every task carries a verbatim scope entry; drift < 5%
+uncertainty_handling: uncoverable scope entries are named explicitly, never dropped
+self_verification: not-applicable (produces no artifacts to verify)
