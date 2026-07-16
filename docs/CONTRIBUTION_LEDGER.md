@@ -172,3 +172,30 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   aggregation test per finding; regex phrasing gaps recorded as
   defense-in-depth nits).
 - **Merge:** squash `65967e5`.
+
+## PR 12/12 — Synthetic demonstration, live-audit blocker report, release docs (PR #13)
+
+- **Outcome:** audit runner (per-subject task graphs, evidence-backed claims,
+  six analysis variants, repair hooks), the loop-engineering CLI, example
+  contracts/subjects, the live-audit blocking report (exact missing evidence,
+  three unblock paths, zero invented conclusions), release documentation,
+  unconditional CI smoke of the full synthetic demonstration.
+- **Tests:** pytest 123 passed / 1 deselected (full synthetic E2E with per-
+  stage Loop 2 and preserved six-run disagreement; interrupted-run resume
+  without skipping; identity-ambiguity blocking; full CLI smoke); ruff clean;
+  mypy strict clean (38 files); build OK; CLI demo Gate A COMPLETE,
+  Gate B 100/100 GOAL_MATCH; CI green.
+- **Independent review:** APPROVE — reviewer independently reproduced the
+  demo, interrupt→resume, read-only `verify`, the loud `--live` failure, the
+  honesty greps (no finding attached to either named subject anywhere), and
+  the convergence claim (src/ differs from the verified backup only by the
+  four review-driven improvements).
+- **Merge:** squash `978a9a4`.
+
+---
+
+Series complete: 12/12 merged. The only src/ divergences from the superseded
+monolithic implementation are review-driven improvements (Loop-3 README-
+threshold false-supported fix; identity empty-placeholder hardening; two
+docstring clarifications), each with regression tests — evidence that the
+atomic-PR review process caught real defects the monolith carried.
