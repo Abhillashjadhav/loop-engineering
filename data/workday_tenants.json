@@ -1,0 +1,17 @@
+{
+  "_comment": "Workday tenant registry for agent/sources/workday.py. Each entry is one Workday-hosted career site. The public CXS jobs API lives at https://{host}/wday/cxs/{tenant}/{site}/jobs (POST, no auth, free). Coverage = how many employers are listed here, so the discovery probe appends new entries over time. 'verified' flips to true once a production run (or `python agent/sources/workday.py --verify`) confirms the triple returns jobs; unverified entries are still attempted (per-tenant failures are non-fatal) but flagged in logs. site slugs vary per tenant ('External', 'External_Career_Site', '{Company}Careers', ...) and MUST be confirmed against the live endpoint.",
+  "tenants": [
+    {"display": "Boeing",     "host": "boeing.wd1.myworkdayjobs.com",     "tenant": "boeing",     "site": "EXTERNAL_CAREERS",          "verified": false},
+    {"display": "NVIDIA",     "host": "nvidia.wd5.myworkdayjobs.com",     "tenant": "nvidia",     "site": "NVIDIAExternalCareerSite",  "verified": false},
+    {"display": "Salesforce", "host": "salesforce.wd12.myworkdayjobs.com","tenant": "salesforce", "site": "External_Career_Site",      "verified": false},
+    {"display": "Adobe",      "host": "adobe.wd5.myworkdayjobs.com",      "tenant": "adobe",      "site": "external_experienced",      "verified": false},
+    {"display": "Cisco",      "host": "cisco.wd5.myworkdayjobs.com",      "tenant": "cisco",      "site": "External",                  "verified": false},
+    {"display": "Dell",       "host": "dell.wd1.myworkdayjobs.com",       "tenant": "dell",       "site": "External",                  "verified": false},
+    {"display": "PayPal",     "host": "paypal.wd1.myworkdayjobs.com",     "tenant": "paypal",     "site": "jobs",                      "verified": false},
+    {"display": "VMware",     "host": "vmware.wd1.myworkdayjobs.com",     "tenant": "vmware",     "site": "VMware_Careers",            "verified": false},
+    {"display": "Intuit",     "host": "intuit.wd1.myworkdayjobs.com",     "tenant": "intuit",     "site": "usen",                      "verified": false},
+    {"display": "Workday",    "host": "workday.wd5.myworkdayjobs.com",    "tenant": "workday",    "site": "Workday",                   "verified": false},
+    {"display": "Thomson Reuters", "host": "thomsonreuters.wd3.myworkdayjobs.com", "tenant": "thomsonreuters", "site": "External", "verified": false},
+    {"display": "Visa",       "host": "visa.wd1.myworkdayjobs.com",       "tenant": "visa",       "site": "Jobs",                      "verified": false}
+  ]
+}

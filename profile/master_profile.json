@@ -1,0 +1,528 @@
+{
+  "_comment": "Single source of truth for Abhillash's career data, sourced verbatim from his canonical resume (Abhillash_Jadhav_Resume_GenAI_Strategic_Leader.pdf, April 2026). Do not edit content here without verifying against canonical.",
+  "personal": {
+    "name": "Abhillash Jadhav",
+    "phone_primary": "+91-77100-29160",
+    "email": "abhilashjadhav@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/abhillashjadhav",
+    "github": "https://github.com/Abhillashjadhav",
+    "location": "Bengaluru, India"
+  },
+  "headline": "B.E. | M.Tech | MBA (Marketing, JBIMS) | 15+ yrs total experience | 11+ yrs Product Management",
+  "executive_summary": "Strategic product leader with 15+ years across consumer technology, enterprise platforms, and AI-native systems. Currently leading Wayfair's enterprise GenAI platform — a cross-cutting AI capability layer spanning engineering velocity, supplier catalog intelligence, and consumer search — deployed across 2,800+ engineers and 15,000+ employees in 8 countries, delivering $300M business impact and $15M engineering cost reduction. Prior Director PM run at Cimpress (CTL) on a personalisation platform generating $3.2B GMV across 13 subsidiary brands. Four years at Amazon shipping the industry-first AI/ML recommendation engine ($1.2B annualised) and Customer Data Platform across 800M+ customers, 10M+ sellers, and 20+ international marketplaces. Track record spans Search & Discovery, Personalisation, Recommendations, Subscriptions, B2B Marketplaces, and Payments. Cross-functional team leader (teams of 10–21 across PM Managers, UX, Data Science, Engineering); operates fluently across product strategy, technical architecture (LangChain/LangGraph, RAG, multi-LLM orchestration, microservices), and C-suite engagement.",
+  "experience_years_total": 15,
+  "experience_years_pm_at_scale": 11,
+  "education": [
+    {
+      "degree": "MBA",
+      "specialization": "Marketing",
+      "institution": "JBIMS"
+    },
+    {
+      "degree": "M.Tech",
+      "specialization": null,
+      "institution": null
+    },
+    {
+      "degree": "B.E.",
+      "specialization": null,
+      "institution": null
+    }
+  ],
+  "experience": [
+    {
+      "company": "Wayfair",
+      "title": "Senior Manager, GenAI Product Management",
+      "start": "Oct 2024",
+      "end": "Present",
+      "location": "Bengaluru, India",
+      "scope": "Enterprise GenAI platform — cross-cutting AI capability layer spanning engineering velocity (agentic coding, RAG, Model Proxy), supplier catalog intelligence (Catalog Autofill), and consumer search (in roadmap)",
+      "achievements": [
+        "Led Wayfair's enterprise GenAI platform — a cross-cutting AI capability layer spanning engineering velocity, supplier catalog intelligence, and consumer search — deployed across 2,800+ engineers and 15,000+ employees in 8 countries, delivering $300M business impact and $15M engineering cost reduction (developer velocity +15%, release speed +25%, service availability 98%).",
+        "Shipped the engineering velocity module — agentic coding assistants, RAG-powered PR evaluation, and the Model Proxy governance layer unifying multi-LLM backends (Copilot/Cursor) with eval frameworks (confidence thresholds, safety guardrails, drift monitoring, HITL fallbacks) — cutting PR review time 40% and eliminating 50+ hours/week/team.",
+        "Currently shipping Catalog Autofill — a GenAI product auto-generating supplier catalog attributes from unstructured data, extending the platform to the supplier surface; roadmap: Customer Search (Rufus-equivalent for Wayfair's 40M+ SKU catalog), bringing the AI capability layer directly to the consumer.",
+        "Secured $2M AI/ML investment and multi-year partnerships with Google, Microsoft, and Cursor via C-suite strategy rhythm; Advisory Committee (8 VPs), Champions Group (20+), 500-adopter beta triaging 200+ feedback items — lifting satisfaction +400 bps, beating Q1/Q2 MAU targets by 140% and 250%; mentor 2 PMs."
+      ],
+      "keywords": [
+        "GenAI",
+        "AI Platform",
+        "LangChain",
+        "LangGraph",
+        "RAG",
+        "Model Proxy",
+        "Agentic",
+        "Cursor",
+        "Developer Productivity",
+        "Eval Framework",
+        "DORA"
+      ]
+    },
+    {
+      "company": "RADAR by AIMleap",
+      "title": "Product Advisor (Pro Bono)",
+      "start": "Dec 2025",
+      "end": "Present",
+      "location": "Remote",
+      "scope": "Sole PM advisor on a zero-to-one LLM-first GenAI supply-chain risk platform for mid-market aerospace & defense manufacturers",
+      "achievements": [
+        "Sole product advisor on a zero-to-one LLM-first GenAI supply-chain risk platform for mid-market aerospace & defense manufacturers; ~40 hrs/month engagement concurrent with Wayfair role.",
+        "Defined a 121-day, 4-sprint plan to May 2026 launch; ICP and go-to-market for mid-market aerospace & defense manufacturers."
+      ],
+      "keywords": [
+        "Zero-to-one",
+        "GenAI",
+        "Vertical AI",
+        "Aerospace & Defense",
+        "B2B SaaS",
+        "Advisory"
+      ]
+    },
+    {
+      "company": "CTL",
+      "title": "Director, Product Management",
+      "start": "Jun 2023",
+      "end": "Mar 2024",
+      "location": "Bengaluru, India",
+      "scope": "Personalization Platform across 13 Cimpress subsidiary brands; team of 21",
+      "achievements": [
+        "Led the Personalization Platform generating $3.2B annual GMV across US/EU/NA — ownership of personalisation engines, recommendation systems, and product discovery across 13 subsidiary brands; managed a cross-functional team of 21 (PM Managers, UX Leads, Data Leads) with 4 hires, 2 internal promotions, and 95% engagement.",
+        "Defined a 3-year platform vision and AI/ML-powered data strategy in partnership with Engineering, Data Science, Marketing, Sales, and Operations; led consolidation of 4 subsidiary brands (BuildASign, WMD, NationalPens, Pixartprinting) onto the unified multi-tenant platform in 7 months; conducted research with 30+ enterprise customers and presented quarterly to C-suite. Role impacted by organisational restructuring."
+      ],
+      "keywords": [
+        "Director PM",
+        "Personalization",
+        "Recommendations",
+        "Multi-tenant Platform",
+        "M&A Integration",
+        "13 Brands"
+      ]
+    },
+    {
+      "company": "Amazon",
+      "title": "Product Head (Senior PM)",
+      "start": "May 2019",
+      "end": "May 2023",
+      "location": "Bengaluru, India",
+      "scope": "Promotions Platform and Customer Data Platform for Amazon Global; 20+ marketplaces; 800M+ customers; 10M+ sellers; $4B GMV",
+      "achievements": [
+        "Led Promotions Platform and Customer Data Platform (CDP) for Amazon Global — 20+ international marketplaces, 800M+ customers, 10M+ sellers, $4B annual GMV — across 20+ partner teams in NA, EU, EMEA, APAC; grew PM org from 3 to 6 with 2 Senior PM promotions.",
+        "Shipped the industry-first AI/ML recommendation engine serving 800M+ consumers — combining collaborative filtering, content-based filtering, and matrix factorisation — driving 40% business growth ($1.2B annualised); built customer segmentation and lifecycle targeting using RFM and AARRR frameworks, powering personalised experiences based on shopping behaviour and lifecycle stage.",
+        "Architected the unified microservices platform on AWS EC2/ECS with RESTful APIs handling 10M+ daily transactions; integrated subsidiary brands (AbeBooks, Goodreads) onto the unified CDP without disruption; improved engagement +29% (128 → 183 promotions/customer/year), content findability +40%, and seller NPS +400 bps via a UX redesign reducing task-completion time 40% — driving cross-org adoption across 20+ independent global teams without formal authority."
+      ],
+      "keywords": [
+        "AI/ML Recommendations",
+        "Customer Data Platform",
+        "RFM",
+        "AARRR",
+        "Microservices",
+        "AWS",
+        "Global Marketplace",
+        "Cross-functional Leadership"
+      ]
+    },
+    {
+      "company": "PayTM",
+      "title": "AVP",
+      "start": "Sep 2018",
+      "end": "May 2019",
+      "location": "Noida, India",
+      "scope": "Founding product leader and PM at PayTM's B2B Retail Commerce platform — 0-to-1 Fintech launch; team of 16",
+      "achievements": [
+        "Founding PM leader for PayTM's B2B Payments marketplace (0-to-1 Fintech launch) with a cross-functional team of 16 (PM Managers, UX, Product Operations); owned end-to-end product for Search, Discovery, Catalog, analytics, order management, and promotions — defining vision, strategy, roadmap, and pricing for launch and scale.",
+        "Launched 3 zero-to-one products (lending, analytics, insights dashboard) achieving 40% adoption in 3 months; revamped seller analytics platform and partner-facing UI to surface business insights driving partner ecosystem growth."
+      ],
+      "keywords": [
+        "Founding PM",
+        "Fintech",
+        "B2B Marketplace",
+        "Zero-to-one",
+        "Recurring Revenue",
+        "Lending"
+      ],
+      "metrics": [
+        "Rs 25 Cr",
+        "+Rs 25 Cr/annum"
+      ],
+      "payments_source_note": "Payments-role figures integrated from candidate's payments-focused resume (2026-06): B2B Payment Product team of 16; launched lending/bulk-buying/dynamic-catalog with 30% adoption, +Rs 25 Cr/annum incremental GMS, conversion +15%, acquisition +20%."
+    },
+    {
+      "company": "IndiaMart",
+      "title": "Vice President",
+      "start": "Jun 2017",
+      "end": "Sep 2018",
+      "location": "Noida, India",
+      "scope": "Big Brands subscriptions platform; recurring-revenue 0-to-1 monetisation; team of 10",
+      "achievements": [
+        "Owned IndiaMart's Big Brands subscriptions platform (recurring-revenue, 0-to-1 monetisation model) with a cross-functional team of 10 (PM Managers, PMs, UX); owned pricing, packaging, renewal workflows, upsell/cross-sell motion, and customer lifecycle KPIs (retention, ARPU, CSAT, LTV) — delivering Rs. 30 Cr annualised recurring revenue, +87% gross margin, and 1,200 bps GM improvement.",
+        "Grew strategic subscriptions +30% by launching the EasyPay bill-discounting integration for existing subscribers (upsell/cross-sell win) and scaling seller billing, renewal, and engagement analytics across the member lifecycle."
+      ],
+      "keywords": [
+        "VP Product",
+        "Subscriptions",
+        "Recurring Revenue",
+        "B2B SaaS",
+        "Pricing",
+        "ARPU",
+        "LTV"
+      ]
+    },
+    {
+      "company": "LeEco",
+      "title": "Senior Manager",
+      "start": "Jul 2016",
+      "end": "May 2017",
+      "location": "Bengaluru, India",
+      "scope": "Digital and social product roadmap across LeEco smart device portfolio",
+      "achievements": [
+        "Owned the digital and social product roadmap across LeEco's smart device portfolio (Smart TV, mobile, accessories); captured 40% online market share in the >55-inch Smart TV segment for LeTV and drove mobile device share growth via digital product and GTM interventions across e-commerce channels."
+      ],
+      "keywords": [
+        "D2C",
+        "Digital Marketing",
+        "Smart Devices",
+        "Market Share"
+      ]
+    },
+    {
+      "company": "Flipkart",
+      "title": "Senior Manager",
+      "start": "Jun 2014",
+      "end": "Jun 2016",
+      "location": "Bengaluru, India",
+      "scope": "Seller activation, onboarding, and data intake ecosystem; team of 12; Rs. 2,000 Cr annualised GMS",
+      "achievements": [
+        "Led the seller activation, onboarding, and data intake ecosystem with a team of 12, owning product and business roadmap across high-GMS categories (Rs. 2,000 Cr annualised) — catalog import, listing validation, and first-productive-sale workflows.",
+        "Improved seller acquisition workflow efficiency +33% and seller NPS +200 bps; launched Regional Selection Discovery for Consumer Electronics (+80 bps CM YOY) and Selection Insights in the seller dashboard that sellers adopted to scale GMS."
+      ],
+      "keywords": [
+        "Marketplace",
+        "Seller Tools",
+        "Onboarding",
+        "Catalog",
+        "Discovery"
+      ]
+    },
+    {
+      "company": "Marico Industries",
+      "title": "Area Sales Manager",
+      "start": "Jan 2013",
+      "end": "Jun 2014",
+      "location": "India",
+      "scope": "FMCG sales territory; Rs. 78 Cr/annum; team of 7",
+      "achievements": [
+        "Managed a territory of Rs. 78 Cr/annum across hair care, personal care, and food categories with a team of 7 (TSE/TSOs); achieved 24% YOY growth through tailored promotions and range selling — awarded 'Best Team Performance 2013–14'."
+      ],
+      "keywords": [
+        "FMCG",
+        "Sales Management",
+        "Team Leadership"
+      ]
+    },
+    {
+      "company": "AgroTech Foods Ltd",
+      "title": "Area Sales Manager",
+      "start": "Jun 2011",
+      "end": "Nov 2012",
+      "location": "India",
+      "scope": "FMCG sales territory; Rs. 15 Cr/annum; team of 8",
+      "achievements": [
+        "Managed a territory of Rs. 15 Cr/annum across edible oil and food categories with a team of 8 (TSE/TSOs); achieved 18% YOY volume growth — highest in the Edible category across channels and areas."
+      ],
+      "keywords": [
+        "FMCG",
+        "Sales Management"
+      ]
+    }
+  ],
+  "selected_projects": [
+    {
+      "name": "AI Career Counseling Agent",
+      "role": "Product Manager & Architect",
+      "date": "April 2026",
+      "description": "Designed an autonomous conversational agentic system (Claude API, ReAct architecture, LangChain/LangGraph) for 1.5M+ addressable students with a dual evaluation framework — multi-criteria LLM-as-Judge (5 rubric dimensions, hard guardrails on safety/groundedness) plus trajectory analysis — achieving 80% output pass rate and 100% trajectory efficiency; optimised the Haiku-vs-Sonnet cost-quality tradeoff for 92% margin over a 7% quality delta, reducing exploration time 99.6% (45 min → 10 sec) and cost 96.7% vs traditional counseling.",
+      "keywords": [
+        "Claude API",
+        "ReAct",
+        "LangChain",
+        "LangGraph",
+        "LLM-as-Judge",
+        "Eval Framework",
+        "Agentic"
+      ]
+    },
+    {
+      "name": "RAG Eval Harness",
+      "role": "Product Manager & Architect",
+      "date": "May 2026",
+      "description": "Production-grade eval pipeline for RAG Q&A systems — LLM-as-judge scoring groundedness, relevance, completeness, and refusal calibration across 500-trace baselines; ships a diagnostic failure-mode report, not just scores. Built eval-first: no retrieval shipped without a passing eval suite.",
+      "keywords": [
+        "RAG",
+        "LLM-as-judge",
+        "Eval Framework",
+        "Groundedness",
+        "Python"
+      ]
+    },
+    {
+      "name": "Indian Stocks Deep-Dive & Trading Agents",
+      "role": "Product Manager & Architect",
+      "date": "June 2026",
+      "description": "Multi-agent agentic system that deep-dives Indian equity markets — fundamental analysis, technical screening, and autonomous trading strategy execution; identifies high-conviction winners using pattern recognition across NIFTY 500 universe.",
+      "keywords": [
+        "Multi-agent",
+        "Agentic AI",
+        "Fintech",
+        "Trading Strategy",
+        "Python"
+      ]
+    }
+  ],
+  "core_skills": {
+    "genai_and_ai_platform": "LangChain, LangGraph, RAG, multi-LLM orchestration, Model Proxy governance, agentic workflows, subagent delegation, MCP tool-integration, LLM-as-Judge evals, safety guardrails, drift monitoring, HITL fallbacks, Claude/OpenAI/Cursor integration; AI/ML recommendation engines (collaborative + content-based filtering, matrix factorisation), personalisation models, customer segmentation (RFM, AARRR), lifecycle targeting; microservices (AWS EC2/ECS, RESTful APIs), multi-tenant architecture, M&A integration, developer ecosystem and platform APIs.",
+    "product_craft_and_leadership": "0-to-1 product builds, A/B experimentation, cohort analysis, NPS, CSAT, VOC, MRD/BRD/TRD, customer research, pricing strategy, recurring-revenue SaaS, monetisation model design; cross-functional team leadership (PM Managers, UX, Data Science, Engineering, Operations — teams up to 21); C-suite and board engagement, matrixed alignment without formal authority, talent development with multiple internal promotions."
+  },
+  "canonical_facts": {
+    "wayfair": {
+      "title": "Senior Manager, GenAI Product Management",
+      "metrics": {
+        "platform_engineers": "2,800+",
+        "platform_employees": "15,000+",
+        "countries": "8",
+        "annualised_impact_usd": "$300M",
+        "eng_cost_reduction_usd": "$15M",
+        "developer_velocity_lift": "+15%",
+        "release_speed_lift": "+25%",
+        "service_availability": "98%",
+        "service_availability_gain_bps": "+400 bps",
+        "pr_review_time_cut": "40%",
+        "hours_saved_per_week_per_team": "50+",
+        "ai_ml_investment_usd": "$2M",
+        "advisory_committee_vps": "8",
+        "champions_group_size": "20+",
+        "beta_adopter_program": "500",
+        "feedback_items_triaged": "200+",
+        "satisfaction_lift_bps": "+400 bps",
+        "q1_mau_beat": "140%",
+        "q2_mau_beat": "250%",
+        "pms_mentored": "2"
+      },
+      "named_systems": [
+        "Model Proxy",
+        "agentic coding assistants",
+        "RAG-powered PR evaluation",
+        "multi-LLM orchestration"
+      ],
+      "partners": [
+        "Google",
+        "Microsoft",
+        "Cursor"
+      ]
+    },
+    "radar_by_aimleap": {
+      "title": "Product Advisor (Pro Bono)",
+      "metrics": {
+        "plan_days": "121",
+        "sprints": "4",
+        "engagement_hours_per_month": "~40"
+      },
+      "named_systems": [
+        "LLM-first GenAI supply-chain risk platform"
+      ],
+      "launch_target": "May 2026"
+    },
+    "ctl": {
+      "title": "Director, Product Management",
+      "metrics": {
+        "annual_gmv_usd": "$3.2B",
+        "subsidiary_brands": "13",
+        "team_size": "21",
+        "hires": "4",
+        "internal_promotions": "2",
+        "team_engagement": "95%",
+        "platform_vision_years": "3",
+        "brands_consolidated": "4",
+        "consolidation_months": "7",
+        "enterprise_customers_researched": "30+"
+      },
+      "named_systems": [
+        "Personalization Platform",
+        "recommendation systems",
+        "unified multi-tenant platform"
+      ]
+    },
+    "amazon": {
+      "title": "Product Head (Senior PM)",
+      "metrics": {
+        "international_marketplaces": "20+",
+        "customers": "800M+",
+        "sellers": "10M+",
+        "annual_gmv_usd": "$4B",
+        "partner_teams": "20+",
+        "pm_org_growth": "3 to 6",
+        "senior_pm_promotions": "2",
+        "recommendation_engine_revenue_usd": "$1.2B",
+        "business_growth": "40%",
+        "daily_transactions": "10M+",
+        "engagement_lift": "+29%",
+        "promotions_per_customer_before": "128",
+        "promotions_per_customer_after": "183",
+        "content_findability_lift": "+40%",
+        "seller_nps_gain_bps": "+400 bps",
+        "task_completion_time_cut": "40%"
+      },
+      "named_systems": [
+        "AI/ML recommendation engine",
+        "Customer Data Platform",
+        "RFM",
+        "AARRR",
+        "Promotions Platform"
+      ]
+    },
+    "paytm": {
+      "title": "AVP",
+      "metrics": {
+        "team_size": "16",
+        "recurring_revenue_products": "3",
+        "adoption": "40%",
+        "adoption_months": "3"
+      },
+      "named_systems": [
+        "B2B Payments marketplace",
+        "lending",
+        "analytics",
+        "insights dashboard"
+      ]
+    },
+    "indiamart": {
+      "title": "Vice President",
+      "metrics": {
+        "team_size": "10",
+        "annualised_recurring_revenue": "Rs. 30 Cr",
+        "gross_margin_improvement": "+87%",
+        "gm_improvement_bps": "1,200 bps",
+        "strategic_subscriptions_growth": "+30%"
+      },
+      "named_systems": [
+        "Big Brands subscriptions platform",
+        "EasyPay bill-discounting integration"
+      ]
+    },
+    "leeco": {
+      "title": "Senior Manager",
+      "metrics": {
+        "smart_tv_online_market_share": "40%"
+      },
+      "named_systems": [
+        "LeEco smart device portfolio"
+      ]
+    },
+    "flipkart": {
+      "title": "Senior Manager",
+      "metrics": {
+        "team_size": "12",
+        "annualised_gms": "Rs. 2,000 Cr",
+        "seller_acquisition_efficiency_lift": "+33%",
+        "seller_nps_gain_bps": "+200 bps",
+        "consumer_electronics_cm_yoy_bps": "+80 bps"
+      },
+      "named_systems": [
+        "seller activation ecosystem",
+        "Regional Selection Discovery",
+        "Selection Insights"
+      ],
+      "dates": {
+        "start": "Jun 2014",
+        "end": "Jun 2016"
+      }
+    },
+    "marico_industries": {
+      "title": "Area Sales Manager",
+      "metrics": {
+        "territory_value_per_annum": "Rs. 78 Cr",
+        "team_size": "7",
+        "yoy_growth": "24%"
+      },
+      "named_systems": []
+    },
+    "agrotech_foods_ltd": {
+      "title": "Area Sales Manager",
+      "metrics": {
+        "territory_value_per_annum": "Rs. 15 Cr",
+        "team_size": "8",
+        "yoy_volume_growth": "18%"
+      },
+      "named_systems": []
+    }
+  },
+  "_canonical_facts_comment": "Addressable leaf keys for every metric, scope number, named system, and title — the trace target for tier-1 claims. Sourced verbatim from experience[].achievements. schema.json defines required fields; tests/test_profile_integrity.py fails if any are missing.",
+  "target_search": {
+    "titles": [
+      "Director Product Manager",
+      "Principal Product Manager",
+      "Group Product Manager",
+      "Head of Product",
+      "VP Product"
+    ],
+    "focus_areas": [
+      "AI/ML",
+      "GenAI",
+      "LLM",
+      "Platform",
+      "Developer Productivity",
+      "B2B SaaS",
+      "Enterprise"
+    ],
+    "preferred_locations": [
+      "Remote",
+      "Mumbai",
+      "Bengaluru",
+      "Hyderabad"
+    ],
+    "fitment_floor_for_resume": 80,
+    "near_miss_floor_for_brief": 60,
+    "comp_floor_signal": "above senior market threshold for 12-15+ year roles",
+    "people_manager_preferred": true
+  },
+  "constraints": {
+    "do_not_include_in_resume": [
+      "MJ Internet Pvt Ltd"
+    ],
+    "intuit_cap": "Maximum 3 roles in any 12-month window",
+    "honesty_rule": "All claims must be defensible in interview against this profile (which itself is sourced from canonical resume). Strategic reframing using JD language is OK; inventing credentials, dates, or metrics is NOT.",
+    "framing_rule_pm_experience": "Use '11+ years of at-scale product management experience including enterprise SaaS platform products', NOT '11+ years driving enterprise SaaS platform products'",
+    "pre_amazon_title_rule": "For every role BEFORE Amazon (PayTM, IndiaMart, LeEco, Flipkart, Marico Industries, AgroTech Foods Ltd) use the literal title verbatim and NEVER append 'Product' or 'Product Management'. Correct titles: PayTM=AVP, IndiaMart=Vice President, LeEco=Senior Manager, Flipkart=Senior Manager, Marico Industries=Area Sales Manager, AgroTech Foods Ltd=Area Sales Manager. Amazon (May 2019) and later keep their product titles."
+  },
+  "decline_list_companies": [
+    "Amazon",
+    "AWS",
+    "Amazon Web Services",
+    "Twitch",
+    "IMDb",
+    "Whole Foods",
+    "Audible",
+    "Ring",
+    "Zappos",
+    "MGM Studios",
+    "Goodreads",
+    "Kuiper",
+    "A9",
+    "Alexa",
+    "Lab126",
+    "Cimpress",
+    "CTL",
+    "Vista",
+    "Vistaprint",
+    "Pixartprinting",
+    "Drukwerkdeal",
+    "BuildASign",
+    "Printi",
+    "WIRmachenDRUCK",
+    "Tradeprint",
+    "National Pen",
+    "NationalPens",
+    "Easyflyer",
+    "Exaprint",
+    "Druck.at",
+    "VistaCreate"
+  ]
+}

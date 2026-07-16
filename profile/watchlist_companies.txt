@@ -1,0 +1,81 @@
+# Daily watchlist — companies whose roles should be surfaced even at borderline scores.
+#
+# How it works:
+#   - One company per line. Comments start with #.
+#   - Match is case-insensitive substring on the job's company field
+#     (same rule as decline_list_companies in master_profile.json).
+#   - Matches get the 🎯 WATCHLIST tag in the daily brief — they appear at
+#     the TOP of the brief regardless of normal FIT/BUMPED/NEAR-MISS tier.
+#   - No score change. No fabrication. Just guaranteed visibility.
+#
+# Prior employers are deliberately EXCLUDED (Amazon, Wayfair, CTL, PayTM,
+# IndiaMART, Flipkart, LeEco, RADAR, Marico) — re-applying to a former
+# employer is a different decision and should be a conscious one.
+#
+# Edit freely — changes take effect on the next daily run.
+
+# Tier-1 SaaS + AI platforms
+Salesforce
+Microsoft
+Google
+Adobe
+Workday
+ServiceNow
+Atlassian
+Datadog
+Snowflake
+Databricks
+Anthropic
+OpenAI
+Stripe
+
+# Tier-1 Enterprise + AI vendors
+Mastercard
+Visa
+Goldman Sachs
+JPMorganChase
+FICO
+Experian
+MoEngage
+Harness
+GitLab
+Fractal
+Glean
+Harvey
+Perplexity
+
+# India-native unicorns + scale-ups
+Razorpay
+Cred
+Meesho
+Swiggy
+Zomato
+PhonePe
+Zerodha
+Postman
+Browserstack
+Chargebee
+Freshworks
+Zoho
+Druva
+
+# FAANG + tier-2 (added 2026-05-26 per user request — visibility for
+# priority US-HQ cos with India offices)
+Meta
+LinkedIn
+Intuit
+Apple
+Uber
+Pinterest
+MongoDB
+Airbnb
+Figma
+Atlassian
+Snowflake
+JPMorganChase
+HARVEY
+Jupiter Money
+Sarvam
+Kong
+Okta
+Zenoti

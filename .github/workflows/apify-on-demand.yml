@@ -1,0 +1,59 @@
+name: Apify on-demand bridge
+
+# Fires whenever a new request file is pushed to apify-requests/*.json.
+# The bridge script calls Apify, writes apify-results/<id>.json, and commits
+# results back to the same branch. Idempotent — re-running on the same
+# commit is a no-op for already-processed IDs.
+
+on:
+  push:
+    paths:
+      - 'apify-requests/*.json'
+      - 'scripts/apify_bridge.py'
+      - '.github/workflows/apify-on-demand.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # the job commits result files back to the branch
+
+concurrency:
+  group: apify-bridge-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # Use a token that can push back. GITHUB_TOKEN with contents:write
+          # is sufficient for owner-repo workflows.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Apify bridge
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          python scripts/apify_bridge.py
+
+      - name: Commit + push results (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apify-results/
+          if git diff --cached --quiet; then
+            echo "No new result files — nothing to commit."
+            exit 0
+          fi
+          NEW_IDS=$(git diff --cached --name-only --diff-filter=A apify-results/ | xargs -n1 basename 2>/dev/null | sed 's/\.json$//' | paste -sd, -)
+          git commit -m "apify-bridge: results for ${NEW_IDS:-<unknown>}"
+          # Push to the same branch the push event came from.
+          git push origin HEAD:${{ github.ref_name }}

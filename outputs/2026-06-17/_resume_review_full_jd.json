@@ -1,0 +1,682 @@
+[
+  {
+    "pdf": "2026-06-17_Adyen_group-product-manager-payments-head-of-product-india.pdf",
+    "company": "Adyen",
+    "title": "Group Product Manager \u2013 Payments | Head of Product, India",
+    "fit_score": 81,
+    "domain": "b2b_enterprise",
+    "ats_pct": 100,
+    "ats_matched": 5,
+    "ats_total": 5,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Autodesk_senior-technical-product-manager-search-and-ai.pdf",
+    "company": "Autodesk",
+    "title": "Senior Technical Product Manager (Search and AI)",
+    "fit_score": 82,
+    "domain": "b2b_enterprise",
+    "ats_pct": 100,
+    "ats_matched": 12,
+    "ats_total": 12,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_DigiCert_principal-product-manager-api-platform.pdf",
+    "company": "DigiCert",
+    "title": "Principal Product Manager, API Platform",
+    "fit_score": 83,
+    "domain": "developer_platform",
+    "ats_pct": 100,
+    "ats_matched": 7,
+    "ats_total": 7,
+    "jd_source": "why_fit_fallback",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [why_fit_fallback]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Eightfold_AI_sr-product-manager-ai-platform.pdf",
+    "company": "Eightfold AI",
+    "title": "Sr. Product Manager - AI Platform",
+    "fit_score": 85,
+    "domain": "agentic_ai",
+    "ats_pct": 78,
+    "ats_matched": 7,
+    "ats_total": 9,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 78% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_FICO_director-platform-product-management-infrastructure.pdf",
+    "company": "FICO",
+    "title": "Sr Manager/Director, Product Management \u2013 Platform Security & Privacy",
+    "fit_score": 85,
+    "domain": "consumer_ai",
+    "ats_pct": 71,
+    "ats_matched": 12,
+    "ats_total": 17,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 71% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_FICO_sr-manager-director-product-management-platform-security-privacy.pdf",
+    "company": "FICO",
+    "title": "Sr Manager/Director, Product Management \u2013 Platform Security & Privacy",
+    "fit_score": 85,
+    "domain": "consumer_ai",
+    "ats_pct": 71,
+    "ats_matched": 12,
+    "ats_total": 17,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 71% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Flexmoney_Technologies_Pvt_Ltd_head-of-product.pdf",
+    "company": "Flexmoney Technologies Pvt Ltd",
+    "title": "Head of Product",
+    "fit_score": 81,
+    "domain": "b2b_enterprise",
+    "ats_pct": 100,
+    "ats_matched": 3,
+    "ats_total": 3,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Google_group-product-manager-customer-experience-ads.pdf",
+    "company": "Google",
+    "title": "Group Product Manager, Customer Experience Ads",
+    "fit_score": 84,
+    "domain": "genai_platform",
+    "ats_pct": 90,
+    "ats_matched": 9,
+    "ats_total": 10,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 90% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Google_group-product-manager-google-one-growth.pdf",
+    "company": "Google",
+    "title": "Group Product Manager, Customer Experience Ads",
+    "fit_score": 84,
+    "domain": "genai_platform",
+    "ats_pct": 90,
+    "ats_matched": 9,
+    "ats_total": 10,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 90% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Google_senior-product-manager-search-platforms.pdf",
+    "company": "Google",
+    "title": "Group Product Manager, Customer Experience Ads",
+    "fit_score": 84,
+    "domain": "genai_platform",
+    "ats_pct": 90,
+    "ats_matched": 9,
+    "ats_total": 10,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 90% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_GreyOrange_principal-product-manager-greymatter-multiagent-orchestration.pdf",
+    "company": "GreyOrange",
+    "title": "Principal Product Manager - GreyMatter Multiagent Orchestration",
+    "fit_score": 82,
+    "domain": "genai_platform",
+    "ats_pct": 90,
+    "ats_matched": 18,
+    "ats_total": 20,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 90% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Harness_principal-product-manager-appsec.pdf",
+    "company": "Harness",
+    "title": "Staff / Principal Product Manager - Internal Developer Portal",
+    "fit_score": 86,
+    "domain": "developer_platform",
+    "ats_pct": 100,
+    "ats_matched": 1,
+    "ats_total": 1,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Harness_staff-principal-product-manager-internal-developer-portal.pdf",
+    "company": "Harness",
+    "title": "Staff / Principal Product Manager - Internal Developer Portal",
+    "fit_score": 86,
+    "domain": "developer_platform",
+    "ats_pct": 100,
+    "ats_matched": 1,
+    "ats_total": 1,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Harvey_group-product-manager-knowledge-platform.pdf",
+    "company": "Harvey",
+    "title": "Group Product Manager, Knowledge Platform",
+    "fit_score": 94,
+    "domain": "knowledge_ai",
+    "ats_pct": 100,
+    "ats_matched": 3,
+    "ats_total": 3,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_InMobi_Advertising_group-product-manager-monetization.pdf",
+    "company": "InMobi Advertising",
+    "title": "Group Product Manager \u2013 Monetization",
+    "fit_score": 80,
+    "domain": "consumer_ai",
+    "ats_pct": 100,
+    "ats_matched": 4,
+    "ats_total": 4,
+    "jd_source": "why_fit_fallback",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [why_fit_fallback]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Intuit_group-product-manager-project-capability.pdf",
+    "company": "Intuit",
+    "title": "Group Product Manager, Project Capability",
+    "fit_score": 82,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 3,
+    "ats_total": 3,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_JFrog_senior-technical-product-manager-platform-infra.pdf",
+    "company": "JFrog",
+    "title": "Senior Technical Product Manager (Platform Infra)",
+    "fit_score": 81,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 6,
+    "ats_total": 6,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_JLL_director-technology-product-management.pdf",
+    "company": "JLL",
+    "title": "Director, Technology Product Management",
+    "fit_score": 87,
+    "domain": "agentic_ai",
+    "ats_pct": 92,
+    "ats_matched": 11,
+    "ats_total": 12,
+    "jd_source": "why_fit_fallback",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 92% [why_fit_fallback]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_JPMorganChase_securities-services-data-platform-product-manager-executive-director.pdf",
+    "company": "JPMorganChase",
+    "title": "Securities Services Data Platform / Product Manager \u2013 Executive Director",
+    "fit_score": 85,
+    "domain": "b2b_enterprise",
+    "ats_pct": 80,
+    "ats_matched": 12,
+    "ats_total": 15,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_MSD_Merck_director-group-product-manager-data-ai-studio-capability.pdf",
+    "company": "MSD (Merck)",
+    "title": "Director \u2013 Group Product Manager, Data & AI Studio Capability",
+    "fit_score": 89,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 13,
+    "ats_total": 13,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Microsoft_AI_principal-product-manager-agentic-ai-search-bengaluru.pdf",
+    "company": "Microsoft",
+    "title": "Principal Product Manager (Microsoft Foundry \u2013 AI Platform)",
+    "fit_score": 92,
+    "domain": "genai_platform",
+    "ats_pct": 59,
+    "ats_matched": 16,
+    "ats_total": 27,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 59% (16/27) [full] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Microsoft_AI_principal-product-manager-agentic-ai-search-hyderabad-a.pdf",
+    "company": "Microsoft",
+    "title": "Principal Product Manager (Microsoft Foundry \u2013 AI Platform)",
+    "fit_score": 92,
+    "domain": "genai_platform",
+    "ats_pct": 59,
+    "ats_matched": 16,
+    "ats_total": 27,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 59% (16/27) [full] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Microsoft_AI_principal-product-manager-microsoft-ai-customer-first-a.pdf",
+    "company": "Microsoft",
+    "title": "Principal Product Manager (Microsoft Foundry \u2013 AI Platform)",
+    "fit_score": 92,
+    "domain": "genai_platform",
+    "ats_pct": 59,
+    "ats_matched": 16,
+    "ats_total": 27,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 59% (16/27) [full] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Microsoft_principal-product-manager-agentic-ai-search-hyderabad-b.pdf",
+    "company": "Microsoft",
+    "title": "Principal Product Manager (Microsoft Foundry \u2013 AI Platform)",
+    "fit_score": 92,
+    "domain": "genai_platform",
+    "ats_pct": 59,
+    "ats_matched": 16,
+    "ats_total": 27,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 59% (16/27) [full] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Microsoft_principal-product-manager-microsoft-ai-customer-first-b.pdf",
+    "company": "Microsoft",
+    "title": "Principal Product Manager (Microsoft Foundry \u2013 AI Platform)",
+    "fit_score": 92,
+    "domain": "genai_platform",
+    "ats_pct": 59,
+    "ats_matched": 16,
+    "ats_total": 27,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 59% (16/27) [full] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Microsoft_principal-product-manager-microsoft-foundry-ai-platform.pdf",
+    "company": "Microsoft",
+    "title": "Principal Product Manager (Microsoft Foundry \u2013 AI Platform)",
+    "fit_score": 92,
+    "domain": "genai_platform",
+    "ats_pct": 59,
+    "ats_matched": 16,
+    "ats_total": 27,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 59% (16/27) [full] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_MoEngage_Inc_principal-product-manager-recommendations-ai.pdf",
+    "company": "MoEngage Inc",
+    "title": "Principal Product Manager \u2013 Recommendations & AI",
+    "fit_score": 87,
+    "domain": "genai_platform",
+    "ats_pct": 57,
+    "ats_matched": 4,
+    "ats_total": 7,
+    "jd_source": "excerpt_only",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "WARN",
+    "notes": [
+      "ATS keyword coverage moderate: 57% (4/7) [excerpt_only] \u2014 target 70%+"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_MongoDB_senior-product-manager.pdf",
+    "company": "MongoDB",
+    "title": "Senior Product Manager",
+    "fit_score": 83,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 8,
+    "ats_total": 8,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Peak_XV_Partners_product-head-fintech-portfolio-company.pdf",
+    "company": "Peak XV Partners",
+    "title": "Product Head \u2013 Fintech Portfolio Company",
+    "fit_score": 83,
+    "domain": "b2b_enterprise",
+    "ats_pct": 88,
+    "ats_matched": 7,
+    "ats_total": 8,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_SAP_head-of-product-management-sap-business-network-asset-collaboration.pdf",
+    "company": "SAP",
+    "title": "Head of Product Management \u2013 SAP Business Network Asset Collaboration",
+    "fit_score": 83,
+    "domain": "b2b_enterprise",
+    "ats_pct": 100,
+    "ats_matched": 3,
+    "ats_total": 3,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Salesforce_product-management-director-hyderabad-posting.pdf",
+    "company": "Salesforce",
+    "title": "Product Management Director",
+    "fit_score": 82,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 7,
+    "ats_total": 7,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Salesforce_product-management-director.pdf",
+    "company": "Salesforce",
+    "title": "Product Management Director",
+    "fit_score": 82,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 7,
+    "ats_total": 7,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Serko_director-of-product.pdf",
+    "company": "Serko",
+    "title": "Director of Product",
+    "fit_score": 83,
+    "domain": "b2b_enterprise",
+    "ats_pct": 100,
+    "ats_matched": 6,
+    "ats_total": 6,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Smartsheet_principal-product-manager-data-ai-platforms.pdf",
+    "company": "Smartsheet",
+    "title": "Principal Product Manager, Data & AI Platforms",
+    "fit_score": 84,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 10,
+    "ats_total": 10,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Teradata_director-of-product-management-ai-platform-compute-integrations-cloud-infrastructure.pdf",
+    "company": "Teradata",
+    "title": "Director of Product Management \u2013 AI Platform (Compute, Integrations & Cloud Infrastructure)",
+    "fit_score": 92,
+    "domain": "agentic_ai",
+    "ats_pct": 74,
+    "ats_matched": 14,
+    "ats_total": 19,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 74% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Twilio_director-product-management.pdf",
+    "company": "Twilio",
+    "title": "Director, Product Management",
+    "fit_score": 81,
+    "domain": "b2b_enterprise",
+    "ats_pct": 88,
+    "ats_matched": 7,
+    "ats_total": 8,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_UiPath_principal-product-manager.pdf",
+    "company": "UiPath",
+    "title": "Principal Product Manager",
+    "fit_score": 81,
+    "domain": "agentic_ai",
+    "ats_pct": 100,
+    "ats_matched": 11,
+    "ats_total": 11,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 100% [full]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_Volante_Technologies_associate-director-director-technical-product-owner-payments-platform.pdf",
+    "company": "Volante Technologies",
+    "title": "Associate Director / Director, Technical Product Owner - Payments Platform",
+    "fit_score": 84,
+    "domain": "b2b_enterprise",
+    "ats_pct": 100,
+    "ats_matched": 9,
+    "ats_total": 9,
+    "jd_source": "full",
+    "hallucination_flags": [],
+    "domain_aligned": false,
+    "verdict": "WARN",
+    "notes": [
+      "Lead section does not clearly signal 'b2b_enterprise' domain \u2014 consider reordering"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_gnani_ai_senior-vice-president-of-product-development.pdf",
+    "company": "gnani.ai",
+    "title": "Senior Vice President of Product Development",
+    "fit_score": 89,
+    "domain": "agentic_ai",
+    "ats_pct": 91,
+    "ats_matched": 10,
+    "ats_total": 11,
+    "jd_source": "why_fit_fallback",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 91% [why_fit_fallback]"
+    ]
+  },
+  {
+    "pdf": "2026-06-17_nexocean_group-product-manager-lead-management-conversion.pdf",
+    "company": "nexocean",
+    "title": "Group Product Manager - Lead Management & Conversion",
+    "fit_score": 83,
+    "domain": "consumer_ai",
+    "ats_pct": 75,
+    "ats_matched": 6,
+    "ats_total": 8,
+    "jd_source": "why_fit_fallback",
+    "hallucination_flags": [],
+    "domain_aligned": true,
+    "verdict": "PASS",
+    "notes": [
+      "All checks passed \u2014 ATS 75% [why_fit_fallback]"
+    ]
+  }
+]

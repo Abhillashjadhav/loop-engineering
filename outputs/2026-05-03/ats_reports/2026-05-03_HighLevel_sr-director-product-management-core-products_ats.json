@@ -1,0 +1,89 @@
+{
+  "resume": "outputs/2026-05-03/resumes/2026-05-03_HighLevel_sr-director-product-management-core-products.pdf",
+  "jd": "/tmp/jd_highlevel_sr-director-product-.txt",
+  "parseability": {
+    "score": 100,
+    "checks": {
+      "text_extractable": true,
+      "text_length_chars": 8718,
+      "standard_headers_found": [
+        "experience",
+        "professional experience",
+        "education",
+        "summary"
+      ],
+      "standard_headers_pass": true,
+      "date_pattern_count": 21,
+      "dates_pass": true,
+      "has_metadata": true,
+      "pages": 2,
+      "pages_pass": true,
+      "size_kb": 9.0,
+      "size_indicates_embedded_fonts": false
+    }
+  },
+  "keyword_coverage": {
+    "score": 47,
+    "jd_keywords_total": 30,
+    "matched_count": 14,
+    "matched": [
+      "platform",
+      "across",
+      "data",
+      "are",
+      "strategy",
+      "platforms",
+      "engineering",
+      "workflow",
+      "performance",
+      "management",
+      "pms",
+      "design",
+      "system",
+      "infrastructure"
+    ],
+    "missing": [
+      "leadership",
+      "saas",
+      "highlevel",
+      "core",
+      "crm",
+      "automation",
+      "support",
+      "metrics",
+      "businesses",
+      "billion",
+      "faster",
+      "million",
+      "like",
+      "platform core",
+      "shared",
+      "conversations"
+    ],
+    "missing_critical": [
+      "leadership",
+      "saas",
+      "metrics",
+      "platform core"
+    ],
+    "missing_nice_to_have": [
+      "highlevel",
+      "core",
+      "crm",
+      "automation",
+      "support",
+      "businesses",
+      "billion",
+      "faster",
+      "million",
+      "like"
+    ]
+  },
+  "pass_likelihood_by_ats": {
+    "greenhouse": "High (84)",
+    "lever": "High (82)",
+    "ashby": "High (84)",
+    "workday": "Medium (74)"
+  },
+  "summary": "Parseability 100/100 + Keyword coverage 47/100. Top missing critical: leadership, saas, metrics"
+}

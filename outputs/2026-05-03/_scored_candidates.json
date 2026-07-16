@@ -1,0 +1,589 @@
+[
+  {
+    "company": "NetApp",
+    "title": "Sr. Director, Product Management",
+    "raw_id": "4409583674",
+    "original_score": 84,
+    "bumped_score": 84,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Senior Director seniority match",
+      "AI-driven data infra platform = direct match to Wayfair Model Proxy",
+      "Bengaluru base"
+    ],
+    "why_not": "Storage/data infra is adjacent but not core to Abhillash's AI/GenAI focus",
+    "risks": "Hardware/infra co \u2014 pace and culture differ from AI-native; verify scope of AI ownership",
+    "url": "https://in.linkedin.com/jobs/view/sr-director-product-management-at-netapp-4409583674",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "fit"
+  },
+  {
+    "company": "Vialto",
+    "title": "Product Director \u2013 AI & Intelligent Workflows",
+    "raw_id": "4404429555",
+    "original_score": 81,
+    "bumped_score": 81,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Director title + AI workflows = strong domain match",
+      "Wayfair agentic experience directly applies",
+      "Bengaluru base"
+    ],
+    "why_not": "Global mobility (HR/immigration) services domain is far from Abhillash's commerce/fintech track",
+    "risks": "Single-domain co (mobility); limited industry-portability",
+    "url": "https://in.linkedin.com/jobs/view/product-director-%E2%80%93-ai-intelligent-workflows-at-vialto-4404429555",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "fit"
+  },
+  {
+    "company": "Mastercard",
+    "title": "Director, Product Management \u2013 Data and AI Platform",
+    "raw_id": "4356792183",
+    "original_score": 82,
+    "bumped_score": 82,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Data + AI Platform = direct Wayfair Model Proxy match",
+      "Director seniority",
+      "Strong comp band"
+    ],
+    "why_not": "Pune location not in preferred list (Mumbai/Bengaluru/Hyderabad/Remote)",
+    "risks": "Location mismatch \u2014 Pune-based; verify remote/hybrid flexibility",
+    "url": "https://in.linkedin.com/jobs/view/director-product-management-%E2%80%93-data-and-ai-platform-at-mastercard-4356792183",
+    "location": "Pune Division, Maharashtra, India",
+    "status": "fit"
+  },
+  {
+    "company": "Mastercard",
+    "title": "Director \u2013 AI Strategy & Product Management (Agentic AI)",
+    "raw_id": "4401638927",
+    "original_score": 84,
+    "bumped_score": 84,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Agentic AI = bullseye match to Wayfair platform work",
+      "Director + AI Strategy",
+      "Strong Mastercard comp band"
+    ],
+    "why_not": "Gurgaon location not in preferred list",
+    "risks": "Location mismatch \u2014 Gurgaon; verify remote/hybrid flexibility",
+    "url": "https://in.linkedin.com/jobs/view/director-%E2%80%93-ai-strategy-product-management-agentic-ai-at-mastercard-4401638927",
+    "location": "Gurgaon, Haryana, India",
+    "status": "fit"
+  },
+  {
+    "company": "Mastercard",
+    "title": "Director, Product Management, Advanced Analytics & AI",
+    "raw_id": "4406466527",
+    "original_score": 81,
+    "bumped_score": 81,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Adv Analytics + AI direct domain match",
+      "Director seniority",
+      "Strong comp"
+    ],
+    "why_not": "Gurgaon location",
+    "risks": "Location mismatch; verify remote/hybrid flexibility",
+    "url": "https://in.linkedin.com/jobs/view/director-product-management-advanced-analytics-ai-at-mastercard-4406466527",
+    "location": "Gurgaon, Haryana, India",
+    "status": "fit"
+  },
+  {
+    "company": "ChainGPT",
+    "title": "Head of Product - AIVM (Agentic AI & Blockchain Platform)",
+    "raw_id": null,
+    "original_score": 81,
+    "bumped_score": 81,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Head of Product seniority",
+      "Agentic AI = match",
+      "Remote India"
+    ],
+    "why_not": "Blockchain/Web3 industry exposure \u2014 uncertainty on equity, comp stability",
+    "risks": "Crypto industry volatility; founder/CEO scrutiny needed; equity-heavy comp",
+    "status": "fit"
+  },
+  {
+    "company": "Sabre",
+    "title": "Director Product Management Data & Analytics Platform",
+    "raw_id": "4383915451",
+    "original_score": 86,
+    "bumped_score": 86,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Director + Data + Analytics + AI Platform = strong direct match",
+      "Bengaluru base",
+      "Travel/commerce domain (adjacent to Flipkart/Amazon)"
+    ],
+    "why_not": "Travel domain has been pressured; growth uncertainty",
+    "risks": "Travel sector volatility post-COVID rebound; verify business momentum",
+    "url": "https://in.linkedin.com/jobs/view/director-product-management-data-analytics-platform-at-sabre-4383915451",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "fit"
+  },
+  {
+    "company": "Experian",
+    "title": "Principal Gen AI Product Manager, EMAP",
+    "raw_id": "4395324534",
+    "original_score": 87,
+    "bumped_score": 87,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "Principal GenAI PM = perfect title match",
+      "Mumbai location preferred",
+      "Credit/data platform adjacency to Amazon CDP"
+    ],
+    "why_not": "Principal sometimes IC vs people-mgmt; verify scope of team",
+    "risks": "Principal-level role may be IC; verify management scope before applying",
+    "url": "https://in.linkedin.com/jobs/view/principal-gen-ai-product-manager-emap-at-experian-4395324534",
+    "location": "Mumbai, Maharashtra, India",
+    "status": "fit"
+  },
+  {
+    "company": "Harvey",
+    "title": "Group Product Manager, Knowledge Platform",
+    "raw_id": "4407041559",
+    "original_score": 88,
+    "bumped_score": 88,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": null,
+    "why_fit": [
+      "GPM seniority match",
+      "Frontier agentic AI + enterprise platform = direct Wayfair Model Proxy adjacency",
+      "Bengaluru base, well-funded YC AI company"
+    ],
+    "why_not": "Legal-tech vertical (less consumer/commerce); verify culture fit",
+    "risks": "Vertical AI in legal \u2014 niche; verify if knowledge platform charter spans beyond legal",
+    "url": "https://in.linkedin.com/jobs/view/group-product-manager-knowledge-platform-at-harvey-4407041559",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "fit"
+  },
+  {
+    "company": "eBay",
+    "title": "Director Product Management",
+    "raw_id": "4361700171",
+    "original_score": 71,
+    "bumped_score": 80,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "Amazon Promotions Platform (4yrs, $4B GMS)",
+      "Flipkart Seller Tools (12-person team, \u20b92000Cr GMS)"
+    ],
+    "bump_rationale": "eBay marketplace product PM = direct adjacency to Amazon Promotions + Flipkart Seller Activation. +9 bump within max +15 cap.",
+    "why_fit": [
+      "Director ecommerce marketplace PM",
+      "Bengaluru base",
+      "Direct adjacency to documented Amazon + Flipkart marketplace experience"
+    ],
+    "why_not": "JD snippet generic; specific charter (search/recs/seller tools/discovery) not yet known",
+    "risks": "eBay India scope may be smaller than US team; verify product ownership boundaries",
+    "url": "https://in.linkedin.com/jobs/view/director-product-management-at-ebay-4361700171",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "PayU",
+    "title": "Director - Product Management (BNPL)",
+    "raw_id": null,
+    "original_score": 74,
+    "bumped_score": 82,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "PayTM B2B Payments founding PM (0-to-1 fintech, lending product)"
+    ],
+    "bump_rationale": "BNPL = lending product = direct adjacency to PayTM founding PM work on lending/recurring-revenue products. +8 bump.",
+    "why_fit": [
+      "Director seniority",
+      "Fintech BNPL = direct PayTM lending adjacency",
+      "Bengaluru base"
+    ],
+    "why_not": "PayU Finance \u2260 PayU AdTech (which is on SKILL.md decline list); verify division before applying",
+    "risks": "PayU AdTech is on the decline list per SKILL.md \u2014 verify PayU Finance is a distinct entity / org",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "Rubrik",
+    "title": "Director, Product Management - Data Threat Analytics",
+    "raw_id": null,
+    "original_score": 78,
+    "bumped_score": 83,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "Wayfair Model Proxy governance layer (8 countries, 2,800+ engineers)"
+    ],
+    "bump_rationale": "Threat analytics governance + AI/ML = adjacent to Wayfair Model Proxy governance/eval framework experience. +5 bump.",
+    "why_fit": [
+      "Director seniority",
+      "Bengaluru base",
+      "Data/security analytics adjacency to Wayfair governance work"
+    ],
+    "why_not": "Cybersecurity vertical = niche shift from commerce/fintech",
+    "risks": "Security PM has different stakeholder model (CISO-driven); culture fit unclear",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "HighLevel",
+    "title": "Sr. Director, Product Management (Core Products)",
+    "raw_id": "4297466010",
+    "original_score": 74,
+    "bumped_score": 80,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "Wayfair GenAI dev platform ($300M impact)",
+      "Amazon CDP (800M+ customers)"
+    ],
+    "bump_rationale": "HighLevel = AI-powered business OS for SMBs = adjacent to Wayfair GenAI platform and Amazon CDP. +6 bump.",
+    "why_fit": [
+      "Sr. Director seniority",
+      "AI ops platform = strong Wayfair adjacency"
+    ],
+    "why_not": "Delhi location not in preferred list; SMB focus differs from enterprise/marketplace track",
+    "risks": "Delhi location mismatch; verify remote flexibility. SMB vs enterprise scale differs.",
+    "url": "https://in.linkedin.com/jobs/view/sr-director-product-management-core-products-at-highlevel-4297466010",
+    "location": "Delhi, Delhi, India",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "DigiCert",
+    "title": "Principal Product Manager, API Platform",
+    "raw_id": "4407018610",
+    "original_score": 78,
+    "bumped_score": 84,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "Wayfair Model Proxy governance layer (developer-facing API platform across multi-LLM and Copilot/Cursor)"
+    ],
+    "bump_rationale": "API Platform PM = direct match to Wayfair Model Proxy work (the governance layer IS an API platform). +6 bump.",
+    "why_fit": [
+      "Principal seniority",
+      "API Platform PM = Wayfair Model Proxy match",
+      "Bengaluru base"
+    ],
+    "why_not": "Security/PKI vertical = different stakeholder model than commerce/fintech",
+    "risks": "Security platform = compliance-heavy; verify pace and innovation latitude",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-api-platform-at-digicert-4407018610",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "GitLab",
+    "title": "Principal Product Manager, Continuous Delivery",
+    "raw_id": "4391166234",
+    "original_score": 74,
+    "bumped_score": 83,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "Wayfair developer productivity (2,800+ engineers, +25% velocity, +25% release speed)"
+    ],
+    "bump_rationale": "GitLab CD = developer productivity tooling = direct match to Wayfair dev productivity work. +9 bump (largest legitimate adjacency in this batch).",
+    "why_fit": [
+      "Principal seniority",
+      "DevOps/CI-CD = direct Wayfair developer productivity match",
+      "Mumbai/remote"
+    ],
+    "why_not": "GitLab is fully remote-first \u2014 different culture norms vs in-office",
+    "risks": "Async-only culture is uncommon in India; assess fit",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-continuous-delivery-at-gitlab-4391166234",
+    "location": "Mumbai Metropolitan Region",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "Kwan Ventures",
+    "title": "Principal Product Manager - Platform",
+    "raw_id": "4407993984",
+    "original_score": 72,
+    "bumped_score": 81,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "PayTM B2B Payments founding PM",
+      "IndiaMart Big Brands subscriptions"
+    ],
+    "bump_rationale": "Fintech platform PM (payments + risk + data + integrations) = direct match to PayTM B2B + IndiaMart platform work. +9 bump.",
+    "why_fit": [
+      "Principal Platform PM",
+      "Direct fintech-platform adjacency to PayTM + IndiaMart"
+    ],
+    "why_not": "Recruitment-firm posting (Kwan Ventures = consultancy); actual employer + comp band unclear",
+    "risks": "Mystery-employer recruitment posting; verify actual hiring company before applying",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-platform-at-kwan-ventures-4407993984",
+    "location": "India",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "MontyCloud",
+    "title": "Principal Product Manager \u2013 AI",
+    "raw_id": "4400764184",
+    "original_score": 76,
+    "bumped_score": 81,
+    "bumped": true,
+    "adjacent_skills_applied": [
+      "Wayfair GenAI platform ($300M impact, 2,800+ engineers, agentic workflows)"
+    ],
+    "bump_rationale": "AI-powered cloud ops platform = direct Wayfair GenAI platform adjacency. +5 bump.",
+    "why_fit": [
+      "Principal AI PM",
+      "AI ops automation = Wayfair adjacency",
+      "Bengaluru base"
+    ],
+    "why_not": "Mid-stage startup; comp + scale less than enterprise role",
+    "risks": "Earlier stage = equity-heavy; verify business momentum and runway",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-%E2%80%93-ai-at-montycloud-4400764184",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "bumped_fit"
+  },
+  {
+    "company": "Revolut",
+    "title": "Head of Product (Fraud)",
+    "raw_id": "4296081638",
+    "original_score": 68,
+    "bumped_score": 73,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "Amazon RFM/AARRR customer segmentation"
+    ],
+    "bump_rationale": "Fraud detection ML = adjacency to Amazon segmentation. +5 but stays below 80.",
+    "why_fit": [
+      "Head of Product seniority",
+      "Fintech vertical"
+    ],
+    "why_not": "Fraud is niche; not core AI/Platform PM track for Abhillash",
+    "risks": "Niche specialty",
+    "url": "https://in.linkedin.com/jobs/view/head-of-product-fraud-at-revolut-4296081638",
+    "location": "India",
+    "status": "near_miss"
+  },
+  {
+    "company": "Greenlight",
+    "title": "Director of Product Management",
+    "raw_id": "4401933166",
+    "original_score": 69,
+    "bumped_score": 75,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "LeEco D2C consumer product"
+    ],
+    "bump_rationale": "Consumer fintech for kids/families. +6 but stays below 80.",
+    "why_fit": [
+      "Director seniority",
+      "Bengaluru"
+    ],
+    "why_not": "Family-fintech niche; AI focus weak",
+    "risks": "Consumer sub-segment",
+    "url": "https://in.linkedin.com/jobs/view/director-of-product-management-at-greenlight-4401933166",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "near_miss"
+  },
+  {
+    "company": "Candescent",
+    "title": "Product Director - Consumer",
+    "raw_id": "4391088560",
+    "original_score": 71,
+    "bumped_score": 76,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "PayTM B2B retail commerce"
+    ],
+    "bump_rationale": "Banking tech B2B SaaS. +5 but stays below 80.",
+    "why_fit": [
+      "Director Bengaluru"
+    ],
+    "why_not": "Banking-software vertical; AI focus weak",
+    "risks": "Vertical SaaS",
+    "url": "https://in.linkedin.com/jobs/view/product-director-consumer-at-candescent-4391088560",
+    "location": "Bangalore Urban, Karnataka, India",
+    "status": "near_miss"
+  },
+  {
+    "company": "Experian",
+    "title": "Head of Product - Bureau",
+    "raw_id": "4401046401",
+    "original_score": 73,
+    "bumped_score": 78,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "Amazon CDP (800M+ customers, RFM/AARRR)"
+    ],
+    "bump_rationale": "Credit bureau data platform = adjacency to Amazon CDP. +5 but stays below 80.",
+    "why_fit": [
+      "Head seniority Mumbai"
+    ],
+    "why_not": "JD says Mid-Senior level \u2014 title-vs-scope mismatch",
+    "risks": "Title inflation; verify actual scope",
+    "url": "https://in.linkedin.com/jobs/view/head-of-product-bureau-at-experian-4401046401",
+    "location": "Mumbai Metropolitan Region",
+    "status": "near_miss"
+  },
+  {
+    "company": "Visa",
+    "title": "Director, Product Management-1",
+    "raw_id": "4406526370",
+    "original_score": 70,
+    "bumped_score": 75,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "PayTM payments"
+    ],
+    "bump_rationale": "Generic Visa PM. +5 but stays below 80.",
+    "why_fit": [
+      "Director Bengaluru Visa"
+    ],
+    "why_not": "JD generic \u2014 domain unclear",
+    "risks": "Charter unspecified",
+    "url": "https://in.linkedin.com/jobs/view/director-product-management-1-at-visa-4406526370",
+    "location": "Bengaluru East, Karnataka, India",
+    "status": "near_miss"
+  },
+  {
+    "company": "G-P",
+    "title": "Principal Product Manager",
+    "raw_id": "4401980405",
+    "original_score": 62,
+    "bumped_score": 66,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "IndiaMart B2B SaaS"
+    ],
+    "bump_rationale": "HR-tech B2B SaaS. +4 stays below 80.",
+    "why_fit": [
+      "Principal"
+    ],
+    "why_not": "HR-tech far from focus",
+    "risks": "Vertical fit",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-at-g-p-4401980405",
+    "location": "India",
+    "status": "near_miss"
+  },
+  {
+    "company": "HackerRank",
+    "title": "Principal Product Manager",
+    "raw_id": "4375578327",
+    "original_score": 66,
+    "bumped_score": 75,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "Wayfair developer productivity"
+    ],
+    "bump_rationale": "Devtools platform. +9 but stays below 80 due to lower title-scope.",
+    "why_fit": [
+      "Bengaluru"
+    ],
+    "why_not": "JD = junior Principal",
+    "risks": "Scope below Director",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-at-hackerrank-4375578327",
+    "location": "Bengaluru East, Karnataka, India",
+    "status": "near_miss"
+  },
+  {
+    "company": "Sabre",
+    "title": "Principal Product Manager - Media",
+    "raw_id": null,
+    "original_score": 62,
+    "bumped_score": 65,
+    "bumped": false,
+    "adjacent_skills_applied": [],
+    "bump_rationale": "Media-tech adjacency weak. +3 stays below 80.",
+    "why_fit": [
+      "Bengaluru"
+    ],
+    "why_not": "Media-tech niche",
+    "risks": "Domain",
+    "status": "near_miss"
+  },
+  {
+    "company": "Quince",
+    "title": "Principal Product Manager (Accounts + Identity)",
+    "raw_id": "4403917193",
+    "original_score": 62,
+    "bumped_score": 68,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "Amazon CDP"
+    ],
+    "bump_rationale": "Identity/auth adjacency to Amazon CDP. +6 stays below 80.",
+    "why_fit": [
+      "Bengaluru"
+    ],
+    "why_not": "Identity is narrow",
+    "risks": "Sub-domain",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-accounts-%2B-identity-at-quince-4403917193",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "near_miss"
+  },
+  {
+    "company": "Oportun",
+    "title": "Principal Product Manager (R13970)",
+    "raw_id": "4404990713",
+    "original_score": 62,
+    "bumped_score": 68,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "PayTM lending"
+    ],
+    "bump_rationale": "Fintech lending. +6 stays below 80.",
+    "why_fit": [
+      "Principal"
+    ],
+    "why_not": "JD weak signal",
+    "risks": "Domain match weak",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-r13970-at-oportun-4404990713",
+    "location": "India",
+    "status": "near_miss"
+  },
+  {
+    "company": "Netskope",
+    "title": "Principal Product Manager, Data",
+    "raw_id": "4346578793",
+    "original_score": 72,
+    "bumped_score": 78,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "Amazon CDP (data platform)"
+    ],
+    "bump_rationale": "Data security platform. +6 stays below 80.",
+    "why_fit": [
+      "Bengaluru"
+    ],
+    "why_not": "Security vertical",
+    "risks": "Security PM stakeholder model",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-data-at-netskope-4346578793",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "near_miss"
+  },
+  {
+    "company": "FICO",
+    "title": "Sr Manager/Director, Product Management \u2013 Platform Security",
+    "raw_id": null,
+    "original_score": 67,
+    "bumped_score": 72,
+    "bumped": false,
+    "adjacent_skills_applied": [
+      "Wayfair Model Proxy governance"
+    ],
+    "bump_rationale": "Platform security adjacency. +5 stays below 80.",
+    "why_fit": [
+      "Director Bengaluru"
+    ],
+    "why_not": "Sr Mgr/Director title ambiguous; security niche",
+    "risks": "Title-band ambiguity",
+    "status": "near_miss"
+  }
+]

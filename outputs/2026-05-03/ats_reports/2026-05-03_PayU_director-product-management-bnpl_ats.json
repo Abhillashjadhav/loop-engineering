@@ -1,0 +1,49 @@
+{
+  "resume": "outputs/2026-05-03/resumes/2026-05-03_PayU_director-product-management-bnpl.pdf",
+  "jd": "/tmp/jd_payu_director-product-man.txt",
+  "parseability": {
+    "score": 100,
+    "checks": {
+      "text_extractable": true,
+      "text_length_chars": 8718,
+      "standard_headers_found": [
+        "experience",
+        "professional experience",
+        "education",
+        "summary"
+      ],
+      "standard_headers_pass": true,
+      "date_pattern_count": 21,
+      "dates_pass": true,
+      "has_metadata": true,
+      "pages": 2,
+      "pages_pass": true,
+      "size_kb": 8.9,
+      "size_indicates_embedded_fonts": false
+    }
+  },
+  "keyword_coverage": {
+    "score": 33,
+    "jd_keywords_total": 3,
+    "matched_count": 1,
+    "matched": [
+      "management"
+    ],
+    "missing": [
+      "bnpl",
+      "management bnpl"
+    ],
+    "missing_critical": [],
+    "missing_nice_to_have": [
+      "bnpl",
+      "management bnpl"
+    ]
+  },
+  "pass_likelihood_by_ats": {
+    "greenhouse": "High (78)",
+    "lever": "High (76)",
+    "ashby": "High (78)",
+    "workday": "Medium (68)"
+  },
+  "summary": "Parseability 100/100 + Keyword coverage 33/100. Top missing critical: none"
+}

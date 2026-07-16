@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.env
+venv/
+.venv/
+*.egg-info/
+outputs/trajectory.jsonl
+data/validation_runs/
+data/validation_jds/
+.claude/worktrees/

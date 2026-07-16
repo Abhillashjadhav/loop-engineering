@@ -1,0 +1,3372 @@
+[
+  {
+    "company": "Playlist",
+    "title": "Principal Product Manager",
+    "location": "Mumbai Metropolitan Region",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-at-playlist-4406785841",
+    "apply_url": "https://in.linkedin.com/jobs/view/principal-product-manager-at-playlist-4406785841",
+    "score": 77,
+    "bumped_score": 85,
+    "bumped": true,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 17,
+      "seniority_label": "principal/head",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 2,
+      "mgmt_10": 7,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "Sumo Logic",
+    "title": "Senior Product Manager",
+    "location": "Noida, Uttar Pradesh, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-sumo-logic-4373540758",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-sumo-logic-4373540758",
+    "score": 73,
+    "bumped_score": 83,
+    "bumped": true,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "b2b-saas",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 15,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Aurigo Software Technologies",
+    "title": "Senior Product Manager - AI Platform",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-ai-platform-at-aurigo-software-technologies-4405096074",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-ai-platform-at-aurigo-software-technologies-4405096074",
+    "score": 73,
+    "bumped_score": 83,
+    "bumped": true,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform",
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 8,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Alegeus",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-alegeus-4404069556",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-alegeus-4404069556",
+    "score": 73,
+    "bumped_score": 83,
+    "bumped": true,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform",
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "subscriptions",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 8,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Rubrik",
+    "title": "Director, Product Management- Data Threat Analytics",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/director-product-management-data-threat-analytics-at-rubrik-4354655886",
+    "apply_url": "https://in.linkedin.com/jobs/view/director-product-management-data-threat-analytics-at-rubrik-4354655886",
+    "score": 83,
+    "bumped_score": 83,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "fit",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 18,
+      "seniority_label": "director",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 10,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "FICO",
+    "title": "Director/Principal Platform Product Manager -Observability",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/director-principal-platform-product-manager-observability-at-fico-4408643751",
+    "apply_url": "https://in.linkedin.com/jobs/view/director-principal-platform-product-manager-observability-at-fico-4408643751",
+    "score": 71,
+    "bumped_score": 81,
+    "bumped": true,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "ai/ml",
+        "platform/observability"
+      ],
+      "seniority_20": 18,
+      "seniority_label": "director",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 10,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "HighLevel",
+    "title": "Staff Product Manager - Social Planner, Ad Manager, Blogs",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/staff-product-manager-social-planner-ad-manager-blogs-at-highlevel-4346100105",
+    "apply_url": "https://in.linkedin.com/jobs/view/staff-product-manager-social-planner-ad-manager-blogs-at-highlevel-4346100105",
+    "score": 71,
+    "bumped_score": 81,
+    "bumped": true,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 14,
+      "seniority_label": "staff",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 7,
+      "comp_15": 10
+    }
+  },
+  {
+    "company": "Mastercard",
+    "title": "Director, Product Operations",
+    "location": "Pune Division, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/director-product-operations-at-mastercard-4405577109",
+    "apply_url": "https://in.linkedin.com/jobs/view/director-product-operations-at-mastercard-4405577109",
+    "score": 71,
+    "bumped_score": 81,
+    "bumped": true,
+    "bump_reasons": [
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 26,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments",
+        "reco/personalization"
+      ],
+      "seniority_20": 18,
+      "seniority_label": "director",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 10,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "Sumo Logic",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-sumo-logic-4373530880",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-sumo-logic-4373530880",
+    "score": 80,
+    "bumped_score": 80,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "b2b-saas",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 15,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "MongoDB",
+    "title": "Senior Product Manager",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-mongodb-4408254815",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-mongodb-4408254815",
+    "score": 70,
+    "bumped_score": 80,
+    "bumped": true,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "bumped_fit",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 12,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Cimpress India",
+    "title": "Senior Product Manager- Remote",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-remote-at-cimpress-india-4402702655",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-remote-at-cimpress-india-4402702655",
+    "score": 71,
+    "bumped_score": 79,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Wati",
+    "title": "Senior Product Manager - PLG",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-plg-at-wati-4400990725",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-plg-at-wati-4400990725",
+    "score": 69,
+    "bumped_score": 79,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Qualys",
+    "title": "Principal Product Manager,Support",
+    "location": "Pune Division, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-support-at-qualys-4384234482",
+    "apply_url": "https://in.linkedin.com/jobs/view/principal-product-manager-support-at-qualys-4384234482",
+    "score": 68,
+    "bumped_score": 78,
+    "bumped": false,
+    "bump_reasons": [
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 17,
+      "seniority_label": "principal/head",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 7,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "Seclore",
+    "title": "Senior Product Manager",
+    "location": "Mumbai, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-seclore-4405980285",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-seclore-4405980285",
+    "score": 67,
+    "bumped_score": 77,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform",
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "SymphonyAI",
+    "title": "Senior Product Manager (Fraud)",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-fraud-at-symphonyai-4407413065",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-fraud-at-symphonyai-4407413065",
+    "score": 69,
+    "bumped_score": 77,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B Payments founding PM (0-to-1 fintech) → payments"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Wenger & Watson",
+    "title": "Senior Director of Product Management",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-director-of-product-management-at-wenger-watson-4406961631",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-director-of-product-management-at-wenger-watson-4406961631",
+    "score": 77,
+    "bumped_score": 77,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 25,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 20,
+      "seniority_label": "vp/sr-dir",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 10,
+      "comp_15": 14
+    }
+  },
+  {
+    "company": "Housing.com",
+    "title": "Associate Director of Product – Content, AI and Platform",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/associate-director-of-product-%E2%80%93-content-ai-and-platform-at-housing-com-4406487105",
+    "apply_url": "https://in.linkedin.com/jobs/view/associate-director-of-product-%E2%80%93-content-ai-and-platform-at-housing-com-4406487105",
+    "score": 77,
+    "bumped_score": 77,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 18,
+      "seniority_label": "director",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 4,
+      "mgmt_10": 10,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "Capgemini",
+    "title": "FBS Sr. Customer Experience Product Manager",
+    "location": "Hyderabad, Telangana, India",
+    "url": "https://in.linkedin.com/jobs/view/fbs-sr-customer-experience-product-manager-at-capgemini-4402880432",
+    "apply_url": "https://in.linkedin.com/jobs/view/fbs-sr-customer-experience-product-manager-at-capgemini-4402880432",
+    "score": 66,
+    "bumped_score": 76,
+    "bumped": false,
+    "bump_reasons": [
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 28,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "hyderabad",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Eltropy",
+    "title": "Senior Product Manager (Integrations)",
+    "location": "Hyderabad, Telangana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-integrations-at-eltropy-4390485644",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-integrations-at-eltropy-4390485644",
+    "score": 66,
+    "bumped_score": 76,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "hyderabad",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Arkose Labs",
+    "title": "Senior Product Manager",
+    "location": "Pune Division, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-arkose-labs-4392166053",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-arkose-labs-4392166053",
+    "score": 68,
+    "bumped_score": 76,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 10,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Weave",
+    "title": "Senior Product Manager, Scheduling Platform",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-scheduling-platform-at-weave-4403788684",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-scheduling-platform-at-weave-4403788684",
+    "score": 66,
+    "bumped_score": 76,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Wati",
+    "title": "Senior Product Manager/Product Manager - Platform",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-product-manager-platform-at-wati-4405815266",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-product-manager-platform-at-wati-4405815266",
+    "score": 65,
+    "bumped_score": 75,
+    "bumped": false,
+    "bump_reasons": [
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Wati",
+    "title": "Senior Product Manager / Product Manager - Platform",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-product-manager-platform-at-wati-4408257283",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-product-manager-platform-at-wati-4408257283",
+    "score": 65,
+    "bumped_score": 75,
+    "bumped": false,
+    "bump_reasons": [
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Jobgether",
+    "title": "Head of Product (B2B SaaS)",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/head-of-product-b2b-saas-at-jobgether-4406280486",
+    "apply_url": "https://in.linkedin.com/jobs/view/head-of-product-b2b-saas-at-jobgether-4406280486",
+    "score": 66,
+    "bumped_score": 74,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "ai/ml",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 17,
+      "seniority_label": "principal/head",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 10,
+      "comp_15": 14
+    }
+  },
+  {
+    "company": "Roku",
+    "title": "Senior Product Manager - RPay",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-rpay-at-roku-4388336843",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-rpay-at-roku-4388336843",
+    "score": 66,
+    "bumped_score": 74,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Integral Development Corp.",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-integral-development-corp-4404791996",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-integral-development-corp-4404791996",
+    "score": 64,
+    "bumped_score": 74,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Jobgether",
+    "title": "Senior Product Manager, Scheduling Platform",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-scheduling-platform-at-jobgether-4405984446",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-scheduling-platform-at-jobgether-4405984446",
+    "score": 63,
+    "bumped_score": 73,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 28,
+      "domain_signals": [
+        "ai/ml",
+        "platform/observability",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Wati",
+    "title": "Senior Product Manager - PLG",
+    "location": "Chennai, Tamil Nadu, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-plg-at-wati-4400989745",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-plg-at-wati-4400989745",
+    "score": 63,
+    "bumped_score": 73,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 4,
+      "location_label": "chennai",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "HighLevel",
+    "title": "Sr. Product Manager - AI Growth",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-ai-growth-at-highlevel-4384702232",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-ai-growth-at-highlevel-4384702232",
+    "score": 65,
+    "bumped_score": 73,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Arcserve",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-arcserve-4407603378",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-arcserve-4407603378",
+    "score": 64,
+    "bumped_score": 72,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Roku",
+    "title": "Senior Product Manager - Subscriptions Scaling",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-subscriptions-scaling-at-roku-4405428734",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-subscriptions-scaling-at-roku-4405428734",
+    "score": 62,
+    "bumped_score": 72,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 25,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Sophos",
+    "title": "Senior Product Manager (ZTNA/Network Security domain)",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-ztna-network-security-domain-at-sophos-4402185057",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-ztna-network-security-domain-at-sophos-4402185057",
+    "score": 64,
+    "bumped_score": 72,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Freshworks",
+    "title": "Senior Manager - Product Analytics (Individual Contributor)",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-manager-product-analytics-individual-contributor-at-freshworks-4406147689",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-manager-product-analytics-individual-contributor-at-freshworks-4406147689",
+    "score": 63,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "genai/agentic",
+        "b2b-saas",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Eltropy",
+    "title": "Senior Product Manager - Telephony",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-telephony-at-eltropy-4398168366",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-telephony-at-eltropy-4398168366",
+    "score": 63,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Freshworks",
+    "title": "Senior Manager - Product Analytics (Individual Contributor)",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-manager-product-analytics-individual-contributor-at-freshworks-4406135976",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-manager-product-analytics-individual-contributor-at-freshworks-4406135976",
+    "score": 63,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "genai/agentic",
+        "b2b-saas",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "eBay",
+    "title": "Senior Manager, Search Product Analytics",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-manager-search-product-analytics-at-ebay-4349652680",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-manager-search-product-analytics-at-ebay-4349652680",
+    "score": 71,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 28,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 8,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Jobgether",
+    "title": "Senior Product Manager, Scheduling Platform",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-scheduling-platform-at-jobgether-4405966135",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-scheduling-platform-at-jobgether-4405966135",
+    "score": 61,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "ai/ml",
+        "platform/observability",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "HighLevel",
+    "title": "Sr. Product Manager - Workflow Extended",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-workflow-extended-at-highlevel-4398243609",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-workflow-extended-at-highlevel-4398243609",
+    "score": 63,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Rekruton Global IT Services",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-rekruton-global-it-services-4408657613",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-rekruton-global-it-services-4408657613",
+    "score": 63,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 28,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "enterprise",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "SolarWinds",
+    "title": "Senior Product Manager - SolarWinds Platform",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-solarwinds-platform-at-solarwinds-4405651161",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-solarwinds-platform-at-solarwinds-4405651161",
+    "score": 61,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "SIXT Research & Development India",
+    "title": "Senior Product Manager I",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-i-at-sixt-research-development-india-4407585851",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-i-at-sixt-research-development-india-4407585851",
+    "score": 63,
+    "bumped_score": 71,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Tandems",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-tandems-4405144944",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-tandems-4405144944",
+    "score": 62,
+    "bumped_score": 70,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Capgemini",
+    "title": "FBS Sr. Customer Experience Product Manager",
+    "location": "Pune Division, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/fbs-sr-customer-experience-product-manager-at-capgemini-4402888012",
+    "apply_url": "https://in.linkedin.com/jobs/view/fbs-sr-customer-experience-product-manager-at-capgemini-4402888012",
+    "score": 60,
+    "bumped_score": 70,
+    "bumped": false,
+    "bump_reasons": [
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 28,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Rackspace Technology",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-rackspace-technology-4394636012",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-rackspace-technology-4394636012",
+    "score": 60,
+    "bumped_score": 70,
+    "bumped": false,
+    "bump_reasons": [
+      "Wayfair GenAI dev platform 2,800+ engineers $300M impact → observability/dev-platform"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 25,
+      "domain_signals": [
+        "genai/agentic",
+        "platform/observability",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Xplor Technologies",
+    "title": "Senior Product Manager, Payments Data",
+    "location": "Pune/Pimpri-Chinchwad Area",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-payments-data-at-xplor-technologies-4408222205",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-payments-data-at-xplor-technologies-4408222205",
+    "score": 60,
+    "bumped_score": 70,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription",
+      "Amazon AI/ML reco engine $1.2B + CTL personalization $3.2B GMV → reco",
+      "PayTM B2B Payments founding PM (0-to-1 fintech) → payments"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Bottomline",
+    "title": "Senior Product Manager, AI & Data Science",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-ai-data-science-at-bottomline-4408253269",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-ai-data-science-at-bottomline-4408253269",
+    "score": 62,
+    "bumped_score": 70,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "ai/ml",
+        "generic-platform",
+        "b2b-saas",
+        "payments",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Norstella",
+    "title": "Senior Product Manager, RWD Data Products",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-rwd-data-products-at-norstella-4398550809",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-rwd-data-products-at-norstella-4398550809",
+    "score": 62,
+    "bumped_score": 70,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Visa",
+    "title": "Sr. Product Manager Post Purchase",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-post-purchase-at-visa-4404997117",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-post-purchase-at-visa-4404997117",
+    "score": 69,
+    "bumped_score": 69,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "enterprise",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Intuit",
+    "title": "Senior Staff Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-staff-product-manager-at-intuit-4398752178",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-staff-product-manager-at-intuit-4398752178",
+    "score": 68,
+    "bumped_score": 68,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 17,
+      "seniority_label": "sr-staff",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 7,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "HighLevel",
+    "title": "Sr. Product Manager - Template Library, Brand Board & Countdown Timer",
+    "location": "Delhi, Delhi, India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-template-library-brand-board-countdown-timer-at-highlevel-4405532062",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-template-library-brand-board-countdown-timer-at-highlevel-4405532062",
+    "score": 60,
+    "bumped_score": 68,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Sophos",
+    "title": "Senior Product Manager (ZTNA/Network Security domain)",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-ztna-network-security-domain-at-sophos-4402179634",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-ztna-network-security-domain-at-sophos-4402179634",
+    "score": 60,
+    "bumped_score": 68,
+    "bumped": false,
+    "bump_reasons": [
+      "PayTM B2B founding PM + IndiaMART subscriptions ₹30 Cr ARR → B2B/subscription"
+    ],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 27,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Accellor",
+    "title": "Senior AI Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-ai-product-manager-at-accellor-4401757016",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-ai-product-manager-at-accellor-4401757016",
+    "score": 67,
+    "bumped_score": 67,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 28,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "First Advantage",
+    "title": "Senior Technical Product Manager- (IC)- Remote",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-technical-product-manager-ic-remote-at-first-advantage-4405405487",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-technical-product-manager-ic-remote-at-first-advantage-4405405487",
+    "score": 63,
+    "bumped_score": 63,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Equiti Group",
+    "title": "Senior Product Manager - Crypto",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-crypto-at-equiti-group-4406514375",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-crypto-at-equiti-group-4406514375",
+    "score": 63,
+    "bumped_score": 63,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 26,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "LogixHealth",
+    "title": "Senior Director-Product & Information Security",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-director-product-information-security-at-logixhealth-4394425455",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-director-product-information-security-at-logixhealth-4394425455",
+    "score": 63,
+    "bumped_score": 63,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 5,
+      "domain_signals": [
+        "generic-platform"
+      ],
+      "seniority_20": 20,
+      "seniority_label": "vp/sr-dir",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 10,
+      "comp_15": 14
+    }
+  },
+  {
+    "company": "Aviatrix",
+    "title": "Principal Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/principal-product-manager-at-aviatrix-4409891928",
+    "apply_url": "https://in.linkedin.com/jobs/view/principal-product-manager-at-aviatrix-4409891928",
+    "score": 62,
+    "bumped_score": 62,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 14,
+      "domain_signals": [
+        "platform/observability",
+        "subscriptions"
+      ],
+      "seniority_20": 17,
+      "seniority_label": "principal/head",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 7,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "RapidCanvas",
+    "title": "Senior Product Manager(Enterprise AI Platform)",
+    "location": "Mumbai Metropolitan Region",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-enterprise-ai-platform-at-rapidcanvas-4402395735",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-enterprise-ai-platform-at-rapidcanvas-4402395735",
+    "score": 62,
+    "bumped_score": 62,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 8,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Pocket FM",
+    "title": "Senior Product Manager - UGC",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-ugc-at-pocket-fm-4403734235",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-ugc-at-pocket-fm-4403734235",
+    "score": 61,
+    "bumped_score": 61,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "o9 Solutions, Inc.",
+    "title": "Senior Product Manager - Production Scheduling, R&D",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-production-scheduling-r-d-at-o9-solutions-inc-4397798352",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-production-scheduling-r-d-at-o9-solutions-inc-4397798352",
+    "score": 61,
+    "bumped_score": 61,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "enterprise",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Ivanti",
+    "title": "Senior Product Manager – User experience for IT & Enterprise Services Management",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-user-experience-for-it-enterprise-services-management-at-ivanti-4405126429",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-user-experience-for-it-enterprise-services-management-at-ivanti-4405126429",
+    "score": 61,
+    "bumped_score": 61,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 26,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "eBay",
+    "title": "Lead Product Manager - Identity",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/lead-product-manager-identity-at-ebay-4398698961",
+    "apply_url": "https://in.linkedin.com/jobs/view/lead-product-manager-identity-at-ebay-4398698961",
+    "score": 60,
+    "bumped_score": 60,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "near_miss",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 13,
+      "seniority_label": "lead",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 8,
+      "comp_15": 10
+    }
+  },
+  {
+    "company": "Cvent",
+    "title": "Senior Product Manager (Integrations)",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-integrations-at-cvent-4403613217",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-integrations-at-cvent-4403613217",
+    "score": 59,
+    "bumped_score": 59,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Wati",
+    "title": "Senior Product Manager/Product Manager - Platform",
+    "location": "Chennai, Tamil Nadu, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-product-manager-platform-at-wati-4405801999",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-product-manager-platform-at-wati-4405801999",
+    "score": 59,
+    "bumped_score": 59,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 4,
+      "location_label": "chennai",
+      "tech_15": 6,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Motive",
+    "title": "Senior Product Manager, Financial Products",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-financial-products-at-motive-4375513469",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-financial-products-at-motive-4375513469",
+    "score": 59,
+    "bumped_score": 59,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 26,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "NetApp",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-netapp-4409585660",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-netapp-4409585660",
+    "score": 59,
+    "bumped_score": 59,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 16,
+      "domain_signals": [
+        "genai/agentic",
+        "enterprise"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 8,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Zscaler",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-zscaler-4408218821",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-zscaler-4408218821",
+    "score": 59,
+    "bumped_score": 59,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "HighLevel",
+    "title": "Sr. Product Manager - AI Platform",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-ai-platform-at-highlevel-4384492502",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-ai-platform-at-highlevel-4384492502",
+    "score": 59,
+    "bumped_score": 59,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 26,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Cognizant",
+    "title": "Senior Product Manager",
+    "location": "Bangalore Urban, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-cognizant-4330741470",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-cognizant-4330741470",
+    "score": 58,
+    "bumped_score": 58,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 21,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "NorthStar HR Consultants",
+    "title": "Senior Product Manager",
+    "location": "Pune District, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-northstar-hr-consultants-4402268026",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-northstar-hr-consultants-4402268026",
+    "score": 58,
+    "bumped_score": 58,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "genai/agentic",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 8,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Confluent",
+    "title": "Senior Product Manager - Hybrid Control Plane for Observability & Management",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-hybrid-control-plane-for-observability-management-at-confluent-4399204677",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-hybrid-control-plane-for-observability-management-at-confluent-4399204677",
+    "score": 57,
+    "bumped_score": 57,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "platform/observability",
+        "enterprise",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Precisely",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4404427377",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4404427377",
+    "score": 57,
+    "bumped_score": 57,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Revolut",
+    "title": "Creative Marketing Manager (People Product)",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/creative-marketing-manager-people-product-at-revolut-4369589748",
+    "apply_url": "https://in.linkedin.com/jobs/view/creative-marketing-manager-people-product-at-revolut-4369589748",
+    "score": 57,
+    "bumped_score": 57,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 30,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "b2b-saas",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Spotnana",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-spotnana-4402981678",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-spotnana-4402981678",
+    "score": 57,
+    "bumped_score": 57,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Target",
+    "title": "Sr Product Manager - Marketplace Item setup",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-marketplace-item-setup-at-target-4401837825",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-marketplace-item-setup-at-target-4401837825",
+    "score": 56,
+    "bumped_score": 56,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 21,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Docusign",
+    "title": "Lead Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/lead-product-manager-at-docusign-4380632122",
+    "apply_url": "https://in.linkedin.com/jobs/view/lead-product-manager-at-docusign-4380632122",
+    "score": 56,
+    "bumped_score": 56,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 15,
+      "domain_signals": [
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions"
+      ],
+      "seniority_20": 13,
+      "seniority_label": "lead",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 8,
+      "comp_15": 10
+    }
+  },
+  {
+    "company": "Learneo",
+    "title": "Senior Product Manager, Design Tools",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-learneo-4405261674",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-learneo-4405261674",
+    "score": 56,
+    "bumped_score": 56,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "QuillBot",
+    "title": "Senior Product Manager, Design Tools",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-quillbot-4405253906",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-quillbot-4405253906",
+    "score": 56,
+    "bumped_score": 56,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Visa",
+    "title": "Product Manager - Risk Products",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/product-manager-risk-products-at-visa-4410042005",
+    "apply_url": "https://in.linkedin.com/jobs/view/product-manager-risk-products-at-visa-4410042005",
+    "score": 56,
+    "bumped_score": 56,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 25,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Scopely",
+    "title": "Lead Product Manager - Star Trek Fleet Command",
+    "location": "Greater Bengaluru Area",
+    "url": "https://in.linkedin.com/jobs/view/lead-product-manager-star-trek-fleet-command-at-scopely-4405466176",
+    "apply_url": "https://in.linkedin.com/jobs/view/lead-product-manager-star-trek-fleet-command-at-scopely-4405466176",
+    "score": 55,
+    "bumped_score": 55,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 14,
+      "domain_signals": [
+        "generic-platform",
+        "subscriptions",
+        "payments"
+      ],
+      "seniority_20": 13,
+      "seniority_label": "lead",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 8,
+      "comp_15": 10
+    }
+  },
+  {
+    "company": "GE HealthCare",
+    "title": "Senior Staff Product Manager - Fleet Solutions",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-staff-product-manager-fleet-solutions-at-ge-healthcare-4398059635",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-staff-product-manager-fleet-solutions-at-ge-healthcare-4398059635",
+    "score": 55,
+    "bumped_score": 55,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 9,
+      "domain_signals": [
+        "generic-platform",
+        "subscriptions"
+      ],
+      "seniority_20": 17,
+      "seniority_label": "sr-staff",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 7,
+      "comp_15": 12
+    }
+  },
+  {
+    "company": "Aspire",
+    "title": "Senior Product Manager - API Infrastructure (Payments)",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-api-infrastructure-payments-at-aspire-4405513232",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-api-infrastructure-payments-at-aspire-4405513232",
+    "score": 55,
+    "bumped_score": 55,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "platform/observability",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "AIMLEAP",
+    "title": "Senior Manager SEO – SaaS Product SEO / AEO ( 7+ years )",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-manager-seo-%E2%80%93-saas-product-seo-aeo-7%2B-years-at-aimleap-4406287506",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-manager-seo-%E2%80%93-saas-product-seo-aeo-7%2B-years-at-aimleap-4406287506",
+    "score": 54,
+    "bumped_score": 54,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 21,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Walmart Global Tech India",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-walmart-global-tech-india-4399547851",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-walmart-global-tech-india-4399547851",
+    "score": 54,
+    "bumped_score": 54,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Walmart Global Tech India",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-walmart-global-tech-india-4400802432",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-walmart-global-tech-india-4400802432",
+    "score": 54,
+    "bumped_score": 54,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Autodesk",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-autodesk-4401871386",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-autodesk-4401871386",
+    "score": 54,
+    "bumped_score": 54,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "MRI Software",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-mri-software-4401084375",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-mri-software-4401084375",
+    "score": 54,
+    "bumped_score": 54,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 19,
+      "domain_signals": [
+        "generic-platform",
+        "b2b-saas",
+        "subscriptions",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "HighLevel",
+    "title": "Sr. Product Manager - Recommendations, Boosts & Ads Monetization",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-recommendations-boosts-ads-monetization-at-highlevel-4350103658",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-recommendations-boosts-ads-monetization-at-highlevel-4350103658",
+    "score": 54,
+    "bumped_score": 54,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 23,
+      "domain_signals": [
+        "ai/ml",
+        "generic-platform",
+        "subscriptions",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Precisely",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4404435290",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4404435290",
+    "score": 53,
+    "bumped_score": 53,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Precisely",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4391867610",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4391867610",
+    "score": 53,
+    "bumped_score": 53,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 8,
+      "domain_signals": [
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 10,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Nanonets",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-nanonets-4407854575",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-nanonets-4407854575",
+    "score": 53,
+    "bumped_score": 53,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 16,
+      "domain_signals": [
+        "genai/agentic",
+        "enterprise"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Ares Management",
+    "title": "Sr. Product Manager, Secondaries Technology",
+    "location": "Mumbai Metropolitan Region",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-secondaries-technology-at-ares-management-4363044878",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-secondaries-technology-at-ares-management-4363044878",
+    "score": 53,
+    "bumped_score": 53,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Mastercard",
+    "title": "Manager, MVQ Product & GTM Enablement",
+    "location": "Pune/Pimpri-Chinchwad Area",
+    "url": "https://in.linkedin.com/jobs/view/manager-mvq-product-gtm-enablement-at-mastercard-4407756435",
+    "apply_url": "https://in.linkedin.com/jobs/view/manager-mvq-product-gtm-enablement-at-mastercard-4407756435",
+    "score": 53,
+    "bumped_score": 53,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Mastercard",
+    "title": "Manager, MVQ Product & GTM Enablement",
+    "location": "Gurgaon, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/manager-mvq-product-gtm-enablement-at-mastercard-4407758368",
+    "apply_url": "https://in.linkedin.com/jobs/view/manager-mvq-product-gtm-enablement-at-mastercard-4407758368",
+    "score": 53,
+    "bumped_score": 53,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 29,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "subscriptions",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Cvent",
+    "title": "Senior Product Manager (Payments Platform)",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-payments-platform-at-cvent-4404742340",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-payments-platform-at-cvent-4404742340",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 22,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "payments"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Dario",
+    "title": "Senior Product Manager",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-dario-4363904839",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-dario-4363904839",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 24,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Learneo",
+    "title": "Senior Product Manager, Design Tools",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-learneo-4405248985",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-learneo-4405248985",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "QuillBot",
+    "title": "Senior Product Manager, Design Tools",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-quillbot-4405268040",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-design-tools-at-quillbot-4405268040",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Availity",
+    "title": "Product, Senior Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/product-senior-manager-at-availity-4393558846",
+    "apply_url": "https://in.linkedin.com/jobs/view/product-senior-manager-at-availity-4393558846",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "generic-platform",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Kenvue",
+    "title": "Senior Product Manager - Skin Health",
+    "location": "Mumbai Metropolitan Region",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-skin-health-at-kenvue-4390128136",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-skin-health-at-kenvue-4390128136",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 16,
+      "domain_signals": [
+        "genai/agentic",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Morningstar",
+    "title": "Senior Product Manager",
+    "location": "Mumbai Metropolitan Region",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-morningstar-4394715427",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-morningstar-4394715427",
+    "score": 52,
+    "bumped_score": 52,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 16,
+      "domain_signals": [
+        "genai/agentic",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Alation",
+    "title": "Senior Product Manager",
+    "location": "Greater Chennai Area",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-alation-4314087548",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-alation-4314087548",
+    "score": 51,
+    "bumped_score": 51,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 20,
+      "domain_signals": [
+        "genai/agentic",
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 4,
+      "location_label": "chennai",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Josys",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-josys-4407208500",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-josys-4407208500",
+    "score": 50,
+    "bumped_score": 50,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 15,
+      "domain_signals": [
+        "generic-platform",
+        "b2b-saas",
+        "reco/personalization"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Visa",
+    "title": "Sr. Product Manager, SRC Product",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-src-product-at-visa-4407194937",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-src-product-at-visa-4407194937",
+    "score": 50,
+    "bumped_score": 50,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 17,
+      "domain_signals": [
+        "generic-platform",
+        "payments",
+        "reco/personalization",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Zebra Technologies",
+    "title": "Senior Manager Product Management",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-manager-product-management-at-zebra-technologies-4399549727",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-manager-product-management-at-zebra-technologies-4399549727",
+    "score": 49,
+    "bumped_score": 49,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 12,
+      "domain_signals": [
+        "genai/agentic"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Precisely",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4391862686",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-precisely-4391862686",
+    "score": 49,
+    "bumped_score": 49,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 8,
+      "domain_signals": [
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 10,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Skyhigh Security",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-skyhigh-security-4401576948",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-skyhigh-security-4401576948",
+    "score": 47,
+    "bumped_score": 47,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 12,
+      "domain_signals": [
+        "ai/ml",
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Virtusa",
+    "title": "Senior Director: Product Management Practice",
+    "location": "Gurgaon, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-director-product-management-practice-at-virtusa-4395160422",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-director-product-management-practice-at-virtusa-4395160422",
+    "score": 47,
+    "bumped_score": 47,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 0,
+      "domain_signals": [],
+      "seniority_20": 20,
+      "seniority_label": "vp/sr-dir",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 0,
+      "mgmt_10": 10,
+      "comp_15": 14
+    }
+  },
+  {
+    "company": "Honda",
+    "title": "Senior Product Manager - Digital Platforms",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-digital-platforms-at-honda-4406978876",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-digital-platforms-at-honda-4406978876",
+    "score": 45,
+    "bumped_score": 45,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 10,
+      "domain_signals": [
+        "generic-platform",
+        "payments"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "D. E. Shaw India Private Limited",
+    "title": "Product Manager/Lead, Product Management (Treasury Tech)",
+    "location": "Hyderabad, Telangana, India",
+    "url": "https://in.linkedin.com/jobs/view/product-manager-lead-product-management-treasury-tech-at-d-e-shaw-india-private-limited-4287972564",
+    "apply_url": "https://in.linkedin.com/jobs/view/product-manager-lead-product-management-treasury-tech-at-d-e-shaw-india-private-limited-4287972564",
+    "score": 45,
+    "bumped_score": 45,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 12,
+      "domain_signals": [
+        "genai/agentic"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 9,
+      "location_label": "hyderabad",
+      "tech_15": 2,
+      "mgmt_10": 8,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "eBay",
+    "title": "Sr Product Manager, Shipping/Logistics",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-shipping-logistics-at-ebay-4314313562",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-shipping-logistics-at-ebay-4314313562",
+    "score": 44,
+    "bumped_score": 44,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 9,
+      "domain_signals": [
+        "generic-platform",
+        "subscriptions"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Smartsheet",
+    "title": "Sr. Product Manager II, Identity & Authentication (Hybrid, Bangalore)",
+    "location": "Bengaluru East, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/sr-product-manager-ii-identity-authentication-hybrid-bangalore-at-smartsheet-4400433253",
+    "apply_url": "https://in.linkedin.com/jobs/view/sr-product-manager-ii-identity-authentication-hybrid-bangalore-at-smartsheet-4400433253",
+    "score": 44,
+    "bumped_score": 44,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 9,
+      "domain_signals": [
+        "generic-platform",
+        "enterprise"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 2,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Toast",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-toast-4405292367",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-toast-4405292367",
+    "score": 43,
+    "bumped_score": 43,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 8,
+      "domain_signals": [
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Aspire",
+    "title": "Senior Product Manager - Cards",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-cards-at-aspire-4406282965",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-cards-at-aspire-4406282965",
+    "score": 41,
+    "bumped_score": 41,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 13,
+      "domain_signals": [
+        "generic-platform",
+        "payments",
+        "api"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 3,
+      "location_label": "non-preferred",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Sabre",
+    "title": "Senior Product Manager",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-sabre-4389542788",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-sabre-4389542788",
+    "score": 40,
+    "bumped_score": 40,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 5,
+      "domain_signals": [
+        "generic-platform"
+      ],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 10,
+      "location_label": "bengaluru",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "Pluxee",
+    "title": "Local Lead Product Manager",
+    "location": "Mumbai, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/local-lead-product-manager-at-pluxee-4395163297",
+    "apply_url": "https://in.linkedin.com/jobs/view/local-lead-product-manager-at-pluxee-4395163297",
+    "score": 40,
+    "bumped_score": 40,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 0,
+      "domain_signals": [],
+      "seniority_20": 13,
+      "seniority_label": "lead",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 0,
+      "mgmt_10": 8,
+      "comp_15": 10
+    }
+  },
+  {
+    "company": "Experience.com",
+    "title": "Product Experience Lead",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/product-experience-lead-at-experience-com-4408769268",
+    "apply_url": "https://in.linkedin.com/jobs/view/product-experience-lead-at-experience-com-4408769268",
+    "score": 36,
+    "bumped_score": 36,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 8,
+      "domain_signals": [
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 0,
+      "mgmt_10": 8,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "Sodexo",
+    "title": "Product Owner Data",
+    "location": "Mumbai, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/product-owner-data-at-sodexo-4407758243",
+    "apply_url": "https://in.linkedin.com/jobs/view/product-owner-data-at-sodexo-4407758243",
+    "score": 32,
+    "bumped_score": 32,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 0,
+      "domain_signals": [],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 9,
+      "location_label": "mumbai",
+      "tech_15": 4,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  },
+  {
+    "company": "KernelDAO",
+    "title": "Senior Product Manager",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-kerneldao-4370521366",
+    "apply_url": "https://in.linkedin.com/jobs/view/senior-product-manager-at-kerneldao-4370521366",
+    "score": 31,
+    "bumped_score": 31,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 0,
+      "domain_signals": [],
+      "seniority_20": 11,
+      "seniority_label": "senior-pm",
+      "location_10": 6,
+      "location_label": "india-generic",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 9
+    }
+  },
+  {
+    "company": "AdMedia",
+    "title": "AdMedia - Product Manager - Marketing Platform",
+    "location": "Greater Kolkata Area",
+    "url": "https://in.linkedin.com/jobs/view/admedia-product-manager-marketing-platform-at-admedia-4400330509",
+    "apply_url": "https://in.linkedin.com/jobs/view/admedia-product-manager-marketing-platform-at-admedia-4400330509",
+    "score": 29,
+    "bumped_score": 29,
+    "bumped": false,
+    "bump_reasons": [],
+    "disposition": "silent_drop",
+    "rubric": {
+      "domain_30": 8,
+      "domain_signals": [
+        "generic-platform",
+        "api"
+      ],
+      "seniority_20": 7,
+      "seniority_label": "other",
+      "location_10": 2,
+      "location_label": "other",
+      "tech_15": 0,
+      "mgmt_10": 5,
+      "comp_15": 7
+    }
+  }
+]

@@ -1,0 +1,177 @@
+# Target Companies Watchlist
+#
+# 120+ companies for daily Greenhouse / Lever / Ashby / Workday scans.
+# Slugs marked confidence: high are ones I'm confident about based on common patterns.
+# Slugs marked confidence: medium should be verified once during initial setup
+# (just curl the endpoint — if it returns JSON, slug is correct).
+#
+# Schema:
+#   - name: company display name
+#     ats: greenhouse | lever | ashby | workday | proprietary
+#     slug: the ATS-specific identifier (e.g., greenhouse boards-api/anthropic uses slug "anthropic")
+#     priority: high | medium | low
+#     focus: brief tag of why this company is on the list
+#     confidence: high | medium — high means slug is verified, medium means verify on first run
+#
+# To verify a Greenhouse slug: curl https://boards-api.greenhouse.io/v1/boards/{slug}/jobs
+# To verify a Lever slug:      curl https://api.lever.co/v0/postings/{slug}?mode=json
+# To verify an Ashby slug:     curl https://api.ashbyhq.com/posting-api/job-board/{slug}
+
+companies:
+
+  # ============================================================
+  # GREENHOUSE — AI / ML / GenAI leaders
+  # ============================================================
+  - { name: "Anthropic",          ats: greenhouse, slug: "anthropic",      priority: high,   focus: "AI Safety / Claude",                confidence: high }
+  - { name: "OpenAI",             ats: greenhouse, slug: "openai",         priority: high,   focus: "GenAI",                              confidence: medium }
+  - { name: "Scale AI",           ats: greenhouse, slug: "scaleai",        priority: high,   focus: "AI infra / data",                    confidence: medium }
+  - { name: "Cohere",             ats: greenhouse, slug: "cohere",         priority: high,   focus: "Enterprise LLM",                     confidence: medium }
+  - { name: "Hugging Face",       ats: greenhouse, slug: "huggingface",    priority: medium, focus: "OSS ML platform",                    confidence: medium }
+  - { name: "Perplexity",         ats: greenhouse, slug: "perplexity",     priority: high,   focus: "AI search",                          confidence: medium }
+  - { name: "Glean",              ats: greenhouse, slug: "glean",          priority: high,   focus: "Enterprise AI search",               confidence: medium }
+  - { name: "Harvey",             ats: greenhouse, slug: "harvey",         priority: medium, focus: "Vertical AI / legal",                confidence: medium }
+  - { name: "Anysphere (Cursor)", ats: greenhouse, slug: "anysphere",      priority: high,   focus: "AI coding",                          confidence: medium }
+
+  # ============================================================
+  # GREENHOUSE — Marketplaces / Consumer / Travel
+  # ============================================================
+  - { name: "Airbnb",             ats: greenhouse, slug: "airbnb",         priority: high,   focus: "Marketplace / global",               confidence: high }
+  - { name: "DoorDash",           ats: greenhouse, slug: "doordash",       priority: medium, focus: "Marketplace",                         confidence: high }
+  - { name: "Instacart",          ats: greenhouse, slug: "instacart",      priority: medium, focus: "Marketplace",                         confidence: high }
+  - { name: "Lyft",               ats: greenhouse, slug: "lyft",           priority: medium, focus: "Marketplace",                         confidence: high }
+  - { name: "Pinterest",          ats: greenhouse, slug: "pinterest",      priority: medium, focus: "Discovery / personalization",         confidence: high }
+  - { name: "Reddit",             ats: greenhouse, slug: "reddit",         priority: medium, focus: "Consumer platform",                   confidence: high }
+  - { name: "Discord",            ats: greenhouse, slug: "discord",        priority: medium, focus: "Communications",                       confidence: high }
+  - { name: "Roblox",             ats: greenhouse, slug: "roblox",         priority: low,    focus: "Gaming platform",                      confidence: high }
+
+  # ============================================================
+  # GREENHOUSE — Fintech
+  # ============================================================
+  - { name: "Stripe",             ats: greenhouse, slug: "stripe",         priority: high,   focus: "Fintech infra",                        confidence: high }
+  - { name: "Coinbase",           ats: greenhouse, slug: "coinbase",       priority: medium, focus: "Crypto fintech",                       confidence: high }
+  - { name: "Robinhood",          ats: greenhouse, slug: "robinhood",      priority: medium, focus: "Consumer fintech",                     confidence: high }
+  - { name: "Plaid",              ats: greenhouse, slug: "plaid",          priority: high,   focus: "Fintech infra",                        confidence: high }
+  - { name: "Brex",               ats: greenhouse, slug: "brex",           priority: medium, focus: "B2B fintech",                          confidence: high }
+  - { name: "Ramp",               ats: greenhouse, slug: "ramp",           priority: medium, focus: "B2B fintech",                          confidence: high }
+  - { name: "Block (Square)",     ats: greenhouse, slug: "block",          priority: medium, focus: "Fintech",                              confidence: high }
+  - { name: "Greenlight",         ats: greenhouse, slug: "greenlightfinancial", priority: high, focus: "Family fintech (active pipeline)", confidence: high }
+  - { name: "Chime",              ats: greenhouse, slug: "chime",          priority: low,    focus: "Consumer fintech",                     confidence: medium }
+
+  # ============================================================
+  # GREENHOUSE — Developer / Cloud / Data Infra
+  # ============================================================
+  - { name: "Databricks",         ats: greenhouse, slug: "databricks",     priority: high,   focus: "Data / AI platform",                   confidence: high }
+  - { name: "Snowflake",          ats: greenhouse, slug: "snowflake",      priority: high,   focus: "Data cloud",                           confidence: high }
+  - { name: "Confluent",          ats: greenhouse, slug: "confluent",      priority: high,   focus: "Kafka / streaming",                    confidence: high }
+  - { name: "MongoDB",            ats: greenhouse, slug: "mongodb",        priority: medium, focus: "DB platform",                          confidence: high }
+  - { name: "Cloudflare",         ats: greenhouse, slug: "cloudflare",     priority: medium, focus: "Edge / dev infra",                     confidence: high }
+  - { name: "HashiCorp",          ats: greenhouse, slug: "hashicorp",      priority: medium, focus: "Infra / dev tools",                    confidence: high }
+  - { name: "GitLab",             ats: greenhouse, slug: "gitlab",         priority: medium, focus: "Devtools / DevOps",                    confidence: high }
+  - { name: "Twilio",             ats: greenhouse, slug: "twilio",         priority: medium, focus: "Comms infra",                          confidence: high }
+  - { name: "Datadog",            ats: greenhouse, slug: "datadog",        priority: medium, focus: "Observability",                        confidence: medium }
+  - { name: "Elastic",            ats: greenhouse, slug: "elastic",        priority: low,    focus: "Search infra",                         confidence: medium }
+
+  # ============================================================
+  # GREENHOUSE — Productivity / SaaS
+  # ============================================================
+  - { name: "Atlassian",          ats: greenhouse, slug: "atlassian",      priority: medium, focus: "Dev SaaS",                             confidence: high }
+  - { name: "Asana",              ats: greenhouse, slug: "asana",          priority: medium, focus: "Work mgmt SaaS",                       confidence: high }
+  - { name: "ClickUp",            ats: greenhouse, slug: "clickup",        priority: low,    focus: "Work mgmt SaaS",                       confidence: medium }
+  - { name: "Figma",              ats: greenhouse, slug: "figma",          priority: medium, focus: "Design SaaS",                          confidence: high }
+  - { name: "Notion",             ats: greenhouse, slug: "notion",         priority: medium, focus: "Productivity SaaS",                    confidence: medium }
+  - { name: "Zoom",               ats: greenhouse, slug: "zoom",           priority: low,    focus: "Comms SaaS",                           confidence: medium }
+  - { name: "Dropbox",            ats: greenhouse, slug: "dropbox",        priority: low,    focus: "Storage SaaS",                         confidence: medium }
+  - { name: "Box",                ats: greenhouse, slug: "boxinc",         priority: low,    focus: "Enterprise SaaS",                      confidence: medium }
+  - { name: "Miro",               ats: greenhouse, slug: "miro",           priority: low,    focus: "Collaboration SaaS",                   confidence: medium }
+  - { name: "Canva",              ats: greenhouse, slug: "canva",          priority: medium, focus: "Design SaaS",                          confidence: medium }
+
+  # ============================================================
+  # LEVER — Enterprise / Consumer
+  # ============================================================
+  - { name: "Netflix",            ats: lever,      slug: "netflix",        priority: medium, focus: "Streaming / ML",                       confidence: medium }
+  - { name: "Shopify",            ats: lever,      slug: "shopify",        priority: high,   focus: "Commerce platform",                    confidence: medium }
+  - { name: "Yelp",               ats: lever,      slug: "yelp",           priority: low,    focus: "Local marketplace",                    confidence: medium }
+  - { name: "Eventbrite",         ats: lever,      slug: "eventbrite",     priority: low,    focus: "Marketplace",                          confidence: medium }
+  - { name: "Twitch",             ats: lever,      slug: "twitch",         priority: low,    focus: "Video platform",                       confidence: medium }
+  - { name: "KeepTruckin (Motive)",ats: lever,     slug: "motive",         priority: low,    focus: "Vertical SaaS",                        confidence: medium }
+  - { name: "Discord",            ats: lever,      slug: "discord",        priority: medium, focus: "(verify both Lever and Greenhouse)",   confidence: medium }
+
+  # ============================================================
+  # ASHBY — Modern AI / dev startups
+  # ============================================================
+  - { name: "Linear",             ats: ashby,      slug: "linear",         priority: medium, focus: "Devtools",                             confidence: high }
+  - { name: "Vercel",             ats: ashby,      slug: "vercel",         priority: medium, focus: "Frontend infra",                       confidence: high }
+  - { name: "PostHog",            ats: ashby,      slug: "posthog",        priority: low,    focus: "Product analytics",                    confidence: high }
+  - { name: "Replit",             ats: ashby,      slug: "replit",         priority: medium, focus: "Dev platform",                         confidence: medium }
+  - { name: "Modal Labs",         ats: ashby,      slug: "modal",          priority: medium, focus: "ML infra",                             confidence: medium }
+  - { name: "Hex",                ats: ashby,      slug: "hex",            priority: low,    focus: "Data SaaS",                            confidence: medium }
+  - { name: "Mercury",            ats: ashby,      slug: "mercury",        priority: low,    focus: "Banking",                              confidence: medium }
+
+  # ============================================================
+  # WORKDAY — Enterprises (need per-company URL config; agent handles)
+  # ============================================================
+  - { name: "Salesforce",         ats: workday,    slug: "salesforce",     priority: high,   focus: "Enterprise SaaS / AI",                 confidence: high }
+  - { name: "Wayfair",            ats: workday,    slug: "wayfair",        priority: low,    focus: "(current employer — for reference)",   confidence: high }
+  - { name: "ServiceNow",         ats: workday,    slug: "servicenow",     priority: medium, focus: "Enterprise SaaS",                      confidence: high }
+  - { name: "Visa",               ats: workday,    slug: "visa",           priority: low,    focus: "Fintech enterprise",                   confidence: high }
+  - { name: "Mastercard",         ats: workday,    slug: "mastercard",     priority: low,    focus: "Fintech enterprise",                   confidence: high }
+  - { name: "Oracle",             ats: workday,    slug: "oracle",         priority: low,    focus: "Enterprise",                           confidence: medium }
+  - { name: "NVIDIA",             ats: workday,    slug: "nvidia",         priority: high,   focus: "AI hardware / platform",               confidence: medium }
+  - { name: "Adobe",              ats: workday,    slug: "adobe",          priority: medium, focus: "Creative SaaS / AI",                   confidence: high }
+  - { name: "Cisco",              ats: workday,    slug: "cisco",          priority: low,    focus: "Enterprise infra",                     confidence: medium }
+  - { name: "Intuit",             ats: workday,    slug: "intuit",         priority: high,   focus: "Active pipeline (3-role cap)",         confidence: high }
+  - { name: "Optum",              ats: workday,    slug: "optum",          priority: high,   focus: "Healthcare data (referrals on file)",  confidence: high }
+  - { name: "Experian",           ats: workday,    slug: "experian",       priority: medium, focus: "Data / fintech",                       confidence: medium }
+  - { name: "Deutsche Telekom",   ats: workday,    slug: "deutschetelekom",priority: medium, focus: "Telecom / digital labs",               confidence: medium }
+  - { name: "Morningstar",        ats: workday,    slug: "morningstar",    priority: low,    focus: "Financial data",                       confidence: medium }
+
+  # ============================================================
+  # PROPRIETARY — search via web fetch + custom logic
+  # ============================================================
+  - { name: "Amazon",             ats: proprietary, slug: "amazon.jobs",   priority: medium, focus: "Marketplace; previous employer",       confidence: high }
+  - { name: "Microsoft",          ats: proprietary, slug: "careers.microsoft.com", priority: medium, focus: "Enterprise / AI",              confidence: high }
+  - { name: "Google",             ats: proprietary, slug: "careers.google.com",    priority: medium, focus: "Big tech",                     confidence: high }
+  - { name: "Meta",               ats: proprietary, slug: "metacareers.com",       priority: low,    focus: "Big tech",                     confidence: high }
+  - { name: "Apple",              ats: proprietary, slug: "jobs.apple.com",        priority: low,    focus: "Big tech",                     confidence: high }
+
+  # ============================================================
+  # INDIA — major employers (mostly proprietary or Workday)
+  # ============================================================
+  - { name: "Razorpay",           ats: greenhouse, slug: "razorpay",       priority: high,   focus: "India fintech infra",                  confidence: medium }
+  - { name: "Cred",               ats: greenhouse, slug: "cred",           priority: medium, focus: "India fintech",                        confidence: medium }
+  - { name: "PhonePe",            ats: proprietary, slug: "phonepe.com/careers", priority: high, focus: "India fintech",                    confidence: high }
+  - { name: "Swiggy",             ats: proprietary, slug: "careers.swiggy.com",   priority: medium, focus: "India delivery",                confidence: high }
+  - { name: "Zomato",             ats: proprietary, slug: "zomato.com/careers",   priority: medium, focus: "India delivery",                confidence: high }
+  - { name: "Meesho",             ats: greenhouse, slug: "meesho",         priority: medium, focus: "India social commerce",                confidence: medium }
+  - { name: "Flipkart",           ats: workday,    slug: "flipkart",       priority: low,    focus: "India marketplace; previous employer", confidence: medium }
+  - { name: "Paytm",              ats: proprietary, slug: "paytm.com/careers",    priority: low,    focus: "India fintech; previous employer", confidence: high }
+  - { name: "Ola",                ats: proprietary, slug: "olacabs.com/careers",  priority: low,    focus: "India mobility",               confidence: medium }
+  - { name: "Dream11",            ats: proprietary, slug: "careers.dream11.com",  priority: medium, focus: "India fantasy sports",          confidence: medium }
+  - { name: "OYO",                ats: proprietary, slug: "oyorooms.com/careers", priority: low,    focus: "India hospitality",            confidence: medium }
+  - { name: "MakeMyTrip",         ats: proprietary, slug: "makemytrip.com/careers",priority: low,   focus: "India travel",                 confidence: medium }
+  - { name: "Nykaa",              ats: proprietary, slug: "nykaa.com/careers",    priority: low,    focus: "India beauty commerce",        confidence: medium }
+  - { name: "Lenskart",           ats: proprietary, slug: "lenskart.com/careers", priority: low,    focus: "India eyewear",                 confidence: medium }
+  - { name: "BookMyShow",         ats: proprietary, slug: "bookmyshow.com/careers",priority: low,   focus: "India entertainment",           confidence: medium }
+  - { name: "JioPlatforms",       ats: workday,    slug: "ril",            priority: medium, focus: "India telecom / digital",              confidence: medium }
+  - { name: "Reliance",           ats: workday,    slug: "ril",            priority: medium, focus: "India conglomerate",                   confidence: medium }
+  - { name: "Tata Digital",       ats: workday,    slug: "tatadigital",    priority: medium, focus: "India digital",                        confidence: medium }
+  - { name: "Infosys",            ats: workday,    slug: "infosys",        priority: low,    focus: "India IT services",                    confidence: medium }
+  - { name: "TCS",                ats: workday,    slug: "tcs",            priority: low,    focus: "India IT services",                    confidence: medium }
+  - { name: "Wipro",              ats: workday,    slug: "wipro",          priority: low,    focus: "India IT services",                    confidence: medium }
+
+  # ============================================================
+  # AGGREGATORS / TARGETED ROLES (high-priority specific roles)
+  # ============================================================
+  - { name: "Notion",             ats: greenhouse, slug: "notion",         priority: high,   focus: "AI features",                          confidence: medium }
+  - { name: "Box",                ats: lever,      slug: "box",            priority: low,    focus: "Enterprise SaaS",                      confidence: medium }
+  - { name: "Slack",              ats: workday,    slug: "salesforce",     priority: low,    focus: "(now under Salesforce Workday)",       confidence: medium }
+  - { name: "Mistral AI",         ats: ashby,      slug: "mistral",        priority: high,   focus: "GenAI",                                confidence: medium }
+  - { name: "Sourcegraph",        ats: ashby,      slug: "sourcegraph",    priority: medium, focus: "AI coding",                            confidence: medium }
+  - { name: "Tabnine",            ats: greenhouse, slug: "tabnine",        priority: low,    focus: "AI coding",                            confidence: medium }
+
+# Companies marked confidence: medium should be verified once on first run
+# (the agent's discovery script does this automatically and updates this file).
+#
+# To add a new company: append to the appropriate ATS section, then run
+#   python agent/sources/discovery.py --verify {company-name}
+# which will detect the ATS and confirm the slug.
