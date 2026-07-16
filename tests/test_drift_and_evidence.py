@@ -109,6 +109,32 @@ def test_readme_alone_is_not_corroboration() -> None:
     assert not supported and "not independent corroboration" in reason
 
 
+def test_readme_never_counts_toward_the_independence_threshold() -> None:
+    # A README plus ONE independent origin is still only one independent origin.
+    claim = Claim(
+        claim_id="c1",
+        text="x",
+        evidence=[evidence("readme", "e1"), evidence("source_code", "e2")],
+    )
+    supported, reason = loop3_evidence.is_supported(claim)
+    assert not supported and "self-described origins do not count" in reason
+    # High-impact: README + two independent origins is still only two of three.
+    high = Claim(
+        claim_id="c2",
+        text="y",
+        impact=ClaimImpact.HIGH,
+        evidence=[
+            evidence("readme", "e1"),
+            evidence("source_code", "e2"),
+            evidence("commit_history", "e3"),
+        ],
+    )
+    assert not loop3_evidence.is_supported(high)[0]
+    # A README alongside a full independent set does no harm.
+    high.evidence.append(evidence("file_listing", "e4"))
+    assert loop3_evidence.is_supported(high)[0]
+
+
 def test_high_impact_needs_three_origins() -> None:
     claim = Claim(
         claim_id="c1",
@@ -137,6 +163,24 @@ def test_absence_claim_requires_complete_search_coverage() -> None:
         queries=["tests/"], scope_description="tree", complete=True
     )
     assert loop3_evidence.is_supported(claim)[0]
+
+
+def test_claim_serialization_roundtrip() -> None:
+    claim = Claim(
+        claim_id="c1",
+        text="repo has no tests",
+        impact=ClaimImpact.HIGH,
+        kind=ClaimKind.ABSENCE,
+        evidence=[evidence("file_listing", "e1"), evidence("ci_config", "e2")],
+        search_coverage=SearchCoverage(queries=["tests/"], scope_description="tree", complete=True),
+        conflicts=["listing and CI config disagree"],
+        counter_evidence=[evidence("readme", "e3")],
+    )
+    restored = Claim.from_dict(claim.to_dict())
+    assert restored.to_dict() == claim.to_dict()
+    assert restored.impact is ClaimImpact.HIGH and restored.kind is ClaimKind.ABSENCE
+    assert restored.search_coverage is not None and restored.search_coverage.complete
+    assert restored.counter_evidence[0].origin == "readme"
 
 
 def test_unsupported_claims_excluded_from_percentages_and_conflicts_visible() -> None:

@@ -106,7 +106,12 @@ def compare_runs(runs: list[RunFindings]) -> StabilityReport:
 
 
 def verify_stability(runs: list[RunFindings]) -> tuple[VerificationResult, StabilityReport]:
-    """Check the six-variant requirement and produce the comparison report."""
+    """Check the six-variant requirement and produce the comparison report.
+
+    ``passed`` means "the required variants all ran and were compared" — NOT
+    "the findings are stable". Disagreement is a valid, faithfully-reported
+    outcome; consumers must read the StabilityReport, not just ``passed``.
+    """
     present = {run.variant for run in runs}
     missing = [v.value for v in REQUIRED_VARIANTS if v not in present]
     report = compare_runs(runs)

@@ -39,7 +39,12 @@ def independent_origins(claim: Claim) -> set[str]:
 
 
 def is_supported(claim: Claim) -> tuple[bool, str]:
-    """Apply the independence rules to one claim. Returns (supported, reason)."""
+    """Apply the independence rules to one claim. Returns (supported, reason).
+
+    Only non-self-described origins count toward the independence threshold:
+    a README may accompany a claim but never substitutes for an independent
+    origin, alone or in combination.
+    """
     origins = independent_origins(claim)
     required = HIGH_IMPACT_MIN_SOURCES if claim.impact == ClaimImpact.HIGH else NORMAL_MIN_SOURCES
     non_self = origins - SELF_DESCRIBED_ORIGINS
@@ -48,10 +53,10 @@ def is_supported(claim: Claim) -> tuple[bool, str]:
             "only self-described sources (e.g. README) back this claim; "
             "a README statement is not independent corroboration"
         )
-    if len(origins) < required:
+    if len(non_self) < required:
         return False, (
-            f"{len(origins)} independent origin(s) found, {required} required "
-            f"for {claim.impact.value} impact"
+            f"{len(non_self)} independent origin(s) found, {required} required "
+            f"for {claim.impact.value} impact (self-described origins do not count)"
         )
     if claim.kind == ClaimKind.ABSENCE:
         if claim.search_coverage is None or not claim.search_coverage.queries:
@@ -70,6 +75,9 @@ class EvidenceCoverage:
 
     @property
     def supported_pct(self) -> float:
+        """Support *rate* over all material claims (unsupported claims count
+        against it in the denominator and never appear in the numerator).
+        This is not an accuracy figure over supported-only claims."""
         if self.total_claims == 0:
             return 0.0
         return round(self.supported_claims / self.total_claims * 100.0, 2)
