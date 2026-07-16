@@ -20,7 +20,24 @@
     "releases": 0,
     "contributors": 2,
     "commit_count": 9,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['readme.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 1,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 2996,
+      "distinct_commit_days": 4,
+      "commits_sampled": 9,
+      "commit_msg_uniformity_pct": 22,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "awesome-ai-pm",
@@ -43,7 +60,24 @@
     "releases": 0,
     "contributors": 2,
     "commit_count": 16,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['contributing.md', 'license', 'readme.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 3,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 36084,
+      "distinct_commit_days": 16,
+      "commits_sampled": 16,
+      "commit_msg_uniformity_pct": 6,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "claude-design-pm-toolkit",
@@ -61,12 +95,29 @@
     "dependencies_declared": false,
     "has_tests": false,
     "has_ci": false,
-    "runnable_setup_documented": false,
+    "runnable_setup_documented": true,
     "pull_requests": 0,
     "releases": 0,
     "contributors": 1,
     "commit_count": 27,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.gitignore', '01_investor_demo.md', '02_product_launch.md', '03_feature_flow.md', '04_animated_showcase.md', '05_design_system.md', '06_pm_tips.md', '07_pitch_deck.md', '08_stakeholder_prototype.md', '09_design_system_setup.md', '10_clarifying_questions.md', '11_claude_code_handoff.md', '12_error_recovery.md', '13_internal_tool.md', '14_commerce_page.md', '15_research_prototype.md', 'changelog.md', 'cheatsheet.md', 'license', 'readme.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 20,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 7866,
+      "distinct_commit_days": 1,
+      "commits_sampled": 27,
+      "commit_msg_uniformity_pct": 4,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "claude-routines-and-agents-pm-pack",
@@ -89,7 +140,24 @@
     "releases": 0,
     "contributors": 1,
     "commit_count": 18,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['appendix-connector-ids.md', 'cowork-tasks', 'managed-agents', 'measurement', 'prompt-injection-mitigation.md', 'quickstart.md', 'readme.md', 'routines', 'sample-outputs', 'security.md', 'team-rollout-4-week-plan.md', 'tradeoffs.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 12,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 10350,
+      "distinct_commit_days": 1,
+      "commits_sampled": 18,
+      "commit_msg_uniformity_pct": 6,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "cups-task",
@@ -112,7 +180,24 @@
     "releases": 0,
     "contributors": 2,
     "commit_count": 3,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['cerebral cortex 2008.pdf', 'cups instructions.doc', 'cupstask.exe', 'cupstask.frm', 'cupstask.frx', 'cupstask.vbp', 'cupstask.vbw', 'instruction.frm', 'instruction.frx', 'levin & hart, 2003.pdf', 'material', 'neural correlates of adaptive decision making for risky gains and losses.pdf', 'readme.md']"
+        ],
+        "scope": "root of default branch master (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 13,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 1800,
+      "distinct_commit_days": 2,
+      "commits_sampled": 3,
+      "commit_msg_uniformity_pct": 33,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "cursor-layer-pm-toolkit",
@@ -130,12 +215,29 @@
     "dependencies_declared": false,
     "has_tests": false,
     "has_ci": false,
-    "runnable_setup_documented": false,
+    "runnable_setup_documented": true,
     "pull_requests": 0,
     "releases": 0,
     "contributors": 1,
     "commit_count": 2,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.gitignore', 'audit', 'design-spec', 'license', 'prototypes', 'readme.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 6,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 3638,
+      "distinct_commit_days": 1,
+      "commits_sampled": 2,
+      "commit_msg_uniformity_pct": 50,
+      "refactor_commits": 0,
+      "one_shot_dump": true
+    }
   },
   {
     "name": "hermes-pm-toolkit",
@@ -153,12 +255,29 @@
     "dependencies_declared": false,
     "has_tests": false,
     "has_ci": false,
-    "runnable_setup_documented": false,
+    "runnable_setup_documented": true,
     "pull_requests": 0,
     "releases": 0,
     "contributors": 1,
     "commit_count": 2,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['30-day-rollout.md', 'decisions', 'license', 'memories', 'readme.md', 'signals', 'skills', 'soul.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 8,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 2448,
+      "distinct_commit_days": 1,
+      "commits_sampled": 2,
+      "commit_msg_uniformity_pct": 50,
+      "refactor_commits": 0,
+      "one_shot_dump": true
+    }
   },
   {
     "name": "pm-claude-code-setup",
@@ -181,7 +300,24 @@
     "releases": 0,
     "contributors": 2,
     "commit_count": 23,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.claude', 'claude.md', 'license', 'quickstart.md', 'readme.md', 'templates']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 6,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 9588,
+      "distinct_commit_days": 14,
+      "commits_sampled": 23,
+      "commit_msg_uniformity_pct": 4,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "pm-claude-skills",
@@ -199,12 +335,29 @@
     "dependencies_declared": false,
     "has_tests": false,
     "has_ci": false,
-    "runnable_setup_documented": false,
+    "runnable_setup_documented": true,
     "pull_requests": 0,
     "releases": 0,
     "contributors": 2,
     "commit_count": 25,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['contributing.md', 'license', 'readme.md', 'skills', 'templates']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 5,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 6748,
+      "distinct_commit_days": 19,
+      "commits_sampled": 25,
+      "commit_msg_uniformity_pct": 4,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "pm-github-starter-kit",
@@ -227,7 +380,24 @@
     "releases": 0,
     "contributors": 1,
     "commit_count": 4,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.gitignore', 'checklist.md', 'prompts', 'readme.md', 'templates']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 5,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 3847,
+      "distinct_commit_days": 2,
+      "commits_sampled": 4,
+      "commit_msg_uniformity_pct": 25,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "pm-github-workflow-repo",
@@ -244,13 +414,30 @@
     "license": "MIT",
     "dependencies_declared": false,
     "has_tests": false,
-    "has_ci": false,
+    "has_ci": true,
     "runnable_setup_documented": false,
     "pull_requests": 0,
     "releases": 0,
     "contributors": 1,
     "commit_count": 42,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.gitattributes', '.github', '.gitignore', 'autoresearch', 'claude.md', 'contributing.md', 'decisions', 'docs', 'evals', 'examples', 'license', 'readme.md', 'skills']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 13,
+      "ci_runs": true,
+      "test_files": 0,
+      "readme_length": 10393,
+      "distinct_commit_days": 32,
+      "commits_sampled": 42,
+      "commit_msg_uniformity_pct": 2,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "pm-planning-system",
@@ -265,7 +452,7 @@
     "pushed_at": "2026-04-14T23:35:41Z",
     "open_issues": 2,
     "license": null,
-    "dependencies_declared": false,
+    "dependencies_declared": true,
     "has_tests": false,
     "has_ci": false,
     "runnable_setup_documented": false,
@@ -273,7 +460,24 @@
     "releases": 0,
     "contributors": 1,
     "commit_count": 21,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.claude', '.gitignore', 'claude.md', 'package-lock.json', 'package.json', 'planning', 'readme.md', 'rollout', 'src', 'vitest.config.ts']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 10,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 6179,
+      "distinct_commit_days": 1,
+      "commits_sampled": 21,
+      "commit_msg_uniformity_pct": 5,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "pm-prompt-library",
@@ -296,7 +500,24 @@
     "releases": 0,
     "contributors": 2,
     "commit_count": 31,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['contributing.md', 'license', 'prompts', 'readme.md']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 4,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 7150,
+      "distinct_commit_days": 26,
+      "commits_sampled": 31,
+      "commit_msg_uniformity_pct": 3,
+      "refactor_commits": 0,
+      "one_shot_dump": false
+    }
   },
   {
     "name": "product-growth-team-os",
@@ -313,12 +534,29 @@
     "license": "NOASSERTION",
     "dependencies_declared": false,
     "has_tests": false,
-    "has_ci": false,
+    "has_ci": true,
     "runnable_setup_documented": false,
     "pull_requests": 0,
     "releases": 0,
     "contributors": 1,
     "commit_count": 14,
-    "signals": {}
+    "signals": {
+      "test_search": {
+        "queries": [
+          "root entries: ['.claude', '.github', '.gitignore', 'claude.md', 'contributing.md', 'license', 'minimal-setup.md', 'pm-os-migration.md', 'product-development', 'readme.md', 'security.md', 'team']"
+        ],
+        "scope": "root of default branch main (top-level only)",
+        "complete": false
+      },
+      "root_entry_count": 12,
+      "ci_runs": false,
+      "test_files": 0,
+      "readme_length": 7925,
+      "distinct_commit_days": 3,
+      "commits_sampled": 14,
+      "commit_msg_uniformity_pct": 7,
+      "refactor_commits": 1,
+      "one_shot_dump": false
+    }
   }
 ]
