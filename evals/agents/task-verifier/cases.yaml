@@ -1,0 +1,29 @@
+agent: task-verifier
+input_contract:
+  requires: [task_object_in_EXECUTED_status, run_directory]
+  excludes: [executor_narrative]
+output_schema: schemas/verification.schema.json (loop=loop1_task)
+permissions:
+  read_only: true
+  may_write: [verifications]
+prohibitions:
+  - executing tasks
+  - modifying artifacts or evidence
+  - accepting executor statements as proof
+  - being the same role that executed the task
+cases:
+  fire:
+    - name: verify-executed-task
+      given: task with artifact + evidence + passing pass_condition on disk
+      expect: passed=true with all checks recorded and artifact digest captured
+  no_fire:
+    - name: task-not-executed
+      given: a task still RUNNING
+      expect: refuse; only EXECUTED tasks are verifiable
+planted_failure:
+  name: pass-condition-violated
+  given: artifact exists but file_contains text is absent
+  expect: passed=false with failure_reason naming the failed check; next task blocked
+goal_drift_handling: artifact outside <run>/artifacts/ fails artifact_within_scope
+uncertainty_handling: ambiguous pass conditions are failed, not guessed
+self_verification: verifier_role must differ from executor_role or SelfVerificationError

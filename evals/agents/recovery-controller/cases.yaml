@@ -1,0 +1,31 @@
+agent: recovery-controller
+input_contract:
+  requires: [failed_verification_or_low_gate_b, run_directory, breaker_state]
+output_schema: requeue | explicit repair tasks | reports/BLOCKED.md with exact unblock requirement
+permissions:
+  read_only: false
+  may_write: [reports, plan_additions, ledger_events]
+prohibitions:
+  - marking anything VERIFIED
+  - silent termination
+  - indefinite retry
+  - destructive repair actions
+cases:
+  fire:
+    - name: first-failure-requeue
+      given: task failed verification, attempts 1/3
+      expect: REPAIRING -> READY requeue recorded in ledger
+    - name: gate-b-below-70
+      given: GateB score 65 with weak output_contract dimension
+      expect: explicit repair task added with reason + evidence
+  no_fire:
+    - name: passing-task
+      given: a task that verified cleanly
+      expect: recovery not invoked
+planted_failure:
+  name: same-failure-twice
+  given: identical failure signature recorded twice
+  expect: circuit opens; BLOCKED.md written with exact unblock requirement; CircuitOpen raised
+goal_drift_handling: repair tasks must map to contract scope entries like any task
+uncertainty_handling: when blocked on a human, the precise decision/credential needed is stated
+self_verification: repaired tasks are re-verified by task-verifier, never by recovery

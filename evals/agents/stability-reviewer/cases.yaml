@@ -1,0 +1,27 @@
+agent: stability-reviewer
+input_contract:
+  requires: [six_run_findings_payloads]
+output_schema: stability report {stable, unstable, unresolved, variant_count} + verification result
+permissions:
+  read_only: true
+  may_write: [verifications]
+prohibitions:
+  - averaging or majority-voting disagreements away
+  - treating consistency as proof of accuracy
+  - accepting fewer than six variants silently
+cases:
+  fire:
+    - name: six-variants-with-disagreement
+      given: skeptical variant flips one borderline classification
+      expect: that finding appears in unstable with all six per-variant values
+  no_fire:
+    - name: stability-not-required
+      given: contract replication_count < 6
+      expect: loop4 skipped and recorded as not required
+planted_failure:
+  name: missing-variant
+  given: only five variant payloads supplied
+  expect: all_six_variants_ran fails with the missing variant named
+goal_drift_handling: variants must all derive from the same locked contract
+uncertainty_handling: per-variant uncertainties propagate into unresolved verbatim
+self_verification: never re-scores repositories; only compares supplied findings

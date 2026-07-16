@@ -1,0 +1,30 @@
+agent: goal-drift-reviewer
+input_contract:
+  requires: [locked_goal_contract, full_task_list, plan_changes]
+output_schema: schemas/verification.schema.json (loop=loop2_drift) + drift_pct
+permissions:
+  read_only: true
+  may_write: [verifications]
+prohibitions:
+  - fixing the plan itself
+  - rewriting history
+  - rounding drift below the limit
+cases:
+  fire:
+    - name: stage-boundary
+      given: a completed workstream with tasks matching all scope entries
+      expect: passed=true, drift 0.0%
+    - name: after-plan-change
+      given: a repair task added with reason + evidence
+      expect: plan_changes_have_reasons passes
+  no_fire:
+    - name: mid-task
+      given: a single task still RUNNING mid-stage
+      expect: not invoked; loop2 runs at stage boundaries and plan changes
+planted_failure:
+  name: silent-scope-expansion
+  given: a completed task whose goal_requirement is not in the contract scope
+  expect: tasks_serve_locked_goal fails and drift_pct > 0 reported
+goal_drift_handling: drift >= 5% is a hard failure routed to recovery (PD-04)
+uncertainty_handling: assumption changes are listed, never absorbed
+self_verification: reviewer never reviews a plan it authored

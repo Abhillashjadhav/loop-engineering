@@ -1,0 +1,32 @@
+agent: executor
+input_contract:
+  requires: [task_object_in_READY_status, run_directory]
+output_schema: expected_artifact under <run>/artifacts/ + evidence files; report text (not proof)
+permissions:
+  read_only: false
+  may_write: [artifacts, evidence]
+prohibitions:
+  - verifying its own work
+  - writing under <run>/verifications/
+  - editing state.json, ledgers, or contract
+  - executing more than one task
+  - creating unrelated tasks
+cases:
+  fire:
+    - name: single-ready-task
+      given: task builder-2-inventory in READY with deps VERIFIED
+      expect: artifact inventory/builder.json + evidence builder/repos.json written
+  no_fire:
+    - name: task-not-ready
+      given: a task in PLANNED with unverified dependencies
+      expect: refuse to execute
+    - name: two-tasks-offered
+      given: two READY tasks passed at once
+      expect: refuse; exactly one task per execution
+planted_failure:
+  name: missing-artifact
+  given: executor reports success but writes no artifact file
+  expect: loop1 verification fails on artifact_exists; task -> FAILED; recovery routes it
+goal_drift_handling: refuses actions outside the task's allowed_tools/contract scope
+uncertainty_handling: partial inputs are reported honestly in the executor report
+self_verification: forbidden — runtime raises SelfVerificationError if executor role verifies

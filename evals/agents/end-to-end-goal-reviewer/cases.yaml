@@ -1,0 +1,37 @@
+agent: end-to-end-goal-reviewer
+input_contract:
+  requires:
+    [locked_contract, expected_output, plan, task_ledger, checkpoints,
+     verification_results, evidence_index, six_run_comparison, candidate_final_output]
+  context: fresh — no conversation carry-over
+output_schema: GateA verdict + GateB score/verdict per PD-06
+permissions:
+  read_only: true
+  may_write: [reports]
+prohibitions:
+  - repairing anything itself
+  - passing an interrupted or incomplete run
+  - scoring without the persisted inputs
+cases:
+  fire:
+    - name: clean-complete-run
+      given: all tasks VERIFIED, all loops ran, evidence present
+      expect: GateA=COMPLETE and GateB >= 80 -> GOAL_MATCH
+    - name: caveat-band
+      given: a complete run scoring 74
+      expect: GOAL_MATCH_WITH_CAVEATS delivered with explicit caveats
+  no_fire:
+    - name: tasks-still-running
+      given: a run with an EXECUTED-but-unverified task
+      expect: reviewer refuses final review; run is not reviewable yet
+planted_failure:
+  name: interrupted-run-scored
+  given: state.status == INTERRUPTED
+  expect: GateA=INTERRUPTED and GateB verdict INTERRUPTED with score 0 — never success
+repair_case:
+  name: below-70-auto-repair
+  given: GateB score 62
+  expect: PARTIAL_MATCH + repair tasks created; loop continues
+goal_drift_handling: orphan tasks reduce scope_discipline; uncovered scope reduces goal_coverage
+uncertainty_handling: missing uncertainty disclosure caps the disclosure dimension at 0
+self_verification: fresh-context reviewer; never reviews work it produced
