@@ -93,3 +93,17 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   empirical confirmation. This defect also existed in the superseded
   monolithic implementation — caught by this PR's review.
 - **Merge:** squash `54886dd`.
+
+## PR 7/12 — Recovery Controller, circuit breakers, E2E Goal Reviewer (PR #8)
+
+- **Outcome:** all §8 breaker conditions trip with BLOCKED.md + exact unblock
+  requirement (silent stops structurally impossible); recovery requeues within
+  limits and records explicit repair-task plan changes; Gate A completeness
+  verdicts and Gate B PD-06 thresholds — deliverable-on-interrupted impossible.
+- **Tests:** pytest 87 passed / 1 deselected (every breaker, recovery paths,
+  all Gate A/B verdicts and thresholds); ruff clean; mypy strict clean
+  (27 files); CI green.
+- **Independent review:** APPROVE (verified empirically: report-before-raise,
+  boundary thresholds, weight sum; nits: DELIVERABLE_VERDICTS not consumed by
+  as_verification_result, no-progress message wording, rglob counts dirs).
+- **Merge:** squash `5ec689a`.

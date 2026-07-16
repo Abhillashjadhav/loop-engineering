@@ -1,13 +1,27 @@
-"""Shared test fixtures and paths."""
+"""Shared fixtures: locked contracts, fixture paths, and a minimal demo use
+case that lets engine-level behaviors (repair below 70, planted verification
+failures) be exercised deterministically."""
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from typing import Any
 
 import pytest
 
 from loop_engineering.contracts import goal_contract
+from loop_engineering.domain.models import (
+    Claim,
+    ClaimImpact,
+    EvidenceItem,
+    PassCondition,
+    StabilityVariant,
+    Task,
+)
+from loop_engineering.reporting.evidence_pack import LearningReceipt
+from loop_engineering.runtime.engine import ExecutionContext, TaskOutcome
+from loop_engineering.verification.loop4_stability import RunFindings
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -50,3 +64,129 @@ def make_contract_draft(**overrides: Any) -> dict[str, Any]:
 @pytest.fixture
 def locked_contract() -> dict[str, Any]:
     return goal_contract.lock(make_contract_draft())
+
+
+def _demo_claim() -> Claim:
+    return Claim(
+        claim_id="demo-claim",
+        text="the demo dataset contains one record",
+        impact=ClaimImpact.NORMAL,
+        evidence=[
+            EvidenceItem(
+                evidence_id="e1",
+                source_url="local://data/source-a",
+                origin="source_code",
+                retrieved_at="2026-07-16T00:00:00+00:00",
+                content_hash="sha256:aa",
+            ),
+            EvidenceItem(
+                evidence_id="e2",
+                source_url="local://data/source-b",
+                origin="commit_history",
+                retrieved_at="2026-07-16T00:00:00+00:00",
+                content_hash="sha256:bb",
+            ),
+        ],
+    )
+
+
+class DemoUseCase:
+    """Two-phase demo: the first pass deliberately under-delivers (no verdict,
+    no summary.json) so Gate B lands below 70 and automatic repair kicks in.
+
+    fail_first_attempt plants a Loop-1 verification failure on the first
+    execution attempt (artifact missing the pass-condition text)."""
+
+    name = "demo"
+
+    def __init__(self, fail_first_attempt: bool = False) -> None:
+        self.fail_first_attempt = fail_first_attempt
+
+    def build_plan(self, contract: dict[str, Any], config: dict[str, Any]) -> list[Task]:
+        return [
+            Task(
+                task_id="t1-report",
+                goal_requirement="produce the demo report",
+                action="write the demo report draft",
+                expected_artifact="report.md",
+                evidence_required=["source-a.txt"],
+                pass_condition=PassCondition(type="file_contains", text="# Demo report"),
+                failure_condition="report draft missing",
+                max_attempts=3,
+            )
+        ]
+
+    def stage_of(self, task: Task) -> str:
+        return "demo"
+
+    def execute_task(self, task: Task, ctx: ExecutionContext) -> TaskOutcome:
+        ctx.evidence_path("source-a.txt").write_text("raw demo source", encoding="utf-8")
+        if task.task_id == "t1-report":
+            if self.fail_first_attempt and task.attempts <= 1:
+                ctx.artifact_path("report.md").write_text("broken draft", encoding="utf-8")
+            else:
+                ctx.artifact_path("report.md").write_text(
+                    "# Demo report\n\ndraft without verdict\n", encoding="utf-8"
+                )
+            return TaskOutcome(claims=[_demo_claim()])
+        if task.task_id.startswith("repair-"):
+            ctx.artifact_path("report.md").write_text(
+                "# Demo report\n\n## Verdict\n\nall good\n\nknown uncertainty: none material\n",
+                encoding="utf-8",
+            )
+            ctx.artifact_path("summary.json").write_text(
+                json.dumps({"status": "ok"}), encoding="utf-8"
+            )
+            return TaskOutcome()
+        raise AssertionError(f"unexpected task {task.task_id}")
+
+    def build_final_output(self, ctx: ExecutionContext) -> str:
+        report = ctx.run_directory / "artifacts" / "report.md"
+        return report.read_text(encoding="utf-8") if report.exists() else ""
+
+    def run_variant(self, variant: StabilityVariant, ctx: ExecutionContext) -> RunFindings:
+        return RunFindings(variant=variant, findings={"demo": "ok"})
+
+    def deliverables_present(self, ctx: ExecutionContext) -> list[str]:
+        present = []
+        report = ctx.run_directory / "artifacts" / "report.md"
+        if report.exists() and "## Verdict" in report.read_text(encoding="utf-8"):
+            present.append("report with verdict")
+        if (ctx.run_directory / "artifacts" / "summary.json").exists():
+            present.append("summary json")
+        return present
+
+    def repair_tasks(
+        self, weak_dimensions: list[str], ctx: ExecutionContext, existing: list[Task]
+    ) -> list[Task]:
+        n = sum(1 for t in existing if t.task_id.startswith("repair-"))
+        return [
+            Task(
+                task_id=f"repair-{n + 1:03d}",
+                goal_requirement="produce the demo report",
+                action="repair the demo report to satisfy the output contract",
+                expected_artifact="summary.json",
+                evidence_required=[],
+                pass_condition=PassCondition(type="json_valid"),
+                failure_condition="summary still missing",
+                repair_of="t1-report",
+            )
+        ]
+
+    def scorecards(self, ctx: ExecutionContext) -> dict[str, dict[str, Any]]:
+        return {}
+
+    def learning_receipt(self, ctx: ExecutionContext) -> LearningReceipt:
+        return LearningReceipt(important_decisions=["demo decision"])
+
+    def limitations(self, ctx: ExecutionContext) -> list[str]:
+        return ["demo limitation"]
+
+
+class NeverPassesUseCase(DemoUseCase):
+    """Planted failure: the artifact never satisfies the pass condition."""
+
+    def execute_task(self, task: Task, ctx: ExecutionContext) -> TaskOutcome:
+        ctx.evidence_path("source-a.txt").write_text("raw demo source", encoding="utf-8")
+        ctx.artifact_path("report.md").write_text("broken draft forever", encoding="utf-8")
+        return TaskOutcome()
