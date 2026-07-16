@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 15.8,
     "technical_proficiency": 15.0,
     "ai_assistance_likelihood": 26.0,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 75.0,
     "ai_slop_risk": 81.0,
     "educational_value": 13.3,
     "distribution_strength": 20.0,
@@ -89,7 +89,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "25-50",
-    "confidence": 100.0,
+    "confidence": 75.0,
     "evidence_and_counter_evidence": "No AI-generation markers: 2022 repo (pre-agent tooling), commits are manual web-UI edits ('Add files via upload', 'Update app.py'); README is human blog-teaser prose tied to a published Towards AI article.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

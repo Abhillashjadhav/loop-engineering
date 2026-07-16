@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 53.2,
     "technical_proficiency": 37.0,
     "ai_assistance_likelihood": 2.5,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 82.1,
     "ai_slop_risk": 45.2,
     "educational_value": 46.7,
     "distribution_strength": 40.0,
@@ -88,7 +88,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 82.1,
     "evidence_and_counter_evidence": "Generation markers: polished emoji-heavy README and verbose conventional-commit subjects are consistent with AI-assisted authoring (2026 era). Counter-evidence: 10 commits across 3 distinct days with iterative engineering passes (gitignore cleanup, model upgrade, 'Enhance pipeline robustness with improved input validation, Gemini output parsing, and error handling') rather than one dump.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

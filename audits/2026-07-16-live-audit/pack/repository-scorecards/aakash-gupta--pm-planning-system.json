@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 55.4,
     "technical_proficiency": 20.0,
     "ai_assistance_likelihood": 1.2,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 75.0,
     "ai_slop_risk": 41.0,
     "educational_value": 100.0,
     "distribution_strength": 40.0,
@@ -91,7 +91,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 75.0,
     "evidence_and_counter_evidence": "All 21 commits landed in a 34-minute window (2026-04-14T23:03:31Z-23:37:17Z) with 1-2 second spacing and uniformly polished messages \u2014 consistent with an AI/scripted batch publication; counter-evidence: two distinct passes are visible (initial build at 23:03, then a substantive expansion pass at 23:37 adding observability, cost, privacy, and NPS-guardrail content per file), and the docs encode specific practitioner judgment rather than generic filler.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

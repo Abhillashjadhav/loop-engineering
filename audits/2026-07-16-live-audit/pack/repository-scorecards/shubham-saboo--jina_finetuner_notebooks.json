@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 17.0,
     "technical_proficiency": 15.0,
     "ai_assistance_likelihood": 3.5,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 60.7,
     "ai_slop_risk": 69.9,
     "educational_value": 0.0,
     "distribution_strength": 5.0,
@@ -88,7 +88,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 60.7,
     "evidence_and_counter_evidence": "No generation markers; 7 iterative commits across 5 distinct days in Jan-Feb 2022 ('feat: added new section', 'fix: added a new flag', 'fix: spelling', 'fix:errors with release') indicate hand-edited notebooks; era predates common AI codegen.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

@@ -76,6 +76,9 @@ derived_scores:
     + 0.10*(100-evolution)
   distribution_strength: banded log scale over stars + 2*forks (reach signal, not quality)
   confidence: share of expected signals recorded; capped at 20 for inaccessible repos
+  ai_assistance_confidence: share of the four AI-axis signals recorded, capped at
+    the overall confidence — a band is never stated with more confidence than
+    total evidence coverage supports (near-empty repos fall to INSUFFICIENT_EVIDENCE)
 
 notes:
   - ai_assistance_likelihood and ai_slop_risk are different axes; AI-assisted work

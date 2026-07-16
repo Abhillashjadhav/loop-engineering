@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 57.1,
     "technical_proficiency": 22.3,
     "ai_assistance_likelihood": 1.0,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 75.0,
     "ai_slop_risk": 46.9,
     "educational_value": 100.0,
     "distribution_strength": 20.0,
@@ -91,7 +91,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 75.0,
     "evidence_and_counter_evidence": "All 27 commits land on a single day (2026-04-24) with no AI co-author trailers \u2014 a burst pattern consistent with an AI-assisted one-day build; counter-evidence: messages show file-specific editorial judgment across multiple passes (WCAG contrast, prefers-reduced-motion, i18n, 'anti-copy taboos'), i.e. iterative refinement rather than a single dump.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

@@ -1,40 +1,40 @@
-{"ts": "2026-07-16T17:23:06.714673+00:00", "task_id": "aakash-gupta-1-identity", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.714780+00:00", "task_id": "shubham-saboo-1-identity", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.716615+00:00", "task_id": "aakash-gupta-1-identity", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.717134+00:00", "task_id": "aakash-gupta-1-identity", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.720078+00:00", "task_id": "aakash-gupta-1-identity", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.722546+00:00", "task_id": "aakash-gupta-2-inventory", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.724381+00:00", "task_id": "aakash-gupta-2-inventory", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.727963+00:00", "task_id": "aakash-gupta-2-inventory", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.731774+00:00", "task_id": "aakash-gupta-2-inventory", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.734254+00:00", "task_id": "aakash-gupta-3-assess", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.736082+00:00", "task_id": "aakash-gupta-3-assess", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.740377+00:00", "task_id": "aakash-gupta-3-assess", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.743684+00:00", "task_id": "aakash-gupta-3-assess", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.749151+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.750964+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.752124+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.754784+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.759665+00:00", "task_id": "shubham-saboo-1-identity", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.760120+00:00", "task_id": "shubham-saboo-1-identity", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.762734+00:00", "task_id": "shubham-saboo-1-identity", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.765098+00:00", "task_id": "shubham-saboo-2-inventory", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.766791+00:00", "task_id": "shubham-saboo-2-inventory", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.778341+00:00", "task_id": "shubham-saboo-2-inventory", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.783182+00:00", "task_id": "shubham-saboo-2-inventory", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.785703+00:00", "task_id": "shubham-saboo-3-assess", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.787532+00:00", "task_id": "shubham-saboo-3-assess", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.793822+00:00", "task_id": "shubham-saboo-3-assess", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.797659+00:00", "task_id": "shubham-saboo-3-assess", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.803973+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.805623+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.808192+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.810958+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.813614+00:00", "task_id": "z-1-compare", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.815265+00:00", "task_id": "z-1-compare", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.815651+00:00", "task_id": "z-1-compare", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.818696+00:00", "task_id": "z-1-compare", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
-{"ts": "2026-07-16T17:23:06.820936+00:00", "task_id": "z-2-final-output", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
-{"ts": "2026-07-16T17:23:06.822724+00:00", "task_id": "z-2-final-output", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.823055+00:00", "task_id": "z-2-final-output", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
-{"ts": "2026-07-16T17:23:06.825555+00:00", "task_id": "z-2-final-output", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.283228+00:00", "task_id": "aakash-gupta-1-identity", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.283319+00:00", "task_id": "shubham-saboo-1-identity", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.284978+00:00", "task_id": "aakash-gupta-1-identity", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.285550+00:00", "task_id": "aakash-gupta-1-identity", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.288126+00:00", "task_id": "aakash-gupta-1-identity", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.290468+00:00", "task_id": "aakash-gupta-2-inventory", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.292195+00:00", "task_id": "aakash-gupta-2-inventory", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.295709+00:00", "task_id": "aakash-gupta-2-inventory", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.298842+00:00", "task_id": "aakash-gupta-2-inventory", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.301160+00:00", "task_id": "aakash-gupta-3-assess", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.302760+00:00", "task_id": "aakash-gupta-3-assess", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.306856+00:00", "task_id": "aakash-gupta-3-assess", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.309855+00:00", "task_id": "aakash-gupta-3-assess", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.315081+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.316773+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.318012+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.320554+00:00", "task_id": "aakash-gupta-4-aggregate", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.324770+00:00", "task_id": "shubham-saboo-1-identity", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.325306+00:00", "task_id": "shubham-saboo-1-identity", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.327873+00:00", "task_id": "shubham-saboo-1-identity", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.330458+00:00", "task_id": "shubham-saboo-2-inventory", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.332159+00:00", "task_id": "shubham-saboo-2-inventory", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.343971+00:00", "task_id": "shubham-saboo-2-inventory", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.348661+00:00", "task_id": "shubham-saboo-2-inventory", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.351239+00:00", "task_id": "shubham-saboo-3-assess", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.353151+00:00", "task_id": "shubham-saboo-3-assess", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.359456+00:00", "task_id": "shubham-saboo-3-assess", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.362693+00:00", "task_id": "shubham-saboo-3-assess", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.368913+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.370742+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.373468+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.376350+00:00", "task_id": "shubham-saboo-4-aggregate", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.378987+00:00", "task_id": "z-1-compare", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.380661+00:00", "task_id": "z-1-compare", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.381008+00:00", "task_id": "z-1-compare", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.383755+00:00", "task_id": "z-1-compare", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}
+{"ts": "2026-07-16T17:28:31.387091+00:00", "task_id": "z-2-final-output", "from": "PLANNED", "to": "READY", "actor": "runtime", "detail": "dependencies verified"}
+{"ts": "2026-07-16T17:28:31.388810+00:00", "task_id": "z-2-final-output", "from": "READY", "to": "RUNNING", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.389209+00:00", "task_id": "z-2-final-output", "from": "RUNNING", "to": "EXECUTED", "actor": "executor", "detail": ""}
+{"ts": "2026-07-16T17:28:31.391659+00:00", "task_id": "z-2-final-output", "from": "EXECUTED", "to": "VERIFIED", "actor": "task-verifier", "detail": ""}

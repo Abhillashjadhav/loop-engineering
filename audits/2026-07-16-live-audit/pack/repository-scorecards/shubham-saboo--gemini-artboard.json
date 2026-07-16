@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 50.7,
     "technical_proficiency": 29.7,
     "ai_assistance_likelihood": 36.2,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 78.6,
     "ai_slop_risk": 60.4,
     "educational_value": 100.0,
     "distribution_strength": 40.0,
@@ -91,7 +91,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "25-50",
-    "confidence": 100.0,
+    "confidence": 78.6,
     "evidence_and_counter_evidence": "Single-day 4-commit drop (2026-02-20) with clean conventional-commit messages, a pattern consistent with agent-assisted authoring, but no explicit generation markers (no bot authors, no tool credits); counter-evidence: the README argues design tradeoffs and extensibility rationale ('the out-of-the-box generation quality is constrained by this simplicity') in an authored voice, and one commit adds hand-tuned prompt engineering ('feat: add detailed canvas rendering instructions').",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

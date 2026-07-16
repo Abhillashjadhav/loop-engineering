@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 61.4,
     "technical_proficiency": 15.0,
     "ai_assistance_likelihood": 1.5,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 71.4,
     "ai_slop_risk": 42.8,
     "educational_value": 46.7,
     "distribution_strength": 20.0,
@@ -89,7 +89,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 71.4,
     "evidence_and_counter_evidence": "One commit carries a Claude Opus 4.6 co-author trailer; 14 'Add ... section' commits have artificial round-:00-second author dates (2026-03-05..2026-09-04), most post-dating the last real push (2026-03-03) and several post-dating the audit date \u2014 a scripted/backfilled history marker; counter-evidence: the content itself shows consistent domain-specific PM judgment and an authorial voice matching the owner's other repos.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

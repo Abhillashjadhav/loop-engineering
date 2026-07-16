@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 52.6,
     "technical_proficiency": 20.0,
     "ai_assistance_likelihood": 17.0,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 75.0,
     "ai_slop_risk": 53.8,
     "educational_value": 86.7,
     "distribution_strength": 60.0,
@@ -91,7 +91,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 75.0,
     "evidence_and_counter_evidence": "Round-timestamp author dates (e.g. 'Add quickstart guide' 2026-08-03T16:14:00Z, 'Add OKR template' 2026-07-18T18:59:00Z) postdate the repo's last push (2026-03-04) and even the audit date, indicating re-dated/scripted commit metadata; counter-evidence: the 2026-03-04 block shows nine same-day iterative rewrites with substantive rationale ('Remove PRD section from CLAUDE.md \u2014 belongs in prd-writer skill').",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

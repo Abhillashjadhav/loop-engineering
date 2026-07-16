@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 46.5,
     "technical_proficiency": 27.3,
     "ai_assistance_likelihood": 16.2,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 78.6,
     "ai_slop_risk": 52.4,
     "educational_value": 46.7,
     "distribution_strength": 60.0,
@@ -81,7 +81,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 78.6,
     "evidence_and_counter_evidence": "No AI-generation markers (2021-era repo): multi-year human maintenance (2021-2025), human typos in the README ('applicaiton', 'accessbile', 'enviroment'), and external human contributors (Randy Zwitch, Sandra Kublik) with merged patch PRs.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

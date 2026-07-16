@@ -290,6 +290,11 @@ def derive_scores(repo: RepoRecord, dims: list[DimensionScore]) -> RepoScores:
     )
     ai_signals_present = sum(1 for k in ai_signal_keys if k in s)
     ai_confidence = 100.0 * ai_signals_present / len(ai_signal_keys)
+    # The AI-share band may never be stated with more confidence than the
+    # overall evidence coverage supports: a near-empty repo can have all four
+    # AI-axis signals recorded (e.g. a single-commit LICENSE-only repo) while
+    # there is no code for a "share" to describe. Capping at overall coverage
+    # sends such repos to INSUFFICIENT_EVIDENCE via band_ai_share's floor.
 
     slop_risk = (
         0.30 * (100.0 - _dim(dims, "claim_functionality_integrity"))
@@ -320,6 +325,7 @@ def derive_scores(repo: RepoRecord, dims: list[DimensionScore]) -> RepoScores:
     confidence = 100.0 * coverage
     if repo.inaccessible:
         confidence = min(confidence, 20.0)
+    ai_confidence = min(ai_confidence, confidence)
 
     return RepoScores(
         human_reasoning_evidence=_clamp(human_reasoning),

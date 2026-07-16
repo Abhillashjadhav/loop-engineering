@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 64.7,
     "technical_proficiency": 32.3,
     "ai_assistance_likelihood": 0.5,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 78.6,
     "ai_slop_risk": 31.7,
     "educational_value": 100.0,
     "distribution_strength": 20.0,
@@ -91,7 +91,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 78.6,
     "evidence_and_counter_evidence": "Author dates from 2026-01-06 predate repo creation (2026-06-03) with evenly spaced synthetic intervals \u2014 but the repo discloses this in-history ('align content dates with commit dates after history re-date') and the README frames the history itself as the teaching artifact; counter-evidence: the June 2-3 real-date commits are dense, self-critical fix passes ('fix every doc-vs-git-history contradiction') characteristic of careful human review.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }

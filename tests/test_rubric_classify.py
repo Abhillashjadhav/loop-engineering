@@ -22,7 +22,10 @@ from loop_engineering.use_cases.github_authority_audit.classify import (
     classify_repo,
 )
 from loop_engineering.use_cases.github_authority_audit.datasource import FixtureDataSource
-from loop_engineering.use_cases.github_authority_audit.inventory import build_inventory
+from loop_engineering.use_cases.github_authority_audit.inventory import (
+    RepoRecord,
+    build_inventory,
+)
 from loop_engineering.use_cases.github_authority_audit.rubric import (
     RepoScores,
     derive_scores,
@@ -144,6 +147,46 @@ def test_ai_share_banding() -> None:
     statement = ai_share_statement(90.0, 90.0, "signals")
     assert statement["estimated_ai_assisted_code_share_range"] == "75-100"
     assert "not inferable" in statement["note"]
+
+
+def test_ai_confidence_capped_at_overall_coverage() -> None:
+    # A near-empty repo (single LICENSE-only commit) can have all AI-axis
+    # signals mechanically recorded while there is no code for a "share" to
+    # describe: the band confidence must not exceed overall coverage, so the
+    # band falls to INSUFFICIENT_EVIDENCE rather than asserting a range.
+    record = RepoRecord(
+        name="license-only",
+        kind="original",
+        stars=13,
+        forks=3,
+        language=None,
+        size_kb=1,
+        created_at="2025-08-13T00:00:00Z",
+        pushed_at="2025-08-13T00:00:00Z",
+        contributors=1,
+        commit_count=1,
+        releases=0,
+        open_issues=0,
+        pull_requests=0,
+        has_tests=False,
+        has_ci=False,
+        dependencies_declared=False,
+        license_name="MIT",
+        runnable_setup_documented=False,
+        signals={
+            "one_shot_dump": True,
+            "commit_msg_uniformity_pct": 100,
+            "mass_generated_siblings": 0,
+            "ai_tool_attribution": False,
+        },
+    )
+    dims = score_dimensions(record)
+    s = derive_scores(record, dims)
+    assert s.ai_assistance_confidence <= s.confidence
+    assert s.confidence < 50.0  # only 4 of 28 expected signals recorded
+    assert band_ai_share(s.ai_assistance_likelihood, s.ai_assistance_confidence) == (
+        "INSUFFICIENT_EVIDENCE"
+    )
 
 
 def test_person_aggregation_both_weightings() -> None:

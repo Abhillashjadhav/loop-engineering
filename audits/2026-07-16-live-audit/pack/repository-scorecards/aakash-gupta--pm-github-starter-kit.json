@@ -66,7 +66,7 @@
     "human_reasoning_evidence": 39.8,
     "technical_proficiency": 20.0,
     "ai_assistance_likelihood": 6.2,
-    "ai_assistance_confidence": 100.0,
+    "ai_assistance_confidence": 75.0,
     "ai_slop_risk": 61.4,
     "educational_value": 46.7,
     "distribution_strength": 40.0,
@@ -89,7 +89,7 @@
   },
   "ai_share": {
     "estimated_ai_assisted_code_share_range": "0-25",
-    "confidence": 100.0,
+    "confidence": 75.0,
     "evidence_and_counter_evidence": "No generation markers in the four commit messages; timestamps are irregular and clustered over two real days (2026-02-26/27) matching pushed_at, and one follow-up fix ('Fix article links to point to correct URL') shows human post-publish correction. Counter: the near-complete initial drop ('Initial commit: PM GitHub starter kit' then 'Update README with blog post content') is consistent with content prepared elsewhere, likely AI-assisted.",
     "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
   }
