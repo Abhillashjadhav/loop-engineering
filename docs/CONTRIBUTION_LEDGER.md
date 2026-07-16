@@ -35,3 +35,18 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   shipped in wheels — editable-install limitation deferred to release docs;
   format checker not enforced; digest pattern on amendment trail).
 - **Merge:** squash `2612b54`.
+
+## PR 3/12 — Durable state, ledger, checkpoints, budgets, resume (PR #4)
+
+- **Outcome:** atomic state writes, append-only task/event ledgers, atomic-task
+  record + task/run-state schemas, budgets with hard exhaustion, crash-safe
+  checkpoint/resume (unverified work redone, verified never repeated,
+  nothing skipped).
+- **Tests:** pytest 26 passed / 1 deselected (atomic-write hygiene, roundtrips,
+  checkpoint sequencing, resume semantics incl. FAILED handling, budget
+  limits, ledger append-only, schema conformance); ruff clean; mypy strict
+  clean (16 files); CI green.
+- **Independent review:** APPROVE (findings addressed pre-merge: ledger tests
+  added, FAILED-resume return semantics documented + pinned by test; noted
+  lows: directory fsync gap, checkpoint seq assumptions, ledger flush-only).
+- **Merge:** squash `89ef8d3`.
