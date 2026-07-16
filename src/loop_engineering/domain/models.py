@@ -50,6 +50,36 @@ class RunStatus(enum.StrEnum):
     FAILED = "FAILED"
 
 
+class ClaimImpact(enum.StrEnum):
+    NORMAL = "NORMAL"
+    HIGH = "HIGH"
+
+
+class ClaimKind(enum.StrEnum):
+    PRESENCE = "PRESENCE"
+    ABSENCE = "ABSENCE"
+
+
+class ClaimEpistemics(enum.StrEnum):
+    """Fact vs observation vs inference vs unknown (fairness rule §11)."""
+
+    FACT = "FACT"
+    OBSERVATION = "OBSERVATION"
+    INFERENCE = "INFERENCE"
+    UNKNOWN = "UNKNOWN"
+
+
+class StabilityVariant(enum.StrEnum):
+    """The six final-analysis variants (PD-07)."""
+
+    STANDARD = "standard"
+    FRESH_PLAN = "fresh_plan"
+    REORDERED_SOURCES = "reordered_sources"
+    SKEPTICAL = "skeptical"
+    CONCLUSION_BLIND = "conclusion_blind"
+    INDEPENDENT_REPLICATION = "independent_replication"
+
+
 @dataclass
 class PassCondition:
     """Declarative pass condition, defined before execution, evaluated by the verifier."""
@@ -177,6 +207,99 @@ class VerificationResult:
             "failure_reason": self.failure_reason,
             "verified_at": self.verified_at,
         }
+
+
+@dataclass
+class EvidenceItem:
+    """One piece of evidence backing a claim.
+
+    ``origin`` is the independence key: two items corroborate each other only
+    when their origins differ (e.g. "readme" vs "source_code" vs "commit_history").
+    """
+
+    evidence_id: str
+    source_url: str
+    origin: str
+    retrieved_at: str
+    content_hash: str
+    excerpt: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> EvidenceItem:
+        return cls(
+            evidence_id=str(data["evidence_id"]),
+            source_url=str(data["source_url"]),
+            origin=str(data["origin"]),
+            retrieved_at=str(data["retrieved_at"]),
+            content_hash=str(data["content_hash"]),
+            excerpt=str(data.get("excerpt", "")),
+        )
+
+
+@dataclass
+class SearchCoverage:
+    """Explicit record of what was searched — required for ABSENCE claims."""
+
+    queries: list[str]
+    scope_description: str
+    complete: bool
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> SearchCoverage:
+        return cls(
+            queries=[str(q) for q in data.get("queries", [])],
+            scope_description=str(data.get("scope_description", "")),
+            complete=bool(data.get("complete", False)),
+        )
+
+
+@dataclass
+class Claim:
+    """A material factual claim or classification that needs independent evidence."""
+
+    claim_id: str
+    text: str
+    impact: ClaimImpact = ClaimImpact.NORMAL
+    kind: ClaimKind = ClaimKind.PRESENCE
+    epistemics: ClaimEpistemics = ClaimEpistemics.OBSERVATION
+    evidence: list[EvidenceItem] = field(default_factory=list)
+    search_coverage: SearchCoverage | None = None
+    conflicts: list[str] = field(default_factory=list)
+    counter_evidence: list[EvidenceItem] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "claim_id": self.claim_id,
+            "text": self.text,
+            "impact": self.impact.value,
+            "kind": self.kind.value,
+            "epistemics": self.epistemics.value,
+            "evidence": [e.to_dict() for e in self.evidence],
+            "search_coverage": self.search_coverage.to_dict() if self.search_coverage else None,
+            "conflicts": list(self.conflicts),
+            "counter_evidence": [e.to_dict() for e in self.counter_evidence],
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> Claim:
+        coverage = data.get("search_coverage")
+        return cls(
+            claim_id=str(data["claim_id"]),
+            text=str(data["text"]),
+            impact=ClaimImpact(data.get("impact", "NORMAL")),
+            kind=ClaimKind(data.get("kind", "PRESENCE")),
+            epistemics=ClaimEpistemics(data.get("epistemics", "OBSERVATION")),
+            evidence=[EvidenceItem.from_dict(e) for e in data.get("evidence", [])],
+            search_coverage=SearchCoverage.from_dict(coverage) if coverage else None,
+            conflicts=[str(c) for c in data.get("conflicts", [])],
+            counter_evidence=[EvidenceItem.from_dict(e) for e in data.get("counter_evidence", [])],
+        )
 
 
 @dataclass

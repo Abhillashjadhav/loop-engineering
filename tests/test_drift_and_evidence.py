@@ -1,4 +1,4 @@
-"""Loop 2 goal-drift math (Loop 3 evidence rules join in a later PR)."""
+"""Loop 2 goal-drift math and Loop 3 evidence independence rules."""
 
 from __future__ import annotations
 
@@ -7,9 +7,17 @@ from typing import Any
 from tests.conftest import make_contract_draft
 
 from loop_engineering.contracts import goal_contract
-from loop_engineering.domain.models import PassCondition, Task
+from loop_engineering.domain.models import (
+    Claim,
+    ClaimImpact,
+    ClaimKind,
+    EvidenceItem,
+    PassCondition,
+    SearchCoverage,
+    Task,
+)
 from loop_engineering.planning.planner import coverage
-from loop_engineering.verification import loop2_drift
+from loop_engineering.verification import loop2_drift, loop3_evidence
 
 
 def make_task(task_id: str, requirement: str) -> Task:
@@ -59,3 +67,133 @@ def test_drift_calculation_value() -> None:
     contract = contract_with_scope(["r1", "r2"])
     tasks = [make_task("a", "r1"), make_task("b", "orphan-req")]
     assert coverage(contract, tasks).drift_pct == 50.0
+
+
+# ---- loop 3 ----------------------------------------------------------------
+
+
+def evidence(origin: str, eid: str = "e") -> EvidenceItem:
+    return EvidenceItem(
+        evidence_id=eid,
+        source_url=f"local://{origin}",
+        origin=origin,
+        retrieved_at="2026-07-16T00:00:00+00:00",
+        content_hash="sha256:aa",
+    )
+
+
+def test_normal_claim_needs_two_independent_origins() -> None:
+    claim = Claim(claim_id="c1", text="x", evidence=[evidence("source_code")])
+    supported, reason = loop3_evidence.is_supported(claim)
+    assert not supported and "1 independent origin" in reason
+    claim.evidence.append(evidence("commit_history"))
+    assert loop3_evidence.is_supported(claim)[0]
+
+
+def test_same_origin_counts_once() -> None:
+    claim = Claim(
+        claim_id="c1",
+        text="x",
+        evidence=[evidence("source_code", "e1"), evidence("source_code", "e2")],
+    )
+    assert not loop3_evidence.is_supported(claim)[0]
+
+
+def test_readme_alone_is_not_corroboration() -> None:
+    claim = Claim(
+        claim_id="c1",
+        text="x",
+        evidence=[evidence("readme", "e1"), evidence("self_description", "e2")],
+    )
+    supported, reason = loop3_evidence.is_supported(claim)
+    assert not supported and "not independent corroboration" in reason
+
+
+def test_readme_never_counts_toward_the_independence_threshold() -> None:
+    # A README plus ONE independent origin is still only one independent origin.
+    claim = Claim(
+        claim_id="c1",
+        text="x",
+        evidence=[evidence("readme", "e1"), evidence("source_code", "e2")],
+    )
+    supported, reason = loop3_evidence.is_supported(claim)
+    assert not supported and "self-described origins do not count" in reason
+    # High-impact: README + two independent origins is still only two of three.
+    high = Claim(
+        claim_id="c2",
+        text="y",
+        impact=ClaimImpact.HIGH,
+        evidence=[
+            evidence("readme", "e1"),
+            evidence("source_code", "e2"),
+            evidence("commit_history", "e3"),
+        ],
+    )
+    assert not loop3_evidence.is_supported(high)[0]
+    # A README alongside a full independent set does no harm.
+    high.evidence.append(evidence("file_listing", "e4"))
+    assert loop3_evidence.is_supported(high)[0]
+
+
+def test_high_impact_needs_three_origins() -> None:
+    claim = Claim(
+        claim_id="c1",
+        text="x",
+        impact=ClaimImpact.HIGH,
+        evidence=[evidence("source_code"), evidence("commit_history")],
+    )
+    assert not loop3_evidence.is_supported(claim)[0]
+    claim.evidence.append(evidence("file_listing"))
+    assert loop3_evidence.is_supported(claim)[0]
+
+
+def test_absence_claim_requires_complete_search_coverage() -> None:
+    claim = Claim(
+        claim_id="c1",
+        text="repo has no tests",
+        kind=ClaimKind.ABSENCE,
+        evidence=[evidence("file_listing"), evidence("ci_config")],
+    )
+    assert not loop3_evidence.is_supported(claim)[0]
+    claim.search_coverage = SearchCoverage(
+        queries=["tests/"], scope_description="tree", complete=False
+    )
+    assert not loop3_evidence.is_supported(claim)[0]
+    claim.search_coverage = SearchCoverage(
+        queries=["tests/"], scope_description="tree", complete=True
+    )
+    assert loop3_evidence.is_supported(claim)[0]
+
+
+def test_claim_serialization_roundtrip() -> None:
+    claim = Claim(
+        claim_id="c1",
+        text="repo has no tests",
+        impact=ClaimImpact.HIGH,
+        kind=ClaimKind.ABSENCE,
+        evidence=[evidence("file_listing", "e1"), evidence("ci_config", "e2")],
+        search_coverage=SearchCoverage(queries=["tests/"], scope_description="tree", complete=True),
+        conflicts=["listing and CI config disagree"],
+        counter_evidence=[evidence("readme", "e3")],
+    )
+    restored = Claim.from_dict(claim.to_dict())
+    assert restored.to_dict() == claim.to_dict()
+    assert restored.impact is ClaimImpact.HIGH and restored.kind is ClaimKind.ABSENCE
+    assert restored.search_coverage is not None and restored.search_coverage.complete
+    assert restored.counter_evidence[0].origin == "readme"
+
+
+def test_unsupported_claims_excluded_from_percentages_and_conflicts_visible() -> None:
+    good = Claim(
+        claim_id="good",
+        text="x",
+        evidence=[evidence("source_code"), evidence("commit_history")],
+        conflicts=["source A and B disagree on release date"],
+    )
+    bad = Claim(claim_id="bad", text="y", evidence=[evidence("readme")])
+    results, cov = loop3_evidence.verify_claims([good, bad])
+    assert cov.total_claims == 2 and cov.supported_claims == 1
+    assert cov.supported_pct == 50.0
+    assert cov.unsupported_claim_ids == ["bad"]
+    assert cov.conflicted_claim_ids == ["good"]
+    assert {r.subject_id: r.passed for r in results} == {"good": True, "bad": False}
