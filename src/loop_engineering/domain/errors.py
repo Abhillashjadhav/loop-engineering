@@ -44,6 +44,11 @@ class EvidenceRuleViolation(LoopEngineeringError):
     """A claim was asserted without meeting the evidence independence rules."""
 
 
+class ProvenanceRuleViolation(LoopEngineeringError):
+    """An exact AI-authorship percentage (or similar unprovable provenance claim)
+    was asserted without direct provenance evidence (PD-04, PD-08)."""
+
+
 class IdentityUnresolved(LoopEngineeringError):
     """Subject identity could not be confidently resolved; analysis is blocked."""
 
