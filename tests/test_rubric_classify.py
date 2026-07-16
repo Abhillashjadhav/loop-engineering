@@ -4,6 +4,8 @@ exact AI percentages rejected."""
 
 from __future__ import annotations
 
+from datetime import UTC, datetime
+
 import pytest
 from tests.conftest import GITHUB_FIXTURES
 
@@ -163,7 +165,13 @@ def test_person_aggregation_both_weightings() -> None:
             RepoAssessment(record=record, scores=s, classification=classify_repo(s, ce))
         )
     person = aggregate_person(
-        "Tee Templater", "synthetic-templater", assessments, [r.name for r in inv.forks]
+        "Tee Templater",
+        "synthetic-templater",
+        assessments,
+        [r.name for r in inv.forks],
+        # pin the clock so the fixture's pushed_at dates stay inside the
+        # 548-day active-maintenance window regardless of when tests run
+        as_of=datetime(2026, 7, 16, tzinfo=UTC),
     )
     assert person.repo_count_weighted["LIKELY_SHALLOW_OR_TEMPLATED"] == 40.0  # 2 of 5
     assert person.active_code_weighted  # active weighting exists and differs from count
