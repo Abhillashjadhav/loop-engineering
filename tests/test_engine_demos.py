@@ -164,3 +164,24 @@ def test_contract_digest_checked_at_engine_start(tmp_path: Path, audit_subjects)
             AuditUseCase(FixtureDataSource(GITHUB_FIXTURES), audit_subjects),
             runs_root=tmp_path / "runs",
         )
+
+
+def test_hyphenated_subject_slugs_are_dispatched(tmp_path: Path, audit_contract) -> None:  # type: ignore[no-untyped-def]
+    # Regression: slugs containing hyphens (e.g. "aakash-gupta") previously
+    # broke task dispatch ("no executor for task aakash-gupta-1-identity").
+    subjects = [
+        {
+            "slug": "sam-the-builder",
+            "display_name": "Sam Builder (synthetic)",
+            "candidate_login": "synthetic-builder",
+            "expected_attributes": {
+                "name": "Sam Builder",
+                "blog": "sambuilder.dev",
+                "twitter": "sam_builds",
+            },
+        }
+    ]
+    engine = audit_engine(tmp_path, audit_contract, subjects)
+    result = engine.run()
+    assert result.state.status == RunStatus.COMPLETE
+    assert result.delivered

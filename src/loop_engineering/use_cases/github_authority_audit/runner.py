@@ -175,7 +175,23 @@ class AuditUseCase:
         )
         return tasks
 
+    def _slug_and_step(self, task_id: str) -> tuple[str, str] | None:
+        """Resolve (slug, step) from a task id, robust to hyphenated slugs.
+
+        Task ids are built as f"{slug}-{step}-{name}"; slugs themselves may
+        contain hyphens (e.g. "aakash-gupta"), so match against the known
+        subject slugs instead of naive splitting.
+        """
+        for s in self.subjects:
+            prefix = f"{s['slug']}-"
+            if task_id.startswith(prefix):
+                return str(s["slug"]), task_id[len(prefix) :].split("-", 1)[0]
+        return None
+
     def stage_of(self, task: Task) -> str:
+        resolved = self._slug_and_step(task.task_id)
+        if resolved is not None:
+            return resolved[0]
         return task.task_id.split("-", 1)[0]
 
     # -- execution ------------------------------------------------------------
@@ -187,20 +203,21 @@ class AuditUseCase:
         raise LoopEngineeringError(f"unknown subject slug {slug!r}")
 
     def execute_task(self, task: Task, ctx: ExecutionContext) -> TaskOutcome:
-        parts = task.task_id.split("-", 2)
         if task.task_id.startswith("z-1-compare"):
             return self._exec_compare(task, ctx)
         if task.task_id.startswith("z-2-final-output") or task.task_id.startswith("repair-"):
             return self._exec_final(task, ctx)
-        slug, step = parts[0], parts[1]
-        if step == "1":
-            return self._exec_identity(slug, task, ctx)
-        if step == "2":
-            return self._exec_inventory(slug, task, ctx)
-        if step == "3":
-            return self._exec_assess(slug, task, ctx)
-        if step == "4":
-            return self._exec_aggregate(slug, task, ctx)
+        resolved = self._slug_and_step(task.task_id)
+        if resolved is not None:
+            slug, step = resolved
+            if step == "1":
+                return self._exec_identity(slug, task, ctx)
+            if step == "2":
+                return self._exec_inventory(slug, task, ctx)
+            if step == "3":
+                return self._exec_assess(slug, task, ctx)
+            if step == "4":
+                return self._exec_aggregate(slug, task, ctx)
         raise LoopEngineeringError(f"no executor for task {task.task_id}")
 
     def _exec_identity(self, slug: str, task: Task, ctx: ExecutionContext) -> TaskOutcome:

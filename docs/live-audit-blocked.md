@@ -1,5 +1,16 @@
 # Live audit status: BLOCKED on access — no conclusions invented
 
+> **Update 2026-07-16 (attempt executed):** a full live attempt was made per
+> operator instruction — every access channel (REST user + repo endpoints,
+> HTML, tarball, clone, add_repo, general web egress) is blocked in this
+> environment except `raw.githubusercontent.com` file content and web search.
+> Identity linkage for both subjects WAS verified and recorded, and
+> `examples/subjects.yaml` now carries the verified attributes. The complete
+> command-by-command access matrix, the exact `--live` blocking report, and
+> the unblock options live in `audits/2026-07-16-live-audit/ACCESS-BLOCKED.md`
+> and `audits/2026-07-16-live-audit/identity-evidence.md`. Repository
+> analysis remains not executed; both subjects remain INSUFFICIENT_EVIDENCE.
+
 **Subjects:** Aakash Gupta (candidate login `aakashg`), Shubham Saboo
 (candidate login `Shubhamsaboo`) — spec §10.
 

@@ -1,22 +1,30 @@
 # The two initial live subjects (spec §10).
 # Identity is NOT assumed from the candidate URL: the audit requires at least
 # two matching public profile attributes before analysing any repository.
-# Fill expected_attributes from public profiles you already trust (e.g. the
-# person's own site/LinkedIn/X linking to the GitHub account), then run with
-# a live-capable environment or pre-fetched snapshots.
+#
+# Expected attributes below were verified on 2026-07-16 from independent
+# public sources (two-way linkage; full evidence trail with URLs, retrieval
+# timestamps, and content hashes in audits/2026-07-16-live-audit/):
+# - aakash-gupta: profile README (raw.githubusercontent.com/aakashg/aakashg,
+#   sha256:0ccd0296cbe01005…) links news.aakashg.com / aakashg.com /
+#   linkedin.com/in/aagupta; his own newsletter domain (news.aakashg.com)
+#   carries github.com/aakashg links in >=9 indexed posts.
+# - shubham-saboo: profile README (raw.githubusercontent.com/Shubhamsaboo/
+#   Shubhamsaboo, sha256:a630bc1cc8b7900c…) links theunwindai.com; his own
+#   Threads channel (@saboo_shubham_) posts github.com/Shubhamsaboo/
+#   awesome-llm-apps as his work; the repo README links back to theunwindai.com.
 subjects:
   - slug: aakash-gupta
     display_name: Aakash Gupta
-    candidate_login: aakashg          # candidate only — must be verified
+    candidate_login: aakashg
     expected_attributes:
-      name: Aakash Gupta
+      name: Aakash
+      blog: aakashg.com          # matches aakashg.com and news.aakashg.com
       bio_keywords: [product]
-      # add at least one more verifiable attribute from a trusted public link,
-      # e.g. blog: <their site that links back to this GitHub account>
   - slug: shubham-saboo
     display_name: Shubham Saboo
-    candidate_login: Shubhamsaboo     # candidate only — must be verified
+    candidate_login: Shubhamsaboo
     expected_attributes:
       name: Shubham Saboo
+      blog: theunwindai.com
       bio_keywords: [ai]
-      # add at least one more verifiable attribute from a trusted public link
