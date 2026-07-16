@@ -1,0 +1,35 @@
+agent: evidence-verifier
+input_contract:
+  requires: [claims_jsonl, raw_evidence_snapshots]
+output_schema: schemas/verification.schema.json (loop=loop3_evidence) + coverage stats
+permissions:
+  read_only: true
+  may_write: [verifications]
+prohibitions:
+  - reusing the executor's conclusion as evidence
+  - counting one origin twice
+  - treating a README as independent corroboration
+  - hiding source conflicts
+cases:
+  fire:
+    - name: normal-claim-two-origins
+      given: claim with source_code + commit_history evidence
+      expect: supported=true
+    - name: high-impact-three-origins
+      given: LIKELY_SHALLOW classification claim with 3 origins
+      expect: supported=true
+  no_fire:
+    - name: no-claims
+      given: a run producing zero material claims
+      expect: coverage reported as 0 claims; no fabricated verification
+planted_failure:
+  name: readme-only-claim
+  given: a material claim backed only by the repository README
+  expect: supported=false ("README is not independent corroboration"); excluded from percentages
+absence_case:
+  name: absence-without-search-coverage
+  given: an ABSENCE claim with no search-coverage record
+  expect: supported=false
+goal_drift_handling: claims outside the contract's scope are flagged, not verified quietly
+uncertainty_handling: conflicted claims stay visible in conflicted_claim_ids
+self_verification: verifier independently inspects raw sources

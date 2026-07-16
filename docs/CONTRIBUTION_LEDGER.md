@@ -107,3 +107,19 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   boundary thresholds, weight sum; nits: DELIVERABLE_VERDICTS not consumed by
   as_verification_result, no-progress message wording, rglob counts dirs).
 - **Merge:** squash `5ec689a`.
+
+## PR 8/12 — Accuracy Evidence Pack, metrics, Learning Receipt + run engine (PR #9)
+
+- **Outcome:** North Star credited only for verified goals; PD-03 leading
+  metrics; full evidence pack + Learning Receipt; the deterministic run engine
+  assembling PRs 2–7 with bounded auto-repair and crash-safe resume.
+- **Tests:** pytest 92 passed / 1 deselected (auto-repair-below-70 delivery,
+  planted failure recovery, persistent-failure safe stop, North-Star crediting
+  across all verdicts, pack content checks); ruff clean; mypy strict clean
+  (30 files); CI green. engine.py byte-identical to the verified complete
+  implementation.
+- **Independent review:** APPROVE (verified: pack on non-deliverable verdict
+  impossible; claims cannot double-persist on resume; interrupt leaves
+  resumable state; nits: deliverable-set expressed in three places, redundant
+  loop2 records inflate a cosmetic count, dead `deliverable()` helper).
+- **Merge:** squash `1d9597a`.
