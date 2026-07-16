@@ -11,3 +11,14 @@ Complete-implementation backup: branch `claude/loop-engineering-v1-j513lb`
 Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
 
 ---
+
+## PR 1/12 — Repository boundary and CI scaffold (PR #2)
+
+- **Outcome:** job-search seed retired (seed backup `backup/job-search-seed`
+  @ `98e755b`); package skeleton, tooling config, CI workflow, PRD, decisions
+  log, this ledger, secret-scan test.
+- **Tests:** pytest 2 passed / 1 deselected; ruff clean; mypy strict clean
+  (10 files); build OK; CI green on push + PR.
+- **Independent review:** APPROVE (high finding — wrong preservation pointer —
+  fixed before merge; nits recorded in the PR thread).
+- **Merge:** squash `f0dce63`.
