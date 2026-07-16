@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Abhillashjadhav/loop-engineering/schemas/goal-contract.schema.json",
+  "title": "GoalContract",
+  "description": "Versioned, canonical, digest-locked goal contract. Immutable during a run; changes create a new version or a recorded, user-approved amendment.",
+  "type": "object",
+  "required": [
+    "goal_id",
+    "version",
+    "goal_statement",
+    "expected_output",
+    "north_star_metric",
+    "leading_metrics",
+    "scope",
+    "exclusions",
+    "allowed_actions",
+    "forbidden_actions",
+    "data_sources",
+    "evidence_requirements",
+    "success_checks",
+    "goal_match_threshold",
+    "replication_count",
+    "budget",
+    "stop_conditions",
+    "escalation_conditions",
+    "approved_at",
+    "approved_by",
+    "canonical_digest"
+  ],
+  "properties": {
+    "goal_id": { "type": "string", "minLength": 1 },
+    "version": { "type": "integer", "minimum": 1 },
+    "goal_statement": { "type": "string", "minLength": 1 },
+    "expected_output": {
+      "type": "object",
+      "description": "Expected output contract: named deliverables and their required properties.",
+      "required": ["deliverables"],
+      "properties": {
+        "deliverables": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "format_notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "north_star_metric": {
+      "type": "object",
+      "required": ["name", "baseline_manual_minutes"],
+      "properties": {
+        "name": {
+          "const": "human_active_minutes_saved_per_successfully_verified_goal"
+        },
+        "baseline_manual_minutes": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "leading_metrics": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "scope": { "type": "array", "items": { "type": "string" } },
+    "exclusions": { "type": "array", "items": { "type": "string" } },
+    "allowed_actions": { "type": "array", "items": { "type": "string" } },
+    "forbidden_actions": { "type": "array", "items": { "type": "string" } },
+    "data_sources": { "type": "array", "items": { "type": "string" } },
+    "evidence_requirements": {
+      "type": "object",
+      "required": ["normal_claim_min_sources", "high_impact_claim_min_sources"],
+      "properties": {
+        "normal_claim_min_sources": { "type": "integer", "minimum": 2 },
+        "high_impact_claim_min_sources": { "type": "integer", "minimum": 3 }
+      },
+      "additionalProperties": true
+    },
+    "success_checks": { "type": "array", "items": { "type": "string" } },
+    "goal_match_threshold": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "replication_count": { "type": "integer", "minimum": 1 },
+    "budget": {
+      "type": "object",
+      "required": ["max_iterations"],
+      "properties": {
+        "max_iterations": { "type": "integer", "minimum": 1 },
+        "max_minutes": { "type": "number", "minimum": 0 },
+        "max_tokens": { "type": "integer", "minimum": 0 },
+        "max_task_attempts": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "stop_conditions": { "type": "array", "items": { "type": "string" } },
+    "escalation_conditions": { "type": "array", "items": { "type": "string" } },
+    "approved_at": { "type": "string", "format": "date-time" },
+    "approved_by": { "type": "string", "minLength": 1 },
+    "canonical_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "amendments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["amended_at", "approved_by", "reason", "previous_digest"],
+        "properties": {
+          "amended_at": { "type": "string", "format": "date-time" },
+          "approved_by": { "type": "string" },
+          "reason": { "type": "string" },
+          "previous_digest": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

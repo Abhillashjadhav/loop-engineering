@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Abhillashjadhav/loop-engineering/schemas/task.schema.json",
+  "title": "AtomicTask",
+  "description": "An atomic task: small enough to execute and verify independently. Only VERIFIED satisfies completion.",
+  "type": "object",
+  "required": [
+    "task_id",
+    "goal_requirement",
+    "action",
+    "expected_artifact",
+    "evidence_required",
+    "pass_condition",
+    "failure_condition",
+    "dependencies",
+    "allowed_tools",
+    "max_attempts",
+    "status"
+  ],
+  "properties": {
+    "task_id": { "type": "string", "minLength": 1 },
+    "goal_requirement": {
+      "type": "string",
+      "description": "The goal-contract requirement this task serves.",
+      "minLength": 1
+    },
+    "action": { "type": "string", "minLength": 1 },
+    "expected_artifact": {
+      "type": "string",
+      "description": "Relative path (under the run's artifacts/ dir) of the artifact this task must produce."
+    },
+    "evidence_required": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Relative paths (under the run's evidence/ dir) that must exist after execution."
+    },
+    "pass_condition": {
+      "type": "object",
+      "description": "Declarative pass condition defined BEFORE execution; evaluated by the independent verifier.",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": [
+            "file_exists",
+            "file_contains",
+            "json_valid",
+            "json_has_keys",
+            "digest_matches",
+            "min_count"
+          ]
+        },
+        "path": { "type": "string" },
+        "text": { "type": "string" },
+        "keys": { "type": "array", "items": { "type": "string" } },
+        "digest": { "type": "string" },
+        "count_key": { "type": "string" },
+        "min": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "failure_condition": { "type": "string" },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "allowed_tools": { "type": "array", "items": { "type": "string" } },
+    "max_attempts": { "type": "integer", "minimum": 1 },
+    "status": {
+      "enum": [
+        "PLANNED",
+        "READY",
+        "RUNNING",
+        "EXECUTED",
+        "VERIFIED",
+        "FAILED",
+        "REPAIRING",
+        "BLOCKED",
+        "SKIPPED_WITH_REASON"
+      ]
+    },
+    "attempts": { "type": "integer", "minimum": 0 },
+    "artifact_digest": { "type": ["string", "null"] },
+    "skip_reason": { "type": ["string", "null"] },
+    "repair_of": {
+      "type": ["string", "null"],
+      "description": "task_id of the failed/deficient task this repair task addresses."
+    }
+  },
+  "additionalProperties": false
+}
