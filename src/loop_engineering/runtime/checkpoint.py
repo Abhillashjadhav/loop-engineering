@@ -56,7 +56,9 @@ def normalize_for_resume(tasks: list[Task]) -> list[str]:
     - EXECUTED -> READY  (verification never confirmed it; redo it —
       an executor statement is not proof)
 
-    Returns the ids of tasks that were reset. VERIFIED and
+    Returns the ids of tasks needing attention on resume: those reset to
+    READY plus FAILED tasks (left FAILED — recovery must resolve them
+    explicitly; they are reported, not re-queued). VERIFIED and
     SKIPPED_WITH_REASON tasks are never touched, so no completed work is
     repeated and no task is skipped.
     """

@@ -88,6 +88,14 @@ def test_resume_resets_inflight_but_never_verified_work() -> None:
     assert resume_point(tasks) == "b"
 
 
+def test_resume_reports_failed_tasks_without_requeueing_them() -> None:
+    tasks = [make_task("a", TaskStatus.FAILED), make_task("b", TaskStatus.EXECUTED)]
+    reset = normalize_for_resume(tasks)
+    assert set(reset) == {"a", "b"}  # FAILED is reported for attention...
+    assert tasks[0].status == TaskStatus.FAILED  # ...but never silently re-queued
+    assert tasks[1].status == TaskStatus.READY
+
+
 def test_resume_point_none_when_all_terminal() -> None:
     tasks = [make_task("a", TaskStatus.VERIFIED)]
     tasks[0].status = TaskStatus.VERIFIED
