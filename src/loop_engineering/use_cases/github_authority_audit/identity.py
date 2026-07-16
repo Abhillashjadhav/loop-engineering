@@ -48,9 +48,14 @@ def _match_attribute(key: str, expected: Any, profile: dict[str, Any]) -> bool:
     if key == "bio_keywords":
         bio = _norm(str(profile.get("bio", "")))
         keywords = [str(k) for k in expected] if isinstance(expected, list) else [str(expected)]
-        return bool(bio) and all(_norm(k) in bio for k in keywords)
+        keywords = [k for k in keywords if k.strip()]
+        return bool(bio) and bool(keywords) and all(_norm(k) in bio for k in keywords)
     actual = profile.get(key)
     if actual is None or expected is None:
+        return False
+    # Empty/whitespace placeholders must never count as corroboration: an
+    # empty string is a substring of everything.
+    if not _norm(str(expected)) or not _norm(str(actual)):
         return False
     return _norm(str(expected)) in _norm(str(actual)) or _norm(str(actual)) in _norm(str(expected))
 

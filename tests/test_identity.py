@@ -56,6 +56,23 @@ def test_collision_blocks_analysis() -> None:
         )
 
 
+def test_empty_placeholder_attributes_never_corroborate() -> None:
+    # One real match plus empty/whitespace placeholders must not reach the
+    # two-attribute threshold (an empty string is a substring of everything).
+    with pytest.raises(IdentityUnresolved, match="2 required"):
+        verify_identity(
+            subject="Sam Builder",
+            candidate_login="synthetic-builder",
+            expected_attributes={
+                "name": "Sam Builder",
+                "blog": "",
+                "twitter": "   ",
+                "bio_keywords": ["", " "],
+            },
+            profile=load_profile("synthetic-builder"),
+        )
+
+
 def test_url_alone_proves_nothing() -> None:
     # No expected attributes supplied: even a plausible-looking login must not confirm.
     with pytest.raises(IdentityUnresolved):
