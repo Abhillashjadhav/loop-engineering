@@ -136,7 +136,9 @@ plus config under `use_cases/<name>/`. The runtime is never rewritten.
   offline and deterministic.
 - The live audit of the two named subjects has not been executed in this
   environment (GitHub access here is repo-scoped); the system ships with the
-  synthetic demonstration and the live goal contract ready to run.
+  synthetic demonstration and the live goal contract ready to run. The exact
+  missing evidence and unblock paths are recorded in
+  [docs/live-audit-blocked.md](docs/live-audit-blocked.md).
 - Six-run stability variants share the deterministic scoring core; stance and
   ordering vary per variant. With LLM executors the variance will be larger —
   the comparison machinery is built for that.
