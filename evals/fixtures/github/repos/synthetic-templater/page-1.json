@@ -1,0 +1,526 @@
+[
+  {
+    "name": "gpt-wrapper-01",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 1500,
+    "forks_count": 300,
+    "language": "Python",
+    "size": 2400,
+    "created_at": "2026-03-30T10:00:00Z",
+    "pushed_at": "2026-04-01T10:00:00Z",
+    "contributors": 1,
+    "commit_count": 3,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": false,
+    "has_ci": false,
+    "dependencies_declared": false,
+    "license": "MIT",
+    "runnable_setup_documented": false,
+    "signals": {
+      "readme_claims_total": 8,
+      "readme_claims_code_backed": 1,
+      "original_logic_notes": 0,
+      "meaningful_adaptation": false,
+      "template_similarity_pct": 90,
+      "boilerplate_share_pct": 80,
+      "error_handling_present": false,
+      "input_validation_present": false,
+      "state_management_present": false,
+      "security_practices_present": false,
+      "edge_case_handling_present": true,
+      "integration_complexity": 0,
+      "test_files": 0,
+      "ci_runs": false,
+      "eval_fixtures": false,
+      "golden_cases": false,
+      "failure_handling_tested": false,
+      "setup_reproducible": false,
+      "deps_valid": false,
+      "secrets_policy_ok": false,
+      "apis_current": false,
+      "smoke_path_documented": false,
+      "distinct_commit_days": 1,
+      "refactor_commits": 0,
+      "issue_responses": 0,
+      "dependency_updates": 0,
+      "docs_corrections": 0,
+      "deprecations_handled": false,
+      "abstraction_layers": 4,
+      "complexity_justified": false,
+      "explanation_quality": 1,
+      "tradeoffs_discussed": false,
+      "limitations_disclosed": false,
+      "runnable_learning": false,
+      "one_shot_dump": true,
+      "commit_msg_uniformity_pct": 90,
+      "mass_generated_siblings": 3,
+      "ai_tool_attribution": true,
+      "test_search": {
+        "queries": [
+          "tests/",
+          "test_*.py",
+          "*.test.js",
+          ".github/workflows/*.yml"
+        ],
+        "scope": "full default-branch file tree",
+        "complete": true
+      },
+      "evidence": [
+        {
+          "origin": "source_code",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-01/blob/main/src/main.py",
+          "excerpt": "inspected representative source files of gpt-wrapper-01",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-01/commits/main",
+          "excerpt": "commit log of gpt-wrapper-01: message diversity and dates recorded",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-01/tree/main",
+          "excerpt": "full default-branch file tree of gpt-wrapper-01 enumerated",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-01#readme",
+          "excerpt": "README claims of gpt-wrapper-01 as written by the author",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "counter_evidence_review": {
+        "reviewed": true,
+        "strongest_counter_evidence": [
+          "README quickstart is coherent and the app structure is runnable in principle if a valid API key is supplied",
+          "high star count indicates the demo resonated with an audience"
+        ],
+        "review_notes": "counter-evidence considered; does not outweigh unbacked claims, single-day dump, and invalid dependencies"
+      },
+      "ai_share_evidence": "single-day dump, 90% uniform commit messages, generator attribution in footer; counter-evidence: none beyond README voice"
+    }
+  },
+  {
+    "name": "gpt-wrapper-02",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 900,
+    "forks_count": 150,
+    "language": "Python",
+    "size": 2400,
+    "created_at": "2026-04-04T10:00:00Z",
+    "pushed_at": "2026-04-05T10:00:00Z",
+    "contributors": 1,
+    "commit_count": 2,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": false,
+    "has_ci": false,
+    "dependencies_declared": false,
+    "license": "MIT",
+    "runnable_setup_documented": false,
+    "signals": {
+      "readme_claims_total": 7,
+      "readme_claims_code_backed": 1,
+      "original_logic_notes": 0,
+      "meaningful_adaptation": false,
+      "template_similarity_pct": 88,
+      "boilerplate_share_pct": 75,
+      "error_handling_present": false,
+      "input_validation_present": false,
+      "state_management_present": false,
+      "security_practices_present": false,
+      "edge_case_handling_present": false,
+      "integration_complexity": 0,
+      "test_files": 0,
+      "ci_runs": false,
+      "eval_fixtures": false,
+      "golden_cases": false,
+      "failure_handling_tested": false,
+      "setup_reproducible": false,
+      "deps_valid": false,
+      "secrets_policy_ok": true,
+      "apis_current": false,
+      "smoke_path_documented": false,
+      "distinct_commit_days": 1,
+      "refactor_commits": 0,
+      "issue_responses": 0,
+      "dependency_updates": 0,
+      "docs_corrections": 0,
+      "deprecations_handled": false,
+      "abstraction_layers": 3,
+      "complexity_justified": false,
+      "explanation_quality": 1,
+      "tradeoffs_discussed": false,
+      "limitations_disclosed": false,
+      "runnable_learning": false,
+      "one_shot_dump": true,
+      "commit_msg_uniformity_pct": 85,
+      "mass_generated_siblings": 3,
+      "ai_tool_attribution": true,
+      "test_search": {
+        "queries": [
+          "tests/",
+          "test_*.py",
+          "*.test.js",
+          ".github/workflows/*.yml"
+        ],
+        "scope": "full default-branch file tree",
+        "complete": true
+      },
+      "evidence": [
+        {
+          "origin": "source_code",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-02/blob/main/src/main.py",
+          "excerpt": "inspected representative source files of gpt-wrapper-02",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-02/commits/main",
+          "excerpt": "commit log of gpt-wrapper-02: message diversity and dates recorded",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-02/tree/main",
+          "excerpt": "full default-branch file tree of gpt-wrapper-02 enumerated",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/synthetic-templater/gpt-wrapper-02#readme",
+          "excerpt": "README claims of gpt-wrapper-02 as written by the author",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "counter_evidence_review": {
+        "reviewed": true,
+        "strongest_counter_evidence": [
+          "app boots to a working UI shell per the README screenshots"
+        ],
+        "review_notes": "screenshots are not executable evidence; claims remain unbacked by code or tests"
+      },
+      "ai_share_evidence": "near-identical sibling of gpt-wrapper-01; one-shot dump"
+    }
+  },
+  {
+    "name": "prompt-pack-07",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 120,
+    "forks_count": 20,
+    "language": "Python",
+    "size": 2400,
+    "created_at": "2026-02-01T10:00:00Z",
+    "pushed_at": "2026-05-10T10:00:00Z",
+    "contributors": 1,
+    "commit_count": 18,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": true,
+    "has_ci": false,
+    "dependencies_declared": true,
+    "license": "MIT",
+    "runnable_setup_documented": true,
+    "signals": {
+      "readme_claims_total": 5,
+      "readme_claims_code_backed": 2,
+      "original_logic_notes": 1,
+      "meaningful_adaptation": false,
+      "template_similarity_pct": 60,
+      "boilerplate_share_pct": 50,
+      "error_handling_present": true,
+      "input_validation_present": false,
+      "state_management_present": false,
+      "security_practices_present": false,
+      "edge_case_handling_present": true,
+      "integration_complexity": 0,
+      "test_files": 1,
+      "ci_runs": false,
+      "eval_fixtures": false,
+      "golden_cases": false,
+      "failure_handling_tested": false,
+      "setup_reproducible": true,
+      "deps_valid": true,
+      "secrets_policy_ok": true,
+      "apis_current": false,
+      "smoke_path_documented": false,
+      "distinct_commit_days": 4,
+      "refactor_commits": 1,
+      "issue_responses": 1,
+      "dependency_updates": 0,
+      "docs_corrections": 0,
+      "deprecations_handled": false,
+      "abstraction_layers": 1,
+      "complexity_justified": true,
+      "explanation_quality": 2,
+      "tradeoffs_discussed": true,
+      "limitations_disclosed": false,
+      "runnable_learning": true,
+      "one_shot_dump": false,
+      "commit_msg_uniformity_pct": 80,
+      "mass_generated_siblings": 2,
+      "ai_tool_attribution": true,
+      "evidence": [
+        {
+          "origin": "source_code",
+          "url": "https://github.com/synthetic-templater/prompt-pack-07/blob/main/src/main.py",
+          "excerpt": "inspected representative source files of prompt-pack-07",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/synthetic-templater/prompt-pack-07/commits/main",
+          "excerpt": "commit log of prompt-pack-07: message diversity and dates recorded",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/synthetic-templater/prompt-pack-07/tree/main",
+          "excerpt": "full default-branch file tree of prompt-pack-07 enumerated",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/synthetic-templater/prompt-pack-07#readme",
+          "excerpt": "README claims of prompt-pack-07 as written by the author",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "counter_evidence_review": {
+        "reviewed": true,
+        "strongest_counter_evidence": [
+          "iterated over 4 commit days with one refactor and a test file",
+          "trade-offs section shows some original reasoning"
+        ],
+        "review_notes": "borderline: partially backed claims and mild iteration against high template similarity"
+      },
+      "ai_share_evidence": "80% uniform commit messages and 2 near-identical siblings; counter-evidence: 4 distinct commit days"
+    }
+  },
+  {
+    "name": "awesome-ai-list",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 6000,
+    "forks_count": 900,
+    "language": "Markdown",
+    "size": 2400,
+    "created_at": "2024-01-10T10:00:00Z",
+    "pushed_at": "2026-05-20T10:00:00Z",
+    "contributors": 12,
+    "commit_count": 90,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": false,
+    "has_ci": false,
+    "dependencies_declared": true,
+    "license": "MIT",
+    "runnable_setup_documented": true,
+    "signals": {
+      "readme_claims_total": 1,
+      "readme_claims_code_backed": 1,
+      "original_logic_notes": 2,
+      "meaningful_adaptation": true,
+      "template_similarity_pct": 30,
+      "boilerplate_share_pct": 10,
+      "error_handling_present": false,
+      "input_validation_present": false,
+      "state_management_present": false,
+      "security_practices_present": false,
+      "edge_case_handling_present": false,
+      "integration_complexity": 0,
+      "test_files": 0,
+      "ci_runs": false,
+      "eval_fixtures": false,
+      "golden_cases": false,
+      "failure_handling_tested": false,
+      "setup_reproducible": true,
+      "deps_valid": true,
+      "secrets_policy_ok": true,
+      "apis_current": true,
+      "smoke_path_documented": false,
+      "distinct_commit_days": 40,
+      "refactor_commits": 2,
+      "issue_responses": 8,
+      "dependency_updates": 0,
+      "docs_corrections": 6,
+      "deprecations_handled": false,
+      "abstraction_layers": 1,
+      "complexity_justified": true,
+      "explanation_quality": 3,
+      "tradeoffs_discussed": true,
+      "limitations_disclosed": true,
+      "runnable_learning": true,
+      "one_shot_dump": false,
+      "commit_msg_uniformity_pct": 30,
+      "mass_generated_siblings": 0,
+      "ai_tool_attribution": false,
+      "test_search": {
+        "queries": [
+          "tests/",
+          "test_*.py",
+          "*.test.js",
+          ".github/workflows/*.yml"
+        ],
+        "scope": "full default-branch file tree",
+        "complete": true
+      },
+      "evidence": [
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/synthetic-templater/awesome-ai-list/tree/main",
+          "excerpt": "full default-branch file tree of awesome-ai-list enumerated",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/synthetic-templater/awesome-ai-list/commits/main",
+          "excerpt": "commit log of awesome-ai-list: message diversity and dates recorded",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "release_notes",
+          "url": "https://github.com/synthetic-templater/awesome-ai-list/releases",
+          "excerpt": "release history of awesome-ai-list",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ],
+      "ai_share_evidence": "long-lived curation with community PRs; low uniformity"
+    }
+  },
+  {
+    "name": "empty-repo",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "language": "Python",
+    "size": 0,
+    "created_at": "2024-01-10T10:00:00Z",
+    "pushed_at": "2026-05-20T10:00:00Z",
+    "contributors": 3,
+    "commit_count": 0,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": false,
+    "has_ci": false,
+    "dependencies_declared": false,
+    "license": null,
+    "runnable_setup_documented": false,
+    "signals": {}
+  },
+  {
+    "name": "mystery-scripts",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 2,
+    "forks_count": 0,
+    "language": "Python",
+    "size": 2400,
+    "created_at": "2024-01-10T10:00:00Z",
+    "pushed_at": "2026-05-20T10:00:00Z",
+    "contributors": 3,
+    "commit_count": 5,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": false,
+    "has_ci": false,
+    "dependencies_declared": false,
+    "license": "MIT",
+    "runnable_setup_documented": false,
+    "signals": {
+      "readme_claims_total": 3,
+      "readme_claims_code_backed": 0,
+      "template_similarity_pct": 70,
+      "one_shot_dump": true,
+      "test_search": {
+        "queries": [
+          "tests/",
+          "test_*.py",
+          "*.test.js",
+          ".github/workflows/*.yml"
+        ],
+        "scope": "full default-branch file tree",
+        "complete": true
+      },
+      "evidence": [
+        {
+          "origin": "source_code",
+          "url": "https://github.com/synthetic-templater/mystery-scripts/blob/main/src/main.py",
+          "excerpt": "inspected representative source files of mystery-scripts",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/synthetic-templater/mystery-scripts/tree/main",
+          "excerpt": "full default-branch file tree of mystery-scripts enumerated",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ]
+    }
+  },
+  {
+    "name": "hidden-repo",
+    "fork": false,
+    "archived": false,
+    "mirror": false,
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "language": "Python",
+    "size": 2400,
+    "created_at": "2024-01-10T10:00:00Z",
+    "pushed_at": "2026-05-20T10:00:00Z",
+    "contributors": 3,
+    "commit_count": 10,
+    "releases": 0,
+    "open_issues": 2,
+    "pull_requests": 5,
+    "has_tests": false,
+    "has_ci": false,
+    "dependencies_declared": true,
+    "license": "MIT",
+    "runnable_setup_documented": true,
+    "signals": {
+      "evidence": [
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/synthetic-templater/hidden-repo/tree/main",
+          "excerpt": "full default-branch file tree of hidden-repo enumerated",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/synthetic-templater/hidden-repo/commits/main",
+          "excerpt": "commit log of hidden-repo: message diversity and dates recorded",
+          "retrieved_at": "2026-07-16T08:00:00+00:00"
+        }
+      ]
+    },
+    "inaccessible": true,
+    "inaccessible_reason": "repository exceeds inspection size budget; content not fetched"
+  }
+]

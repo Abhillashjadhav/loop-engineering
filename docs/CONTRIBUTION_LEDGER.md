@@ -123,3 +123,18 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   resumable state; nits: deliverable-set expressed in three places, redundant
   loop2 records inflate a cosmetic count, dead `deliverable()` helper).
 - **Merge:** squash `1d9597a`.
+
+## PR 9/12 — Claude Code skill and role agents (PR #10)
+
+- **Outcome:** /loop-engineer orchestration skill (six modes; Claude
+  orchestrates, Python validates; BLOCKED.md surfaced verbatim), eight role
+  agents with enforced separation, per-agent eval fixtures with planted
+  failures, permission policy enforced by tests.
+- **Tests:** pytest 98 passed / 1 deselected (fixture structure, fire/no-fire
+  cases, permission policy, executor self-verification prohibition, planted
+  failures); ruff clean; mypy strict clean (30 files); CI green. Zero Python
+  source changes.
+- **Independent review:** APPROVE (tense nit on evals/README fixed pre-merge;
+  noted: may_write substring guard granularity, read_only/may_write pairing
+  reconciled by agent definitions).
+- **Merge:** squash `aa9cfca`.

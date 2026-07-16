@@ -42,3 +42,11 @@ class ScopeViolation(LoopEngineeringError):
 
 class EvidenceRuleViolation(LoopEngineeringError):
     """A claim was asserted without meeting the evidence independence rules."""
+
+
+class IdentityUnresolved(LoopEngineeringError):
+    """Subject identity could not be confidently resolved; analysis is blocked."""
+
+
+class LiveAccessUnavailable(LoopEngineeringError):
+    """A live data source (web/GitHub) is not reachable from this environment."""

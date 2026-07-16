@@ -1,0 +1,24 @@
+{
+  "login": "synthetic-templater",
+  "name": "Tee Templater",
+  "company": null,
+  "blog": "https://promptpacks.example",
+  "twitter": "tee_prompts",
+  "location": "Remote",
+  "bio": "Shipping AI apps daily. 100+ templates. Follow for prompts.",
+  "followers": 48000,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/synthetic-templater",
+      "excerpt": "profile: Tee Templater, promptpacks.example, @tee_prompts",
+      "retrieved_at": "2026-07-16T08:00:00+00:00"
+    },
+    {
+      "origin": "external_profile",
+      "url": "https://promptpacks.example/links",
+      "excerpt": "link hub lists github.com/synthetic-templater as the GitHub",
+      "retrieved_at": "2026-07-16T08:00:00+00:00"
+    }
+  ]
+}

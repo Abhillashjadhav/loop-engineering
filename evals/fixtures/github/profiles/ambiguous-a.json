@@ -1,0 +1,11 @@
+{
+  "login": "ambiguous-a",
+  "name": "Alex Doe",
+  "company": "Globex",
+  "blog": "https://alexdoe.example",
+  "twitter": "alexdoe",
+  "location": "NYC",
+  "bio": "product manager writing about AI",
+  "followers": 500,
+  "evidence_links": []
+}

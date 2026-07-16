@@ -24,6 +24,7 @@ from loop_engineering.runtime.engine import ExecutionContext, TaskOutcome
 from loop_engineering.verification.loop4_stability import RunFindings
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+GITHUB_FIXTURES = REPO_ROOT / "evals" / "fixtures" / "github"
 
 
 def make_contract_draft(**overrides: Any) -> dict[str, Any]:
