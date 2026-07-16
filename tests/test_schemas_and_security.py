@@ -1,11 +1,25 @@
-"""Repo-wide secret scan (schema-conformance tests join as schemas land)."""
+"""Schema validity for persisted records, plus a repo-wide secret scan."""
 
 from __future__ import annotations
 
+import json
 import re
 
+import jsonschema
 import pytest
 from tests.conftest import REPO_ROOT
+
+SCHEMAS = REPO_ROOT / "schemas"
+
+
+def load_schema(name: str) -> dict:  # type: ignore[type-arg]
+    return json.loads((SCHEMAS / name).read_text(encoding="utf-8"))
+
+
+def test_all_schemas_are_valid_jsonschema() -> None:
+    for path in SCHEMAS.glob("*.schema.json"):
+        jsonschema.Draft202012Validator.check_schema(load_schema(path.name))
+
 
 SECRET_PATTERNS = [
     re.compile(p)
