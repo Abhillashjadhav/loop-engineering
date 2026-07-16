@@ -1,4 +1,4 @@
-"""North Star crediting rules and the Accuracy Evidence Pack."""
+"""North Star crediting rules, leading metrics, and the Accuracy Evidence Pack."""
 
 from __future__ import annotations
 
@@ -40,6 +40,51 @@ def test_north_star_credits_only_verified_goals() -> None:
         ns = north_star(contract, make_state(), verdict)
         assert not ns.goal_successfully_verified
         assert ns.estimated_minutes_saved == 0.0  # raw speed without verification is not success
+
+
+def test_pack_generated_by_full_run(tmp_path: Path, audit_contract, audit_subjects) -> None:  # type: ignore[no-untyped-def]
+    from tests.conftest import GITHUB_FIXTURES
+
+    from loop_engineering.runtime.engine import Engine
+    from loop_engineering.use_cases.github_authority_audit.datasource import FixtureDataSource
+    from loop_engineering.use_cases.github_authority_audit.runner import AuditUseCase
+
+    use_case = AuditUseCase(FixtureDataSource(GITHUB_FIXTURES), audit_subjects)
+    engine = Engine(
+        audit_contract,
+        use_case,
+        runs_root=tmp_path / "runs",
+        config={"outputs_root": str(tmp_path / "outputs")},
+    )
+    result = engine.run()
+    assert result.pack_dir is not None
+    expected_files = [
+        "final-output.md",
+        "accuracy-evidence.md",
+        "accuracy-evidence.json",
+        "learning-receipt.md",
+        "claim-evidence-matrix.csv",
+        "task-ledger.jsonl",
+        "verification-results.jsonl",
+        "six-run-comparison.md",
+        "end-to-end-goal-review.md",
+        "unresolved-uncertainties.md",
+    ]
+    for name in expected_files:
+        assert (result.pack_dir / name).is_file(), name
+    assert any((result.pack_dir / "repository-scorecards").glob("*.json"))
+    accuracy = (result.pack_dir / "accuracy-evidence.md").read_text(encoding="utf-8")
+    for heading in (
+        "Process completeness",
+        "Claim evidence coverage",
+        "Six-run agreement",
+        "Goal drift",
+        "End-to-end goal-match score",
+        "Exclusions and limitations",
+    ):
+        assert heading in accuracy, heading
+    receipt = (result.pack_dir / "learning-receipt.md").read_text(encoding="utf-8")
+    assert "Important decisions" in receipt and "Alternatives rejected" in receipt
 
 
 def test_pack_generated_by_demo_run(tmp_path: Path) -> None:

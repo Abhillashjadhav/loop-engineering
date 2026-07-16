@@ -21,22 +21,14 @@ jobs:
           ruff format --check src tests
       - name: Types (strict)
         run: python -m mypy
-      - name: Tests (offline)
+      - name: Tests (offline; includes secret scan + E2E/resume/stability demos)
         run: python -m pytest -q
       - name: Build
         run: python -m build
-      # The CLI smoke step arms itself automatically once the CLI and the
-      # synthetic demonstration land (later PRs in the series); it is replaced
-      # by an unconditional run in the final release PR.
-      - name: CLI smoke (synthetic end-to-end demo, when available)
+      - name: CLI smoke (synthetic end-to-end demo)
         run: |
-          if python -c "import loop_engineering.cli" 2>/dev/null \
-             && [ -f examples/subjects.synthetic.yaml ]; then
-            loop-engineering audit-github \
-              --subjects examples/subjects.synthetic.yaml \
-              --fixtures evals/fixtures/github
-            loop-engineering verify "$(ls -d runs/github-authority-audit-synthetic/run-*)"
-            test -f outputs/github-authority-audit-synthetic/accuracy-evidence.md
-          else
-            echo "CLI/demo not present yet at this point in the PR series — skipping"
-          fi
+          loop-engineering audit-github \
+            --subjects examples/subjects.synthetic.yaml \
+            --fixtures evals/fixtures/github
+          loop-engineering verify "$(ls -d runs/github-authority-audit-synthetic/run-*)"
+          test -f outputs/github-authority-audit-synthetic/accuracy-evidence.md

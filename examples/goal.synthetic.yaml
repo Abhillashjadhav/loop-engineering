@@ -1,0 +1,72 @@
+# Draft goal contract for the synthetic GitHub authority audit.
+# `loop-engineering init examples/goal.synthetic.yaml` locks it (adds the digest).
+goal_id: github-authority-audit-synthetic
+version: 1
+goal_statement: >
+  Using the synthetic public-evidence fixtures, determine for each subject
+  whether their public GitHub portfolio demonstrates substantive GenAI
+  technical proficiency, meaningful human reasoning, education/curation
+  strength, distribution strength, AI-assisted-but-useful creation, or
+  shallow/templated work — without inferring private intent or exact
+  authorship.
+expected_output:
+  deliverables:
+    - cross-subject comparison
+    - final answer with per-subject verdicts
+    - person-level assessments
+    - repository scorecards
+  format_notes: markdown final answer plus JSON artifacts and scorecards
+north_star_metric:
+  name: human_active_minutes_saved_per_successfully_verified_goal
+  baseline_manual_minutes: 480
+leading_metrics:
+  - percentage of planned tasks completed autonomously
+  - first-pass task verification rate
+  - percentage of material claims independently verified
+  - average repair attempts per task
+  - repeated-action rate
+  - human interventions
+  - six-run conclusion consistency
+  - end-to-end goal-match score
+scope:
+  - verify subject identity from at least two public attributes
+  - inventory all public repositories for each subject
+  - assess repository quality across the ten-dimension rubric
+  - aggregate person-level distributions and verdicts
+  - compare subjects and answer the underlying question
+  - produce final output with uncertainties disclosed
+exclusions:
+  - private intent, private contributions, or exact human/AI authorship
+  - non-public data sources of any kind
+  - judgments about the person rather than the public artifacts
+allowed_actions:
+  - read fixture snapshots
+  - write artifacts and evidence under the run directory
+  - compute scores and classifications deterministically
+forbidden_actions:
+  - fetching non-public data
+  - stating exact AI-authorship percentages
+  - destructive operations of any kind
+data_sources:
+  - evals/fixtures/github (synthetic public-evidence snapshots)
+evidence_requirements:
+  normal_claim_min_sources: 2
+  high_impact_claim_min_sources: 3
+success_checks:
+  - every material claim carries at least two independent evidence origins
+  - negative classifications carry counter-evidence and meet confidence floors
+  - six analysis variants are compared and disagreements preserved
+goal_match_threshold: 70
+replication_count: 6
+budget:
+  max_iterations: 60
+  max_task_attempts: 3
+stop_conditions:
+  - budget exhausted
+  - circuit breaker tripped
+  - human decision required
+escalation_conditions:
+  - identity cannot be confidently resolved
+  - required source inaccessible
+approved_at: "2026-07-16T00:00:00+00:00"
+approved_by: abhillash

@@ -191,3 +191,17 @@ class NeverPassesUseCase(DemoUseCase):
         ctx.evidence_path("source-a.txt").write_text("raw demo source", encoding="utf-8")
         ctx.artifact_path("report.md").write_text("broken draft forever", encoding="utf-8")
         return TaskOutcome()
+
+
+@pytest.fixture
+def audit_subjects() -> list[dict[str, Any]]:
+    import yaml
+
+    with (REPO_ROOT / "examples" / "subjects.synthetic.yaml").open(encoding="utf-8") as fh:
+        return [dict(s) for s in yaml.safe_load(fh)["subjects"]]
+
+
+@pytest.fixture
+def audit_contract() -> dict[str, Any]:
+    draft = goal_contract.load_unlocked(REPO_ROOT / "examples" / "goal.synthetic.yaml")
+    return goal_contract.lock(draft)
