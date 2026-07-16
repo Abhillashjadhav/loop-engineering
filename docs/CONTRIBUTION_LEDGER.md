@@ -138,3 +138,18 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   noted: may_write substring guard granularity, read_only/may_write pairing
   reconciled by agent definitions).
 - **Merge:** squash `aa9cfca`.
+
+## PR 10/12 — GitHub identity and complete repository inventory (PR #11)
+
+- **Outcome:** identity confirmation only from >=2 corroborating public
+  attributes (collisions block; URL alone proves nothing); full-pagination
+  inventory with forks excluded from authored scoring, stars as distribution
+  signals only, inaccessible content recorded honestly; fixture/live
+  data-source protocol; planted synthetic corpus.
+- **Tests:** pytest 106 passed / 1 deselected; ruff clean; mypy strict clean
+  (33 files); CI green.
+- **Independent review:** APPROVE (medium finding fixed pre-merge: empty
+  placeholder expected-attributes could false-match — now non-matching with a
+  regression test; nits: lexical page sort, silent missing-candidates file,
+  test filename breadth).
+- **Merge:** squash `e1ccaad`.
