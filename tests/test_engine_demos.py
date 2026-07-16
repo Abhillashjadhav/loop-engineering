@@ -35,6 +35,10 @@ def test_full_synthetic_e2e_demo(tmp_path: Path, audit_contract, audit_subjects)
     assert result.gate_b is not None and result.gate_b.score >= 80
     assert result.delivered
 
+    # loop 2 ran at every stage boundary plus the final all-tasks pass
+    loop2_stages = {v.subject_id for v in result.verifications if v.loop == "loop2_drift"}
+    assert {"builder", "templater", "z", "all-tasks"} <= loop2_stages
+
     # six-run stability ran and preserved the planted disagreement
     stability = json.loads((engine.run_directory / "verifications" / "stability.json").read_text())
     assert stability["variant_count"] == 6

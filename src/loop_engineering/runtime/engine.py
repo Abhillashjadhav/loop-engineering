@@ -412,6 +412,17 @@ class Engine:
                 self._persist_claims(outcome.claims, task.task_id)
                 self.ctx.claims.extend(outcome.claims)
                 self.ctx.uncertainties.extend(outcome.uncertainties)
+                # Loop 2 runs after every workstream/stage: fire it the moment
+                # this task's stage has no non-terminal tasks left.
+                stage = self.use_case.stage_of(task)
+                stage_tasks = [
+                    t for t in self.queue.all_tasks() if self.use_case.stage_of(t) == stage
+                ]
+                if all(
+                    t.status in (TaskStatus.VERIFIED, TaskStatus.SKIPPED_WITH_REASON)
+                    for t in stage_tasks
+                ):
+                    self._verify_stage(stage, recovery)
             else:
                 self.queue.transition(
                     task.task_id,
