@@ -20,7 +20,7 @@ candidates/<subject-slug>.json # candidate login list per subject
 repos/<login>/page-N.json      # paged repository listings
 ```
 
-Planted cases the test suite depends on:
+Planted cases the test suite will depend on (the fixtures land with the github-authority-audit use case in the next PRs):
 
 - `synthetic-builder` — high-quality subject: substantive repos with tests/CI,
   an educational notes repo, a fork (`upstream-sdk`, must be excluded from
