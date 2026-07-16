@@ -29,3 +29,7 @@ class BudgetExhausted(LoopEngineeringError):
 
 class ScopeViolation(LoopEngineeringError):
     """Work attempted outside the contract's scope or allowed actions."""
+
+
+class EvidenceRuleViolation(LoopEngineeringError):
+    """A claim was asserted without meeting the evidence independence rules."""

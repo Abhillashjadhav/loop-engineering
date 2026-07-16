@@ -63,3 +63,17 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   vocabulary, duplicated cycle guard, skipped-dependency interaction noted —
   handled by the engine's unsatisfiable-dependency breaker in PR 8).
 - **Merge:** squash `7b13a20`.
+
+## PR 5/12 — Verification Loops 1 and 2 (PR #6)
+
+- **Outcome:** Loop 1 filesystem-only task verification (no executor
+  narrative channel; self-verification raises), Loop 2 plan/goal-drift review
+  with the hard <5% guardrail; verification-result schema + models.
+- **Tests:** pytest 52 passed / 1 deselected (pass-condition semantics,
+  missing artifact/evidence failures, self-verification prohibition, drift
+  arithmetic, schema conformance); ruff clean; mypy strict clean (21 files);
+  CI green.
+- **Independent review:** APPROVE (non-blocking: UTF-8 crash surface on
+  JSON pass conditions; cond.path lacks the symmetric containment guard;
+  digest/file_contains/traversal test gaps; failure detail wording).
+- **Merge:** squash `7505403`.
