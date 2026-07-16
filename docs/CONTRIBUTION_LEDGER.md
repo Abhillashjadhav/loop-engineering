@@ -50,3 +50,16 @@ Job-search seed backup: commit `98e755b` (branch `backup/job-search-seed`).
   added, FAILED-resume return semantics documented + pinned by test; noted
   lows: directory fsync gap, checkpoint seq assumptions, ledger flush-only).
 - **Merge:** squash `89ef8d3`.
+
+## PR 4/12 — Atomic planner and one-task-at-a-time execution engine (PR #5)
+
+- **Outcome:** plan validation, deterministic execution order, goal-coverage/
+  drift math; TaskQueue enforcing one-in-flight, the failed-verification gate,
+  ALLOWED_TRANSITIONS, skip-with-reason, explicit plan growth.
+- **Tests:** pytest 41 passed / 1 deselected (state-machine guardrails,
+  planner validation/order/drift math); ruff clean; mypy strict clean
+  (19 files); CI green.
+- **Independent review:** APPROVE (all findings LOW: staged-for-later
+  vocabulary, duplicated cycle guard, skipped-dependency interaction noted —
+  handled by the engine's unsatisfiable-dependency breaker in PR 8).
+- **Merge:** squash `7b13a20`.
