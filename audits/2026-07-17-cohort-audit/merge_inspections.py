@@ -158,6 +158,11 @@ def validate_evidence(name: str, signals: dict) -> None:
     for e in ev:
         if not isinstance(e, dict) or not e.get("origin") or not e.get("excerpt"):
             fail(f"{name}: evidence item missing origin/excerpt")
+    ce = signals.get("counter_evidence", [])
+    if not isinstance(ce, list) or any(
+        not isinstance(e, dict) or not e.get("origin") or not e.get("excerpt") for e in ce
+    ):
+        fail(f"{name}: counter_evidence must be a list of {{origin,url,excerpt}} objects")
 
 
 def validate_counter_evidence(name: str, signals: dict) -> None:

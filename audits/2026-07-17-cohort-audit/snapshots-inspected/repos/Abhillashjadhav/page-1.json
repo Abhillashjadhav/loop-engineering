@@ -1,0 +1,1963 @@
+[
+ {
+  "name": "10Xbuilds",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "Research driven 10X buuilds from other top Product managers",
+  "topics": [],
+  "size": 34,
+  "created_at": "2026-05-22T10:29:03Z",
+  "pushed_at": "2026-05-24T11:02:06Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 1,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['evals', 'posts']"
+    ],
+    "scope": "root of default branch claude/trusting-clarke-G6UIS (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 2,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 1,
+   "commits_sampled": 1,
+   "commit_msg_uniformity_pct": 100,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "AI-PM-cold-mails",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "AI PM cold mails ",
+  "topics": [],
+  "size": 77,
+  "created_at": "2026-05-22T16:14:58Z",
+  "pushed_at": "2026-05-24T10:59:14Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 13,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', 'artifacts', 'changelog.md', 'citation.cff', 'docs', 'license', 'playbook', 'readme.md', 'templates']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 10,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2932,
+   "distinct_commit_days": 2,
+   "commits_sampled": 13,
+   "commit_msg_uniformity_pct": 8,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "AI-PM-essential-skills",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "A growing library of Claude Code skills for AI Product Managers. Each skill solves a real PM workflow problem — evals, context engineering, inference economics, output quality. Built and tested. Not in Anthropic's official library.",
+  "topics": [],
+  "size": 416,
+  "created_at": "2026-06-24T11:40:41Z",
+  "pushed_at": "2026-07-13T11:25:42Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 40,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.claude-plugin', '.github', '.gitignore', 'agents.md', 'claude.md', 'concise-rewriter', 'context-auditor', 'context-port', 'eval-rubric-generator', 'lessons.md', 'loop-designer', 'mcp-migration-auditor', 'pm-tactical', 'pm-verifier', 'prds', 'readme.md', 'reviews', 'test-files', 'tests', 'token-cost-estimator']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 21,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 7059,
+   "distinct_commit_days": 5,
+   "commits_sampled": 40,
+   "commit_msg_uniformity_pct": 8,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 30,
+   "boilerplate_share_pct": 20,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 2,
+   "ai_share_evidence": "Commits are almost all owner-authored (39/40; 2 by 'Claude') with conventional PR-numbered messages; no README AI-authorship credit ('Built by Abhillash Jadhav'); counter-evidence: the 2026-07-11 context-port series lands 18 PRs in one day — a strong AI-assisted-velocity marker even under the owner's name.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills",
+     "excerpt": "40 commits, 2 contributors, 1 star, created 2026-06-24, pushed 2026-07-13, has_tests true, has_ci true; description: 'A growing library of Claude Code skills for AI Product Managers ... Built and tested. Not in Anthropic's official library.'"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills/commits",
+     "excerpt": "2026-06-24 'feat: add token-cost-estimator skill for pre-flight inference economics'; 2026-07-04 'feat: v0.2.0 — make pm-tactical proactive across the plugin'; 2026-07-11 'feat(context-port): add real Claude export converter (#24)'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills/tree/main",
+     "excerpt": "Root: concise-rewriter/, context-auditor/, context-port/, eval-rubric-generator/, loop-designer/, mcp-migration-auditor/, pm-tactical/, pm-verifier/, token-cost-estimator/, tests/, .claude-plugin/, AGENTS.md, CLAUDE.md, LESSONS.md."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills/tree/main/.github/workflows",
+     "excerpt": "pr-review.yml (2320 bytes) backs the README's 'Every PR is reviewed by the repo's PR agent before merge'."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills#readme",
+     "excerpt": "'Each skill has a test/ folder with: input.md ... expected-output.md ... eval-notes.md'."
+    }
+   ],
+   "evidence_conflicts": [
+    "README is titled 'pm-claude-skills' and says '4 Claude Code skills', but the repo is named AI-PM-essential-skills and the root listing shows ~9 skill/plugin directories — the README understates the current repo (staleness, not overclaim).",
+    "README install command clones github.com/Abhillashjadhav/pm-claude-skills, which matches no repo in the metadata snapshot; consistent with a repo rename (old-name redirect), but unverifiable from the snapshot."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Asset-allocation",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "HTML",
+  "description": null,
+  "topics": [],
+  "size": 84,
+  "created_at": "2025-07-05T14:52:57Z",
+  "pushed_at": "2025-07-05T16:50:11Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 9,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['index.html']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 1,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 1,
+   "commits_sampled": 9,
+   "commit_msg_uniformity_pct": 89,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Career-counselling-agent",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Career Counseling Agent — End-to-end Agentic Application",
+  "topics": [],
+  "size": 8,
+  "created_at": "2026-04-27T04:13:13Z",
+  "pushed_at": "2026-04-27T04:35:28Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 4,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env.example', '.gitignore', 'chat.py', 'license', 'readme.md', 'requirements.txt', 'setup.py']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 7,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2159,
+   "distinct_commit_days": 1,
+   "commits_sampled": 4,
+   "commit_msg_uniformity_pct": 25,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "claude-code-demo",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 162,
+  "created_at": "2025-11-09T14:04:12Z",
+  "pushed_at": "2026-05-24T11:01:04Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 29,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.gitignore', 'license', 'readme.md', 'requirements.txt', 'src']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 6,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 18,
+   "distinct_commit_days": 1,
+   "commits_sampled": 29,
+   "commit_msg_uniformity_pct": 17,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 0,
+   "readme_claims_code_backed": 0,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 70,
+   "boilerplate_share_pct": 60,
+   "explanation_quality": 0,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "All 29 commits are owner-authored via the GitHub web UI ('Create ...'/'Delete ...') on 2025-11-09; no AI-authored commits and no generation markers — the visible churn (repeatedly mis-nesting and re-creating .claude/agents paths) reads as manual hands-on learning, not mass generation.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/claude-code-demo",
+     "excerpt": "29 commits, 1 contributor, created 2025-11-09, pushed 2026-05-24, language Python, license MIT, no description, has_tests false, has_ci false."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/claude-code-demo/commits",
+     "excerpt": "2025-11-09 'Create app.py', 'Create test_app.py', 'Create planner.md', then a create/delete churn such as 'Delete .claude/agents/.claude/agents/.claude/agents/.claude/agents/.claude/agents/doc-writer.md' before the agent files settle."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/claude-code-demo/tree/main",
+     "excerpt": "Root: .claude/, src/, Requirements.txt (13 bytes), LICENSE, .gitignore, README.md (18 bytes — title only)."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/claude-code-demo/commits",
+     "excerpt": "The commit sequence documents a human manually working out the correct .claude/agents directory layout (planner/implementer/tester/doc-writer) — genuine learning-by-doing, and the repo is explicitly named a demo."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/claude-code-demo/tree/main",
+     "excerpt": "app.py, test_app.py and requirements.md were created alongside the agents — a small but complete exercise, with an MIT license added."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "It is a self-labeled demo/learning repo; simple content and tutorials are not slop under the fairness rules",
+     "The churn is manual GitHub-web activity, the opposite of mass generation",
+     "With a title-only README, the repo claims nothing it fails to deliver"
+    ],
+    "review_notes": "Negative surface signals (empty README, high boilerplate, standard planner/implementer/tester/doc-writer pattern) are fully explained by the repo's evident purpose: a one-day hands-on exercise learning Claude Code sub-agent layout in November 2025. It carries no authority claims and should weigh little in either direction."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Claudeskills",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": null,
+  "topics": [],
+  "size": 0,
+  "created_at": "2026-05-22T09:38:28Z",
+  "pushed_at": "2026-05-22T09:38:28Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Config-repo",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "PRD before claude code prompt",
+  "topics": [],
+  "size": 49,
+  "created_at": "2026-05-24T07:33:44Z",
+  "pushed_at": "2026-05-25T16:42:08Z",
+  "open_issues": 4,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 29,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', 'lessons.md', 'prds', 'reviews', 'test-files']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 6,
+   "ci_runs": true,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 2,
+   "commits_sampled": 29,
+   "commit_msg_uniformity_pct": 7,
+   "refactor_commits": 4,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Context-engineering-",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Context engineering deepdives",
+  "topics": [],
+  "size": 1101,
+  "created_at": "2026-06-07T10:15:24Z",
+  "pushed_at": "2026-06-07T13:07:01Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 11,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'data', 'eval', 'narration.md', 'readme.md', 'runs', 'src']"
+    ],
+    "scope": "root of default branch claude/friendly-hypatia-JwRjX (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 7,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 5336,
+   "distinct_commit_days": 1,
+   "commits_sampled": 11,
+   "commit_msg_uniformity_pct": 9,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 30,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "All 11 commits are authored 'Claude' on a single day (2026-06-07, 'Step 0' through 'Step 8'); README describes Claude-in-session generation as the harness design but does not credit AI authorship of the repo; counter-evidence: the stepwise commit sequence maps one-to-one onto the four documented breaks, and runs/ plus eval/ artifacts exist to ground the results table.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/Context-engineering-",
+     "excerpt": "11 commits, 1 contributor, created 2026-06-07T10:15:24Z, pushed 2026-06-07T13:07:01Z (a ~3-hour build window), language Python, size 1101 KB; description: 'Context engineering deepdives'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/Context-engineering-/commits",
+     "excerpt": "2026-06-07 'Step 1: 25-item catalog + deterministic keyword retrieval' ... 'Step 4: break #1 — system instruction present-but-ignored (Replit pattern)' ... 'Step 8: trace dashboard, narration, README; close the capstone'; 'Add V1-vs-V2 HTML diff dashboard'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/Context-engineering-/tree/main",
+     "excerpt": "Root: data/, eval/, runs/, src/, NARRATION.md (5966 bytes), README.md — matching the documented layout (catalog, locked checklist, trajectory logs, narration)."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/Context-engineering-#readme",
+     "excerpt": "'break #1 and break #4 produce the same symptom (recommend an out-of-stock item → C1 fails) from opposite root causes ... The symptom doesn't tell you where it failed; the Context Audit does.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/Context-engineering-/tree/main",
+     "excerpt": "runs/ and eval/ directories exist alongside src/ and NARRATION.md — the claimed trajectory logs, locked checklist and write-up are present as artifacts, not just described."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/Context-engineering-/commits",
+     "excerpt": "Each break has its own commit with the specific input it compromises ('break #3 — compaction drops a constraint (inputs 4/7)'), matching the README's break-to-input mapping exactly."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Artifacts (runs/, eval/, NARRATION.md) ground the results table rather than leaving it as prose",
+     "Commit-by-commit structure mirrors the documented experimental design one-to-one",
+     "The design encodes builder/validator separation — an original methodological idea, not template filler"
+    ],
+    "review_notes": "The one-day, all-Claude-authored build pattern reads as a single-session AI capstone, but it is a coherent designed experiment with results artifacts, not a boilerplate dump. Weaknesses are absence of a limitations section and no dependency declaration; the 24/24 and 23/24 scores rest on the runs/ artifacts, which exist but whose contents were not inspected."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "equity-resaerch-agentic-workflow",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Evaluates all the equity stocks across the globe and recommend high beta",
+  "topics": [],
+  "size": 336,
+  "created_at": "2026-05-01T18:18:21Z",
+  "pushed_at": "2026-07-16T17:18:39Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 47,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env.example', '.github', '.gitignore', 'claude.md', 'config', 'conftest.py', 'data', 'master_plan.md', 'readme.md', 'requirements.txt', 'runs', 'scripts', 'skill.md', 'tests', 'tools']"
+    ],
+    "scope": "root of default branch claude/bootstrap-equity-research-agent-CHDuC (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 15,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 2946,
+   "distinct_commit_days": 14,
+   "commits_sampled": 47,
+   "commit_msg_uniformity_pct": 13,
+   "refactor_commits": 1,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 15,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": false,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "Development commits are 'Claude'-authored phase commits (e.g. 'Phase 3.2: deterministic three-question Analyst orchestrator') merged by the owner from claude/* branches; 23 of the last 47 commits are github-actions weekly-run bots; counter-evidence: honest-curation commits ('Phase 3.7: expand NYSE seed universe 131 → 289 (target was ~400; honest curation over padding)') and threshold-tuning iterations show deliberate human-guided calibration.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow",
+     "excerpt": "47 commits, 3 contributors, 1 star, created 2026-05-01, pushed 2026-07-16, has_tests true, has_ci true, dependencies_declared true; description: 'Evaluates all the equity stocks across the globe and recommend high beta'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow/commits",
+     "excerpt": "Bot commits 'Auto: weekly screen 2026-07-09' / 'Auto: weekly react analysis 2026-07-09' confirm the cron actually runs; build commits 'Phase 2.5: evidence collector tools (SEC, Finnhub, FRED, peer reaction)' and 'Phase 3 v3: three-question Analyst (mispricing → time horizon → risk)' match the README phases."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow/tree/main",
+     "excerpt": "Root: tools/, runs/, tests/, config/, scripts/, MASTER_PLAN.md, SKILL.md, CLAUDE.md, requirements.txt, .env.example, conftest.py — every document the README links to is present."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow/tree/main/.github/workflows",
+     "excerpt": "weekly-screen.yml and weekly-react.yml exist, backing the README's Thursday-cron claim."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow#readme",
+     "excerpt": "'the run produces 0-5 high-conviction picks (or none — empty inboxes are a feature)'."
+    }
+   ],
+   "evidence_conflicts": [
+    "Repo description 'Evaluates all the equity stocks across the globe and recommend high beta' overstates the README's actual scope (NASDAQ + NSE tech, market cap >= $200M, high-conviction picks).",
+    "Bot commits titled 'Auto: weekly react analysis 2026-05-14' were committed repeatedly on 2026-05-21/28, 06-04/11/18 — five weekly runs re-emitted an analysis dated 05-14, suggesting a stale-date or stalled-output bug during that period."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Evals-pass-1",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "EVals mutli steps multi level ",
+  "topics": [],
+  "size": 38,
+  "created_at": "2026-06-07T05:35:53Z",
+  "pushed_at": "2026-06-07T09:43:03Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 10,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'agent.py', 'eval_set.json', 'part2', 'part3', 'prepare.py', 'readme.md', 'report.py', 'run.py', 'store.py', 'test_gate_fires.py']"
+    ],
+    "scope": "root of default branch claude/stoic-shannon-R1896 (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 12,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 6366,
+   "distinct_commit_days": 1,
+   "commits_sampled": 10,
+   "commit_msg_uniformity_pct": 10,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Indian-stocks-deepdive-and-trading-agents",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Building different trading strategies for the indian stock markets to choose winners",
+  "topics": [],
+  "size": 909,
+  "created_at": "2026-05-08T10:56:57Z",
+  "pushed_at": "2026-07-17T11:47:46Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 778,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'claude.md', 'requirements.txt', 'runs', 'state', 'tests', 'trading']"
+    ],
+    "scope": "root of default branch claude/phase-4-paper-trading (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 0,
+   "distinct_commit_days": 6,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 1,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "original_logic_notes": 3,
+   "template_similarity_pct": 20,
+   "explanation_quality": 0,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "setup_reproducible": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "All 100 sampled commits are github-actions bot cycle/digest commits (e.g. 'Auto: scalper cycle', 'Auto: EOD digest') — human/AI authorship of the underlying code is not observable in this window; CLAUDE.md at root indicates Claude Code-driven development; no README exists to make or disclose any claim.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents",
+     "excerpt": "778 commits, 2 contributors, 1 star, created 2026-05-08, pushed 2026-07-17T11:47:46Z, has_tests true, has_ci true, dependencies_declared true; description: 'Building different trading strategies for the indian stock markets to choose winners'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/commits",
+     "excerpt": "Last 100 commits (2026-07-10 through 2026-07-17) are all github-actions[bot], e.g. 'Auto: scalper cycle 16:45 2026-07-17T11:15:23Z', 'Auto: mean_reversion cycle 16:42 ...', 'Auto: EOD digest 2026-07-17' — the system runs itself on market days."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/tree/main",
+     "excerpt": "Root: .github/, CLAUDE.md, requirements.txt, runs/, state/, tests/, trading/ — code package, state store, run outputs and tests present; no README."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/tree/main/.github/workflows",
+     "excerpt": "Six workflows: agent-gap-and-go.yml, agent-mean-reversion.yml, agent-momentum.yml, agent-scalper.yml, agent-swing.yml, eod-digest.yml — five distinct strategy agents plus a daily digest."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/tree/main/.github/workflows",
+     "excerpt": "Five separately-defined strategy workflows firing on distinct intraday schedules is a working operational system, not a static dump."
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents",
+     "excerpt": "778 total commits over ~10 weeks with tests and declared dependencies — sustained activity far beyond the bot-only sample window."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Six scheduled workflows demonstrably executing every market day (bot commits carry per-cycle timestamps)",
+     "tests/, state/ and runs/ structure plus declared dependencies indicate an engineered system",
+     "The 100-commit snapshot window is saturated by automation; it cannot fairly characterize the human development history"
+    ],
+    "review_notes": "The absence of a README means zero documented claims, setup or limitations — a real documentation gap for a 778-commit repo. But everything the snapshot does show (workflows, package structure, live scheduled operation) is consistent with a functioning multi-strategy trading automation. Recorded less rather than more: authorship split, code quality and strategy logic are not observable from this snapshot."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Linkedin-research-posts",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Agentic workflow to identify best linkedin posts on GenAI topic with my own expertise",
+  "topics": [],
+  "size": 363,
+  "created_at": "2026-05-01T10:16:05Z",
+  "pushed_at": "2026-07-17T10:59:25Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 12,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', 'architecture_decision.md', 'bin', 'data', 'docs', 'makefile', 'outputs', 'readme.md', 'recovery_manifest.md', 'requirements.txt', 'scripts', 'src', 'tests']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 15,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 20431,
+   "distinct_commit_days": 3,
+   "commits_sampled": 12,
+   "commit_msg_uniformity_pct": 8,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "loop-engineering",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Agentic workflow to automate prompts for achieving the goal",
+  "topics": [],
+  "size": 6550,
+  "created_at": "2026-07-16T09:55:50Z",
+  "pushed_at": "2026-07-17T04:35:57Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 25,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', 'audits', 'claude.md', 'decisions.md', 'docs', 'evals', 'examples', 'prds', 'pyproject.toml', 'readme.md', 'schemas', 'src', 'tests', 'use_cases']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 16,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 6766,
+   "distinct_commit_days": 2,
+   "commits_sampled": 25,
+   "commit_msg_uniformity_pct": 4,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 9,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 4,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 3,
+   "ai_share_evidence": "12 of 25 commits authored 'Claude'; the entire system landed 2026-07-16/17 as a 12-PR series plus audit commits — high-velocity AI-assisted construction; counter-evidence: CI workflow, tests/ and evals/ directories, DECISIONS.md architecture log, and blocked-run documentation ('docs/live-audit-blocked.md') show verification infrastructure rather than unchecked generation. README carries no AI-authorship credit.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/loop-engineering",
+     "excerpt": "25 commits, 2 contributors, 1 star, created 2026-07-16T09:55:50Z, pushed 2026-07-17T04:35:57Z, has_tests true, has_ci true, dependencies_declared true; description: 'Agentic workflow to automate prompts for achieving the goal'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/loop-engineering/commits",
+     "excerpt": "Structured series 'PR 1/12: Repository boundary and CI scaffold (#2)' through 'PR 12/12: Synthetic demonstration, live-audit blocker report, release docs (#13)', then audit-execution commits incl. 'fix(rubric): cap AI-share band confidence at overall evidence coverage'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/loop-engineering/tree/main",
+     "excerpt": "Root: schemas/, src/, use_cases/, evals/, examples/, tests/, docs/, prds/, audits/, .claude/, pyproject.toml, DECISIONS.md — matching every row of the README's repository map."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/loop-engineering/tree/main/.github/workflows",
+     "excerpt": "ci.yml (998 bytes) backs the README's pytest/ruff/mypy/build checks section."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/loop-engineering#readme",
+     "excerpt": "'The live audit of the two named subjects has not been executed in this environment ... The exact missing evidence and unblock paths are recorded in docs/live-audit-blocked.md.'"
+    }
+   ],
+   "evidence_conflicts": [
+    "The '100+ deterministic tests' count cannot be confirmed from the root listing alone (tests/ exists; contents not enumerated in the snapshot)."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Mirror-score",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Mirror score",
+  "topics": [],
+  "size": 167,
+  "created_at": "2026-05-15T16:44:32Z",
+  "pushed_at": "2026-05-25T17:28:54Z",
+  "open_issues": 2,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 13,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'evals', 'prd.md', 'pyproject.toml', 'readme.md', 'src', 'tests', 'tools', 'traces', 'web']"
+    ],
+    "scope": "root of default branch claude/mirror-score-hold-on-4cvyY (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 11,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 7038,
+   "distinct_commit_days": 2,
+   "commits_sampled": 13,
+   "commit_msg_uniformity_pct": 8,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Misshka-Learning-Progress-App",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": "Educational web app for kids aged 6-8 to learn math and science",
+  "topics": [],
+  "size": 257,
+  "created_at": "2025-11-17T06:02:02Z",
+  "pushed_at": "2025-11-29T17:57:15Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 8,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'backend', 'backend_architecture.md', 'deployment_guide.md', 'design_system.md', 'docs', 'frontend', 'frontend_architecture.md', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 9,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 3707,
+   "distinct_commit_days": 3,
+   "commits_sampled": 8,
+   "commit_msg_uniformity_pct": 12,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "MultiAgent-template",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 19316,
+  "created_at": "2025-11-11T04:31:23Z",
+  "pushed_at": "2026-07-13T01:19:25Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 90,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', 'docs', 'fetch-3000-nasdaq.yml', 'fetch_3000_nasdaq.py', 'fetch_all_nasdaq_stocks.py', 'fetch_real_yahoo_data.py', 'init_database.py', 'nasdaq_stocks.db', 'readme.md', 'test_yfinance_quick.py']"
+    ],
+    "scope": "root of default branch claude/bootstrap-multi-agent-template-011CV1Uu4wA7YXvtaDoooGrU (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 11,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 23,
+   "distinct_commit_days": 75,
+   "commits_sampled": 90,
+   "commit_msg_uniformity_pct": 2,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 0,
+   "readme_claims_code_backed": 0,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 30,
+   "boilerplate_share_pct": 40,
+   "explanation_quality": 0,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Initial commit 'Bootstrap multi-agent template (agents + structure)' is Claude-authored; subsequent human commits are GitHub-web 'Create/Update' file drops; 76 of the last 100 commits are github-actions 'Update market data' bot commits; no README disclosure either way.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/MultiAgent-template",
+     "excerpt": "90 commits, 3 contributors, created 2025-11-11, pushed 2026-07-13, size 19316 KB, no description, has_tests true, has_ci true, dependencies_declared false."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/MultiAgent-template/commits",
+     "excerpt": "2025-11-11 [Claude] 'Bootstrap multi-agent template (agents + structure)'; 2025-11-12/13 owner 'Create fetch_real_yahoo_data.py', 'Create fetch_3000_nasdaq.py'; thereafter twice-weekly '[github-actions[bot]] Update market data - ...' through 2026-07-13."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main",
+     "excerpt": "Root: README.md (23 bytes), .claude/, .github/, docs/, fetch_3000_nasdaq.py, fetch_all_nasdaq_stocks.py, fetch_real_yahoo_data.py, init_database.py, test_yfinance_quick.py, nasdaq_stocks.db (1.29 MB checked in), fetch-3000-nasdaq.yml duplicated at root."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main/.github/workflows",
+     "excerpt": "fetch-3000-nasdaq.yml and fetch-market-data.yml — scheduled market-data fetch jobs, matching the bot commit stream."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main/.github/workflows",
+     "excerpt": "The scheduled data pipeline has run reliably twice a week for eight months — the automation itself works."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main",
+     "excerpt": ".claude/ and docs/ directories from the multi-agent bootstrap persist at root; the template content the name promises may live inside them, which the root-only listing cannot confirm or refute."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Working scheduled automation (8 months of successful bot runs) is a real, functioning artifact",
+     ".claude/ and docs/ contents are not visible in the root listing, so the 'template' half of the repo cannot be ruled absent",
+     "A one-line README makes no claims, so nothing is overclaimed"
+    ],
+    "review_notes": "The negative reading is a name/content mismatch: a repo titled 'MultiAgent-template' with a 23-byte README whose visible activity is a NASDAQ data-fetch loop with a 1.3 MB sqlite database committed to git. Under the fairness rules this is undocumented and repurposed rather than deceptive — there are zero claims to be unbacked. Confidence in any stronger negative label is limited by the unviewable .claude/ and docs/ directories."
+   },
+   "evidence_conflicts": [
+    "Repo name and README title say 'Multi-Agent Template'; the visible root files, workflows and 76/100 bot commits are a NASDAQ market-data fetch pipeline — the repo appears repurposed from its bootstrap."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Nasdaq-2-clean",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": null,
+  "topics": [],
+  "size": 0,
+  "created_at": "2025-11-14T08:30:25Z",
+  "pushed_at": "2025-11-14T08:30:26Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Nasdaq-concentrated-allocation",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Identifying the patterns and building agentic workflow to determine the future winners with allocation",
+  "topics": [],
+  "size": 3437,
+  "created_at": "2026-06-14T11:47:12Z",
+  "pushed_at": "2026-06-21T06:43:49Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 77,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', 'architecture.md', 'backfill_sectors.py', 'backtest', 'claude.md', 'data', 'diagnose_simfin_quality.py', 'evals', 'macro', 'pytest.ini', 'readme.md', 'report', 'requirements.txt', 'run.py', 'signals', 'stats', 'store', 'tests', 'universe']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 21,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 8278,
+   "distinct_commit_days": 5,
+   "commits_sampled": 77,
+   "commit_msg_uniformity_pct": 1,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 10,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": false,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 4,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 1,
+   "docs_corrections": 2,
+   "ai_share_evidence": "44 of the last 77 commits are 'Claude'-authored feature/fix commits with recurring '(pr-reviewer nit)' follow-ups, merged via owner PRs over one week (2026-06-14/21); counter-evidence: real-world debugging arcs (cache poisoning, blank SimFin Publish Date, EDGAR throttling leading to its removal) and a self-adverse KILL verdict argue against uncurated generation. README carries no AI credit.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation",
+     "excerpt": "77 commits, 3 contributors, created 2026-06-14, pushed 2026-06-21, has_tests true, has_ci true, dependencies_declared true; description: 'Identifying the patterns and building agentic workflow to determine the future winners with allocation'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation/commits",
+     "excerpt": "'PR 3: data-integrity eval layer — hard no-peek, coverage/survivorship, filing-lag, adapter resilience'; 'PR 11 (§9.11): two-arm stats engine + calibration eval'; 'Remove EDGAR; SimFin-only ingest with blank-Publish-Date e2e test (#35)'; 'docs: README framing the honest KILL verdict and the discipline behind it'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation/tree/main",
+     "excerpt": "Root: backtest/, data/, evals/, macro/, signals/, stats/, store/, universe/, tests/, report/, run.py, ARCHITECTURE.md, pytest.ini, requirements.txt — one directory per README component."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation/tree/main/.github/workflows",
+     "excerpt": "ci.yml (1669 bytes); commit history additionally shows 'Harden CI secret scan: vendor-prefix detection, fewer false positives'."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation#readme",
+     "excerpt": "'The universe was 28 hand-picked survivors. ... Any verdict on this universe is a verdict about the pipeline's correctness, not about the strategy's real edge.'"
+    }
+   ],
+   "evidence_conflicts": [
+    "Initial-day commit 'Scaffold stockscope backtest harness; purge job-agent + leaked secret' records that a secret was committed and purged at scaffold time; subsequent 'Harden CI secret scan' and the README's env-var key handling (STOCKSCOPE_SIMFIN_API_KEY) show remediation — secrets_policy_ok reflects the end state, not a clean history."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "New-UI-addition",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": "New UI for Revenue in RADAR",
+  "topics": [],
+  "size": 174,
+  "created_at": "2026-04-20T13:16:31Z",
+  "pushed_at": "2026-05-24T11:07:43Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 5,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'index.html', 'package-lock.json', 'package.json', 'postcss.config.js', 'src', 'tailwind.config.js', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch claude/redesign-supplier-risk-monitor-E7JcH (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 10,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 1,
+   "commits_sampled": 5,
+   "commit_msg_uniformity_pct": 20,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Placeholder-repo",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "Keeping it placeholder so that we can use it later",
+  "topics": [],
+  "size": 53,
+  "created_at": "2026-05-24T11:43:59Z",
+  "pushed_at": "2026-07-16T23:56:21Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 1,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 1,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 1,
+   "commits_sampled": 1,
+   "commit_msg_uniformity_pct": 100,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "PM-agent-OS",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "An agentic PM operating system for Claude Code. One /pm command orchestrates the full product lifecycle — discovery, strategy, build, launch, iterate — through 40 skills, each with binary verification gates, tested fixtures, and a public PR-review record. Every PM OS generates; this one verifies every output before you see it.",
+  "topics": [],
+  "size": 403,
+  "created_at": "2026-07-07T17:24:32Z",
+  "pushed_at": "2026-07-08T04:00:22Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 140,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', 'claude.md', 'concise-rewriter', 'context-auditor', 'eval-rubric-generator', 'lessons.md', 'prds', 'readme.md', 'reviews', 'test-files', 'tests', 'token-cost-estimator']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 13,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 6696,
+   "distinct_commit_days": 2,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 1,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 9,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 25,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 3,
+   "ai_share_evidence": "66 of last 100 commits authored 'Claude'; 140 commits and 40 skills landed in ~11 hours (created 2026-07-07T17:24Z, last push 2026-07-08T04:00Z); counter-evidence: consistent test-before-feat commit pairs with planted-failure fixtures and per-skill PR numbers (#2-#46) show a structured, reviewed pipeline rather than an unreviewed dump.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS",
+     "excerpt": "140 commits, 2 contributors, created 2026-07-07T17:24:32Z, pushed 2026-07-08T04:00:22Z, has_tests true, has_ci true; description: 'One /pm command orchestrates the full product lifecycle ... through 40 skills'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits",
+     "excerpt": "Per-skill triplets throughout, e.g. 2026-07-08 'Iterate skill 8/12: regression-gatekeeper (#41)' / 'feat: regression-gatekeeper — pre-ship golden run with run-before-verdict gate' / 'test: regression-gatekeeper gates + fixtures (verification-first; planted ship-without-run verdict)'; final commit 'All five stages live: 40 skills + 7 personas + /pm — roadmap complete (#46)'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS/tree/main",
+     "excerpt": "Root: .claude/, .github/, CLAUDE.md, LESSONS.md, README.md, prds/, reviews/, tests/, test-files/, plus skill dirs concise-rewriter/, context-auditor/, eval-rubric-generator/, token-cost-estimator/."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS/tree/main/.github/workflows",
+     "excerpt": "workflows-listing.json shows pr-review.yml (1136 bytes), matching the README's 'PR-review record' claim."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS#readme",
+     "excerpt": "'Every skill in this repo carries three things ... Binary verification gates ... Tested fixtures ... A PR-review record.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits",
+     "excerpt": "Test commits chronologically precede feature commits for each skill ('verification-first'), and every skill entered via a numbered PR — a review discipline inconsistent with unreviewed mass generation."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/PM-agent-OS#readme",
+     "excerpt": "Credits section discloses reuse: 'Harness patterns — the lint gate, the three-gate fixtures convention, and the PR-review agent — carried over from AI-PM-essential-skills.'"
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Verification-first commit ordering (test before feat) is visible for all ~40 skills",
+     "Each skill entered through a numbered PR with a pr-review.yml workflow present",
+     "Sibling reuse is openly credited, not concealed"
+    ],
+    "review_notes": "The 40-skills-in-11-hours velocity is a clear AI-generation-at-scale marker, but the repo does not hide it (Claude is the commit author) and the process record (fixtures, planted failures, PR series) is real and internally consistent. For a skill library the docs/skills are the deliverable; the negative reading is tempered accordingly."
+   },
+   "evidence_conflicts": [
+    "README install URL 'github.com/Abhillashjadhav/PM-agent-OS-' (trailing hyphen) does not match the repo name 'PM-agent-OS' in the metadata snapshot.",
+    "README claims 40 skills but the root listing shows only 4 skill directories at top level; the remainder presumably live under .claude/ (not visible in root-listing), so the 40-count rests on commit history rather than the listing."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-evals",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "PM driven evals framework",
+  "topics": [],
+  "size": 687,
+  "created_at": "2026-05-22T14:21:37Z",
+  "pushed_at": "2026-05-24T11:07:50Z",
+  "open_issues": 1,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 33,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'changelog.md', 'citation.cff', 'docs', 'examples', 'golden', 'license', 'pm_evals', 'pyproject.toml', 'readme.md', 'scripts', 'tests', 'validation_report.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 14,
+   "ci_runs": false,
+   "test_files": 1,
+   "readme_length": 10219,
+   "distinct_commit_days": 2,
+   "commits_sampled": 33,
+   "commit_msg_uniformity_pct": 3,
+   "refactor_commits": 1,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 8,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 55,
+   "boilerplate_share_pct": 30,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": true,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 3,
+   "ai_share_evidence": "README openly discloses 'This entire repo was built through Claude Code orchestration'; all 33 commits are owner-authored over two days (2026-05-22/23) incl. recruiter-guide and loom-script docs; counter-evidence: hand-graded golden workbook, v1-to-v2 derivation refactor and a MARGINAL 76.5% verdict left unpolished show a human calibration loop.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/pm-evals",
+     "excerpt": "33 commits, 1 contributor, created 2026-05-22T14:21:37Z, pushed 2026-05-24T11:07:50Z, has_tests true, has_ci true, license MIT; description: 'PM driven evals framework'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/pm-evals/commits",
+     "excerpt": "2026-05-22 'feat: production-grade CLI scaffold with 5 working commands'; 'examples: Brightline customer support case study (500 traces)'; 2026-05-23 'feat: add validate-judge step for judge meta-evaluation'; 'docs: README — frame v2 MARGINAL as principled stopping point'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/pm-evals/tree/main",
+     "excerpt": "Root: pm_evals/, examples/, golden/, docs/, scripts/, tests/, pyproject.toml, CHANGELOG.md, CITATION.cff, validation_report.md, LICENSE — matching the CLI, case-study, golden-validation and docs claims."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/pm-evals#readme",
+     "excerpt": "'Result: 76.5% agreement — MARGINAL (up from 68% NOT TRUSTED). ... v2 MARGINAL at 76.5% is the principled stopping point.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/pm-evals/commits",
+     "excerpt": "'refactor: per-tag multi-criterion mapping (v2 derivation rules)' and 'feat: human-graded golden_scores from workbook holistic + label mapping' show iterative calibration work distinct from the sibling repo's code."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/pm-evals/tree/main",
+     "excerpt": "pm_evals/ package + pyproject.toml + tests/ is a genuinely different deliverable (installable CLI) from rag-eval-harness's src/ pipeline."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Deliverable (packaged CLI framework) is substantively different code from the sibling despite the shared README template",
+     "Judge-validation result is left honestly at MARGINAL rather than tuned to TRUSTED",
+     "AI orchestration is disclosed in the README — a transparency positive"
+    ],
+    "review_notes": "High similarity is with its sibling rag-eval-harness (created within a minute of it; same Hamel Husain/Kevin Weil/Cat Wu quotes, same prepare-run-report workflow, same 'Calibration lesson: v1 to v2' section, near-identical commit sequences on 2026-05-22/23), i.e. one authoring process fanned across two repos. The underlying artifacts differ meaningfully, and the calibration honesty cuts against a slop reading."
+   },
+   "evidence_conflicts": [
+    "README section 'Calibration lesson: v1 → v2 derivation' and the 2026-05-22/23 docs commits (loom script, recruiter scan guide, Saturday wiring guide) are duplicated almost verbatim in sibling rag-eval-harness."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "RADAR-7-lenses",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": "Seven key time dimensions",
+  "topics": [],
+  "size": 1136,
+  "created_at": "2026-04-09T13:04:40Z",
+  "pushed_at": "2026-05-24T11:17:04Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 4,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'index.html', 'package-lock.json', 'package.json', 'postcss.config.js', 'src', 'tailwind.config.js', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch claude/build-radar-dashboard-J1j3J (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 11,
+   "ci_runs": true,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 4,
+   "commits_sampled": 4,
+   "commit_msg_uniformity_pct": 25,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "RADAR-UI",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 19232,
+  "created_at": "2026-01-26T13:00:19Z",
+  "pushed_at": "2026-07-03T16:27:58Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 10,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'eslint.config.js', 'index.html', 'package-lock.json', 'package.json', 'readme.md', 'src', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch claude/radar-alert-prototype-FnXYB (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 12,
+   "ci_runs": true,
+   "test_files": 0,
+   "readme_length": 2835,
+   "distinct_commit_days": 2,
+   "commits_sampled": 10,
+   "commit_msg_uniformity_pct": 10,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "rag-eval-harness",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Eval-first single-turn RAG Q&A pipeline with an LLM-as-judge eval suite — scoring groundedness, relevance, completeness, and refusal calibration. Built with Claude Code (the judge is a skill, not an SDK). Ships a 500-trace baseline report that diagnoses failure modes, not just scores.",
+  "topics": [],
+  "size": 339,
+  "created_at": "2026-05-22T14:20:49Z",
+  "pushed_at": "2026-05-24T10:59:21Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 37,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', 'changelog.md', 'citation.cff', 'data', 'docs', 'golden', 'readme.md', 'requirements.txt', 'results', 'scripts', 'src', 'tests', 'traces', 'validation_report.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 16,
+   "ci_runs": false,
+   "test_files": 1,
+   "readme_length": 15040,
+   "distinct_commit_days": 3,
+   "commits_sampled": 37,
+   "commit_msg_uniformity_pct": 5,
+   "refactor_commits": 1,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 9,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 55,
+   "boilerplate_share_pct": 25,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": true,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 3,
+   "ai_share_evidence": "README states 'Built with Claude Code. Zero hand-written code' and 'No code was written by hand'; commits are owner-authored (36/37) over 2026-05-22/24; counter-evidence: hand-graded golden workbook commits, 'fix: unfilled-skeleton scores + remove stale draft reference', and a self-preference-bias disclosure show human oversight of the generated output.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Abhillashjadhav/rag-eval-harness",
+     "excerpt": "37 commits, 2 contributors, created 2026-05-22T14:20:49Z (within one minute of sibling pm-evals), has_tests true, has_ci true; description: 'Eval-first single-turn RAG Q&A pipeline with an LLM-as-judge eval suite ... Built with Claude Code'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/rag-eval-harness/commits",
+     "excerpt": "2026-05-22 'Add minimal single-turn RAG pipeline'; 'Add 500 synthetic baseline RAG traces and generator'; 'Add baseline eval report for 500-trace run'; 2026-05-23 'feat: re-validate with v2 derivation rules'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Abhillashjadhav/rag-eval-harness/tree/main",
+     "excerpt": "Root: src/, data/, traces/, results/, golden/, scripts/, tests/, .claude/, requirements.txt, CHANGELOG.md, CITATION.cff, validation_report.md — matching the pipeline, trace, report and judge-validation claims."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/rag-eval-harness#readme",
+     "excerpt": "'Why all-MiniLM-L6-v2 embedder ... Tradeoff: a 384-dim MiniLM conflates topically adjacent passages (the 12% retrieval_failure rate in the report is partly its fault).'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Abhillashjadhav/rag-eval-harness/commits",
+     "excerpt": "'feat: human-graded golden_scores from workbook holistic + tag mapping' and 'chore: remove deprecated WIRED_JUDGE_DRAFT.py' show iterative human curation, not a single dump."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Abhillashjadhav/rag-eval-harness#readme",
+     "excerpt": "'a Claude judge scoring a Claude generator risks self-preference bias (flagged in the report's methodology notes)' — the repo names its own weakest point."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Every design choice carries an explicit stated tradeoff — unusual explanatory depth",
+     "Openly disclosed full AI authorship is a transparency positive under the fairness rules",
+     "Honest MARGINAL 78.8% validation verdict retained instead of tuning to TRUSTED"
+    ],
+    "review_notes": "The negative signal is twin-repo choreography with pm-evals (same-minute creation, shared quotes, shared calibration-lesson template, mirrored commit sequences). The RAG pipeline, traces, golden set and results are distinct artifacts, and the disclosed zero-hand-written-code stance is not penalizable. Net reading: AI-generated but curated and unusually self-critical."
+   },
+   "evidence_conflicts": [
+    "README quotes and section structure (Hamel Husain/Kevin Weil/Cat Wu quotes, 'Calibration lesson: v1 → v2 derivation', prepare/run/report) duplicate sibling pm-evals nearly verbatim."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "Sensei",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "HTML",
+  "description": "Sensei",
+  "topics": [],
+  "size": 142,
+  "created_at": "2026-05-15T16:45:00Z",
+  "pushed_at": "2026-05-25T16:13:03Z",
+  "open_issues": 2,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 15,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'evals', 'prd.md', 'pyproject.toml', 'readme.md', 'run.sh', 'scripts', 'sensei-viewer.html', 'src', 'tests', 'traces', 'web']"
+    ],
+    "scope": "root of default branch claude/hold-on-sensei-JNGiv (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 13,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 6250,
+   "distinct_commit_days": 2,
+   "commits_sampled": 15,
+   "commit_msg_uniformity_pct": 7,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Sub-agent-reusable-template",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "This is a reusable template that I will deploy for buolding any app with complex sub agent system to ensure high fidelity design",
+  "topics": [],
+  "size": 115,
+  "created_at": "2025-11-16T15:14:45Z",
+  "pushed_at": "2026-05-24T11:01:30Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 2,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', 'agents', 'architecture.md', 'examples', 'readme.md', 'roles_reference.md', 'templates', 'workflows']"
+    ],
+    "scope": "root of default branch claude/app-development-roles-01MJC6LpxMnRWGKwxxwS2frN (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 6571,
+   "distinct_commit_days": 2,
+   "commits_sampled": 2,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Telegram-agentic-workflows",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": "Leveraging telegram for key daily tasks organizetrs, orderplacements, stock market etc as ct",
+  "topics": [],
+  "size": 19,
+  "created_at": "2026-03-28T10:35:32Z",
+  "pushed_at": "2026-05-24T11:01:46Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 1,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env.example', '.gitignore', 'agent.py', 'bot.py', 'readme.md', 'requirements.txt', 'state.py', 'test_tools.py', 'tools']"
+    ],
+    "scope": "root of default branch claude/build-agentic-workflow-ME44v (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 9,
+   "ci_runs": false,
+   "test_files": 1,
+   "readme_length": 3692,
+   "distinct_commit_days": 1,
+   "commits_sampled": 1,
+   "commit_msg_uniformity_pct": 100,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "testingcoding-",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": null,
+  "topics": [],
+  "size": 0,
+  "created_at": "2025-05-11T15:05:57Z",
+  "pushed_at": "2025-05-11T15:05:57Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Travelassistant",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "Building this repo as an agent to solve for Travel assistaant fro end to end ",
+  "topics": [],
+  "size": 0,
+  "created_at": "2025-07-06T12:32:43Z",
+  "pushed_at": "2025-07-06T12:32:43Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "youtube-predictor",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "Agentic AI autonomous predictor and trend catcher",
+  "topics": [],
+  "size": 67,
+  "created_at": "2026-01-29T05:59:24Z",
+  "pushed_at": "2026-05-24T11:02:41Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 9,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', 'archive', 'logs', 'output', 'temp']"
+    ],
+    "scope": "root of default branch claude/quality-gates-deployment-Cn4xM (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 5,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 5,
+   "commits_sampled": 9,
+   "commit_msg_uniformity_pct": 11,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ }
+]

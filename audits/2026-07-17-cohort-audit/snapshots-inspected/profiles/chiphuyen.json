@@ -1,0 +1,25 @@
+{
+ "login": "chiphuyen",
+ "name": "Chip Huyen",
+ "company": null,
+ "blog": "https://huyenchip.com",
+ "twitter": "chipro",
+ "location": "San Francisco",
+ "bio": "AI x stuff",
+ "followers": 23671,
+ "public_repos": 30,
+ "evidence_links": [
+  {
+   "origin": "github_profile",
+   "url": "https://github.com/chiphuyen",
+   "excerpt": "profile: Chip Huyen, https://huyenchip.com",
+   "retrieved_at": "2026-07-17T13:32:39.429650+00:00"
+  },
+  {
+   "origin": "external_site",
+   "url": "https://huyenchip.com/ml-interviews-book/",
+   "excerpt": "Subject's own site huyenchip.com links github.com/chiphuyen repositories as hers (ml-interviews-book -> coding-exercises; open-sourced book repos named in her profile README) — person->login; identity-evidence.md",
+   "retrieved_at": "2026-07-17T03:50:00+00:00"
+  }
+ ]
+}

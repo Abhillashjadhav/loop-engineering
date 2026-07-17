@@ -1,0 +1,1503 @@
+[
+ {
+  "name": "aakashg",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 8,
+  "created_at": "2026-02-27T19:16:05Z",
+  "pushed_at": "2026-04-14T22:59:22Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 9,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 1,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2996,
+   "distinct_commit_days": 4,
+   "commits_sampled": 9,
+   "commit_msg_uniformity_pct": 22,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 5,
+   "readme_claims_code_backed": 5,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 50,
+   "boilerplate_share_pct": 30,
+   "explanation_quality": 1,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 3,
+   "ai_share_evidence": "4 of 9 commits carry 'Co-Authored-By: Claude Opus 4.6' trailers (openly disclosed); counter-evidence: edits span 4 dates over 6 weeks with human-motivated corrections (subscriber count 215K->300K, star-badge fix, prompt-library count fix).",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/aakashg",
+     "excerpt": "page-1.json: created 2026-02-27T19:16:05Z, pushed 2026-04-14T22:59:22Z, 2 stars, size 8, no language — README-only profile repo."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/aakashg/commits",
+     "excerpt": "9 commits 2026-02-27..2026-04-14, e.g. 'Update repo table: reorder by stars, add pm-github-starter-kit, fix prompt-library count' (2026-04-14); 'Fix star badges showing invalid...' (2026-03-04, Co-Authored-By: Claude Opus 4.6)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/aakashg/tree/main",
+     "excerpt": "Root contains a single file: README.md (3012 bytes)."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/aakashg#readme",
+     "excerpt": "'I build open-source AI tools for product managers.' Repo table lists pm-claude-code-setup, pm-claude-skills, pm-github-starter-kit, awesome-ai-pm, pm-prompt-library — all five exist in the portfolio metadata."
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "awesome-ai-pm",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 16,
+  "forks_count": 7,
+  "language": null,
+  "size": 19,
+  "created_at": "2026-02-27T00:40:03Z",
+  "pushed_at": "2026-03-03T22:22:16Z",
+  "open_issues": 1,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 16,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['contributing.md', 'license', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 3,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 36084,
+   "distinct_commit_days": 16,
+   "commits_sampled": 16,
+   "commit_msg_uniformity_pct": 6,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 15,
+   "readme_claims_code_backed": 14,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 35,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "One commit carries a Claude Opus 4.6 co-author trailer; 14 'Add ... section' commits have artificial round-:00-second author dates (2026-03-05..2026-09-04), most post-dating the last real push (2026-03-03) and several post-dating the audit date — a scripted/backfilled history marker; counter-evidence: the content itself shows consistent domain-specific PM judgment and an authorial voice matching the owner's other repos.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/awesome-ai-pm",
+     "excerpt": "page-1.json: created 2026-02-27T00:40:03Z, pushed 2026-03-03T22:22:16Z, 16 stars, 7 forks, MIT license, size 19."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/awesome-ai-pm/commits",
+     "excerpt": "'Add comprehensive AI PM guide' (2026-02-27T00:44:57Z, realistic seconds) then 14 section-add commits all with :00 seconds, e.g. 'Add build vs buy section' dated 2026-09-04T23:25:00Z — after both the repo's pushed_at (2026-03-03) and the audit date (2026-07-16)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/awesome-ai-pm/tree/main",
+     "excerpt": "Root: CONTRIBUTING.md (1064 B), LICENSE (1069 B), README.md (36280 B) — the 36 KB README is the deliverable."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/awesome-ai-pm#readme",
+     "excerpt": "'A curated guide to AI product management.' All 13 TOC sections are present, plus appended sections (Glossary, Case Studies, Build vs Buy) containing original tables such as the AI Product Maturity Model (Manual->Adaptive)."
+    }
+   ],
+   "evidence_conflicts": [
+    "Commit author dates (14 commits, 2026-03-05..2026-09-04, all with :00 seconds) contradict page-1.json pushed_at 2026-03-03T22:22:16Z and the audit date 2026-07-16 — the appearance of months of steady curation ('days: 16' in the portfolio survey) is manufactured; the entire content was actually pushed by 2026-03-03.",
+    "README 'Weekly Reading List ... Updated regularly' conflicts with no pushes since 2026-03-03 (over 4 months before the audit date).",
+    "README structure: the 'Built and maintained by' footer sits mid-file (line ~424) with 10+ sections appended after it, consistent with automated section appends rather than edited placement.",
+    "Cross-repo: this README's Templates table says pm-prompt-library has '5 battle-tested prompts' while the profile README says '25 battle-tested AI prompts' for the same repo."
+   ],
+   "counter_evidence": [
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/awesome-ai-pm#readme",
+     "excerpt": "Original frameworks with real substance: AI pricing models table with per-model risk column ('Power users crush margins'), the AI Feature Decision Tree, interview-mix percentages 'based on 100+ AI PM interviews', and a Build-vs-Buy matrix."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/awesome-ai-pm/tree/main",
+     "excerpt": "CONTRIBUTING.md and MIT LICENSE present — maintained-project scaffolding, and the 36 KB README is far beyond a stub list."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/awesome-ai-pm/commits",
+     "excerpt": "The initial commit 'Add comprehensive AI PM guide' (2026-02-27T00:44:57Z) and 'Add LICENSE, CONTRIBUTING.md, and badges' (2026-03-03, Claude co-author disclosed) carry genuine timestamps — the underlying content itself is real even if its cadence is not."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Content quality is genuine: multiple original PM frameworks (maturity model, decision tree, pricing-risk table) that go beyond generic awesome-list boilerplate",
+     "All 13 promised TOC sections are actually delivered in the file",
+     "Curation with commentary is a legitimate deliverable under the fairness rules and is not slop"
+    ],
+    "review_notes": "The negative finding is narrowly about the fabricated commit-date cadence, not about the content. The guide is substantive, original, and coherently authored; the misrepresentation is confined to git metadata simulating months of ongoing maintenance that did not occur."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "claude-design-pm-toolkit",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 11,
+  "forks_count": 7,
+  "language": null,
+  "size": 102,
+  "created_at": "2026-04-24T20:56:26Z",
+  "pushed_at": "2026-04-24T23:12:41Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 27,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', '01_investor_demo.md', '02_product_launch.md', '03_feature_flow.md', '04_animated_showcase.md', '05_design_system.md', '06_pm_tips.md', '07_pitch_deck.md', '08_stakeholder_prototype.md', '09_design_system_setup.md', '10_clarifying_questions.md', '11_claude_code_handoff.md', '12_error_recovery.md', '13_internal_tool.md', '14_commerce_page.md', '15_research_prototype.md', 'changelog.md', 'cheatsheet.md', 'license', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 20,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 7866,
+   "distinct_commit_days": 1,
+   "commits_sampled": 27,
+   "commit_msg_uniformity_pct": 4,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 18,
+   "readme_claims_code_backed": 15,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 40,
+   "boilerplate_share_pct": 20,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 2,
+   "ai_share_evidence": "All 27 commits land on a single day (2026-04-24) with no AI co-author trailers — a burst pattern consistent with an AI-assisted one-day build; counter-evidence: messages show file-specific editorial judgment across multiple passes (WCAG contrast, prefers-reduced-motion, i18n, 'anti-copy taboos'), i.e. iterative refinement rather than a single dump.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit",
+     "excerpt": "page-1.json: created 2026-04-24T20:56:26Z, pushed 2026-04-24T23:12:41Z (2h16m active window), 11 stars, 7 forks, MIT, size 102."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit/commits",
+     "excerpt": "27 commits on 2026-04-24, from 'Initial: 6 copy-paste prompts from the Claude Design article' through per-file refinements ('05_design_system: add 3 alt typography sets + WCAG ratios on dark tokens'; '12_error_recovery: add WCAG/a11y failure recovery + reduced-motion fix') to 'CHANGELOG: collapse to single v1.0.0 release entry'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit/tree/main",
+     "excerpt": "20 root entries: 15 numbered prompt/reference files 01_investor_demo.md..15_research_prototype.md (6.9-17.8 KB each), CHEATSHEET.md, CHANGELOG.md, LICENSE, README.md — matching the README's file tables."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit/#readme",
+     "excerpt": "'Honest costs: A fully built hi-fi page with refinements runs ~$2-7 in Claude tokens... Heavy sessions... can burn 95% of a weekly Pro quota.' Also: 'Who this is NOT for: designers doing precision work in Figma. Claude Design is a first-draft tool.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit/commits",
+     "excerpt": "Same-day but multi-pass: files created early (e.g. 'Add 12_error_recovery') were revisited later the same day ('12_error_recovery: add WCAG/a11y failure recovery'), plus two URL corrections — an editing loop, not one push."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit/tree/main",
+     "excerpt": "File sizes vary meaningfully (6,920 to 17,806 bytes), inconsistent with cloned boilerplate stamped 15 times."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/claude-design-pm-toolkit/#readme",
+     "excerpt": "Discloses limits and costs against its own interest ('first-draft tool', quota burn warning) and maps each file to specific sections of the companion article."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "27 same-day commits show iterative refinement passes over already-created files, not a single dump",
+     "Unusually candid cost/limitation disclosure for a promotional companion repo",
+     "Prompt files ARE the deliverable for this repo class, and the listing confirms all 17 promised files at non-trivial sizes"
+    ],
+    "review_notes": "The one-day build window is the main concern, but the commit trail demonstrates real editorial iteration within it. Unverifiable claims are marketing-flavored ones ('exports to PPTX', 'cuts engineering implementation time in half'), not the core file-content claims, which the root listing backs."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "claude-routines-and-agents-pm-pack",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 13,
+  "forks_count": 3,
+  "language": null,
+  "size": 77,
+  "created_at": "2026-04-21T21:47:20Z",
+  "pushed_at": "2026-04-21T22:29:36Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 18,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['appendix-connector-ids.md', 'cowork-tasks', 'managed-agents', 'measurement', 'prompt-injection-mitigation.md', 'quickstart.md', 'readme.md', 'routines', 'sample-outputs', 'security.md', 'team-rollout-4-week-plan.md', 'tradeoffs.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 12,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 10350,
+   "distinct_commit_days": 1,
+   "commits_sampled": 18,
+   "commit_msg_uniformity_pct": 6,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 12,
+   "readme_claims_code_backed": 11,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 35,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "All 18 commits on a single day (2026-04-21), no AI co-author trailers; counter-evidence: commit messages carry granular, experience-shaped refinements ('warn against always_allow as first-deploy default', 'add Windows paths for Obsidian/Logseq', 'cost scaling scenarios 1x/10x/50x/100x') that imply deliberate editorial passes over lived usage.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack",
+     "excerpt": "page-1.json: created 2026-04-21T21:47:20Z, pushed 2026-04-21T22:29:36Z (42-minute window), 13 stars, 3 forks, size 77, no license field recorded."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/commits",
+     "excerpt": "18 commits on 2026-04-21: 'Initial commit: Claude Routines + Managed Agents PM Pack', then targeted passes: 'SECURITY: add explicit do NOT connect deny list', 'prompt-injection: add tool-use attack to threat model', 'TRADEOFFS: add cost scaling scenarios (1x/10x/50x/100x)'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/tree/main",
+     "excerpt": "Root: QUICKSTART.md, SECURITY.md (5186 B), TRADEOFFS.md (5370 B), prompt-injection-mitigation.md (6746 B), team-rollout-4-week-plan.md, appendix-connector-ids.md, plus dirs cowork-tasks/, managed-agents/, measurement/, routines/, sample-outputs/ — matching the README tree."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/#readme",
+     "excerpt": "'Honest expectations: ~1-2% of runs fail silently... This isn't zero-error data work. Judgment tasks only.' Security guidance: 'Remove unused connectors (important — Claude can use any connected tool without asking)'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/tree/main",
+     "excerpt": "Dedicated SECURITY.md, TRADEOFFS.md, and prompt-injection-mitigation.md files at real sizes — governance depth rare in prompt-pack repos."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/commits",
+     "excerpt": "Commit-level references to inner files (cowork/02-local-brief, managed-agents/03-transcript, measurement/week-4-review) corroborate the README's directory tree beyond the top level."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/claude-routines-and-agents-pm-pack/#readme",
+     "excerpt": "Original decision tree routes readers by pain point ('Pick one. Not three. Not all nine.'), plus a three-surface comparison table and the stateless-run problem with a concrete fix."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Security and tradeoff documentation is unusually deep and specific for this repo class",
+     "Commit messages reference inner files across all five claimed directories, corroborating structure the root listing alone cannot show",
+     "Failure rates, plan limits, and cost scaling are disclosed against the repo's promotional interest"
+    ],
+    "review_notes": "One-day, 42-minute publish window is the negative signal; content signals cut the other way — the pack shows operational specificity (Windows paths, connector deny lists, silent-failure rates) suggesting the material was developed and tested before being published in a burst."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "cups-task",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": "Visual Basic 6.0",
+  "size": 1085,
+  "created_at": "2014-07-21T22:27:10Z",
+  "pushed_at": "2026-02-26T23:56:43Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 3,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['cerebral cortex 2008.pdf', 'cups instructions.doc', 'cupstask.exe', 'cupstask.frm', 'cupstask.frx', 'cupstask.vbp', 'cupstask.vbw', 'instruction.frm', 'instruction.frx', 'levin & hart, 2003.pdf', 'material', 'neural correlates of adaptive decision making for risky gains and losses.pdf', 'readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 13,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 1800,
+   "distinct_commit_days": 2,
+   "commits_sampled": 3,
+   "commit_msg_uniformity_pct": 33,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 4,
+   "readme_claims_code_backed": 3,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No AI markers: code artifacts date to 2014, predating AI codegen; the only recent activity is a 2026-02-26 README rewrite in polished newsletter-era prose ('Rewrite README with context on the research and PM relevance').",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/cups-task",
+     "excerpt": "page-1.json: created 2014-07-21T22:27:10Z, pushed 2026-02-26T23:56:43Z, language 'Visual Basic 6.0', 2 stars, size 1085."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/cups-task/commits",
+     "excerpt": "3 commits: 'Initial' and 'Create README.md' (2014-07-21), then 'Rewrite README with context on the research and PM relevance' (2026-02-26) — a 12-year gap."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/cups-task/tree/main",
+     "excerpt": "Root: CupsTask.frm/.frx/.vbp/.vbw, Instruction.frm/.frx, CupsTask.exe (126 KB), 'Cups Instructions.doc', three research PDFs (Levin & Hart 2003; Cerebral Cortex 2008; 'Neural correlates of adaptive decision making...'), material/ dir."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/cups-task/#readme",
+     "excerpt": "'A computerized implementation of Levin & Weller's Cups Task — a behavioral economics tool for measuring risky decision-making under gains and losses.' Claims 'Built With Visual Basic 6.0 [and] PEBL'."
+    }
+   ],
+   "evidence_conflicts": [
+    "README 'Built With ... PEBL (Psychology Experiment Building Language)' has no visible PEBL artifact in the root listing (VB6 sources and .exe only; PEBL files may be inside the unexpanded material/ dir)."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "cursor-layer-pm-toolkit",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 1,
+  "language": null,
+  "size": 19,
+  "created_at": "2026-05-20T19:00:09Z",
+  "pushed_at": "2026-05-21T20:46:55Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 2,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'audit', 'design-spec', 'license', 'prototypes', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 6,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 3638,
+   "distinct_commit_days": 1,
+   "commits_sampled": 2,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "readme_claims_total": 9,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 40,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "1 of 2 commits carries 'Co-Authored-By: Claude Opus 4.6' (the .DS_Store/link fix); counter-evidence: the three-stage framework and per-prototype data-sensitivity callouts read as product-specific reasoning in the author's established newsletter voice.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit",
+     "excerpt": "page-1.json: created 2026-05-20T19:00:09Z, pushed 2026-05-21T20:46:55Z, 1 star, 1 fork, MIT, size 19 — the smallest and least-visible toolkit in the portfolio."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/commits",
+     "excerpt": "Only 2 commits: 'Initial commit: cursor-layer PM toolkit' (2026-05-20) and 'Fix .DS_Store gitignore and update post link to specific URL' (2026-05-20, Claude Opus 4.6 co-authored)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/tree/main",
+     "excerpt": "Root: .gitignore, LICENSE, README.md (3660 B), and dirs audit/, design-spec/, prototypes/ — the three claimed sections exist as directories, but the 7 specific inner files (audit CSV, worked example, scoring rubric, 3 prototypes, design spec) are not observable from the root listing."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/#readme",
+     "excerpt": "'Higher isn't always better. Deep research, long-form generation, and exploratory chat belong at Stage 1. The audit helps you find features that are stuck at the wrong stage, not push everything to Stage 3.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/#readme",
+     "excerpt": "Original three-stage framework (Destination / Embedded / Cursor Layer) with an explicit anti-hype caveat, plus per-prototype DLP and data-sensitivity warnings ('check your DLP and AI-use policies before piping production screenshots anywhere')."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/tree/main",
+     "excerpt": "Directory structure (audit/, design-spec/, prototypes/) matches the README's three claimed content sections one-for-one."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/cursor-layer-pm-toolkit/commits",
+     "excerpt": "A same-week follow-up fix commit shows minimal but real post-publish attention rather than total abandonment."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The three-stage framework with its 'higher isn't always better' tradeoff is original product reasoning, not generic template text",
+     "Data-sensitivity and employer-policy warnings are disclosed against promotional interest",
+     "Directory structure corroborates the README's claimed sections at the level the snapshot can see"
+    ],
+    "review_notes": "The negative reading rests on the one-shot two-commit history and the fact that 7 of 9 claimed inner files cannot be verified from the root listing — recorded as weakly backed rather than false. Nothing in the observable content contradicts the claims; the evidence is simply shallow."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "hermes-pm-toolkit",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 13,
+  "forks_count": 13,
+  "language": null,
+  "size": 17,
+  "created_at": "2026-05-01T20:02:36Z",
+  "pushed_at": "2026-05-01T20:16:07Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 2,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['30-day-rollout.md', 'decisions', 'license', 'memories', 'readme.md', 'signals', 'skills', 'soul.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2448,
+   "distinct_commit_days": 1,
+   "commits_sampled": 2,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 40,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Two commits 14 minutes apart on 2026-05-01, no AI co-author trailers — a one-shot publish; counter-evidence: distinctive original concepts (REVISIT IF flip conditions, self-writing skills that append to USER.md) and a claimed first-person rollout ('The order I ran the use cases in') suggest authored, used material.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit",
+     "excerpt": "page-1.json: created 2026-05-01T20:02:36Z, pushed 2026-05-01T20:16:07Z (14-minute total history), 13 stars, 13 forks, MIT, size 17."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit/commits",
+     "excerpt": "2 commits, both 2026-05-01: 'Initial toolkit: SOUL, USER, three skills, 30-day rollout' and 'Link README to Monday Gap post'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit/tree/main",
+     "excerpt": "Root: SOUL.md (2779 B), 30-day-rollout.md (5835 B), LICENSE, README.md, and dirs decisions/, memories/, signals/, skills/ — matching the README's tree; the three inner SKILL.md files are named in the initial commit message but not visible in the root listing."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit/#readme",
+     "excerpt": "'Self-writing skills for product managers running on the Hermes agent runtime... drop this folder into ~/.hermes/'. Install section gives complete copy commands; '/decision-log — log a decision with a REVISIT IF flip condition'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit/tree/main",
+     "excerpt": "SOUL.md and 30-day-rollout.md exist at claimed paths with non-trivial sizes, and all four claimed directories are present."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit/#readme",
+     "excerpt": "Original mechanics rather than generic prompt-pack copy: flip-condition decision logs, memory files the skills update themselves, and a staged 30-day adoption arc ('Week 4 is when the compounding shows up. Most people quit before week 4.')."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/hermes-pm-toolkit/commits",
+     "excerpt": "Initial commit message enumerates the exact claimed contents ('SOUL, USER, three skills, 30-day rollout'), consistent with the README rather than inflated beyond it."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Complete, reproducible install path (concrete cp/mkdir commands to ~/.hermes/)",
+     "Concepts like REVISIT IF flip conditions and self-updating memory files are original design ideas not seen in generic prompt packs",
+     "Observable files and directories match the README tree exactly at the level the snapshot exposes"
+    ],
+    "review_notes": "Negative reading: 14-minute total commit history is a pure one-shot publish and the three SKILL.md files cannot be verified from the root listing. But everything observable is consistent with the claims, the repo is honest about being a small three-skill starter, and 13 forks indicate others found it usable. One-shot publishing of finished companion material is this portfolio's normal pattern, not deception per se."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-claude-code-setup",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 144,
+  "forks_count": 40,
+  "language": null,
+  "size": 61,
+  "created_at": "2026-02-27T00:06:23Z",
+  "pushed_at": "2026-03-04T23:12:39Z",
+  "open_issues": 2,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 23,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', 'claude.md', 'license', 'quickstart.md', 'readme.md', 'templates']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 6,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 9588,
+   "distinct_commit_days": 14,
+   "commits_sampled": 23,
+   "commit_msg_uniformity_pct": 4,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 9,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 45,
+   "boilerplate_share_pct": 25,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 2,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Round-timestamp author dates (e.g. 'Add quickstart guide' 2026-08-03T16:14:00Z, 'Add OKR template' 2026-07-18T18:59:00Z) postdate the repo's last push (2026-03-04) and even the audit date, indicating re-dated/scripted commit metadata; counter-evidence: the 2026-03-04 block shows nine same-day iterative rewrites with substantive rationale ('Remove PRD section from CLAUDE.md — belongs in prd-writer skill').",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/pm-claude-code-setup",
+     "excerpt": "page-1.json: created 2026-02-27T00:06:23Z, pushed 2026-03-04T23:12:39Z, 144 stars, 40 forks, MIT license, no primary language (markdown content repo)."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-claude-code-setup/commits",
+     "excerpt": "23 commits incl. 'Rebuild CLAUDE.md with pro patterns from power-user research' (2026-03-04), 'Add competitive analysis skill', 'Add metrics definer skill', 'Add launch checklist skill' — six skill-add commits and four template-add commits match the README's '6 PM skills, and 4 templates' claim."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-claude-code-setup/tree/main",
+     "excerpt": "Root: .claude/ (dir), CLAUDE.md (3025 B), LICENSE (1069 B), QUICKSTART.md (1578 B), README.md (9732 B), templates/ (dir) — CLAUDE.md, skills dir, templates dir and quickstart all present as claimed."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-claude-code-setup#readme",
+     "excerpt": "'Includes a CLAUDE.md context file, 6 PM skills, and 4 templates. Takes 60 seconds to set up.' Plus an upsell: 'The full PM Operating System goes further: 41+ skills... refined over 100+ iterations.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-claude-code-setup/commits",
+     "excerpt": "Genuine iterative editing on 2026-03-04: 'Slim down CLAUDE.md to pure config, move how-to content to README', 'Replace PRD-centric output standards with behavioral rules' — real curation decisions, not a single dump."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-claude-code-setup#readme",
+     "excerpt": "Troubleshooting section gives specific, accurate operational guidance ('Skills must be at .claude/skills/<skill-name>/SKILL.md (exact casing matters)', hook exit codes 0/2) showing hands-on tool knowledge."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-claude-code-setup/tree/main",
+     "excerpt": "Everything the free README promises is physically present in the listing (CLAUDE.md, QUICKSTART.md, templates/, .claude/); the deliverable for a config/toolkit repo is the docs themselves."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Substantive same-day iteration on 2026-03-04 with reasoned commit messages, plus 40 forks / 144 stars of real usage signal",
+     "All shipped artifacts (CLAUDE.md, 6 skills, 4 templates, quickstart) are corroborated by root listing and per-item commits",
+     "Troubleshooting and sub-agent-chaining sections contain accurate practitioner detail beyond generic template text"
+    ],
+    "review_notes": "The main negative is fabricated commit cadence (author dates through Aug 2026 on a repo last pushed 2026-03-04) shared with two sibling repos, plus a persistent paid-newsletter funnel. The content itself is a coherent, complete, PM-adapted Claude Code starter; the re-dating misleads about maintenance cadence, not about what the repo contains."
+   },
+   "evidence_conflicts": [
+    "Commit author dates run to 2026-08-03, after both the repo's pushed_at (2026-03-04T23:12:39Z) and the audit date (2026-07-16) — history has been re-dated to simulate an ongoing release cadence.",
+    "Batch-synchronized commits across sibling repos: 'Add MIT LICENSE and badges to README' at 22:10:25 and 'Reframe free vs paid messaging' at 00:25:52 land within seconds of identical messages in pm-claude-skills and pm-prompt-library."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-claude-skills",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 89,
+  "forks_count": 34,
+  "language": null,
+  "size": 84,
+  "created_at": "2026-02-27T00:06:25Z",
+  "pushed_at": "2026-03-04T23:02:41Z",
+  "open_issues": 1,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 25,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['contributing.md', 'license', 'readme.md', 'skills', 'templates']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 5,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 6748,
+   "distinct_commit_days": 19,
+   "commits_sampled": 25,
+   "commit_msg_uniformity_pct": 4,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 5,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 50,
+   "boilerplate_share_pct": 25,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 2,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Sixteen skill-add commits carry round-timestamp author dates from 2026-03-10 out to 2026-09-12 — beyond both pushed_at (2026-03-04) and the audit date — yet sit before the 2026-03-03 'Remove 15 extra skills' commit in the parent chain, an incoherent, re-dated timeline; counter-evidence: the March 3-4 commits describe substantive editorial passes ('Rewrite all 5 skills with full examples, good/bad comparisons, and anti-patterns').",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/pm-claude-skills",
+     "excerpt": "page-1.json: created 2026-02-27T00:06:25Z, pushed 2026-03-04T23:02:41Z, 89 stars, 34 forks, MIT license, no primary language."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-claude-skills/commits",
+     "excerpt": "25 commits: 'Add 5 PM skills: LinkedIn writer, idea validator, prompt engineer, design reviewer, status updates' (2026-02-27), 'Remove 15 extra skills, add MIT LICENSE and badges' (2026-03-03), 'Enhance all 5 skills with targeted improvements for their biggest gaps' (2026-03-04)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-claude-skills/tree/main",
+     "excerpt": "Root: CONTRIBUTING.md (2002 B), LICENSE (1069 B), README.md (6768 B), skills/ (dir), templates/ (dir) — skills directory and the SKILL template location both exist as the README claims."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-claude-skills#readme",
+     "excerpt": "'5 production-ready Claude Code skills for product managers. Drop them in .claude/skills/ and they work immediately.' Table names all five with per-skill SKILL.md paths; setup includes a verification step ('ls .claude/skills/')."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-claude-skills/commits",
+     "excerpt": "'Remove 15 extra skills' is a curation decision — the maintainer cut scope to 5 polished skills rather than shipping 20 shallow ones; 'Improve setup instructions with one-liner install, verification, and troubleshooting' shows usability iteration."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-claude-skills#readme",
+     "excerpt": "The 'How to Create Your Own Skill' section is a genuine 5-step methodology with a full SKILL.md template inline, plus design rationale: 'CLAUDE.md loads every session; skills load only when triggered.'"
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-claude-skills/tree/main",
+     "excerpt": "CONTRIBUTING.md and templates/ exist, backing the contribution workflow the README describes — infrastructure beyond a one-shot content dump."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Deliberate scope-cut from 20 to 5 skills with subsequent per-skill enhancement passes is the opposite of mass-generation padding",
+     "Three install options plus a verification command make setup fully reproducible",
+     "Inline skill-authoring guide and template constitute original teaching structure, not boilerplate"
+    ],
+    "review_notes": "Negative reading rests on the re-dated commit timeline (skill adds dated into Sep 2026 that were 'removed' by a commit dated Mar 2026) shared with sibling repos — a simulated-cadence pattern. Against that, the surviving content is curated, the claimed 5 skills and template are structurally corroborated, and the editorial commits describe real quality work. Prompt/skill libraries are legitimate deliverables under the fairness rules."
+   },
+   "evidence_conflicts": [
+    "Parent-chain order vs author dates is incoherent: 16 skill-add commits dated 2026-03-10..2026-09-12 (some in the future) are ancestors of the 'Remove 15 extra skills' commit dated 2026-03-03, and pushed_at is 2026-03-04 — history was re-dated.",
+    "Same-second batch commits across siblings: 'Polish all skills and README for professional tone' 2026-03-04T23:04:13Z here vs 23:04:15/23:04:17 in pm-claude-code-setup and pm-prompt-library."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-github-starter-kit",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 27,
+  "forks_count": 84,
+  "language": null,
+  "size": 10,
+  "created_at": "2026-02-26T23:44:54Z",
+  "pushed_at": "2026-02-27T19:09:52Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 4,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'checklist.md', 'prompts', 'readme.md', 'templates']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 5,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 3847,
+   "distinct_commit_days": 2,
+   "commits_sampled": 4,
+   "commit_msg_uniformity_pct": 25,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 2,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 35,
+   "boilerplate_share_pct": 30,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "No generation markers in the four commit messages; timestamps are irregular and clustered over two real days (2026-02-26/27) matching pushed_at, and one follow-up fix ('Fix article links to point to correct URL') shows human post-publish correction. Counter: the near-complete initial drop ('Initial commit: PM GitHub starter kit' then 'Update README with blog post content') is consistent with content prepared elsewhere, likely AI-assisted.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/pm-github-starter-kit",
+     "excerpt": "page-1.json: created 2026-02-26T23:44:54Z, pushed 2026-02-27T19:09:52Z, 27 stars, 84 forks, no detected license (README asserts a subscriber-only custom license)."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-github-starter-kit/commits",
+     "excerpt": "4 commits total: 'Initial commit: PM GitHub starter kit' (2026-02-26), 'Update README with blog post content and PM GitHub framework', 'Add subscriber-only notice', 'Fix article links to point to correct URL' (2026-02-27)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-github-starter-kit/tree/main",
+     "excerpt": "Root: .gitignore (155 B), CHECKLIST.md (1805 B), README.md (3947 B), prompts/ (dir), templates/ (dir) — checklist, prompts and templates directories exist as claimed."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-github-starter-kit#readme",
+     "excerpt": "'Profile templates, project README templates, AI coding prompts, and a 3-week checklist'; unverifiable stats: '24% of PM candidates have a GitHub. The latest PMs I placed at OpenAI, Anthropic, and Meta AI all had one.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-github-starter-kit/tree/main",
+     "excerpt": "The advertised deliverables (CHECKLIST.md, templates/, prompts/, .gitignore) are all present in the root listing — for a starter-kit repo the docs are the product."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-github-starter-kit/commits",
+     "excerpt": "'Fix article links to point to correct URL' one day after launch shows the author checked and corrected the published artifact."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-github-starter-kit#readme",
+     "excerpt": "'What to Avoid' gives candid original advice against gaming signals: 'Green square farming — hiring managers click the squares. Empty commits are an anti-signal.'"
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "All structural claims (templates, prompts, checklist) are corroborated by the root listing; 84 forks indicate the kit is actually used",
+     "Original 6-point 'What Makes a Great PM GitHub' framework and anti-pattern list reflect practitioner judgment",
+     "Post-publish link fix and subscriber-notice commits show minimal but real maintenance"
+    ],
+    "review_notes": "Negative signals are the unverifiable marketing stats (24% claim, placement name-drops of OpenAI/Anthropic/Meta) and a two-day, four-commit content drop gated as 'paid subscribers only' while public. None of that makes the content slop: it is a small, coherent, fully-present curation kit. The unbacked claims are about the author's off-platform track record, not about the repo's contents."
+   },
+   "evidence_conflicts": [
+    "README's License section says 'For personal use by Product Growth subscribers only. Do not redistribute or share publicly' while the repo is public with 84 forks and the API metadata records no license."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-github-workflow-repo",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 5,
+  "language": null,
+  "size": 68,
+  "created_at": "2026-06-03T00:56:22Z",
+  "pushed_at": "2026-06-03T18:11:58Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 42,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitattributes', '.github', '.gitignore', 'autoresearch', 'claude.md', 'contributing.md', 'decisions', 'docs', 'evals', 'examples', 'license', 'readme.md', 'skills']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 13,
+   "ci_runs": true,
+   "test_files": 0,
+   "readme_length": 10393,
+   "distinct_commit_days": 32,
+   "commits_sampled": 42,
+   "commit_msg_uniformity_pct": 2,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 10,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 20,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 9,
+   "ai_share_evidence": "Author dates from 2026-01-06 predate repo creation (2026-06-03) with evenly spaced synthetic intervals — but the repo discloses this in-history ('align content dates with commit dates after history re-date') and the README frames the history itself as the teaching artifact; counter-evidence: the June 2-3 real-date commits are dense, self-critical fix passes ('fix every doc-vs-git-history contradiction') characteristic of careful human review.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo",
+     "excerpt": "page-1.json: created 2026-06-03T00:56:22Z, pushed 2026-06-03T18:11:58Z, 2 stars, 5 forks, MIT license — a fresh practice repo, all real pushes within one day."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo/commits",
+     "excerpt": "42 commits: 'prd-reviewer v2: check for hypothesis vs feature description' through 'prd-reviewer v7', 'round 3 - add worked example + lead-with-audience rule (score: 79% -> 90%)', 'round 5 - revert word-count cap (82% -> 90%, restored best)', and 'align content dates with commit dates after history re-date' (2026-06-02)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo/tree/main",
+     "excerpt": "Root: CLAUDE.md, CONTRIBUTING.md, LICENSE, README.md, .gitattributes, .gitignore (2576 B, PM/PII-tuned), plus skills/, evals/, autoresearch/, examples/, decisions/, docs/, .github/ — every directory in the README tree exists."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo/.github/workflows",
+     "excerpt": "workflows-listing.json shows gitleaks.yml (927 B) — the 'secret scanning on push/PR' claim is backed by an actual workflow file."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo#readme",
+     "excerpt": "'Explore the history. This is the whole point - the history is the lesson... a PRD reviewer skill evolving v1 → v7 (then hardened with later fixes), a CLAUDE.md growing then getting pruned, eval criteria tightening, and a full autoresearch run (41% → 90%, with one failed experiment reverted).'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo/commits",
+     "excerpt": "Nine real-date hardening commits on June 2-3: 'remove stray .aws-credentials-test; tighten .aws glob', 'README: fix history-distance claim, tree drift, and two link issues', 'fix self-contradictory verdict rubric' — accuracy-driven self-correction."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-github-workflow-repo#readme",
+     "excerpt": "Documents its own failure case: 'round-log 41% → 90%, one reverted experiment', and scopes its limits: 'this .gitignore is tuned to *this* repo's layout... add a !path/to/your-file line for anything of yours that's wrongly ignored.'"
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The re-dated history is disclosed inside the repo itself and is the pedagogical point (a practice repo for reading git history), not concealed resume-padding",
+     "Every README claim maps to an on-disk artifact, including a real gitleaks CI workflow and a PM-specific secrets/PII .gitignore",
+     "Documented reverted experiment and doc-vs-history contradiction fixes show unusual epistemic care"
+    ],
+    "review_notes": "The only structurally negative signal — synthetic backdated commits — is explicitly acknowledged in a commit message and consistent with the repo's stated purpose ('Practice repo... the history is the lesson'). Judged on saved artifacts, this is the strongest repo in the set: 10/10 claims backed, real CI, tradeoffs and limitations discussed, and a worked failure included."
+   },
+   "evidence_conflicts": [
+    "Commit author dates begin 2026-01-06, five months before the repo's created_at (2026-06-03); the repo discloses this via the commit 'align content dates with commit dates after history re-date' — a deliberate, disclosed simulation for teaching, not hidden fabrication."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-planning-system",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 49,
+  "forks_count": 40,
+  "language": "TypeScript",
+  "size": 55,
+  "created_at": "2026-04-14T22:58:24Z",
+  "pushed_at": "2026-04-14T23:35:41Z",
+  "open_issues": 2,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 21,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.gitignore', 'claude.md', 'package-lock.json', 'package.json', 'planning', 'readme.md', 'rollout', 'src', 'vitest.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 10,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 6179,
+   "distinct_commit_days": 1,
+   "commits_sampled": 21,
+   "commit_msg_uniformity_pct": 5,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 8,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 25,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "All 21 commits landed in a 34-minute window (2026-04-14T23:03:31Z-23:37:17Z) with 1-2 second spacing and uniformly polished messages — consistent with an AI/scripted batch publication; counter-evidence: two distinct passes are visible (initial build at 23:03, then a substantive expansion pass at 23:37 adding observability, cost, privacy, and NPS-guardrail content per file), and the docs encode specific practitioner judgment rather than generic filler.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/pm-planning-system",
+     "excerpt": "page-1.json: created 2026-04-14T22:58:24Z, pushed 2026-04-14T23:35:41Z (entire life ~37 minutes), 49 stars, 40 forks, language TypeScript, no detected license despite README stating 'License: MIT'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-planning-system/commits",
+     "excerpt": "21 commits, e.g. 'Add worked example: AI search with Good/Bad/Reject behavior contract' (23:03:37), 'Add pricing page demo module with vitest coverage' (23:03:42), then 'Expand rollout playbook: objection handling, risk matrix, 30/60/90 checkpoints, kill criteria' (23:37:13)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-planning-system/tree/main",
+     "excerpt": "Root: CLAUDE.md (8228 B), planning/, rollout/, .claude/, src/, package.json (150 B), package-lock.json, vitest.config.ts — the planning system plus a real TypeScript demo module with test config."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-planning-system#readme",
+     "excerpt": "'What This Isn't: A code generator — the skill file reviews plans, it doesn't write code... A substitute for strategy, user research, or stakeholder alignment — this is the artifact layer, not the thinking layer.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-planning-system#readme",
+     "excerpt": "Explicit scope honesty ('What This Is / What This Isn't'), a program kill-switch ('Measured engineer NPS is a program guardrail; if the program costs engineers more than it saves, it ends'), and assumption-labeling guidance for aspiring PMs."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-planning-system/tree/main",
+     "excerpt": "vitest.config.ts and package.json alongside src/ show the demo module is set up to actually run tests — rare in this portfolio."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-planning-system/commits",
+     "excerpt": "The 23:37 expansion pass deepened every artifact with concrete concerns ('Expand PLANNING-TEMPLATE: baseline, statistical plan, observability, cost, privacy, reviewers') — a revision cycle, not a single dump."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "All eight README claims (template, two worked examples, three rollout docs, CLAUDE.md, review skill) map to listed directories and per-file commits",
+     "Unusually honest framing: What This Isn't section, engineer-NPS kill criteria, PM-zone vs engineering-zone boundary",
+     "Test scaffolding (vitest) exists for the demo module, and the AI-feature example carries a Good/Bad/Reject behavior contract — original structure"
+    ],
+    "review_notes": "The negative reading is the 34-minute total repo lifetime with machine-paced commits — a one-evening AI-assisted publication whose granular commit messages simulate an incremental build. Under the fairness rules AI-assisted work is not slop, and the content itself is coherent, original, and fully backed; the risk is only that commit granularity overstates development history."
+   },
+   "evidence_conflicts": [
+    "README 'What's Inside' tree omits src/, package.json, and vitest.config.ts that appear in the root listing (undocumented demo-module scaffolding).",
+    "Portfolio survey records has_tests=false, but the root listing contains vitest.config.ts and a commit claims 'pricing page demo module with vitest coverage'.",
+    "README says 'License: MIT' but the API metadata records no license file detected."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-prompt-library",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 11,
+  "forks_count": 12,
+  "language": null,
+  "size": 61,
+  "created_at": "2026-02-27T00:06:22Z",
+  "pushed_at": "2026-04-10T18:46:46Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 31,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['contributing.md', 'license', 'prompts', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 4,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 7150,
+   "distinct_commit_days": 26,
+   "commits_sampled": 31,
+   "commit_msg_uniformity_pct": 3,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 2,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 50,
+   "boilerplate_share_pct": 25,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 2,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 1,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Twenty prompt-add commits carry round-timestamp author dates on a near-weekly cadence out to 2026-09-07 — beyond pushed_at (2026-04-10) and the audit date — indicating re-dated history; the merged branch 'claude/targeted-improvements-5xPSU' (PR #1, 2026-04-10) is a direct marker of Claude-generated maintenance. Counter-evidence: the 25 prompt names in commits match the README's numbered table one-for-one, and the April PR shows post-release upkeep.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/pm-prompt-library",
+     "excerpt": "page-1.json: created 2026-02-27T00:06:22Z, pushed 2026-04-10T18:46:46Z, 11 stars, 12 forks, MIT license, no primary language (markdown prompt library)."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-prompt-library/commits",
+     "excerpt": "31 commits: 'Add 5 PM prompts: user stories, competitive teardown, launch risk, metrics, stakeholder updates' (2026-02-27), then 20 individual adds ('Add prd reviewer prompt', 'Add api spec reviewer prompt' author-dated 2026-09-07), and 'Merge pull request #1 from aakashg/claude/targeted-improvements-5xPSU' (2026-04-10)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-prompt-library/tree/main",
+     "excerpt": "Root: CONTRIBUTING.md (1906 B), LICENSE (1069 B), README.md (7154 B), prompts/ (dir) — flat single-directory library matching the claimed structure."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-prompt-library#readme",
+     "excerpt": "'25 battle-tested AI prompts for product managers... Each prompt tested across 50+ real PM scenarios.' Badge asserts 'prompts-25'; six category tables link numbered files prompts/01-user-story-generator.md through prompts/25-api-spec-reviewer.md."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/pm-prompt-library/commits",
+     "excerpt": "Exactly 25 distinct prompt-add commits whose names map one-to-one onto the README's numbered table, plus real post-release maintenance in April 2026 ('Update TEMPLATE.md', 'Update README.md' via merged PR #1)."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/pm-prompt-library#readme",
+     "excerpt": "'Tips for Writing Better Prompts' teaches eight concrete techniques (role-setting, do/don't constraints, reasoning-before-conclusion, consistent [BRACKET CAPS] placeholders) — original instructional content beyond the prompt list."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/pm-prompt-library/tree/main",
+     "excerpt": "CONTRIBUTING.md exists and the README points contributors at prompts/TEMPLATE.md, backing a real contribution pathway."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The core claim — 25 named prompts in 6 categories — is fully corroborated by 25 matching per-prompt commits and the prompts/ directory",
+     "Post-release maintenance actually happened (PR #1 merged 2026-04-10, a month after the main push window)",
+     "The prompt-writing tips section is substantive teaching content; prompt libraries are legitimate deliverables under the fairness rules"
+    ],
+    "review_notes": "Negative signals: fabricated near-weekly author dates running into the future (Sep 2026), same-second batch commits synchronized with two sibling repos, and unverifiable marketing claims ('battle-tested', 'tested across 50+ real PM scenarios') with no test artifacts. None of these undercut the existence or coherence of the 25 prompts themselves; the misleading element is cadence and testing claims, not content."
+   },
+   "evidence_conflicts": [
+    "Commit author dates run to 2026-09-07, after both pushed_at (2026-04-10T18:46:46Z) and the audit date (2026-07-16) — re-dated history simulating weekly releases.",
+    "'Each prompt tested across 50+ real PM scenarios' has no supporting artifact anywhere in the listing or history.",
+    "Batch-synchronized housekeeping with siblings: 'Add MIT LICENSE and badges to README' 2026-03-03T22:10:27Z and 'Polish all prompts and README for professional tone' 2026-03-04T23:04:17Z land within seconds of identical commits in pm-claude-code-setup and pm-claude-skills."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "product-growth-team-os",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 28,
+  "forks_count": 16,
+  "language": null,
+  "size": 360,
+  "created_at": "2026-05-06T21:43:48Z",
+  "pushed_at": "2026-05-09T03:10:35Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 14,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', 'claude.md', 'contributing.md', 'license', 'minimal-setup.md', 'pm-os-migration.md', 'product-development', 'readme.md', 'security.md', 'team']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 12,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 7925,
+   "distinct_commit_days": 3,
+   "commits_sampled": 14,
+   "commit_msg_uniformity_pct": 7,
+   "refactor_commits": 1,
+   "one_shot_dump": false,
+   "readme_claims_total": 9,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 15,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 2,
+   "ai_share_evidence": "No explicit generation markers; commits cluster in three real evening sessions (2026-05-06 to 05-09) with idiosyncratic, human-flavored messages ('Hannah-fidelity refactor: extend the example repo's load-bearing patterns') and dense same-evening bursts consistent with AI-assisted drafting under active human curation.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/aakashg/product-growth-team-os",
+     "excerpt": "page-1.json: created 2026-05-06T21:43:48Z, pushed 2026-05-09T03:10:35Z, 28 stars, 16 forks, license NOASSERTION (custom CC BY-NC 4.0 per README), no primary language."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/product-growth-team-os/commits",
+     "excerpt": "14 commits over 3 days: 'Initial release: Product Growth Team OS Starter Kit', 'Exclude Notion template and deep dive from public repo' (2026-05-06), 'Add Sensitive-Data Control Checklist as a shipped PDF', 'Harden upgrade-to-team-os skill with auto-detection and validation gates' (2026-05-07), 'Point deep-dive link to the published article URL' (2026-05-09)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/product-growth-team-os/tree/main",
+     "excerpt": "Root: CLAUDE.md (8348 B), MINIMAL-SETUP.md (5980 B), pm-os-migration.md (8337 B), SECURITY.md (4937 B), CONTRIBUTING.md, LICENSE (647 B), .claude/, .github/, product-development/, team/ — the minimal-setup, migration, and security docs all exist as claimed."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/product-growth-team-os#readme",
+     "excerpt": "'This repo extends Hannah's open-source Team OS example repo (CC BY-NC 4.0) with shared skills, analytics templates, adoption tools, and a PM-OS migration path'; Credits section itemizes exactly which patterns are Hannah's, Gabor Meyer's, Dave Killeen's, and which are 'Aakash extensions'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "readme",
+     "url": "https://github.com/aakashg/product-growth-team-os#readme",
+     "excerpt": "Line-item attribution of borrowed vs original work ('Structure: Hannah Stulberg's open-source Team OS... Aakash extensions: 5 shared skills, PII rules, MINIMAL-SETUP path...') — the opposite of passing derived work off as original."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/aakashg/product-growth-team-os/commits",
+     "excerpt": "'Exclude Notion template and deep dive from public repo' and 'Tighten cross-references and ship case-study permissions registry' show deliberate scoping and a permissions registry for case-study content."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/aakashg/product-growth-team-os/tree/main",
+     "excerpt": "SECURITY.md (4937 B) and a hardened upgrade skill back the README's PII-safe-by-default and security-reporting claims."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Exemplary attribution: credits and license explicitly separate Hannah Stulberg's CC BY-NC structure from the named Aakash extensions",
+     "Real 3-day iteration with corrective commits, sensitive-data checklist, and a case-study permissions registry",
+     "Portability section honestly de-couples the value from any one AI vendor ('The harness is swappable. The institutional memory isn't.')"
+    ],
+    "review_notes": "Overall reading is positive; counter-evidence review included for completeness because the deep registry claims (feature-index.yaml, data-catalog.yaml) are only visible in the README's own tree, not independently corroborated by the saved root listing (they live in an unsnapshotted subdirectory). Commits about hardening the upgrade skill and shipping downloadables partially corroborate the deeper structure."
+   },
+   "evidence_conflicts": [
+    "Portfolio survey records has_ci=true, but no workflows-listing.json was saved and the README's .github tree shows only pull_request_template.md — CI presence is unconfirmed in the snapshot.",
+    "The two registry files (feature-index.yaml, data-catalog.yaml) are claimed as the system's core but appear only in the README tree; the saved root listing cannot see into product-development/ to confirm them."
+   ],
+   "deep_inspected": true
+  }
+ }
+]

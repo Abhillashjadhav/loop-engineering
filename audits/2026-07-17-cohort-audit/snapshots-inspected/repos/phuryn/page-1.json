@@ -1,0 +1,1783 @@
+[
+ {
+  "name": "agent-second-brain",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 17,
+  "forks_count": 4,
+  "language": null,
+  "description": null,
+  "topics": [],
+  "size": 86,
+  "created_at": "2026-04-07T12:52:49Z",
+  "pushed_at": "2026-04-07T14:17:54Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 8,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['claude.md', 'examples', 'knowledge', 'license', 'readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 5,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 5713,
+   "distinct_commit_days": 1,
+   "commits_sampled": 8,
+   "commit_msg_uniformity_pct": 12,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agentlift",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 25,
+  "forks_count": 3,
+  "language": "Python",
+  "description": "Deploy agents to Claude Managed Agents, AWS Bedrock AgentCore, and Google. One folder, one definition, one command.",
+  "topics": [
+   "agent-deployment",
+   "ai-agents",
+   "amazon-bedrock",
+   "amazon-bedrock-agents",
+   "anthropic",
+   "claude",
+   "claude-agent-sdk",
+   "claude-managed-agents",
+   "managed-agents"
+  ],
+  "size": 15637,
+  "created_at": "2026-06-02T19:46:31Z",
+  "pushed_at": "2026-06-09T13:09:46Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 3,
+  "contributors": 2,
+  "commit_count": 49,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env.example', '.github', '.gitignore', 'agents.md', 'benchmarks', 'changelog.md', 'claude.md', 'contributing.md', 'demo', 'docs', 'examples', 'experiments', 'img', 'license', 'pyproject.toml', 'readme.md', 'src', 'tests']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 18,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 14902,
+   "distinct_commit_days": 6,
+   "commits_sampled": 49,
+   "commit_msg_uniformity_pct": 2,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 9,
+   "readme_claims_code_backed": 8,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 3,
+   "issue_responses": 0,
+   "dependency_updates": 1,
+   "docs_corrections": 4,
+   "ai_share_evidence": "Generation markers: near-universal 'Co-Authored-By: Claude' trailers and several commits authored directly by 'Claude' (e.g. 'Implement the import feature', 2026-06-08); counter-evidence: repeated accuracy corrections against its own marketing ('fix stale Anthropic-only claims', 'honest reframe' of the Google target, 'OpenAI subagents = degraded, not unsupported'), CI extras fix, committed live-deploy receipts, 3 releases on PyPI.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/agentlift",
+     "excerpt": "page-1.json: 25 stars, 49 commits, 2 contributors, 3 releases, has_tests/has_ci/dependencies_declared/runnable_setup true, created 2026-06-02, pushed 2026-06-09, 6 distinct commit days; topics: claude-managed-agents, amazon-bedrock-agents, claude-agent-sdk."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/agentlift/commits",
+     "excerpt": "'skylift v0.1.0 — deploy local Claude agents to Anthropic Managed Agents' (2026-06-02); 'rename project skylift -> agentlift' (2026-06-02); 'feat: deploy --target google - live Vertex Agent Engine deploy (0.4.0)' (2026-06-03); 'AWS Bedrock AgentCore Harness: live single-agent deploy (0.6.0)' (2026-06-05); 'release: 0.8.0 — agentlift import' (2026-06-08); 'Fix CI: declare boto3 as the bedrock extra; install it in CI'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/agentlift/tree/main",
+     "excerpt": "Root: src/, tests/, benchmarks/, demo/, docs/, examples/, experiments/, .env.example (1,129 B), pyproject.toml, CHANGELOG.md (12,017 B), CONTRIBUTING.md, CLAUDE.md (31,176 B)."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/agentlift/blob/main/.github/workflows",
+     "excerpt": "workflows-listing.json: ci.yml plus live-demo.yml — an offline CI gate and an on-demand live-deploy job, matching the README's 'pytest -m \"not live\"' / 'pytest -m live' split."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/agentlift#readme",
+     "excerpt": "'agentlift's claims are pinned by tests and committed live receipts, not prose' and a Limitations section: 'Remote MCP only... Knowledge files are inlined... the receipts run on Nova to prove the control plane... while Claude-on-Bedrock access is account-gated.'"
+    }
+   ],
+   "evidence_conflicts": [
+    "The 'live-verified' AWS/Google receipts live under tests/live/receipts/ and docs/tested-platforms.md, which the snapshot shows only as directories — receipt contents are corroborated by commit messages, not directly inspected."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "ai-development-specifications",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 1,
+  "language": null,
+  "description": "Complete specifications for AI-assisted development: Spec as Code, Testing as Code, Documentation as Code, and Context Engineering as Code",
+  "topics": [],
+  "size": 164,
+  "created_at": "2025-07-25T09:37:52Z",
+  "pushed_at": "2025-07-08T22:05:08Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "awesome-agent-skills",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 18,
+  "forks_count": 1,
+  "language": null,
+  "description": "Claude Code Skills and 500+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others.",
+  "topics": [],
+  "size": 323,
+  "created_at": "2026-03-06T09:48:11Z",
+  "pushed_at": "2026-03-06T10:22:27Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "b2c-saas-with-stripe-template-59",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 1,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 3091,
+  "created_at": "2025-05-22T17:24:02Z",
+  "pushed_at": "2025-05-26T12:06:59Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 363,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'bun.lockb', 'components.json', 'eslint.config.js', 'index.html', 'package-lock.json', 'package.json', 'postcss.config.js', 'public', 'readme.md', 'src', 'supabase', 'tailwind.config.ts', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 17,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2149,
+   "distinct_commit_days": 4,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 6,
+   "refactor_commits": 14,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "bolt-boilerplate-nextjs",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "Supercharge your Next.js projects with Bolt Boilerplate: Convex-powered real-time interactions, Clerk authentication, and Shadcn UI. Setup in minutes.",
+  "topics": [],
+  "size": 715,
+  "created_at": "2025-01-04T19:46:52Z",
+  "pushed_at": "2024-06-09T03:08:01Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "burnstop",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 3,
+  "language": "Python",
+  "description": "A budget fuse for Claude Code: cap a session in tokens or dollars and halt runaway goals and loops. Auto-arms a $50 cap on goals.",
+  "topics": [
+   "anthropic",
+   "budget",
+   "claude",
+   "claude-code",
+   "cost",
+   "guardrail",
+   "hooks",
+   "llm",
+   "plugin",
+   "tokens"
+  ],
+  "size": 186,
+  "created_at": "2026-06-22T09:12:52Z",
+  "pushed_at": "2026-06-22T12:59:30Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 1,
+  "contributors": 1,
+  "commit_count": 2,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude-plugin', '.gitattributes', '.github', '.gitignore', 'agents.md', 'changelog.md', 'claude.md', 'cli.py', 'commands', 'contributing.md', 'dispatch.py', 'docs', 'hook.py', 'hooks', 'license', 'meter.py', 'readme.md', 'scripts', 'tests']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 19,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 4837,
+   "distinct_commit_days": 1,
+   "commits_sampled": 2,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 15,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Generation markers: both commits carry 'Co-Authored-By: Claude' and claude.ai/code trailers ('Release v1.0.0: burnstop, a budget fuse for Claude Code'); counter-evidence: shipped with tests/ + passing CI (tests.yml, ci_runs true), a CHANGELOG, CONTRIBUTING.md, and docs/spikes.md recording rejected design alternatives — atypical scaffolding for a throwaway dump.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/burnstop",
+     "excerpt": "page-1.json: 8 stars, 3 forks, 2 commits, 1 contributor, 1 release, has_tests/has_ci/runnable_setup true, created and last pushed 2026-06-22 (single day); topics: budget, guardrail, hooks, plugin."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/burnstop/commits",
+     "excerpt": "Only two commits, both 2026-06-22: 'Release v1.0.0: burnstop, a budget fuse for Claude Code' and 'docs: add hero screenshot to README' — a single-day v1.0.0 release."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/burnstop/tree/main",
+     "excerpt": "Root: cli.py (11,861 B), hook.py (8,662 B), meter.py (8,926 B), dispatch.py (2,155 B), tests/, hooks/, commands/, .claude-plugin/, docs/, CHANGELOG.md, CONTRIBUTING.md, AGENTS.md (6,901 B)."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/burnstop/blob/main/.github/workflows",
+     "excerpt": "workflows-listing.json: tests.yml + tag-on-merge.yml — the same test-gate + auto-tag pattern as sibling repos pm-skills and claude-usage."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/burnstop#readme",
+     "excerpt": "'Limitations (honest): Bounded overshoot, not surgical: the fuse is ~one turn behind, and a subagent already mid-run can't be killed... Loop detection is a heuristic; the budget cap is the deterministic backstop.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/burnstop/tree/main",
+     "excerpt": "Despite the 2-commit history, the root contains a full plugin structure: tests/, .claude-plugin/, commands/, hooks/, scripts/, docs/, CHANGELOG.md and CONTRIBUTING.md — every install path and command the README names has a corresponding artifact."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/burnstop/blob/main/.github/workflows",
+     "excerpt": "tests.yml exists and the metadata records ci_runs true — the tests the README implies are wired into CI, not decorative."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/burnstop#readme",
+     "excerpt": "'Why a hook and not a proxy: docs/spikes.md' — the repo documents rejected design alternatives, and the Limitations section is candid about overshoot and heuristics, the opposite of overclaiming."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Complete artifact-to-claim mapping: every README claim (hooks, commands, plugin install, tests, architecture doc, spikes doc) has a visible file or directory behind it.",
+     "CI is configured and has run (tests.yml, ci_runs true) — a tested, released v1.0.0, not an unverified dump.",
+     "Honest 'Limitations (honest)' section plus a spikes doc explaining the discarded proxy approach shows design work preceded the single-day publish."
+    ],
+    "review_notes": "The 2-commit single-day history is a publish pattern (likely developed elsewhere and squashed), not evidence of low effort: the shipped content is coherent, tested, honestly scoped, and integrates with the author's companion tools. Negative reading limited to 'history opacity', not quality."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "claude-code",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. All original source code is the property of Anthropic.",
+  "topics": [],
+  "size": 9308,
+  "created_at": "2026-03-31T12:02:05Z",
+  "pushed_at": "2026-03-31T10:03:46Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "claude-code-advanced",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 295,
+  "created_at": "2026-07-16T14:56:48Z",
+  "pushed_at": "2026-07-16T17:11:09Z",
+  "open_issues": 1,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 4,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.agents', '.claude', '.env.example', '.gitignore', '.mcp.json', 'agents.md', 'claude.md', 'docs', 'examples', 'knowledge', 'outputs', 'readme.md', 'subagents.md', 'tools']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 14,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 4525,
+   "distinct_commit_days": 1,
+   "commits_sampled": 4,
+   "commit_msg_uniformity_pct": 25,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 9,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 25,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 2,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "Generation markers: all 4 commits authored by 'Claude' with Co-Authored-By trailers, created and pushed within a single day (2026-07-16); counter-evidence: the commits are content-specific ('encode 20 interviews + 700k budget in the workflow prompt', 'clarify the /goal target file doesn't exist yet'), every README table row maps to a real root entry, and the repo extends an established teaching lineage (claude-template-session, agent-second-brain, dynamic-workflows-experiment).",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/claude-code-advanced",
+     "excerpt": "page-1.json: 2 stars, 4 commits, 1 contributor, no license, no description, no tests/CI, created 2026-07-16T14:56Z, pushed 2026-07-16T17:11Z — a single-afternoon publish with 1 open issue."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/claude-code-advanced/commits",
+     "excerpt": "'Claude Code Advanced: session template + OKF memory example + loops demo + dynamic-workflows'; 'loops README: clarify the /goal target file doesn't exist yet — the goal is the end state'; 'Demo-ready prompts: encode 20 interviews + 700k budget in the workflow prompt'; 'Add examples/ingestion: raw pilot readout + expected-outcome README' (all 2026-07-16, author 'Claude')."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/claude-code-advanced/tree/main",
+     "excerpt": "Root: CLAUDE.md (121 B — the '5-line import stub' the README claims), AGENTS.md (6,035 B), SUBAGENTS.md (4,721 B), knowledge/, docs/, examples/, tools/, outputs/, .agents/, .claude/, .mcp.json, .env.example (40 B) — every row of the README's 'What's inside' table has a matching root entry."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/claude-code-advanced#readme",
+     "excerpt": "'A hypothesis confirmed by 3+ independent data points becomes a rule. A rule contradicted by new data is demoted back — with the counter-example on record.' Quick start: 'Copy .env.example to .env and fill in keys only if you want the Reddit tool.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/claude-code-advanced/tree/main",
+     "excerpt": "The 121-byte CLAUDE.md exactly matches the claimed '5-line import stub' design, and paired .claude/ + .agents/ dirs match the claimed Codex-mirroring hook — structure corroborates the README's design claims at byte level."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/claude-code-advanced/commits",
+     "excerpt": "The follow-up commits are pedagogical refinements with verifiable intent ('watch a hypothesis get promoted to a rule live', an expected-outcome README for the demo), not bulk regeneration."
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/claude-code-advanced",
+     "excerpt": "The repo is the companion for a named session on the author's AI-Native PM roadmap and links to working sibling projects (burnstop, pm-brain, dynamic-workflows-experiment) that exist in the portfolio."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Complete claim-to-artifact mapping: all 10 'What's inside' rows correspond to real root entries, including the byte-level match of the 5-line CLAUDE.md stub and the .env.example key-handling path.",
+     "The memory-system demo is designed to be falsifiable — a specific hypothesis (H1 at 2 of 3 confirmations) plus the exact readout containing its third confirmation, with the expected promotion stated in advance.",
+     "It is course material in an established lineage (extends claude-template-session; advanced version of the pm-brain pattern), and tutorials/teaching content are explicitly not slop under the audit's fairness rules."
+    ],
+    "review_notes": "One-shot single-day publish by 'Claude' with no license and no limitations section — but it is a teaching companion whose claims are structural and all verifiable against the root listing. Recorded template similarity reflects kinship with the author's own earlier teaching repos (agent-second-brain, claude-template-session), an iteration pattern rather than mass generation."
+   },
+   "evidence_conflicts": [
+    "Survey metadata records runnable_setup_documented false, but the README contains a concrete 3-step Quick start (clone, copy .env.example, a first routing prompt).",
+    "No LICENSE file appears in the root listing and metadata records license null, while sibling teaching repos in the portfolio are MIT."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "claude-svg",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 12,
+  "forks_count": 2,
+  "language": null,
+  "description": "Makes beautiful and accurate diagrams in less than a minute",
+  "topics": [],
+  "size": 106,
+  "created_at": "2025-07-26T11:48:12Z",
+  "pushed_at": "2025-07-22T20:58:19Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "claude-template-session",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 35,
+  "created_at": "2026-07-09T16:49:09Z",
+  "pushed_at": "2026-07-09T18:13:28Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 2,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.agents', '.claude', '.gitignore', '.mcp.json', 'agents.md', 'claude.md', 'docs', 'subagents.md', 'tools']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 9,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 1,
+   "commits_sampled": 2,
+   "commit_msg_uniformity_pct": 100,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "claude-usage",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2031,
+  "forks_count": 371,
+  "language": "Python",
+  "description": "A local dashboard for tracking your Claude Code token usage, costs, and session history. Pro and Max subscribers get a progress bar. This gives you the full picture.",
+  "topics": [
+   "claude-code"
+  ],
+  "size": 5721,
+  "created_at": "2026-04-07T18:49:32Z",
+  "pushed_at": "2026-07-10T10:08:48Z",
+  "open_issues": 5,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 19,
+  "contributors": 22,
+  "commit_count": 159,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', 'agents.md', 'changelog.md', 'claude.md', 'cli.py', 'dashboard.py', 'dockerfile', 'docs', 'formula', 'license', 'pyproject.toml', 'readme.md', 'scanner.py', 'scripts', 'tests', 'vscode-extension']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 18,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 8345,
+   "distinct_commit_days": 16,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 2,
+   "refactor_commits": 2,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 9,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 3,
+   "issue_responses": 24,
+   "dependency_updates": 1,
+   "docs_corrections": 3,
+   "ai_share_evidence": "Generation markers: heavy 'Co-Authored-By: Claude' trailers on maintainer commits and Claude Code mentions throughout; counter-evidence: 22 contributors with clean external PRs (#46 Homebrew, #134 pricing, #143 Docker, #148 topic column, #150/#151/#153 fixes), 19 releases over 3 months, regression tests added alongside external fixes.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/claude-usage",
+     "excerpt": "page-1.json: 2031 stars, 371 forks, 159 commits, 22 contributors, 19 releases, has_tests/has_ci/dependencies_declared true, created 2026-04-07, pushed 2026-07-10, 16 distinct commit days, commit_msg_uniformity 2%."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/claude-usage/commits",
+     "excerpt": "'release: v1.5.5 — daily Est. Cost line + This Month TZ fix (#151), CLI old-schema migrate (#153)' (2026-07-10); 'Merge PR #150: document --host/--port dashboard flags (thanks @subhamchbty)'; 'fix(cli): migrate old-schema DB on read so today/week/stats don't crash' (Ilia Alshanetsky, 2026-07-07); 'feat(docker): read-only claude mount with isolated writable DB volume' (Rafik Farhad, 2026-06-20); 'feat: add Homebrew formula and install docs (#46)' (Hayden Haines)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/claude-usage/tree/main",
+     "excerpt": "Root: cli.py (18,104 B), dashboard.py (116,314 B), scanner.py (35,062 B), pyproject.toml, Dockerfile, Formula/, vscode-extension/, tests/, scripts/, CHANGELOG.md (25,472 B), AGENTS.md (16,502 B)."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/claude-usage/blob/main/.github/workflows",
+     "excerpt": "workflows-listing.json: extension-ci.yml, tag-on-merge.yml, tests.yml — separate CI for the VS Code extension plus test and auto-tag pipelines."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/claude-usage#readme",
+     "excerpt": "'No third-party packages — uses only the standard library (sqlite3, http.server, json, pathlib)' and 'Not captured: Cowork sessions — these run server-side and do not write local JSONL transcripts.'"
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "DesktopCommanderMCP",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+  "topics": [],
+  "size": 70579,
+  "created_at": "2026-03-27T12:24:20Z",
+  "pushed_at": "2026-03-27T12:24:29Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "dynamic-workflows-experiment",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 5,
+  "language": "JavaScript",
+  "description": null,
+  "topics": [],
+  "size": 254,
+  "created_at": "2026-06-07T06:17:19Z",
+  "pushed_at": "2026-06-07T06:17:23Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 2,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'claude.md', 'example-workflows', 'ground-truth', 'interviews', 'outputs', 'prompts', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2733,
+   "distinct_commit_days": 1,
+   "commits_sampled": 2,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "examples",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 49,
+  "forks_count": 15,
+  "language": null,
+  "description": null,
+  "topics": [],
+  "size": 32,
+  "created_at": "2025-07-27T15:15:22Z",
+  "pushed_at": "2025-07-29T07:53:27Z",
+  "open_issues": 2,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 16,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['prompts', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 2,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 10,
+   "distinct_commit_days": 3,
+   "commits_sampled": 16,
+   "commit_msg_uniformity_pct": 56,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "experiments",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 1,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 6420,
+  "created_at": "2026-06-10T21:34:28Z",
+  "pushed_at": "2026-07-17T09:15:17Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 26,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', 'claude.md', 'fable-5-day-4', 'fable-5-effort-recheck', 'fable-5-speed-depth', 'five-models-three-harnesses', 'frontier-vs-open-audit', 'fugu-ultra-vs-frontier', 'kimi-k3-day-one', 'managed-vs-local-agents', 'readme.md', 'silicon-gambit-chess']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 12,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 6458,
+   "distinct_commit_days": 8,
+   "commits_sampled": 26,
+   "commit_msg_uniformity_pct": 4,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 12,
+   "readme_claims_code_backed": 11,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 5,
+   "ai_share_evidence": "Generation markers: most commits authored by 'Claude' with Co-Authored-By trailers; counter-evidence: a running record of self-corrections against its own published numbers ('correct fugu cost/run $1.48 -> $2.00', 'drop unverified causal claim', 'reroute check caveat - 146/147 fable rows'), anonymization enforced as code via a PostToolUse hook, and 8 distinct commit days across 6 weeks.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/experiments",
+     "excerpt": "page-1.json: 1 star, 26 commits, 3 contributors, created 2026-06-10, pushed 2026-07-17 (8 distinct commit days), no license field, no description, no tests/CI — a receipts repo, not a product."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/experiments/commits",
+     "excerpt": "'fable-5-day-4: full n=20 retest receipts (7 experiments, scripts + raw logs), anonymization as code' (2026-06-12); 'fugu-ultra-vs-frontier: correct fugu cost/run $1.48 -> $2.00' then 'root README row ~3x -> ~4x (match corrected $2.00/run)' (2026-06-24); 'fable-5-day-4 README: drop unverified causal claim (\"build is tuned daily\")' (2026-06-12); 'add kimi-k3-day-one set: 8-task scoreboard + day-one capacity experiment' (2026-07-17)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/experiments/tree/main",
+     "excerpt": "Root: 9 experiment-set dirs (kimi-k3-day-one, five-models-three-harnesses, fable-5-effort-recheck, fugu-ultra-vs-frontier, frontier-vs-open-audit, fable-5-day-4, fable-5-speed-depth, managed-vs-local-agents, silicon-gambit-chess) + .claude/ (anonymization hooks) — exactly matching the README's set table."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/experiments#readme",
+     "excerpt": "'When a post claims a number, the receipt lives here... each experiment ships the exact script, the unedited log, and a README with method, sample size, and caveats' and 'If a number in a post and a log disagree, the log wins.'"
+    }
+   ],
+   "evidence_conflicts": [
+    "README's License section says 'MIT. Use anything' but the metadata records license: null and the root listing contains no LICENSE file.",
+    "Per-set numeric findings (e.g. 'union 17/21 vs best-single 12', '~25x cost understatement') are claimed in the root README; the set folders exist but their scripts/logs are below snapshot depth, so the numbers are corroborated only by commit messages describing receipts."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "grok-build-vscode",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 80,
+  "forks_count": 19,
+  "language": "TypeScript",
+  "description": "The GUI for Grok Build CLI (incl. Grok 4.5), right in your IDE. An extension for VS Code, Cursor, and more.",
+  "topics": [
+   "cursor",
+   "grok-api",
+   "grok-build",
+   "spacexai",
+   "vscode",
+   "vscode-extension"
+  ],
+  "size": 13781,
+  "created_at": "2026-05-17T08:34:16Z",
+  "pushed_at": "2026-07-17T13:12:03Z",
+  "open_issues": 8,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 58,
+  "contributors": 6,
+  "commit_count": 158,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.github', '.gitignore', '.grok', '.vscode', '.vscode-test.mjs', '.vscodeignore', 'agents.md', 'changelog.md', 'claude.md', 'docs', 'integration', 'license', 'media', 'package-lock.json', 'package.json', 'readme.md', 'research', 'resources', 'scripts', 'src', 'test', 'tests.md', 'tsconfig.json', 'vitest.config.ts', 'vitest.perf.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 26,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 26960,
+   "distinct_commit_days": 27,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 2,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 12,
+   "readme_claims_code_backed": 11,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 3,
+   "issue_responses": 19,
+   "dependency_updates": 3,
+   "docs_corrections": 2,
+   "ai_share_evidence": "Generation markers: dominant 'Co-Authored-By: Claude' trailers, several commits authored by 'Claude', occasional Cursor mentions; counter-evidence: 27 distinct commit days over 2 months, 58 releases, external contributors (chenjie, Ming Ip), issue-driven fixes (#12-#49), a 26.6KB TESTS.md test taxonomy, and defensive engineering around a third-party CLI's regressions (#22 auto-pin/downgrade).",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/grok-build-vscode",
+     "excerpt": "page-1.json: 80 stars, 19 forks, 158 commits, 6 contributors, 58 releases, has_tests/has_ci true, created 2026-05-17, pushed 2026-07-17, 27 distinct commit days, commit_msg_uniformity 2%, 8 open issues."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/grok-build-vscode/commits",
+     "excerpt": "'Auto-pin broken Grok CLI 0.2.61-0.2.64 + block unsupported updates (#22) (v1.4.12)' (2026-06-25); 'Fix #33: improve model configuration error handling' (Ming Ip, 2026-07-09); 'fix(webview): widen inline-diff line-number gutter' (chenjie, 2026-07-14); 'Allow read-only command chains in plan mode (#36)'; 'docs(acp-feedback): source-verify every section against the open-sourced CLI' (2026-07-16); 'Release v1.7.0' (2026-07-17)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/grok-build-vscode/tree/main",
+     "excerpt": "Root: src/, test/, integration/, research/, docs/, media/, resources/, scripts/, TESTS.md (26,627 B), CLAUDE.md (86,751 B), package.json (13,263 B), vitest.config.ts + vitest.perf.config.ts, .vscode-test.mjs."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/grok-build-vscode/blob/main/.github/workflows",
+     "excerpt": "workflows-listing.json: ci.yml (866 B) — matches the README's 'npm test ... exactly what CI runs' grok-free suite claim."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/grok-build-vscode#readme",
+     "excerpt": "'Plan Mode is the one place the extension is not thin. The CLI's exit_plan_mode is unreliable (it reports \"approved\" to any reply), so the extension enforces planning itself' — plus a Known limits section and an unaffiliated-trademark disclaimer for xAI."
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "lll-chess-leaderboard",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 2684,
+  "created_at": "2025-12-02T13:01:14Z",
+  "pushed_at": "2026-02-19T15:31:19Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 356,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env', '.gitignore', 'apidoc.md', 'bun.lockb', 'components.json', 'eslint.config.js', 'index.html', 'n8n', 'package-lock.json', 'package.json', 'postcss.config.js', 'public', 'readme.md', 'src', 'supabase', 'tailwind.config.ts', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 20,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 4740,
+   "distinct_commit_days": 4,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 48,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 7,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 40,
+   "boilerplate_share_pct": 40,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": false,
+   "secrets_policy_ok": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 2,
+   "ai_share_evidence": "Generation markers: 100/100 sampled commits authored by gpt-engineer-app[bot] with 'Lovable' trailers, 48 of them the filler message 'Changes' (uniformity 48%); counter-evidence: iterative, purposeful refinement over multiple days (API-key guards added, endpoints protected, findings text repeatedly revised), a live deployed app at chess.productcompass.pm, and a README that honestly retracts its own 'Blindfold Paradox' finding.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard",
+     "excerpt": "page-1.json: 1 star, 356 commits, 2 contributors, dependencies_declared true, no tests/CI, no license, no description, created 2025-12-02, pushed 2026-02-19, only 4 distinct commit days in the sampled window."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard/commits",
+     "excerpt": "All 100 sampled commits authored 'gpt-engineer-app[bot]': 'Add api key guard to writes' (2025-12-12), 'Protect legal-moves endpoint' (2025-12-13), 'Add live games feature', 'Add avg valid moves column', plus 48 bare 'Changes' commits and 'Visual edit in Lovable'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard/tree/main",
+     "excerpt": "Root: src/, supabase/, n8n/, public/, APIdoc.md (6,836 B), package.json, tailwind.config.ts, components.json, vite.config.ts, bun.lockb — a Lovable-style Vite/TS/shadcn scaffold — and a committed .env file (350 B)."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard#readme",
+     "excerpt": "'Models play chess by outputting moves in Standard Algebraic Notation (SAN), and invalid moves result in automatic losses'; 'However, this pattern was not confirmed with additional testing—the effect was inconsistent across models and test runs.'"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard/commits",
+     "excerpt": "Security was iterated deliberately, not dumped: 'Add api key guard to writes' -> 'Protect legal-moves endpoint' -> 'Add api-key header docs' across 2025-12-12/13, and product features (live games, multi-select filters, replays) evolved over dozens of purposeful prompts."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard/tree/main",
+     "excerpt": "n8n/ ships the two benchmark workflows (blind_mode.json, FEN_mode.json per README) and APIdoc.md is a real 6.8KB API reference — the repo delivers the harness it describes, and it backs the author's separately published silicon-gambit-chess experiment set."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/lll-chess-leaderboard#readme",
+     "excerpt": "The Key Findings section retracts its own headline hypothesis ('the data doesn't strongly support it') and documents catastrophic forgetting and the scratchpad mitigation — original benchmark design and honest reporting, which is the substance of the repo."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The benchmark design (SAN-only output, invalid-move-equals-loss, blind vs FEN modes, scratchpad working-memory tool, points system) is original experimental work, regardless of who typed the React.",
+     "It is the live, deployed receipt-backing for the experiments repo's silicon-gambit-chess set (chess.productcompass.pm), i.e. a working artifact, not an abandoned scaffold.",
+     "Findings are reported with integrity — an appealing early result is explicitly walked back when retests failed to confirm it."
+    ],
+    "review_notes": "Negative reading rests on the 100% bot-authored Lovable history, filler commit messages, and a committed .env. Under fairness rules AI-assisted work is not slop; the app functions, iterates, and reports honestly. The committed .env is the one concrete hygiene defect, partially mitigated by the README masking the API key and instructing users to add their own keys manually."
+   },
+   "evidence_conflicts": [
+    "README documents API-key protection and masks the key ('x-api-key: *****', keys 'not included' in workflow files), yet the root listing shows a .env file (350 B) committed to the repo.",
+    "README's Technology Stack and n8n instructions imply a runnable system, but the README contains no install/run steps for the app itself (metadata: runnable_setup_documented false)."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "managed-agents-experiment",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 97,
+  "created_at": "2026-06-01T20:30:23Z",
+  "pushed_at": "2026-06-01T22:23:57Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 5,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env.example', '.gitignore', 'anthropic-local', 'claude.md', 'data', 'findings.md', 'license', 'outputs', 'readme.md', 'requirements.txt', 'scripts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 11,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 6784,
+   "distinct_commit_days": 1,
+   "commits_sampled": 5,
+   "commit_msg_uniformity_pct": 20,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "moltbot-sandbox",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 582,
+  "created_at": "2026-02-01T11:04:16Z",
+  "pushed_at": "2026-02-01T11:04:29Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 0,
+  "commit_count": 1,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.dev.vars.example', '.gitignore', 'agents.md', 'assets', 'dockerfile', 'index.html', 'moltbot.json.template', 'package-lock.json', 'package.json', 'public', 'readme.md', 'skills', 'src', 'start-moltbot.sh', 'tsconfig.json', 'vite.config.ts', 'vitest.config.ts', 'wrangler.jsonc']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 18,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 17216,
+   "distinct_commit_days": 1,
+   "commits_sampled": 1,
+   "commit_msg_uniformity_pct": 100,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "n8n",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "topics": [],
+  "size": 204125,
+  "created_at": "2025-03-28T10:11:33Z",
+  "pushed_at": "2025-03-28T09:25:18Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "phuryn",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 2,
+  "language": null,
+  "description": "About phuryn",
+  "topics": [],
+  "size": 13,
+  "created_at": "2026-03-06T10:55:29Z",
+  "pushed_at": "2026-05-28T18:28:15Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 6,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 1,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 5326,
+   "distinct_commit_days": 4,
+   "commits_sampled": 6,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "pm-brain",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 493,
+  "forks_count": 102,
+  "language": "Python",
+  "description": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
+  "topics": [
+   "claude-code",
+   "second-brain"
+  ],
+  "size": 697,
+  "created_at": "2026-05-17T07:07:46Z",
+  "pushed_at": "2026-05-20T18:26:38Z",
+  "open_issues": 3,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 13,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude', '.gitignore', 'agents.md', 'claude.md', 'docs', 'example-brain', 'license', 'readme.md', 'tests']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 9,
+   "ci_runs": false,
+   "test_files": 1,
+   "readme_length": 11947,
+   "distinct_commit_days": 4,
+   "commits_sampled": 13,
+   "commit_msg_uniformity_pct": 8,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 5,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 2,
+   "ai_share_evidence": "Generation markers: commits co-authored 'Claude Opus 4.7'; the copywriter-pass commit details AI-assisted doc editing; counter-evidence: an eval-first build (17 scenarios, harness hardening, judge-retry logic committed before launch), residual failures disclosed rather than hidden, and a docs correction fixing its own stale scenario count.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/pm-brain",
+     "excerpt": "page-1.json: 493 stars, 102 forks, 13 commits, 1 contributor, has_tests true, has_ci false, created 2026-05-17, pushed 2026-05-20; description 'PM Brain OS: The Second Brain for Product Managers, Made of Markdown'."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/pm-brain/commits",
+     "excerpt": "'initial: PM Brain skill + scaffold + eval suite' (2026-05-17); 'tests: add 3 commands-coverage scenarios + 8 lifecycle scenarios; harness hardening' (2026-05-17); 'harness: retry judge invocations on subprocess flakes (3x w/ backoff)' (2026-05-18); 'docs: commit Opus comparison snapshots and lead README with 404/406 aggregate' (2026-05-18); 'docs: fix stale scenario count in 14-install-greenfield README (13 -> 16)' (2026-05-19); 'v1.0.0' (2026-05-20)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/pm-brain/tree/main",
+     "excerpt": "Root: .claude/ (skill), example-brain/, tests/, docs/, CLAUDE.md (7,869 B), AGENTS.md, LICENSE — exactly the four-part layout the README's 'What's in the repo' section describes."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/pm-brain#readme",
+     "excerpt": "'404 of 406 individual checks pass across the snapshots (approx. 99.5%) ... two judges missing on the two longest scenarios' and 'Research preview. ... the product as installed by real PMs in real organizations is days old.'"
+    }
+   ],
+   "evidence_conflicts": [
+    "The 404/406 test badge and scenario claims point at tests/RESULTS.md, which is referenced by commits ('lead README with 404/406 aggregate') but whose contents are not in the snapshot — the number is corroborated at commit level, not re-derivable."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "pm-skills",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 23899,
+  "forks_count": 2431,
+  "language": null,
+  "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+  "topics": [
+   "agent-skill-repository",
+   "agent-skills",
+   "agentic-skills",
+   "claude-code-marketplace",
+   "claude-code-plugins",
+   "claude-cowork-plugin",
+   "product-management"
+  ],
+  "size": 22736,
+  "created_at": "2026-03-01T23:33:44Z",
+  "pushed_at": "2026-07-03T11:34:49Z",
+  "open_issues": 36,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 2,
+  "contributors": 3,
+  "commit_count": 62,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.claude-plugin', '.docs', '.gitattributes', '.github', '.gitignore', 'agents.md', 'changelog.md', 'claude.md', 'contributing.md', 'license', 'pm-ai-shipping', 'pm-data-analytics', 'pm-execution', 'pm-go-to-market', 'pm-market-research', 'pm-marketing-growth', 'pm-product-discovery', 'pm-product-strategy', 'pm-toolkit', 'readme.md', 'tests', 'validate_plugins.py']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 22,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 27350,
+   "distinct_commit_days": 16,
+   "commits_sampled": 62,
+   "commit_msg_uniformity_pct": 21,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 9,
+   "readme_claims_code_backed": 8,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 3,
+   "dependency_updates": 0,
+   "docs_corrections": 4,
+   "ai_share_evidence": "Generation markers: multiple commits carry 'Co-Authored-By: Claude' / claude.ai/code trailers (e.g. 'Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits', 2026-07-03); counter-evidence: 4 months of incremental human edits (typo/link/image fixes on 2026-03-02..03-04), a merged external contributor PR (#6, Fahri Meral), and curation explicitly credited to named PM literature.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/pm-skills",
+     "excerpt": "page-1.json: 23899 stars, 2431 forks, 62 commits, 3 contributors, 2 releases, has_ci true, created 2026-03-01, pushed 2026-07-03; description 'PM Skills Marketplace: 100+ agentic skills, commands, and plugins'; topics include claude-code-marketplace, claude-cowork-plugin, product-management."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/pm-skills/commits",
+     "excerpt": "'Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits + CHANGELOG-driven release automation' (2026-07-03); 'Release v2.0.0: add pm-ai-shipping plugin, red-team execution skill' (2026-06-05); 'Merge pull request #6 from fahrim/feature/opencode-integration' (2026-03-09); 'Fix UnicodeEncodeError on Windows in validate_plugins.py' (2026-03-05); 'v1.0' + 'Initial commit' (2026-03-01)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/pm-skills/tree/main",
+     "excerpt": "Root: 9 plugin dirs (pm-ai-shipping, pm-data-analytics, pm-execution, pm-go-to-market, pm-market-research, pm-marketing-growth, pm-product-discovery, pm-product-strategy, pm-toolkit) + .claude-plugin/, tests/, validate_plugins.py (17,908 B), CONTRIBUTING.md, CHANGELOG.md, CLAUDE.md, AGENTS.md."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/pm-skills/blob/main/.github/workflows",
+     "excerpt": "workflows-listing.json: tests.yml (570 B) and tag-on-merge.yml (7,136 B) — a test gate plus CHANGELOG-driven release-tag automation."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/pm-skills#readme",
+     "excerpt": "'68 PM skills and 42 chained workflows across 9 plugins. Claude Code, Cowork, and more.' Per-plugin skill lists in the README sum to exactly 68 skills and 42 commands, matching the 9 plugin dirs in the root listing."
+    }
+   ],
+   "evidence_conflicts": [
+    "Repo description says '100+ agentic skills, commands, and plugins' while the README header says '68 PM skills and 42 chained workflows across 9 plugins' — arithmetically consistent only when skills+commands+plugins are summed (68+42+9=119).",
+    "README claims skills 'work with any tool that reads' the universal SKILL.md format (Gemini CLI, OpenCode, Cursor, Kiro) — cross-tool behavior is not verifiable from the saved snapshot."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "product-compass-testimonials",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 1,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 933,
+  "created_at": "2025-01-14T01:53:42Z",
+  "pushed_at": "2025-01-20T08:41:26Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 303,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env', '.gitignore', 'bun.lockb', 'components.json', 'eslint.config.js', 'index.html', 'installation', 'package-lock.json', 'package.json', 'postcss.config.js', 'public', 'readme.md', 'src', 'supabase', 'tailwind.config.ts', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 19,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2159,
+   "distinct_commit_days": 6,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 5,
+   "refactor_commits": 1,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "recipe-chatbot",
+  "fork": true,
+  "archived": true,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 726,
+  "created_at": "2025-05-26T16:48:57Z",
+  "pushed_at": "2025-05-26T17:54:16Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "saas-boilerplate-lovable",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 3089,
+  "created_at": "2025-05-06T20:33:08Z",
+  "pushed_at": "2025-05-17T10:08:09Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 353,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'bun.lockb', 'components.json', 'eslint.config.js', 'index.html', 'package-lock.json', 'package.json', 'postcss.config.js', 'public', 'readme.md', 'src', 'supabase', 'tailwind.config.ts', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 17,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2149,
+   "distinct_commit_days": 2,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 6,
+   "refactor_commits": 14,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "skills",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "description": "Public repository for Agent Skills",
+  "topics": [],
+  "size": 3582,
+  "created_at": "2026-04-23T11:18:21Z",
+  "pushed_at": "2026-04-20T21:38:18Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "swarm-protocol",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 49,
+  "forks_count": 8,
+  "language": "TypeScript",
+  "description": "Coordination protocol for agent-first teams. No UI. No sprints. No Jira. Just state sync.",
+  "topics": [
+   "agent-coordination",
+   "ai-coding",
+   "claude-code",
+   "codex",
+   "cursor",
+   "vibe-coding"
+  ],
+  "size": 2559,
+  "created_at": "2026-03-13T14:25:07Z",
+  "pushed_at": "2026-03-15T08:43:51Z",
+  "open_issues": 5,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 18,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'claude-md', 'claude.md', 'contributing.md', 'docker-compose.yml', 'docs', 'examples', 'license', 'package-lock.json', 'package.json', 'readme.md', 'src', 'tests', 'tsconfig.json', 'vitest.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 16,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 9989,
+   "distinct_commit_days": 3,
+   "commits_sampled": 18,
+   "commit_msg_uniformity_pct": 11,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 3,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "Generation markers: external contributor Greg Jackson's commits carry 'Co-Authored-By: Claude'; maintainer commits are plain; counter-evidence: TDD-shaped external PRs ('test: add failing tests for db.getBoard' before 'feat: implement getBoard'), CI test workflow, and docs updated to track Anthropic's shipping ('Updated docs to account for what Anthropic just shipped').",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/phuryn/swarm-protocol",
+     "excerpt": "page-1.json: 49 stars, 8 forks, 18 commits, 2 contributors, has_tests/has_ci/dependencies_declared true, created 2026-03-13, pushed 2026-03-15 (3 distinct commit days, then dormant); topics: agent-coordination, claude-code, codex, cursor."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/phuryn/swarm-protocol/commits",
+     "excerpt": "'Initialize the repository with tests' (2026-03-13); 'Merge pull request #2 from gregario/test/get-signals-since-filter'; 'fix: improve error messages in claimWork and heartbeat' (Greg Jackson, 2026-03-13); 'test: add failing tests for db.getBoard' then 'feat: implement getBoard query function' (2026-03-14); 'Merge pull request #7 from gregario/feat/get-board-tool' (2026-03-15)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/phuryn/swarm-protocol/tree/main",
+     "excerpt": "Root: src/, tests/, docs/, examples/, claude-md/ (the drop-in COORDINATION.md), docker-compose.yml, package.json, vitest.config.ts, CONTRIBUTING.md."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/phuryn/swarm-protocol/blob/main/.github/workflows",
+     "excerpt": "workflows-listing.json: test.yml (858 B), matching the README's Tests badge."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/phuryn/swarm-protocol#readme",
+     "excerpt": "'Status: Alpha — building in public. 19 MCP tools implemented, integration tests passing.' Design decisions: 'Conflicts are advisory, not enforced... Auth is trust-based in v1... Polling via MCP tools, no WebSocket subscriptions.'"
+    }
+   ],
+   "evidence_conflicts": [
+    "README's 'Looking for Co-Builders' pitch implies an ongoing project, but metadata shows the last push on 2026-03-15 — two days after creation — with 5 open issues; activity did not continue past the launch window."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "system-prompts-and-models-of-ai-tools",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "description": "FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent & Windsurf Agent System Prompts, Tools & AI Models.",
+  "topics": [],
+  "size": 229,
+  "created_at": "2025-04-21T13:00:27Z",
+  "pushed_at": "2025-04-21T11:49:10Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "trace-insight-charts-view",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "description": null,
+  "topics": [],
+  "size": 345,
+  "created_at": "2025-04-30T09:54:32Z",
+  "pushed_at": "2025-09-06T15:14:44Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 42,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env', '.gitignore', 'bun.lockb', 'components.json', 'eslint.config.js', 'index.html', 'package-lock.json', 'package.json', 'postcss.config.js', 'public', 'readme.md', 'src', 'supabase', 'tailwind.config.ts', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'vite.config.ts']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 18,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2149,
+   "distinct_commit_days": 3,
+   "commits_sampled": 42,
+   "commit_msg_uniformity_pct": 7,
+   "refactor_commits": 2,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ }
+]

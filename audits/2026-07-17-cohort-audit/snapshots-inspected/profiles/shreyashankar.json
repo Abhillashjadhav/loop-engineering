@@ -1,0 +1,31 @@
+{
+ "login": "shreyashankar",
+ "name": "Shreya Shankar",
+ "company": null,
+ "blog": "sh-reya.com",
+ "twitter": "sh_reya",
+ "location": "Berkeley, CA",
+ "bio": "incoming prof at CMU CSD; prev CS PhD student at UC Berkeley EECS",
+ "followers": 1921,
+ "public_repos": 72,
+ "evidence_links": [
+  {
+   "origin": "github_profile",
+   "url": "https://github.com/shreyashankar",
+   "excerpt": "profile: Shreya Shankar, sh-reya.com",
+   "retrieved_at": "2026-07-17T13:30:33.594315+00:00"
+  },
+  {
+   "origin": "external_site",
+   "url": "https://www.sh-reya.com/SS_CV.pdf",
+   "excerpt": "Subject's own site CV ('Shreya Shankar shreyashankar@berkeley.edu | sh-reya.com') and site footer link her GitHub profile — person->login; identity-evidence.md",
+   "retrieved_at": "2026-07-17T03:50:00+00:00"
+  },
+  {
+   "origin": "social_media",
+   "url": "https://x.com/sh_reya/status/1838617845246366131",
+   "excerpt": "Subject's own X account @sh_reya (linked from sh-reya.com) promotes her GitHub work ('star our Github repo!') — person->login; identity-evidence.md",
+   "retrieved_at": "2026-07-17T03:50:00+00:00"
+  }
+ ]
+}

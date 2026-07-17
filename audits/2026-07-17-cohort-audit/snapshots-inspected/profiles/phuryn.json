@@ -1,0 +1,25 @@
+{
+ "login": "phuryn",
+ "name": "Pawel Huryn",
+ "company": "The Product Compass Newsleller ",
+ "blog": "https://www.productcompass.pm/",
+ "twitter": "PawelHuryn",
+ "location": null,
+ "bio": "AI PM Coach, ex-CPO, Builder | 400K+ Follow",
+ "followers": 996,
+ "public_repos": 31,
+ "evidence_links": [
+  {
+   "origin": "github_profile",
+   "url": "https://github.com/phuryn",
+   "excerpt": "profile: Pawel Huryn, https://www.productcompass.pm/",
+   "retrieved_at": "2026-07-17T13:13:04.287085+00:00"
+  },
+  {
+   "origin": "external_site",
+   "url": "https://www.productcompass.pm/p/pm-skills-2-red-team-ship",
+   "excerpt": "Subject's own newsletter domain (productcompass.pm, 'The Product Compass | Pawel Huryn') publishes posts presenting github.com/phuryn/pm-skills and pm-brain as his work — person->login; identity-evidence.md",
+   "retrieved_at": "2026-07-17T03:50:00+00:00"
+  }
+ ]
+}

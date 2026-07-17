@@ -1,0 +1,25 @@
+{
+ "login": "eugeneyan",
+ "name": "Eugene Yan",
+ "company": "@anthropics",
+ "blog": "eugeneyan.com",
+ "twitter": "eugeneyan",
+ "location": "Seattle",
+ "bio": null,
+ "followers": 5116,
+ "public_repos": 80,
+ "evidence_links": [
+  {
+   "origin": "github_profile",
+   "url": "https://github.com/eugeneyan",
+   "excerpt": "profile: Eugene Yan, eugeneyan.com",
+   "retrieved_at": "2026-07-17T13:27:28.656332+00:00"
+  },
+  {
+   "origin": "external_site",
+   "url": "https://eugeneyan.com/writing/obsidian-copilot/",
+   "excerpt": "Subject's own site eugeneyan.com links github.com/eugeneyan repos as his projects (obsidian-copilot, testing-ml, news-agents, /prototyping/) — person->login; identity-evidence.md",
+   "retrieved_at": "2026-07-17T03:50:00+00:00"
+  }
+ ]
+}

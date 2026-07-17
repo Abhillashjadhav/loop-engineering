@@ -1,0 +1,19 @@
+{
+ "login": "Abhillashjadhav",
+ "name": "Abhillash Jadhav",
+ "company": "Amazon",
+ "blog": "",
+ "twitter": null,
+ "location": null,
+ "bio": "GenAI Product Manager building AI agents, developer tools, and scalable platforms that turn LLM capability into real product value.",
+ "followers": 0,
+ "public_repos": 32,
+ "evidence_links": [
+  {
+   "origin": "github_profile",
+   "url": "https://github.com/Abhillashjadhav",
+   "excerpt": "profile: Abhillash Jadhav, ",
+   "retrieved_at": "2026-07-17T13:11:16.634261+00:00"
+  }
+ ]
+}

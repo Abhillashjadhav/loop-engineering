@@ -1,0 +1,3560 @@
+[
+ {
+  "name": "aci",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 1,
+  "language": null,
+  "size": 16197,
+  "created_at": "2025-05-03T02:26:31Z",
+  "pushed_at": "2025-05-03T00:51:07Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "activepieces",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 4,
+  "language": null,
+  "size": 331070,
+  "created_at": "2025-09-05T00:33:12Z",
+  "pushed_at": "2025-09-05T00:21:12Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "adk-docs",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 1,
+  "language": null,
+  "size": 38629,
+  "created_at": "2025-07-14T00:06:13Z",
+  "pushed_at": "2025-09-24T19:15:47Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "adk-java-maven-template",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 2,
+  "language": null,
+  "size": 439,
+  "created_at": "2025-10-22T18:05:44Z",
+  "pushed_at": "2025-10-12T12:17:39Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "adk-python",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 47,
+  "forks_count": 9,
+  "language": null,
+  "size": 29149,
+  "created_at": "2025-09-21T00:40:48Z",
+  "pushed_at": "2025-10-30T17:58:08Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "adk-samples",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 2,
+  "language": null,
+  "size": 20541,
+  "created_at": "2025-09-21T00:39:52Z",
+  "pushed_at": "2025-09-19T21:23:26Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ag-ui",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 67,
+  "created_at": "2025-05-13T22:46:52Z",
+  "pushed_at": "2025-05-13T19:35:43Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agent-file",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "size": 34485,
+  "created_at": "2025-06-12T01:42:34Z",
+  "pushed_at": "2025-05-24T00:56:15Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agent-lightning",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 5,
+  "language": null,
+  "size": 15091,
+  "created_at": "2025-10-26T01:38:14Z",
+  "pushed_at": "2025-10-26T01:17:37Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agent-starter-pack",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 24,
+  "forks_count": 10,
+  "language": null,
+  "size": 31423,
+  "created_at": "2025-12-01T01:45:48Z",
+  "pushed_at": "2025-11-30T15:23:17Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agenta",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 0,
+  "language": null,
+  "size": 162230,
+  "created_at": "2024-12-21T00:43:45Z",
+  "pushed_at": "2024-12-20T17:22:12Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Agentarium",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "size": 95,
+  "created_at": "2025-01-07T02:01:25Z",
+  "pushed_at": "2025-01-04T11:32:23Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agentic-stack",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 0,
+  "language": null,
+  "size": 5204,
+  "created_at": "2026-04-21T02:32:17Z",
+  "pushed_at": "2026-04-20T08:50:18Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agenticSeek",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 5,
+  "language": null,
+  "size": 23729,
+  "created_at": "2025-05-05T16:31:49Z",
+  "pushed_at": "2025-05-05T16:29:48Z",
+  "open_issues": 0,
+  "license": "GPL-3.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agents-cli",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 0,
+  "language": null,
+  "size": 9644,
+  "created_at": "2026-04-23T02:43:14Z",
+  "pushed_at": "2026-04-22T22:11:50Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agents-towards-production",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 2,
+  "language": null,
+  "size": 73651,
+  "created_at": "2025-08-14T18:54:56Z",
+  "pushed_at": "2025-08-08T00:24:47Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agentscope",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 1,
+  "language": null,
+  "size": 320637,
+  "created_at": "2025-09-12T20:06:45Z",
+  "pushed_at": "2025-09-12T04:37:27Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agentskills",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 0,
+  "created_at": "2026-03-17T21:15:58Z",
+  "pushed_at": "2026-03-17T21:15:58Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agisdk",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 1,
+  "language": null,
+  "size": 6639,
+  "created_at": "2025-04-19T22:13:33Z",
+  "pushed_at": "2025-04-19T19:08:48Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "agno",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 1,
+  "language": null,
+  "size": 200478,
+  "created_at": "2025-03-28T17:30:15Z",
+  "pushed_at": "2025-03-28T17:19:46Z",
+  "open_issues": 0,
+  "license": "MPL-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ai-breakup-recovery-agent",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 15,
+  "forks_count": 3,
+  "language": "TypeScript",
+  "size": 295,
+  "created_at": "2025-04-11T04:38:54Z",
+  "pushed_at": "2025-04-13T18:48:33Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 21,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'backend', 'client', 'package-lock.json', 'package.json', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 6,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2940,
+   "distinct_commit_days": 3,
+   "commits_sampled": 21,
+   "commit_msg_uniformity_pct": 5,
+   "refactor_commits": 8,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 5,
+   "original_logic_notes": 2,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 60,
+   "boilerplate_share_pct": 70,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": false,
+   "secrets_policy_ok": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 2,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "15 of 21 commits authored by gpt-engineer-app[bot]/lovable-dev[bot] (Lovable app builder, 'Use tech stack vite_react_shadcn_ts'); counter-evidence: human contributor priyanshm07 added the FastAPI backend across PRs #1-#2 and the owner merged PRs and hand-edited the README.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent",
+     "excerpt": "Metadata: TypeScript, 15 stars, 3 forks, 21 commits by 3 contributors over 3 distinct days (created 2025-04-11, pushed 2025-04-13), no CI, no tests, deps declared."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/commits",
+     "excerpt": "2025-04-11 gpt-engineer-app[bot] 'Use tech stack vite_react_shadcn_ts' ... 'Refactor: Integrate OpenAI GPT-4o API calls' ... 'Refactor: Integrate Gemini API calls'; 2025-04-12 priyanshm07 'feature : backend api integrated(fastapi)'; 2025-04-12 'Merge pull request #2 ... fix : folder structure updated'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/tree/main",
+     "excerpt": "Root entries: .gitignore, README.md, backend/, client/, package-lock.json, package.json — full-stack layout matching the claimed FastAPI backend + React frontend."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent#readme",
+     "excerpt": "'Multi-Agent Team: Therapist Agent... Closure Agent... Routine Planner Agent... Brutal Honesty Agent'; 'Backend: FastAPI with Python; Frontend: Vite + React + TypeScript + Shadcn UI; AI Models: Gemini 2.0 Flash'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/commits",
+     "excerpt": "Real human iteration after the bot scaffold: priyanshm07 'feature : backend api integrated(fastapi)', 'fix : UI fixed', 'fix : folder structure updated' — the FastAPI backend claimed in the README was hand-built by a contributor, not generated."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent/tree/main",
+     "excerpt": "backend/ and client/ directories exist as separate trees, corroborating the claimed architecture beyond the Lovable scaffold."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/ai-breakup-recovery-agent#readme",
+     "excerpt": "README documents a concrete API surface ('Endpoint: POST /analyze/ — Accepts user input and optional images ... Returns structured emotional analysis') and links a working demo video."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The FastAPI backend was human-written by a named contributor across two reviewed-and-merged PRs, so the repo is more than a one-shot AI dump.",
+     "Root listing matches the claimed full-stack architecture (backend/ + client/), and a demo video is linked.",
+     "The multi-agent product concept (therapist/closure/routine/brutal-honesty team) is an original product idea, and AI-assisted work is not slop under the fairness rules."
+    ],
+    "review_notes": "The negative reading (unattributed AI scaffold, broken setup path) is tempered by genuine human backend work, merged contributor PRs, and a coherent product design. Scored as an AI-assisted prototype with real follow-through, not mass-generated filler."
+   },
+   "evidence_conflicts": [
+    "README clone command points at 'break-up-recovery-squad-ai' but the repo is 'ai-breakup-recovery-agent'; setup as written does not clone this repo.",
+    "README install steps reference a 'frontend' directory; root listing shows 'client' instead.",
+    "README states the app 'uses Gemini 2.0 Flash' while bot commits alternate between 'Integrate OpenAI GPT-4o API calls' and 'Integrate Gemini API calls'; final model wiring is not observable from the snapshot."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "ai-hedge-fund",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 5,
+  "language": null,
+  "size": 1777,
+  "created_at": "2025-06-27T23:31:02Z",
+  "pushed_at": "2025-06-27T18:55:18Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ai-linkedin-post-scanner",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 5,
+  "language": "Python",
+  "size": 565,
+  "created_at": "2022-10-15T15:42:05Z",
+  "pushed_at": "2022-10-17T05:40:54Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 5,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['app.py', 'cover.png', 'readme.md', 'requirements.txt']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 4,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 1542,
+   "distinct_commit_days": 2,
+   "commits_sampled": 5,
+   "commit_msg_uniformity_pct": 40,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 2,
+   "readme_claims_code_backed": 1,
+   "original_logic_notes": 0,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 80,
+   "boilerplate_share_pct": 70,
+   "explanation_quality": 1,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 2,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No AI-generation markers: 2022 repo (pre-agent tooling), commits are manual web-UI edits ('Add files via upload', 'Update app.py'); README is human blog-teaser prose tied to a published Towards AI article.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner",
+     "excerpt": "Metadata: Python, 9 stars, 5 forks, 5 commits by 1 contributor over 2 distinct days (created 2022-10-15, pushed 2022-10-17), no CI, no tests, deps declared, runnable setup not documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/commits",
+     "excerpt": "2022-10-15 'Initial commit', 'Add files via upload', 'Update README.md'; 2022-10-17 'Update README.md', 'Update app.py' — a two-day drop with no later maintenance."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/tree/main",
+     "excerpt": "Root entries: README.md, app.py (4143 bytes), cover.png, requirements.txt — a single-script repo with no install or usage docs."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner#readme",
+     "excerpt": "'Scan LinkedIn posts to analyze Emotions, Sentiments, and Trends using AI ... with just a few lines of Python code' ... 'Read the full article here!' (towardsai.net link); no setup or usage instructions in the README itself."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/tree/main",
+     "excerpt": "app.py is a real 4.1KB code artifact plus requirements.txt — the promised analysis code exists in the repo, not just in the article."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner#readme",
+     "excerpt": "The repo is explicitly a companion to a published tutorial article ('Read the full article here!'), so the how-to content deliberately lives in the article rather than the README."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/ai-linkedin-post-scanner/commits",
+     "excerpt": "'Update app.py' two days after upload shows a follow-up code fix rather than a pure fire-and-forget dump."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The deliverable (app.py + requirements.txt) actually exists and matches the article-companion purpose.",
+     "Blog-companion repos are simple content by design; under the fairness rules tutorials and simple content are not slop.",
+     "A code follow-up edit exists after the initial upload."
+    ],
+    "review_notes": "The heavy template similarity is with the owner's other article-companion repos, which is normal for a tutorial series. The main genuine weakness is that the README makes capability claims (emotions/sentiments/trends analysis) that can only be partially verified from the listing since neither README nor snapshot shows app.py content or setup steps."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "aisheets",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "size": 1484,
+  "created_at": "2025-08-14T18:26:33Z",
+  "pushed_at": "2025-08-14T15:22:04Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "all-rag-techniques",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 142,
+  "forks_count": 53,
+  "language": null,
+  "size": 1987,
+  "created_at": "2025-06-13T01:19:40Z",
+  "pushed_at": "2025-06-10T10:35:34Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "antfarm",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 15,
+  "forks_count": 5,
+  "language": null,
+  "size": 9808,
+  "created_at": "2026-02-11T02:18:59Z",
+  "pushed_at": "2026-02-11T00:50:48Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "any-agent",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "size": 1139,
+  "created_at": "2025-04-15T01:14:39Z",
+  "pushed_at": "2025-04-14T17:25:46Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "any-llm",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 1310,
+  "created_at": "2025-07-24T16:59:40Z",
+  "pushed_at": "2025-07-24T10:47:44Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "AP2",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 1,
+  "language": null,
+  "size": 1746,
+  "created_at": "2025-09-16T18:46:30Z",
+  "pushed_at": "2025-09-16T16:34:01Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ApeRAG",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 1,
+  "language": null,
+  "size": 39727,
+  "created_at": "2025-09-17T01:03:24Z",
+  "pushed_at": "2025-09-15T10:29:27Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "arcade-ai",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": null,
+  "size": 5624,
+  "created_at": "2025-09-20T00:16:39Z",
+  "pushed_at": "2025-09-19T21:28:32Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "assimilate-openai",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "size": 10,
+  "created_at": "2022-09-04T08:44:43Z",
+  "pushed_at": "2022-09-04T16:13:54Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "async-server",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": null,
+  "size": 16440,
+  "created_at": "2025-08-29T22:28:21Z",
+  "pushed_at": "2025-08-25T03:37:59Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "AutoAgent",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 3,
+  "language": null,
+  "size": 168415,
+  "created_at": "2025-02-26T21:24:46Z",
+  "pushed_at": "2025-02-25T11:35:13Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "awesome-ai-agent-prompts",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 13,
+  "forks_count": 3,
+  "language": null,
+  "size": 1,
+  "created_at": "2025-08-13T15:35:16Z",
+  "pushed_at": "2025-08-13T15:35:16Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 1,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['license']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 1,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 1,
+   "commits_sampled": 1,
+   "commit_msg_uniformity_pct": 100,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "original_logic_notes": 0,
+   "explanation_quality": 0,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No content to assess for generation markers either way: the repo consists of a single 'Initial commit' (2025-08-13) that added only an MIT LICENSE; there is no README, code, or prompt content.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts",
+     "excerpt": "Metadata: no language detected, 13 stars, 3 forks, 1 commit by 1 contributor on 1 day (created and last pushed 2025-08-13), MIT license, readme_length 0, no CI, no tests, no deps."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts/commits",
+     "excerpt": "Entire history is one commit: 2025-08-13T15:35:16Z Shubham Saboo 'Initial commit'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts/tree/main",
+     "excerpt": "Root contains exactly one entry: LICENSE (1070 bytes). No README, no prompts, no directories."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts#readme",
+     "excerpt": "No README exists, therefore the repo itself makes zero claims — there is nothing overstated or fabricated in the artifact; the only promise is implied by the repo name."
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts",
+     "excerpt": "Modest visibility (13 stars) and no releases or promotion signals in the metadata; it reads as a reserved placeholder rather than a promoted empty shell."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/awesome-ai-agent-prompts/tree/main",
+     "excerpt": "The single artifact committed is an MIT LICENSE, consistent with GitHub's repo-initialization flow for a project intended to be filled in later."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "With no README, the repo asserts nothing, so there are no unbacked claims — only an evocative name.",
+     "The state is consistent with an unstarted placeholder created via GitHub's 'Initial commit' license flow, not with a generated content dump."
+    ],
+    "review_notes": "Negative reading is 'name-squatting an awesome-* title with zero content'; the fairest characterization is an empty placeholder that gathered 13 stars presumably off the owner's reputation. No content exists to classify as original, template, or AI-generated."
+   },
+   "evidence_conflicts": [
+    "The repo name promises a prompt collection ('awesome-ai-agent-prompts') but the file listing shows only a LICENSE; the name and contents disagree."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "awesome-ai-apps",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 5,
+  "language": null,
+  "size": 210826,
+  "created_at": "2025-09-07T06:47:51Z",
+  "pushed_at": "2025-07-29T10:34:31Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Awesome-LLM",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 19,
+  "forks_count": 1,
+  "language": null,
+  "size": 14440,
+  "created_at": "2025-01-22T00:49:28Z",
+  "pushed_at": "2025-01-13T13:58:51Z",
+  "open_issues": 0,
+  "license": "CC0-1.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "awesome-llm-apps",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 122625,
+  "forks_count": 18092,
+  "language": "Python",
+  "size": 214229,
+  "created_at": "2024-04-29T05:30:25Z",
+  "pushed_at": "2026-07-14T06:23:01Z",
+  "open_issues": 29,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 86,
+  "commit_count": 1080,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', '.gitignore', 'advanced_ai_agents', 'advanced_llm_apps', 'agent_skills', 'ai_agent_framework_crash_course', 'always_on_agents', 'docs', 'generative_ui_agents', 'license', 'mcp_ai_agents', 'rag_tutorials', 'readme.md', 'starter_ai_agents', 'voice_ai_agents']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 15,
+   "ci_runs": true,
+   "test_files": 0,
+   "readme_length": 22157,
+   "distinct_commit_days": 20,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 1,
+   "refactor_commits": 2,
+   "one_shot_dump": false,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 8,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 20,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 16,
+   "dependency_updates": 2,
+   "docs_corrections": 5,
+   "ai_share_evidence": "Generation markers: many recent commits authored by 'ci' and one by 'Claude' ('Upgrade travel planner agent team to agno 2.x (CVE-2026-35002)'), plus branch names like 'codex/...' and 'claude/...' indicating agent-assisted authoring; counter-evidence: 86 contributors, 16 PR merges in the last 100 commits including external human contributors (GeneralJerel, Ming Chen, TechTide AI), and fixes derived from 'a live self-run'.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+     "excerpt": "Metadata: Python, 122625 stars, 18092 forks, 1080 commits by 86 contributors, 29 open issues, CI enabled, Apache-2.0 license, created 2024-04-29, last pushed 2026-07-14, runnable setup documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/commits",
+     "excerpt": "Sustained curation and maintenance: 2026-07-08 'ci: three named checks per skills PR — evals, lint, security scan'; 2026-06-13 'fix: update broken relative links across crash courses and agents'; 2026-05-21 merge of external PR #820 'fix: guard against empty choices and None message in DeepSeek API responses'; 2026-05-03 'Upgrade travel planner agent team to agno 2.x (CVE-2026-35002)'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main",
+     "excerpt": "Root directories match every advertised category: advanced_ai_agents, advanced_llm_apps, agent_skills, ai_agent_framework_crash_course, always_on_agents, generative_ui_agents, mcp_ai_agents, rag_tutorials, starter_ai_agents, voice_ai_agents, plus LICENSE (11357 bytes, Apache-2 size) and docs/."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/.github/workflows",
+     "excerpt": "workflows-listing.json shows claude.yml (1087 bytes) and skill-evals.yml (2168 bytes) — corroborates the README claim that skills pass 'a security + eval CI gate'."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps#readme",
+     "excerpt": "'100+ open-source AI agents, agent skills, and RAG apps. Hand-built, tested end-to-end, Apache-2.0.' ... 'Every skill ships real code and passes a security + eval CI gate.' README lists ~100 concrete app entries with in-repo relative links across 14 categories."
+    }
+   ],
+   "evidence_conflicts": [
+    "README claims apps are 'tested end-to-end' but snapshot metadata records has_tests=false and test_files=0 at repo scope; testing appears to run through the skills CI gate (skill-evals.yml) and per-app self-runs rather than a repo-wide test suite.",
+    "Two catalog entries are external repos by other authors (Openwork, Voice Dictation Agent, both marked '↗ external'), so '100+' includes a small number of items not hosted in this repo."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "axolotl",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 0,
+  "language": null,
+  "size": 20478,
+  "created_at": "2025-07-31T01:19:35Z",
+  "pushed_at": "2025-07-30T22:41:08Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "BERT_Sentiment_Analysis",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": "Python",
+  "size": 25948,
+  "created_at": "2020-07-05T12:50:32Z",
+  "pushed_at": "2020-07-08T06:52:07Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 3,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['code', 'data', 'readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 3,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 1679,
+   "distinct_commit_days": 2,
+   "commits_sampled": 3,
+   "commit_msg_uniformity_pct": 33,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 4,
+   "readme_claims_code_backed": 2,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 40,
+   "boilerplate_share_pct": 50,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No AI-generation markers (2020 repo, pre-LLM tooling); the 'BERT Overview' section closely mirrors the TF Hub model-card description (copied reference text), while the dataset/split/metrics sections read as hand-written notes.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis",
+     "excerpt": "Metadata: Python, 2 stars, 0 forks, 3 commits by 2 contributors over 2 distinct days (created 2020-07-05, pushed 2020-07-08), default branch master, no CI, no tests, no declared deps."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis/commits",
+     "excerpt": "2020-07-05 'Initial commit', 'Update README.md'; 2020-07-08 'Latest Code' — three commits total, then untouched."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis/tree/master",
+     "excerpt": "Root entries: Code/ (dir), Data/ (dir), README.md — the claimed model/dataset work lives behind two directories; no requirements or run scripts at root."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis#readme",
+     "excerpt": "'IMDB movie review dataset consisting of 50K movie reviews' ... 'BERT Base Uncased English (bert_en_uncased_L-12_H-768_A-12)' ... 'Training Data - 90% of 50K movie reviews (45k), Validation Data - 10% (5k)', 'Loss Function - Binary Crossentropy'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis#readme",
+     "excerpt": "The README honestly documents concrete experimental choices (exact TF Hub model ID, 90/10 split, binary cross-entropy) rather than inflating results — no accuracy or performance claims are made at all."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis/tree/master",
+     "excerpt": "Code/ and Data/ directories exist, matching the two things the README describes."
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/BERT_Sentiment_Analysis",
+     "excerpt": "A 2-star 2020 learning repo with no promotion signals; nothing in the metadata suggests it was presented as more than a personal exercise."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "No results are claimed, so nothing is overstated; the README documents setup choices only.",
+     "Simple educational content is explicitly not slop under the fairness rules, and the repo never sought visibility (2 stars, no forks)."
+    ],
+    "review_notes": "The negative signals (copied model-card paragraph, no run instructions, three commits) describe an old personal learning artifact, not deceptive output. Recorded modest scores rather than a negative classification."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "chatgpt-discord",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": "Python",
+  "size": 5,
+  "created_at": "2023-03-29T09:24:19Z",
+  "pushed_at": "2024-09-21T17:22:09Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 6,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['chatgpt.py', 'config.py', 'main.py', 'readme.md', 'requirements.txt']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 5,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 1363,
+   "distinct_commit_days": 2,
+   "commits_sampled": 6,
+   "commit_msg_uniformity_pct": 33,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 4,
+   "readme_claims_code_backed": 2,
+   "original_logic_notes": 0,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 50,
+   "boilerplate_share_pct": 50,
+   "explanation_quality": 1,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No direct generation markers in commits (2023 web-UI edits: 'Update chatgpt.py', 'Update README.md'); the README's TOC-without-content 'guide' reads like a pasted article outline, but authorship cannot be determined from the snapshot; counter-evidence: the code was revisited in 2024 ('Updated the Code').",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord",
+     "excerpt": "Metadata: Python, 2 stars, 1 fork, 6 commits by 1 contributor over 2 distinct days (created 2023-03-29, last pushed 2024-09-21), no CI, no tests, deps declared."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord/commits",
+     "excerpt": "2023-03-29: two 'Initial commit' entries, 'Update README.md' x2, 'Update chatgpt.py'; 2024-09-21 'Updated the Code' — one return visit eighteen months later."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord/tree/main",
+     "excerpt": "Root entries: README.md, chatgpt.py (753 bytes), config.py (79 bytes), main.py (630 bytes), requirements.txt (18 bytes) — a minimal but complete runnable bot layout."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord#readme",
+     "excerpt": "'Building a ChatGPT Discord Bot: A Step-by-Step Guide' with a 13-item Table of Contents (Prerequisites ... Troubleshooting Common Issues, Conclusion), followed only by three 'Instructions to Use' steps: venv, 'Install the necessary libraries from requirements.txt', 'Run the main.py script'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord/tree/main",
+     "excerpt": "The actual bot code exists and is coherent for the purpose: main.py, chatgpt.py, config.py, requirements.txt — everything the run instructions need is present."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord#readme",
+     "excerpt": "The three concrete usage steps are complete and reference real files ('requirements.txt', 'main.py'), so a reader can run the bot even though the tutorial sections are missing."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/chatgpt-discord/commits",
+     "excerpt": "'Updated the Code' on 2024-09-21 shows the owner maintained the code well after publication."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The runnable artifact matches the run instructions exactly (main.py, requirements.txt present), so the functional claim is honest.",
+     "A later 2024 code update shows minimal but real maintenance.",
+     "A tiny personal utility bot is simple content, which the fairness rules exclude from slop."
+    ],
+    "review_notes": "The one genuinely unbacked element is the '13-section step-by-step guide' framing: the TOC promises content that is absent from the README. Everything else (small working bot with install/run steps) checks out at the structural level."
+   },
+   "evidence_conflicts": [
+    "README advertises a 13-section step-by-step guide via its Table of Contents, but the 1.4KB README contains none of those sections — only the three usage steps exist."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "chipper",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 2,
+  "language": null,
+  "size": 71575,
+  "created_at": "2025-02-09T00:36:10Z",
+  "pushed_at": "2025-02-04T11:52:02Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "claude-code-router",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": null,
+  "size": 5069,
+  "created_at": "2025-08-14T19:03:19Z",
+  "pushed_at": "2025-08-14T00:50:24Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "claude-howto",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 17,
+  "forks_count": 1,
+  "language": null,
+  "size": 13789,
+  "created_at": "2026-06-09T23:22:24Z",
+  "pushed_at": "2026-06-02T06:38:02Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "cli",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 9852,
+  "created_at": "2026-03-12T22:31:58Z",
+  "pushed_at": "2026-03-12T20:34:12Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "cli-printing-press",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 52024,
+  "created_at": "2026-06-07T00:31:53Z",
+  "pushed_at": "2026-06-06T02:57:52Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "cloud-run-mcp",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 1,
+  "language": null,
+  "size": 182,
+  "created_at": "2025-07-01T03:57:52Z",
+  "pushed_at": "2025-06-19T20:35:53Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "code-context",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 2,
+  "language": null,
+  "size": 5781,
+  "created_at": "2025-08-03T22:42:03Z",
+  "pushed_at": "2025-08-01T14:18:40Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "codebuff",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "size": 116996,
+  "created_at": "2025-09-09T17:27:48Z",
+  "pushed_at": "2025-09-09T10:33:41Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "codex",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 0,
+  "language": null,
+  "size": 461996,
+  "created_at": "2026-06-01T03:05:27Z",
+  "pushed_at": "2026-06-01T03:08:21Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "colab-mcp",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "size": 567,
+  "created_at": "2026-03-17T21:51:41Z",
+  "pushed_at": "2026-03-17T19:41:41Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "CommonGround",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 5617,
+  "created_at": "2025-07-20T15:40:42Z",
+  "pushed_at": "2025-07-18T01:19:17Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "computer-use-preview",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 1,
+  "language": null,
+  "size": 277,
+  "created_at": "2025-10-07T23:42:20Z",
+  "pushed_at": "2025-10-07T18:38:37Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "context-engineering-intro",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 3,
+  "language": null,
+  "size": 494,
+  "created_at": "2025-10-05T02:47:06Z",
+  "pushed_at": "2025-09-24T22:56:05Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "contextgem",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 0,
+  "language": null,
+  "size": 11947,
+  "created_at": "2025-05-10T04:01:39Z",
+  "pushed_at": "2025-05-09T06:36:30Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ControlFlow",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 1,
+  "language": null,
+  "size": 6659,
+  "created_at": "2025-01-03T02:40:19Z",
+  "pushed_at": "2025-01-01T13:12:39Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "CopilotKit",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 7,
+  "language": null,
+  "size": 642238,
+  "created_at": "2025-09-25T18:22:14Z",
+  "pushed_at": "2025-09-25T18:21:27Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "crawl4ai",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 0,
+  "language": null,
+  "size": 139097,
+  "created_at": "2025-01-04T20:17:01Z",
+  "pushed_at": "2025-01-04T08:07:22Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "customer-center-analytics-nlp",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 4,
+  "language": "Python",
+  "size": 1416,
+  "created_at": "2022-09-18T14:36:53Z",
+  "pushed_at": "2022-10-15T04:37:30Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 18,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['app.py', 'poster.png', 'readme.md', 'requirements.txt']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 4,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 1372,
+   "distinct_commit_days": 5,
+   "commits_sampled": 18,
+   "commit_msg_uniformity_pct": 28,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 2,
+   "readme_claims_code_backed": 1,
+   "original_logic_notes": 0,
+   "meaningful_adaptation": false,
+   "template_similarity_pct": 80,
+   "boilerplate_share_pct": 70,
+   "explanation_quality": 1,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 2,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 1,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No AI-generation markers (2022, pre-agent era); 18 human commits iterating app.py across 5 distinct days ('Update app.py' x7, 'chore: update app.py' x5) indicate hand-tuned code; README is blog-teaser prose for a published Towards AI article.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp",
+     "excerpt": "Metadata: Python, 9 stars, 4 forks, 18 commits by 1 contributor over 5 distinct days (created 2022-09-18, pushed 2022-10-15), no CI, no tests, deps declared, runnable setup not documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/commits",
+     "excerpt": "2022-09-18 'feat: initial commit', 'chore: updated requirements.txt'; 2022-09-24/25/29 repeated 'Update app.py' / 'chore: update app.py'; 2022-10-15 'Update README.md' x2 — several weeks of iteration on one script."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/tree/main",
+     "excerpt": "Root entries: README.md, app.py (5704 bytes), poster.png, requirements.txt — single-script repo with no setup docs."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp#readme",
+     "excerpt": "'Detect Business Insights From Customer Support Conversations Using AI — Learn how to analyze customer conversations with just 15 lines of Python code!' ... 'Read the full article here!' (towardsai.net); no install or usage instructions."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/commits",
+     "excerpt": "18 commits over five distinct days including a requirements.txt update — sustained hand iteration, not a one-shot dump."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp/tree/main",
+     "excerpt": "app.py (5.7KB) and requirements.txt are real deliverables backing the article-companion purpose."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/customer-center-analytics-nlp#readme",
+     "excerpt": "The repo is explicitly a companion to a published tutorial ('Read the full article here!'), so instructional depth intentionally lives in the article."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Commit history shows weeks of genuine iteration on the code, the opposite of a generated dump.",
+     "Tutorial/blog-companion repos are legitimate simple content under the fairness rules.",
+     "The code artifact exists and exceeds what the teaser promises in size."
+    ],
+    "review_notes": "Template similarity is with the owner's own article-companion repos (ai-linkedin-post-scanner is near-identical in README structure), which reflects a consistent blog series format rather than mass generation. The '15 lines of Python' hook refers to the article's core snippet; the shipped app.py is 5.7KB, which is a marketing simplification rather than a falsifiable fabrication."
+   },
+   "evidence_conflicts": [
+    "README hook says 'just 15 lines of Python code' while the shipped app.py is 5704 bytes; the teaser refers to the article's core snippet, not the full app."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "data-formulator",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": null,
+  "size": 5915,
+  "created_at": "2025-08-16T02:53:43Z",
+  "pushed_at": "2025-08-15T06:49:06Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "data-x-plaksha",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 564165,
+  "created_at": "2019-09-06T05:53:34Z",
+  "pushed_at": "2019-09-05T17:42:52Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "deepagents",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 3,
+  "language": null,
+  "size": 93,
+  "created_at": "2025-08-10T03:09:23Z",
+  "pushed_at": "2025-08-05T17:39:10Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "deepclaude",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 1,
+  "language": null,
+  "size": 682,
+  "created_at": "2025-01-29T23:24:35Z",
+  "pushed_at": "2025-01-26T20:01:28Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "DeepCode",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 3,
+  "language": null,
+  "size": 8613,
+  "created_at": "2025-09-18T02:30:40Z",
+  "pushed_at": "2025-09-14T16:29:16Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "destructive_command_guard",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 27201,
+  "created_at": "2026-07-14T00:11:44Z",
+  "pushed_at": "2026-07-13T23:11:56Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "director",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 84,
+  "forks_count": 22,
+  "language": null,
+  "size": 70503,
+  "created_at": "2025-11-02T03:40:33Z",
+  "pushed_at": "2025-10-31T11:41:59Z",
+  "open_issues": 0,
+  "license": "AGPL-3.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "docarray",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "size": 25961,
+  "created_at": "2022-01-10T02:25:11Z",
+  "pushed_at": "2022-01-09T15:07:55Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "docarray-nocode",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": "Python",
+  "size": 2542,
+  "created_at": "2022-01-17T02:59:51Z",
+  "pushed_at": "2022-01-17T05:48:25Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 4,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['app.py', 'data', 'docarray-banner.png', 'readme.md', 'requirements.txt']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 5,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2198,
+   "distinct_commit_days": 1,
+   "commits_sampled": 4,
+   "commit_msg_uniformity_pct": 50,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "readme_claims_total": 5,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 50,
+   "boilerplate_share_pct": 40,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "No AI-generation markers (2022, pre-agent tooling); human typos in the README ('Leraning Resources', 'Docuemtnation') and a same-day wording-fix commit point to hand-written docs.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/docarray-nocode",
+     "excerpt": "Metadata: Python, 3 stars, 1 fork, 4 commits by 1 contributor on 1 day (created and pushed 2022-01-17), no CI, no tests, deps declared, runnable setup documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/docarray-nocode/commits",
+     "excerpt": "2022-01-17: 'Initial commit', 'Initial Commit', 'Fix:wordings', 'Feat: Dynamic data selection' — all four commits within a single day, including one feature refinement and one docs fix."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/docarray-nocode/tree/main",
+     "excerpt": "Root entries: README.md, app.py (2205 bytes), data/ (dir), docarray-banner.png, requirements.txt — matches the claimed Streamlit app plus bundled sample data."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/docarray-nocode#readme",
+     "excerpt": "'A simple nocode interface to build a search prototype on your own data in just three simple steps' ... 'pip install -r requirements.txt' ... 'streamlit run app.py' ... 'Note - For now, it only supports text data.'"
+    }
+   ],
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "droidclaw",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 1,
+  "language": null,
+  "size": 662,
+  "created_at": "2026-02-17T06:13:28Z",
+  "pushed_at": "2026-02-17T04:07:30Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "eigent",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 1,
+  "language": null,
+  "size": 498168,
+  "created_at": "2025-07-29T22:38:39Z",
+  "pushed_at": "2025-07-29T22:24:59Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "eliza",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5,
+  "forks_count": 0,
+  "language": null,
+  "size": 217987,
+  "created_at": "2025-01-30T22:49:13Z",
+  "pushed_at": "2025-01-30T22:40:36Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "embedchain",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "size": 14922,
+  "created_at": "2024-04-29T05:33:45Z",
+  "pushed_at": "2024-04-22T19:58:27Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "examples",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 196075,
+  "created_at": "2021-05-13T09:00:22Z",
+  "pushed_at": "2021-05-13T09:01:32Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "executive-ai-assistant",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 1,
+  "language": null,
+  "size": 184,
+  "created_at": "2025-01-23T01:55:03Z",
+  "pushed_at": "2025-01-23T01:52:27Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "fastrtc",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "size": 2867,
+  "created_at": "2025-03-03T02:11:37Z",
+  "pushed_at": "2025-03-02T23:35:53Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "gbrain",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 2,
+  "language": null,
+  "size": 28546,
+  "created_at": "2026-05-20T21:39:12Z",
+  "pushed_at": "2026-05-20T21:00:53Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "gemini-artboard",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 72,
+  "forks_count": 13,
+  "language": "HTML",
+  "size": 4146,
+  "created_at": "2026-02-20T01:14:34Z",
+  "pushed_at": "2026-02-20T04:54:07Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 4,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['gemini_artboard.png', 'index.html', 'readme.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 3,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 3821,
+   "distinct_commit_days": 1,
+   "commits_sampled": 4,
+   "commit_msg_uniformity_pct": 25,
+   "refactor_commits": 0,
+   "one_shot_dump": true,
+   "readme_claims_total": 10,
+   "readme_claims_code_backed": 3,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 15,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "Single-day 4-commit drop (2026-02-20) with clean conventional-commit messages, a pattern consistent with agent-assisted authoring, but no explicit generation markers (no bot authors, no tool credits); counter-evidence: the README argues design tradeoffs and extensibility rationale ('the out-of-the-box generation quality is constrained by this simplicity') in an authored voice, and one commit adds hand-tuned prompt engineering ('feat: add detailed canvas rendering instructions').",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard",
+     "excerpt": "Metadata: HTML, 72 stars, 13 forks, 4 commits by 1 contributor on 1 day (created and pushed 2026-02-20), no CI, no tests, no declared deps, runnable setup documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard/commits",
+     "excerpt": "2026-02-20: 'feat: Initial Gemini Artboard commit', 'docs: Add gemini_artboard.png and link it in the README.', 'feat: add detailed canvas rendering instructions', 'docs: update README'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard/tree/main",
+     "excerpt": "Root entries: README.md, gemini_artboard.png, index.html (43999 bytes) — exactly the 'single HTML file, no build step, no framework' the README claims."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard#readme",
+     "excerpt": "'Zero dependencies: Single HTML file, no build step, no framework' ... 'Paste your Gemini API key. Get it at AI Studio' ... 'the out-of-the-box generation quality is constrained by this simplicity compared to full-fledged Vibe coding tools ... you can always put more effort into building out your own prompt harness'."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard/tree/main",
+     "excerpt": "index.html is a single 43999-byte file at root with no package manifest, lockfile, or build config alongside it — directly backing the headline 'Zero dependencies: Single HTML file, no build step, no framework' claim, and large enough to plausibly contain the described feature set."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard/commits",
+     "excerpt": "'feat: add detailed canvas rendering instructions' (2026-02-20) is a substantive hand-tuned prompt-engineering refinement on top of the initial commit — iteration on generation quality, not a bare dump."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/gemini-artboard#readme",
+     "excerpt": "'the out-of-the-box generation quality is constrained by this simplicity compared to full-fledged Vibe coding tools ... you can always put more effort into building out your own prompt harness' — the README voluntarily discloses limitations and tradeoffs instead of overselling."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The strongest, highest-impact claim (zero-dependency single HTML file) is fully verified by the root listing: index.html at 44KB with no manifest, lockfile, or build tooling present.",
+     "The README candidly discloses the quality-versus-simplicity limitation and per-model speed tradeoffs, the opposite of fabricated capability claims.",
+     "Commit history shows same-day iteration on generation quality ('feat: add detailed canvas rendering instructions'), consistent with the features being real and actively tuned."
+    ],
+    "review_notes": "The low backed ratio (3 of 10) reflects a snapshot verification limit, not observed fabrication: the individual feature claims (SSE streaming, auto error recovery, 60fps loop, model selector, preset chips) all live inside index.html, whose content was not captured in the snapshot, so they could not be independently corroborated and were conservatively counted as unbacked. Nothing in the saved artifacts contradicts any claim; every claim that is checkable from the listing, commits, or metadata checks out."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "genai-toolbox",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 3,
+  "language": null,
+  "size": 40357,
+  "created_at": "2025-07-07T04:31:11Z",
+  "pushed_at": "2025-07-06T16:51:54Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "generative-ai",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 6,
+  "language": null,
+  "size": 395455,
+  "created_at": "2026-03-03T16:42:13Z",
+  "pushed_at": "2026-03-03T17:01:15Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "genkit",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 2,
+  "language": null,
+  "size": 184218,
+  "created_at": "2025-09-17T22:48:31Z",
+  "pushed_at": "2025-09-17T22:21:13Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "golf",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 0,
+  "language": null,
+  "size": 571,
+  "created_at": "2025-05-24T00:59:09Z",
+  "pushed_at": "2025-05-24T00:09:43Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Goopt",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": "JavaScript",
+  "size": 63376,
+  "created_at": "2022-02-24T06:17:06Z",
+  "pushed_at": "2022-02-24T06:24:46Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "gpt3-text-generation",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 10,
+  "forks_count": 0,
+  "language": "Jupyter Notebook",
+  "size": 14,
+  "created_at": "2022-06-20T15:33:02Z",
+  "pushed_at": "2022-07-09T12:40:54Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 1,
+  "contributors": 1,
+  "commit_count": 7,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.github', 'config.yml', 'executor.py', 'jina_gpt3.ipynb', 'manifest.yml', 'readme.md', 'requirements.txt', 'tests']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 2640,
+   "distinct_commit_days": 3,
+   "commits_sampled": 7,
+   "commit_msg_uniformity_pct": 29,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 6,
+   "readme_claims_code_backed": 5,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 50,
+   "boilerplate_share_pct": 40,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 0,
+   "ai_share_evidence": "No AI-generation markers (2022, pre-agent tooling); conventional feat/chore commit style over three distinct days with a test-case update ('chore: updated the test cases') indicates a hand-built Jina Hub executor workflow.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3-text-generation",
+     "excerpt": "Metadata: Jupyter Notebook, 10 stars, 0 forks, 7 commits by 1 contributor over 3 distinct days (created 2022-06-20, pushed 2022-07-09), CI true, tests true (1 test file), deps declared, 1 release, runnable setup documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/gpt3-text-generation/commits",
+     "excerpt": "2022-06-20 'initial commit', 'chore: updated the executor name', 'chore: updated the test cases'; 2022-06-28 'feat: added the colab notebook'; 2022-07-09 'chore: updated README'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3-text-generation/tree/main",
+     "excerpt": "Root entries: .github/, Jina_GPT3.ipynb, README.md, config.yml, executor.py (1205 bytes), manifest.yml, requirements.txt, tests/ — the standard Jina Hub executor package layout with tests."
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/Shubhamsaboo/gpt3-text-generation/.github/workflows",
+     "excerpt": "workflows-listing.json shows ci.yml (122 bytes) and cd.yml (378 bytes) — CI and CD pipelines exist for the executor."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/gpt3-text-generation#readme",
+     "excerpt": "'You need access to the OpenAI API Key to use this Executor ... you can pass it as uses_with: {'api_key': 'value'}' with three usage modes ('jinahub+sandbox://', 'jinahub+docker://', 'jinahub://') and a worked ad-copy example."
+    }
+   ],
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "gpt3_book_sandbox",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 129,
+  "forks_count": 45,
+  "language": "Python",
+  "size": 3241,
+  "created_at": "2021-08-20T06:38:50Z",
+  "pushed_at": "2025-07-14T01:38:39Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 24,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['contribute.md', 'gpt-3_sandbox', 'programming_with_gpt-3', 'readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 4,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 4909,
+   "distinct_commit_days": 10,
+   "commits_sampled": 24,
+   "commit_msg_uniformity_pct": 33,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 7,
+   "readme_claims_code_backed": 5,
+   "original_logic_notes": 2,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 40,
+   "boilerplate_share_pct": 30,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 3,
+   "dependency_updates": 1,
+   "docs_corrections": 3,
+   "ai_share_evidence": "No AI-generation markers (2021-era repo): multi-year human maintenance (2021-2025), human typos in the README ('applicaiton', 'accessbile', 'enviroment'), and external human contributors (Randy Zwitch, Sandra Kublik) with merged patch PRs.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox",
+     "excerpt": "Metadata: Python, 129 stars, 45 forks, 24 commits by 3 contributors over 10 distinct days (created 2021-08-20, last pushed 2025-07-14), default branch master, no CI, no tests, runnable setup documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox/commits",
+     "excerpt": "2021-08-20 'Merge pull request #1 from SandraKublik/patch-1'; 2021-08-31 'Merge pull request #2 from randyzwitch/patch-1 — Update gpt_app.py'; 2021-12-07 'Fixed Broken Links'; 2023-03-09 'chore: updated the opneai model'; 2025-07-14 'Merge pull request #8 ... Update README.md'."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox/tree/master",
+     "excerpt": "Root entries: CONTRIBUTE.md (7387 bytes), GPT-3_Sandbox/ (dir), Programming_with_GPT-3/ (dir), README.md — matches the sandbox-plus-book-examples structure the README describes."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/gpt3_book_sandbox#readme",
+     "excerpt": "'This sandbox is an open-source tool to enable anyone turn their GPT-3 app ideas into reality with just a few lines of Python code ... built on top of Streamlit' ... 'You need access to the OpenAI API Key to play with this Sandbox' ... local setup: 'cd email_generation ... pip install -r requirements.txt ... streamlit run gpt_app.py'."
+    }
+   ],
+   "evidence_conflicts": [
+    "README clone command and all deep links point at 'Shubhamsaboo/kairos_gpt3' while the snapshot repo is 'gpt3_book_sandbox' — a rename artifact; the documented clone target name no longer matches the repo.",
+    "requirements.txt is referenced by the setup steps but sits inside a subdirectory; no deps file exists at the root listing, so the deps_valid condition (root deps file) is not met and the key is omitted."
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "gpt3_sandbox",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 11,
+  "language": "Python",
+  "size": 3149,
+  "created_at": "2021-08-20T06:34:44Z",
+  "pushed_at": "2023-03-09T12:52:31Z",
+  "open_issues": 1,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 12,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['__init__.py', 'ai.png', 'app1.py', 'app2.py', 'gpt_app.py', 'model_training_service.py', 'requirements.txt', 'training_data.py']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 6,
+   "commits_sampled": 12,
+   "commit_msg_uniformity_pct": 17,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "explanation_quality": 0,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": false,
+   "setup_reproducible": false,
+   "template_similarity_pct": 15,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 1,
+   "docs_corrections": 2,
+   "ai_share_evidence": "No generation markers observed; 12 human-scale commits across 6 distinct days spanning 2021-08 to 2023-03 with maintenance work (typo fixes, broken-link fixes, model rename) counter-indicate one-shot generation; 2021-2023 era predates common AI codegen conventions.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3_sandbox",
+     "excerpt": "Metadata: Python, 6 stars, 11 forks, 12 commits over 6 distinct days, created 2021-08-20, pushed 2023-03-09, 1 contributor, deps declared, no README (readme_length 0)."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/commits",
+     "excerpt": "'Initial Commit' (2021-08-20), 'Fixed broken links' (2021-08-26), 'Fixed Typos' (2021-08-31), 'chore: updated model name' (2022-04-05), 'Update requirements.txt' / 'Update model_training_service.py' (2023-03-09)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/tree/main",
+     "excerpt": "Root entries: __init__.py, ai.png, app1.py, app2.py, gpt_app.py, model_training_service.py, requirements.txt, training_data.py — flat Python sandbox, no README.md present."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/commits",
+     "excerpt": "Revisited over ~18 months after initial commit ('chore: updated model name' 2022-04, five file updates 2023-03) — maintained, not abandoned dump."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/gpt3_sandbox/tree/main",
+     "excerpt": "Distinct purpose-named modules (model_training_service.py, training_data.py, two app variants) plus requirements.txt suggest a real, if small, working sandbox."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Maintenance commits span 2021-2023 including a model-name update after OpenAI deprecations, showing ongoing care",
+     "requirements.txt and structured module names indicate runnable code rather than a content dump"
+    ],
+    "review_notes": "The main negative is the missing README (no docs, no setup, no key-handling guidance), not the code itself. Commit cadence and file structure are the strongest points in the repo's favor; nothing in the saved artifacts suggests fabricated content."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "graphiti",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 3550,
+  "created_at": "2025-03-23T03:52:23Z",
+  "pushed_at": "2025-03-22T19:23:50Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Hands-On-Large-Language-Models",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 3,
+  "language": null,
+  "size": 14758,
+  "created_at": "2025-08-31T19:58:58Z",
+  "pushed_at": "2025-07-21T05:49:15Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "herdr",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 28643,
+  "created_at": "2026-07-01T00:25:47Z",
+  "pushed_at": "2026-06-30T18:15:33Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "hindsight",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 0,
+  "language": null,
+  "size": 354993,
+  "created_at": "2026-03-17T02:44:44Z",
+  "pushed_at": "2026-03-16T20:46:28Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "how-to-build-a-coding-agent",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 11,
+  "forks_count": 5,
+  "language": null,
+  "size": 31,
+  "created_at": "2025-08-25T05:08:08Z",
+  "pushed_at": "2025-08-24T03:14:15Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ii-agent",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 0,
+  "language": null,
+  "size": 1376,
+  "created_at": "2025-05-23T15:39:10Z",
+  "pushed_at": "2025-05-23T14:40:23Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "immersive-language-learning-with-live-api",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 4,
+  "language": "JavaScript",
+  "size": 1621,
+  "created_at": "2026-01-15T20:15:36Z",
+  "pushed_at": "2026-01-22T21:05:18Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Janus",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 7318,
+  "created_at": "2025-01-28T03:59:22Z",
+  "pushed_at": "2025-01-27T16:43:17Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "javascript_wizard",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4,
+  "forks_count": 0,
+  "language": "Python",
+  "size": 4648,
+  "created_at": "2022-04-25T11:48:27Z",
+  "pushed_at": "2022-04-26T07:46:30Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 3,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['app.py', 'artifacts', 'giphy.gif', 'gpt3_prompt.py', 'js_wiz.png', 'readme.md', 'requirements.txt', 'video-walkthrough.webm']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 8,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2032,
+   "distinct_commit_days": 2,
+   "commits_sampled": 3,
+   "commit_msg_uniformity_pct": 33,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 4,
+   "readme_claims_code_backed": 3,
+   "original_logic_notes": 1,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 70,
+   "boilerplate_share_pct": 65,
+   "explanation_quality": 1,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 1,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "No AI-generation markers; 2022-era repo predating common codegen, README is a hand-reused in-portfolio template (near-identical to Valentines_Message_Generator) with app-specific values swapped; 3 commits over 2 days including a manual readme fix.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/javascript_wizard",
+     "excerpt": "Metadata: Python, 4 stars, 3 commits over 2 distinct days, created 2022-04-25, pushed 2022-04-26, 1 contributor, deps declared, runnable setup documented."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/javascript_wizard/commits",
+     "excerpt": "'Initial commit' (2022-04-25), 'feat: initial commit' (2022-04-26), 'chore: updated readme' (2022-04-26)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/javascript_wizard/tree/main",
+     "excerpt": "Root entries: README.md, app.py, gpt3_prompt.py, requirements.txt, artifacts/, giphy.gif, js_wiz.png, video-walkthrough.webm (3.2 MB) — app, prompt module, deps file, and demo media all present."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/Shubhamsaboo/javascript_wizard#readme",
+     "excerpt": "'JavaScript Wizard powered by GPT-3 ... Try out the Live Application ... pip install -r requirements.txt ... streamlit run app.py' — same section skeleton and prose as the Valentines_Message_Generator README."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/javascript_wizard/tree/main",
+     "excerpt": "video-walkthrough.webm and a dedicated gpt3_prompt.py are repo-specific artifacts the sibling repo does not share — the code and demo differ even though the README text is templated."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/javascript_wizard/commits",
+     "excerpt": "A follow-up 'chore: updated readme' the next day shows a manual revision pass rather than a fire-and-forget dump."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "The application code (app.py, gpt3_prompt.py) and walkthrough video are unique to this repo; only the documentation shell is reused",
+     "Complete, accurate setup steps that reference the actual requirements.txt make the demo genuinely reproducible"
+    ],
+    "review_notes": "High template similarity applies to the README shell, which the author reuses across his own small Streamlit demos — self-templating of docs, not mass-generated content. The live-app URL is the only claim not verifiable from saved artifacts."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "jina_finetuner_notebooks",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 0,
+  "language": "Jupyter Notebook",
+  "size": 12,
+  "created_at": "2022-01-25T03:24:23Z",
+  "pushed_at": "2022-02-14T10:59:40Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 7,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['finetuner_imagesimilaritydetection.ipynb', 'finetuner_w&b.ipynb']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 2,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 0,
+   "distinct_commit_days": 5,
+   "commits_sampled": 7,
+   "commit_msg_uniformity_pct": 14,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "explanation_quality": 0,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "setup_reproducible": false,
+   "template_similarity_pct": 10,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 0,
+   "dependency_updates": 0,
+   "docs_corrections": 1,
+   "ai_share_evidence": "No generation markers; 7 iterative commits across 5 distinct days in Jan-Feb 2022 ('feat: added new section', 'fix: added a new flag', 'fix: spelling', 'fix:errors with release') indicate hand-edited notebooks; era predates common AI codegen.",
+   "evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks",
+     "excerpt": "Metadata: Jupyter Notebook, 6 stars, 7 commits over 5 distinct days, created 2022-01-25, pushed 2022-02-14, 1 contributor, no deps file, no README (readme_length 0)."
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks/commits",
+     "excerpt": "'Initial Commit' (2022-01-25), 'feat: added new section' (2022-01-25), 'fix: added a new flag' (2022-01-26), 'feat: Added new notebook' (2022-02-01), 'fix: spelling' (2022-02-02), 'fix:errors with release' (2022-02-14)."
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks/tree/main",
+     "excerpt": "Root entries: Finetuner_ImageSimilarityDetection.ipynb (17 KB), Finetuner_W&B.ipynb (9 KB) — two notebooks only, no README.md."
+    }
+   ],
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks/commits",
+     "excerpt": "Edits spread across three weeks including a release-tracking fix ('fix:errors with release') show the notebooks were maintained against the upstream Jina Finetuner releases, not dumped once."
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/Shubhamsaboo/jina_finetuner_notebooks",
+     "excerpt": "Small scope is consistent with a companion-notebook repo (author co-wrote a Jina neural-search book per portfolio context); notebooks are the deliverable."
+    }
+   ],
+   "counter_evidence_review": {
+    "reviewed": true,
+    "strongest_counter_evidence": [
+     "Iterative, dated fixes across five distinct days including release-compatibility maintenance",
+     "Notebook sizes (17 KB and 9 KB) indicate substantive content, and tutorial notebooks are a legitimate deliverable on their own"
+    ],
+    "review_notes": "The negative reading is limited to missing documentation (no README, no setup steps). Notebook internals were not captured in the snapshot, so no code-quality or originality judgment is recorded — less, not more."
+   },
+   "evidence_conflicts": [],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "julep",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 0,
+  "language": null,
+  "size": 51393,
+  "created_at": "2024-12-14T23:40:08Z",
+  "pushed_at": "2024-12-14T19:50:46Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Kimi-k1.5",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 0,
+  "language": null,
+  "size": 3352,
+  "created_at": "2025-01-26T19:31:46Z",
+  "pushed_at": "2025-01-23T03:03:48Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Kimi-K2",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2,
+  "forks_count": 1,
+  "language": null,
+  "size": 373,
+  "created_at": "2025-07-11T15:26:35Z",
+  "pushed_at": "2025-07-11T15:14:02Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "klavis",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 2,
+  "language": null,
+  "size": 36609,
+  "created_at": "2025-09-23T00:59:55Z",
+  "pushed_at": "2025-09-22T14:17:15Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "kvcached",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 0,
+  "forks_count": 3,
+  "language": null,
+  "size": 9690,
+  "created_at": "2025-10-29T17:27:13Z",
+  "pushed_at": "2025-10-27T15:45:17Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ }
+]

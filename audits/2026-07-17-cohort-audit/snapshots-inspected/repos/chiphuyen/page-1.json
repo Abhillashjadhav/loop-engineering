@@ -1,0 +1,1522 @@
+[
+ {
+  "name": "aie-book",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 16533,
+  "forks_count": 2402,
+  "language": "Jupyter Notebook",
+  "description": "[WIP] Resources for AI engineers. Also contains supporting materials for the book AI Engineering (Chip Huyen, 2025)",
+  "topics": [],
+  "size": 6686,
+  "created_at": "2024-12-03T19:43:36Z",
+  "pushed_at": "2026-07-03T07:04:59Z",
+  "open_issues": 20,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 7,
+  "commit_count": 38,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.ds_store', '.gitignore', 'appendix.md', 'assets', 'case-studies.md', 'chapter-summaries.md', 'misalignment.md', 'prompt-examples.md', 'readme.md', 'resources.md', 'scripts', 'study-notes.md', 'toc.md', 'toc.pdf', 'translations.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 15,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 15744,
+   "distinct_commit_days": 17,
+   "commits_sampled": 38,
+   "commit_msg_uniformity_pct": 8,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 30,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 6,
+   "dependency_updates": 0,
+   "docs_corrections": 4,
+   "ai_share_evidence": "No AI-authorship markers in README or 38 commit messages; two-year human-authored O'Reilly book with named human reviewers/editors and multi-year organic history (2024-12 to 2026-07) including external typo/link-fix PRs; counter-evidence to any AI-share concern is the sustained community-maintenance pattern.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/aie-book",
+     "excerpt": "root-listing.json: ToC.md (17606 B), ToC.pdf (179595 B), chapter-summaries.md (33980 B), resources.md (34959 B), prompt-examples.md (8054 B), study-notes.md (1301 B), translations.md (9008 B), dirs assets/ and scripts/"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/aie-book/commits",
+     "excerpt": "2024-12-03 'Initial commit' ... 2025-01-14 'Add ChatGPT conversation heatmap generator' ... 2026-07-03 'Merge pull request #24 from sjhddh/fix/broken-links' (38 commits, external fixers amnry, sjhddh, dr3s, strickvl, omrylcn, chris-alexiuk)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/aie-book",
+     "excerpt": "portfolio survey: stargazers_count 16533, forks_count 2402, commit_count 38, contributors 7, created 2024-12-03, pushed 2026-07-03"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/aie-book/blob/main/README.md",
+     "excerpt": "'_This is NOT a tutorial book, so it doesn't have a lot of code snippets._' ... 'This repo will be updated with more resources in the next few weeks.'"
+    }
+   ],
+   "counter_evidence": "case-studies.md (14 B) and misalignment.md (89 B) are near-empty stubs linked from the README; however README explicitly flags the repo as WIP ('will be updated'), and the substantive claims (ToC, chapter summaries, resources, prompt examples, translations, heatmap script) are all backed by sizeable files and commits.",
+   "counter_evidence_review": {
+    "reviewed": true,
+    "outcome": "Stub files noted but do not overturn the positive read: 6 of 8 README claims are backed by substantial artifacts and the repo is an explicitly WIP companion to a published book."
+   },
+   "evidence_conflicts": "README links case-studies.md and misalignment.md as content sections, but root-listing shows them at 14 and 89 bytes respectively (effectively empty placeholders).",
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "awd-lstm-lm",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 6,
+  "language": "Python",
+  "description": "LSTM and QRNN Language Model Toolkit for PyTorch",
+  "topics": [],
+  "size": 64,
+  "created_at": "2018-11-02T00:35:52Z",
+  "pushed_at": "2019-03-01T23:48:40Z",
+  "open_issues": 0,
+  "license": "BSD-3-Clause",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "chiphuyen",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 77,
+  "forks_count": 18,
+  "language": null,
+  "description": null,
+  "topics": [],
+  "size": 25,
+  "created_at": "2020-09-29T20:22:07Z",
+  "pushed_at": "2026-06-24T13:53:33Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 16,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 1,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2104,
+   "distinct_commit_days": 9,
+   "commits_sampled": 16,
+   "commit_msg_uniformity_pct": 44,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 5,
+   "template_similarity_pct": 30,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 2,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 2,
+   "dependency_updates": 0,
+   "docs_corrections": 6,
+   "ai_share_evidence": "Profile README (prose only); follows the common GitHub profile-README emoji-bullet convention (default template comment still present); no AI markers; edits are small human-scale link/typo fixes over six years, two from external contributors.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/chiphuyen",
+     "excerpt": "root-listing.json: single entry README.md (2129 B)"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/chiphuyen/commits",
+     "excerpt": "2020-09-29 'Initial commit' ... 2025-02-05 tfmorris 'Fix dead Goodreads link', 2025-12-10 henrynnamani 'Fix typo in teaching experience description', 2026-06-24 'Fix link in README.md for GoodAIList' (16 commits)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/chiphuyen",
+     "excerpt": "portfolio survey: profile repo, stargazers_count 77, commit_count 16, contributors 3, created 2020-09-29; sibling repos aie-book, dmls-book, ml-interviews-book, sniffly, lazynlp, sotawhat all exist in the same portfolio, corroborating the README's project claims"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/chiphuyen/blob/main/README.md",
+     "excerpt": "'I build micro tools... Sniffly for Claude Code analysis, lazynlp, and sotawhat. I'm the author of AI Engineering and Designing Machine Learning Systems. My book on machine learning interviews is open-sourced and free!'"
+    }
+   ],
+   "counter_evidence": "3 of 8 claims (GoodAIList, KilledByGPT, film/Vietnamese-book career notes) point to external sites or personal history not checkable from saved snapshots; countered by the fact that all claims about GitHub-hosted work (both books' repos, Sniffly, lazynlp, sotawhat, ml-interviews-book) are verified against the portfolio survey.",
+   "counter_evidence_review": {
+    "reviewed": true,
+    "outcome": "Unverifiable items are personal-bio claims outside GitHub, appropriate for a profile README; nothing contradicts saved artifacts, so this is recorded as 'not observed', not as unbacked technical claims."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "coding-exercises",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 522,
+  "forks_count": 200,
+  "language": "Python",
+  "description": "My implementation of useful data structures, algorithms,  as well as my solutions to programming puzzles. ",
+  "topics": [
+   "coding-challenge",
+   "coding-exercises",
+   "coding-interviews",
+   "training-materials"
+  ],
+  "size": 477,
+  "created_at": "2017-11-19T08:06:58Z",
+  "pushed_at": "2019-11-21T04:14:33Z",
+  "open_issues": 1,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 9,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'anagrams.py', 'binary_heap.py', 'binary_search_tree.py', 'binary_tree_algos.py', 'data', 'delim_balanced.py', 'fizzbuzz.py', 'ghost.py', 'lc_add_number_reverse.py', 'lc_longest_nonrepeat_substring.py', 'lc_longest_palindrome.py', 'lc_median_arrays.py', 'lc_reverse_int.py', 'lc_two_sum.py', 'lc_zigzag_convert.py', 'linked_list.py', 'priority_queue.py', 'readme.md', 'reverse_words.py', 'sieve_prime.py', 'sort.py', 'subarray_sum.py', 'substring_two_chars.py', 'trie.py', 'year_max_pop.py']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 26,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 4992,
+   "distinct_commit_days": 4,
+   "commits_sampled": 9,
+   "commit_msg_uniformity_pct": 22,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "D2C",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 0,
+  "language": "Jupyter Notebook",
+  "description": null,
+  "topics": [],
+  "size": 520950,
+  "created_at": "2024-03-23T18:21:36Z",
+  "pushed_at": "2024-03-25T02:41:34Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "dmls-book",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 5068,
+  "forks_count": 1016,
+  "language": null,
+  "description": "Summaries and resources for Designing Machine Learning Systems book (Chip Huyen, O'Reilly 2022)",
+  "topics": [],
+  "size": 5030,
+  "created_at": "2022-05-27T21:23:37Z",
+  "pushed_at": "2026-06-09T13:28:30Z",
+  "open_issues": 9,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 16,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'assets', 'basic-ml-review.md', 'mlops-tools.md', 'readme.md', 'resources.md', 'summary.md', 'toc.pdf', 'translations.md']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 9,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 7047,
+   "distinct_commit_days": 11,
+   "commits_sampled": 16,
+   "commit_msg_uniformity_pct": 12,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 6,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 30,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "runnable_learning": false,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 2,
+   "dependency_updates": 0,
+   "docs_corrections": 3,
+   "ai_share_evidence": "2022 companion repo to a human-authored O'Reilly book; sparse, organic commit cadence over four years (16 commits, e.g. 'Initial book release' 2022, translations updates through 2026); no AI-authorship markers in README or commits.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/dmls-book",
+     "excerpt": "root-listing.json: summary.md (27927 B), resources.md (18719 B), mlops-tools.md (11722 B), basic-ml-review.md (11518 B), translations.md (9309 B), ToC.pdf (51741 B)"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/dmls-book/commits",
+     "excerpt": "2022-05-27 'Initial commit' ... 2022-06-22 'Initial book release', 2022-07-12 dfangshuo 'Fix spelling (tabel -> table)', 2026-06-09 'Add translations' (16 commits)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/dmls-book",
+     "excerpt": "portfolio survey: stargazers_count 5068, forks_count 1016, commit_count 16, contributors 3, created 2022-05-27, pushed 2026-06-09"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/dmls-book/blob/main/README.md",
+     "excerpt": "'This is NOT a tutorial book... In this repo, you won't find code examples, but you'll find: Table of contents, Chapter summaries, MLOps tools, Resources, A very short review of basic ML concepts'"
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "fastText",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 7,
+  "forks_count": 4,
+  "language": "C++",
+  "description": "Library for fast text representation and classification.",
+  "topics": [],
+  "size": 387,
+  "created_at": "2017-11-16T18:16:29Z",
+  "pushed_at": "2017-11-15T22:12:43Z",
+  "open_issues": 0,
+  "license": "NOASSERTION",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "feathr",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 6,
+  "forks_count": 2,
+  "language": null,
+  "description": "Feathr – An Enterprise-Grade, High Performance Feature Store",
+  "topics": [],
+  "size": 20183,
+  "created_at": "2022-10-25T22:44:14Z",
+  "pushed_at": "2022-10-25T22:32:13Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "github-markdown-toc",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 11,
+  "forks_count": 1,
+  "language": null,
+  "description": "Easy TOC creation for GitHub README.md",
+  "topics": [],
+  "size": 221,
+  "created_at": "2022-06-22T04:59:34Z",
+  "pushed_at": "2022-06-11T19:42:24Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ibis",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 9,
+  "forks_count": 1,
+  "language": "Python",
+  "description": "The flexibility of Python with the scale and performance of modern SQL.",
+  "topics": [],
+  "size": 54742,
+  "created_at": "2024-02-13T19:36:25Z",
+  "pushed_at": "2024-02-13T19:38:00Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "just-pandas-things",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 999,
+  "forks_count": 133,
+  "language": "Jupyter Notebook",
+  "description": "An ongoing list of pandas quirks",
+  "topics": [
+   "data-science",
+   "machine-learning",
+   "pandas",
+   "pandas-dataframe",
+   "pandas-tutorial",
+   "python"
+  ],
+  "size": 3838,
+  "created_at": "2020-06-29T01:05:06Z",
+  "pushed_at": "2023-05-08T14:19:34Z",
+  "open_issues": 4,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 7,
+  "commit_count": 15,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'data', 'just-pandas-things.ipynb', 'readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 4,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 762,
+   "distinct_commit_days": 6,
+   "commits_sampled": 15,
+   "commit_msg_uniformity_pct": 7,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 2,
+   "readme_claims_code_backed": 2,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 6,
+   "dependency_updates": 0,
+   "docs_corrections": 7,
+   "ai_share_evidence": "2020 notebook, pre-LLM-assistant era for authored content; commit history is organic community typo/clarity fixes from five external contributors; no AI markers in README or commits.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/just-pandas-things",
+     "excerpt": "root-listing.json: just-pandas-things.ipynb (154215 B), data/, README.md (762 B), .gitignore"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/just-pandas-things/commits",
+     "excerpt": "2020-11-09 'Initial commit' ... 2020-11-09 hnguyentt 'clarify slicing, fix regex', 2022-02-08 will-fong 'corrected four typos in notebook', 2022-06-07 merges of PRs #11/#12/#13 (15 commits, 7 contributors)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/just-pandas-things",
+     "excerpt": "portfolio survey: stargazers_count 999, forks_count 133, commit_count 15, contributors 7, created 2020-06-29"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/just-pandas-things/blob/master/README.md",
+     "excerpt": "'This post isn't a friendly tutorial for beginners, but a friendly introduction to pandas weirdness.' ... 'As I'm still learning pandas quirks, feedback is much appreciated.'"
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "lazynlp",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 2270,
+  "forks_count": 323,
+  "language": "Python",
+  "description": "Library to scrape and clean web pages to create massive datasets.",
+  "topics": [
+   "artificial-intelligence",
+   "data-science",
+   "language-model",
+   "natural-language-processing",
+   "nlp",
+   "open",
+   "python",
+   "text-mining"
+  ],
+  "size": 38,
+  "created_at": "2019-02-27T23:23:19Z",
+  "pushed_at": "2020-11-11T12:16:30Z",
+  "open_issues": 10,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 1,
+  "contributors": 7,
+  "commit_count": 14,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'lazynlp', 'manifest.in', 'readme.md', 'requirements.txt', 'setup.py']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 6,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 10439,
+   "distinct_commit_days": 8,
+   "commits_sampled": 14,
+   "commit_msg_uniformity_pct": 21,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 6,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 10,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "integration_complexity": 1,
+   "issue_responses": 3,
+   "dependency_updates": 0,
+   "docs_corrections": 6,
+   "ai_share_evidence": "2019 library, pre-LLM-assistant era; history shows human iteration ('update domain blacklist + add more stats', 'update pep8') and external fixes (cclauss 'import re for line 18', ss18 typo series); no AI markers.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/lazynlp",
+     "excerpt": "root-listing.json: lazynlp/ package dir, setup.py (476 B), requirements.txt (89 B), MANIFEST.in (94 B), README.md (10439 B)"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/lazynlp/commits",
+     "excerpt": "2019-02-27 'v1.0.0', 2019-02-28 'update domain blacklist + add more stats', 2019-03-03 cclauss 'import re for line 18', 2019-10-07 merges of PRs #7/#5/#3 (14 commits, 7 contributors)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/lazynlp",
+     "excerpt": "portfolio survey: stargazers_count 2270, forks_count 323, dependencies_declared true, releases 1, runnable_setup_documented true, created 2019-02-27"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/lazynlp/blob/master/README.md",
+     "excerpt": "'around 40 - 60 % are bad URLs' ... 'I guess I could have parallized the code. I just found this to be easier.' ... 'capacity and error_rate are for the BloomFilter used.'"
+    }
+   ],
+   "counter_evidence": "Headline claim ('create datasets larger than the one used by OpenAI for GPT-2') and per-function API claims cannot be verified from the root listing alone (package internals not snapshotted), giving 4/6 backed; countered by the declared deps, setup.py packaging, a tagged v1.0.0 release, a Zenodo DOI badge, and an external code-level bugfix implying real usage of the described functions.",
+   "counter_evidence_review": {
+    "reviewed": true,
+    "outcome": "Unbacked items are a scale estimate the README itself derives openly with stated assumptions, plus function docs whose files were not snapshotted; nothing observed contradicts them, so the read stays positive with reduced backed count."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "LLaVAFT",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 12,
+  "forks_count": 1,
+  "language": "Python",
+  "description": "[NeurIPS'23 Oral] Visual Instruction Tuning (LLaVA) built towards GPT-4V level capabilities and beyond.",
+  "topics": [],
+  "size": 13152,
+  "created_at": "2024-03-21T18:18:00Z",
+  "pushed_at": "2024-03-29T03:53:05Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "machine-learning-book",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 53,
+  "forks_count": 21,
+  "language": null,
+  "description": "Code Repository for Machine Learning with PyTorch and Scikit-Learn",
+  "topics": [],
+  "size": 173114,
+  "created_at": "2022-05-20T06:01:54Z",
+  "pushed_at": "2022-05-14T17:17:39Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "machine-learning-systems-design",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 10458,
+  "forks_count": 1616,
+  "language": "HTML",
+  "description": "A booklet on machine learning systems design with exercises. NOT the repo for the book \"Designing Machine Learning Systems\", which is `dmls-book`",
+  "topics": [
+   "data-science",
+   "machine-learning-production",
+   "mlops"
+  ],
+  "size": 1408,
+  "created_at": "2019-11-24T23:16:28Z",
+  "pushed_at": "2023-04-15T16:33:50Z",
+  "open_issues": 11,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 3,
+  "commit_count": 9,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'answers', 'build', 'content', 'fonts', 'images', 'includes', 'javascripts', 'layouts', 'magicbook.json', 'netlify.toml', 'readme.md', 'stylesheets']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 13,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2865,
+   "distinct_commit_days": 7,
+   "commits_sampled": 9,
+   "commit_msg_uniformity_pct": 22,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 5,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 20,
+   "boilerplate_share_pct": 40,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 2,
+   "dependency_updates": 0,
+   "docs_corrections": 2,
+   "ai_share_evidence": "2019 booklet, pre-LLM-assistant era; 9 commits over three years with external contributions (netlify.toml by tdhopper, Netflix case studies by Alireza Dirafzoon); no AI markers. Boilerplate share reflects the documented magicbook build scaffolding (fonts/, layouts/, stylesheets/, javascripts/), not template-cloned content.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+     "excerpt": "root-listing.json: content/, answers/, build/, magicbook.json (675 B), netlify.toml (149 B), plus magicbook scaffolding dirs fonts/, images/, includes/, javascripts/, layouts/, stylesheets/"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/machine-learning-systems-design/commits",
+     "excerpt": "2019-11-24 'ml sys design', 2019-11-25 tdhopper 'Create netlify.toml', 2019-11-27 'Update case-studies.md: Add 2 cases from Netflix', 2021-01-04 'Add HTML page', 2022-06-22 'Update README.md' (9 commits)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+     "excerpt": "portfolio survey: stargazers_count 10458, forks_count 1616, commit_count 9, contributors 3, runnable_setup_documented true"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/machine-learning-systems-design/blob/master/README.md",
+     "excerpt": "'This booklet was my initial attempt... My understanding of the topic has gone through significant iterations since then. My book Designing Machine Learning Systems (O'Reilly, June 2022) is much more comprehensive and up-to-date.'"
+    }
+   ],
+   "counter_evidence": "High boilerplate_share_pct (magicbook scaffolding dirs dominate the root listing); countered by the fact that the scaffolding belongs to a documented third-party build tool the README explains how to use, and the actual deliverable lives in content/ and answers/ with build steps that reproduce it.",
+   "counter_evidence_review": {
+    "reviewed": true,
+    "outcome": "Scaffolding is legitimate build tooling, not padding; content claims (booklet steps, 27 questions, community answers, magicbook build) are backed by content/, answers/, magicbook.json and build/."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "metaflow-transformers-tutorials",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 67,
+  "forks_count": 8,
+  "language": "Jupyter Notebook",
+  "description": "Metaflow tutorials for ODSC West 2021",
+  "topics": [
+   "machine-learning",
+   "metaflow"
+  ],
+  "size": 26015,
+  "created_at": "2021-11-11T05:21:54Z",
+  "pushed_at": "2021-11-16T19:08:26Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 9,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'counter_branch.py', 'data', 'foreach.py', 'helloworld.py', 'inspect_flow.ipynb', 'parameters.py', 'readme.md', 'requirements.txt', 'sent_analysis_metaflow.py', 'sent_analysis_metaflow_with_conda.py', 'sent_analysis_predict.py', 'sent_analysis_train.py', 'utils.py']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 14,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 1137,
+   "distinct_commit_days": 2,
+   "commits_sampled": 9,
+   "commit_msg_uniformity_pct": 22,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "Milano",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 10,
+  "forks_count": 3,
+  "language": "Python",
+  "description": "Milano is a tool for automating hyper-parameters search for your models on a backend of your choice.",
+  "topics": [],
+  "size": 36349,
+  "created_at": "2018-10-31T19:26:39Z",
+  "pushed_at": "2018-11-10T00:54:25Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "ml-interviews-book",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 4685,
+  "forks_count": 681,
+  "language": "HTML",
+  "description": "https://huyenchip.com/ml-interviews-book/",
+  "topics": [],
+  "size": 10998,
+  "created_at": "2021-01-02T17:19:38Z",
+  "pushed_at": "2025-03-21T21:31:44Z",
+  "open_issues": 12,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 19,
+  "commit_count": 148,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', '_book', 'answers', 'book.json', 'contents', 'ga_tag.ipynb', 'ga_tag.txt', 'package.json', 'readme.md', 'summary.md', 'translation']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 11,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 4224,
+   "distinct_commit_days": 21,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 2,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 6,
+   "readme_claims_code_backed": 5,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 2,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 12,
+   "dependency_updates": 0,
+   "docs_corrections": 9,
+   "ai_share_evidence": "Book written in 2021, largely pre-LLM-assistant era; last-100 commits are organic multi-contributor activity (a sustained Farsi translation series by R-Mahmoudi, dead-link and typo fixes by 6+ others); no AI-authorship markers in README or commit messages.",
+   "evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/ml-interviews-book/commits",
+     "excerpt": "148 commits, 19 contributors; e.g. 2023-02 R-Mahmoudi Farsi translation series ('Added technical skill file', 'update translate farsi ...'), 2023-07-18 jordandraper 'Replaced dead link to \"the curse of big data\"', 2022-08-27 'Add folder for answers'"
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/ml-interviews-book",
+     "excerpt": "root-listing.json: SUMMARY.md (8825 B), contents/, answers/, Translation/, _book/, book.json (289 B), package.json (602 B)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/ml-interviews-book",
+     "excerpt": "portfolio survey: stargazers_count 4685, forks_count 681, commit_count 148, contributors 19, created 2021-01-02, pushed 2025-03-21"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/ml-interviews-book/blob/master/README.md",
+     "excerpt": "'This book is not a replacement to machine learning textbooks nor a shortcut to game the interviews.' ... 'The second part consists of over 200 knowledge questions'"
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "OpenSeq2Seq",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 12,
+  "forks_count": 4,
+  "language": "Python",
+  "description": "Toolkit for efficient experimentation with various sequence-to-sequence models",
+  "topics": [],
+  "size": 42537,
+  "created_at": "2018-08-30T18:44:48Z",
+  "pushed_at": "2018-09-25T21:28:49Z",
+  "open_issues": 0,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "plugin-mathjax",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1,
+  "forks_count": 0,
+  "language": null,
+  "description": "MathJAX plugin for GitBook",
+  "topics": [],
+  "size": 140,
+  "created_at": "2021-01-02T21:36:07Z",
+  "pushed_at": "2020-07-30T20:46:20Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "python-is-cool",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3665,
+  "forks_count": 571,
+  "language": "Jupyter Notebook",
+  "description": "Cool Python features for machine learning that I used to be too afraid to use. Will be updated as I have more time / learn more.",
+  "topics": [
+   "advanced-python",
+   "data-science",
+   "machine-learning",
+   "python-tutorials",
+   "python3"
+  ],
+  "size": 55,
+  "created_at": "2019-10-21T14:21:10Z",
+  "pushed_at": "2019-12-27T04:06:24Z",
+  "open_issues": 3,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 6,
+  "commit_count": 19,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', 'cool-python-tips.ipynb', 'readme.md']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 3,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 18718,
+   "distinct_commit_days": 6,
+   "commits_sampled": 19,
+   "commit_msg_uniformity_pct": 11,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 3,
+   "readme_claims_code_backed": 3,
+   "original_logic_notes": 3,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": true,
+   "limitations_disclosed": true,
+   "runnable_learning": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 1,
+   "complexity_justified": true,
+   "issue_responses": 4,
+   "dependency_updates": 0,
+   "docs_corrections": 6,
+   "ai_share_evidence": "2019 content, pre-LLM-assistant era; organic history with five external contributors submitting proofreads, syntax-highlighting and Binder fixes ('unsolicited proofread :P'); no AI markers.",
+   "evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/python-is-cool",
+     "excerpt": "root-listing.json: cool-python-tips.ipynb (32341 B), README.md (18718 B), .gitignore — README is a full copy of the notebook content as claimed"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/python-is-cool/commits",
+     "excerpt": "2019-10-21 'Initial commit' ... 2019-10-23 matthewfeickert 'Add Binder badge', srhrshr 'unsolicited proofread :P', 2019-12-27 'decorators, timeit, and cache' (19 commits, 6 contributors)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/python-is-cool",
+     "excerpt": "portfolio survey: stargazers_count 3665, forks_count 571, commit_count 19, contributors 6, created 2019-10-21"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/python-is-cool/blob/master/README.md",
+     "excerpt": "'Lambda functions are meant for one time use... hurts the performance if you call... multiple times' ... 'Even though I find lambdas cool, I personally recommend using named functions when you can for the sake of clarity.'"
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "requests-for-research",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 39,
+  "forks_count": 23,
+  "language": "HTML",
+  "description": "A living collection of deep learning problems",
+  "topics": [],
+  "size": 63,
+  "created_at": "2016-09-13T05:30:21Z",
+  "pushed_at": "2016-08-05T03:59:07Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "sniffly",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1247,
+  "forks_count": 116,
+  "language": "Python",
+  "description": "Claude Code dashboard with usage stats, error analysis, and sharable feature",
+  "topics": [
+   "agent",
+   "ai",
+   "analytics",
+   "coding"
+  ],
+  "size": 4537,
+  "created_at": "2025-07-15T16:53:39Z",
+  "pushed_at": "2025-08-08T18:38:03Z",
+  "open_issues": 11,
+  "license": "MIT",
+  "dependencies_declared": true,
+  "has_tests": true,
+  "has_ci": true,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 3,
+  "contributors": 3,
+  "commit_count": 33,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.env.example', '.github', '.gitignore', 'assets', 'changelog.md', 'docs', 'license', 'lint.sh', 'pyproject.toml', 'readme.md', 'repo-structure.md', 'requirements-dev.txt', 'requirements.txt', 'run_tests.py', 'sniffly', 'sniffly-site', 'tests']"
+    ],
+    "scope": "root of default branch main (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 17,
+   "ci_runs": true,
+   "test_files": 1,
+   "readme_length": 3847,
+   "distinct_commit_days": 7,
+   "commits_sampled": 33,
+   "commit_msg_uniformity_pct": 6,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 8,
+   "readme_claims_code_backed": 6,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 10,
+   "boilerplate_share_pct": 15,
+   "explanation_quality": 3,
+   "tradeoffs_discussed": false,
+   "limitations_disclosed": false,
+   "setup_reproducible": true,
+   "secrets_policy_ok": true,
+   "deps_valid": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 3,
+   "complexity_justified": true,
+   "integration_complexity": 2,
+   "issue_responses": 9,
+   "dependency_updates": 0,
+   "docs_corrections": 5,
+   "ai_share_evidence": "Markers: Claude Code-domain tool with ~20 commits in the first two days (2025-07-15/16), consistent with AI-assisted rapid development. Counter-evidence: three weeks of iterative fixes and releases (0.1.0-0.1.5), external contributor PRs merged (Windows/winloop support, host-parameter fix), CI lint+build workflows, tests dir, run_tests.py and CHANGELOG maintained. No explicit AI-authorship attribution observed.",
+   "evidence": [
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/chiphuyen/sniffly/blob/main/.github/workflows/build.yml",
+     "excerpt": "workflows-listing.json: build.yml (1071 B) and lint.yml (1317 B) under .github/workflows/"
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/sniffly",
+     "excerpt": "root-listing.json: pyproject.toml (2320 B), requirements.txt (362 B), requirements-dev.txt (304 B), tests/, run_tests.py (10467 B), CHANGELOG.md (2465 B), .env.example (1298 B), docs/, sniffly/, sniffly-site/, LICENSE"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/sniffly/commits",
+     "excerpt": "2025-07-15 'Initial release' ... 'Add share API for users to upload their data', 'Fix error analysis (#15)', 'Merge pull request #2 from ledmaster/feat/windows-support-winloop', 2025-08-08 'Add MIT License file (#18)'"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/sniffly",
+     "excerpt": "portfolio survey: has_tests true, has_ci true, dependencies_declared true, releases 3, runnable_setup_documented true, stargazers_count 1247, contributors 3"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/sniffly/blob/main/README.md",
+     "excerpt": "'uvx sniffly@latest init' ... 'Sniffly runs entirely on your local machine: All data processing happens locally, No telemetry'"
+    }
+   ],
+   "counter_evidence": "Initial two-day commit burst could read as a one-shot dump; countered by 3 tagged releases, post-launch bugfix cycle over 3+ weeks, merged external PRs from two outside contributors, CI (lint+build), a tests directory and CHANGELOG.",
+   "counter_evidence_review": {
+    "reviewed": true,
+    "outcome": "Not a one-shot dump: sustained iteration, community PRs, CI and releases all present in saved snapshots. Privacy/no-telemetry claim and hosted gallery are not verifiable from artifacts, hence 6/8 backed."
+   },
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "sotawhat",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 1411,
+  "forks_count": 190,
+  "language": "Python",
+  "description": "Returns latest research results by crawling arxiv papers and summarizing abstracts. Helps you stay afloat with so many new papers everyday.",
+  "topics": [
+   "arxiv",
+   "python",
+   "research-tool",
+   "script",
+   "summarization"
+  ],
+  "size": 27,
+  "created_at": "2018-10-02T21:03:28Z",
+  "pushed_at": "2024-02-02T04:30:15Z",
+  "open_issues": 22,
+  "license": null,
+  "dependencies_declared": true,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": true,
+  "pull_requests": 0,
+  "releases": 1,
+  "contributors": 10,
+  "commit_count": 29,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['readme.md', 'requirements.txt', 'setup.py', 'sotawhat']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 4,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 2000,
+   "distinct_commit_days": 12,
+   "commits_sampled": 29,
+   "commit_msg_uniformity_pct": 24,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "stanford-tensorflow-tutorials",
+  "fork": false,
+  "archived": true,
+  "mirror": false,
+  "stargazers_count": 10372,
+  "forks_count": 4253,
+  "language": "Python",
+  "description": "This repository contains code examples for the Stanford's course: TensorFlow for Deep Learning Research. ",
+  "topics": [
+   "chatbot",
+   "course-materials",
+   "deep-learning",
+   "machine-learning",
+   "natural-language-processing",
+   "nlp",
+   "python",
+   "stanford",
+   "tensorflow",
+   "tutorial"
+  ],
+  "size": 14037,
+  "created_at": "2016-11-05T18:21:51Z",
+  "pushed_at": "2020-12-22T09:21:55Z",
+  "open_issues": 85,
+  "license": "MIT",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 1,
+  "contributors": 3,
+  "commit_count": 106,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', '2017', 'assignments', 'examples', 'license', 'readme.md', 'setup']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 7,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 800,
+   "distinct_commit_days": 44,
+   "commits_sampled": 100,
+   "commit_msg_uniformity_pct": 14,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "readme_claims_total": 4,
+   "readme_claims_code_backed": 4,
+   "original_logic_notes": 4,
+   "meaningful_adaptation": true,
+   "template_similarity_pct": 5,
+   "boilerplate_share_pct": 5,
+   "explanation_quality": 1,
+   "runnable_learning": true,
+   "setup_reproducible": true,
+   "ai_tool_attribution": false,
+   "mass_generated_siblings": 0,
+   "abstraction_layers": 2,
+   "complexity_justified": true,
+   "issue_responses": 2,
+   "dependency_updates": 5,
+   "docs_corrections": 5,
+   "ai_share_evidence": "2016-2018 course code, predating AI coding assistants entirely; hand-iterated development visible in commits ('fixed bugs chatbot', 'Fix lazy loading', 'delete dead code', 'update to tf 1.2 and python3'); no AI markers.",
+   "evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials/commits",
+     "excerpt": "106 commits 2016-2018: 'code for lecture 2'...'code for lecture 11', 'assignment 2: style transfer', 'solution for assignment 2 and code for assignment 3', 'fixed bugs chatbot', five 'Update requirements.txt' commits, external fix by melzareix 'fix: Fix typo in imports'"
+    },
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials",
+     "excerpt": "root-listing.json: dirs 2017/, assignments/, examples/, setup/, plus LICENSE (1091 B) and README.md (800 B)"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials",
+     "excerpt": "portfolio survey: stargazers_count 10372, forks_count 4253, commit_count 106, contributors 3, created 2016-11-05"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials/blob/master/README.md",
+     "excerpt": "'This repository contains code examples for the course CS 20: TensorFlow for Deep Learning Research.' ... 'For setup instruction and the list of dependencies, please see the setup folder of this repository.'"
+    }
+   ],
+   "deep_inspected": true
+  }
+ },
+ {
+  "name": "tensor2tensor",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 10,
+  "forks_count": 9,
+  "language": "Python",
+  "description": "A library for generalized sequence to sequence models",
+  "topics": [],
+  "size": 488,
+  "created_at": "2017-07-18T17:43:46Z",
+  "pushed_at": "2017-07-18T22:46:40Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "tensorflow",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 10,
+  "forks_count": 10,
+  "language": "C++",
+  "description": "Computation using data flow graphs for scalable machine learning",
+  "topics": [],
+  "size": 55388,
+  "created_at": "2016-09-07T17:44:03Z",
+  "pushed_at": "2016-09-07T17:48:02Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "tf-oreilly",
+  "fork": false,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 110,
+  "forks_count": 69,
+  "language": "Python",
+  "description": "Code for O'Reilly's \"A Short Course on TensorFlow\"",
+  "topics": [],
+  "size": 374,
+  "created_at": "2017-05-15T14:52:00Z",
+  "pushed_at": "2017-06-11T12:34:29Z",
+  "open_issues": 0,
+  "license": null,
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 2,
+  "commit_count": 20,
+  "signals": {
+   "test_search": {
+    "queries": [
+     "root entries: ['.gitignore', '01_linear_regression_sol.ipynb', '01_linear_regression_sol.py', '01_linear_regression_starter.ipynb', '01_linear_regression_starter.py', '01_logistic_regression_mnist_sol.ipynb', '01_logistic_regression_mnist_sol.py', '01_logistic_regression_mnist_starter.ipynb', '01_logistic_regression_mnist_starter.py', '02_csv_reader.py', '02_queue_example.py', '02_sharing_variables.py', '02_tfrecord_example.py', '02_word2vec_no_frills.py', '02_word2vec_starter.py', '02_word2vec_visualize.py', 'data', 'docker-compose.yml', 'dockerfile', 'exercises', 'process_data.py', 'readme.md', 'setup', 'utils.py']"
+    ],
+    "scope": "root of default branch master (top-level only)",
+    "complete": false
+   },
+   "root_entry_count": 24,
+   "ci_runs": false,
+   "test_files": 0,
+   "readme_length": 177,
+   "distinct_commit_days": 3,
+   "commits_sampled": 20,
+   "commit_msg_uniformity_pct": 10,
+   "refactor_commits": 0,
+   "one_shot_dump": false,
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "transformer-xl",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 8,
+  "forks_count": 4,
+  "language": "Python",
+  "description": null,
+  "topics": [],
+  "size": 144,
+  "created_at": "2019-01-30T23:06:00Z",
+  "pushed_at": "2019-03-13T23:48:01Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ },
+ {
+  "name": "tvm",
+  "fork": true,
+  "archived": false,
+  "mirror": false,
+  "stargazers_count": 3,
+  "forks_count": 1,
+  "language": null,
+  "description": "Open deep learning compiler stack for cpu, gpu and specialized accelerators",
+  "topics": [],
+  "size": 44521,
+  "created_at": "2021-06-23T21:02:58Z",
+  "pushed_at": "2021-06-23T20:06:37Z",
+  "open_issues": 0,
+  "license": "Apache-2.0",
+  "dependencies_declared": false,
+  "has_tests": false,
+  "has_ci": false,
+  "runnable_setup_documented": false,
+  "pull_requests": 0,
+  "releases": 0,
+  "contributors": 1,
+  "commit_count": 0,
+  "signals": {
+   "deep_inspected": false
+  }
+ }
+]
