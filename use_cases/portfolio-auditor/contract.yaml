@@ -1,0 +1,227 @@
+contract_id: github-portfolio-auditor-v1
+version: 1
+title: "GitHub Portfolio Auditor V1 \u2014 Product Decision Contract"
+status: locked
+north_star: Percentage of strategic repositories that are evidence-backed, reproducibly
+  usable, technically healthy, authority-ready, and classified NOT_AI_SLOP.
+primary_users:
+- Abhillash Jadhav
+- product managers and builders who fork and use the system
+scope:
+- broad scan of all accessible public and private repositories
+- "two-stage inspection \u2014 broad scan then deep inspection of high-risk or marketable\
+  \ repositories"
+- evidence-backed recommendation FIX / SHOWCASE / CONSOLIDATE / REBUILD / KEEP_AS_IS
+- explicit repository-level AI-slop verdict
+- prioritized remediation backlog
+- sandbox remediation PRs with independent review and gated auto-merge
+- post-remediation re-audit
+- quarterly, on-demand, and post-remediation audit modes
+out_of_scope:
+- real portfolio scan before the operator supplies the strategic repository list
+- external market research for business-accuracy judgments (V1 uses repository evidence
+  only)
+- model SDK or API calls inside the Python runtime
+- services, queues, databases, vector stores, or a web UI (file-backed state only)
+- classifying or attacking the person who created a repository
+product_decisions:
+- id: PD-PA-01
+  decision: The verdict applies only to the repository artifact and its public or
+    accessible evidence, never to the person who created it.
+- id: PD-PA-02
+  decision: The operator supplies the strategic and marketable repository list before
+    the first real scan; it is imported via configuration, not source code.
+- id: PD-PA-03
+  decision: Business and product accuracy is judged from repository evidence only
+    in V1.
+- id: PD-PA-04
+  decision: Build and verify entirely on deterministic fixtures, mocked GitHub data,
+    sandbox repositories, and planted failures before touching any real repository.
+- id: PD-PA-05
+  decision: Auto-merge authority applies only to future remediation PRs created by
+    the finished auditor, never to the auditor feature branch itself.
+- id: PD-PA-06
+  decision: Private-repository evidence stays private; public reports never expose
+    private source code, secrets, private repository names, or configuration.
+- id: PD-PA-07
+  decision: "No model-based finding is delivered without structured evidence and a\
+    \ confidence value; honesty over helpfulness \u2014 a BLOCKED report beats an\
+    \ invented result."
+assessment_dimensions:
+- key: technical_health
+- key: architecture_quality
+- key: tests_ci_evaluations
+- key: security_dependency_integrity
+- key: reusability_deployability
+- key: repository_cleanliness
+- key: product_usability_packaging
+- key: business_product_accuracy
+- key: claim_to_evidence_integrity
+- key: authority_readiness
+recommendation_verdicts:
+- FIX
+- SHOWCASE
+- CONSOLIDATE
+- REBUILD
+- KEEP_AS_IS
+ai_slop_policy:
+  verdicts:
+  - AI_SLOP
+  - NOT_AI_SLOP
+  - INSUFFICIENT_EVIDENCE
+  hard_verdict_min_confidence: 70
+  require_counter_evidence_review: true
+  default_when_uncertain: INSUFFICIENT_EVIDENCE
+  forbidden_sole_bases:
+  - writing_style
+  - disclosed_ai_assistance
+  - commit_volume
+  - repository_size
+  - generated_file_count
+  - lack_of_popularity
+business_accuracy:
+  scale:
+  - PROVEN
+  - LIKELY
+  - NOT_PROVEN
+  - CONTRADICTED
+  - INSUFFICIENT_EVIDENCE
+  absence_is_not_falsehood: true
+evidence_model:
+  finding_required_fields:
+  - finding_id
+  - evidence
+  - confidence
+  - severity
+  - affected_capability
+  - reasoning
+  - remediation_recommendation
+  valid_evidence_kinds:
+  - repo_file_line
+  - commit
+  - test
+  - ci_workflow
+  - release_artifact
+  - executed_command
+  - evaluation_report
+  - browser_trace
+  - screenshot
+  - deployment_proof
+  - architecture_document
+  - issue_or_pr_history
+  independence_key: origin
+  corroboration_min_origins_normal: 2
+  corroboration_min_origins_high_impact: 3
+scoring_model:
+  confidence_range:
+  - 0
+  - 100
+  high_confidence_floor: 70
+  numeric_score_never_overrides_material_finding: true
+  dimension_scale:
+  - 0
+  - 100
+prioritization:
+  formula: strategic_importance * severity * authority_impact * confidence / remediation_effort
+  priority_order:
+  - marketable_repositories
+  - genai_authority_repositories
+  - high_technical_or_incident_risk
+  - large_claim_to_evidence_gap
+  - high_ai_slop_risk
+  - strong_reuse_potential
+  numeric_score_never_overrides_material_high_confidence_finding: true
+remediation_policy:
+  auto_merge_scope: future_remediation_prs_only
+  never_auto_merges_the_auditor_feature_branch: true
+  auto_merge_required_gates:
+  - id: within_approved_scope
+  - id: no_unresolved_product_decision_change
+  - id: tests_first_where_applicable
+  - id: substantive_ci_green
+  - id: independent_review_approve
+  - id: no_blocking_finding_remaining
+  - id: post_patch_audit_passes
+  - id: bound_to_inspected_commit
+  - id: does_not_weaken_gates
+  forbidden_auto_merge_actions:
+  - major_architecture_rewrite
+  - product_scope_change
+  - business_claim_change_needs_user
+  - destructive_archival_or_deletion
+  - repository_consolidation
+  - insufficient_evidence
+  - weakens_validation
+  - hides_or_deletes_failed_evidence
+audit_modes:
+- quarterly
+- on_demand
+- post_remediation
+safety_privacy:
+  redact_private_origins_in_public_reports: true
+  least_privilege_github_permissions: true
+  dry_run_default: true
+  explicit_repository_allowlist_required: true
+  block_destructive_actions: true
+  secret_scanning: true
+  audit_logging: true
+  rate_limit_handling: true
+  cost_controls: true
+  retry_and_resume: true
+metrics:
+  north_star: pct_strategic_repos_evidence_backed_usable_healthy_authority_ready_not_slop
+  leading:
+  - repositories_broadly_scanned
+  - repositories_deeply_inspected
+  - strategic_repositories_deeply_inspected
+  - high_confidence_findings
+  - blocking_findings_remediated
+  - successful_installations
+  - verified_end_to_end_journeys
+  - supported_claims
+  - approved_remediation_prs
+  - auto_merged_remediation_prs
+  - post_remediation_audits_passed
+  quality_guardrail:
+  - repeated_audit_consistency
+  - false_positive_rate
+  - unsupported_hard_verdicts
+  - private_data_leakage
+  - destructive_changes
+  - incorrect_auto_merges
+  - remediation_regressions
+  - stale_evidence
+  - audit_cost
+  - scan_duration
+  - deep_inspection_duration
+  - model_and_prompt_drift
+integration_boundary:
+  module_root: src/loop_engineering/use_cases/portfolio_auditor
+  config_root: use_cases/portfolio-auditor
+  fixtures_root: evals/fixtures/portfolio_auditor
+  reuses:
+  - contracts.goal_contract (candidate freezing / digest lock)
+  - domain.models.EvidenceItem (evidence-ledger independence key)
+  - use_cases.github_authority_audit.datasource (data-source protocol pattern)
+  - verification.e2e_reviewer (review isolation / merge gating)
+  - reporting.evidence_pack (deterministic reporting)
+  adds_no_imports_into_existing_modules: true
+provenance_fields:
+- repository_owner
+- repository_name
+- repository_visibility
+- inspected_commit
+- audit_id
+- rubric_version
+- scanner_version
+- prompt_version
+- model_version
+- commands_executed
+- evidence_references
+- inspection_depth
+- strategic_priority
+- confidence
+- verdict
+- reason_for_verdict
+amendments: []
+canonical_digest: sha256:400ff55d2370d48f5b5b9d818e459fda6a3ed8e42d96c76e68878441a6032c09

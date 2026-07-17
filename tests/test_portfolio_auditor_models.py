@@ -112,7 +112,7 @@ def test_blocking_findings_selected() -> None:
 
 
 def test_prioritization_formula() -> None:
-    # Priority = strategic × severity × authority × confidence ÷ effort
+    # Priority = strategic * severity * authority * confidence / effort
     score = m.prioritization_score(
         strategic_importance=5,
         severity_weight=4,
