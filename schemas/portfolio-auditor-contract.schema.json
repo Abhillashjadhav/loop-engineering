@@ -60,7 +60,8 @@
     "recommendation_verdicts": {
       "type": "array",
       "items": { "type": "string" },
-      "minItems": 5
+      "minItems": 5,
+      "maxItems": 5
     },
     "ai_slop_policy": {
       "type": "object",

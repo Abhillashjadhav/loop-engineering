@@ -14,6 +14,7 @@ import pytest
 
 from loop_engineering.domain.errors import ContractViolation
 from loop_engineering.use_cases.portfolio_auditor import contract as pc
+from loop_engineering.use_cases.portfolio_auditor import models as m
 
 
 def test_shipped_contract_loads_and_verifies() -> None:
@@ -164,3 +165,19 @@ def test_scope_never_authorizes_merging_feature_branch() -> None:
     # never the auditor feature branch itself.
     assert rp["auto_merge_scope"] == "future_remediation_prs_only"
     assert rp["never_auto_merges_the_auditor_feature_branch"] is True
+
+
+def test_code_enums_match_locked_contract_vocabularies() -> None:
+    # Guard against future drift between models.py enums and the digest-locked
+    # vocabularies (the digest only protects the shipped instance, not the code).
+    c = pc.load_default()
+    assert {v.value for v in m.RecommendationVerdict} == set(pc.recommendation_verdicts(c))
+    assert {v.value for v in m.AISlopVerdict} == set(pc.ai_slop_verdicts(c))
+    assert {v.value for v in m.BusinessAccuracyVerdict} == set(pc.business_accuracy_scale(c))
+
+
+def test_finding_serialization_covers_contract_required_fields() -> None:
+    c = pc.load_default()
+    required = set(c["evidence_model"]["finding_required_fields"])
+    f = m.Finding("F", "r", "d", "s", [], 50, m.Severity.LOW, "cap", "reason", "fix")
+    assert required <= set(f.to_dict().keys())
