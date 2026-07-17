@@ -61,7 +61,7 @@ def test_demonstration_overdue_blocked_waiting_visible() -> None:
 
 
 def test_demonstration_schedule_from_real_free_time_one_approval() -> None:
-    cos, r = _run()
+    _, r = _run()
     assert r.schedule.free_minutes > 0
     assert not r.schedule.overflow or r.schedule.note
     # one-approval focus-block flow
@@ -88,8 +88,13 @@ def test_demonstration_no_unauthorized_external_action() -> None:
     _, r = _run()
     executed_types = {a.action_type for a in r.safe_result.executed}
     prohibited = {
-        "send_email", "forward_email", "cancel_meeting", "merge_code",
-        "publish_content", "apply_to_job", "linkedin_publish",
+        "send_email",
+        "forward_email",
+        "cancel_meeting",
+        "merge_code",
+        "publish_content",
+        "apply_to_job",
+        "linkedin_publish",
     }
     assert not (executed_types & prohibited), "no external action may auto-execute"
 
