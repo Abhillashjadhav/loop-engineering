@@ -1,0 +1,57 @@
+# Cohort audit execution config (operator-confirmed 2026-07-17).
+# Read by the skill layer for deep-inspection selection and the final report;
+# the engine's locked methodology is unchanged by anything in this file.
+
+# Operator decision: Aishwarya Srinivasan is EXCLUDED from this audit
+# entirely. No further identity search will be performed. (Prior recorded
+# coverage stays in identity-evidence.md as the factual record.)
+excluded_subjects:
+  - name: Aishwarya Srinivasan
+    status: EXCLUDED_BY_OPERATOR
+    note: identity search closed; no inference of any kind is drawn
+
+# Config-designated flagships (always deep-inspected; deep_inspect.py fails
+# loudly if a listed flagship is absent from the harvested authored records).
+# Only publicly visible repositories may be listed: loop-engineering and
+# production-engineering-os are private as of 2026-07-17 and are therefore
+# NOT listed — add them here only after making them public and re-harvesting.
+flagships:
+  abhillash-jadhav: [PM-agent-OS, pm-evals, rag-eval-harness]
+  pawel-huryn: [pm-skills]
+  aakash-gupta: []        # completed-audit evidence reused; formula picks
+  shubham-saboo: []       # completed-audit evidence reused; formula picks
+  hamel-husain: []        # objective formula picks the flagships
+  eugene-yan: []
+  shreya-shankar: []
+  chip-huyen: []
+
+# Priority ordering for the final report's direct comparisons.
+comparison_priority:
+  - pawel-huryn           # first and deepest: closest product overlap
+  - aakash-gupta
+  - shubham-saboo
+
+# The Paweł Huryn deep comparison (pm-skills vs PM-agent-OS) MUST address
+# each dimension below from observable public artifacts only. Popularity is
+# reported under distribution_mechanics and never as product quality.
+pawel_deep_comparison_dimensions:
+  - product_scope                    # what each system covers end-to-end
+  - technical_depth                  # observable engineering substance
+  - verification_quality             # gates, fixtures, eval discipline
+  - tests_and_ci                     # test surface + CI, from listings/workflows
+  - originality_of_frameworks        # original mechanisms vs adapted patterns
+  - installation_and_activation      # documented install/activation paths
+  - user_experience                  # onboarding, docs quality, error paths (as documented)
+  - ecosystem_compatibility          # tools/platforms each integrates with
+  - community_contribution_design    # contribution surface, issue/PR handling
+  - distribution_mechanics           # reach channels; stars/forks as reach only
+  - success_attribution              # technical depth vs packaging vs distribution
+  - ai_assistance_transparency       # disclosed AI tooling (never penalized per locked rules)
+
+# Fairness constraints restated for the inspection stage (binding):
+# - assess public artifacts only; no private-intent or private-competence claims
+# - AI-share only as 0-25 / 25-50 / 50-75 / 75-100 / INSUFFICIENT_EVIDENCE
+# - negative classifications need slop >= 70, confidence >= 70, and a recorded
+#   counter-evidence review
+# - repositories not deep-inspected are labeled, and classify from mechanical
+#   signals only (INSUFFICIENT_EVIDENCE when that is all the evidence supports)
