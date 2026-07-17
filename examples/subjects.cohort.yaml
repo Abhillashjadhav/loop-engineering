@@ -1,0 +1,79 @@
+# Cohort audit subjects (goal: github-authority-audit-cohort-2026-07).
+# Identity is NOT assumed from the operator's instruction or a URL: the audit
+# requires at least two matching public profile attributes before analysing
+# any repository. Evidence trail with URLs, retrieval timestamps, and content
+# hashes: audits/2026-07-17-cohort-audit/identity-evidence.md
+#
+# cohort labels are audit metadata (ignored by the engine's identity gate):
+#   A = direct peers, B = technical-authority benchmarks.
+#
+# Aishwarya Srinivasan is INTENTIONALLY ABSENT from this file: no GitHub
+# account could be linked to her by two independent public attributes
+# (recorded search coverage in identity-evidence.md; >=5 same-named candidate
+# accounts exist). She is classified IDENTITY_UNRESOLVED_FOR_GITHUB_AUDIT and
+# no technical inference is drawn from the absence of a verified account.
+subjects:
+  - slug: abhillash-jadhav
+    display_name: Abhillash Jadhav
+    candidate_login: Abhillashjadhav
+    cohort: A
+    expected_attributes:
+      name: Abhillash Jadhav     # self-described in his repo READMEs ("Built by
+                                 # Abhillash Jadhav — GenAI PM", PM-agent-OS)
+      linkedin: abhillash-jadhav # public LinkedIn slug (in.linkedin.com/in/
+                                 # abhillash-jadhav-350525b); the harvested
+                                 # profile must carry it for this to count —
+                                 # see identity-evidence.md (PENDING second
+                                 # independent person->login attribute)
+  - slug: pawel-huryn
+    display_name: Paweł Huryn
+    candidate_login: phuryn
+    cohort: A
+    expected_attributes:
+      name: Huryn                # substring-safe against Paweł/Pawel encodings
+      blog: productcompass.pm
+  - slug: aakash-gupta           # reused from the completed 2026-07-16 audit
+    display_name: Aakash Gupta
+    candidate_login: aakashg
+    cohort: A
+    expected_attributes:
+      name: Aakash
+      blog: aakashg.com
+      bio_keywords: [product]
+  - slug: shubham-saboo          # reused from the completed 2026-07-16 audit
+    display_name: Shubham Saboo
+    candidate_login: Shubhamsaboo
+    cohort: A
+    expected_attributes:
+      name: Shubham Saboo
+      blog: theunwindai.com
+      bio_keywords: [ai]
+  - slug: hamel-husain
+    display_name: Hamel Husain
+    candidate_login: hamelsmu
+    cohort: B
+    expected_attributes:
+      name: Hamel
+      blog: hamel.dev
+  - slug: eugene-yan
+    display_name: Eugene Yan
+    candidate_login: eugeneyan
+    cohort: B
+    expected_attributes:
+      name: Eugene Yan
+      blog: eugeneyan.com
+  - slug: shreya-shankar
+    display_name: Shreya Shankar
+    candidate_login: shreyashankar
+    cohort: B
+    expected_attributes:
+      name: Shreya Shankar
+      blog: sh-reya.com
+      twitter: sh_reya
+  - slug: chip-huyen
+    display_name: Chip Huyen
+    candidate_login: chiphuyen
+    cohort: B
+    expected_attributes:
+      name: Chip Huyen
+      blog: huyenchip.com

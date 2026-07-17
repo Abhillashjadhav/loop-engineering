@@ -1,0 +1,99 @@
+# Draft goal contract for the COHORT GitHub authority audit. This is a NEW
+# goal — the completed 2026-07-16 audit (github-authority-audit-live) is not
+# modified, overwritten, or re-run; its evidence for aakash-gupta and
+# shubham-saboo is reused as recorded.
+# Lock with `loop-engineering init examples/goal.cohort.yaml`; run with
+# `loop-engineering audit-github --subjects examples/subjects.cohort.yaml
+#   --fixtures <snapshot-dir> --goal-file examples/goal.cohort.yaml`.
+goal_id: github-authority-audit-cohort-2026-07
+version: 1
+goal_statement: >
+  Using publicly available evidence only, determine how Abhillash Jadhav's
+  public GitHub portfolio compares with direct AI/PM peers (Paweł Huryn,
+  Aakash Gupta, Shubham Saboo) and established technical AI authorities
+  (Hamel Husain, Eugene Yan, Shreya Shankar, Chip Huyen), separating
+  technical depth from distribution strength — without inferring private
+  intent, private competence, or exact authorship. Aishwarya Srinivasan is
+  IDENTITY_UNRESOLVED_FOR_GITHUB_AUDIT unless two independent public
+  attributes link a GitHub account to her; no technical inference is drawn
+  from the absence of a verified account.
+expected_output:
+  deliverables:
+    - cross-subject comparison across both cohorts
+    - final answer with per-subject verdicts
+    - person-level assessments
+    - repository scorecards with deep-inspection coverage labeled
+    - product-level flagship comparison
+    - separate answers to the eight cohort questions (A-H)
+  format_notes: >
+    markdown final answer plus JSON artifacts and scorecards; repositories not
+    deeply inspected are clearly labeled; the eight questions are answered
+    separately: A strongest technical depth, B best usable products,
+    C strongest distribution, D best conversion of technical work into public
+    authority, E where Abhillash is genuinely ahead, F where he is behind,
+    G product gaps versus packaging/distribution gaps, H three
+    highest-leverage actions for Abhillash grounded only in public artifacts.
+north_star_metric:
+  name: human_active_minutes_saved_per_successfully_verified_goal
+  baseline_manual_minutes: 1440
+leading_metrics:
+  - percentage of planned tasks completed autonomously
+  - first-pass task verification rate
+  - percentage of material claims independently verified
+  - average repair attempts per task
+  - repeated-action rate
+  - human interventions
+  - six-run conclusion consistency
+  - end-to-end goal-match score
+scope:
+  - verify subject identity from at least two public attributes
+  - inventory all public repositories for each subject
+  - assess repository quality across the ten-dimension rubric
+  - aggregate person-level distributions and verdicts
+  - compare subjects and answer the underlying question
+  - produce final output with uncertainties disclosed
+exclusions:
+  - private intent, private competence, or exact human/AI authorship
+  - non-public data sources of any kind (private repositories are invisible
+    to this audit and never counted for or against a subject)
+  - judgments about the person rather than the public artifacts
+  - assigning a GitHub account to Aishwarya Srinivasan without two
+    independent public identity attributes
+allowed_actions:
+  - read public GitHub profile and repository data (or pre-fetched snapshots)
+  - write artifacts and evidence under the run directory
+  - compute scores, classifications, and top-10 selection deterministically
+forbidden_actions:
+  - fetching non-public data
+  - stating exact AI-authorship percentages
+  - using popularity as technical-quality evidence
+  - destructive operations of any kind
+data_sources:
+  - public GitHub profiles and repositories of the verified subject accounts
+  - completed-audit evidence for aakash-gupta and shubham-saboo
+    (audits/2026-07-16-live-audit/, reused unmodified)
+evidence_requirements:
+  normal_claim_min_sources: 2
+  high_impact_claim_min_sources: 3
+success_checks:
+  - every material claim carries at least two independent evidence origins
+  - negative classifications carry counter-evidence and meet confidence floors
+  - six analysis variants are compared and disagreements preserved
+  - deep-inspection selection is deterministic and its coverage is labeled
+    on every repository scorecard
+  - AI-assistance-versus-slop distinction reused unchanged from the locked
+    rubric; distribution reported as reach, never quality
+goal_match_threshold: 70
+replication_count: 6
+budget:
+  max_iterations: 240
+  max_task_attempts: 3
+stop_conditions:
+  - budget exhausted
+  - circuit breaker tripped
+  - human decision required
+escalation_conditions:
+  - identity cannot be confidently resolved
+  - required source inaccessible
+approved_at: "2026-07-17T00:00:00+00:00"
+approved_by: abhillash
