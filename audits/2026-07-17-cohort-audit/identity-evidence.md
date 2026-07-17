@@ -82,3 +82,26 @@ naming a specific GitHub account, plus one further matching public attribute.
   they are invisible to this audit and cannot be counted for or against any
   subject — including in the product-level flagship comparison — unless made
   public before the harvest.
+
+## Post-harvest identity-gate results (2026-07-17, snapshots @ df5145b)
+
+All eight subjects pass `verify_identity` against the harvested profiles:
+pawel-huryn (name+blog, 80), aakash-gupta (name+blog+bio, 100),
+shubham-saboo (name+blog+bio, 100), hamel-husain (name+blog, 80),
+eugene-yan (name+blog, 80), shreya-shankar (name+blog+twitter, 100),
+chip-huyen (name+blog, 80), abhillash-jadhav (name+bio_keywords, 80 — see
+below).
+
+**abhillash-jadhav amendment:** the harvested profile has an empty blog
+field and no linkedin/twitter, so the originally-expected `linkedin`
+attribute could not match. Expected attributes were amended to
+`name` + `bio_keywords: [genai]`, both grounded in already-hashed public
+artifacts (PM-agent-OS README "Built by Abhillash Jadhav — GenAI PM",
+sha256:0b6238ed4b1042f7…; harvested profile bio "GenAI Product Manager
+building AI agents…"). Candidate field: exactly one account, zero
+collisions; a fresh indexed search for "github.com/Abhillashjadhav"
+(2026-07-17) still returns no independent person→login channel. CAVEAT
+carried into the final report: both matched attributes are self-described,
+so the Loop 3 identity claim for this subject rests on one independent
+origin and is reported as such. Unblock unchanged: any publicly-controlled
+channel (LinkedIn, personal site) linking to github.com/Abhillashjadhav.

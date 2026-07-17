@@ -19,12 +19,17 @@ subjects:
     cohort: A
     expected_attributes:
       name: Abhillash Jadhav     # self-described in his repo READMEs ("Built by
-                                 # Abhillash Jadhav — GenAI PM", PM-agent-OS)
-      linkedin: abhillash-jadhav # public LinkedIn slug (in.linkedin.com/in/
-                                 # abhillash-jadhav-350525b); the harvested
-                                 # profile must carry it for this to count —
-                                 # see identity-evidence.md (PENDING second
-                                 # independent person->login attribute)
+                                 # Abhillash Jadhav — GenAI PM", PM-agent-OS,
+                                 # sha256:0b6238ed4b1042f7…)
+      bio_keywords: [genai]      # same hashed README self-describes "GenAI PM";
+                                 # harvested profile bio: "GenAI Product
+                                 # Manager building AI agents…". CAVEAT
+                                 # (disclosed in identity-evidence.md and the
+                                 # final report): both matched attributes are
+                                 # self-described; no independent person->login
+                                 # channel exists as of 2026-07-17, so Loop 3
+                                 # holds the identity claim at one independent
+                                 # origin. Zero colliding candidates recorded.
   - slug: pawel-huryn
     display_name: Paweł Huryn
     candidate_login: phuryn

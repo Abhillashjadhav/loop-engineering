@@ -1,0 +1,4662 @@
+{
+ "abhillash-jadhav": [
+  {
+   "name": "AI-PM-essential-skills",
+   "score": 68.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 20.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula; also config-designated flagship"
+  },
+  {
+   "name": "PM-agent-OS",
+   "score": 68.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 27.0,
+    "relevance": 16.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula; also config-designated flagship"
+  },
+  {
+   "name": "rag-eval-harness",
+   "score": 64.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 16.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula; also config-designated flagship"
+  },
+  {
+   "name": "Indian-stocks-deepdive-and-trading-agents",
+   "score": 56.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 27.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-evals",
+   "score": 56.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula; also config-designated flagship"
+  },
+  {
+   "name": "equity-resaerch-agentic-workflow",
+   "score": 52.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "loop-engineering",
+   "score": 52.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "MultiAgent-template",
+   "score": 51.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "Nasdaq-concentrated-allocation",
+   "score": 51.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "claude-code-demo",
+   "score": 49.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "Context-engineering-",
+   "score": 48.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "flagship (config-designated, outside formula top-N)"
+  },
+  {
+   "name": "RADAR-UI",
+   "score": 48.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Evals-pass-1",
+   "score": 46.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Linkedin-research-posts",
+   "score": 45.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Mirror-score",
+   "score": 45.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "RADAR-7-lenses",
+   "score": 45.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Sensei",
+   "score": 45.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "AI-PM-cold-mails",
+   "score": 42.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 9.0,
+    "relevance": 8.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Config-repo",
+   "score": 42.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 9.0,
+    "relevance": 8.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "New-UI-addition",
+   "score": 42.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Career-counselling-agent",
+   "score": 39.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Telegram-agentic-workflows",
+   "score": 37.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Sub-agent-reusable-template",
+   "score": 36.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 7.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Misshka-Learning-Progress-App",
+   "score": 35.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "youtube-predictor",
+   "score": 35.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 6.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "10Xbuilds",
+   "score": 33.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 4.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Placeholder-repo",
+   "score": 29.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 4.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Asset-allocation",
+   "score": 24.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "pawel-huryn": [
+  {
+   "name": "pm-skills",
+   "score": 84.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 25.0,
+    "code_surface": 18.0,
+    "relevance": 16.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula; also config-designated flagship"
+  },
+  {
+   "name": "claude-usage",
+   "score": 79.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 20.0,
+    "code_surface": 30.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-brain",
+   "score": 72.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 15.0,
+    "code_surface": 20.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "agentlift",
+   "score": 68.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 26.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "grok-build-vscode",
+   "score": 65.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 10.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "swarm-protocol",
+   "score": 63.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 23.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "burnstop",
+   "score": 53.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 15.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "experiments",
+   "score": 48.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "lll-chess-leaderboard",
+   "score": 48.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "claude-code-advanced",
+   "score": 46.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "dynamic-workflows-experiment",
+   "score": 45.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "managed-agents-experiment",
+   "score": 43.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "claude-template-session",
+   "score": 41.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "product-compass-testimonials",
+   "score": 41.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 27.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "trace-insight-charts-view",
+   "score": 41.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "b2c-saas-with-stripe-template-59",
+   "score": 40.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "saas-boilerplate-lovable",
+   "score": 40.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "examples",
+   "score": 37.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 9.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "phuryn",
+   "score": 36.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 6.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "agent-second-brain",
+   "score": 33.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 5.0,
+    "code_surface": 6.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "moltbot-sandbox",
+   "score": 33.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "aakash-gupta": [
+  {
+   "name": "product-growth-team-os",
+   "score": 51.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 10.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "claude-routines-and-agents-pm-pack",
+   "score": 51.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 9.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-claude-code-setup",
+   "score": 50.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 15.0,
+    "code_surface": 9.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "claude-design-pm-toolkit",
+   "score": 50.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 12.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-planning-system",
+   "score": 49.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-github-workflow-repo",
+   "score": 46.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-claude-skills",
+   "score": 45.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 9.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-prompt-library",
+   "score": 43.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 5.0,
+    "code_surface": 12.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "awesome-ai-pm",
+   "score": 40.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 5.0,
+    "code_surface": 9.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "pm-github-starter-kit",
+   "score": 38.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 6.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "hermes-pm-toolkit",
+   "score": 38.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 4.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "cups-task",
+   "score": 38.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "cursor-layer-pm-toolkit",
+   "score": 33.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 4.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "aakashg",
+   "score": 20.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "shubham-saboo": [
+  {
+   "name": "awesome-llm-apps",
+   "score": 84.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 25.0,
+    "code_surface": 30.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "gemini-artboard",
+   "score": 52.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "openclaw-vertexai-memorybank",
+   "score": 51.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "repotovideo",
+   "score": 51.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "gpt3_book_sandbox",
+   "score": 48.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 15.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "Shubhamsaboo",
+   "score": 43.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "ai-breakup-recovery-agent",
+   "score": 43.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "awesome-ai-agent-prompts",
+   "score": 35.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 5.0,
+    "code_surface": 0.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "Portfolio",
+   "score": 30.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "customer-center-analytics-nlp",
+   "score": 28.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "gpt3_sandbox",
+   "score": 28.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ai-linkedin-post-scanner",
+   "score": 26.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Valentines_Message_Generator",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "javascript_wizard",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "docarray-nocode",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "BERT_Sentiment_Analysis",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "chatgpt-discord",
+   "score": 20.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "gpt3-text-generation",
+   "score": 19.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "zero-shot-image-classifier",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "weekly-report-analysis",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "jina_finetuner_notebooks",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "hamel-husain": [
+  {
+   "name": "evals-skills",
+   "score": 66.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 20.0,
+    "code_surface": 9.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "hamel",
+   "score": 65.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 10.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "claude-review-loop",
+   "score": 57.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 15.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "code_search",
+   "score": 53.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 30.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "claudesave",
+   "score": 50.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 10.0,
+    "code_surface": 26.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "hamelnb",
+   "score": 49.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 5.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "research-council",
+   "score": 48.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "design-research",
+   "score": 48.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 12.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "stfu",
+   "score": 48.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "Seq2Seq_Tutorial",
+   "score": 46.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 23.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "nbsanity",
+   "score": 46.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 10.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "reverse-eng-site-skill",
+   "score": 46.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ktext",
+   "score": 43.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 24.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "substack-stats",
+   "score": 42.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ft-drift",
+   "score": 40.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 26.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Docker_Tutorial",
+   "score": 39.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "website-to-api",
+   "score": 39.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 5.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wandb-cicd",
+   "score": 37.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 27.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "llm-interest",
+   "score": 36.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 12.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "notes",
+   "score": 35.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "air-demo",
+   "score": 35.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "hamelsmu",
+   "score": 35.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "oauth-tutorial",
+   "score": 33.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "llama-inference",
+   "score": 33.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-fasthtml",
+   "score": 32.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "phx-bench",
+   "score": 31.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "hfsize",
+   "score": 30.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "FakeTest",
+   "score": 30.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "eugene-challenge",
+   "score": 30.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wandbtocsv",
+   "score": 29.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "posit-python-quarto",
+   "score": 28.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "gh-email",
+   "score": 27.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "datasciencecoursera",
+   "score": 27.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "python-notes",
+   "score": 26.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fastrelease",
+   "score": 26.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "replicate-examples",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wandb-modal-webhook",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "docker-gpu",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "oauth-render-quarto",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "text-social",
+   "score": 25.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fasthtml-eugene-challenge",
+   "score": 24.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "simple_flask_app",
+   "score": 24.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "pyscript-getemail",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "doghouse",
+   "score": 23.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 13.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-transformers",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbsanity-test",
+   "score": 23.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 13.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest2",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Coursera_GetData",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "build-hugo",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "deepspeed-lora",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fastagger",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev_blog",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto-test",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "zidisha",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "get-lambda",
+   "score": 22.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "blog-2",
+   "score": 22.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 22.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "text-editor-tutorial",
+   "score": 22.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 0.0,
+    "code_surface": 4.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto-gpt",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "docker-cpu",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Hipchat_Parser",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ml-gpu-lite",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nolib_nbdev",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "pydoc_quarto",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fastlite-debugging",
+   "score": 20.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "griffe-quarto",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-hugo",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "my-blog-site",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "blog",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "demo_nbdev_temp",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "embed-debug-quarto",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "foo-test",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "foo-test2",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ga-ed-tech",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "hypothesis",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "image-test",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-rust",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new_stuff2",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nwu_cards_demo",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto_nbcopy",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "sqlite-copy-issue",
+   "score": 20.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-07-22-2021",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-3",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-again2",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-fp",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test3",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test7",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test_html",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "tquarto",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Hive2VW",
+   "score": 19.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "RepData_PeerAssessment1",
+   "score": 19.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 9.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "model_explainability",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "react-deploy-test",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-template",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nb_export_test",
+   "score": 18.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wandb-demo",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "foo",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "hamelsmu.github.io",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "include-embed-bug",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-jbook",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "my-first-jupyter-ext",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new-site",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new_nbdev_project",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new_project",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new_stuff",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-blog",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-foo",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-fork-action",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-site2",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "csv_to_xls",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "minimal-site",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "try_modal",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "imagenette-test",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev-test2023",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "pydantic-yaml-parser",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto-minimal",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "understand_plugins",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "FE_ArcadeGame",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "attachments_quarto",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "coffee_rec",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "docs-explore",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "lewinb",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev-demo-j",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev_ext",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "rss-quarto",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "testfoo",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "vaccine-appointment-checker",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wandb-test",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "bq-gpt",
+   "score": 16.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "cards",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-metaflow",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest18",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "posit2023-nbdev",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "demofoo",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fastcore-quartodoc",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ibis_badge",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev-demo-k",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev-fix-test",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev-master-test",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev-minimal",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new_nbdev2",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "notebook-quarto-format-bug",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest11",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest12",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest13",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest3",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "pydnbdev",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto-latex",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto-mermaid",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "toc-quarto",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wb-embed",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fastai-issue-summarizer",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ZipCodeWeb_Scraping",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Congress2017",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "govee",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ml-cpu-lite",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test_nbdev_2",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "try-launch",
+   "score": 14.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "hello-world-deploy",
+   "score": 13.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 13.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test_go_module",
+   "score": 13.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 13.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "dbt-project",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto_nbimg",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "mingpt",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nbdev_foo",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "new_nbdev",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quarto-docker-test",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "simple_chat_app",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-fastscript",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-nbdev",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test_3",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "triage-issues",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "face-detect",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "mold",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "notification-sanity",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wasm-chat-notebook",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Useful_Notebooks",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "intro-html",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "pdfredact",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "quartodoc-members-repro",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-new-install",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "PML",
+   "score": 9.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 9.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "mlbot_dev_test",
+   "score": 9.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 9.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learn-caddy",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-nvlink",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Debugging_Python",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "launch-test",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "mywebsite",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-nbdev2",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test",
+   "score": 7.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 7.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "metaflow-plugin-magicdir",
+   "score": 6.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 6.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "brainflow",
+   "score": 4.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 4.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "LearnDocker",
+   "score": 4.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 4.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Issue-Label-Bot-Examples",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "actions-demo",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "gifs-experiment",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-stuff",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "CreateYourOwnJupyterServer",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "github-pages-with-jekyll",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-stuff-2",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "test-new-repo",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "YourSkinGUI",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "_delete-this",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ntest7",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "eugene-yan": [
+  {
+   "name": "applied-ml",
+   "score": 66.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 25.0,
+    "code_surface": 19.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "eugeneyan",
+   "score": 62.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 10.0,
+    "code_surface": 27.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "open-llms",
+   "score": 58.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 25.0,
+    "code_surface": 19.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "news-agents",
+   "score": 58.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 15.0,
+    "code_surface": 17.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "semantic-ids-llm",
+   "score": 53.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 10.0,
+    "code_surface": 17.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "obsidian-copilot",
+   "score": 50.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 23.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "papermill-mlflow",
+   "score": 49.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 30.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "applyingml",
+   "score": 45.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "recsys-nlp-graph",
+   "score": 45.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 26.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "llm-paper-notes",
+   "score": 44.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 15.0,
+    "code_surface": 15.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "testing-ml",
+   "score": 42.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "framework-comparison",
+   "score": 41.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 5.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "align-app",
+   "score": 37.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 10.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ml-surveys",
+   "score": 36.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 20.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Data-Analysis-and-Statistical-Inference-Project",
+   "score": 35.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 26.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "visualizing-finetunes",
+   "score": 33.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "discord-llm",
+   "score": 33.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 8.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "python-collab-template",
+   "score": 32.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "learning-typescript",
+   "score": 31.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "datagene",
+   "score": 30.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ml-design-docs",
+   "score": 28.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 9.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Statistical-Inference",
+   "score": 28.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "fastapi-html",
+   "score": 27.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Getting-and-Cleaning-Data",
+   "score": 27.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "poc-docker-template",
+   "score": 26.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Twitter-SMA",
+   "score": 26.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "text-to-image",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Statistical-Learning",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "R-Programming",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "1-on-1s",
+   "score": 24.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 9.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "kaggle_titanic",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Mining-Massive-Datasets",
+   "score": 22.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Computer-Science-and-Programming-In-Python",
+   "score": 22.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "raspberry-llm",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 12.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Computational-Thinking-and-Data-Science",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Time-Series-Analysis",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "kaggle_otto",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "deep-rl",
+   "score": 19.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "design-patterns",
+   "score": 19.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 14.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Machine-Learning",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 18.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Interactive-Programming-in-Python",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "workspace-testing",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "testing-pipelines",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "DKSG-HOME",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Demand-Forecasting",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Misc",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Visualizations",
+   "score": 15.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "scratch",
+   "score": 12.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 12.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "nocode-ml",
+   "score": 9.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 0.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "json-to-utterances",
+   "score": 8.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 8.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "ama",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "neural_networks_and_deep_learning",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "eugeneyan-comments",
+   "score": 0.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 0.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "shreya-shankar": [
+  {
+   "name": "plain-writing-skill",
+   "score": 71.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 15.0,
+    "code_surface": 23.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "error-discovery-skill",
+   "score": 62.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 10.0,
+    "code_surface": 15.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "gpt3-sandbox",
+   "score": 54.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 20.0,
+    "code_surface": 30.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "mine-writing-rules",
+   "score": 53.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "toy-ml-pipeline",
+   "score": 46.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 23.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "create-ml-app",
+   "score": 36.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "overleave",
+   "score": 36.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 26.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "ml-dataval-tutorial",
+   "score": 33.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 8.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "debugging-ml-talk",
+   "score": 32.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "streams",
+   "score": 31.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 27.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "prompt-eval-recommendation",
+   "score": 30.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 17.0,
+    "relevance": 8.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "spade-experiments",
+   "score": 29.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "planner",
+   "score": 28.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "shreyashankar",
+   "score": 27.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "datasets-for-good",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 6.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "oreilly-monitoring",
+   "score": 25.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "Pi-ke",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "bazarre",
+   "score": 23.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 23.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "datatracker",
+   "score": 21.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "mltrace-ifc-demo",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "motion-sigmod-demo",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "wakeupnow",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "needle-in-the-real-world",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "research-blog",
+   "score": 20.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "prompteng",
+   "score": 18.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 14.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "anxiety-extension",
+   "score": 17.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 17.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "m1-setup",
+   "score": 16.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 6.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "vython",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "healthy-eating",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "news-classifier-ui",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "sentiment",
+   "score": 10.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 10.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "web3-reading-list",
+   "score": 7.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 5.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "research-ideas",
+   "score": 6.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 6.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "questions",
+   "score": 2.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 0.0,
+    "code_surface": 2.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ],
+ "chip-huyen": [
+  {
+   "name": "aie-book",
+   "score": 80.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 25.0,
+    "code_surface": 26.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "sniffly",
+   "score": 76.0,
+   "components": {
+    "current_activity": 18.0,
+    "public_prominence": 20.0,
+    "code_surface": 26.0,
+    "relevance": 12.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "ml-interviews-book",
+   "score": 69.0,
+   "components": {
+    "current_activity": 10.0,
+    "public_prominence": 25.0,
+    "code_surface": 30.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "dmls-book",
+   "score": 65.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 25.0,
+    "code_surface": 15.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "stanford-tensorflow-tutorials",
+   "score": 55.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 25.0,
+    "code_surface": 30.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "machine-learning-systems-design",
+   "score": 49.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 25.0,
+    "code_surface": 20.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "just-pandas-things",
+   "score": 47.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 20.0,
+    "code_surface": 23.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "chiphuyen",
+   "score": 44.0,
+   "components": {
+    "current_activity": 25.0,
+    "public_prominence": 10.0,
+    "code_surface": 9.0,
+    "relevance": 0.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "python-is-cool",
+   "score": 41.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 20.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "lazynlp",
+   "score": 41.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 20.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": true,
+   "reason": "top-N by selection formula"
+  },
+  {
+   "name": "sotawhat",
+   "score": 41.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 20.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "coding-exercises",
+   "score": 36.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 17.0,
+    "relevance": 4.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "tf-oreilly",
+   "score": 35.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 15.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  },
+  {
+   "name": "metaflow-transformers-tutorials",
+   "score": 30.0,
+   "components": {
+    "current_activity": 0.0,
+    "public_prominence": 10.0,
+    "code_surface": 20.0,
+    "relevance": 0.0
+   },
+   "selected": false,
+   "reason": "not deep-inspected (below selection cut)"
+  }
+ ]
+}
