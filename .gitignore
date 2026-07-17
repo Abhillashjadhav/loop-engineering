@@ -15,3 +15,12 @@ dist/
 /outputs/
 /contracts/
 .claude/worktrees/
+
+# Personal Chief of Staff — private data boundary (NEVER commit personal content)
+/data/private/
+/runs/private/
+/config/private/
+**/private/
+*.private.json
+*.private.yaml
+*.private.md

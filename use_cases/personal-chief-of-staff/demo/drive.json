@@ -1,0 +1,10 @@
+[
+  {
+    "source_type": "drive_doc",
+    "reference": "drive:peos-v3-spec",
+    "title": "PEOS V3 spec — action items",
+    "body": "Action item: I need to finish the scheduler design section. Action item: follow up with the design reviewer on the diagram.",
+    "timestamp": "2026-07-12T09:00:00+00:00",
+    "meta": {"project": "PEOS", "estimated_minutes": 40}
+  }
+]
