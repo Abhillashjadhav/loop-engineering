@@ -10,13 +10,25 @@ excluded_subjects:
     status: EXCLUDED_BY_OPERATOR
     note: identity search closed; no inference of any kind is drawn
 
+# Operator decision 2026-07-17: proceed with PUBLIC repositories only.
+# loop-engineering and production-engineering-os are private and EXCLUDED
+# from Abhillash's audited portfolio. Their absence is NOT negative evidence
+# and nothing is inferred about private work. The final report must state
+# verbatim: "Two known private repositories were excluded because this audit
+# evaluates public artifacts only. No conclusion is drawn about their
+# quality or technical depth."
+excluded_private_repos:
+  abhillash-jadhav: [loop-engineering, production-engineering-os]
+
 # Config-designated flagships (always deep-inspected; deep_inspect.py fails
 # loudly if a listed flagship is absent from the harvested authored records).
-# Only publicly visible repositories may be listed: loop-engineering and
-# production-engineering-os are private as of 2026-07-17 and are therefore
-# NOT listed — add them here only after making them public and re-harvesting.
+# All five verified publicly visible 2026-07-17 via unauthenticated fetch
+# ("Context-engineering-" trailing hyphen is the actual repository name).
+# Deep-inspection priority order is as listed; the deterministic formula
+# fills the remaining top-10 slots.
 flagships:
-  abhillash-jadhav: [PM-agent-OS, pm-evals, rag-eval-harness]
+  abhillash-jadhav:
+    [PM-agent-OS, pm-evals, rag-eval-harness, Context-engineering-, AI-PM-essential-skills]
   pawel-huryn: [pm-skills]
   aakash-gupta: []        # completed-audit evidence reused; formula picks
   shubham-saboo: []       # completed-audit evidence reused; formula picks
