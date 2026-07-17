@@ -1,0 +1,95 @@
+{
+  "repo": "sniffly",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 75.0,
+      "polarity": "quality",
+      "evidence": "6/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 12.0,
+      "polarity": "risk",
+      "evidence": "template similarity 10%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 2/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "3/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 44.0,
+      "polarity": "quality",
+      "evidence": "7 distinct commit day(s), 0 refactor commit(s), 3 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 45.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 9 issue response(s), 5 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 64.1,
+    "technical_proficiency": 38.7,
+    "ai_assistance_likelihood": 1.5,
+    "ai_assistance_confidence": 82.1,
+    "ai_slop_risk": 34.8,
+    "educational_value": 40.0,
+    "distribution_strength": 80.0,
+    "claim_evidence_integrity": 75.0,
+    "confidence": 82.1
+  },
+  "classification": {
+    "primary": "DISTRIBUTION_LED_ASSET",
+    "value_labels": [
+      "DISTRIBUTION_LED_ASSET"
+    ],
+    "rationale": "highest-priority label meeting its criteria: DISTRIBUTION_LED_ASSET",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [],
+      "review_notes": ""
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 82.1,
+    "evidence_and_counter_evidence": "Markers: Claude Code-domain tool with ~20 commits in the first two days (2025-07-15/16), consistent with AI-assisted rapid development. Counter-evidence: three weeks of iterative fixes and releases (0.1.0-0.1.5), external contributor PRs merged (Windows/winloop support, host-parameter fix), CI lint+build workflows, tests dir, run_tests.py and CHANGELOG maintained. No explicit AI-authorship attribution observed.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

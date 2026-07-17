@@ -1,0 +1,99 @@
+{
+  "repo": "pm-claude-code-setup",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 66.7,
+      "polarity": "quality",
+      "evidence": "6/9 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 37.0,
+      "polarity": "risk",
+      "evidence": "template similarity 45%, boilerplate share 25%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "14 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 86.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 52.6,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 17.0,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 53.8,
+    "educational_value": 86.7,
+    "distribution_strength": 60.0,
+    "claim_evidence_integrity": 66.7,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Substantive same-day iteration on 2026-03-04 with reasoned commit messages, plus 40 forks / 144 stars of real usage signal",
+        "All shipped artifacts (CLAUDE.md, 6 skills, 4 templates, quickstart) are corroborated by root listing and per-item commits",
+        "Troubleshooting and sub-agent-chaining sections contain accurate practitioner detail beyond generic template text"
+      ],
+      "review_notes": "The main negative is fabricated commit cadence (author dates through Aug 2026 on a repo last pushed 2026-03-04) shared with two sibling repos, plus a persistent paid-newsletter funnel. The content itself is a coherent, complete, PM-adapted Claude Code starter; the re-dating misleads about maintenance cadence, not about what the repo contains."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "Round-timestamp author dates (e.g. 'Add quickstart guide' 2026-08-03T16:14:00Z, 'Add OKR template' 2026-07-18T18:59:00Z) postdate the repo's last push (2026-03-04) and even the audit date, indicating re-dated/scripted commit metadata; counter-evidence: the 2026-03-04 block shows nine same-day iterative rewrites with substantive rationale ('Remove PRD section from CLAUDE.md \u2014 belongs in prd-writer skill').",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

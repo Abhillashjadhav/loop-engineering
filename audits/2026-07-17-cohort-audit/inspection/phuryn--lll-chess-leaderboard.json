@@ -1,0 +1,80 @@
+{
+ "login": "phuryn",
+ "repo": "lll-chess-leaderboard",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 40,
+  "boilerplate_share_pct": 40,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": false,
+  "secrets_policy_ok": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 2,
+  "ai_share_evidence": "Generation markers: 100/100 sampled commits authored by gpt-engineer-app[bot] with 'Lovable' trailers, 48 of them the filler message 'Changes' (uniformity 48%); counter-evidence: iterative, purposeful refinement over multiple days (API-key guards added, endpoints protected, findings text repeatedly revised), a live deployed app at chess.productcompass.pm, and a README that honestly retracts its own 'Blindfold Paradox' finding.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard",
+    "excerpt": "page-1.json: 1 star, 356 commits, 2 contributors, dependencies_declared true, no tests/CI, no license, no description, created 2025-12-02, pushed 2026-02-19, only 4 distinct commit days in the sampled window."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard/commits",
+    "excerpt": "All 100 sampled commits authored 'gpt-engineer-app[bot]': 'Add api key guard to writes' (2025-12-12), 'Protect legal-moves endpoint' (2025-12-13), 'Add live games feature', 'Add avg valid moves column', plus 48 bare 'Changes' commits and 'Visual edit in Lovable'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard/tree/main",
+    "excerpt": "Root: src/, supabase/, n8n/, public/, APIdoc.md (6,836 B), package.json, tailwind.config.ts, components.json, vite.config.ts, bun.lockb \u2014 a Lovable-style Vite/TS/shadcn scaffold \u2014 and a committed .env file (350 B)."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard#readme",
+    "excerpt": "'Models play chess by outputting moves in Standard Algebraic Notation (SAN), and invalid moves result in automatic losses'; 'However, this pattern was not confirmed with additional testing\u2014the effect was inconsistent across models and test runs.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard/commits",
+    "excerpt": "Security was iterated deliberately, not dumped: 'Add api key guard to writes' -> 'Protect legal-moves endpoint' -> 'Add api-key header docs' across 2025-12-12/13, and product features (live games, multi-select filters, replays) evolved over dozens of purposeful prompts."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard/tree/main",
+    "excerpt": "n8n/ ships the two benchmark workflows (blind_mode.json, FEN_mode.json per README) and APIdoc.md is a real 6.8KB API reference \u2014 the repo delivers the harness it describes, and it backs the author's separately published silicon-gambit-chess experiment set."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/lll-chess-leaderboard#readme",
+    "excerpt": "The Key Findings section retracts its own headline hypothesis ('the data doesn't strongly support it') and documents catastrophic forgetting and the scratchpad mitigation \u2014 original benchmark design and honest reporting, which is the substance of the repo."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "The benchmark design (SAN-only output, invalid-move-equals-loss, blind vs FEN modes, scratchpad working-memory tool, points system) is original experimental work, regardless of who typed the React.",
+    "It is the live, deployed receipt-backing for the experiments repo's silicon-gambit-chess set (chess.productcompass.pm), i.e. a working artifact, not an abandoned scaffold.",
+    "Findings are reported with integrity \u2014 an appealing early result is explicitly walked back when retests failed to confirm it."
+   ],
+   "review_notes": "Negative reading rests on the 100% bot-authored Lovable history, filler commit messages, and a committed .env. Under fairness rules AI-assisted work is not slop; the app functions, iterates, and reports honestly. The committed .env is the one concrete hygiene defect, partially mitigated by the README masking the API key and instructing users to add their own keys manually."
+  },
+  "evidence_conflicts": [
+   "README documents API-key protection and masks the key ('x-api-key: *****', keys 'not included' in workflow files), yet the root listing shows a .env file (350 B) committed to the repo.",
+   "README's Technology Stack and n8n instructions imply a runnable system, but the README contains no install/run steps for the app itself (metadata: runnable_setup_documented false)."
+  ]
+ },
+ "notes": "A Lovable/gpt-engineer-built chess benchmark app (React/Vite/Supabase + n8n workflows) whose entire sampled commit history is bot-authored, half of it filler 'Changes' messages \u2014 but the underlying benchmark design (SAN-only moves, invalid-move-equals-loss, blind vs FEN modes, scratchpad mitigation) is original and the live app backs the author's published silicon-gambit experiments. Red flags are hygiene, not fabrication: a committed .env at root despite API-key security docs, no license, no tests/CI, and no app setup instructions. The Key Findings honestly retract an unconfirmed hypothesis."
+}

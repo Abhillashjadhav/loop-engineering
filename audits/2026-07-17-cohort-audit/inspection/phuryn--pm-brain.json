@@ -1,0 +1,52 @@
+{
+ "login": "phuryn",
+ "repo": "pm-brain",
+ "signals": {
+  "readme_claims_total": 7,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 5,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 1,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 2,
+  "ai_share_evidence": "Generation markers: commits co-authored 'Claude Opus 4.7'; the copywriter-pass commit details AI-assisted doc editing; counter-evidence: an eval-first build (17 scenarios, harness hardening, judge-retry logic committed before launch), residual failures disclosed rather than hidden, and a docs correction fixing its own stale scenario count.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/pm-brain",
+    "excerpt": "page-1.json: 493 stars, 102 forks, 13 commits, 1 contributor, has_tests true, has_ci false, created 2026-05-17, pushed 2026-05-20; description 'PM Brain OS: The Second Brain for Product Managers, Made of Markdown'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/pm-brain/commits",
+    "excerpt": "'initial: PM Brain skill + scaffold + eval suite' (2026-05-17); 'tests: add 3 commands-coverage scenarios + 8 lifecycle scenarios; harness hardening' (2026-05-17); 'harness: retry judge invocations on subprocess flakes (3x w/ backoff)' (2026-05-18); 'docs: commit Opus comparison snapshots and lead README with 404/406 aggregate' (2026-05-18); 'docs: fix stale scenario count in 14-install-greenfield README (13 -> 16)' (2026-05-19); 'v1.0.0' (2026-05-20)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/pm-brain/tree/main",
+    "excerpt": "Root: .claude/ (skill), example-brain/, tests/, docs/, CLAUDE.md (7,869 B), AGENTS.md, LICENSE \u2014 exactly the four-part layout the README's 'What's in the repo' section describes."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/pm-brain#readme",
+    "excerpt": "'404 of 406 individual checks pass across the snapshots (approx. 99.5%) ... two judges missing on the two longest scenarios' and 'Research preview. ... the product as installed by real PMs in real organizations is days old.'"
+   }
+  ],
+  "evidence_conflicts": [
+   "The 404/406 test badge and scenario claims point at tests/RESULTS.md, which is referenced by commits ('lead README with 404/406 aggregate') but whose contents are not in the snapshot \u2014 the number is corroborated at commit level, not re-derivable."
+  ]
+ },
+ "notes": "Dense original design in a 4-day, 13-commit build: a provenance-tag hierarchy (documented > verbal > intuition), a single ingest->propagate->sweep loop, deterministic scaffold vs adaptive prompts, a prior-art analysis, and a 17-scenario eval harness with LLM-judge retries \u2014 all visible in commits and the docs/ index. Unusually honest for a launch README: 'research preview' framing, two residual judge failures called out, and migration anti-patterns warned against. Single-contributor, no CI; the eval numbers rest on committed snapshots referenced but not included in this snapshot."
+}

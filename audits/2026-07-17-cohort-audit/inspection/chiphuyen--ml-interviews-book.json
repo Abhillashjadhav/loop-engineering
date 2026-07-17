@@ -1,0 +1,46 @@
+{
+ "login": "chiphuyen",
+ "repo": "ml-interviews-book",
+ "signals": {
+  "readme_claims_total": 6,
+  "readme_claims_code_backed": 5,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 12,
+  "dependency_updates": 0,
+  "docs_corrections": 9,
+  "ai_share_evidence": "Book written in 2021, largely pre-LLM-assistant era; last-100 commits are organic multi-contributor activity (a sustained Farsi translation series by R-Mahmoudi, dead-link and typo fixes by 6+ others); no AI-authorship markers in README or commit messages.",
+  "evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/ml-interviews-book/commits",
+    "excerpt": "148 commits, 19 contributors; e.g. 2023-02 R-Mahmoudi Farsi translation series ('Added technical skill file', 'update translate farsi ...'), 2023-07-18 jordandraper 'Replaced dead link to \"the curse of big data\"', 2022-08-27 'Add folder for answers'"
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/ml-interviews-book",
+    "excerpt": "root-listing.json: SUMMARY.md (8825 B), contents/, answers/, Translation/, _book/, book.json (289 B), package.json (602 B)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/ml-interviews-book",
+    "excerpt": "portfolio survey: stargazers_count 4685, forks_count 681, commit_count 148, contributors 19, created 2021-01-02, pushed 2025-03-21"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/ml-interviews-book/blob/master/README.md",
+    "excerpt": "'This book is not a replacement to machine learning textbooks nor a shortcut to game the interviews.' ... 'The second part consists of over 200 knowledge questions'"
+   }
+  ]
+ },
+ "notes": "Open-sourced full book (GitBook structure: contents/, SUMMARY.md, book.json) on ML interviews with a community answers/ folder and an active Translation/ tree. The book materials are the deliverable; 19 contributors and 12 merged PRs in the sampled window show real community stewardship. The '200+ questions' count is the only claim not directly checkable from the root listing."
+}

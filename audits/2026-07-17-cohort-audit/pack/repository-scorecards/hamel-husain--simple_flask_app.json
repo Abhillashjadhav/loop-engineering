@@ -1,0 +1,89 @@
+{
+  "repo": "simple_flask_app",
+  "deep_inspected": false,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "no explicit README claims found; neutral 50"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 0.0,
+      "polarity": "risk",
+      "evidence": "template similarity 0%, boilerplate share 0%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 8.0,
+      "polarity": "quality",
+      "evidence": "4 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 0/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 16.6,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 6.0,
+    "ai_assistance_confidence": 21.4,
+    "ai_slop_risk": 69.2,
+    "educational_value": 0.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 21.4
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "confidence 21 below the 40 floor for any classification",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "INSUFFICIENT_EVIDENCE",
+    "confidence": 21.4,
+    "evidence_and_counter_evidence": "signal-based estimate",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

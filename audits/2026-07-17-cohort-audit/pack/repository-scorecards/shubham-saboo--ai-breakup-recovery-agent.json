@@ -1,0 +1,97 @@
+{
+  "repo": "ai-breakup-recovery-agent",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 62.5,
+      "polarity": "quality",
+      "evidence": "5/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "2 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 64.0,
+      "polarity": "risk",
+      "evidence": "template similarity 60%, boilerplate share 70%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 2/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 42.0,
+      "polarity": "quality",
+      "evidence": "3 distinct commit day(s), 8 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 12.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 2 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 50.7,
+    "technical_proficiency": 29.7,
+    "ai_assistance_likelihood": 9.2,
+    "ai_assistance_confidence": 82.1,
+    "ai_slop_risk": 57.3,
+    "educational_value": 46.7,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 62.5,
+    "confidence": 82.1
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The FastAPI backend was human-written by a named contributor across two reviewed-and-merged PRs, so the repo is more than a one-shot AI dump.",
+        "Root listing matches the claimed full-stack architecture (backend/ + client/), and a demo video is linked.",
+        "The multi-agent product concept (therapist/closure/routine/brutal-honesty team) is an original product idea, and AI-assisted work is not slop under the fairness rules."
+      ],
+      "review_notes": "The negative reading (unattributed AI scaffold, broken setup path) is tempered by genuine human backend work, merged contributor PRs, and a coherent product design. Scored as an AI-assisted prototype with real follow-through, not mass-generated filler."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 82.1,
+    "evidence_and_counter_evidence": "15 of 21 commits authored by gpt-engineer-app[bot]/lovable-dev[bot] (Lovable app builder, 'Use tech stack vite_react_shadcn_ts'); counter-evidence: human contributor priyanshm07 added the FastAPI backend across PRs #1-#2 and the owner merged PRs and hand-edited the README.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

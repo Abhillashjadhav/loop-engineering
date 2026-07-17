@@ -1,0 +1,97 @@
+{
+  "repo": "ai-linkedin-post-scanner",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "1/2 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 76.0,
+      "polarity": "risk",
+      "evidence": "template similarity 80%, boilerplate share 70%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 4.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "explanation quality 1/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 15.8,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 26.0,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 81.0,
+    "educational_value": 13.3,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "LIKELY_SHALLOW_OR_TEMPLATED",
+    "value_labels": [],
+    "rationale": "ai_slop_risk 81 >= 70 with confidence 75 >= 70; counter-evidence reviewed and recorded",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The deliverable (app.py + requirements.txt) actually exists and matches the article-companion purpose.",
+        "Blog-companion repos are simple content by design; under the fairness rules tutorials and simple content are not slop.",
+        "A code follow-up edit exists after the initial upload."
+      ],
+      "review_notes": "The heavy template similarity is with the owner's other article-companion repos, which is normal for a tutorial series. The main genuine weakness is that the README makes capability claims (emotions/sentiments/trends analysis) that can only be partially verified from the listing since neither README nor snapshot shows app.py content or setup steps."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "No AI-generation markers: 2022 repo (pre-agent tooling), commits are manual web-UI edits ('Add files via upload', 'Update app.py'); README is human blog-teaser prose tied to a published Towards AI article.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

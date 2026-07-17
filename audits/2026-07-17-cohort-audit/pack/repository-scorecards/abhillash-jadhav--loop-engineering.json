@@ -1,0 +1,91 @@
+{
+  "repo": "loop-engineering",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 90.0,
+      "polarity": "quality",
+      "evidence": "9/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "5 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 10.0,
+      "polarity": "risk",
+      "evidence": "template similarity 10%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 4.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 15.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 3 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "4 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 49.8,
+    "technical_proficiency": 26.0,
+    "ai_assistance_likelihood": 1.0,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 37.3,
+    "educational_value": 100.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 90.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "12 of 25 commits authored 'Claude'; the entire system landed 2026-07-16/17 as a 12-PR series plus audit commits \u2014 high-velocity AI-assisted construction; counter-evidence: CI workflow, tests/ and evals/ directories, DECISIONS.md architecture log, and blocked-run documentation ('docs/live-audit-blocked.md') show verification infrastructure rather than unchecked generation. README carries no AI-authorship credit.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

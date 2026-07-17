@@ -1066,8 +1066,16 @@
     }
    ],
    "counter_evidence": [
-    "README's 'File structure' section lists commands/, hooks/, scripts/, AGENTS.md at the repo top level, but root-listing.json shows only .claude-plugin/ and plugins/ — the structure moved under plugins/ when commit d9f9fc2 'Restructure as a plugin marketplace' landed; stale diagram, not fabricated functionality.",
-    "Claims not directly visible in the snapshot (telemetry log file, 30s hook timeout value) are configuration details consistent with, but not proven by, root listing and commit history."
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/hamelsmu/claude-review-loop/tree/main",
+     "excerpt": "README's 'File structure' section lists commands/, hooks/, scripts/, AGENTS.md at the repo top level, but root-listing.json shows only .claude-plugin/ and plugins/ — the structure moved under plugins/ when commit d9f9fc2 'Restructure as a plugin marketplace' landed; stale diagram, not fabricated functionality."
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/hamelsmu/claude-review-loop/blob/main/README.md",
+     "excerpt": "Claims not directly visible in the snapshot (telemetry log file '.claude/review-loop.log', 30s hook timeout in hooks/hooks.json) are configuration details consistent with, but not proven by, root listing and commit history."
+    }
    ],
    "counter_evidence_review": {
     "reviewed": true,
@@ -1163,7 +1171,11 @@
     }
    ],
    "counter_evidence": [
-    "16 of 31 commit messages are the uninformative word 'save', which superficially resembles low-effort dumping; counter: substantive feature commits are interleaved (clipboard export, artifact/attachment handling, conversation-edit handling, storage-based PAT), an external contributor's PR was merged, and a privacy_policy.md ships with the extension."
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/hamelsmu/claudesave/commit/fffed4d",
+     "excerpt": "16 of 31 commit messages are the uninformative word 'save' (e.g. fffed4d, 63836c4, b73eeda, 2024-08 to 2024-11), which superficially resembles low-effort dumping; counter: substantive feature commits are interleaved (4b39a03 'save to clipboard button', 0b486c0 'handle artifacts and attachments', 1f74f8b 'handle conversation edits', storage-based PAT via f0e516a), an external contributor's PR was merged (afd1759), and privacy_policy.md ships with the extension."
+    }
    ],
    "counter_evidence_review": {
     "reviewed": true,

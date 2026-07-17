@@ -1,0 +1,97 @@
+{
+  "repo": "Context-engineering-",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 87.5,
+      "polarity": "quality",
+      "evidence": "7/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 24.0,
+      "polarity": "risk",
+      "evidence": "template similarity 30%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 2.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 55.4,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 2.2,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 45.2,
+    "educational_value": 60.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 87.5,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Artifacts (runs/, eval/, NARRATION.md) ground the results table rather than leaving it as prose",
+        "Commit-by-commit structure mirrors the documented experimental design one-to-one",
+        "The design encodes builder/validator separation \u2014 an original methodological idea, not template filler"
+      ],
+      "review_notes": "The one-day, all-Claude-authored build pattern reads as a single-session AI capstone, but it is a coherent designed experiment with results artifacts, not a boilerplate dump. Weaknesses are absence of a limitations section and no dependency declaration; the 24/24 and 23/24 scores rest on the runs/ artifacts, which exist but whose contents were not inspected."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "All 11 commits are authored 'Claude' on a single day (2026-06-07, 'Step 0' through 'Step 8'); README describes Claude-in-session generation as the harness design but does not credit AI authorship of the repo; counter-evidence: the stepwise commit sequence maps one-to-one onto the four documented breaks, and runs/ plus eval/ artifacts exist to ground the results table.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

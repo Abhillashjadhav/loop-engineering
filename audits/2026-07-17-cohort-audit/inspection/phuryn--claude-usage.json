@@ -1,0 +1,55 @@
+{
+ "login": "phuryn",
+ "repo": "claude-usage",
+ "signals": {
+  "readme_claims_total": 10,
+  "readme_claims_code_backed": 9,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 3,
+  "issue_responses": 24,
+  "dependency_updates": 1,
+  "docs_corrections": 3,
+  "ai_share_evidence": "Generation markers: heavy 'Co-Authored-By: Claude' trailers on maintainer commits and Claude Code mentions throughout; counter-evidence: 22 contributors with clean external PRs (#46 Homebrew, #134 pricing, #143 Docker, #148 topic column, #150/#151/#153 fixes), 19 releases over 3 months, regression tests added alongside external fixes.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/claude-usage",
+    "excerpt": "page-1.json: 2031 stars, 371 forks, 159 commits, 22 contributors, 19 releases, has_tests/has_ci/dependencies_declared true, created 2026-04-07, pushed 2026-07-10, 16 distinct commit days, commit_msg_uniformity 2%."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/claude-usage/commits",
+    "excerpt": "'release: v1.5.5 \u2014 daily Est. Cost line + This Month TZ fix (#151), CLI old-schema migrate (#153)' (2026-07-10); 'Merge PR #150: document --host/--port dashboard flags (thanks @subhamchbty)'; 'fix(cli): migrate old-schema DB on read so today/week/stats don't crash' (Ilia Alshanetsky, 2026-07-07); 'feat(docker): read-only claude mount with isolated writable DB volume' (Rafik Farhad, 2026-06-20); 'feat: add Homebrew formula and install docs (#46)' (Hayden Haines)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/claude-usage/tree/main",
+    "excerpt": "Root: cli.py (18,104 B), dashboard.py (116,314 B), scanner.py (35,062 B), pyproject.toml, Dockerfile, Formula/, vscode-extension/, tests/, scripts/, CHANGELOG.md (25,472 B), AGENTS.md (16,502 B)."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/claude-usage/blob/main/.github/workflows",
+    "excerpt": "workflows-listing.json: extension-ci.yml, tag-on-merge.yml, tests.yml \u2014 separate CI for the VS Code extension plus test and auto-tag pipelines."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/claude-usage#readme",
+    "excerpt": "'No third-party packages \u2014 uses only the standard library (sqlite3, http.server, json, pathlib)' and 'Not captured: Cowork sessions \u2014 these run server-side and do not write local JSONL transcripts.'"
+   }
+  ]
+ },
+ "notes": "Genuinely community-maintained utility: 2,031 stars, 22 contributors, 19 releases, and a sampled-100 commit log full of external PRs merged with named thanks and regression tests added by the maintainer afterward. The README is honest about scope (Cowork sessions not captured; API prices are a proxy on subscriptions) and every distribution claim (Homebrew Formula/, pyproject for uv/pipx, Dockerfile, vscode-extension/) has a matching root artifact and commit trail. Heavy Claude co-authorship on maintainer commits is disclosed in trailers rather than the README."
+}

@@ -1,0 +1,57 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "loop-engineering",
+ "signals": {
+  "readme_claims_total": 10,
+  "readme_claims_code_backed": 9,
+  "original_logic_notes": 5,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 4,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "12 of 25 commits authored 'Claude'; the entire system landed 2026-07-16/17 as a 12-PR series plus audit commits — high-velocity AI-assisted construction; counter-evidence: CI workflow, tests/ and evals/ directories, DECISIONS.md architecture log, and blocked-run documentation ('docs/live-audit-blocked.md') show verification infrastructure rather than unchecked generation. README carries no AI-authorship credit.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/loop-engineering",
+    "excerpt": "25 commits, 2 contributors, 1 star, created 2026-07-16T09:55:50Z, pushed 2026-07-17T04:35:57Z, has_tests true, has_ci true, dependencies_declared true; description: 'Agentic workflow to automate prompts for achieving the goal'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/loop-engineering/commits",
+    "excerpt": "Structured series 'PR 1/12: Repository boundary and CI scaffold (#2)' through 'PR 12/12: Synthetic demonstration, live-audit blocker report, release docs (#13)', then audit-execution commits incl. 'fix(rubric): cap AI-share band confidence at overall evidence coverage'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/loop-engineering/tree/main",
+    "excerpt": "Root: schemas/, src/, use_cases/, evals/, examples/, tests/, docs/, prds/, audits/, .claude/, pyproject.toml, DECISIONS.md — matching every row of the README's repository map."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/loop-engineering/tree/main/.github/workflows",
+    "excerpt": "ci.yml (998 bytes) backs the README's pytest/ruff/mypy/build checks section."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/loop-engineering#readme",
+    "excerpt": "'The live audit of the two named subjects has not been executed in this environment ... The exact missing evidence and unblock paths are recorded in docs/live-audit-blocked.md.'"
+   }
+  ],
+  "evidence_conflicts": [
+   "The '100+ deterministic tests' count cannot be confirmed from the root listing alone (tests/ exists; contents not enumerated in the snapshot)."
+  ]
+ },
+ "notes": "This is the audit operator's own runtime repo, inspected under the same standards: a two-day, 12-PR, heavily Claude-co-authored build of a self-verifying goal loop whose README claims map cleanly onto schemas/src/use_cases/tests/CI artifacts and PR history. Limitations are unusually well disclosed (blocked live audit documented rather than faked). The extreme build velocity and the absence of an explicit AI-authorship credit in the README are the honest caveats; the test-count claim is plausible but not verifiable from the listing."
+}

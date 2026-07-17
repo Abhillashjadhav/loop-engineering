@@ -270,6 +270,23 @@ def main() -> None:
     if inspections:
         fail(f"inspections with no matching snapshot record: {sorted(inspections)}")
 
+    # Cohort report inputs: the inspector-recorded 12-dimension comparison and
+    # the operator audit config, consumed by cohort_report.py at z-2 time.
+    comp_dir = DST / "comparisons"
+    comp_dir.mkdir()
+    for cpath in sorted(INSPECTIONS.glob("COMPARISON--*.json")):
+        comp = json.loads(cpath.read_text(encoding="utf-8"))
+        for key, dim in comp.get("dimensions", {}).items():
+            if dim.get("favors") not in {"pm_skills", "pm_agent_os", "parity", "insufficient"}:
+                fail(f"{cpath.name}: dimension {key} lacks a valid 'favors' value")
+        (comp_dir / cpath.name.replace("COMPARISON--", "")).write_text(
+            json.dumps(comp, indent=1, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
+    shutil.copyfile(
+        REPO / "audits/2026-07-17-cohort-audit/audit-config.yaml",
+        DST / "audit-config.yaml",
+    )
+
     (DST / "README.md").write_text(
         "# snapshots-inspected (cohort)\n\n"
         "Engine fixture = pristine user harvest (../snapshots @ df5145b, "

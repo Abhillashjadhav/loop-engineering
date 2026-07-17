@@ -1,0 +1,78 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "PM-agent-OS",
+ "signals": {
+  "readme_claims_total": 9,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 25,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 1,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "66 of last 100 commits authored 'Claude'; 140 commits and 40 skills landed in ~11 hours (created 2026-07-07T17:24Z, last push 2026-07-08T04:00Z); counter-evidence: consistent test-before-feat commit pairs with planted-failure fixtures and per-skill PR numbers (#2-#46) show a structured, reviewed pipeline rather than an unreviewed dump.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS",
+    "excerpt": "140 commits, 2 contributors, created 2026-07-07T17:24:32Z, pushed 2026-07-08T04:00:22Z, has_tests true, has_ci true; description: 'One /pm command orchestrates the full product lifecycle ... through 40 skills'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits",
+    "excerpt": "Per-skill triplets throughout, e.g. 2026-07-08 'Iterate skill 8/12: regression-gatekeeper (#41)' / 'feat: regression-gatekeeper — pre-ship golden run with run-before-verdict gate' / 'test: regression-gatekeeper gates + fixtures (verification-first; planted ship-without-run verdict)'; final commit 'All five stages live: 40 skills + 7 personas + /pm — roadmap complete (#46)'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS/tree/main",
+    "excerpt": "Root: .claude/, .github/, CLAUDE.md, LESSONS.md, README.md, prds/, reviews/, tests/, test-files/, plus skill dirs concise-rewriter/, context-auditor/, eval-rubric-generator/, token-cost-estimator/."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS/tree/main/.github/workflows",
+    "excerpt": "workflows-listing.json shows pr-review.yml (1136 bytes), matching the README's 'PR-review record' claim."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS#readme",
+    "excerpt": "'Every skill in this repo carries three things ... Binary verification gates ... Tested fixtures ... A PR-review record.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits",
+    "excerpt": "Test commits chronologically precede feature commits for each skill ('verification-first'), and every skill entered via a numbered PR — a review discipline inconsistent with unreviewed mass generation."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/PM-agent-OS#readme",
+    "excerpt": "Credits section discloses reuse: 'Harness patterns — the lint gate, the three-gate fixtures convention, and the PR-review agent — carried over from AI-PM-essential-skills.'"
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Verification-first commit ordering (test before feat) is visible for all ~40 skills",
+    "Each skill entered through a numbered PR with a pr-review.yml workflow present",
+    "Sibling reuse is openly credited, not concealed"
+   ],
+   "review_notes": "The 40-skills-in-11-hours velocity is a clear AI-generation-at-scale marker, but the repo does not hide it (Claude is the commit author) and the process record (fixtures, planted failures, PR series) is real and internally consistent. For a skill library the docs/skills are the deliverable; the negative reading is tempered accordingly."
+  },
+  "evidence_conflicts": [
+   "README install URL 'github.com/Abhillashjadhav/PM-agent-OS-' (trailing hyphen) does not match the repo name 'PM-agent-OS' in the metadata snapshot.",
+   "README claims 40 skills but the root listing shows only 4 skill directories at top level; the remainder presumably live under .claude/ (not visible in root-listing), so the 40-count rests on commit history rather than the listing."
+  ]
+ },
+ "notes": "A verification-gated PM skill library generated at extreme velocity (40 skills, 140 commits in ~11 hours) with Claude as majority commit author. Claims are largely corroborated by commit history, tests/ and a pr-review workflow, and reuse from its sibling AI-PM-essential-skills is openly credited. No limitations section and the install URL does not match the repo name."
+}

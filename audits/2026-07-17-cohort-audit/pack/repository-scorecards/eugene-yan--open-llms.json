@@ -1,0 +1,91 @@
+{
+  "repo": "open-llms",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2/2 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 0.0,
+      "polarity": "risk",
+      "evidence": "template similarity 0%, boilerplate share 0%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 55.0,
+      "polarity": "quality",
+      "evidence": "47 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 45.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 30 issue response(s), 3 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 26.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 34.0,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 2.5,
+    "ai_assistance_confidence": 60.7,
+    "ai_slop_risk": 46.5,
+    "educational_value": 26.7,
+    "distribution_strength": 95.0,
+    "claim_evidence_integrity": 100.0,
+    "confidence": 60.7
+  },
+  "classification": {
+    "primary": "DISTRIBUTION_LED_ASSET",
+    "value_labels": [
+      "DISTRIBUTION_LED_ASSET"
+    ],
+    "rationale": "highest-priority label meeting its criteria: DISTRIBUTION_LED_ASSET",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 60.7,
+    "evidence_and_counter_evidence": "Community-curated table: 100 sampled commits (2023-2025) from many distinct humans via reviewed PRs (ozppupbg x32, Muhtasham x11); rows cite external checkpoints, papers and licenses; no AI-generation markers observed.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

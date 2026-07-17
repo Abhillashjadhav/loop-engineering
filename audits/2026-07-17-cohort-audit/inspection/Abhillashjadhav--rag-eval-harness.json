@@ -1,0 +1,73 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "rag-eval-harness",
+ "signals": {
+  "readme_claims_total": 10,
+  "readme_claims_code_backed": 9,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 55,
+  "boilerplate_share_pct": 25,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": true,
+  "mass_generated_siblings": 1,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "README states 'Built with Claude Code. Zero hand-written code' and 'No code was written by hand'; commits are owner-authored (36/37) over 2026-05-22/24; counter-evidence: hand-graded golden workbook commits, 'fix: unfilled-skeleton scores + remove stale draft reference', and a self-preference-bias disclosure show human oversight of the generated output.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/rag-eval-harness",
+    "excerpt": "37 commits, 2 contributors, created 2026-05-22T14:20:49Z (within one minute of sibling pm-evals), has_tests true, has_ci true; description: 'Eval-first single-turn RAG Q&A pipeline with an LLM-as-judge eval suite ... Built with Claude Code'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/rag-eval-harness/commits",
+    "excerpt": "2026-05-22 'Add minimal single-turn RAG pipeline'; 'Add 500 synthetic baseline RAG traces and generator'; 'Add baseline eval report for 500-trace run'; 2026-05-23 'feat: re-validate with v2 derivation rules'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/rag-eval-harness/tree/main",
+    "excerpt": "Root: src/, data/, traces/, results/, golden/, scripts/, tests/, .claude/, requirements.txt, CHANGELOG.md, CITATION.cff, validation_report.md — matching the pipeline, trace, report and judge-validation claims."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/rag-eval-harness#readme",
+    "excerpt": "'Why all-MiniLM-L6-v2 embedder ... Tradeoff: a 384-dim MiniLM conflates topically adjacent passages (the 12% retrieval_failure rate in the report is partly its fault).'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/rag-eval-harness/commits",
+    "excerpt": "'feat: human-graded golden_scores from workbook holistic + tag mapping' and 'chore: remove deprecated WIRED_JUDGE_DRAFT.py' show iterative human curation, not a single dump."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/rag-eval-harness#readme",
+    "excerpt": "'a Claude judge scoring a Claude generator risks self-preference bias (flagged in the report's methodology notes)' — the repo names its own weakest point."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Every design choice carries an explicit stated tradeoff — unusual explanatory depth",
+    "Openly disclosed full AI authorship is a transparency positive under the fairness rules",
+    "Honest MARGINAL 78.8% validation verdict retained instead of tuning to TRUSTED"
+   ],
+   "review_notes": "The negative signal is twin-repo choreography with pm-evals (same-minute creation, shared quotes, shared calibration-lesson template, mirrored commit sequences). The RAG pipeline, traces, golden set and results are distinct artifacts, and the disclosed zero-hand-written-code stance is not penalizable. Net reading: AI-generated but curated and unusually self-critical."
+  },
+  "evidence_conflicts": [
+   "README quotes and section structure (Hamel Husain/Kevin Weil/Cat Wu quotes, 'Calibration lesson: v1 → v2 derivation', prepare/run/report) duplicate sibling pm-evals nearly verbatim."
+  ]
+ },
+ "notes": "An eval-first RAG demo whose claims (pipeline, 500 traces, baseline report, judge validation) are consistently backed by the file listing and commit history, with explicit per-decision tradeoffs and disclosed limitations. Declares 'Built with Claude Code. Zero hand-written code' — full, penalized-nowhere AI attribution. It is the twin of pm-evals, sharing README template and launch-day commit choreography."
+}

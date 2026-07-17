@@ -1,0 +1,49 @@
+{
+  "login": "hamelsmu",
+  "repo": "evals-skills",
+  "signals": {
+    "readme_claims_total": 5,
+    "readme_claims_code_backed": 4,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 10,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": true,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "integration_complexity": 1,
+    "issue_responses": 1,
+    "dependency_updates": 0,
+    "docs_corrections": 3,
+    "ai_share_evidence": "11 commits carry Co-Authored-By Claude trailers (Opus 4.6, Fable 5) — disclosed AI-assisted authoring; counter-evidence: three-month human iteration (2026-03-01 to 2026-06-10), domain-expert statistical corrections (Rogan-Gladen TPR denominator), and an external contributor PR merged.",
+    "evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/evals-skills/tree/main/skills",
+        "excerpt": "root-listing.json: dirs .claude-plugin and skills; files meta-skill.md (5778 B), questions.md (2410 B), LICENSE (1069 B), README.md (3164 B) — matches README's referenced artifacts."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/evals-skills/commit/e427797",
+        "excerpt": "2026-03-02 'feat: add eval-audit skill for pipeline diagnostics'; also 3de40fb 'fix: add marketplace.json for plugin installation' and 814ebea 'docs: correct TPR rationale to match Rogan-Gladen denominator'."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/evals-skills",
+        "excerpt": "Metadata: stargazers_count 1499, forks_count 148, commit_count 21, contributors 2, created 2026-03-01, pushed 2026-06-10, runnable_setup_documented true."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/evals-skills/blob/main/README.md",
+        "excerpt": "Table of 7 skills (eval-audit, error-analysis, generate-synthetic-data, write-judge-prompt, validate-evaluator, evaluate-rag, build-review-interface); 'The audit isn't a complete solution'."
+      }
+    ]
+  },
+  "notes": "Curated Claude Code plugin of eval-methodology skills from a recognized domain expert; README claims map cleanly to visible artifacts (skills dir, meta-skill.md, questions.md, marketplace.json commit). AI assistance is transparently disclosed via Claude co-author trailers, and docs corrections show substantive statistical expertise. The only unbacked claim is the external '50+ companies' consulting figure, which is not code-verifiable from the snapshot."
+}

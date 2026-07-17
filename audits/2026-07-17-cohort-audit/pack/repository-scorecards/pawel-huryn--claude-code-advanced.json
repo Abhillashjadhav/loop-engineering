@@ -1,0 +1,99 @@
+{
+  "repo": "claude-code-advanced",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 90.0,
+      "polarity": "quality",
+      "evidence": "9/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 21.0,
+      "polarity": "risk",
+      "evidence": "template similarity 25%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 2/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 2.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=True"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 5.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 1 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 47.7,
+    "technical_proficiency": 26.7,
+    "ai_assistance_likelihood": 52.2,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 43.6,
+    "educational_value": 80.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 90.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Complete claim-to-artifact mapping: all 10 'What's inside' rows correspond to real root entries, including the byte-level match of the 5-line CLAUDE.md stub and the .env.example key-handling path.",
+        "The memory-system demo is designed to be falsifiable \u2014 a specific hypothesis (H1 at 2 of 3 confirmations) plus the exact readout containing its third confirmation, with the expected promotion stated in advance.",
+        "It is course material in an established lineage (extends claude-template-session; advanced version of the pm-brain pattern), and tutorials/teaching content are explicitly not slop under the audit's fairness rules."
+      ],
+      "review_notes": "One-shot single-day publish by 'Claude' with no license and no limitations section \u2014 but it is a teaching companion whose claims are structural and all verifiable against the root listing. Recorded template similarity reflects kinship with the author's own earlier teaching repos (agent-second-brain, claude-template-session), an iteration pattern rather than mass generation."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "50-75",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "Generation markers: all 4 commits authored by 'Claude' with Co-Authored-By trailers, created and pushed within a single day (2026-07-16); counter-evidence: the commits are content-specific ('encode 20 interviews + 700k budget in the workflow prompt', 'clarify the /goal target file doesn't exist yet'), every README table row maps to a real root entry, and the repo extends an established teaching lineage (claude-template-session, agent-second-brain, dynamic-workflows-experiment).",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

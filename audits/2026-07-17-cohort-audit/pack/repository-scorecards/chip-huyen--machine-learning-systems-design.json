@@ -1,0 +1,95 @@
+{
+  "repo": "machine-learning-systems-design",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "4/5 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 28.0,
+      "polarity": "risk",
+      "evidence": "template similarity 20%, boilerplate share 40%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "7 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 22.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 2 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=True, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 51.0,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 5.5,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 49.2,
+    "educational_value": 46.7,
+    "distribution_strength": 95.0,
+    "claim_evidence_integrity": 80.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "DISTRIBUTION_LED_ASSET",
+    "value_labels": [
+      "DISTRIBUTION_LED_ASSET"
+    ],
+    "rationale": "highest-priority label meeting its criteria: DISTRIBUTION_LED_ASSET",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [],
+      "review_notes": ""
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "2019 booklet, pre-LLM-assistant era; 9 commits over three years with external contributions (netlify.toml by tdhopper, Netflix case studies by Alireza Dirafzoon); no AI markers. Boilerplate share reflects the documented magicbook build scaffolding (fonts/, layouts/, stylesheets/, javascripts/), not template-cloned content.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "repo": "Seq2Seq_Tutorial",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 83.3,
+      "polarity": "quality",
+      "evidence": "5/6 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 7.0,
+      "polarity": "risk",
+      "evidence": "template similarity 5%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 21.0,
+      "polarity": "quality",
+      "evidence": "9 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 26.0,
+      "polarity": "quality",
+      "evidence": "1 dependency update(s), 1 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 59.2,
+    "technical_proficiency": 25.0,
+    "ai_assistance_likelihood": 4.8,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 39.9,
+    "educational_value": 46.7,
+    "distribution_strength": 60.0,
+    "claim_evidence_integrity": 83.3,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "No AI markers in any of the 32 commits (2018-2019, pre-AI-tooling era); hand-iterated authorship visible in incremental fix commits ('fixing model eval', 'fixed error in model eval') plus an external human contributor PR.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

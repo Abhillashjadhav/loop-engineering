@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw-vertexai-memorybank",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 83.3,
+      "polarity": "quality",
+      "evidence": "10/12 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "5 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 7.0,
+      "polarity": "risk",
+      "evidence": "template similarity 5%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 3/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "3/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 65.0,
+      "polarity": "quality",
+      "evidence": "19 distinct commit day(s), 2 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 55.0,
+      "polarity": "quality",
+      "evidence": "1 dependency update(s), 5 issue response(s), 4 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 73.0,
+    "technical_proficiency": 37.0,
+    "ai_assistance_likelihood": 0.8,
+    "ai_assistance_confidence": 82.1,
+    "ai_slop_risk": 31.6,
+    "educational_value": 100.0,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 83.3,
+    "confidence": 82.1
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Feature claims are individually traceable to dated feature commits (agent tools, CLI commands, file sync, noise filter, few-shot topic labels)",
+        "Design rationale and disclosed limitations (unofficial-product disclaimer, scope immutability, install-order pitfall, cost caveats) show real product reasoning"
+      ],
+      "review_notes": "The timestamp anomaly and agent-named contributor point to AI-assisted and possibly backfilled early history, but per fairness rules AI-assisted work is not slop; the later history shows organic multi-contributor review. Substantively this is the strongest repo in the batch."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 82.1,
+    "evidence_and_counter_evidence": "Generation markers: contributor 'Zaf' matches the README's own example agent name for user 'alan' ({user_id: 'alan', agent_name: 'zaf'}), suggesting some commits were authored via an AI agent, and the Feb 2026 commit block has uniformly round-minute :00 timestamps consistent with scripted/backfilled history. Counter-evidence: five reviewed PR merges, multi-week iteration, rationale-bearing commit messages, and three distinct contributors.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

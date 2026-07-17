@@ -1,0 +1,66 @@
+{
+  "login": "hamelsmu",
+  "repo": "hamelnb",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 6,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 10,
+    "boilerplate_share_pct": 15,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "deps_valid": true,
+    "ai_tool_attribution": true,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 0,
+    "dependency_updates": 1,
+    "docs_corrections": 2,
+    "ai_share_evidence": "Disclosed mixed-agent development: Claude Co-Authored-By trailers (Sonnet 4.6, Opus 4.6), Amp co-authors, and four merged PRs from codex/* branches (codex/jupyter-live-kernel-skill, codex/ci-fast-full-tests); counter-evidence: 31 distinct iterative commits with PR review, CI split into fast/full suites, and human editorial passes on the README.",
+    "evidence": [
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/hamelsmu/hamelnb/blob/main/.github/workflows/fast-tests.yml",
+        "excerpt": "workflows-listing.json: .github/workflows/fast-tests.yml and full-tests.yml — matching the two CI badges and the documented fast/full test split in the README."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/hamelnb/commit/ba7f7d9",
+        "excerpt": "'Add fast/full CI workflows and split slow integration tests'; also 29fc028 'Add Jupyter live kernel skill', f31c619 'Add --no-save-outputs flag', 22346c9 'Add save-outputs tests, yfinance dep, stock notebook', fad274f 'fix browser test resource leak'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/hamelnb/tree/main",
+        "excerpt": "Root: skills/ (dir), .claude/ and .claude-plugin/ (dirs), tests/ (dir), pyproject.toml (593 B), uv.lock (436 KB), AGENTS.md, stock.ipynb (64 KB) — skill, plugin, and test artifacts the README describes."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/hamelnb",
+        "excerpt": "Metadata: language Python, stargazers_count 44, commit_count 31, contributors 1, has_tests true, has_ci true, dependencies_declared true, created 2026-03-08, pushed 2026-03-09."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/hamelnb/blob/main/README.md",
+        "excerpt": "'hamelnb gives your coding agent a live Jupyter notebook kernel ... By default, cell outputs are saved back to the notebook file ... tell the agent you don't need the notebook updated. It will skip writing outputs back, which is faster.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/hamelnb/commit/857d735",
+        "excerpt": "All 31 commits land within a two-day window (857d735 'Initialize repository' 2026-03-08 through 192f491 'Soften README opening line' 2026-03-09), which can pattern-match a one-shot generation; counter: the history is genuinely iterative (29fc028 skill added, ba7f7d9 CI added and tests split, f31c619 flag added, fad274f resource leak fixed, README refined across many small commits), four PRs were reviewed and merged (#1-#4), and slow/browser integration tests exist alongside the fast suite."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "outcome": "Rapid but authentic incremental build with disclosed Claude/Codex/Amp assistance; the compressed timeline reflects a focused sprint, not an unreviewed dump."
+    }
+  },
+  "notes": "Original agent-tooling idea — giving a coding agent access to a live Jupyter kernel for incremental, stateful development — with working CI (fast/full split), tests including Playwright browser-collaboration checks, and reproducible uv-based commands. AI assistance is fully visible via Claude trailers, Amp co-authors, and codex/* PR branches. No explicit limitations section, and the entire history is a two-day sprint, but iteration quality is high."
+}

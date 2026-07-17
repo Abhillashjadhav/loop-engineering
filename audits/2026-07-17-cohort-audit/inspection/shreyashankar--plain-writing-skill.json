@@ -1,0 +1,43 @@
+{
+ "login": "shreyashankar",
+ "repo": "plain-writing-skill",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 20,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 2,
+  "dependency_updates": 0,
+  "docs_corrections": 4,
+  "ai_share_evidence": "No AI-tool attribution in README or any of the 36 saved commits; counter-evidence: fine-grained editorial iteration (six successive rewrites of 'rule 8' on 2026-06-16 alone) and two merged external PRs (hamelsmu #1, mvanhorn #2) over 32 days, a pattern of human curation rather than one-shot generation.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/plain-writing-skill/blob/main/SKILL.md",
+    "excerpt": "root-listing.json: {\"name\":\"SKILL.md\",...,\"size\":14966} plus LICENSE (1071), assets/ and docs/ dirs \u2014 backs the README's claims that the rules live in SKILL.md and that a revision template and diff screenshot exist."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/plain-writing-skill/commits",
+    "excerpt": "2026-06-16 'Merge pull request #1 from hamelsmu/codex/fix-revision-template-placeholder'; 2026-07-16 'Merge pull request #2 from mvanhorn/feat/copy-second-draft-button'; 2026-07-17 'Add tone and precision rules to the skill' \u2014 36 commits, 3 authors."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/plain-writing-skill",
+    "excerpt": "page-1.json: description 'A plain-language writing skill for AI agents, with a revision view that shows what changed.', license MIT, created 2026-06-15, pushed 2026-07-17, 259 stars, 3 contributors."
+   }
+  ]
+ },
+ "notes": "A hand-curated plain-writing rule set for AI agents; the SKILL.md document is the deliverable. Commit history shows a month of rule-by-rule editorial refinement plus two merged community PRs, which is strong counter-evidence against mass generation. README structure is shared with the sibling error-discovery-skill (personal convention, not template slop)."
+}

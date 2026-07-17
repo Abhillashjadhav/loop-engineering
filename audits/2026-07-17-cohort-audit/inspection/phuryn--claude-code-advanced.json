@@ -1,0 +1,80 @@
+{
+ "login": "phuryn",
+ "repo": "claude-code-advanced",
+ "signals": {
+  "readme_claims_total": 10,
+  "readme_claims_code_backed": 9,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 25,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 2,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 1,
+  "ai_share_evidence": "Generation markers: all 4 commits authored by 'Claude' with Co-Authored-By trailers, created and pushed within a single day (2026-07-16); counter-evidence: the commits are content-specific ('encode 20 interviews + 700k budget in the workflow prompt', 'clarify the /goal target file doesn't exist yet'), every README table row maps to a real root entry, and the repo extends an established teaching lineage (claude-template-session, agent-second-brain, dynamic-workflows-experiment).",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/claude-code-advanced",
+    "excerpt": "page-1.json: 2 stars, 4 commits, 1 contributor, no license, no description, no tests/CI, created 2026-07-16T14:56Z, pushed 2026-07-16T17:11Z \u2014 a single-afternoon publish with 1 open issue."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/claude-code-advanced/commits",
+    "excerpt": "'Claude Code Advanced: session template + OKF memory example + loops demo + dynamic-workflows'; 'loops README: clarify the /goal target file doesn't exist yet \u2014 the goal is the end state'; 'Demo-ready prompts: encode 20 interviews + 700k budget in the workflow prompt'; 'Add examples/ingestion: raw pilot readout + expected-outcome README' (all 2026-07-16, author 'Claude')."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/claude-code-advanced/tree/main",
+    "excerpt": "Root: CLAUDE.md (121 B \u2014 the '5-line import stub' the README claims), AGENTS.md (6,035 B), SUBAGENTS.md (4,721 B), knowledge/, docs/, examples/, tools/, outputs/, .agents/, .claude/, .mcp.json, .env.example (40 B) \u2014 every row of the README's 'What's inside' table has a matching root entry."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/claude-code-advanced#readme",
+    "excerpt": "'A hypothesis confirmed by 3+ independent data points becomes a rule. A rule contradicted by new data is demoted back \u2014 with the counter-example on record.' Quick start: 'Copy .env.example to .env and fill in keys only if you want the Reddit tool.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/claude-code-advanced/tree/main",
+    "excerpt": "The 121-byte CLAUDE.md exactly matches the claimed '5-line import stub' design, and paired .claude/ + .agents/ dirs match the claimed Codex-mirroring hook \u2014 structure corroborates the README's design claims at byte level."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/claude-code-advanced/commits",
+    "excerpt": "The follow-up commits are pedagogical refinements with verifiable intent ('watch a hypothesis get promoted to a rule live', an expected-outcome README for the demo), not bulk regeneration."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/claude-code-advanced",
+    "excerpt": "The repo is the companion for a named session on the author's AI-Native PM roadmap and links to working sibling projects (burnstop, pm-brain, dynamic-workflows-experiment) that exist in the portfolio."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Complete claim-to-artifact mapping: all 10 'What's inside' rows correspond to real root entries, including the byte-level match of the 5-line CLAUDE.md stub and the .env.example key-handling path.",
+    "The memory-system demo is designed to be falsifiable \u2014 a specific hypothesis (H1 at 2 of 3 confirmations) plus the exact readout containing its third confirmation, with the expected promotion stated in advance.",
+    "It is course material in an established lineage (extends claude-template-session; advanced version of the pm-brain pattern), and tutorials/teaching content are explicitly not slop under the audit's fairness rules."
+   ],
+   "review_notes": "One-shot single-day publish by 'Claude' with no license and no limitations section \u2014 but it is a teaching companion whose claims are structural and all verifiable against the root listing. Recorded template similarity reflects kinship with the author's own earlier teaching repos (agent-second-brain, claude-template-session), an iteration pattern rather than mass generation."
+  },
+  "evidence_conflicts": [
+   "Survey metadata records runnable_setup_documented false, but the README contains a concrete 3-step Quick start (clone, copy .env.example, a first routing prompt).",
+   "No LICENSE file appears in the root listing and metadata records license null, while sibling teaching repos in the portfolio are MIT."
+  ]
+ },
+ "notes": "Single-day (2026-07-16), 4-commit teaching companion for the author's 'Claude Code Power Skills for PMs' session: an OKF-style agent-memory example (facts -> hypotheses -> rules with evidence-based promotion/demotion), subagent routing economics, loop demos wired to burnstop, and dual Claude/Codex support via a 5-line CLAUDE.md import stub mirrored by a hook. Every README table row is backed by a root entry and the ingestion demo states its expected outcome in advance, so claims are structurally verifiable; gaps are a missing license, no limitations section, and all commits authored by Claude. Related to earlier teaching repos (agent-second-brain, claude-template-session) as iterations of the same curriculum, not mass-generated clones."
+}

@@ -1,0 +1,85 @@
+{
+ "login": "eugeneyan",
+ "repo": "semantic-ids-llm",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": true,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 1,
+  "ai_share_evidence": "Markers: polished single-drop repo (3 commits in ~24h) with an exhaustively structured README could suggest heavy AI drafting; counter-evidence: results table reports the author's own hybrid LOSING to baseline (Hit@10 0.202 vs 0.281), explicit limitations (4x inference cost, careful RQ-VAE tuning), external HF models/dataset and video demo, and AI use disclosed narrowly ('Cleaned with Gemini 2.5 Flash for quality').",
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm/commits",
+    "excerpt": "The one-shot commit pattern ('Init', 'Fix wrong reference to repo', 'Clean up demo') is consistent with GPU-instance development then publication: setup.sh (7000 B) is a GPU setup script and README says training needs 48GB+ VRAM."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm/blob/main/README.md",
+    "excerpt": "README publishes an unflattering result (semantic-ID SASRec underperforms baseline SASRec on all three metrics: Hit@10 0.202 vs 0.281) plus a Limitations section - the opposite of fabricated-success slop."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm/blob/main/README.md",
+    "excerpt": "Deliverables extend beyond the repo: named HF artifacts (eugeneyan/semantic-id-qwen3-8b-video-games, video-games-semantic-ids-mapping), a writeup URL, and a YouTube demo are all linked; 10 numbered pipeline notebooks (01-10) and 6 src training scripts match the described 4-stage pipeline."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm",
+    "excerpt": "root-listing.json: uv.lock (482464 B) and demo.ipynb (40825 B) corroborate a real, resolved dependency tree and a substantive runnable demo."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "outcome": "one-shot publication pattern is explained by off-repo GPU development; honest negative results and disclosed limitations outweigh the dump signal; not classified negative"
+  },
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm",
+    "excerpt": "root-listing.json: demo.ipynb (40825 B), setup.sh (7000 B), notebooks dir, src dir, pyproject.toml (606 B), uv.lock (482464 B)"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm/commits",
+    "excerpt": "3 commits total, 2025-09-14 to 2025-09-15: 'Init'; 'Fix wrong reference to repo'; 'Clean up demo'"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm",
+    "excerpt": "page-1.json: 'Semantic IDs: How to train an LLM-Recommender Hybrid with steerability and reasoning on recommendations.', created 2025-09-14, 32 forks, license MIT, topics include 'recsys'"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/semantic-ids-llm/blob/main/README.md",
+    "excerpt": "Results: 'Baseline SASRec 0.281 / 0.154 / 0.130 vs Semantic ID SASRec 0.202 / 0.114 / 0.101'; Limitations: 'Lower precision than specialized recommenders; 4x inference cost (4 tokens per item)'"
+   }
+  ],
+  "evidence_conflicts": [
+   {
+    "description": "README Installation offers 'pip install -r requirements.txt' but root-listing.json contains no requirements.txt (only pyproject.toml + uv.lock); the primary uv path is valid",
+    "sources": [
+     "readme",
+     "file_listing"
+    ]
+   }
+  ]
+ },
+ "notes": "Substantial research artifact: RQ-VAE semantic IDs plus two-stage Qwen3-8B finetuning, with a 10-notebook pipeline and 6 training scripts that match the README's described stages. Published as a near one-shot drop (3 commits), which is explained by off-repo GPU training and offset by honest negative results, a real limitations section, and externally hosted models. AI usage (Gemini for data cleaning) is explicitly disclosed."
+}

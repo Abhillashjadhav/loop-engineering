@@ -1,0 +1,43 @@
+{
+ "login": "eugeneyan",
+ "repo": "applied-ml",
+ "signals": {
+  "readme_claims_total": 3,
+  "readme_claims_code_backed": 3,
+  "original_logic_notes": 2,
+  "template_similarity_pct": 0,
+  "boilerplate_share_pct": 0,
+  "explanation_quality": 2,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 35,
+  "dependency_updates": 0,
+  "docs_corrections": 5,
+  "ai_share_evidence": "No AI-generation markers: entries added one-by-one 2020-2024 (485 total commits, 53 contributors, 35 community PR merges in sampled window) with varied human messages ('fix backticks', 'add hyphen in real-time'); curation largely predates LLM-writing era.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/applied-ml",
+    "excerpt": "root-listing.json: CONTRIBUTING.md (563 B), LICENSE (1067 B), README.md (104720 B) - the 104 KB README is the curated deliverable"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/applied-ml/commits",
+    "excerpt": "'Merge pull request #257 from queirozfcom/main'; 'add new post: Building and Maintaining Internal Tools for DS/ML teams... by Nubank' - 35 community PR merges in the 100-commit sample (2022-2024)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/eugeneyan/applied-ml",
+    "excerpt": "page-1.json: 'Papers & tech blogs by companies sharing their work on data science & machine learning in production', created 2020-07-04, 53 contributors, fork:false, license MIT"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/applied-ml/blob/main/README.md",
+    "excerpt": "31-section table of contents (Data Quality ... Fails); entries cite company+year, e.g. 'Monitoring Data Quality at Scale with Statistical Modeling Uber 2017'"
+   }
+  ]
+ },
+ "notes": "Curated list where the curation is the deliverable: a 104 KB README of production-ML papers/blog posts organized into 31 categories, built incrementally over four years with 53 contributors and reviewed community PRs. No template or boilerplate; commit history shows per-entry human additions and link/typo corrections. No slop indicators of any kind."
+}

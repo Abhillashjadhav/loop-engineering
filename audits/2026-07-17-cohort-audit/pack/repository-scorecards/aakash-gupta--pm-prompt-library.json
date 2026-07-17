@@ -1,0 +1,97 @@
+{
+  "repo": "pm-prompt-library",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 57.1,
+      "polarity": "quality",
+      "evidence": "4/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "2 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 40.0,
+      "polarity": "risk",
+      "evidence": "template similarity 50%, boilerplate share 25%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 43.0,
+      "polarity": "quality",
+      "evidence": "26 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 6.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 1 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 47.6,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 16.8,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 58.6,
+    "educational_value": 46.7,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 57.1,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The core claim \u2014 25 named prompts in 6 categories \u2014 is fully corroborated by 25 matching per-prompt commits and the prompts/ directory",
+        "Post-release maintenance actually happened (PR #1 merged 2026-04-10, a month after the main push window)",
+        "The prompt-writing tips section is substantive teaching content; prompt libraries are legitimate deliverables under the fairness rules"
+      ],
+      "review_notes": "Negative signals: fabricated near-weekly author dates running into the future (Sep 2026), same-second batch commits synchronized with two sibling repos, and unverifiable marketing claims ('battle-tested', 'tested across 50+ real PM scenarios') with no test artifacts. None of these undercut the existence or coherence of the 25 prompts themselves; the misleading element is cadence and testing claims, not content."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "Twenty prompt-add commits carry round-timestamp author dates on a near-weekly cadence out to 2026-09-07 \u2014 beyond pushed_at (2026-04-10) and the audit date \u2014 indicating re-dated history; the merged branch 'claude/targeted-improvements-5xPSU' (PR #1, 2026-04-10) is a direct marker of Claude-generated maintenance. Counter-evidence: the 25 prompt names in commits match the README's numbered table one-for-one, and the April PR shows post-release upkeep.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

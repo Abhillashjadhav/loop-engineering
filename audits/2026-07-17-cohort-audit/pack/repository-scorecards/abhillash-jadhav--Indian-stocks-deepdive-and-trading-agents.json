@@ -1,0 +1,97 @@
+{
+  "repo": "Indian-stocks-deepdive-and-trading-agents",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "no explicit README claims found; neutral 50"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 12.0,
+      "polarity": "risk",
+      "evidence": "template similarity 20%, boilerplate share 0%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 12.0,
+      "polarity": "quality",
+      "evidence": "6 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 0/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 41.4,
+    "technical_proficiency": 22.0,
+    "ai_assistance_likelihood": 0.2,
+    "ai_assistance_confidence": 60.7,
+    "ai_slop_risk": 58.8,
+    "educational_value": 0.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 60.7
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Six scheduled workflows demonstrably executing every market day (bot commits carry per-cycle timestamps)",
+        "tests/, state/ and runs/ structure plus declared dependencies indicate an engineered system",
+        "The 100-commit snapshot window is saturated by automation; it cannot fairly characterize the human development history"
+      ],
+      "review_notes": "The absence of a README means zero documented claims, setup or limitations \u2014 a real documentation gap for a 778-commit repo. But everything the snapshot does show (workflows, package structure, live scheduled operation) is consistent with a functioning multi-strategy trading automation. Recorded less rather than more: authorship split, code quality and strategy logic are not observable from this snapshot."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 60.7,
+    "evidence_and_counter_evidence": "All 100 sampled commits are github-actions bot cycle/digest commits (e.g. 'Auto: scalper cycle', 'Auto: EOD digest') \u2014 human/AI authorship of the underlying code is not observable in this window; CLAUDE.md at root indicates Claude Code-driven development; no README exists to make or disclose any claim.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

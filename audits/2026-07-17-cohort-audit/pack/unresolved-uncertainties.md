@@ -1,0 +1,34 @@
+# Unresolved uncertainties
+
+- aakash-gupta: exact human vs AI authorship of any file (no provenance logs available)
+- aakash-gupta: private intent or motivation behind any repository
+- aakash-gupta: private or unpublished contributions outside the public portfolio
+- aakash-gupta: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- abhillash-jadhav: exact human vs AI authorship of any file (no provenance logs available)
+- abhillash-jadhav: private intent or motivation behind any repository
+- abhillash-jadhav: private or unpublished contributions outside the public portfolio
+- abhillash-jadhav: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- chip-huyen: exact human vs AI authorship of any file (no provenance logs available)
+- chip-huyen: private intent or motivation behind any repository
+- chip-huyen: private or unpublished contributions outside the public portfolio
+- chip-huyen: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- eugene-yan: exact human vs AI authorship of any file (no provenance logs available)
+- eugene-yan: private intent or motivation behind any repository
+- eugene-yan: private or unpublished contributions outside the public portfolio
+- eugene-yan: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- hamel-husain: exact human vs AI authorship of any file (no provenance logs available)
+- hamel-husain: private intent or motivation behind any repository
+- hamel-husain: private or unpublished contributions outside the public portfolio
+- hamel-husain: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- pawel-huryn: exact human vs AI authorship of any file (no provenance logs available)
+- pawel-huryn: private intent or motivation behind any repository
+- pawel-huryn: private or unpublished contributions outside the public portfolio
+- pawel-huryn: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- shreya-shankar: exact human vs AI authorship of any file (no provenance logs available)
+- shreya-shankar: private intent or motivation behind any repository
+- shreya-shankar: private or unpublished contributions outside the public portfolio
+- shreya-shankar: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding
+- shubham-saboo: exact human vs AI authorship of any file (no provenance logs available)
+- shubham-saboo: private intent or motivation behind any repository
+- shubham-saboo: private or unpublished contributions outside the public portfolio
+- shubham-saboo: whether the person 'understands GenAI' — repository evidence alone cannot establish a person's understanding

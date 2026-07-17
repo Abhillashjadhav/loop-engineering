@@ -1,0 +1,59 @@
+{
+ "login": "phuryn",
+ "repo": "agentlift",
+ "signals": {
+  "readme_claims_total": 9,
+  "readme_claims_code_backed": 8,
+  "original_logic_notes": 5,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 3,
+  "issue_responses": 0,
+  "dependency_updates": 1,
+  "docs_corrections": 4,
+  "ai_share_evidence": "Generation markers: near-universal 'Co-Authored-By: Claude' trailers and several commits authored directly by 'Claude' (e.g. 'Implement the import feature', 2026-06-08); counter-evidence: repeated accuracy corrections against its own marketing ('fix stale Anthropic-only claims', 'honest reframe' of the Google target, 'OpenAI subagents = degraded, not unsupported'), CI extras fix, committed live-deploy receipts, 3 releases on PyPI.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/agentlift",
+    "excerpt": "page-1.json: 25 stars, 49 commits, 2 contributors, 3 releases, has_tests/has_ci/dependencies_declared/runnable_setup true, created 2026-06-02, pushed 2026-06-09, 6 distinct commit days; topics: claude-managed-agents, amazon-bedrock-agents, claude-agent-sdk."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/agentlift/commits",
+    "excerpt": "'skylift v0.1.0 \u2014 deploy local Claude agents to Anthropic Managed Agents' (2026-06-02); 'rename project skylift -> agentlift' (2026-06-02); 'feat: deploy --target google - live Vertex Agent Engine deploy (0.4.0)' (2026-06-03); 'AWS Bedrock AgentCore Harness: live single-agent deploy (0.6.0)' (2026-06-05); 'release: 0.8.0 \u2014 agentlift import' (2026-06-08); 'Fix CI: declare boto3 as the bedrock extra; install it in CI'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/agentlift/tree/main",
+    "excerpt": "Root: src/, tests/, benchmarks/, demo/, docs/, examples/, experiments/, .env.example (1,129 B), pyproject.toml, CHANGELOG.md (12,017 B), CONTRIBUTING.md, CLAUDE.md (31,176 B)."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/agentlift/blob/main/.github/workflows",
+    "excerpt": "workflows-listing.json: ci.yml plus live-demo.yml \u2014 an offline CI gate and an on-demand live-deploy job, matching the README's 'pytest -m \"not live\"' / 'pytest -m live' split."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/agentlift#readme",
+    "excerpt": "'agentlift's claims are pinned by tests and committed live receipts, not prose' and a Limitations section: 'Remote MCP only... Knowledge files are inlined... the receipts run on Nova to prove the control plane... while Claude-on-Bedrock access is account-gated.'"
+   }
+  ],
+  "evidence_conflicts": [
+   "The 'live-verified' AWS/Google receipts live under tests/live/receipts/ and docs/tested-platforms.md, which the snapshot shows only as directories \u2014 receipt contents are corroborated by commit messages, not directly inspected."
+  ]
+ },
+ "notes": "A provider-neutral agent-deployment compiler (parse->plan->apply->run, folder-as-agent convention, portability audit, lockfile idempotency) built at extreme velocity: 49 commits across 6 days, from v0.1.0 to a 4-runtime story with benchmarks and an import/migration path. The README is explicitly evidence-oriented \u2014 'Proof, not assertion', committed live receipts, an honest Nova-vs-Claude entitlement caveat, and a dedicated limitations doc \u2014 and the commit log shows it correcting its own overclaims mid-week. Almost entirely Claude co-authored, openly so in trailers; the depth of original design (diagnostics-over-silent-loss, maturity tiers) is well beyond template output."
+}

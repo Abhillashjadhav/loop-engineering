@@ -1,0 +1,56 @@
+{
+  "login": "hamelsmu",
+  "repo": "hamel",
+  "signals": {
+    "readme_claims_total": 8,
+    "readme_claims_code_backed": 7,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 20,
+    "boilerplate_share_pct": 20,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "deps_valid": true,
+    "ai_tool_attribution": true,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 3,
+    "complexity_justified": true,
+    "integration_complexity": 3,
+    "issue_responses": 2,
+    "dependency_updates": 3,
+    "docs_corrections": 4,
+    "ai_share_evidence": "Heavy, explicit AI attribution: ~50 Claude Co-Authored-By trailers (Opus 4.5/4.6/4.7, Sonnet 4.6), 26 commits authored by 'Devin AI'/'devin-ai-integration[bot]', 4 Amp co-authors, 4 'Generated with Claude Code' footers; counter-evidence: 3-year human history (2023-11 to 2026-06), owner-authored code-review-fix commits, version/release discipline (0.0.17 to 0.0.34).",
+    "evidence": [
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/hamelsmu/hamel/blob/main/.github/workflows/test.yaml",
+        "excerpt": "workflows-listing.json: .github/workflows/test.yaml (1358 B) and .github/workflows/deploy.yaml (297 B) — CI tests plus docs deploy backing the README's docs-site link."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/hamel/commit/49af0f8",
+        "excerpt": "2026-04-03 devin-ai-integration[bot] 'Add unified `youtube` CLI for channel management, transcripts, and chapters (#4)'; also 83711f3 'Add Twitter CLI', 49efa28 'feat: add kit-broadcasts CLI and Claude skills', bb0e63a 'fix: chunk zoom recordings list into 30-day windows'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/hamel/tree/main",
+        "excerpt": "Root: pyproject.toml, uv.lock (430 KB), publish-pypi.sh, justfile, tests/, nbs/, plugins/, hamel/, settings.ini, MANIFEST.in — installable nbdev package with a plugin/skills layer as the README claims."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/hamel",
+        "excerpt": "Metadata: 'General Utilities', stargazers_count 57, commit_count 119, contributors 2, has_tests true, has_ci true, dependencies_declared true, created 2023-11-07, pushed 2026-06-21."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/hamel/blob/main/README.md",
+        "excerpt": "'pip install hamel ... All CLI tools below are installed automatically' with per-tool examples for ai-gem, youtube, xapi, zoom, kit-broadcasts, ai-annotate-talk, each linked to plugins/hamel-tools/skills/*/SKILL.md."
+      }
+    ]
+  },
+  "notes": "Long-lived personal utilities package (nbdev/uv, PyPI-published) integrating Gemini, YouTube, X, Zoom, and Kit APIs, with the same tools exposed as Claude/Codex skills. AI usage is unusually well attributed: Devin AI bot commits, Claude co-author trailers, and Amp credits sit alongside owner review-fix and version-bump commits. Key handling is visible in commit history (env-var API keys, OAuth token docs, error messages for missing keys); README limitations live in skill docs per commit f3a0fba."
+}

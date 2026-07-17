@@ -1,0 +1,57 @@
+{
+ "login": "eugeneyan",
+ "repo": "eugeneyan",
+ "signals": {
+  "readme_claims_total": 2,
+  "readme_claims_code_backed": 2,
+  "original_logic_notes": 1,
+  "template_similarity_pct": 10,
+  "explanation_quality": 1,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "70/100 sampled commits are uniform 'Updated content' by README-bot - a declared GitHub Action (workflows/build.yml runs build_readme.py); automation by design, not generated slop; 30 human commits edit bio/links.",
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/eugeneyan",
+    "excerpt": "Uniform bot commit messages are fully explained by visible automation: root-listing.json shows build_readme.py (1612 B), requirements.txt (10 B), and a .github dir; workflows-listing.json confirms .github/workflows/build.yml (780 B)."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/eugeneyan/blob/master/README.md",
+    "excerpt": "README embeds '<!-- writing starts -->' template markers and a 'Build README' Actions badge, matching the bot commits; the writing feed content changes over time (posts dated 2025-2026)."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "outcome": "uniform bot commits reflect declared scheduled automation, not low-effort generation; no negative classification supported"
+  },
+  "evidence": [
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/eugeneyan/eugeneyan/blob/master/.github/workflows/build.yml",
+    "excerpt": "workflows-listing.json: build.yml, size 780, path .github/workflows/build.yml, ref=master"
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/eugeneyan",
+    "excerpt": "root-listing.json: build_readme.py (1612 B), requirements.txt (10 B), .github dir, README.md (1825 B)"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/eugeneyan/commits",
+    "excerpt": "authors: README-bot x70 ('Updated content'), eugeneyan x30 ('Update README.md'); range 2023-05-22 to 2026-06-22"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/eugeneyan/blob/master/README.md",
+    "excerpt": "'<!-- writing starts --> * [Patterns for Building Cybersecurity Evals] ... Sun, 21 Jun 2026 <!-- writing ends -->' plus Build README badge"
+   }
+  ]
+ },
+ "notes": "Profile README repo with a small self-built automation: build_readme.py plus a scheduled Action refresh the recent-writing list, which explains the 70 uniform bot commits. The only repo-verifiable claim (auto-updating writing feed) is fully backed by script, workflow, and bot history. Bio claims (job, newsletter) are external and were not counted."
+}

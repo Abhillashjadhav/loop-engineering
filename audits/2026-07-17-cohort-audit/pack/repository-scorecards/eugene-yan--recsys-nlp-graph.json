@@ -1,0 +1,95 @@
+{
+  "repo": "recsys-nlp-graph",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 85.7,
+      "polarity": "quality",
+      "evidence": "6/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 0.0,
+      "polarity": "risk",
+      "evidence": "template similarity 0%, boilerplate share 0%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 43.0,
+      "polarity": "quality",
+      "evidence": "25 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 56.0,
+      "polarity": "quality",
+      "evidence": "17 dependency update(s), 1 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 63.6,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 1.0,
+    "ai_assistance_confidence": 67.9,
+    "ai_slop_risk": 40.0,
+    "educational_value": 80.0,
+    "distribution_strength": 60.0,
+    "claim_evidence_integrity": 85.7,
+    "confidence": 67.9
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [],
+      "review_notes": ""
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 67.9,
+    "evidence_and_counter_evidence": "Predates LLM coding era (2020); README candidly reports failures and non-results (Node2Vec 'didn't run to completion, even on a 64gb instance'; side-info variant 'didn't work out') with NA cells left in results tables - an anti-fabrication signal; no AI markers.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

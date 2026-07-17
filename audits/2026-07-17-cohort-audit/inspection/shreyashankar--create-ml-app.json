@@ -1,0 +1,44 @@
+{
+ "login": "shreyashankar",
+ "repo": "create-ml-app",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 2,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 20,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 1,
+  "dependency_updates": 0,
+  "docs_corrections": 5,
+  "ai_share_evidence": "2020 repo predating AI codegen; no AI markers; counter-evidence: 13 hand-sized commits over 2 days ('Fix typo', 'Change title', 'Adding makefile and pytorch nn script.') plus one merged external PR adding usage docs.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/create-ml-app",
+    "excerpt": "root-listing.json: Makefile (888 bytes), main.py (3095 bytes), setup.py (224 bytes), .gitignore, README.md \u2014 exactly the minimal template the README describes (Makefile-driven venv + MNIST PyTorch example + setup.py deps)."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/create-ml-app/commits",
+    "excerpt": "2020-11-22 'Adding makefile and pytorch nn script.'; 2020-11-23 Adhita Selvaraj 'add usage instructions to README'; 2020-11-24 'Merge pull request #1 from swiftdiaries/master' \u2014 13 commits, 3 author identities (two are the owner's)."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/create-ml-app",
+    "excerpt": "page-1.json: description 'Template Makefile for ML projects in Python.', 520 stars, 45 forks, created 2020-11-22, size 11 KB."
+   }
+  ]
+ },
+ "notes": "A deliberately minimal, original template (named after create-react-app) whose whole value is a Makefile convention for venv and dependency handling, with a working MNIST example. Every README claim maps to a file in the 5-entry root. Simple content by design, which the fairness rules exclude from slop; the 520 stars are irrelevant to the quality read either way."
+}

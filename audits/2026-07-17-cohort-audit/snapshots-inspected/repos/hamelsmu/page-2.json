@@ -751,7 +751,11 @@
     }
    ],
    "counter_evidence": [
-    "All 31 commits land within a two-day window (2026-03-08/09), which can pattern-match a one-shot generation; counter: the history is genuinely iterative (skill added, CI added, tests split, flags added, resource leak fixed, README refined across many small commits), four PRs were reviewed and merged, and slow/browser integration tests exist alongside the fast suite."
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/hamelsmu/hamelnb/commit/857d735",
+     "excerpt": "All 31 commits land within a two-day window (857d735 'Initialize repository' 2026-03-08 through 192f491 'Soften README opening line' 2026-03-09), which can pattern-match a one-shot generation; counter: the history is genuinely iterative (29fc028 skill added, ba7f7d9 CI added and tests split, f31c619 flag added, fad274f resource leak fixed, README refined across many small commits), four PRs were reviewed and merged (#1-#4), and slow/browser integration tests exist alongside the fast suite."
+    }
    ],
    "counter_evidence_review": {
     "reviewed": true,

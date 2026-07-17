@@ -1,0 +1,68 @@
+{
+  "login": "hamelsmu",
+  "repo": "claude-review-loop",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 5,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 10,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": true,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 1,
+    "dependency_updates": 0,
+    "docs_corrections": 2,
+    "ai_share_evidence": "24 commits carry Co-Authored-By: Claude Opus 4.6 trailers, and commit 156c7f9 'Address Codex self-review findings' shows AI review applied to the tool's own code; counter-evidence: month-long human iteration (2026-02-21 to 03-15) with design reversals (retry limit 3 -> 1) and an external-facing PR review addressed.",
+    "evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/claude-review-loop/commit/1e450ee",
+        "excerpt": "2026-02-21 'Multi-agent code review with project-aware conditional agents' ('Split the single Codex review into parallel sub-agents'); also ba5b8b3 'Reduce retry limit from 3 to 1: fail-open after first Codex failure' and 33f3566 'Address PR review feedback: verify review file before approving exit'."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/claude-review-loop/tree/main",
+        "excerpt": "Root: .claude-plugin/ (dir), .gitattributes (67 B), .gitignore, README.md (5173 B), plugins/ (dir) — marketplace layout with plugin content nested under plugins/."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/claude-review-loop",
+        "excerpt": "Metadata: 'Claude Code plugin: automated code review loop with Codex', language Shell, stargazers_count 704, forks_count 46, commit_count 32, contributors 1, created 2026-02-21."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/claude-review-loop/blob/main/README.md",
+        "excerpt": "'The plugin uses a Stop hook ... If in task phase: writes a runner script and prompt file, transitions to addressing, blocks exit'; env var REVIEW_LOOP_CODEX_FLAGS defaults to bypass with a documented safer '--sandbox workspace-write' alternative."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/claude-review-loop/tree/main",
+        "excerpt": "README's 'File structure' section lists commands/, hooks/, scripts/, AGENTS.md at the repo top level, but root-listing.json shows only .claude-plugin/ and plugins/ — the structure moved under plugins/ when commit d9f9fc2 'Restructure as a plugin marketplace' landed; stale diagram, not fabricated functionality."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/claude-review-loop/blob/main/README.md",
+        "excerpt": "Claims not directly visible in the snapshot (telemetry log file '.claude/review-loop.log', 30s hook timeout in hooks/hooks.json) are configuration details consistent with, but not proven by, root listing and commit history."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "outcome": "The structure mismatch is stale documentation after a verified marketplace restructure, and core behavioral claims (stop hook, parallel Codex agents, fail-open retries, marketplace install) are each corroborated by specific commits; no evidence of invented capability."
+    },
+    "evidence_conflicts": [
+      "readme file-structure diagram vs file_listing root layout: README shows hooks/ and commands/ at repo root; actual root has them nested under plugins/ following the marketplace restructure (commit d9f9fc2)."
+    ]
+  },
+  "notes": "Original stop-hook lifecycle engine that forces an independent Codex review before Claude may finish a task; 704 stars with a coherent month of design iteration including a documented safety tradeoff (fail-open, retry limit reduced 3 to 1). AI-assisted authoring is disclosed via Claude trailers and a Codex self-review commit. Main flag: the README file-structure diagram is stale relative to the marketplace layout, so two of seven claims are only indirectly backed."
+}

@@ -1,0 +1,47 @@
+{
+ "login": "eugeneyan",
+ "repo": "applyingml",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 2,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 20,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 2,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 1,
+  "issue_responses": 16,
+  "dependency_updates": 7,
+  "docs_corrections": 4,
+  "ai_share_evidence": "No AI markers; 2021-2024 history with 15 contributors publishing mentor interviews, community patch PRs, dependabot merges, and a human revert of a bad dependency bump ('Revert Merge pull request #23...') - active human editorial maintenance.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/applyingml",
+    "excerpt": "root-listing.json: gatsby-config.js (8536 B), gatsby-node.js (1000 B), CNAME (14 B), package.json (2548 B), package-lock.json (1699307 B), src dir, static dir"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/applyingml/commits",
+    "excerpt": "'Publish Chirasmita and Ethan interview'; 'Merge pull request #21 from stanton119/patch-1 / Update personalization.mdx'; 'Revert \"Merge pull request #23 from eugeneyan/dependabot/npm_and_yarn/sharp...\"'"
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/eugeneyan/applyingml/blob/main/.github/workflows/build.yml",
+    "excerpt": "workflows-listing.json: build.yml (316 B) at .github/workflows/build.yml, ref=main - matches README 'Built and deployed on push to main via Gatsby Publish'"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/eugeneyan/applyingml",
+    "excerpt": "page-1.json: 'Papers, guides, and mentor interviews on applying machine learning for ApplyingML.com', language MDX, 15 contributors, topics ['applied-machine-learning','gatsby','machine-learning']"
+   }
+  ]
+ },
+ "notes": "Content site repo for ApplyingML.com: Gatsby scaffolding is openly disclosed ('Bootstrapped with Gatsby's hello-world starter') and the deliverable is the MDX interview/guide content, contributed by 15 people through a documented template-PR workflow. CI deploy claim is backed by the workflow file, and the author self-discloses inexperience ('my first project with JavaScript and React'). Template share is framework config, not copied substance."
+}

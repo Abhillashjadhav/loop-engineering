@@ -1,0 +1,60 @@
+{
+ "login": "eugeneyan",
+ "repo": "news-agents",
+ "signals": {
+  "readme_claims_total": 6,
+  "readme_claims_code_backed": 5,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "deps_valid": true,
+  "ai_tool_attribution": true,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 1,
+  "dependency_updates": 0,
+  "docs_corrections": 5,
+  "ai_share_evidence": "AI outputs are explicitly labeled ('Add generated summaries' commit; summaries/ dir for Q-agent digests) while the harness itself shows incremental hand-built history ('Add techcrunch', 'Add hn and wsj tools', 'Update ainews parsing'); commits split across 'eugeneyan' and 'eugeneya' author names, likely one person with mis-set git config.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/news-agents",
+    "excerpt": "root-listing.json: feeds.txt (310 B), context dir, src dir, summaries dir, pyproject.toml (330 B), uv.lock (27826 B) - matches README project-files map"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/news-agents/commits",
+    "excerpt": "17 commits 2025-05-04 to 2025-07-19: 'Init repo' -> 'Add hn and wsj tools' -> 'Add techcrunch' -> 'Add ainews and wired' -> 'Merge pull request #3 from xdotli/fix-hatchling-build-config'"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/eugeneyan/news-agents",
+    "excerpt": "page-1.json: 'Building News Agents to Summarize News with MCP, Q, and tmux', topics ['agent','amazon-q','mcp','tmux'], license MIT"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/news-agents/blob/main/README.md",
+    "excerpt": "'A little experiment with Amazon Q, Model Context Protocol (MCP), and tmux'; per-feed modules listed: ainews.py, hackernews.py, techcrunch.py, wired.py, wsj.py; setup: 'uv sync' then 'q chat --trust-all-tools'"
+   }
+  ],
+  "evidence_conflicts": [
+   {
+    "description": "README debugging command 'uv run mcp dev src/main.p' references a truncated filename (src/main.p); src contents beyond the top-level listing are not in the snapshot, so the exact entrypoint name is unverifiable offline",
+    "sources": [
+     "readme",
+     "file_listing"
+    ]
+   }
+  ]
+ },
+ "notes": "Small but genuine multi-agent experiment: README architecture (feeds.txt, context/, src/ per-feed parsers, summaries/) maps one-to-one onto the root listing, and the 17-commit history shows feed tools added one at a time. Honest experimental framing ('a little experiment'), clear uv-based setup, MIT licensed, one external PR merged fixing the build config. AI involvement is the subject and is plainly attributed."
+}

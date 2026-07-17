@@ -1,0 +1,99 @@
+{
+  "repo": "gemini-artboard",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 30.0,
+      "polarity": "quality",
+      "evidence": "3/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 13.0,
+      "polarity": "risk",
+      "evidence": "template similarity 15%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 2/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 2.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=True"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 50.7,
+    "technical_proficiency": 29.7,
+    "ai_assistance_likelihood": 36.2,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 60.4,
+    "educational_value": 100.0,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 30.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The strongest, highest-impact claim (zero-dependency single HTML file) is fully verified by the root listing: index.html at 44KB with no manifest, lockfile, or build tooling present.",
+        "The README candidly discloses the quality-versus-simplicity limitation and per-model speed tradeoffs, the opposite of fabricated capability claims.",
+        "Commit history shows same-day iteration on generation quality ('feat: add detailed canvas rendering instructions'), consistent with the features being real and actively tuned."
+      ],
+      "review_notes": "The low backed ratio (3 of 10) reflects a snapshot verification limit, not observed fabrication: the individual feature claims (SSE streaming, auto error recovery, 60fps loop, model selector, preset chips) all live inside index.html, whose content was not captured in the snapshot, so they could not be independently corroborated and were conservatively counted as unbacked. Nothing in the saved artifacts contradicts any claim; every claim that is checkable from the listing, commits, or metadata checks out."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "Single-day 4-commit drop (2026-02-20) with clean conventional-commit messages, a pattern consistent with agent-assisted authoring, but no explicit generation markers (no bot authors, no tool credits); counter-evidence: the README argues design tradeoffs and extensibility rationale ('the out-of-the-box generation quality is constrained by this simplicity') in an authored voice, and one commit adds hand-tuned prompt engineering ('feat: add detailed canvas rendering instructions').",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

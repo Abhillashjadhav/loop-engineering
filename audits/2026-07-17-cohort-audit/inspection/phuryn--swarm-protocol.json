@@ -1,0 +1,58 @@
+{
+ "login": "phuryn",
+ "repo": "swarm-protocol",
+ "signals": {
+  "readme_claims_total": 7,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 3,
+  "dependency_updates": 0,
+  "docs_corrections": 1,
+  "ai_share_evidence": "Generation markers: external contributor Greg Jackson's commits carry 'Co-Authored-By: Claude'; maintainer commits are plain; counter-evidence: TDD-shaped external PRs ('test: add failing tests for db.getBoard' before 'feat: implement getBoard'), CI test workflow, and docs updated to track Anthropic's shipping ('Updated docs to account for what Anthropic just shipped').",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/swarm-protocol",
+    "excerpt": "page-1.json: 49 stars, 8 forks, 18 commits, 2 contributors, has_tests/has_ci/dependencies_declared true, created 2026-03-13, pushed 2026-03-15 (3 distinct commit days, then dormant); topics: agent-coordination, claude-code, codex, cursor."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/swarm-protocol/commits",
+    "excerpt": "'Initialize the repository with tests' (2026-03-13); 'Merge pull request #2 from gregario/test/get-signals-since-filter'; 'fix: improve error messages in claimWork and heartbeat' (Greg Jackson, 2026-03-13); 'test: add failing tests for db.getBoard' then 'feat: implement getBoard query function' (2026-03-14); 'Merge pull request #7 from gregario/feat/get-board-tool' (2026-03-15)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/swarm-protocol/tree/main",
+    "excerpt": "Root: src/, tests/, docs/, examples/, claude-md/ (the drop-in COORDINATION.md), docker-compose.yml, package.json, vitest.config.ts, CONTRIBUTING.md."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/swarm-protocol/blob/main/.github/workflows",
+    "excerpt": "workflows-listing.json: test.yml (858 B), matching the README's Tests badge."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/swarm-protocol#readme",
+    "excerpt": "'Status: Alpha \u2014 building in public. 19 MCP tools implemented, integration tests passing.' Design decisions: 'Conflicts are advisory, not enforced... Auth is trust-based in v1... Polling via MCP tools, no WebSocket subscriptions.'"
+   }
+  ],
+  "evidence_conflicts": [
+   "README's 'Looking for Co-Builders' pitch implies an ongoing project, but metadata shows the last push on 2026-03-15 \u2014 two days after creation \u2014 with 5 open issues; activity did not continue past the launch window."
+  ]
+ },
+ "notes": "An original protocol design (intent/claim/signal/context-package primitives, advisory conflicts, trust-based v1 auth) with unusually clear tradeoff documentation and an intentional 'What's Not in v1' list; three external PRs from one contributor were merged in its 3-day life, with tests-first commits. The whole repo is a 3-day burst (2026-03-13..15) that then went dormant while the README still solicits co-builders \u2014 a promising spike, not a maintained system. The '19 MCP tools' count is plausible from src/tests/CI structure but not independently countable from the snapshot."
+}

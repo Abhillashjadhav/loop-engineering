@@ -1,0 +1,93 @@
+{
+  "repo": "chiphuyen",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 62.5,
+      "polarity": "quality",
+      "evidence": "5/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 22.0,
+      "polarity": "risk",
+      "evidence": "template similarity 30%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 24.0,
+      "polarity": "quality",
+      "evidence": "9 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 27.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 2 issue response(s), 6 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 26.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 19.8,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 11.0,
+    "ai_assistance_confidence": 60.7,
+    "ai_slop_risk": 67.1,
+    "educational_value": 26.7,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 62.5,
+    "confidence": 60.7
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [],
+      "review_notes": ""
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 60.7,
+    "evidence_and_counter_evidence": "Profile README (prose only); follows the common GitHub profile-README emoji-bullet convention (default template comment still present); no AI markers; edits are small human-scale link/typo fixes over six years, two from external contributors.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

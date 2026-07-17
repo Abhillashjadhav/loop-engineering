@@ -1,0 +1,47 @@
+{
+ "login": "chiphuyen",
+ "repo": "dmls-book",
+ "signals": {
+  "readme_claims_total": 6,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 30,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 2,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "2022 companion repo to a human-authored O'Reilly book; sparse, organic commit cadence over four years (16 commits, e.g. 'Initial book release' 2022, translations updates through 2026); no AI-authorship markers in README or commits.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/dmls-book",
+    "excerpt": "root-listing.json: summary.md (27927 B), resources.md (18719 B), mlops-tools.md (11722 B), basic-ml-review.md (11518 B), translations.md (9309 B), ToC.pdf (51741 B)"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/dmls-book/commits",
+    "excerpt": "2022-05-27 'Initial commit' ... 2022-06-22 'Initial book release', 2022-07-12 dfangshuo 'Fix spelling (tabel -> table)', 2026-06-09 'Add translations' (16 commits)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/dmls-book",
+    "excerpt": "portfolio survey: stargazers_count 5068, forks_count 1016, commit_count 16, contributors 3, created 2022-05-27, pushed 2026-06-09"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/dmls-book/blob/main/README.md",
+    "excerpt": "'This is NOT a tutorial book... In this repo, you won't find code examples, but you'll find: Table of contents, Chapter summaries, MLOps tools, Resources, A very short review of basic ML concepts'"
+   }
+  ]
+ },
+ "notes": "Companion repo for Designing Machine Learning Systems (O'Reilly 2022); every README-listed artifact (ToC, summaries, MLOps tools, resources, ML review, translations) exists as a substantial file, so claims are fully backed. README is explicit that no code examples are included. Low-volume but honest, long-lived maintenance including community spelling fixes."
+}

@@ -1,0 +1,96 @@
+{
+  "repo": "repotovideo",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 70.0,
+      "polarity": "quality",
+      "evidence": "7/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 12.0,
+      "polarity": "risk",
+      "evidence": "template similarity 10%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 3/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "3/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 6.0,
+      "polarity": "quality",
+      "evidence": "3 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 25.0,
+      "polarity": "quality",
+      "evidence": "1 dependency update(s), 0 issue response(s), 4 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 53.2,
+    "technical_proficiency": 37.0,
+    "ai_assistance_likelihood": 2.5,
+    "ai_assistance_confidence": 82.1,
+    "ai_slop_risk": 45.2,
+    "educational_value": 46.7,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 70.0,
+    "confidence": 82.1
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Feature and pipeline claims map to dated feature/robustness commits, and the root listing matches the documented structure",
+        "Original product reasoning is visible: adaptive scene selection by repo maturity, per-scene TTS tone guidance, music/voice option design"
+      ],
+      "review_notes": "Recorded because sub-root structure (apps/api, apps/video, apps/web internals) is not visible in the top-level listing, leaving ~3 of 10 claims (voiceover internals, bundled music tracks, web UI details) corroborated only by commit messages. Nothing found contradicting the claims."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 82.1,
+    "evidence_and_counter_evidence": "Generation markers: polished emoji-heavy README and verbose conventional-commit subjects are consistent with AI-assisted authoring (2026 era). Counter-evidence: 10 commits across 3 distinct days with iterative engineering passes (gitignore cleanup, model upgrade, 'Enhance pipeline robustness with improved input validation, Gemini output parsing, and error handling') rather than one dump.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

@@ -1,0 +1,64 @@
+{
+ "login": "chiphuyen",
+ "repo": "aie-book",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 30,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 6,
+  "dependency_updates": 0,
+  "docs_corrections": 4,
+  "ai_share_evidence": "No AI-authorship markers in README or 38 commit messages; two-year human-authored O'Reilly book with named human reviewers/editors and multi-year organic history (2024-12 to 2026-07) including external typo/link-fix PRs; counter-evidence to any AI-share concern is the sustained community-maintenance pattern.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/aie-book",
+    "excerpt": "root-listing.json: ToC.md (17606 B), ToC.pdf (179595 B), chapter-summaries.md (33980 B), resources.md (34959 B), prompt-examples.md (8054 B), study-notes.md (1301 B), translations.md (9008 B), dirs assets/ and scripts/"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/aie-book/commits",
+    "excerpt": "2024-12-03 'Initial commit' ... 2025-01-14 'Add ChatGPT conversation heatmap generator' ... 2026-07-03 'Merge pull request #24 from sjhddh/fix/broken-links' (38 commits, external fixers amnry, sjhddh, dr3s, strickvl, omrylcn, chris-alexiuk)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/aie-book",
+    "excerpt": "portfolio survey: stargazers_count 16533, forks_count 2402, commit_count 38, contributors 7, created 2024-12-03, pushed 2026-07-03"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/aie-book/blob/main/README.md",
+    "excerpt": "'_This is NOT a tutorial book, so it doesn't have a lot of code snippets._' ... 'This repo will be updated with more resources in the next few weeks.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/aie-book",
+    "excerpt": "root-listing.json: case-studies.md (14 B) and misalignment.md (89 B) are near-empty stubs linked from the README, while chapter-summaries.md (33980 B), resources.md (34959 B), ToC.md (17606 B), prompt-examples.md (8054 B) and translations.md (9008 B) are substantial"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/aie-book/blob/main/README.md",
+    "excerpt": "'_This repo will be updated with more resources in the next few weeks._' \u2014 the README explicitly flags the repo as WIP, so the stub files read as placeholders rather than unbacked claims"
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "outcome": "Stub files noted but do not overturn the positive read: 6 of 8 README claims are backed by substantial artifacts and the repo is an explicitly WIP companion to a published book."
+  },
+  "evidence_conflicts": "README links case-studies.md and misalignment.md as content sections, but root-listing shows them at 14 and 89 bytes respectively (effectively empty placeholders)."
+ },
+ "notes": "Companion repo for the published O'Reilly book AI Engineering (2025): ToC, chapter summaries, resources, prompt examples, translations, and a ChatGPT/Claude heatmap notebook. Book materials are the deliverable and most are substantial; two linked files are empty stubs in a repo self-declared WIP. Organic multi-year maintenance with external contributors fixing links and typos."
+}

@@ -1,0 +1,95 @@
+{
+  "repo": "claude-review-loop",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 71.4,
+      "polarity": "quality",
+      "evidence": "5/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 10.0,
+      "polarity": "risk",
+      "evidence": "template similarity 10%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 2/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 25.0,
+      "polarity": "quality",
+      "evidence": "5 distinct commit day(s), 2 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 16.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 1 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 63.3,
+    "technical_proficiency": 24.7,
+    "ai_assistance_likelihood": 20.8,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 44.2,
+    "educational_value": 100.0,
+    "distribution_strength": 60.0,
+    "claim_evidence_integrity": 71.4,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [],
+      "review_notes": ""
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "24 commits carry Co-Authored-By: Claude Opus 4.6 trailers, and commit 156c7f9 'Address Codex self-review findings' shows AI review applied to the tool's own code; counter-evidence: month-long human iteration (2026-02-21 to 03-15) with design reversals (retry limit 3 -> 1) and an external-facing PR review addressed.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

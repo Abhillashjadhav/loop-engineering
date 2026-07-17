@@ -1,0 +1,97 @@
+{
+  "repo": "claude-code-demo",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "no explicit README claims found; neutral 50"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 66.0,
+      "polarity": "risk",
+      "evidence": "template similarity 70%, boilerplate share 60%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 2.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 0/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 23.4,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 4.2,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 76.7,
+    "educational_value": 0.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "LIKELY_SHALLOW_OR_TEMPLATED",
+    "value_labels": [],
+    "rationale": "ai_slop_risk 77 >= 70 with confidence 75 >= 70; counter-evidence reviewed and recorded",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "It is a self-labeled demo/learning repo; simple content and tutorials are not slop under the fairness rules",
+        "The churn is manual GitHub-web activity, the opposite of mass generation",
+        "With a title-only README, the repo claims nothing it fails to deliver"
+      ],
+      "review_notes": "Negative surface signals (empty README, high boilerplate, standard planner/implementer/tester/doc-writer pattern) are fully explained by the repo's evident purpose: a one-day hands-on exercise learning Claude Code sub-agent layout in November 2025. It carries no authority claims and should weigh little in either direction."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "All 29 commits are owner-authored via the GitHub web UI ('Create ...'/'Delete ...') on 2025-11-09; no AI-authored commits and no generation markers \u2014 the visible churn (repeatedly mis-nesting and re-creating .claude/agents paths) reads as manual hands-on learning, not mass generation.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

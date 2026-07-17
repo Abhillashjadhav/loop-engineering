@@ -1,0 +1,47 @@
+{
+ "login": "chiphuyen",
+ "repo": "python-is-cool",
+ "signals": {
+  "readme_claims_total": 3,
+  "readme_claims_code_backed": 3,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 4,
+  "dependency_updates": 0,
+  "docs_corrections": 6,
+  "ai_share_evidence": "2019 content, pre-LLM-assistant era; organic history with five external contributors submitting proofreads, syntax-highlighting and Binder fixes ('unsolicited proofread :P'); no AI markers.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/python-is-cool",
+    "excerpt": "root-listing.json: cool-python-tips.ipynb (32341 B), README.md (18718 B), .gitignore \u2014 README is a full copy of the notebook content as claimed"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/python-is-cool/commits",
+    "excerpt": "2019-10-21 'Initial commit' ... 2019-10-23 matthewfeickert 'Add Binder badge', srhrshr 'unsolicited proofread :P', 2019-12-27 'decorators, timeit, and cache' (19 commits, 6 contributors)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/python-is-cool",
+    "excerpt": "portfolio survey: stargazers_count 3665, forks_count 571, commit_count 19, contributors 6, created 2019-10-21"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/python-is-cool/blob/master/README.md",
+    "excerpt": "'Lambda functions are meant for one time use... hurts the performance if you call... multiple times' ... 'Even though I find lambdas cool, I personally recommend using named functions when you can for the sake of clarity.'"
+   }
+  ]
+ },
+ "notes": "Tutorial notebook plus mirrored 18 KB README of intermediate Python techniques, runnable via Binder as claimed. Explanations go beyond recipes into performance and clarity tradeoffs (lambda vs named functions, iterator consumption caveats), which is unusual depth for a tips repo. All three README claims are artifact-backed."
+}

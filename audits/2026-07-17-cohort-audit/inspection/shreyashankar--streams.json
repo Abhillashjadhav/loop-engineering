@@ -1,0 +1,49 @@
+{
+ "login": "shreyashankar",
+ "repo": "streams",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 1,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 4,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "2022 research code with no AI markers; counter-evidence: 100 saved commits over 7 weeks of PR-based collaboration between the author and kawine, with CI, pre-commit hooks, and dataset-by-dataset engineering ('First pass of nuimages', 'Adding census task', 'Beijing Air Quality dataset').",
+  "evidence": [
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/shreyashankar/streams/blob/main/.github/workflows/python-package.yml",
+    "excerpt": "workflows-listing.json: .github/workflows/python-package.yml (1023 bytes) \u2014 the GitHub Actions workflow behind the README's build badge; commits show it being tuned ('Run actions only on PR', 'Update python-package.yml')."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/streams",
+    "excerpt": "root-listing.json: streams/ package, tests/, designdocs/, docs/, pytest.ini (68 bytes), .pre-commit-config.yaml, .readthedocs.yaml (712 bytes), setup.py, compute_orders.ipynb (702132 bytes) \u2014 real research-code hygiene backing the CI and readthedocs badges."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/streams/commits",
+    "excerpt": "2022-03-17 'Tests for dataset'; 2022-03-21 'Documentation for avalanche integration'; 2022-04-05 kawine 'add constraints for when signals start to be non-zero'; 2022-04-08 'Merge pull request #38 from kawine/main' \u2014 100 commits, authors Shreya Shankar (89) and kawine/Kawin (11)."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/streams",
+    "excerpt": "page-1.json: description 'STREAMS: A Benchmark of Naturalistic Streaming Data for Online Continual Learning', 2 stars, created 2022-03-12, pushed 2022-04-29; survey marks has_tests and has_ci true."
+   }
+  ]
+ },
+ "notes": "A research benchmark with unusually good engineering hygiene for academic code: tests, CI, pre-commit, design docs, and readthedocs, all corroborated across four origins. The README is admittedly unfinished ('TODO: fill out :)') and gives an Avalanche usage example but no install instructions, so setup is not reproducible from the README alone. Its two stars underline the fairness rule that stars are never quality \u2014 the artifact quality here exceeds its popularity."
+}

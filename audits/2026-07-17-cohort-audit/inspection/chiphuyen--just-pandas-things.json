@@ -1,0 +1,47 @@
+{
+ "login": "chiphuyen",
+ "repo": "just-pandas-things",
+ "signals": {
+  "readme_claims_total": 2,
+  "readme_claims_code_backed": 2,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 6,
+  "dependency_updates": 0,
+  "docs_corrections": 7,
+  "ai_share_evidence": "2020 notebook, pre-LLM-assistant era for authored content; commit history is organic community typo/clarity fixes from five external contributors; no AI markers in README or commits.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/just-pandas-things",
+    "excerpt": "root-listing.json: just-pandas-things.ipynb (154215 B), data/, README.md (762 B), .gitignore"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/just-pandas-things/commits",
+    "excerpt": "2020-11-09 'Initial commit' ... 2020-11-09 hnguyentt 'clarify slicing, fix regex', 2022-02-08 will-fong 'corrected four typos in notebook', 2022-06-07 merges of PRs #11/#12/#13 (15 commits, 7 contributors)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/just-pandas-things",
+    "excerpt": "portfolio survey: stargazers_count 999, forks_count 133, commit_count 15, contributors 7, created 2020-06-29"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/just-pandas-things/blob/master/README.md",
+    "excerpt": "'This post isn't a friendly tutorial for beginners, but a friendly introduction to pandas weirdness.' ... 'As I'm still learning pandas quirks, feedback is much appreciated.'"
+   }
+  ]
+ },
+ "notes": "Single substantial Jupyter notebook (150 KB) on pandas internals and pitfalls with a data/ folder to run it, plus named human reviewers. Modest scope honestly described; every README claim maps to a visible artifact. Community typo and clarity fixes were merged over two years. Simple content by design \u2014 not slop."
+}

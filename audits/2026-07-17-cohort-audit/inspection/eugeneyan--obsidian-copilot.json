@@ -1,0 +1,49 @@
+{
+ "login": "eugeneyan",
+ "repo": "obsidian-copilot",
+ "signals": {
+  "readme_claims_total": 6,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 3,
+  "issue_responses": 17,
+  "dependency_updates": 4,
+  "docs_corrections": 4,
+  "ai_share_evidence": "No AI-authorship markers; organic multi-contributor evolution over a year (crypdick's 16 commits on feature branches: header-detection, duplicate-chunk-detection, templater-template-detection; ruff formatting pass; CI added mid-life; dependabot merges) is inconsistent with one-shot generation.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/obsidian-copilot",
+    "excerpt": "root-listing.json: Dockerfile (593 B), docker-compose.yml (771 B), Makefile (3236 B), .pre-commit-config.yaml (1125 B), plugin dir, src dir, requirements.txt (195 B)"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/obsidian-copilot/commits",
+    "excerpt": "'Merge pull request #24 from crypdick/feature/pre-commit-hooks'; 'Add double quotes on make-install for $OBSIDIAN_PATH containing spaces'; 17 PR merges, dependabot x2 in 53 commits (2023-06 to 2024-06)"
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/eugeneyan/obsidian-copilot/blob/main/.github/workflows/python_app.yml",
+    "excerpt": "workflows-listing.json: python_app.yml (205 B) at .github/workflows/python_app.yml, ref=main"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/obsidian-copilot/blob/main/README.md",
+    "excerpt": "'Retrieve relevant documents/snippets ... via Keyword search (opensearch) [and] Semantic search' with deep links to src/prep/build_opensearch_index.py#L141 and build_semantic_index.py#L119; setup via 'make build / make opensearch / make build-artifacts / make run'"
+   }
+  ]
+ },
+ "notes": "Real hybrid-RAG prototype for Obsidian: OpenSearch keyword plus semantic retrieval behind a plugin, and every README claim lands on a visible artifact (Makefile targets, docker-compose, src deep-links, CI workflow). Community-maintained with 17 merged PRs including substantive retrieval features from an outside contributor. 'Prototype' framing honestly bounds the scope; API keys are user-supplied at install, not committed."
+}

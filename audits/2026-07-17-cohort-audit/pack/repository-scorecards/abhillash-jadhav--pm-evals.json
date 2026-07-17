@@ -1,0 +1,99 @@
+{
+  "repo": "pm-evals",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "8/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 45.0,
+      "polarity": "risk",
+      "evidence": "template similarity 55%, boilerplate share 30%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 8.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 10.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 1 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 15.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 3 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 54.0,
+    "technical_proficiency": 24.0,
+    "ai_assistance_likelihood": 28.8,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 47.0,
+    "educational_value": 100.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 80.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Deliverable (packaged CLI framework) is substantively different code from the sibling despite the shared README template",
+        "Judge-validation result is left honestly at MARGINAL rather than tuned to TRUSTED",
+        "AI orchestration is disclosed in the README \u2014 a transparency positive"
+      ],
+      "review_notes": "High similarity is with its sibling rag-eval-harness (created within a minute of it; same Hamel Husain/Kevin Weil/Cat Wu quotes, same prepare-run-report workflow, same 'Calibration lesson: v1 to v2' section, near-identical commit sequences on 2026-05-22/23), i.e. one authoring process fanned across two repos. The underlying artifacts differ meaningfully, and the calibration honesty cuts against a slop reading."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "README openly discloses 'This entire repo was built through Claude Code orchestration'; all 33 commits are owner-authored over two days (2026-05-22/23) incl. recruiter-guide and loom-script docs; counter-evidence: hand-graded golden workbook, v1-to-v2 derivation refactor and a MARGINAL 76.5% verdict left unpolished show a human calibration loop.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

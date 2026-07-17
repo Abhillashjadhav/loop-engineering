@@ -1,0 +1,99 @@
+{
+  "repo": "burnstop",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "7/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 15.0,
+      "polarity": "risk",
+      "evidence": "template similarity 15%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 2/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 7.0,
+      "polarity": "quality",
+      "evidence": "1 distinct commit day(s), 0 refactor commit(s), 1 release(s), one-shot dump=True"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 51.7,
+    "technical_proficiency": 31.7,
+    "ai_assistance_likelihood": 42.5,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 38.4,
+    "educational_value": 100.0,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 100.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Complete artifact-to-claim mapping: every README claim (hooks, commands, plugin install, tests, architecture doc, spikes doc) has a visible file or directory behind it.",
+        "CI is configured and has run (tests.yml, ci_runs true) \u2014 a tested, released v1.0.0, not an unverified dump.",
+        "Honest 'Limitations (honest)' section plus a spikes doc explaining the discarded proxy approach shows design work preceded the single-day publish."
+      ],
+      "review_notes": "The 2-commit single-day history is a publish pattern (likely developed elsewhere and squashed), not evidence of low effort: the shipped content is coherent, tested, honestly scoped, and integrates with the author's companion tools. Negative reading limited to 'history opacity', not quality."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "Generation markers: both commits carry 'Co-Authored-By: Claude' and claude.ai/code trailers ('Release v1.0.0: burnstop, a budget fuse for Claude Code'); counter-evidence: shipped with tests/ + passing CI (tests.yml, ci_runs true), a CHANGELOG, CONTRIBUTING.md, and docs/spikes.md recording rejected design alternatives \u2014 atypical scaffolding for a throwaway dump.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

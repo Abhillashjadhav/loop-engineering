@@ -1,0 +1,42 @@
+{
+ "login": "eugeneyan",
+ "repo": "open-llms",
+ "signals": {
+  "readme_claims_total": 2,
+  "readme_claims_code_backed": 2,
+  "original_logic_notes": 1,
+  "template_similarity_pct": 0,
+  "boilerplate_share_pct": 0,
+  "explanation_quality": 2,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 30,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "Community-curated table: 100 sampled commits (2023-2025) from many distinct humans via reviewed PRs (ozppupbg x32, Muhtasham x11); rows cite external checkpoints, papers and licenses; no AI-generation markers observed.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/open-llms",
+    "excerpt": "root-listing.json: LICENSE (11357 B, Apache-2.0) and README.md (42697 B) only - the table is the deliverable"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/open-llms/commits",
+    "excerpt": "'Merge pull request #104 from kaikaidai/main'; 'Added Atla Selene Mini'; 'Added new Phi-3 variants' - 30 PR merges in sample, 32 contributors"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/eugeneyan/open-llms",
+    "excerpt": "page-1.json: 'A list of open LLMs available for commercial use.', created 2023-05-05, pushed 2025-02-13, forks 975, topics ['commercial','large-language-models','llm','llms']"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/open-llms/blob/main/README.md",
+    "excerpt": "'These LLMs ... are all licensed for commercial use (e.g., Apache 2.0, MIT, OpenRAIL-M). Contributions welcome!' - each row lists Release Date, Checkpoints, Paper/Blog, Params, Context Length, Licence"
+   }
+  ]
+ },
+ "notes": "Curated list repo where curation is the deliverable: a 42 KB license-annotated table of commercially-usable LLMs, maintained via 30+ reviewed community PRs from 32 contributors. Every row self-documents with checkpoint, paper, and license links. Last push Feb 2025, so freshness has drifted, but that is staleness of a finished-purpose list, not slop."
+}

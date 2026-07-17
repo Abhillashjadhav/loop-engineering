@@ -1,0 +1,97 @@
+{
+  "repo": "PM-agent-OS",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 77.8,
+      "polarity": "quality",
+      "evidence": "7/9 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 21.0,
+      "polarity": "risk",
+      "evidence": "template similarity 25%, boilerplate share 15%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 4.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 15.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 3 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 52.8,
+    "technical_proficiency": 24.0,
+    "ai_assistance_likelihood": 8.2,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 44.6,
+    "educational_value": 60.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 77.8,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Verification-first commit ordering (test before feat) is visible for all ~40 skills",
+        "Each skill entered through a numbered PR with a pr-review.yml workflow present",
+        "Sibling reuse is openly credited, not concealed"
+      ],
+      "review_notes": "The 40-skills-in-11-hours velocity is a clear AI-generation-at-scale marker, but the repo does not hide it (Claude is the commit author) and the process record (fixtures, planted failures, PR series) is real and internally consistent. For a skill library the docs/skills are the deliverable; the negative reading is tempered accordingly."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "66 of last 100 commits authored 'Claude'; 140 commits and 40 skills landed in ~11 hours (created 2026-07-07T17:24Z, last push 2026-07-08T04:00Z); counter-evidence: consistent test-before-feat commit pairs with planted-failure fixtures and per-skill PR numbers (#2-#46) show a structured, reviewed pipeline rather than an unreviewed dump.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

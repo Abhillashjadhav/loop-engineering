@@ -1,0 +1,97 @@
+{
+  "repo": "chatgpt-discord",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 50.0,
+      "polarity": "quality",
+      "evidence": "2/4 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 50.0,
+      "polarity": "risk",
+      "evidence": "template similarity 50%, boilerplate share 50%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 4.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 0 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 33.3,
+      "polarity": "quality",
+      "evidence": "explanation quality 1/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 15.8,
+    "technical_proficiency": 25.0,
+    "ai_assistance_likelihood": 8.2,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 73.1,
+    "educational_value": 33.3,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 50.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "LIKELY_SHALLOW_OR_TEMPLATED",
+    "value_labels": [],
+    "rationale": "ai_slop_risk 73 >= 70 with confidence 79 >= 70; counter-evidence reviewed and recorded",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "The runnable artifact matches the run instructions exactly (main.py, requirements.txt present), so the functional claim is honest.",
+        "A later 2024 code update shows minimal but real maintenance.",
+        "A tiny personal utility bot is simple content, which the fairness rules exclude from slop."
+      ],
+      "review_notes": "The one genuinely unbacked element is the '13-section step-by-step guide' framing: the TOC promises content that is absent from the README. Everything else (small working bot with install/run steps) checks out at the structural level."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "No direct generation markers in commits (2023 web-UI edits: 'Update chatgpt.py', 'Update README.md'); the README's TOC-without-content 'guide' reads like a pasted article outline, but authorship cannot be determined from the snapshot; counter-evidence: the code was revisited in 2024 ('Updated the Code').",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

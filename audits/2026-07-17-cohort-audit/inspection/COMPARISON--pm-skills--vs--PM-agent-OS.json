@@ -1,0 +1,393 @@
+{
+  "comparison": "pm-skills vs PM-agent-OS",
+  "snapshot_provenance": "All evidence read exclusively from disk snapshots under audits/2026-07-17-cohort-audit/snapshots/ captured 2026-07-17. URLs below are the canonical GitHub URLs recorded inside those snapshot files; no network fetches were performed.",
+  "dimensions": {
+    "product_scope": {
+      "pm_skills": "README self-describes: \"68 PM skills and 42 chained workflows across 9 plugins. Claude Code, Cowork, and more. From discovery to strategy, execution, launch, growth, and shipping AI-built code.\" Root listing confirms exactly nine pm-* plugin directories (pm-ai-shipping, pm-data-analytics, pm-execution, pm-go-to-market, pm-market-research, pm-marketing-growth, pm-product-discovery, pm-product-strategy, pm-toolkit) plus a .claude-plugin marketplace dir. Scope extends beyond core PM work to utilities: pm-toolkit covers \"Resume review, legal documents, proofreading\". Per-skill counts inside plugins are self-reported in the README.",
+      "pm_agent_os": "README self-describes: \"One `/pm` command orchestrates the full product lifecycle — discovery, strategy, build, launch, iterate — through 40 skills, each with binary verification gates, tested fixtures, and a public PR-review record.\" Roadmap table marks all five stages \"Shipped\" (Discovery 7, Strategy 6, Build 10, Launch 5 + 7 reviewer personas, Iterate 12). Root listing shows .claude/, tests/, test-files/, prds/, reviews/, plus four root-level skill dirs (concise-rewriter, context-auditor, eval-rubric-generator, token-cost-estimator); the 40 skills themselves (stated to live under .claude/skills/) are not enumerated in the snapshot.",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "68 PM skills and 42 chained workflows across 9 plugins. Claude Code, Cowork, and more. From discovery to strategy, execution, launch, growth, and shipping AI-built code."
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/phuryn/pm-skills/contents/?ref=main",
+          "excerpt": "Directories: pm-ai-shipping, pm-data-analytics, pm-execution, pm-go-to-market, pm-market-research, pm-marketing-growth, pm-product-discovery, pm-product-strategy, pm-toolkit, tests, .claude-plugin"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "One `/pm` command orchestrates the full product lifecycle — discovery, strategy, build, launch, iterate — through 40 skills, each with binary verification gates, tested fixtures, and a public PR-review record."
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/Abhillashjadhav/PM-agent-OS/contents/?ref=main",
+          "excerpt": "Root entries: .claude, .github, CLAUDE.md, LESSONS.md, README.md, concise-rewriter, context-auditor, eval-rubric-generator, prds, reviews, test-files, tests, token-cost-estimator"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits/main",
+          "excerpt": "All five stages live: 40 skills + 7 personas + /pm — roadmap complete (#46)"
+        }
+      ],
+      "assessment": "pm-skills documents a broader surface (110 self-reported skills+workflows including GTM, marketing, and non-core utilities) with its nine plugin directories verifiable at root; PM-agent-OS documents a five-stage lifecycle behind a single /pm orchestrator plus a verification layer, but its 40-skill count is not enumerable from the snapshot. Both totals are self-reported.",
+      "confidence": "medium",
+      "favors": "pm_skills"
+    },
+    "technical_depth": {
+      "pm_skills": "Root listing shows validate_plugins.py, a 17,908-byte Python validator at repo root, and a tests/ directory. Workflows listing shows tag-on-merge.yml (7,136 bytes); the latest release commit reads \"Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits + CHANGELOG-driven release automation\". Maintenance-level engineering visible in commits: \"Fix UnicodeEncodeError on Windows in validate_plugins.py\", \"Hide Python from language detection\". Repo also carries CLAUDE.md (8,112 B) and AGENTS.md agent-guidance files.",
+      "pm_agent_os": "README describes a per-skill engineering regimen: \"Each skill has `tests/<skill>/fixtures.md` covering a three-gate harness: frontmatter lint (`tests/lint_skill.py`), trigger accuracy (fire / no-fire phrasings), and a known-answer run (fixture input → expected gated output).\" Commit subjects name a distinct mechanism per skill, e.g. \"feat: eval-engine — spec to full verification layer with never-mix gate\" and \"feat: loop-designer — guarded autonomous loops with executor/verifier separation gate\". Metadata language: Python; root has tests/ and test-files/ dirs.",
+      "evidence": [
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/validate_plugins.py",
+          "excerpt": "validate_plugins.py — size 17908 bytes, type file, at repo root"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/phuryn/pm-skills/commits/main",
+          "excerpt": "Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits + CHANGELOG-driven release automation | Fix UnicodeEncodeError on Windows in validate_plugins.py"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "Each skill has `tests/<skill>/fixtures.md` covering a three-gate harness: frontmatter lint (`tests/lint_skill.py`), trigger accuracy (fire / no-fire phrasings), and a known-answer run (fixture input → expected gated output)."
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits/main",
+          "excerpt": "feat: eval-engine — spec to full verification layer with never-mix gate | feat: loop-designer — guarded autonomous loops with executor/verifier separation gate"
+        },
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/Abhillashjadhav/repos",
+          "excerpt": "PM-agent-OS: language: Python, size: 403, has_tests: true"
+        }
+      ],
+      "assessment": "Both repos show engineering scaffolding beyond prose — pm-skills a large standalone plugin validator plus release automation, PM-agent-OS a documented per-skill gate/fixture/lint regimen echoed skill-by-skill in commit subjects. Neither repo's inner implementation files are in the snapshot, so depth beyond these surfaces cannot be compared.",
+      "confidence": "medium",
+      "favors": "insufficient"
+    },
+    "verification_quality": {
+      "pm_skills": "Repo-level validation visible: tests/ dir, validate_plugins.py at root, a tests.yml CI workflow, and a Tests badge in the README (\"[![Tests](https://github.com/phuryn/pm-skills/actions/workflows/tests.yml/badge.svg)]\"). Verification-of-user-code exists as a product feature: the pm-ai-shipping plugin \"documents the system, then audits the gap between what the docs say and what the code actually does\" and /security-audit-static promises to \"self-refute every finding, and report only evidence-backed risks\" — this is a shipped capability, not a self-verification discipline of the repo itself.",
+      "pm_agent_os": "Verification is the stated core design: \"Binary verification gates. Pass/fail checks defined *before* the skill's instructions were written.\" ... \"A gate failure means the output does not reach you\". Fixtures carry planted failures: \"every fixture set carries a planted failure its gate must catch — an invented quote, a naked market-size figure, a scored disqualifier, a self-verifying loop.\" The commit record independently corroborates the claimed ordering (\"Gates and fixtures are committed before instructions — the commit order shows it\"): for each skill the \"test: ... (verification-first; planted ...)\" commit chronologically precedes the \"feat: ...\" commit, e.g. \"test: regression-gatekeeper gates + fixtures (verification-first; planted ship-without-run verdict)\" before \"feat: regression-gatekeeper — pre-ship golden run with run-before-verdict gate\", across all 34 sampled skill PRs.",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "Binary verification gates. Pass/fail checks defined *before* the skill's instructions were written. ... A gate failure means the output does not reach you — it gets fixed or reported as a failure, never silently shipped."
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits/main",
+          "excerpt": "test: regression-gatekeeper gates + fixtures (verification-first; planted ship-without-run verdict) [precedes] feat: regression-gatekeeper — pre-ship golden run with run-before-verdict gate [precedes] Iterate skill 8/12: regression-gatekeeper (#41)"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "[![Tests](https://github.com/phuryn/pm-skills/actions/workflows/tests.yml/badge.svg)](https://github.com/phuryn/pm-skills/actions/workflows/tests.yml)"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/phuryn/pm-skills/contents/?ref=main",
+          "excerpt": "tests (dir), validate_plugins.py (17908 bytes) present at root"
+        },
+        {
+          "origin": "ci_config",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/.github/workflows/tests.yml",
+          "excerpt": "tests.yml — 570 bytes, .github/workflows/"
+        }
+      ],
+      "assessment": "PM-agent-OS's artifacts document a substantially heavier verification regimen (pre-committed gates, planted-failure fixtures, PR review per skill), and its commit ordering independently corroborates the test-before-instructions claim; pm-skills shows conventional repo-level validation (validator script + tests CI). Gate and fixture file contents are absent from both snapshots, so claimed rigor beyond structure and commit order is unverified.",
+      "confidence": "medium",
+      "favors": "pm_agent_os"
+    },
+    "tests_and_ci": {
+      "pm_skills": "Root listing: tests/ directory and validate_plugins.py. Workflows listing: two workflows — tests.yml (570 B) and tag-on-merge.yml (7,136 B). README carries a live Tests badge. Harvested metadata: has_tests: true, has_ci: true, ci_runs: true, releases: 2.",
+      "pm_agent_os": "Root listing: tests/ and test-files/ directories. Workflows listing: one workflow — pr-review.yml (1,136 B); no workflow named for running the test harness appears in the listing. README describes the harness as \"frontmatter lint (`tests/lint_skill.py`)\" plus fixtures per skill. Harvested metadata: has_tests: true, has_ci: true, ci_runs: true, releases: 0.",
+      "evidence": [
+        {
+          "origin": "ci_config",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/.github/workflows/tests.yml",
+          "excerpt": "Workflows: tests.yml (570 bytes), tag-on-merge.yml (7136 bytes)"
+        },
+        {
+          "origin": "ci_config",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/.github/workflows/pr-review.yml",
+          "excerpt": "Workflows: pr-review.yml (1136 bytes) — only entry in workflows listing"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/Abhillashjadhav/PM-agent-OS/contents/?ref=main",
+          "excerpt": "tests (dir), test-files (dir) present at root"
+        },
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/phuryn/repos",
+          "excerpt": "pm-skills: has_tests: true, has_ci: true, signals.ci_runs: true | PM-agent-OS: has_tests: true, has_ci: true, signals.ci_runs: true"
+        }
+      ],
+      "assessment": "Both repos have test directories and running CI per metadata; pm-skills' listed CI includes a dedicated tests workflow plus release-tagging automation, while PM-agent-OS's only listed workflow is PR-review-oriented. Workflow YAML contents were not captured, so what each workflow actually executes is unknown.",
+      "confidence": "medium",
+      "favors": "pm_skills"
+    },
+    "originality_of_frameworks": {
+      "pm_skills": "The README positions the product as encoding established PM canon: \"Each skill encodes a proven PM framework ... You get the rigor of Teresa Torres, Marty Cagan, and Alberto Savoia built into your daily workflow\" and closes with \"Selected skills based on the work of:\" listing 12+ named authors/books. Skill names map to established frameworks (Lean Canvas, Business Model Canvas, Porter's Five Forces, Ansoff Matrix, RICE/ICE/MoSCoW/Kano). Original-looking elements documented: the pm-ai-shipping kit's `intended-vs-implemented` method (\"finding the gap between what a system is documented to do and what the code actually does, with cited evidence on both sides\"), `shipping-artifacts`, and `strategy-red-team`.",
+      "pm_agent_os": "The README documents mechanisms not attributed to external canon: pre-committed binary gates, planted-failure fixtures (\"PLANTED-FAILURE CASE\"), run-before-verdict gates, executor/verifier separation, and an honest-failure output contract (\"requests no skill covers still get an honest no-skill line, never improvised output\"). Prior-art attribution is to the author's own repo: \"Harness patterns — the lint gate, the three-gate fixtures convention, and the PR-review agent — carried over from AI-PM-essential-skills.\"",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "Each skill encodes a proven PM framework — discovery, assumption mapping, prioritization, strategy ... You get the rigor of Teresa Torres, Marty Cagan, and Alberto Savoia built into your daily workflow, not sitting on a bookshelf."
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "`intended-vs-implemented` — The method for finding the gap between what a system is documented to do and what the code actually does, with cited evidence on both sides"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "every fixture set carries a planted failure its gate must catch — an invented quote, a naked market-size figure, a scored disqualifier, a self-verifying loop. Open any `tests/<skill>/fixtures.md` and look for `PLANTED-FAILURE CASE`."
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "Harness patterns — the lint gate, the three-gate fixtures convention, and the PR-review agent — carried over from [AI-PM-essential-skills](https://github.com/Abhillashjadhav/AI-PM-essential-skills)."
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits/main",
+          "excerpt": "feat: judge-calibration-auditor — disagreement analysis with never-auto-resolve gate | feat: llm-as-judge-designer — judge prompt with pass+fail exemplar gate"
+        }
+      ],
+      "assessment": "pm-skills self-describes as (and credits itself for) curation/encoding of established published frameworks with a few original additions, while PM-agent-OS self-describes original verification mechanisms with prior art credited only to the author's own earlier repo. Both characterizations rest chiefly on README self-description; inner skill contents that would settle originality are not in the snapshot.",
+      "confidence": "low",
+      "favors": "pm_agent_os"
+    },
+    "installation_and_activation": {
+      "pm_skills": "Three first-class documented install paths: Claude Cowork UI steps (\"Open **Customize** ... **Add marketplace from GitHub** ... Enter: `phuryn/pm-skills`\" — \"All 9 plugins install automatically\"), Claude Code CLI (\"claude plugin marketplace add phuryn/pm-skills\" plus nine per-plugin install commands), and Codex CLI (\"Codex reads the same plugin marketplace file as Claude Code, so you can install PM Skills natively\"). Plus copy-based paths for Gemini CLI, OpenCode, Cursor, Kiro with example shell loops, and an install GIF reference. Activation is documented both automatic (\"Skills are loaded automatically when relevant\") and forced (\"/plugin-name:skill-name\").",
+      "pm_agent_os": "Single documented one-line install: \"git clone https://github.com/Abhillashjadhav/PM-agent-OS- pm-agent-os && mkdir -p ~/.claude/skills && cp -r pm-agent-os/.claude/skills/* ~/.claude/skills/\". Activation via the /pm orchestrator: \"the /pm orchestrator and one-command install are Claude Code-native.\" Note: the clone URL ends in \"PM-agent-OS-\" (trailing hyphen) while the harvested repo name is \"PM-agent-OS\"; the snapshot cannot confirm which URL resolves.",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "# Step 1: Add the marketplace\nclaude plugin marketplace add phuryn/pm-skills"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "Codex reads the same plugin marketplace file as Claude Code, so you can install PM Skills natively — no conversion or file-copying needed"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "git clone https://github.com/Abhillashjadhav/PM-agent-OS- pm-agent-os && mkdir -p ~/.claude/skills && cp -r pm-agent-os/.claude/skills/* ~/.claude/skills/"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/phuryn/pm-skills/contents/?ref=main",
+          "excerpt": ".claude-plugin (dir) present at root — marketplace manifest directory referenced by the documented marketplace install"
+        }
+      ],
+      "assessment": "pm-skills documents seven distinct install paths across platforms, including two native marketplace routes and a UI path for non-developers; PM-agent-OS documents one manual clone-and-copy line, and its clone URL's trailing hyphen does not match the harvested repo name. On documented installation surface the artifacts clearly favor pm-skills.",
+      "confidence": "high",
+      "favors": "pm_skills"
+    },
+    "user_experience": {
+      "pm_skills": "Documented onboarding: a \"Start Here\" section maps user situations to commands (\"New idea? → `/discover` ... Writing a PRD? → `/write-prd`\"). Every plugin section carries concrete example invocations for both skills and commands (e.g. \"/discover AI-powered meeting summarizer for remote teams\"). Documented flow continuity: \"After any command completes, it suggests relevant next commands — just follow the prompts.\" Documented error path: a \"Known Issue on Windows\" section with a PowerShell scheduled-task fix, plus fallback: \"It solves 90% of the issues on Windows. The remaining 10%: open services.msc > start 'Claude' service manually\".",
+      "pm_agent_os": "Documented onboarding: the one-line install and a single worked example (\"Watch a gate catch a failure\") that walks a regression-gatekeeper fixture end-to-end. Documented failure semantics are explicit: \"The output becomes a run plan ... and the only honest verdict available: `VERDICT: PENDING — no run, no verdict.`\" and \"requests no skill covers still get an honest no-skill line, never improvised output.\" The README contains no per-skill usage examples, no /pm invocation examples beyond the command name, and no troubleshooting section.",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "New idea? → `/discover`\nNeed strategic clarity? → `/strategy`\nWriting a PRD? → `/write-prd`"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "It solves 90% of the issues on Windows.\nThe remaining 10%: open services.msc > start \"Claude\" service manually"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "VERDICT: PENDING — no run, no verdict."
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "requests no skill covers still get an honest no-skill line, never improvised output."
+        }
+      ],
+      "assessment": "Judged strictly from documented onboarding/usage/error guidance: pm-skills' README provides a wider documented UX surface (entry-point mapping, per-plugin examples, next-step chaining, OS-specific troubleshooting), while PM-agent-OS documents failure/honesty semantics in unusual depth but thinner onboarding and no troubleshooting. No runtime behavior of either product was observed.",
+      "confidence": "medium",
+      "favors": "pm_skills"
+    },
+    "ecosystem_compatibility": {
+      "pm_skills": "Documented targets: \"Designed for Claude Code and Cowork. Skills compatible with other AI assistants.\" Native Codex CLI support is documented (\"install PM Skills natively — no conversion or file-copying needed\"), plus a compatibility table with per-tool copy instructions for Gemini CLI, OpenCode, Cursor, and Kiro, and the portability claim \"The `skills/*/SKILL.md` files follow the universal skill format and work with any tool that reads it. Commands (`/slash-commands`) are Claude-specific.\" Companion badges link pm-brain, burnstop, claude-usage. An external PR adding OpenCode support was merged (\"Merge pull request #6 from fahrim/feature/opencode-integration\").",
+      "pm_agent_os": "Documented in one line: \"Skills follow the open SKILL.md standard — works with Codex, Cursor, Windsurf, and any agent that reads Agent Skills; the /pm orchestrator and one-command install are Claude Code-native.\" Ecosystem linkage is to the author's own family: harness patterns credited to AI-PM-essential-skills. No per-tool instructions are documented.",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "The `skills/*/SKILL.md` files follow the universal skill format and work with any tool that reads it. Commands (`/slash-commands`) are Claude-specific."
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/phuryn/pm-skills/commits/main",
+          "excerpt": "Merge pull request #6 from fahrim/feature/opencode-integration | docs: add OpenCode to the Other AI assistants table"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "Skills follow the open SKILL.md standard — works with Codex, Cursor, Windsurf, and any agent that reads Agent Skills; the /pm orchestrator and one-command install are Claude Code-native."
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "| **Gemini CLI** | Copy skill folders to `.gemini/skills/` | Skills only |"
+        }
+      ],
+      "assessment": "Both claim SKILL.md-standard portability; pm-skills documents six named platforms with per-tool instructions and has a merged third-party integration commit, PM-agent-OS names three platforms in a single sentence. Actual cross-tool functioning is unverifiable from the snapshot for either, so this compares documented claims only.",
+      "confidence": "low",
+      "favors": "pm_skills"
+    },
+    "community_contribution_design": {
+      "pm_skills": "Contribution surface is explicit: CONTRIBUTING.md (2,212 B) at root, a \"PRs Welcome\" badge pointing at it, and a README section \"## Contributing — See CONTRIBUTING.md.\" External contribution observed in the commit record: author \"Fahri Meral\" (1 commit) and the merge \"Merge pull request #6 from fahrim/feature/opencode-integration\"; a \"How to contribute\" commit also appears. Metadata: contributors: 3, open_issues: 36.",
+      "pm_agent_os": "No CONTRIBUTING.md in the root listing and no contributing section in the README. The PR mechanism is used as an internal quality record — \"Every skill entered this repo through a pull request reviewed by `/pr-review` before merge\" — and all 34 sampled squash-merged PRs (#16–#46) are the author's own skill-shipping PRs. Metadata: contributors: 2 (Abhillash Jadhav and Claude per commit authorship), open_issues: 0. (The author's sibling repo AI-PM-essential-skills does say \"PRs welcome. Every PR is reviewed by the repo's PR agent before merge\", but that is a different repository.)",
+      "evidence": [
+        {
+          "origin": "file_listing",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/CONTRIBUTING.md",
+          "excerpt": "CONTRIBUTING.md — 2212 bytes, present at root"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/phuryn/pm-skills/commits/main",
+          "excerpt": "Merge pull request #6 from fahrim/feature/opencode-integration (author: Fahri Meral)"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/Abhillashjadhav/PM-agent-OS/contents/?ref=main",
+          "excerpt": "Root entries contain no CONTRIBUTING.md and no LICENSE file: .claude, .github, CLAUDE.md, LESSONS.md, README.md, concise-rewriter, context-auditor, eval-rubric-generator, prds, reviews, test-files, tests, token-cost-estimator"
+        },
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/phuryn/repos",
+          "excerpt": "pm-skills: contributors: 3, open_issues: 36 | PM-agent-OS: contributors: 2, open_issues: 0"
+        }
+      ],
+      "assessment": "pm-skills has a designed external-contribution surface and at least one merged third-party PR in the sampled history; PM-agent-OS's snapshot shows no external-contribution surface — its PR flow functions as a self-review/QA record rather than a community channel. (Repo age difference noted in caveats.)",
+      "confidence": "high",
+      "favors": "pm_skills"
+    },
+    "distribution_mechanics": {
+      "pm_skills": "Reach (reach only, per locked rules — never quality): 23,899 stars, 2,431 forks. Observable channels and mechanics: marketplace-native install (\"claude plugin marketplace add phuryn/pm-skills\") with a .claude-plugin manifest dir; 7 GitHub topics including claude-code-marketplace and claude-code-plugins; 2 releases plus tag-on-merge.yml release automation; a star CTA in the README (\"If this project helps you, ⭐ the repo.\"); a named distribution channel (\"Curated by Paweł Huryn from [The Product Compass Newsletter](https://www.productcompass.pm)\"); cross-promotion badges to companion repos (pm-brain 493 stars, claude-usage 2,031 stars, burnstop). Repo created 2026-03-01, last push 2026-07-03 (~4 months of activity).",
+      "pm_agent_os": "Reach (reach only): 0 stars, 0 forks. Observable channels: none in the snapshot — 0 GitHub topics, 0 releases, no marketplace manifest at root, no star CTA, no newsletter or external channel named; install is a manual clone. Metadata license: null and no LICENSE file at root (README states \"MIT.\"). Repo created 2026-07-07T17:24:32Z, last push 2026-07-08T04:00:22Z — about 10 days old at snapshot time, which limits any reach comparison.",
+      "evidence": [
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/phuryn/repos",
+          "excerpt": "pm-skills: stargazers_count: 23899, forks_count: 2431, releases: 2, topics: [agent-skill-repository, agent-skills, agentic-skills, claude-code-marketplace, claude-code-plugins, claude-cowork-plugin, product-management]"
+        },
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/Abhillashjadhav/repos",
+          "excerpt": "PM-agent-OS: stargazers_count: 0, forks_count: 0, releases: 0, topics: [], created_at: 2026-07-07T17:24:32Z, pushed_at: 2026-07-08T04:00:22Z"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "Curated by Paweł Huryn from [The Product Compass Newsletter](https://www.productcompass.pm)."
+        },
+        {
+          "origin": "ci_config",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/.github/workflows/tag-on-merge.yml",
+          "excerpt": "tag-on-merge.yml (7136 bytes) — release tagging workflow; commit: 'Release v2.1.0: ... CHANGELOG-driven release automation'"
+        }
+      ],
+      "assessment": "pm-skills operates a multi-channel distribution machine (marketplace install, topics, releases, newsletter credit, companion-repo cross-links) with large reach; PM-agent-OS at snapshot time has essentially no distribution mechanics and zero reach, on a repository ~10 days old. Reach figures appear here only as reach and carry no quality meaning.",
+      "confidence": "high",
+      "favors": "pm_skills"
+    },
+    "success_attribution": {
+      "pm_skills": "Observable drivers of its visibility, from artifacts only: (1) distribution — a named owned channel in the README (\"Curated by Paweł Huryn from The Product Compass Newsletter\"), marketplace-native install, 7 discovery topics, star CTA, and cross-promotion with an author product family that includes another high-reach repo (claude-usage, 2,031 stars); (2) packaging — seven documented install paths, install GIF, per-plugin example prompts, releases and CHANGELOG automation; (3) technical substance — validator script, tests CI, ~4 months of iterative commits (62 sampled over 16 distinct days). The packaging and distribution surface is the observably distinctive layer relative to the comparison repo.",
+      "pm_agent_os": "Observable characteristics, from artifacts only: (1) technical/verification substance — a per-skill gate+fixture+PR-review regimen whose test-before-instructions ordering is corroborated by the commit record (34 skill PRs, test commits chronologically first); (2) packaging — minimal: one install line, no releases, no topics, no LICENSE file, no contribution docs; (3) distribution — none observable. At snapshot time the repo shows depth-of-process artifacts without any distribution artifacts; it was also created only ~10 days before the snapshot, so no visibility outcome can be attributed yet in either direction.",
+      "evidence": [
+        {
+          "origin": "readme",
+          "url": "https://github.com/phuryn/pm-skills/blob/main/README.md",
+          "excerpt": "Curated by Paweł Huryn from [The Product Compass Newsletter](https://www.productcompass.pm). | If this project helps you, ⭐ the repo."
+        },
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/phuryn/repos",
+          "excerpt": "pm-skills: distinct_commit_days: 16, commits_sampled: 62, created 2026-03-01 ... claude-usage: stars=2031 | pm-brain: stars=493"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits/main",
+          "excerpt": "100 sampled commits all dated 2026-07-07/2026-07-08; every skill lands as test: → feat: → squash-merge (#16..#46)"
+        },
+        {
+          "origin": "api_listing",
+          "url": "https://api.github.com/users/Abhillashjadhav/repos",
+          "excerpt": "PM-agent-OS: releases: 0, topics: [], license: null, distinct_commit_days: 2, commit_count: 140"
+        }
+      ],
+      "assessment": "From artifacts alone: pm-skills' visibility co-occurs with a heavy, observable packaging-plus-distribution layer on top of moderate repo-level engineering; PM-agent-OS shows heavy, observable verification-process engineering with near-zero packaging/distribution surface and is too new for any reach outcome to be meaningful. No claims are made about either author's intent, effort, or competence.",
+      "confidence": "medium",
+      "favors": "parity"
+    },
+    "ai_assistance_transparency": {
+      "pm_skills": "AI tooling is disclosed in the commit record: 6 of 62 sampled commits carry Claude co-author trailers (\"Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\" x5, \"Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>\" x1), one commit is authored by \"Claude\", and the v2.1.0 release commit names model tuning explicitly (\"Opus 4.8-tuned pm-ai-shipping audits\"). The repo ships agent-facing guidance files (CLAUDE.md, AGENTS.md). The README makes no explicit statement about AI authorship of the repo's own content.",
+      "pm_agent_os": "AI involvement is visible across most of the commit record: 66 of 100 sampled commits are authored by \"Claude\" and every one carries \"Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>\"; the remaining 34 are the owner's squash merges. CLAUDE.md sits at root, and the author byline self-identifies with AI tooling practice (\"GenAI PM. Evals, context engineering, agentic reliability.\"). The README makes no separate AI-authorship statement, but the commit trailers make the assistance record public and unedited. Per locked rules this disclosure is a transparency observation and is never treated as a penalty.",
+      "evidence": [
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/phuryn/pm-skills/commits/main",
+          "excerpt": "Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com> (5 commits); Co-Authored-By: Claude Fable 5 <noreply@anthropic.com> (1 commit); subject: 'Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits'"
+        },
+        {
+          "origin": "commit_history",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/commits/main",
+          "excerpt": "66/100 sampled commits authored 'Claude', each with trailer 'Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>'"
+        },
+        {
+          "origin": "file_listing",
+          "url": "https://api.github.com/repos/phuryn/pm-skills/contents/?ref=main",
+          "excerpt": "CLAUDE.md (8112 bytes) and AGENTS.md (326 bytes) at root"
+        },
+        {
+          "origin": "readme",
+          "url": "https://github.com/Abhillashjadhav/PM-agent-OS/blob/main/README.md",
+          "excerpt": "*Built by [Abhillash Jadhav](https://github.com/Abhillashjadhav) — GenAI PM. Evals, context engineering, agentic reliability.*"
+        }
+      ],
+      "assessment": "Both repos leave a public AI-assistance trail via commit co-author trailers; PM-agent-OS's trail covers the majority of its commit record while pm-skills' covers a small share of recent commits. This is recorded strictly as a transparency observation — per the locked fairness rules, disclosed AI assistance is never a negative in any dimension.",
+      "confidence": "high",
+      "favors": "parity"
+    }
+  },
+  "success_attribution": {
+    "pm_skills": "Artifacts show its visibility co-occurring with an extensive packaging and distribution layer: marketplace-native install plus six other documented install paths, 7 discovery topics, releases with tagging automation, a star CTA, an explicitly named owned media channel (The Product Compass Newsletter credit in the README), and cross-linked companion repos including another high-reach project (claude-usage, 2,031 stars). Technical substance is also present (17.9 KB validator, tests CI, 62 commits over ~4 months), but the observably distinctive layer versus the comparison repo is packaging + distribution.",
+    "pm_agent_os": "Artifacts show effort concentrated in verification-process engineering: per-skill binary gates, planted-failure fixtures, a lint harness, and a PR-review-per-skill pipeline, with the test-before-instructions ordering independently corroborated by the commit record. Packaging and distribution artifacts are near-absent (one install line, 0 topics, 0 releases, no LICENSE file, no contribution docs). At snapshot time the repo was ~10 days old with 0 stars/forks; no visibility outcome can yet be attributed to any driver.",
+    "note": "Attribution statements describe co-occurrence of observable artifacts with observed reach only. They are not claims about causation, intent, effort, or the competence of either author, and reach figures carry no quality meaning outside distribution_mechanics."
+  },
+  "caveats": [
+    "All evidence comes from disk snapshots captured 2026-07-17 (READMEs, root listings, last-100 commits, workflow file names/sizes, repo-list metadata). No network access was used; anything changed after capture is not reflected.",
+    "Inner file contents are not in the snapshot for either repo: pm-skills' skill/command files, tests/ contents, and workflow YAML bodies, and PM-agent-OS's .claude/skills tree, fixtures, lint_skill.py, prds/, and reviews/ contents were never read. Claims such as '68 PM skills', '40 skills', 'binary verification gates', and 'planted failures' are corroborated only by README text, root/workflow listings, and commit messages — not by the artifacts themselves.",
+    "Sub-directory trees beyond root were not captured, so skill counts on both sides are self-reported and unverifiable here.",
+    "Workflow YAML contents were not captured; CI conclusions rest on file names/sizes, the README tests badge, and harvested has_ci/ci_runs flags only. What each workflow actually runs is unknown.",
+    "PM-agent-OS's commit snapshot is capped at 100 commits while harvested metadata reports commit_count: 140; the earliest ~40 commits (covering Discovery and most Strategy skills) are not in the sample.",
+    "All 100 sampled PM-agent-OS commits fall within roughly 10 hours (2026-07-07T18:14Z to 2026-07-08T04:00Z) and the repo was ~10 days old at snapshot; per locked rules its heavy disclosed AI assistance is a transparency observation, not slop, and repo youth is not negative evidence — but it does make distribution and community comparisons structurally lopsided.",
+    "PM-agent-OS's README install command clones 'PM-agent-OS-' (trailing hyphen) while the harvested repo name is 'PM-agent-OS'; the snapshot cannot confirm whether that URL resolves, forwards, or fails.",
+    "PM-agent-OS's README states 'MIT.' but no LICENSE file appears in the root listing and API metadata reports license: null; license status is therefore ambiguous in the snapshot.",
+    "pm-skills' harvested metadata description says '100+ agentic skills' while the README says '68 PM skills and 42 chained workflows' (110 combined); the counts are self-reported and were not reconciled against actual files.",
+    "user_experience was assessed exclusively from documented onboarding/usage/error guidance in the saved READMEs; no runtime behavior of either product was observed or simulated.",
+    "originality_of_frameworks and ecosystem_compatibility rest mainly on README self-description and are marked low confidence accordingly.",
+    "Star/fork figures appear only in distribution_mechanics (and the recency note above) as reach measurements; per the locked fairness rules they were given no weight in any quality dimension."
+  ]
+}

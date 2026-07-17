@@ -1,0 +1,42 @@
+{
+ "login": "eugeneyan",
+ "repo": "llm-paper-notes",
+ "signals": {
+  "readme_claims_total": 2,
+  "readme_claims_code_backed": 2,
+  "original_logic_notes": 2,
+  "template_similarity_pct": 0,
+  "boilerplate_share_pct": 0,
+  "explanation_quality": 2,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 5,
+  "dependency_updates": 0,
+  "docs_corrections": 2,
+  "ai_share_evidence": "Original pithy human commentary per paper ('Decoder is all you need* (*Also, pre-training + finetuning)') accumulated across 20 commits with multi-contributor PRs (ivanleomk, swyxio) and iterative fixes ('Fix incorrect link', 'Fixed up json formatting'); no AI-generation markers.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/eugeneyan/llm-paper-notes",
+    "excerpt": "root-listing.json: notes dir, assets dir, LICENSE (11357 B, Apache-2.0), README.md (11191 B)"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/eugeneyan/llm-paper-notes/commits",
+    "excerpt": "'Init with notes from 2023' -> 'MOE Notes added' (ivanleomk) -> 'Merge pull request #5 from eugeneyan/swyxio-patch-1' -> 'add self reward paper' -> 'Fix incorrect link'; 20 commits, 3 authors, 2024-01 to 2024-07"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/eugeneyan/llm-paper-notes",
+    "excerpt": "page-1.json: 'Notes from the Latent Space paper club. Follow along or start your own!', created 2024-01-10, 250 stars metadata field recorded (not used for quality), license Apache-2.0"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/eugeneyan/llm-paper-notes/blob/main/README.md",
+    "excerpt": "'1. [Attention Is All You Need]: Query, Key, and Value are all you need* (*Also position embeddings, multiple heads, feed-forward layers, skip-connections, etc.)' - numbered annotated list of 40+ papers"
+   }
+  ]
+ },
+ "notes": "Curated paper-club notes where the curation and per-paper one-line syntheses are the deliverable, backed by a notes/ directory for fuller writeups and a collaborative commit history with two outside contributors merged via PRs. The running 'X is all you need' summaries are distinctive original commentary, not generated filler. No red flags."
+}

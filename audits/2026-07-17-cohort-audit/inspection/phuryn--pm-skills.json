@@ -1,0 +1,58 @@
+{
+ "login": "phuryn",
+ "repo": "pm-skills",
+ "signals": {
+  "readme_claims_total": 9,
+  "readme_claims_code_backed": 8,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 3,
+  "dependency_updates": 0,
+  "docs_corrections": 4,
+  "ai_share_evidence": "Generation markers: multiple commits carry 'Co-Authored-By: Claude' / claude.ai/code trailers (e.g. 'Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits', 2026-07-03); counter-evidence: 4 months of incremental human edits (typo/link/image fixes on 2026-03-02..03-04), a merged external contributor PR (#6, Fahri Meral), and curation explicitly credited to named PM literature.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/pm-skills",
+    "excerpt": "page-1.json: 23899 stars, 2431 forks, 62 commits, 3 contributors, 2 releases, has_ci true, created 2026-03-01, pushed 2026-07-03; description 'PM Skills Marketplace: 100+ agentic skills, commands, and plugins'; topics include claude-code-marketplace, claude-cowork-plugin, product-management."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/pm-skills/commits",
+    "excerpt": "'Release v2.1.0: Opus 4.8-tuned pm-ai-shipping audits + CHANGELOG-driven release automation' (2026-07-03); 'Release v2.0.0: add pm-ai-shipping plugin, red-team execution skill' (2026-06-05); 'Merge pull request #6 from fahrim/feature/opencode-integration' (2026-03-09); 'Fix UnicodeEncodeError on Windows in validate_plugins.py' (2026-03-05); 'v1.0' + 'Initial commit' (2026-03-01)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/pm-skills/tree/main",
+    "excerpt": "Root: 9 plugin dirs (pm-ai-shipping, pm-data-analytics, pm-execution, pm-go-to-market, pm-market-research, pm-marketing-growth, pm-product-discovery, pm-product-strategy, pm-toolkit) + .claude-plugin/, tests/, validate_plugins.py (17,908 B), CONTRIBUTING.md, CHANGELOG.md, CLAUDE.md, AGENTS.md."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/pm-skills/blob/main/.github/workflows",
+    "excerpt": "workflows-listing.json: tests.yml (570 B) and tag-on-merge.yml (7,136 B) \u2014 a test gate plus CHANGELOG-driven release-tag automation."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/pm-skills#readme",
+    "excerpt": "'68 PM skills and 42 chained workflows across 9 plugins. Claude Code, Cowork, and more.' Per-plugin skill lists in the README sum to exactly 68 skills and 42 commands, matching the 9 plugin dirs in the root listing."
+   }
+  ],
+  "evidence_conflicts": [
+   "Repo description says '100+ agentic skills, commands, and plugins' while the README header says '68 PM skills and 42 chained workflows across 9 plugins' \u2014 arithmetically consistent only when skills+commands+plugins are summed (68+42+9=119).",
+   "README claims skills 'work with any tool that reads' the universal SKILL.md format (Gemini CLI, OpenCode, Cursor, Kiro) \u2014 cross-tool behavior is not verifiable from the saved snapshot."
+  ]
+ },
+ "notes": "Flagship curated skills marketplace (23.9k stars): catalog spans 9 plugins / 68 skills / 42 chained commands from discovery through strategy, execution, market research, analytics, GTM, growth, a PM toolkit, and an AI-shipping audit kit; verification mechanisms visible are validate_plugins.py (17.9 KB), a tests/ dir, a tests.yml CI badge, and tag-on-merge.yml release automation, with releases v1.0 -> v2.0.0 -> v2.1.0 CHANGELOG-driven. Install/activation paths are documented for Claude Cowork (UI plugin browse), Claude Code CLI (plugin marketplace add + 9 installs), Codex CLI (native marketplace read, commands degrade to prose workflows), and copy-based Gemini/OpenCode/Cursor/Kiro; contribution design is CONTRIBUTING.md + PRs-welcome with one merged external PR (#6) visible, and companions pm-brain/burnstop/claude-usage are cross-badged as an ecosystem. Skills encode named third-party frameworks (Torres, Cagan, Savoia et al., credited) plus original structures (Startup Canvas, strategy-red-team, intended-vs-implemented audit method); 3 contributors and 36 open issues against 23.9k stars means popularity far outruns the contributor base."
+}

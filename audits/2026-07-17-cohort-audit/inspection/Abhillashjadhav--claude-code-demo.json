@@ -1,0 +1,65 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "claude-code-demo",
+ "signals": {
+  "readme_claims_total": 0,
+  "readme_claims_code_backed": 0,
+  "original_logic_notes": 1,
+  "meaningful_adaptation": false,
+  "template_similarity_pct": 70,
+  "boilerplate_share_pct": 60,
+  "explanation_quality": 0,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": false,
+  "setup_reproducible": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "All 29 commits are owner-authored via the GitHub web UI ('Create ...'/'Delete ...') on 2025-11-09; no AI-authored commits and no generation markers — the visible churn (repeatedly mis-nesting and re-creating .claude/agents paths) reads as manual hands-on learning, not mass generation.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/claude-code-demo",
+    "excerpt": "29 commits, 1 contributor, created 2025-11-09, pushed 2026-05-24, language Python, license MIT, no description, has_tests false, has_ci false."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/claude-code-demo/commits",
+    "excerpt": "2025-11-09 'Create app.py', 'Create test_app.py', 'Create planner.md', then a create/delete churn such as 'Delete .claude/agents/.claude/agents/.claude/agents/.claude/agents/.claude/agents/doc-writer.md' before the agent files settle."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/claude-code-demo/tree/main",
+    "excerpt": "Root: .claude/, src/, Requirements.txt (13 bytes), LICENSE, .gitignore, README.md (18 bytes — title only)."
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/claude-code-demo/commits",
+    "excerpt": "The commit sequence documents a human manually working out the correct .claude/agents directory layout (planner/implementer/tester/doc-writer) — genuine learning-by-doing, and the repo is explicitly named a demo."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/claude-code-demo/tree/main",
+    "excerpt": "app.py, test_app.py and requirements.md were created alongside the agents — a small but complete exercise, with an MIT license added."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "It is a self-labeled demo/learning repo; simple content and tutorials are not slop under the fairness rules",
+    "The churn is manual GitHub-web activity, the opposite of mass generation",
+    "With a title-only README, the repo claims nothing it fails to deliver"
+   ],
+   "review_notes": "Negative surface signals (empty README, high boilerplate, standard planner/implementer/tester/doc-writer pattern) are fully explained by the repo's evident purpose: a one-day hands-on exercise learning Claude Code sub-agent layout in November 2025. It carries no authority claims and should weigh little in either direction."
+  },
+  "evidence_conflicts": []
+ },
+ "notes": "A one-day personal learning demo of Claude Code sub-agents: the owner manually created, mis-nested, deleted and re-created planner/implementer/tester/doc-writer agent files via the GitHub web UI, alongside a tiny app.py/test_app.py. The README is a bare title, so nothing is claimed or documented. Standard tutorial-pattern content with no authority claims — negligible signal, positive or negative."
+}

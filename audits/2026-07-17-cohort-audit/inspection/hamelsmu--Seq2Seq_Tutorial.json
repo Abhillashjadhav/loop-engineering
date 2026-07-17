@@ -1,0 +1,49 @@
+{
+  "login": "hamelsmu",
+  "repo": "Seq2Seq_Tutorial",
+  "signals": {
+    "readme_claims_total": 6,
+    "readme_claims_code_backed": 5,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 5,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 1,
+    "dependency_updates": 1,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No AI markers in any of the 32 commits (2018-2019, pre-AI-tooling era); hand-iterated authorship visible in incremental fix commits ('fixing model eval', 'fixed error in model eval') plus an external human contributor PR.",
+    "evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/Seq2Seq_Tutorial/tree/master/notebooks",
+        "excerpt": "Root: LICENSE, README.md, notebooks/ (dir), requirements.txt (3876 B), sql/ (dir) — tutorial notebook, utils, deps file, and the data-extraction SQL the history references all present."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/Seq2Seq_Tutorial/commit/2724b42",
+        "excerpt": "2018-10-18 Phil Gooch (external) 'Adds instructions for using with AWS Deep Learning AMI and Docker', merged via 0c51beb 'requirements_simplification'; owner iteration includes b34bc64 'Update seq2seq_utils.py', a3e5532 'fixed error in model eval', f577888 'Create GetIssues.sql'."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/Seq2Seq_Tutorial",
+        "excerpt": "Metadata: 'Code For Medium Article: How To Create Data Products That Are Magical Using Sequence-to-Sequence Models', language Jupyter Notebook, stargazers_count 139, forks_count 50, commit_count 32, contributors 3, created 2018-01-14. The ktext library the README cites exists as a separate hamelsmu portfolio repo."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/Seq2Seq_Tutorial/blob/master/README.md",
+        "excerpt": "'pip install -r requirements.txt ... Tutorial Notebook: The Jupyter notebook that coincides with the Medium post ... seq2seq_utils.py: convenience functions that are used in the tutorial notebook.'"
+      }
+    ]
+  },
+  "notes": "2018 seq2seq tutorial accompanying a Medium article; under fairness rules the notebook is the deliverable and it exists, alongside utils, requirements.txt, and the GitHub-issues SQL. Five of six README claims are grounded in the tree, commit history, or the portfolio (ktext); the lone unverifiable claim is the external Docker Hub image. Dated content with no limitations/deprecation note (unlike sibling code_search), but authorship is plainly human-era with external contribution merged."
+}

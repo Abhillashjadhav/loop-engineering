@@ -1,0 +1,99 @@
+{
+  "repo": "rag-eval-harness",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 90.0,
+      "polarity": "quality",
+      "evidence": "9/10 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 43.0,
+      "polarity": "risk",
+      "evidence": "template similarity 55%, boilerplate share 25%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 8.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 40.0,
+      "polarity": "quality",
+      "evidence": "2/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 12.0,
+      "polarity": "quality",
+      "evidence": "3 distinct commit day(s), 1 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 15.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 3 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 54.4,
+    "technical_proficiency": 24.0,
+    "ai_assistance_likelihood": 29.2,
+    "ai_assistance_confidence": 78.6,
+    "ai_slop_risk": 43.5,
+    "educational_value": 100.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 90.0,
+    "confidence": 78.6
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Every design choice carries an explicit stated tradeoff \u2014 unusual explanatory depth",
+        "Openly disclosed full AI authorship is a transparency positive under the fairness rules",
+        "Honest MARGINAL 78.8% validation verdict retained instead of tuning to TRUSTED"
+      ],
+      "review_notes": "The negative signal is twin-repo choreography with pm-evals (same-minute creation, shared quotes, shared calibration-lesson template, mirrored commit sequences). The RAG pipeline, traces, golden set and results are distinct artifacts, and the disclosed zero-hand-written-code stance is not penalizable. Net reading: AI-generated but curated and unusually self-critical."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 78.6,
+    "evidence_and_counter_evidence": "README states 'Built with Claude Code. Zero hand-written code' and 'No code was written by hand'; commits are owner-authored (36/37) over 2026-05-22/24; counter-evidence: hand-graded golden workbook commits, 'fix: unfilled-skeleton scores + remove stale draft reference', and a self-preference-bias disclosure show human oversight of the generated output.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "repo": "plain-writing-skill",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4/4 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 14.0,
+      "polarity": "risk",
+      "evidence": "template similarity 20%, boilerplate share 5%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 32.0,
+      "polarity": "quality",
+      "evidence": "10 distinct commit day(s), 1 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 27.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 2 issue response(s), 4 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 61.4,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 0.8,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 36.9,
+    "educational_value": 46.7,
+    "distribution_strength": 60.0,
+    "claim_evidence_integrity": 100.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "No AI-tool attribution in README or any of the 36 saved commits; counter-evidence: fine-grained editorial iteration (six successive rewrites of 'rule 8' on 2026-06-16 alone) and two merged external PRs (hamelsmu #1, mvanhorn #2) over 32 days, a pattern of human curation rather than one-shot generation.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

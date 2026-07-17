@@ -79,7 +79,18 @@
      "excerpt": "'_This is NOT a tutorial book, so it doesn't have a lot of code snippets._' ... 'This repo will be updated with more resources in the next few weeks.'"
     }
    ],
-   "counter_evidence": "case-studies.md (14 B) and misalignment.md (89 B) are near-empty stubs linked from the README; however README explicitly flags the repo as WIP ('will be updated'), and the substantive claims (ToC, chapter summaries, resources, prompt examples, translations, heatmap script) are all backed by sizeable files and commits.",
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/aie-book",
+     "excerpt": "root-listing.json: case-studies.md (14 B) and misalignment.md (89 B) are near-empty stubs linked from the README, while chapter-summaries.md (33980 B), resources.md (34959 B), ToC.md (17606 B), prompt-examples.md (8054 B) and translations.md (9008 B) are substantial"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/aie-book/blob/main/README.md",
+     "excerpt": "'_This repo will be updated with more resources in the next few weeks._' — the README explicitly flags the repo as WIP, so the stub files read as placeholders rather than unbacked claims"
+    }
+   ],
    "counter_evidence_review": {
     "reviewed": true,
     "outcome": "Stub files noted but do not overturn the positive read: 6 of 8 README claims are backed by substantial artifacts and the repo is an explicitly WIP companion to a published book."
@@ -190,7 +201,18 @@
      "excerpt": "'I build micro tools... Sniffly for Claude Code analysis, lazynlp, and sotawhat. I'm the author of AI Engineering and Designing Machine Learning Systems. My book on machine learning interviews is open-sourced and free!'"
     }
    ],
-   "counter_evidence": "3 of 8 claims (GoodAIList, KilledByGPT, film/Vietnamese-book career notes) point to external sites or personal history not checkable from saved snapshots; countered by the fact that all claims about GitHub-hosted work (both books' repos, Sniffly, lazynlp, sotawhat, ml-interviews-book) are verified against the portfolio survey.",
+   "counter_evidence": [
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen",
+     "excerpt": "portfolio survey lists sibling repos aie-book, dmls-book, ml-interviews-book, sniffly, lazynlp and sotawhat — every GitHub-hosted project named in the profile README is verified; the 3/8 unbacked claims (GoodAIList, KilledByGPT, film/Vietnamese-book bio) point off-GitHub"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/chiphuyen/commits",
+     "excerpt": "Small human-scale corrections over six years: tfmorris 'Fix dead Goodreads link' (2025-02-05), henrynnamani 'Fix typo in teaching experience description' (2025-12-10), 'Fix link in README.md for GoodAIList' (2026-06-24) — the bio is actively corrected, not abandoned puffery"
+    }
+   ],
    "counter_evidence_review": {
     "reviewed": true,
     "outcome": "Unverifiable items are personal-bio claims outside GitHub, appropriate for a profile README; nothing contradicts saved artifacts, so this is recorded as 'not observed', not as unbacked technical claims."
@@ -646,7 +668,23 @@
      "excerpt": "'around 40 - 60 % are bad URLs' ... 'I guess I could have parallized the code. I just found this to be easier.' ... 'capacity and error_rate are for the BloomFilter used.'"
     }
    ],
-   "counter_evidence": "Headline claim ('create datasets larger than the one used by OpenAI for GPT-2') and per-function API claims cannot be verified from the root listing alone (package internals not snapshotted), giving 4/6 backed; countered by the declared deps, setup.py packaging, a tagged v1.0.0 release, a Zenodo DOI badge, and an external code-level bugfix implying real usage of the described functions.",
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/lazynlp",
+     "excerpt": "root-listing.json: lazynlp/ package dir, setup.py (476 B), requirements.txt (89 B), MANIFEST.in (94 B) — real packaging behind the API claims even though package internals were not snapshotted"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/lazynlp",
+     "excerpt": "portfolio survey: dependencies_declared true, releases 1, runnable_setup_documented true — a tagged release corroborates a working library"
+    },
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/lazynlp/commits",
+     "excerpt": "External code-level fix by cclauss 'import re for line 18' (2019-03-03) and typo PRs merged 2019-10-07 (#7/#5/#3) imply real third-party use of the described functions"
+    }
+   ],
    "counter_evidence_review": {
     "reviewed": true,
     "outcome": "Unbacked items are a scale estimate the README itself derives openly with stated assumptions, plus function docs whose files were not snapshotted; nothing observed contradicts them, so the read stays positive with reduced backed count."
@@ -792,7 +830,18 @@
      "excerpt": "'This booklet was my initial attempt... My understanding of the topic has gone through significant iterations since then. My book Designing Machine Learning Systems (O'Reilly, June 2022) is much more comprehensive and up-to-date.'"
     }
    ],
-   "counter_evidence": "High boilerplate_share_pct (magicbook scaffolding dirs dominate the root listing); countered by the fact that the scaffolding belongs to a documented third-party build tool the README explains how to use, and the actual deliverable lives in content/ and answers/ with build steps that reproduce it.",
+   "counter_evidence": [
+    {
+     "origin": "file_listing",
+     "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+     "excerpt": "root-listing.json: scaffolding dirs (fonts/, javascripts/, layouts/, stylesheets/, includes/) sit alongside the actual deliverable in content/ and answers/, plus magicbook.json (675 B) and build/ output"
+    },
+    {
+     "origin": "readme",
+     "url": "https://github.com/chiphuyen/machine-learning-systems-design/blob/master/README.md",
+     "excerpt": "'This book was created using the wonderful magicbook package' ... 'you can build the booklet by... magicbook build' — the boilerplate belongs to a documented third-party build tool, not template-cloned content"
+    }
+   ],
    "counter_evidence_review": {
     "reviewed": true,
     "outcome": "Scaffolding is legitimate build tooling, not padding; content claims (booklet steps, 27 questions, community answers, magicbook build) are backed by content/, answers/, magicbook.json and build/."
@@ -1218,7 +1267,23 @@
      "excerpt": "'uvx sniffly@latest init' ... 'Sniffly runs entirely on your local machine: All data processing happens locally, No telemetry'"
     }
    ],
-   "counter_evidence": "Initial two-day commit burst could read as a one-shot dump; countered by 3 tagged releases, post-launch bugfix cycle over 3+ weeks, merged external PRs from two outside contributors, CI (lint+build), a tests directory and CHANGELOG.",
+   "counter_evidence": [
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/chiphuyen/sniffly/commits",
+     "excerpt": "Initial two-day burst (~20 commits 2025-07-15/16) is followed by weeks of iteration: 'Merge pull request #7 from droidraja/fix/host-parameter-config' (2025-07-21), 'Fix error analysis (#15)' and 'Release 0.1.5 (#16)' (2025-07-28), 'Add MIT License file (#18)' (2025-08-08)"
+    },
+    {
+     "origin": "ci_config",
+     "url": "https://github.com/chiphuyen/sniffly/blob/main/.github/workflows/lint.yml",
+     "excerpt": "workflows-listing.json: build.yml (1071 B) and lint.yml (1317 B) under .github/workflows/ — CI hygiene inconsistent with a one-shot dump"
+    },
+    {
+     "origin": "api_listing",
+     "url": "https://github.com/chiphuyen/sniffly",
+     "excerpt": "portfolio survey: releases 3, has_tests true, has_ci true, contributors 3 — tagged releases and external contributors counter the one-shot-dump read"
+    }
+   ],
    "counter_evidence_review": {
     "reviewed": true,
     "outcome": "Not a one-shot dump: sustained iteration, community PRs, CI and releases all present in saved snapshots. Privacy/no-telemetry claim and hosted gallery are not verifiable from artifacts, hence 6/8 backed."

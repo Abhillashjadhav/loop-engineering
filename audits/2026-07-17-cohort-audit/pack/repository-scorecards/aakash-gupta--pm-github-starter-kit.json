@@ -1,0 +1,97 @@
+{
+  "repo": "pm-github-starter-kit",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 57.1,
+      "polarity": "quality",
+      "evidence": "4/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "2 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 33.0,
+      "polarity": "risk",
+      "evidence": "template similarity 35%, boilerplate share 30%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 4.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 5.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 1 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 46.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=False, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 39.8,
+    "technical_proficiency": 20.0,
+    "ai_assistance_likelihood": 6.2,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 61.4,
+    "educational_value": 46.7,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 57.1,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "All structural claims (templates, prompts, checklist) are corroborated by the root listing; 84 forks indicate the kit is actually used",
+        "Original 6-point 'What Makes a Great PM GitHub' framework and anti-pattern list reflect practitioner judgment",
+        "Post-publish link fix and subscriber-notice commits show minimal but real maintenance"
+      ],
+      "review_notes": "Negative signals are the unverifiable marketing stats (24% claim, placement name-drops of OpenAI/Anthropic/Meta) and a two-day, four-commit content drop gated as 'paid subscribers only' while public. None of that makes the content slop: it is a small, coherent, fully-present curation kit. The unbacked claims are about the author's off-platform track record, not about the repo's contents."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "No generation markers in the four commit messages; timestamps are irregular and clustered over two real days (2026-02-26/27) matching pushed_at, and one follow-up fix ('Fix article links to point to correct URL') shows human post-publish correction. Counter: the near-complete initial drop ('Initial commit: PM GitHub starter kit' then 'Update README with blog post content') is consistent with content prepared elsewhere, likely AI-assisted.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

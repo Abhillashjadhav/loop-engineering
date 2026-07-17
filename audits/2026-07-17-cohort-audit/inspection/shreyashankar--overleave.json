@@ -1,0 +1,43 @@
+{
+ "login": "shreyashankar",
+ "repo": "overleave",
+ "signals": {
+  "readme_claims_total": 5,
+  "readme_claims_code_backed": 5,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 3,
+  "dependency_updates": 0,
+  "docs_corrections": 4,
+  "ai_share_evidence": "2021 Chrome extension with no AI markers; counter-evidence: collaborative human history \u2014 26 of 37 saved commits are from external contributor Mauro Alejandro Jimenez Medina, merged through PRs, with terse human commit style ('Fix:', 'Update:', 'Fixing typos.').",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/overleave/blob/master/manifest.json",
+    "excerpt": "root-listing.json: manifest.json (781 bytes) plus javascript/, popup/, css/, icons/, docs/ dirs \u2014 the standard anatomy of the Chrome extension the README describes, including the docs/ screenshots it embeds."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/overleave/commits",
+    "excerpt": "2021-09-30 'First commit' (Shreya Shankar); 2021-10-04 'Merge pull request #3 from 0xflotus/patch-1' ('fix: small typo error'); 2021-10-13 'Merge pull request #5 from mauroalejandrojm/master' \u2014 37 commits, 3 authors."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/overleave",
+    "excerpt": "page-1.json: description 'Chrome extension that opens and syncs Overleaf compiled pdfs in a new window.', MIT license, 123 stars, 3 contributors, created 2021-09-30."
+   }
+  ]
+ },
+ "notes": "A small, real Chrome extension scratching a concrete itch (split-window Overleaf PDF viewing), grown collaboratively with a credited external contributor who authored most later commits. The README discloses known glitches under 'Next Improvements' and carries a practical troubleshooting section. Minor oddity, not a conflict: the README's screenshot links point at the contributor's fork (mauroalejandrojm/overleave)."
+}

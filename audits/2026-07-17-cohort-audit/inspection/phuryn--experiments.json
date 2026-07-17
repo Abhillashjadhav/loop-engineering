@@ -1,0 +1,52 @@
+{
+ "login": "phuryn",
+ "repo": "experiments",
+ "signals": {
+  "readme_claims_total": 12,
+  "readme_claims_code_backed": 11,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 5,
+  "ai_share_evidence": "Generation markers: most commits authored by 'Claude' with Co-Authored-By trailers; counter-evidence: a running record of self-corrections against its own published numbers ('correct fugu cost/run $1.48 -> $2.00', 'drop unverified causal claim', 'reroute check caveat - 146/147 fable rows'), anonymization enforced as code via a PostToolUse hook, and 8 distinct commit days across 6 weeks.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/experiments",
+    "excerpt": "page-1.json: 1 star, 26 commits, 3 contributors, created 2026-06-10, pushed 2026-07-17 (8 distinct commit days), no license field, no description, no tests/CI \u2014 a receipts repo, not a product."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/experiments/commits",
+    "excerpt": "'fable-5-day-4: full n=20 retest receipts (7 experiments, scripts + raw logs), anonymization as code' (2026-06-12); 'fugu-ultra-vs-frontier: correct fugu cost/run $1.48 -> $2.00' then 'root README row ~3x -> ~4x (match corrected $2.00/run)' (2026-06-24); 'fable-5-day-4 README: drop unverified causal claim (\"build is tuned daily\")' (2026-06-12); 'add kimi-k3-day-one set: 8-task scoreboard + day-one capacity experiment' (2026-07-17)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/experiments/tree/main",
+    "excerpt": "Root: 9 experiment-set dirs (kimi-k3-day-one, five-models-three-harnesses, fable-5-effort-recheck, fugu-ultra-vs-frontier, frontier-vs-open-audit, fable-5-day-4, fable-5-speed-depth, managed-vs-local-agents, silicon-gambit-chess) + .claude/ (anonymization hooks) \u2014 exactly matching the README's set table."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/experiments#readme",
+    "excerpt": "'When a post claims a number, the receipt lives here... each experiment ships the exact script, the unedited log, and a README with method, sample size, and caveats' and 'If a number in a post and a log disagree, the log wins.'"
+   }
+  ],
+  "evidence_conflicts": [
+   "README's License section says 'MIT. Use anything' but the metadata records license: null and the root listing contains no LICENSE file.",
+   "Per-set numeric findings (e.g. 'union 17/21 vs best-single 12', '~25x cost understatement') are claimed in the root README; the set folders exist but their scripts/logs are below snapshot depth, so the numbers are corroborated only by commit messages describing receipts."
+  ]
+ },
+ "notes": "Receipts repository backing the author's Product Compass model-benchmark posts: 9 experiment sets with dated rows, an explicit log-beats-post correction policy, and anonymization implemented as code (a PostToolUse hook plus checked-in replacement rules) rather than prose. Commit history is the strongest signal \u2014 it repeatedly corrects its own published numbers and removes an unverified causal claim, which is active accuracy maintenance, not slop. Weaknesses are administrative: README claims MIT but no LICENSE file is present, and there are no setup steps (it is data, not a runnable tool)."
+}

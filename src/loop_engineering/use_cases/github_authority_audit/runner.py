@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from pathlib import Path
 from typing import Any
 
 from loop_engineering.domain.errors import LoopEngineeringError
@@ -34,13 +35,14 @@ from loop_engineering.use_cases.github_authority_audit import (
     classify as cls_mod,
 )
 from loop_engineering.use_cases.github_authority_audit import (
+    cohort_report,
+    rubric,
+)
+from loop_engineering.use_cases.github_authority_audit import (
     identity as identity_mod,
 )
 from loop_engineering.use_cases.github_authority_audit import (
     inventory as inv_mod,
-)
-from loop_engineering.use_cases.github_authority_audit import (
-    rubric,
 )
 from loop_engineering.use_cases.github_authority_audit.datasource import GitHubDataSource
 from loop_engineering.verification.loop4_stability import RunFindings
@@ -315,6 +317,9 @@ class AuditUseCase:
             payload.append(
                 {
                     "repo": record.name,
+                    # Coverage label (cohort method step 5): False = scored from
+                    # mechanical signals only, no judgment inspection performed.
+                    "deep_inspected": bool(record.signals.get("deep_inspected", False)),
                     "dimensions": cls_mod.dimension_evidence(dims),
                     "scores": a.scores.to_dict(),
                     "classification": a.classification.to_dict(),
@@ -418,7 +423,34 @@ class AuditUseCase:
         markdown = self.build_final_output(ctx)
         cls_mod.assert_no_exact_ai_percentage(markdown)
         ctx.artifact_path(task.expected_artifact).write_text(markdown, encoding="utf-8")
+        self._render_cohort_reports(ctx)
         return TaskOutcome()
+
+    def _render_cohort_reports(self, ctx: ExecutionContext) -> None:
+        """Render the product comparison + A-H answers when the fixture carries
+        cohort inputs (comparisons/ + audit-config.yaml). Non-cohort runs are
+        unaffected; absent inputs mean no report — never a guessed one."""
+        root = getattr(self.data_source, "root", None)
+        if root is None:
+            return
+        inputs = cohort_report.load_inputs(Path(root))
+        if inputs is None:
+            return
+        persons = [ctx.read_artifact_json(f"persons/{s['slug']}.json") for s in self.subjects]
+        assessments_by_subject = {
+            str(s["display_name"]): list(
+                ctx.read_artifact_json(f"assessments/{s['slug']}.json")["assessments"]
+            )
+            for s in self.subjects
+        }
+        flagship_md = cohort_report.render_flagship_comparison(inputs)
+        answers_md = cohort_report.render_answers_a_h(persons, assessments_by_subject, inputs)
+        cls_mod.assert_no_exact_ai_percentage(flagship_md)
+        cls_mod.assert_no_exact_ai_percentage(answers_md)
+        ctx.artifact_path("reports/flagship-comparison.md").write_text(
+            flagship_md, encoding="utf-8"
+        )
+        ctx.artifact_path("reports/cohort-answers-a-h.md").write_text(answers_md, encoding="utf-8")
 
     # -- final output ----------------------------------------------------------
 
@@ -523,12 +555,27 @@ class AuditUseCase:
         artifacts = ctx.run_directory / "artifacts"
         if (artifacts / "comparison.json").is_file():
             present.append("cross-subject comparison")
+            present.append("cross-subject comparison across both cohorts")
         if (artifacts / "reports" / "final-answer.md").is_file():
             present.append("final answer with per-subject verdicts")
         if any((artifacts / "persons").glob("*.json")):
             present.append("person-level assessments")
-        if any((artifacts / "assessments").glob("*.json")):
+        assessment_files = sorted((artifacts / "assessments").glob("*.json"))
+        if assessment_files:
             present.append("repository scorecards")
+            labeled = all(
+                all("deep_inspected" in card for card in json.loads(f.read_text())["assessments"])
+                for f in assessment_files
+            )
+            if labeled:
+                present.append("repository scorecards with deep-inspection coverage labeled")
+        if (artifacts / "reports" / "flagship-comparison.md").is_file():
+            present.append("product-level flagship comparison")
+        answers = artifacts / "reports" / "cohort-answers-a-h.md"
+        if answers.is_file():
+            text = answers.read_text(encoding="utf-8")
+            if all(f"## {letter}." in text for letter in "ABCDEFGH"):
+                present.append("separate answers to the eight cohort questions (A-H)")
         return present
 
     def repair_tasks(

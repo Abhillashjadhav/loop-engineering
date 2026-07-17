@@ -1,0 +1,49 @@
+{
+  "login": "hamelsmu",
+  "repo": "design-research",
+  "signals": {
+    "readme_claims_total": 5,
+    "readme_claims_code_backed": 3,
+    "original_logic_notes": 3,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 10,
+    "boilerplate_share_pct": 5,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": true,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 1,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 2,
+    "ai_share_evidence": "All 12 commits carry Co-Authored-By: Claude Opus 4.6 trailers — fully disclosed AI-assisted authoring; counter-evidence: two days of distinct human editorial passes (reframing intro, trimming redundancy, reordering sections) rather than a single generated dump.",
+    "evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/design-research/tree/main/skills",
+        "excerpt": "Root: README.md (6134 B), agent-team-screenshot.jpg (821 KB), skills/ (dir) — the skill directory and the screenshot of an actual agent-team run that the README embeds."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/design-research/commit/0e3ecfb",
+        "excerpt": "0e3ecfb 'Initial commit: design-research Claude Code skill' through e4b1d22 'Mention agent teams and link to docs in intro'; intermediate passes include 51cb90d 'Reframe as a prompt-first approach, demote skill installation' and 0060d44 'Add screenshot and clarify lead synthesis responsibility'."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/design-research",
+        "excerpt": "Metadata: 'Claude Code skill for comprehensive website design research using browser-automation agent teams', stargazers_count 70, forks_count 5, commit_count 12, contributors 1, created 2026-02-26."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/design-research/blob/main/README.md",
+        "excerpt": "'Token usage is significant — each agent has its own context window. A full 10-agent audit uses roughly 10x the tokens of a single session ... The prompt works best on sites with multiple distinct page types.'"
+      }
+    ]
+  },
+  "notes": "Prompt/skill-only repo: a 10-agent, three-pass browser-automation research workflow for reverse-engineering website design systems — under fairness rules the SKILL.md content is the deliverable, and the skills dir plus a real run screenshot ground it. Documentation is strong on costs and caveats (10x token usage, 10-15 minute runtime, auth-dependent sites, why --dangerously-skip-permissions is needed). The claimed 10-agent/3-pass internals live inside skills/design-research/SKILL.md, which the snapshot lists but does not open, so those specifics count as unverified rather than unbacked."
+}

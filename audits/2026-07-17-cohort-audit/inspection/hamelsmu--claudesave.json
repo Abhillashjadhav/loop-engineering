@@ -1,0 +1,61 @@
+{
+  "login": "hamelsmu",
+  "repo": "claudesave",
+  "signals": {
+    "readme_claims_total": 5,
+    "readme_claims_code_backed": 4,
+    "original_logic_notes": 3,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 20,
+    "boilerplate_share_pct": 25,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": false,
+    "limitations_disclosed": false,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 1,
+    "dependency_updates": 0,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No AI-attribution trailers or bot authors in any of the 31 commits (2024-08 to 2024-11); informal human commit style ('save', 'bump version') and an external human contributor PR; nothing observable indicates AI authorship.",
+    "evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/claudesave/tree/main",
+        "excerpt": "Root: manifest.json (917 B), background.js (3927 B), content.js (3229 B), popup/ (dir), utils/ (dir), images/ (dir), privacy_policy.md (1521 B), Makefile — a complete unpacked Chrome extension matching the README install flow."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/claudesave/commit/0b486c0",
+        "excerpt": "Feature commits back README claims: 0b486c0 'handle artifacts and attachments', 4b39a03 'save to clipboard button', 1f74f8b 'handle conversation edits', f0e516a merge of 'use-storage' branch (PAT stored via extension storage), afd1759 external contributor Alex Strick van Linschoten."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/claudesave",
+        "excerpt": "Metadata: 'A Chrome extension that saves conversations with Claude to GitHubGists or your clipboard.', language JavaScript, stargazers_count 94, forks_count 8, commit_count 31, contributors 2."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/claudesave/blob/main/README.md",
+        "excerpt": "'Obtain a personal access token (PAT) with the gist scope ... After installing the extension, you can click the extension icon to save your PAT.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/claudesave/commit/fffed4d",
+        "excerpt": "16 of 31 commit messages are the uninformative word 'save' (e.g. fffed4d, 63836c4, b73eeda, 2024-08 to 2024-11), which superficially resembles low-effort dumping; counter: substantive feature commits are interleaved (4b39a03 'save to clipboard button', 0b486c0 'handle artifacts and attachments', 1f74f8b 'handle conversation edits', storage-based PAT via f0e516a), an external contributor's PR was merged (afd1759), and privacy_policy.md ships with the extension."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "outcome": "Terse messages reflect informal solo iteration over four months, not mass generation; the artifact set is a coherent working extension and README claims are backed by named feature commits."
+    }
+  },
+  "notes": "Small, genuine Chrome extension for exporting Claude conversations to Gists or clipboard; user supplies their own gist-scoped PAT and storage-based handling is visible in the merged 'use-storage' branch, with no secrets shipped in the repo. Chrome-extension scaffolding (manifest/background/content/popup) accounts for the moderate boilerplate share. Weakest area is documentation depth: no limitations or tradeoff discussion, and many commits are just labeled 'save'."
+}

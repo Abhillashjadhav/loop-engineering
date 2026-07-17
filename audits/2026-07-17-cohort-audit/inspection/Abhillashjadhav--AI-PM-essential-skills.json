@@ -1,0 +1,57 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "AI-PM-essential-skills",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 30,
+  "boilerplate_share_pct": 20,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 1,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 2,
+  "ai_share_evidence": "Commits are almost all owner-authored (39/40; 2 by 'Claude') with conventional PR-numbered messages; no README AI-authorship credit ('Built by Abhillash Jadhav'); counter-evidence: the 2026-07-11 context-port series lands 18 PRs in one day — a strong AI-assisted-velocity marker even under the owner's name.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills",
+    "excerpt": "40 commits, 2 contributors, 1 star, created 2026-06-24, pushed 2026-07-13, has_tests true, has_ci true; description: 'A growing library of Claude Code skills for AI Product Managers ... Built and tested. Not in Anthropic's official library.'"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills/commits",
+    "excerpt": "2026-06-24 'feat: add token-cost-estimator skill for pre-flight inference economics'; 2026-07-04 'feat: v0.2.0 — make pm-tactical proactive across the plugin'; 2026-07-11 'feat(context-port): add real Claude export converter (#24)'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills/tree/main",
+    "excerpt": "Root: concise-rewriter/, context-auditor/, context-port/, eval-rubric-generator/, loop-designer/, mcp-migration-auditor/, pm-tactical/, pm-verifier/, token-cost-estimator/, tests/, .claude-plugin/, AGENTS.md, CLAUDE.md, LESSONS.md."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills/tree/main/.github/workflows",
+    "excerpt": "pr-review.yml (2320 bytes) backs the README's 'Every PR is reviewed by the repo's PR agent before merge'."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/AI-PM-essential-skills#readme",
+    "excerpt": "'Each skill has a test/ folder with: input.md ... expected-output.md ... eval-notes.md'."
+   }
+  ],
+  "evidence_conflicts": [
+   "README is titled 'pm-claude-skills' and says '4 Claude Code skills', but the repo is named AI-PM-essential-skills and the root listing shows ~9 skill/plugin directories — the README understates the current repo (staleness, not overclaim).",
+   "README install command clones github.com/Abhillashjadhav/pm-claude-skills, which matches no repo in the metadata snapshot; consistent with a repo rename (old-name redirect), but unverifiable from the snapshot."
+  ]
+ },
+ "notes": "A hand-shipped Claude Code skill library for PMs where the docs and skills are the deliverable; per-skill test folders, a pr-review workflow and a plugin marketplace are all visible in the listing and commits. The README is stale — it advertises 4 skills under the repo's old name while the tree holds ~9 including a substantial context-port series (18 PRs in one day). It shares its 4 original skills with PM-agent-OS, which credits this repo as the source."
+}

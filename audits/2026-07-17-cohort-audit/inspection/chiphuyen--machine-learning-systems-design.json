@@ -1,0 +1,63 @@
+{
+ "login": "chiphuyen",
+ "repo": "machine-learning-systems-design",
+ "signals": {
+  "readme_claims_total": 5,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 20,
+  "boilerplate_share_pct": 40,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 2,
+  "dependency_updates": 0,
+  "docs_corrections": 2,
+  "ai_share_evidence": "2019 booklet, pre-LLM-assistant era; 9 commits over three years with external contributions (netlify.toml by tdhopper, Netflix case studies by Alireza Dirafzoon); no AI markers. Boilerplate share reflects the documented magicbook build scaffolding (fonts/, layouts/, stylesheets/, javascripts/), not template-cloned content.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+    "excerpt": "root-listing.json: content/, answers/, build/, magicbook.json (675 B), netlify.toml (149 B), plus magicbook scaffolding dirs fonts/, images/, includes/, javascripts/, layouts/, stylesheets/"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/machine-learning-systems-design/commits",
+    "excerpt": "2019-11-24 'ml sys design', 2019-11-25 tdhopper 'Create netlify.toml', 2019-11-27 'Update case-studies.md: Add 2 cases from Netflix', 2021-01-04 'Add HTML page', 2022-06-22 'Update README.md' (9 commits)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+    "excerpt": "portfolio survey: stargazers_count 10458, forks_count 1616, commit_count 9, contributors 3, runnable_setup_documented true"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/machine-learning-systems-design/blob/master/README.md",
+    "excerpt": "'This booklet was my initial attempt... My understanding of the topic has gone through significant iterations since then. My book Designing Machine Learning Systems (O'Reilly, June 2022) is much more comprehensive and up-to-date.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+    "excerpt": "root-listing.json: scaffolding dirs (fonts/, javascripts/, layouts/, stylesheets/, includes/) sit alongside the actual deliverable in content/ and answers/, plus magicbook.json (675 B) and build/ output"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/machine-learning-systems-design/blob/master/README.md",
+    "excerpt": "'This book was created using the wonderful magicbook package' ... 'you can build the booklet by... magicbook build' \u2014 the boilerplate belongs to a documented third-party build tool, not template-cloned content"
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "outcome": "Scaffolding is legitimate build tooling, not padding; content claims (booklet steps, 27 questions, community answers, magicbook build) are backed by content/, answers/, magicbook.json and build/."
+  }
+ },
+ "notes": "Original 2019 booklet on ML systems design with exercises and a community answers/ folder, built to HTML/PDF via the documented magicbook toolchain. README openly supersedes itself in favor of the author's later book, an unusually candid limitation disclosure. Low commit count fits a finished teaching artifact, not abandonment of unmet claims."
+}

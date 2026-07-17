@@ -1,0 +1,46 @@
+{
+ "login": "chiphuyen",
+ "repo": "stanford-tensorflow-tutorials",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 4,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 1,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 2,
+  "dependency_updates": 5,
+  "docs_corrections": 5,
+  "ai_share_evidence": "2016-2018 course code, predating AI coding assistants entirely; hand-iterated development visible in commits ('fixed bugs chatbot', 'Fix lazy loading', 'delete dead code', 'update to tf 1.2 and python3'); no AI markers.",
+  "evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials/commits",
+    "excerpt": "106 commits 2016-2018: 'code for lecture 2'...'code for lecture 11', 'assignment 2: style transfer', 'solution for assignment 2 and code for assignment 3', 'fixed bugs chatbot', five 'Update requirements.txt' commits, external fix by melzareix 'fix: Fix typo in imports'"
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials",
+    "excerpt": "root-listing.json: dirs 2017/, assignments/, examples/, setup/, plus LICENSE (1091 B) and README.md (800 B)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials",
+    "excerpt": "portfolio survey: stargazers_count 10372, forks_count 4253, commit_count 106, contributors 3, created 2016-11-05"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/stanford-tensorflow-tutorials/blob/master/README.md",
+    "excerpt": "'This repository contains code examples for the course CS 20: TensorFlow for Deep Learning Research.' ... 'For setup instruction and the list of dependencies, please see the setup folder of this repository.'"
+   }
+  ]
+ },
+ "notes": "Original teaching code for Stanford CS20 (word2vec, style transfer, chatbot, per-lecture examples) written incrementally across two course years, with starter and solution code and a setup/ folder the README points to. README itself is minimal (four lines) but every claim it makes is backed by the directory tree and commit history. Long archived (last push 2020); age is not a quality defect."
+}

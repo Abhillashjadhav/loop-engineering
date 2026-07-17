@@ -1,0 +1,49 @@
+{
+  "login": "hamelsmu",
+  "repo": "code_search",
+  "signals": {
+    "readme_claims_total": 5,
+    "readme_claims_code_backed": 3,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 5,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 2,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "deps_valid": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "issue_responses": 4,
+    "dependency_updates": 13,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No AI markers anywhere in 100 sampled commits (2018-2020, pre-AI-tooling era); authorship is Hamel Husain plus external human contributors and dependabot; counter-evidence not needed — hand-written tutorial era.",
+    "evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/code_search/tree/master/notebooks",
+        "excerpt": "Root: LICENSE, README.md, fastai/ (dir), gifs/ (dir), notebooks/ (dir), requirements/ (dir) — the notebooks and requirements the README points at exist."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/code_search/commit/fc3cd2d",
+        "excerpt": "External fixes merged: fc3cd2d Andrew Carr 'fix typo in processor keyword argument', c04c537 ohazyi 'fix folder path not exist bug', plus ~13 dependabot bumps (tensorflow-gpu 1.7.0->1.15.2, pyyaml 3.12->5.1, requests 2.18.4->2.20.0) merged 2019-2020."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/code_search",
+        "excerpt": "Metadata: 'Code For Medium Article: How To Create Natural Language Semantic Search...', language Jupyter Notebook, stargazers_count 491, forks_count 136, commit_count 162, contributors 7, created 2018-05-07."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/code_search/blob/master/README.md",
+        "excerpt": "'Warning - This Project Is Deprecated In Favor Of CodeSearchNet ... in retrospect this blog post is somewhat of an ugly hack.'"
+      }
+    ]
+  },
+  "notes": "2018 semantic code-search tutorial (5 notebooks) accompanying a Medium article; per fairness rules the notebooks are the deliverable, and they exist in the tree. Exceptional honesty signal: a prominent self-deprecation notice steering readers to the successor CodeSearchNet project and paper. The two unbacked claims are external Docker Hub images, which cannot be verified from the snapshot; maintenance history shows real community responsiveness (4 external fixes, 13 dependency bumps)."
+}

@@ -1,0 +1,51 @@
+{
+ "login": "shreyashankar",
+ "repo": "gpt3-sandbox",
+ "signals": {
+  "readme_claims_total": 7,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 25,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 8,
+  "dependency_updates": 27,
+  "docs_corrections": 8,
+  "ai_share_evidence": "2020-2023 project predating AI codegen tooling; no AI markers anywhere; counter-evidence: 13 distinct human commit authors in the last 100 commits, organic PR review traffic, and 27 dependabot dependency bumps individually merged by the owner.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/gpt3-sandbox",
+    "excerpt": "root-listing.json: api/, examples/, docs/, src/, public/ dirs plus package.json (1021 bytes) and yarn.lock (480951 bytes) \u2014 backs the Flask-backend/React-frontend and examples-directory claims."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/gpt3-sandbox/commits",
+    "excerpt": "2022-05-31 Cveinnt 'adding button loading state'; 2022-06-15 'Merge pull request #107 from Cveinnt/master'; 2023-02-16 dependabot 'Bump werkzeug from 1.0.1 to 2.2.3 in /api'; authors include Devin Stein (7), Michael Lavelle (12), gulan28 (2) \u2014 matching the README's authors list."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/gpt3-sandbox",
+    "excerpt": "page-1.json: 2867 stars, 860 forks, MIT license, created 2020-07-19, pushed 2023-10-04, 13 contributors."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/shreyashankar/gpt3-sandbox/blob/master/README.md",
+    "excerpt": "'create a file anywhere on your computer called openai.cfg ... run export OPENAI_CONFIG=/path/to/config/openai.cfg' and 'Please do not leave your secret key in plaintext in your pull request!' \u2014 explicit secret-handling policy."
+   }
+  ]
+ },
+ "notes": "A genuinely popular 2020 community project wrapping the GPT-3 API in a priming abstraction plus Flask/React demo app; multi-author history matches the README's credited authors. Secrets are handled via an external config file with an explicit no-plaintext-keys rule. The 'not for production' and Windows caveats are honest limitations; the one unbacked claim is the exact count of three example scripts, since the examples/ dir contents are not in the snapshot."
+}

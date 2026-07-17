@@ -1,0 +1,89 @@
+{
+  "repo": "hamel",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 87.5,
+      "polarity": "quality",
+      "evidence": "7/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 20.0,
+      "polarity": "risk",
+      "evidence": "template similarity 20%, boilerplate share 20%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 3/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "3/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 64.0,
+      "polarity": "quality",
+      "evidence": "24 distinct commit day(s), 3 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 57.0,
+      "polarity": "quality",
+      "evidence": "3 dependency update(s), 2 issue response(s), 4 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 66.7,
+      "polarity": "quality",
+      "evidence": "explanation quality 2/3, trade-offs=False, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 69.8,
+    "technical_proficiency": 41.0,
+    "ai_assistance_likelihood": 23.2,
+    "ai_assistance_confidence": 82.1,
+    "ai_slop_risk": 29.6,
+    "educational_value": 66.7,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 87.5,
+    "confidence": 82.1
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 82.1,
+    "evidence_and_counter_evidence": "Heavy, explicit AI attribution: ~50 Claude Co-Authored-By trailers (Opus 4.5/4.6/4.7, Sonnet 4.6), 26 commits authored by 'Devin AI'/'devin-ai-integration[bot]', 4 Amp co-authors, 4 'Generated with Claude Code' footers; counter-evidence: 3-year human history (2023-11 to 2026-06), owner-authored code-review-fix commits, version/release discipline (0.0.17 to 0.0.34).",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

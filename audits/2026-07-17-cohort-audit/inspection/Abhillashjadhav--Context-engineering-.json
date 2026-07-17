@@ -1,0 +1,70 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "Context-engineering-",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 30,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "All 11 commits are authored 'Claude' on a single day (2026-06-07, 'Step 0' through 'Step 8'); README describes Claude-in-session generation as the harness design but does not credit AI authorship of the repo; counter-evidence: the stepwise commit sequence maps one-to-one onto the four documented breaks, and runs/ plus eval/ artifacts exist to ground the results table.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/Context-engineering-",
+    "excerpt": "11 commits, 1 contributor, created 2026-06-07T10:15:24Z, pushed 2026-06-07T13:07:01Z (a ~3-hour build window), language Python, size 1101 KB; description: 'Context engineering deepdives'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/Context-engineering-/commits",
+    "excerpt": "2026-06-07 'Step 1: 25-item catalog + deterministic keyword retrieval' ... 'Step 4: break #1 — system instruction present-but-ignored (Replit pattern)' ... 'Step 8: trace dashboard, narration, README; close the capstone'; 'Add V1-vs-V2 HTML diff dashboard'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/Context-engineering-/tree/main",
+    "excerpt": "Root: data/, eval/, runs/, src/, NARRATION.md (5966 bytes), README.md — matching the documented layout (catalog, locked checklist, trajectory logs, narration)."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/Context-engineering-#readme",
+    "excerpt": "'break #1 and break #4 produce the same symptom (recommend an out-of-stock item → C1 fails) from opposite root causes ... The symptom doesn't tell you where it failed; the Context Audit does.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/Context-engineering-/tree/main",
+    "excerpt": "runs/ and eval/ directories exist alongside src/ and NARRATION.md — the claimed trajectory logs, locked checklist and write-up are present as artifacts, not just described."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/Context-engineering-/commits",
+    "excerpt": "Each break has its own commit with the specific input it compromises ('break #3 — compaction drops a constraint (inputs 4/7)'), matching the README's break-to-input mapping exactly."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Artifacts (runs/, eval/, NARRATION.md) ground the results table rather than leaving it as prose",
+    "Commit-by-commit structure mirrors the documented experimental design one-to-one",
+    "The design encodes builder/validator separation — an original methodological idea, not template filler"
+   ],
+   "review_notes": "The one-day, all-Claude-authored build pattern reads as a single-session AI capstone, but it is a coherent designed experiment with results artifacts, not a boilerplate dump. Weaknesses are absence of a limitations section and no dependency declaration; the 24/24 and 23/24 scores rest on the runs/ artifacts, which exist but whose contents were not inspected."
+  },
+  "evidence_conflicts": []
+ },
+ "notes": "A one-day, fully Claude-authored context-engineering experiment (baseline plus four deliberate context breaks with a locked scorer) whose README claims map cleanly onto the commit sequence and root artifacts. The same-symptom/different-root-cause finding and builder/validator separation are genuine original structure. No limitations section, no deps file, and the README does not credit the repo's own AI authorship even though every commit is Claude-authored."
+}

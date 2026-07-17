@@ -1,0 +1,91 @@
+{
+  "repo": "grok-build-vscode",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 91.7,
+      "polarity": "quality",
+      "evidence": "11/12 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 7.0,
+      "polarity": "risk",
+      "evidence": "template similarity 5%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 3/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 28.0,
+      "polarity": "quality",
+      "evidence": "1 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 60.0,
+      "polarity": "quality",
+      "evidence": "3/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 70.0,
+      "polarity": "quality",
+      "evidence": "27 distinct commit day(s), 0 refactor commit(s), 58 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 70.0,
+      "polarity": "quality",
+      "evidence": "3 dependency update(s), 19 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 71.0,
+    "technical_proficiency": 41.0,
+    "ai_assistance_likelihood": 0.5,
+    "ai_assistance_confidence": 82.1,
+    "ai_slop_risk": 25.8,
+    "educational_value": 100.0,
+    "distribution_strength": 40.0,
+    "claim_evidence_integrity": 91.7,
+    "confidence": 82.1
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 82.1,
+    "evidence_and_counter_evidence": "Generation markers: dominant 'Co-Authored-By: Claude' trailers, several commits authored by 'Claude', occasional Cursor mentions; counter-evidence: 27 distinct commit days over 2 months, 58 releases, external contributors (chenjie, Ming Ip), issue-driven fixes (#12-#49), a 26.6KB TESTS.md test taxonomy, and defensive engineering around a third-party CLI's regressions (#22 auto-pin/downgrade).",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

@@ -1,0 +1,51 @@
+{
+ "login": "shreyashankar",
+ "repo": "toy-ml-pipeline",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 3,
+  "dependency_updates": 2,
+  "docs_corrections": 6,
+  "ai_share_evidence": "2021-era project with no AI markers; counter-evidence: 93 saved commits of granular PR-based development by 5 human contributors, tracking component-by-component build-out ('Some bare bones cleaning', 'Train test split', 'Local inference flask app').",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/toy-ml-pipeline",
+    "excerpt": "root-listing.json: etl/, training/, inference/, utils/, eda/ dirs, Dockerfile (510 bytes), requirements.txt, setup.py, CITATION.cff, toy-ml-pipeline-diagram.svg (438775 bytes) \u2014 backs the README's component structure, Docker workflow, and diagram claims."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/toy-ml-pipeline/commits",
+    "excerpt": "2021-03-14 Joppe Geluykens 'feat(build): dockerize scripts' (merged PR #58); 2021-03-21 Vishwanath Seshagiri 'Modified: Changes to Dockerfile' (PR #59); 2022-01-04 Cristobal Alcazar 'intro notebook' (PR #66); 2021-03-03 'Adding unit tests for io'."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/toy-ml-pipeline",
+    "excerpt": "page-1.json: description 'Toy example of an applied ML pipeline for me to experiment with MLOps tools.', 211 stars, 34 forks, 4 contributors, created 2021-02-26."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/shreyashankar/toy-ml-pipeline/blob/main/README.md",
+    "excerpt": "'The logic in these components is a first pass; there is a lot of room to improve.' and 'If you have write permissions, store your keys/ids in an .env file and export them as environment variables.'"
+   }
+  ]
+ },
+ "notes": "A well-documented educational ML pipeline (NYC taxi tip prediction) with etl/training/inference layering, a utils abstraction layer, Docker per-component commands, and S3-backed versioned artifacts. External contributors dockerized it and added an EDA notebook via reviewed PRs. Honest about scope: 'first pass' logic, only io is unit-tested, and the stated F1 of 0.716 is the one claim not verifiable from the snapshot."
+}

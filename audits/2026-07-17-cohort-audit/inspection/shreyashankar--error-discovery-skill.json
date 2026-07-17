@@ -1,0 +1,43 @@
+{
+ "login": "shreyashankar",
+ "repo": "error-discovery-skill",
+ "signals": {
+  "readme_claims_total": 6,
+  "readme_claims_code_backed": 5,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 20,
+  "boilerplate_share_pct": 5,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 1,
+  "dependency_updates": 0,
+  "docs_corrections": 4,
+  "ai_share_evidence": "No AI-authorship attribution in README or the 16 saved commits; the repo was built fast (2026-06-23 to 06-25) but with distinct semantic feature commits ('Add Patterns view to skill (treemap of failure modes)', 'Split skill into build (SKILL.md) and run (review-loop.md)') and one merged external PR (strickvl), not a single dump.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/error-discovery-skill/blob/main/SKILL.md",
+    "excerpt": "root-listing.json: SKILL.md (14728 bytes), review-loop.md (5556 bytes), workflow.png (1580956 bytes) \u2014 backs the README's claims of full instructions, a run loop doc, and the workflow diagram."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/error-discovery-skill/commits",
+    "excerpt": "2026-06-24 'Use subagents to parallelize failure mode scanning', 'Add bulk accept/dismiss with checkboxes to skill'; 2026-06-25 'Merge pull request #1 from strickvl/main' (Alex Strick van Linschoten: 'Mention Monitor Tool in review loop instructions')."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/error-discovery-skill",
+    "excerpt": "page-1.json: description 'Interactive error analysis skill for AI agents. Studies LLM trace datasets, builds a review UI, monitors annotations, categorizes failure modes, proposes new samples.', 146 stars, created 2026-06-23."
+   }
+  ]
+ },
+ "notes": "An original agent-skill document for interactive error analysis of LLM traces; the markdown files are the deliverable. Feature claims in the README (treemap patterns view, bulk annotation, subagent scanning, build/run split) each map to a specific commit. The 'no dependencies' runtime claim rests on the docs alone, hence one claim counted unbacked."
+}

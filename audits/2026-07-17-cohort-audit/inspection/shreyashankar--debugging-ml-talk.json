@@ -1,0 +1,43 @@
+{
+ "login": "shreyashankar",
+ "repo": "debugging-ml-talk",
+ "signals": {
+  "readme_claims_total": 4,
+  "readme_claims_code_backed": 3,
+  "original_logic_notes": 2,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 0,
+  "explanation_quality": 1,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "2021-2022 talk artifacts, all 24 commits by the author, many via GitHub web UI ('Add files via upload'); no AI markers; slide decks evolving across dated uploads is counter-evidence against bulk generation.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/shreyashankar/debugging-ml-talk",
+    "excerpt": "root-listing.json: current.pdf (3904093 bytes), slides.pdf, Databricks_Talk_shreyashankar.pdf, mltrace_talk_short.pdf, monitoringchallenges.pdf, nyc_taxi_2020.ipynb (41927 bytes) \u2014 backs 'code and slides' and 'the most up-to-date slides are at current.pdf'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/shreyashankar/debugging-ml-talk/commits",
+    "excerpt": "2021-02-02 'Initial commit' then repeated 'Add files via upload' / 'Delete slides.pdf' cycles; 2021-11-23 'Re-upload notebook with cell outputs' era edits; 2022-02-22 'Adding monitoring slides' \u2014 24 commits, single author."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/shreyashankar/debugging-ml-talk",
+    "excerpt": "page-1.json: description 'Code accompanying the \\\"Debugging machine learning in production\\\" talk', Jupyter Notebook, 31 stars, size 15399 KB, pushed 2022-02-22."
+   }
+  ]
+ },
+ "notes": "A talk-artifact repo: the slide decks and the companion notebook are the deliverable, and each README claim about contents maps to a file in the root. The venue list (Stanford MLSys, Databricks Summit, etc.) is externally unverifiable from the snapshot, which accounts for the one unbacked claim. No setup instructions exist, but the notebook was re-uploaded with cell outputs so it teaches without being run."
+}

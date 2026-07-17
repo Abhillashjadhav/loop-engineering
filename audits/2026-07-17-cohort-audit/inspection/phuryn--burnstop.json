@@ -1,0 +1,80 @@
+{
+ "login": "phuryn",
+ "repo": "burnstop",
+ "signals": {
+  "readme_claims_total": 7,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 3,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 15,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "Generation markers: both commits carry 'Co-Authored-By: Claude' and claude.ai/code trailers ('Release v1.0.0: burnstop, a budget fuse for Claude Code'); counter-evidence: shipped with tests/ + passing CI (tests.yml, ci_runs true), a CHANGELOG, CONTRIBUTING.md, and docs/spikes.md recording rejected design alternatives \u2014 atypical scaffolding for a throwaway dump.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/burnstop",
+    "excerpt": "page-1.json: 8 stars, 3 forks, 2 commits, 1 contributor, 1 release, has_tests/has_ci/runnable_setup true, created and last pushed 2026-06-22 (single day); topics: budget, guardrail, hooks, plugin."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/burnstop/commits",
+    "excerpt": "Only two commits, both 2026-06-22: 'Release v1.0.0: burnstop, a budget fuse for Claude Code' and 'docs: add hero screenshot to README' \u2014 a single-day v1.0.0 release."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/burnstop/tree/main",
+    "excerpt": "Root: cli.py (11,861 B), hook.py (8,662 B), meter.py (8,926 B), dispatch.py (2,155 B), tests/, hooks/, commands/, .claude-plugin/, docs/, CHANGELOG.md, CONTRIBUTING.md, AGENTS.md (6,901 B)."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/burnstop/blob/main/.github/workflows",
+    "excerpt": "workflows-listing.json: tests.yml + tag-on-merge.yml \u2014 the same test-gate + auto-tag pattern as sibling repos pm-skills and claude-usage."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/burnstop#readme",
+    "excerpt": "'Limitations (honest): Bounded overshoot, not surgical: the fuse is ~one turn behind, and a subagent already mid-run can't be killed... Loop detection is a heuristic; the budget cap is the deterministic backstop.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/burnstop/tree/main",
+    "excerpt": "Despite the 2-commit history, the root contains a full plugin structure: tests/, .claude-plugin/, commands/, hooks/, scripts/, docs/, CHANGELOG.md and CONTRIBUTING.md \u2014 every install path and command the README names has a corresponding artifact."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/burnstop/blob/main/.github/workflows",
+    "excerpt": "tests.yml exists and the metadata records ci_runs true \u2014 the tests the README implies are wired into CI, not decorative."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/burnstop#readme",
+    "excerpt": "'Why a hook and not a proxy: docs/spikes.md' \u2014 the repo documents rejected design alternatives, and the Limitations section is candid about overshoot and heuristics, the opposite of overclaiming."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Complete artifact-to-claim mapping: every README claim (hooks, commands, plugin install, tests, architecture doc, spikes doc) has a visible file or directory behind it.",
+    "CI is configured and has run (tests.yml, ci_runs true) \u2014 a tested, released v1.0.0, not an unverified dump.",
+    "Honest 'Limitations (honest)' section plus a spikes doc explaining the discarded proxy approach shows design work preceded the single-day publish."
+   ],
+   "review_notes": "The 2-commit single-day history is a publish pattern (likely developed elsewhere and squashed), not evidence of low effort: the shipped content is coherent, tested, honestly scoped, and integrates with the author's companion tools. Negative reading limited to 'history opacity', not quality."
+  }
+ },
+ "notes": "A small, complete Claude Code budget-fuse plugin: Stop-hook spend recomputation from local transcripts, $50 auto-arm on /goal, loop-detection heuristic with the cap as deterministic backstop, and a self-exemption so the fuse cannot lock the user out. Published as a single-day, 2-commit v1.0.0 (history developed off-repo), but with tests, CI, CHANGELOG, spikes doc, and an unusually candid limitations section. Shares the house tag-on-merge/tests.yml/companion-badge pattern with pm-skills and claude-usage."
+}

@@ -1,0 +1,58 @@
+{
+ "login": "chiphuyen",
+ "repo": "chiphuyen",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 5,
+  "template_similarity_pct": 30,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 2,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 2,
+  "dependency_updates": 0,
+  "docs_corrections": 6,
+  "ai_share_evidence": "Profile README (prose only); follows the common GitHub profile-README emoji-bullet convention (default template comment still present); no AI markers; edits are small human-scale link/typo fixes over six years, two from external contributors.",
+  "evidence": [
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/chiphuyen",
+    "excerpt": "root-listing.json: single entry README.md (2129 B)"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/chiphuyen/commits",
+    "excerpt": "2020-09-29 'Initial commit' ... 2025-02-05 tfmorris 'Fix dead Goodreads link', 2025-12-10 henrynnamani 'Fix typo in teaching experience description', 2026-06-24 'Fix link in README.md for GoodAIList' (16 commits)"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/chiphuyen",
+    "excerpt": "portfolio survey: profile repo, stargazers_count 77, commit_count 16, contributors 3, created 2020-09-29; sibling repos aie-book, dmls-book, ml-interviews-book, sniffly, lazynlp, sotawhat all exist in the same portfolio, corroborating the README's project claims"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/chiphuyen/blob/main/README.md",
+    "excerpt": "'I build micro tools... Sniffly for Claude Code analysis, lazynlp, and sotawhat. I'm the author of AI Engineering and Designing Machine Learning Systems. My book on machine learning interviews is open-sourced and free!'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen",
+    "excerpt": "portfolio survey lists sibling repos aie-book, dmls-book, ml-interviews-book, sniffly, lazynlp and sotawhat \u2014 every GitHub-hosted project named in the profile README is verified; the 3/8 unbacked claims (GoodAIList, KilledByGPT, film/Vietnamese-book bio) point off-GitHub"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/chiphuyen/commits",
+    "excerpt": "Small human-scale corrections over six years: tfmorris 'Fix dead Goodreads link' (2025-02-05), henrynnamani 'Fix typo in teaching experience description' (2025-12-10), 'Fix link in README.md for GoodAIList' (2026-06-24) \u2014 the bio is actively corrected, not abandoned puffery"
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "outcome": "Unverifiable items are personal-bio claims outside GitHub, appropriate for a profile README; nothing contradicts saved artifacts, so this is recorded as 'not observed', not as unbacked technical claims."
+  }
+ },
+ "notes": "GitHub profile README: personal bio linking to books, tools, and teaching. All claims about GitHub-hosted projects cross-check against sibling repos in the portfolio survey; external-site and biographical claims are simply not observable from snapshots. Maintained with small fixes over six years, including two merged outside corrections."
+}

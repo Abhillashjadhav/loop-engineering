@@ -1,0 +1,95 @@
+{
+  "repo": "stfu",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 85.7,
+      "polarity": "quality",
+      "evidence": "6/7 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 7.0,
+      "polarity": "risk",
+      "evidence": "template similarity 5%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 3/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 36.0,
+      "polarity": "quality",
+      "evidence": "2 test file(s), CI=True, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 9.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 1 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 10.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 2 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 80.0,
+      "polarity": "quality",
+      "evidence": "3 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 58.8,
+    "technical_proficiency": 33.0,
+    "ai_assistance_likelihood": 3.8,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 36.8,
+    "educational_value": 100.0,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 85.7,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [],
+      "review_notes": ""
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "No AI-attribution trailers in any of the 20 commits; the only co-author trailer is a human (Greg Ceccarelli, 4 commits). Polished conventional messages over a 2-day sprint could be agent-assisted, but nothing observable confirms it; counter-evidence: TEST_PLAN.md, targeted regression tests, and safety-hardening iterations.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

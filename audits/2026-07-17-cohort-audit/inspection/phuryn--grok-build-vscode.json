@@ -1,0 +1,56 @@
+{
+ "login": "phuryn",
+ "repo": "grok-build-vscode",
+ "signals": {
+  "readme_claims_total": 12,
+  "readme_claims_code_backed": 11,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 5,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 3,
+  "issue_responses": 19,
+  "dependency_updates": 3,
+  "docs_corrections": 2,
+  "ai_share_evidence": "Generation markers: dominant 'Co-Authored-By: Claude' trailers, several commits authored by 'Claude', occasional Cursor mentions; counter-evidence: 27 distinct commit days over 2 months, 58 releases, external contributors (chenjie, Ming Ip), issue-driven fixes (#12-#49), a 26.6KB TESTS.md test taxonomy, and defensive engineering around a third-party CLI's regressions (#22 auto-pin/downgrade).",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/phuryn/grok-build-vscode",
+    "excerpt": "page-1.json: 80 stars, 19 forks, 158 commits, 6 contributors, 58 releases, has_tests/has_ci true, created 2026-05-17, pushed 2026-07-17, 27 distinct commit days, commit_msg_uniformity 2%, 8 open issues."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/phuryn/grok-build-vscode/commits",
+    "excerpt": "'Auto-pin broken Grok CLI 0.2.61-0.2.64 + block unsupported updates (#22) (v1.4.12)' (2026-06-25); 'Fix #33: improve model configuration error handling' (Ming Ip, 2026-07-09); 'fix(webview): widen inline-diff line-number gutter' (chenjie, 2026-07-14); 'Allow read-only command chains in plan mode (#36)'; 'docs(acp-feedback): source-verify every section against the open-sourced CLI' (2026-07-16); 'Release v1.7.0' (2026-07-17)."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/phuryn/grok-build-vscode/tree/main",
+    "excerpt": "Root: src/, test/, integration/, research/, docs/, media/, resources/, scripts/, TESTS.md (26,627 B), CLAUDE.md (86,751 B), package.json (13,263 B), vitest.config.ts + vitest.perf.config.ts, .vscode-test.mjs."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/phuryn/grok-build-vscode/blob/main/.github/workflows",
+    "excerpt": "workflows-listing.json: ci.yml (866 B) \u2014 matches the README's 'npm test ... exactly what CI runs' grok-free suite claim."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/phuryn/grok-build-vscode#readme",
+    "excerpt": "'Plan Mode is the one place the extension is not thin. The CLI's exit_plan_mode is unreliable (it reports \"approved\" to any reply), so the extension enforces planning itself' \u2014 plus a Known limits section and an unaffiliated-trademark disclaimer for xAI."
+   }
+  ]
+ },
+ "notes": "The portfolio's most sustained engineering artifact: 158 commits on 27 distinct days, 58 releases in two months, external contributors, and issue-referenced fixes for real-world breakage in the upstream Grok CLI (auto-pin/downgrade around #22, plan-mode gating where the CLI misreports approval). Feature claims in the very long README map one-to-one onto the commit history (voice v1.3.0, media v1.4.x, vision input, Agent Dashboard, MathJax/Mermaid) and onto test scaffolding (TESTS.md, vitest, .vscode-test). Heavily Claude co-authored with occasional low-effort messages ('OK', 'grok_4.5'), but the trajectory is iterative maintenance, not a dump."
+}

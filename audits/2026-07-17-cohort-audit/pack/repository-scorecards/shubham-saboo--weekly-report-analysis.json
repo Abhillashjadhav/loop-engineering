@@ -1,0 +1,96 @@
+{
+  "repo": "weekly-report-analysis",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 66.7,
+      "polarity": "quality",
+      "evidence": "2/3 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: False"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 13.0,
+      "polarity": "risk",
+      "evidence": "template similarity 15%, boilerplate share 10%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 0/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 4.0,
+      "polarity": "quality",
+      "evidence": "2 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 15.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 3 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "1 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 13.3,
+      "polarity": "quality",
+      "evidence": "explanation quality 1/3, trade-offs=False, limitations=False, runnable learning=False"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 23.8,
+    "technical_proficiency": 15.0,
+    "ai_assistance_likelihood": 8.2,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 63.5,
+    "educational_value": 13.3,
+    "distribution_strength": 5.0,
+    "claim_evidence_integrity": 66.7,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "INSUFFICIENT_EVIDENCE",
+    "value_labels": [],
+    "rationale": "no classification criteria met with sufficient evidence",
+    "counter_evidence": {
+      "reviewed": true,
+      "strongest_counter_evidence": [
+        "Every physical artifact the README references (workflow diagram, app) is present in the listing",
+        "Iterated within the day and revisited a month later; modest scope honestly presented with no inflated claims"
+      ],
+      "review_notes": "The negative reading is documentation thinness: no install/run steps (requirements.txt exists but the README never references it, so deps_valid is omitted) and no statement of what powers the summarization/Q-A. The two-endpoint claim is credited as backed only jointly by app.py's existence since file content was not captured."
+    }
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "0-25",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "No AI-generation markers; late-2022 era, 9 small commits across 2 distinct days plus a logo touch-up a month later ('chore: updated logo', Jan 2023) \u2014 hand-iterated micro-project.",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

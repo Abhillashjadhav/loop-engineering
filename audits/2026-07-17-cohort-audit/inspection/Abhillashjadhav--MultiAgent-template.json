@@ -1,0 +1,72 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "MultiAgent-template",
+ "signals": {
+  "readme_claims_total": 0,
+  "readme_claims_code_backed": 0,
+  "original_logic_notes": 1,
+  "meaningful_adaptation": false,
+  "template_similarity_pct": 30,
+  "boilerplate_share_pct": 40,
+  "explanation_quality": 0,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": false,
+  "setup_reproducible": false,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 1,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "Initial commit 'Bootstrap multi-agent template (agents + structure)' is Claude-authored; subsequent human commits are GitHub-web 'Create/Update' file drops; 76 of the last 100 commits are github-actions 'Update market data' bot commits; no README disclosure either way.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/MultiAgent-template",
+    "excerpt": "90 commits, 3 contributors, created 2025-11-11, pushed 2026-07-13, size 19316 KB, no description, has_tests true, has_ci true, dependencies_declared false."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/MultiAgent-template/commits",
+    "excerpt": "2025-11-11 [Claude] 'Bootstrap multi-agent template (agents + structure)'; 2025-11-12/13 owner 'Create fetch_real_yahoo_data.py', 'Create fetch_3000_nasdaq.py'; thereafter twice-weekly '[github-actions[bot]] Update market data - ...' through 2026-07-13."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main",
+    "excerpt": "Root: README.md (23 bytes), .claude/, .github/, docs/, fetch_3000_nasdaq.py, fetch_all_nasdaq_stocks.py, fetch_real_yahoo_data.py, init_database.py, test_yfinance_quick.py, nasdaq_stocks.db (1.29 MB checked in), fetch-3000-nasdaq.yml duplicated at root."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main/.github/workflows",
+    "excerpt": "fetch-3000-nasdaq.yml and fetch-market-data.yml — scheduled market-data fetch jobs, matching the bot commit stream."
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main/.github/workflows",
+    "excerpt": "The scheduled data pipeline has run reliably twice a week for eight months — the automation itself works."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/MultiAgent-template/tree/main",
+    "excerpt": ".claude/ and docs/ directories from the multi-agent bootstrap persist at root; the template content the name promises may live inside them, which the root-only listing cannot confirm or refute."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Working scheduled automation (8 months of successful bot runs) is a real, functioning artifact",
+    ".claude/ and docs/ contents are not visible in the root listing, so the 'template' half of the repo cannot be ruled absent",
+    "A one-line README makes no claims, so nothing is overclaimed"
+   ],
+   "review_notes": "The negative reading is a name/content mismatch: a repo titled 'MultiAgent-template' with a 23-byte README whose visible activity is a NASDAQ data-fetch loop with a 1.3 MB sqlite database committed to git. Under the fairness rules this is undocumented and repurposed rather than deceptive — there are zero claims to be unbacked. Confidence in any stronger negative label is limited by the unviewable .claude/ and docs/ directories."
+  },
+  "evidence_conflicts": [
+   "Repo name and README title say 'Multi-Agent Template'; the visible root files, workflows and 76/100 bot commits are a NASDAQ market-data fetch pipeline — the repo appears repurposed from its bootstrap."
+  ]
+ },
+ "notes": "A repo whose name promises a multi-agent template but whose visible life is a twice-weekly NASDAQ data-fetch automation: flat fetch scripts at root, a 1.29 MB checked-in sqlite db, and 76 of the last 100 commits from the data bot. The README is a bare title, so nothing is claimed, documented, or reproducible. The Claude-authored bootstrap's .claude/ and docs/ dirs remain and are not inspectable from the root listing, which caps how negative a conclusion the evidence supports."
+}

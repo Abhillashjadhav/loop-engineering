@@ -1,0 +1,64 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "Indian-stocks-deepdive-and-trading-agents",
+ "signals": {
+  "original_logic_notes": 3,
+  "template_similarity_pct": 20,
+  "explanation_quality": 0,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "setup_reproducible": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 2,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 0,
+  "ai_share_evidence": "All 100 sampled commits are github-actions bot cycle/digest commits (e.g. 'Auto: scalper cycle', 'Auto: EOD digest') — human/AI authorship of the underlying code is not observable in this window; CLAUDE.md at root indicates Claude Code-driven development; no README exists to make or disclose any claim.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents",
+    "excerpt": "778 commits, 2 contributors, 1 star, created 2026-05-08, pushed 2026-07-17T11:47:46Z, has_tests true, has_ci true, dependencies_declared true; description: 'Building different trading strategies for the indian stock markets to choose winners'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/commits",
+    "excerpt": "Last 100 commits (2026-07-10 through 2026-07-17) are all github-actions[bot], e.g. 'Auto: scalper cycle 16:45 2026-07-17T11:15:23Z', 'Auto: mean_reversion cycle 16:42 ...', 'Auto: EOD digest 2026-07-17' — the system runs itself on market days."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/tree/main",
+    "excerpt": "Root: .github/, CLAUDE.md, requirements.txt, runs/, state/, tests/, trading/ — code package, state store, run outputs and tests present; no README."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/tree/main/.github/workflows",
+    "excerpt": "Six workflows: agent-gap-and-go.yml, agent-mean-reversion.yml, agent-momentum.yml, agent-scalper.yml, agent-swing.yml, eod-digest.yml — five distinct strategy agents plus a daily digest."
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents/tree/main/.github/workflows",
+    "excerpt": "Five separately-defined strategy workflows firing on distinct intraday schedules is a working operational system, not a static dump."
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/Indian-stocks-deepdive-and-trading-agents",
+    "excerpt": "778 total commits over ~10 weeks with tests and declared dependencies — sustained activity far beyond the bot-only sample window."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Six scheduled workflows demonstrably executing every market day (bot commits carry per-cycle timestamps)",
+    "tests/, state/ and runs/ structure plus declared dependencies indicate an engineered system",
+    "The 100-commit snapshot window is saturated by automation; it cannot fairly characterize the human development history"
+   ],
+   "review_notes": "The absence of a README means zero documented claims, setup or limitations — a real documentation gap for a 778-commit repo. But everything the snapshot does show (workflows, package structure, live scheduled operation) is consistent with a functioning multi-strategy trading automation. Recorded less rather than more: authorship split, code quality and strategy logic are not observable from this snapshot."
+  },
+  "evidence_conflicts": []
+ },
+ "notes": "A live, self-running Indian-market trading system: five strategy agents plus an EOD digest execute on intraday GitHub Actions schedules, and all 100 sampled commits are their bot outputs. The repo has real structure (trading/, state/, runs/, tests/, requirements.txt) but no README at all, so there are no documented claims, no setup path, and no disclosed limitations. Judged only on what the listing, workflows and commits ground."
+}

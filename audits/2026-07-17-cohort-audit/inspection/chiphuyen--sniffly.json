@@ -1,0 +1,76 @@
+{
+ "login": "chiphuyen",
+ "repo": "sniffly",
+ "signals": {
+  "readme_claims_total": 8,
+  "readme_claims_code_backed": 6,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 15,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "setup_reproducible": true,
+  "secrets_policy_ok": true,
+  "deps_valid": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 9,
+  "dependency_updates": 0,
+  "docs_corrections": 5,
+  "ai_share_evidence": "Markers: Claude Code-domain tool with ~20 commits in the first two days (2025-07-15/16), consistent with AI-assisted rapid development. Counter-evidence: three weeks of iterative fixes and releases (0.1.0-0.1.5), external contributor PRs merged (Windows/winloop support, host-parameter fix), CI lint+build workflows, tests dir, run_tests.py and CHANGELOG maintained. No explicit AI-authorship attribution observed.",
+  "evidence": [
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/chiphuyen/sniffly/blob/main/.github/workflows/build.yml",
+    "excerpt": "workflows-listing.json: build.yml (1071 B) and lint.yml (1317 B) under .github/workflows/"
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/chiphuyen/sniffly",
+    "excerpt": "root-listing.json: pyproject.toml (2320 B), requirements.txt (362 B), requirements-dev.txt (304 B), tests/, run_tests.py (10467 B), CHANGELOG.md (2465 B), .env.example (1298 B), docs/, sniffly/, sniffly-site/, LICENSE"
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/sniffly/commits",
+    "excerpt": "2025-07-15 'Initial release' ... 'Add share API for users to upload their data', 'Fix error analysis (#15)', 'Merge pull request #2 from ledmaster/feat/windows-support-winloop', 2025-08-08 'Add MIT License file (#18)'"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/sniffly",
+    "excerpt": "portfolio survey: has_tests true, has_ci true, dependencies_declared true, releases 3, runnable_setup_documented true, stargazers_count 1247, contributors 3"
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/chiphuyen/sniffly/blob/main/README.md",
+    "excerpt": "'uvx sniffly@latest init' ... 'Sniffly runs entirely on your local machine: All data processing happens locally, No telemetry'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/chiphuyen/sniffly/commits",
+    "excerpt": "Initial two-day burst (~20 commits 2025-07-15/16) is followed by weeks of iteration: 'Merge pull request #7 from droidraja/fix/host-parameter-config' (2025-07-21), 'Fix error analysis (#15)' and 'Release 0.1.5 (#16)' (2025-07-28), 'Add MIT License file (#18)' (2025-08-08)"
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/chiphuyen/sniffly/blob/main/.github/workflows/lint.yml",
+    "excerpt": "workflows-listing.json: build.yml (1071 B) and lint.yml (1317 B) under .github/workflows/ \u2014 CI hygiene inconsistent with a one-shot dump"
+   },
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/chiphuyen/sniffly",
+    "excerpt": "portfolio survey: releases 3, has_tests true, has_ci true, contributors 3 \u2014 tagged releases and external contributors counter the one-shot-dump read"
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "outcome": "Not a one-shot dump: sustained iteration, community PRs, CI and releases all present in saved snapshots. Privacy/no-telemetry claim and hosted gallery are not verifiable from artifacts, hence 6/8 backed."
+  }
+ },
+ "notes": "Original working Python application: a Claude Code analytics dashboard with CLI, config system, share feature and separate site component. Strongest engineering hygiene of the ten (tests, CI lint+build workflows, CHANGELOG, .env.example, three releases). Rapid initial build followed by real maintenance and merged external contributions."
+}

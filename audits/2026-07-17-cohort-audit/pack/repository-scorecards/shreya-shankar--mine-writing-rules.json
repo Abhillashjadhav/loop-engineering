@@ -1,0 +1,91 @@
+{
+  "repo": "mine-writing-rules",
+  "deep_inspected": true,
+  "dimensions": [
+    {
+      "key": "claim_functionality_integrity",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "8/8 README claims backed by executable code/tests"
+    },
+    {
+      "key": "original_problem_decision_content",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "4 instance(s) of original logic/product reasoning/architecture rationale; meaningful adaptation: True"
+    },
+    {
+      "key": "template_duplication_risk",
+      "score": 5.0,
+      "polarity": "risk",
+      "evidence": "template similarity 5%, boilerplate share 5%"
+    },
+    {
+      "key": "engineering_depth",
+      "score": 6.7,
+      "polarity": "quality",
+      "evidence": "0/5 depth markers present; integration complexity 1/3"
+    },
+    {
+      "key": "verification_depth",
+      "score": 0.0,
+      "polarity": "quality",
+      "evidence": "0 test file(s), CI=False, failure handling tested=False"
+    },
+    {
+      "key": "runnable_integrity",
+      "score": 20.0,
+      "polarity": "quality",
+      "evidence": "1/5 runnable-integrity markers (reproducible setup, valid deps, secrets policy, current APIs, smoke path)"
+    },
+    {
+      "key": "development_evolution",
+      "score": 8.0,
+      "polarity": "quality",
+      "evidence": "4 distinct commit day(s), 0 refactor commit(s), 0 release(s), one-shot dump=False"
+    },
+    {
+      "key": "maintenance_stewardship",
+      "score": 5.0,
+      "polarity": "quality",
+      "evidence": "0 dependency update(s), 0 issue response(s), 1 docs correction(s)"
+    },
+    {
+      "key": "architecture_proportionality",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "2 abstraction layer(s); complexity justified=True (decorative agents/frameworks penalised)"
+    },
+    {
+      "key": "educational_value",
+      "score": 100.0,
+      "polarity": "quality",
+      "evidence": "explanation quality 3/3, trade-offs=True, limitations=True, runnable learning=True"
+    }
+  ],
+  "scores": {
+    "human_reasoning_evidence": 58.3,
+    "technical_proficiency": 22.3,
+    "ai_assistance_likelihood": 27.5,
+    "ai_assistance_confidence": 75.0,
+    "ai_slop_risk": 37.3,
+    "educational_value": 100.0,
+    "distribution_strength": 20.0,
+    "claim_evidence_integrity": 100.0,
+    "confidence": 75.0
+  },
+  "classification": {
+    "primary": "EDUCATIONAL_OR_CURATED_VALUE",
+    "value_labels": [
+      "EDUCATIONAL_OR_CURATED_VALUE"
+    ],
+    "rationale": "highest-priority label meeting its criteria: EDUCATIONAL_OR_CURATED_VALUE",
+    "counter_evidence": null
+  },
+  "ai_share": {
+    "estimated_ai_assisted_code_share_range": "25-50",
+    "confidence": 75.0,
+    "evidence_and_counter_evidence": "README openly attributes extraction to Claude Code agent workflows ('It starts many small AI agents, hands each one a part of the data'); the human contribution is the pipeline design and curation. Counter-evidence against slop: specific incremental commits over 4 days including a data-integrity fix ('Write corrected counts back into writing-rules.json metadata').",
+    "note": "exact AI-generated code percentage is not inferable from public code without provenance logs; this range is a conservative signal-based estimate and is not the slop score"
+  }
+}

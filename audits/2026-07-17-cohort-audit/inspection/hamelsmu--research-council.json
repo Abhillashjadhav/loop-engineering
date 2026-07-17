@@ -1,0 +1,50 @@
+{
+  "login": "hamelsmu",
+  "repo": "research-council",
+  "signals": {
+    "readme_claims_total": 8,
+    "readme_claims_code_backed": 6,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 20,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "secrets_policy_ok": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 2,
+    "complexity_justified": true,
+    "integration_complexity": 2,
+    "issue_responses": 1,
+    "dependency_updates": 0,
+    "docs_corrections": 3,
+    "ai_share_evidence": "21 commits carry Co-Authored-By: Claude Opus 4.6 trailers — disclosed AI-assisted authoring; counter-evidence: five days of human-paced iteration with a deliberate architecture reversal (Gemini agent removed for reliability, commit bd86b7e) and PR-review-response commits.",
+    "evidence": [
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/research-council/tree/main",
+        "excerpt": "Root: commands/, hooks/, prompts/, scripts/ (dirs), .claude-plugin/, AGENTS.md (785 B), testing.md (12820 B) — plugin structure plus a substantial testing guide, as the README claims."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/research-council/commit/bd86b7e",
+        "excerpt": "'feat: remove Gemini CLI, run research with Claude + Codex only' backs the README's removal note; also 77f4d83 'Add pre-flight smoke tests, fatal error detection, e2e test runner, and testing guide' and 5b1f417 'fix: address PR review feedback — remove dead RESEARCH_HOOK_FORMAT code'."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/research-council",
+        "excerpt": "Metadata: language Shell, stargazers_count 101, forks_count 14, commit_count 27, contributors 1, created 2026-02-23, pushed 2026-02-27, runnable_setup_documented true."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/research-council/blob/main/README.md",
+        "excerpt": "'Gemini CLI was previously included as a third agent but was removed due to persistent flakiness — frequent quota errors, sandbox limitations ... The two-agent setup (Claude + Codex) is more reliable'; troubleshooting covers stale locks, orphan adoption, and a 2-hour timeout."
+      }
+    ]
+  },
+  "notes": "Multi-agent deep-research orchestrator (Claude + Codex with cross-pollination refinement) built on a Stop-hook architecture explicitly chosen to escape the 10-minute Bash timeout — tradeoffs and failure modes are unusually well documented, including the honest removal of the flaky Gemini agent. No API keys are stored; auth is delegated to each CLI's login flow. Shares the stop-hook orchestration pattern with sibling repo claude-review-loop (moderate portfolio similarity), but the research pipeline logic is distinct. Claims about runtime output layout and model settings are consistent with, though not fully provable from, the snapshot."
+}

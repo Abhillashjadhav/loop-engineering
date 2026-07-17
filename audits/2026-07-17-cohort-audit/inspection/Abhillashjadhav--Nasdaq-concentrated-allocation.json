@@ -1,0 +1,58 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "Nasdaq-concentrated-allocation",
+ "signals": {
+  "readme_claims_total": 10,
+  "readme_claims_code_backed": 10,
+  "original_logic_notes": 5,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 10,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": false,
+  "secrets_policy_ok": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 4,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 1,
+  "docs_corrections": 2,
+  "ai_share_evidence": "44 of the last 77 commits are 'Claude'-authored feature/fix commits with recurring '(pr-reviewer nit)' follow-ups, merged via owner PRs over one week (2026-06-14/21); counter-evidence: real-world debugging arcs (cache poisoning, blank SimFin Publish Date, EDGAR throttling leading to its removal) and a self-adverse KILL verdict argue against uncurated generation. README carries no AI credit.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation",
+    "excerpt": "77 commits, 3 contributors, created 2026-06-14, pushed 2026-06-21, has_tests true, has_ci true, dependencies_declared true; description: 'Identifying the patterns and building agentic workflow to determine the future winners with allocation'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation/commits",
+    "excerpt": "'PR 3: data-integrity eval layer — hard no-peek, coverage/survivorship, filing-lag, adapter resilience'; 'PR 11 (§9.11): two-arm stats engine + calibration eval'; 'Remove EDGAR; SimFin-only ingest with blank-Publish-Date e2e test (#35)'; 'docs: README framing the honest KILL verdict and the discipline behind it'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation/tree/main",
+    "excerpt": "Root: backtest/, data/, evals/, macro/, signals/, stats/, store/, universe/, tests/, report/, run.py, ARCHITECTURE.md, pytest.ini, requirements.txt — one directory per README component."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation/tree/main/.github/workflows",
+    "excerpt": "ci.yml (1669 bytes); commit history additionally shows 'Harden CI secret scan: vendor-prefix detection, fewer false positives'."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/Nasdaq-concentrated-allocation#readme",
+    "excerpt": "'The universe was 28 hand-picked survivors. ... Any verdict on this universe is a verdict about the pipeline's correctness, not about the strategy's real edge.'"
+   }
+  ],
+  "evidence_conflicts": [
+   "Initial-day commit 'Scaffold stockscope backtest harness; purge job-agent + leaked secret' records that a secret was committed and purged at scaffold time; subsequent 'Harden CI secret scan' and the README's env-var key handling (STOCKSCOPE_SIMFIN_API_KEY) show remediation — secrets_policy_ok reflects the end state, not a clean history."
+  ]
+ },
+ "notes": "The strongest engineering artifact in this portfolio: a backtest harness whose headline result is an honest KILL, with every README claim (no-peek chokepoint, survivorship test, two-arm stats, calibration, verdict logic) traceable to a specific PR in the commit history and a matching root directory. Limitations are stated against self-interest and non-vacuity proofs are described for each guard. Caveats: no install/run instructions in the README, and a scaffold-day leaked secret that was purged and followed by CI secret-scan hardening."
+}

@@ -1,0 +1,59 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "equity-resaerch-agentic-workflow",
+ "signals": {
+  "readme_claims_total": 7,
+  "readme_claims_code_backed": 7,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 15,
+  "boilerplate_share_pct": 10,
+  "explanation_quality": 2,
+  "tradeoffs_discussed": false,
+  "limitations_disclosed": false,
+  "runnable_learning": true,
+  "setup_reproducible": false,
+  "secrets_policy_ok": true,
+  "ai_tool_attribution": false,
+  "mass_generated_siblings": 0,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "integration_complexity": 2,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 1,
+  "ai_share_evidence": "Development commits are 'Claude'-authored phase commits (e.g. 'Phase 3.2: deterministic three-question Analyst orchestrator') merged by the owner from claude/* branches; 23 of the last 47 commits are github-actions weekly-run bots; counter-evidence: honest-curation commits ('Phase 3.7: expand NYSE seed universe 131 → 289 (target was ~400; honest curation over padding)') and threshold-tuning iterations show deliberate human-guided calibration.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow",
+    "excerpt": "47 commits, 3 contributors, 1 star, created 2026-05-01, pushed 2026-07-16, has_tests true, has_ci true, dependencies_declared true; description: 'Evaluates all the equity stocks across the globe and recommend high beta'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow/commits",
+    "excerpt": "Bot commits 'Auto: weekly screen 2026-07-09' / 'Auto: weekly react analysis 2026-07-09' confirm the cron actually runs; build commits 'Phase 2.5: evidence collector tools (SEC, Finnhub, FRED, peer reaction)' and 'Phase 3 v3: three-question Analyst (mispricing → time horizon → risk)' match the README phases."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow/tree/main",
+    "excerpt": "Root: tools/, runs/, tests/, config/, scripts/, MASTER_PLAN.md, SKILL.md, CLAUDE.md, requirements.txt, .env.example, conftest.py — every document the README links to is present."
+   },
+   {
+    "origin": "ci_config",
+    "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow/tree/main/.github/workflows",
+    "excerpt": "weekly-screen.yml and weekly-react.yml exist, backing the README's Thursday-cron claim."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/equity-resaerch-agentic-workflow#readme",
+    "excerpt": "'the run produces 0-5 high-conviction picks (or none — empty inboxes are a feature)'."
+   }
+  ],
+  "evidence_conflicts": [
+   "Repo description 'Evaluates all the equity stocks across the globe and recommend high beta' overstates the README's actual scope (NASDAQ + NSE tech, market cap >= $200M, high-conviction picks).",
+   "Bot commits titled 'Auto: weekly react analysis 2026-05-14' were committed repeatedly on 2026-05-21/28, 06-04/11/18 — five weekly runs re-emitted an analysis dated 05-14, suggesting a stale-date or stalled-output bug during that period."
+  ]
+ },
+ "notes": "A genuinely operating weekly equity-research pipeline: the README's screener/evidence-tools/three-question-analyst claims are each backed by workflows, bot run-commits, and the tools/runs/tests tree. Original discipline shows in source-tiering (Tier C dropped at ingest) and empty-inbox-is-a-feature framing. Weak spots: no install/setup steps, no limitations section, a hyperbolic repo description, and a five-week stretch where the react workflow re-committed a stale 05-14 analysis."
+}

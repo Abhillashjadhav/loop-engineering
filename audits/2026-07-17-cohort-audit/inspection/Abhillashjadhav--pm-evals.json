@@ -1,0 +1,73 @@
+{
+ "login": "Abhillashjadhav",
+ "repo": "pm-evals",
+ "signals": {
+  "readme_claims_total": 10,
+  "readme_claims_code_backed": 8,
+  "original_logic_notes": 4,
+  "meaningful_adaptation": true,
+  "template_similarity_pct": 55,
+  "boilerplate_share_pct": 30,
+  "explanation_quality": 3,
+  "tradeoffs_discussed": true,
+  "limitations_disclosed": true,
+  "runnable_learning": true,
+  "setup_reproducible": true,
+  "deps_valid": true,
+  "ai_tool_attribution": true,
+  "mass_generated_siblings": 1,
+  "abstraction_layers": 3,
+  "complexity_justified": true,
+  "issue_responses": 0,
+  "dependency_updates": 0,
+  "docs_corrections": 3,
+  "ai_share_evidence": "README openly discloses 'This entire repo was built through Claude Code orchestration'; all 33 commits are owner-authored over two days (2026-05-22/23) incl. recruiter-guide and loom-script docs; counter-evidence: hand-graded golden workbook, v1-to-v2 derivation refactor and a MARGINAL 76.5% verdict left unpolished show a human calibration loop.",
+  "evidence": [
+   {
+    "origin": "api_listing",
+    "url": "https://github.com/Abhillashjadhav/pm-evals",
+    "excerpt": "33 commits, 1 contributor, created 2026-05-22T14:21:37Z, pushed 2026-05-24T11:07:50Z, has_tests true, has_ci true, license MIT; description: 'PM driven evals framework'."
+   },
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/pm-evals/commits",
+    "excerpt": "2026-05-22 'feat: production-grade CLI scaffold with 5 working commands'; 'examples: Brightline customer support case study (500 traces)'; 2026-05-23 'feat: add validate-judge step for judge meta-evaluation'; 'docs: README — frame v2 MARGINAL as principled stopping point'."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/pm-evals/tree/main",
+    "excerpt": "Root: pm_evals/, examples/, golden/, docs/, scripts/, tests/, pyproject.toml, CHANGELOG.md, CITATION.cff, validation_report.md, LICENSE — matching the CLI, case-study, golden-validation and docs claims."
+   },
+   {
+    "origin": "readme",
+    "url": "https://github.com/Abhillashjadhav/pm-evals#readme",
+    "excerpt": "'Result: 76.5% agreement — MARGINAL (up from 68% NOT TRUSTED). ... v2 MARGINAL at 76.5% is the principled stopping point.'"
+   }
+  ],
+  "counter_evidence": [
+   {
+    "origin": "commit_history",
+    "url": "https://github.com/Abhillashjadhav/pm-evals/commits",
+    "excerpt": "'refactor: per-tag multi-criterion mapping (v2 derivation rules)' and 'feat: human-graded golden_scores from workbook holistic + label mapping' show iterative calibration work distinct from the sibling repo's code."
+   },
+   {
+    "origin": "file_listing",
+    "url": "https://github.com/Abhillashjadhav/pm-evals/tree/main",
+    "excerpt": "pm_evals/ package + pyproject.toml + tests/ is a genuinely different deliverable (installable CLI) from rag-eval-harness's src/ pipeline."
+   }
+  ],
+  "counter_evidence_review": {
+   "reviewed": true,
+   "strongest_counter_evidence": [
+    "Deliverable (packaged CLI framework) is substantively different code from the sibling despite the shared README template",
+    "Judge-validation result is left honestly at MARGINAL rather than tuned to TRUSTED",
+    "AI orchestration is disclosed in the README — a transparency positive"
+   ],
+   "review_notes": "High similarity is with its sibling rag-eval-harness (created within a minute of it; same Hamel Husain/Kevin Weil/Cat Wu quotes, same prepare-run-report workflow, same 'Calibration lesson: v1 to v2' section, near-identical commit sequences on 2026-05-22/23), i.e. one authoring process fanned across two repos. The underlying artifacts differ meaningfully, and the calibration honesty cuts against a slop reading."
+  },
+  "evidence_conflicts": [
+   "README section 'Calibration lesson: v1 → v2 derivation' and the 2026-05-22/23 docs commits (loom script, recruiter scan guide, Saturday wiring guide) are duplicated almost verbatim in sibling rag-eval-harness."
+  ]
+ },
+ "notes": "An English-in/insights-out eval CLI for PMs with a genuine judge-validation loop that honestly stops at 76.5% MARGINAL. Claims are well backed by the package, golden files and commit history, and full Claude Code orchestration is openly disclosed. Main caveat: it is one of a twin pair with rag-eval-harness sharing README template, quotes and launch-day commit choreography."
+}

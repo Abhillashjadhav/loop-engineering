@@ -1,0 +1,65 @@
+{
+  "login": "hamelsmu",
+  "repo": "stfu",
+  "signals": {
+    "readme_claims_total": 7,
+    "readme_claims_code_backed": 6,
+    "original_logic_notes": 4,
+    "meaningful_adaptation": true,
+    "template_similarity_pct": 5,
+    "boilerplate_share_pct": 10,
+    "explanation_quality": 3,
+    "tradeoffs_discussed": true,
+    "limitations_disclosed": true,
+    "runnable_learning": true,
+    "setup_reproducible": true,
+    "ai_tool_attribution": false,
+    "mass_generated_siblings": 0,
+    "abstraction_layers": 3,
+    "complexity_justified": true,
+    "integration_complexity": 3,
+    "issue_responses": 0,
+    "dependency_updates": 0,
+    "docs_corrections": 2,
+    "ai_share_evidence": "No AI-attribution trailers in any of the 20 commits; the only co-author trailer is a human (Greg Ceccarelli, 4 commits). Polished conventional messages over a 2-day sprint could be agent-assisted, but nothing observable confirms it; counter-evidence: TEST_PLAN.md, targeted regression tests, and safety-hardening iterations.",
+    "evidence": [
+      {
+        "origin": "ci_config",
+        "url": "https://github.com/hamelsmu/stfu/blob/main/.github/workflows/release.yml",
+        "excerpt": "workflows-listing.json: .github/workflows/release.yml (823 B) — release automation backing the README's 'Download the latest STFU-*.dmg from GitHub Releases' install path (survey shows 1 release)."
+      },
+      {
+        "origin": "file_listing",
+        "url": "https://github.com/hamelsmu/stfu/tree/main",
+        "excerpt": "Root: Package.swift (750 B), Sources/, Tests/, TEST_PLAN.md (9600 B), DEVELOPMENT.md (2130 B), packaging/, scripts/, test-fixtures/, Justfile, AGENTS.md — app, CLI, tests, and packaging artifacts the README references."
+      },
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/stfu/commit/8e9d528",
+        "excerpt": "'Add targeted Chromium safety regression tests'; also f6d750a 'Confirm browser activation before tab close', d0e6f06 'Harden Swift app action safety', 9f5bf46 'Avoid generic speaker false positives', 587b784 'Add STFU menu bar to main app'."
+      },
+      {
+        "origin": "api_listing",
+        "url": "https://github.com/hamelsmu/stfu",
+        "excerpt": "Metadata: 'Find the app or browser tab making noise and make it STFU.', language Swift, stargazers_count 3, commit_count 20, contributors 1, has_tests true, has_ci true, releases 1, created 2026-05-10."
+      },
+      {
+        "origin": "readme",
+        "url": "https://github.com/hamelsmu/stfu/blob/main/README.md",
+        "excerpt": "'Current release builds are unsigned unless the release notes say otherwise. If macOS blocks the installer, Control-click Install STFU.pkg ... Quit App: asks before quitting the noisy app. Unsaved work in that app could be lost.'"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "origin": "commit_history",
+        "url": "https://github.com/hamelsmu/stfu/commit/944aa0d",
+        "excerpt": "The entire history spans 2026-05-10 to 05-11 (944aa0d 'Initial STFU app' through f199f2d 'Update social card messaging' — rapid two-day build) and the shipped release is unsigned per the README; counter: the tree carries Tests/, a 9.6 KB TEST_PLAN.md, test-fixtures/, a release workflow, explicit safety-regression and hardening commits (8e9d528, d0e6f06, f6d750a), and the README itself discloses the unsigned-build limitation and destructive-action risks."
+      }
+    ],
+    "counter_evidence_review": {
+      "reviewed": true,
+      "outcome": "Fast build with real engineering rigor: safety confirmations, false-positive avoidance, regression tests, and honest disclosure of unsigned distribution; not a low-effort dump."
+    }
+  },
+  "notes": "Native macOS utility (Swift app + CLI + menu bar) that locates the audio-producing tab or app and silences only that source, integrating Accessibility, Automation, and per-browser tab control — genuinely nontrivial platform work. Built in a two-day sprint but with a written test plan, regression tests, release automation, and unusually candid docs about permissions quirks, unsigned builds, and data-loss risk when quitting apps. Only 3 stars, which under fairness rules says nothing about quality."
+}

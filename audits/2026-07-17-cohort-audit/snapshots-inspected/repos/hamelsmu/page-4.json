@@ -399,7 +399,11 @@
     }
    ],
    "counter_evidence": [
-    "The entire history spans 2026-05-10 to 05-11 (rapid two-day build) and the shipped release is unsigned; counter: the tree carries Tests/, a 9.6 KB TEST_PLAN.md, test-fixtures/, a release workflow, explicit safety-regression and hardening commits, and the README itself discloses the unsigned-build limitation and destructive-action risks."
+    {
+     "origin": "commit_history",
+     "url": "https://github.com/hamelsmu/stfu/commit/944aa0d",
+     "excerpt": "The entire history spans 2026-05-10 to 05-11 (944aa0d 'Initial STFU app' through f199f2d 'Update social card messaging' — rapid two-day build) and the shipped release is unsigned per the README; counter: the tree carries Tests/, a 9.6 KB TEST_PLAN.md, test-fixtures/, a release workflow, explicit safety-regression and hardening commits (8e9d528, d0e6f06, f6d750a), and the README itself discloses the unsigned-build limitation and destructive-action risks."
+    }
    ],
    "counter_evidence_review": {
     "reviewed": true,
