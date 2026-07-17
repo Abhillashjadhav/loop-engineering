@@ -1,0 +1,19 @@
+{
+  "login": "chiphuyen",
+  "name": "Chip Huyen",
+  "company": null,
+  "blog": "https://huyenchip.com",
+  "twitter": "chipro",
+  "location": "San Francisco",
+  "bio": "AI x stuff",
+  "followers": 23671,
+  "public_repos": 30,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/chiphuyen",
+      "excerpt": "profile: Chip Huyen, https://huyenchip.com",
+      "retrieved_at": "2026-07-17T13:32:39.429650+00:00"
+    }
+  ]
+}

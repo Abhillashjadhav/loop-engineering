@@ -1,0 +1,19 @@
+{
+  "login": "phuryn",
+  "name": "Pawel Huryn",
+  "company": "The Product Compass Newsleller ",
+  "blog": "https://www.productcompass.pm/",
+  "twitter": "PawelHuryn",
+  "location": null,
+  "bio": "AI PM Coach, ex-CPO, Builder | 400K+ Follow",
+  "followers": 996,
+  "public_repos": 31,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/phuryn",
+      "excerpt": "profile: Pawel Huryn, https://www.productcompass.pm/",
+      "retrieved_at": "2026-07-17T13:13:04.287085+00:00"
+    }
+  ]
+}

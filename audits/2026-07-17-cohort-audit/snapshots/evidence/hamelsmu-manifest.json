@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://api.github.com/users/hamelsmu",
+    "sha256": "46e7492d46f408be4f80df50740f4c4069291b9b5d3229ec9c0ffab5e6a9b2d8",
+    "retrieved_at": "2026-07-17T13:14:21.895109+00:00",
+    "file": "evidence/hamelsmu-profile.json"
+  },
+  {
+    "url": "https://api.github.com/users/hamelsmu/repos?per_page=100&page=1&type=owner&sort=full_name",
+    "sha256": "01640afde18a9bd5f50814f3b85946f60e401735141a5b253dd3e4874a7c637b",
+    "retrieved_at": "2026-07-17T13:14:24.134421+00:00",
+    "file": "evidence/hamelsmu-repos-page-1.json"
+  },
+  {
+    "url": "https://api.github.com/users/hamelsmu/repos?per_page=100&page=2&type=owner&sort=full_name",
+    "sha256": "bc642327120b35f2aa1332ca5327f201b38d4d73b2425d4fc6e168cf50e0b6ca",
+    "retrieved_at": "2026-07-17T13:17:16.727536+00:00",
+    "file": "evidence/hamelsmu-repos-page-2.json"
+  },
+  {
+    "url": "https://api.github.com/users/hamelsmu/repos?per_page=100&page=3&type=owner&sort=full_name",
+    "sha256": "412ecf3120b6220128eb5c2767d4e03918311dbfb36264e04682dd752fc5b394",
+    "retrieved_at": "2026-07-17T13:20:26.656536+00:00",
+    "file": "evidence/hamelsmu-repos-page-3.json"
+  },
+  {
+    "url": "https://api.github.com/users/hamelsmu/repos?per_page=100&page=4&type=owner&sort=full_name",
+    "sha256": "3e2ff6b612416ff0ac1b0a743d136f484af62397663ba850b783f2eeab40f928",
+    "retrieved_at": "2026-07-17T13:23:58.867453+00:00",
+    "file": "evidence/hamelsmu-repos-page-4.json"
+  }
+]

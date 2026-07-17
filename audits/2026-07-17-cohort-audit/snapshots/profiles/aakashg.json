@@ -1,0 +1,19 @@
+{
+  "login": "aakashg",
+  "name": "Aakash",
+  "company": null,
+  "blog": "https://www.news.aakashg.com/",
+  "twitter": "aakashgupta",
+  "location": "Los Angeles",
+  "bio": "VP Product (unicorn) turned AI PM writer. 300K+ newsletter. Building open-source PM tools.",
+  "followers": 85,
+  "public_repos": 14,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/aakashg",
+      "excerpt": "profile: Aakash, https://www.news.aakashg.com/",
+      "retrieved_at": "2026-07-16T16:59:35.763574+00:00"
+    }
+  ]
+}

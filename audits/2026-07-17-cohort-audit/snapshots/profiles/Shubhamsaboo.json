@@ -1,0 +1,19 @@
+{
+  "login": "Shubhamsaboo",
+  "name": "Shubham Saboo",
+  "company": "Google",
+  "blog": "https://www.theunwindai.com/",
+  "twitter": "Saboo_Shubham_",
+  "location": null,
+  "bio": "Senior AI PM @ Google Cloud | Building open-source repository of practical world class tutorials on AI Agents, RAG and LLMs \u23f3",
+  "followers": 9121,
+  "public_repos": 183,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/Shubhamsaboo",
+      "excerpt": "profile: Shubham Saboo, https://www.theunwindai.com/",
+      "retrieved_at": "2026-07-16T17:00:20.519747+00:00"
+    }
+  ]
+}

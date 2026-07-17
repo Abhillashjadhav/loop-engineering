@@ -1,0 +1,19 @@
+{
+  "login": "hamelsmu",
+  "name": "Hamel Husain",
+  "company": "Parlance Labs",
+  "blog": "http://hamel.dev",
+  "twitter": "HamelHusain",
+  "location": "Portland, OR",
+  "bio": "https://hamel.dev",
+  "followers": 2664,
+  "public_repos": 394,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/hamelsmu",
+      "excerpt": "profile: Hamel Husain, http://hamel.dev",
+      "retrieved_at": "2026-07-17T13:14:21.895178+00:00"
+    }
+  ]
+}

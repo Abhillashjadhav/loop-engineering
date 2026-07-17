@@ -1,0 +1,19 @@
+{
+  "login": "shreyashankar",
+  "name": "Shreya Shankar",
+  "company": null,
+  "blog": "sh-reya.com",
+  "twitter": "sh_reya",
+  "location": "Berkeley, CA",
+  "bio": "incoming prof at CMU CSD; prev CS PhD student at UC Berkeley EECS",
+  "followers": 1921,
+  "public_repos": 72,
+  "evidence_links": [
+    {
+      "origin": "github_profile",
+      "url": "https://github.com/shreyashankar",
+      "excerpt": "profile: Shreya Shankar, sh-reya.com",
+      "retrieved_at": "2026-07-17T13:30:33.594315+00:00"
+    }
+  ]
+}
