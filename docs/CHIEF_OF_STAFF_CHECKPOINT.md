@@ -111,3 +111,15 @@ claim (finding 7 — honesty rule).
 - finding 12: `_WAITING` should not capture stopwords ("waiting for the…")
 - finding 13: real midday slipped/new-urgent diffing; call `carried_forward`
 - plus: cross-run register persistence, live adapters (separate PRs)
+
+## Cross-run register persistence (follow-up PR)
+
+`store.py` — append-only JSONL journal at `runs/private/cos/state/journal.jsonl`
+(fail-closed private boundary via `private_path`). Content-addressed idempotent
+ingestion; per-event sha256; torn-tail recovery (crash-safe resume) vs
+fail-loud middle corruption; terminal-state protection (DONE/DROPPED never
+silently reactivate; new evidence → INBOX); DONE requires evidence; optimistic
+conflict detection (`expected=` → ConflictError); checkpoint + artifact
+history; schema versioning with v0→v1 migration and newer-version refusal.
+Runner takes `store=`; CLI persists by default (`--no-persist` to opt out).
+18 planted-failure tests in `tests/chief_of_staff/test_store.py`.

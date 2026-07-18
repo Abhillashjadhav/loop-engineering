@@ -37,6 +37,7 @@ from loop_engineering.use_cases.personal_chief_of_staff.runner import (
     load_latest_checkpoint,
     write_private,
 )
+from loop_engineering.use_cases.personal_chief_of_staff.store import RegisterStore
 
 DEMO_DIR = Path("use_cases/personal-chief-of-staff/demo")
 SOURCE_NAMES = ("email", "github", "drive", "chat_context", "manual")
@@ -55,7 +56,16 @@ def _run(args: argparse.Namespace) -> RunResult:
     # Prior decision context feeds drift protection: past prohibited actions
     # must not reappear as next steps (review finding #3).
     prior = load_latest_checkpoint()
-    return cos.run(run_id=args.run_id, day=args.day, as_of=args.as_of, prior_checkpoint=prior)
+    # Cross-run persistence: the append-only private journal is the register
+    # of record; statuses, decisions, and artifacts survive between runs.
+    store = None if args.no_persist else RegisterStore()
+    return cos.run(
+        run_id=args.run_id,
+        day=args.day,
+        as_of=args.as_of,
+        prior_checkpoint=prior,
+        store=store,
+    )
 
 
 def cmd(args: argparse.Namespace) -> int:
@@ -144,6 +154,12 @@ def add_arguments(p: argparse.ArgumentParser) -> None:
     p.add_argument("cos_command")
     p.add_argument("when", nargs="?", default="morning", help="for 'brief': morning|midday|evening")
     p.add_argument("--data", default=None, help="private import dir (default: synthetic demo)")
+    p.add_argument(
+        "--no-persist",
+        dest="no_persist",
+        action="store_true",
+        help="stateless run: skip the private cross-run register journal",
+    )
     p.add_argument("--day", default="2026-07-17")
     p.add_argument("--as-of", dest="as_of", default="2026-07-17T08:00:00+00:00")
     p.add_argument("--run-id", dest="run_id", default="cos-demo")
