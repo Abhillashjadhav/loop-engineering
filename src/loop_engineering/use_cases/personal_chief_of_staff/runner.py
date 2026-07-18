@@ -157,9 +157,14 @@ class ChiefOfStaff:
         #     recorded in earlier runs survive into this one.
         if store is not None:
             store.ingest(tasks, as_of)
-            if prior_checkpoint is None:
-                history = store.checkpoints()
-                prior_checkpoint = history[-1] if history else None
+            # The journal is the register of record: prefer the NEWER of the
+            # journal's checkpoint history and any file-loaded prior, so drift
+            # protection never runs against stale context (review finding #6).
+            history = store.checkpoints()
+            if history and (
+                prior_checkpoint is None or history[-1].timestamp >= prior_checkpoint.timestamp
+            ):
+                prior_checkpoint = history[-1]
             tasks = store.view()
         # 2. consolidate (dedup preserving provenance)
         register = TaskRegister(tasks)

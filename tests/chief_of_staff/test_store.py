@@ -334,3 +334,75 @@ def test_status_set_between_runs_survives_into_next_brief(repo: Path) -> None:
     assert persisted.evidence_of_completion
     # And the completed task appears in the evening close of the NEXT run.
     assert persisted.title[:30] in r2.briefs["evening"]
+
+
+# Review round 2 — blocking-finding regressions --------------------------------
+
+
+def test_relative_deadline_reresolution_is_not_new_evidence(repo: Path) -> None:
+    """Finding 1: the same email re-ingested on a later day (relative deadline
+    re-resolved against the new clock) must NOT reopen a DONE task."""
+    from loop_engineering.use_cases.personal_chief_of_staff.adapters.base import RawItem
+    from loop_engineering.use_cases.personal_chief_of_staff.discovery import discover
+
+    item = RawItem("email", "msg-deck", "Deck", "I will send the investor deck by tomorrow.")
+    s = store(repo)
+    day1 = discover([item], "2026-07-18T08:00:00+00:00")
+    s.ingest(day1, "2026-07-18T08:00:00+00:00")
+    tid = day1[0].id
+    s.set_status(tid, TaskStatus.DONE, evidence="sent, confirmed", at=NOW)
+    # Same unchanged email, fetched again the next day: deadline re-resolves.
+    day2 = discover([item], "2026-07-19T08:00:00+00:00")
+    assert day2[0].deadline != day1[0].deadline  # precondition of the bug
+    events_before = RegisterStore(root=repo).event_count()
+    s2 = RegisterStore(root=repo)
+    appended = s2.ingest(day2, "2026-07-19T08:00:00+00:00")
+    assert appended == 0, "planted: re-resolved relative deadline treated as new evidence"
+    assert s2.event_count() == events_before
+    assert s2.status_of(tid) is TaskStatus.DONE
+
+
+def test_torn_first_ever_append_recovers(repo: Path) -> None:
+    """Finding 2: a crash during the first-ever append must recover, not
+    raise raw JSONDecodeError forever."""
+    state_dir = repo / "runs/private/cos/state"
+    state_dir.mkdir(parents=True)
+    (state_dir / "journal.jsonl").write_text('{"v": 1, "seq": 0, "kind": "hea', encoding="utf-8")
+    s = RegisterStore(root=repo)  # must not raise
+    assert s.view() == []
+    s.ingest([task("t1")], NOW)  # and must be appendable afterwards
+    assert [t.id for t in RegisterStore(root=repo).view()] == ["t1"]
+
+
+def test_dedup_twin_cannot_reactivate_terminal_or_inbox_state(repo: Path) -> None:
+    """Finding 3: an ACTIVE dedup twin must never silently override a DONE or
+    resurfaced-INBOX twin in the register the runner plans from."""
+    from loop_engineering.use_cases.personal_chief_of_staff.registry import TaskRegister
+
+    done = task("t-a", title="Send the investor deck")
+    done.status = TaskStatus.DONE
+    done.evidence_of_completion = "sent + reply"
+    twin = task("t-b", title="Send the investor deck!", confidence=0.95)
+    reg = TaskRegister([done, twin])
+    assert len(reg.tasks) == 1
+    assert reg.tasks[0].status is TaskStatus.DONE, "planted: DONE dropped by dedup twin"
+    assert reg.tasks[0].evidence_of_completion == "sent + reply"
+
+    inbox = task("t-c", title="Refactor the billing job")
+    inbox.status = TaskStatus.INBOX
+    active_twin = task("t-d", title="Refactor the billing job.", confidence=0.95)
+    reg2 = TaskRegister([inbox, active_twin])
+    assert len(reg2.tasks) == 1
+    assert reg2.tasks[0].status is TaskStatus.INBOX, (
+        "planted: resurfaced INBOX silently promoted to ACTIVE by dedup"
+    )
+
+
+def test_resurfaced_task_sheds_stale_completion_evidence(repo: Path) -> None:
+    s = store(repo)
+    s.ingest([task("t1", excerpt="ship it")], NOW)
+    s.set_status("t1", TaskStatus.DONE, evidence="shipped", at=NOW)
+    s.ingest([task("t1", excerpt="actually please ship v2 as well")], LATER)
+    resurfaced = next(t for t in s.view() if t.id == "t1")
+    assert resurfaced.status is TaskStatus.INBOX
+    assert resurfaced.evidence_of_completion == "", "stale completion evidence retained"

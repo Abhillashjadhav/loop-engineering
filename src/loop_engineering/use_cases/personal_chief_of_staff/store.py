@@ -49,8 +49,12 @@ SCHEMA_VERSION = 1
 DEFAULT_JOURNAL = "runs/private/cos/state/journal.jsonl"
 
 #: Task fields excluded from the observation digest: they vary run to run
-#: without representing new evidence.
-_VOLATILE_FIELDS = ("created_at", "updated_at", "status")
+#: without representing new evidence. `deadline` is DERIVED data — relative
+#: cues ("by tomorrow", "by Friday") re-resolve against each run's clock, so
+#: including it would make an unchanged email look like new evidence every
+#: day (review finding #1). The raw deadline TEXT lives in the source
+#: excerpt, so a genuinely changed deadline still changes the digest.
+_VOLATILE_FIELDS = ("created_at", "updated_at", "status", "deadline")
 
 TERMINAL = (TaskStatus.DONE, TaskStatus.DROPPED)
 
@@ -138,19 +142,28 @@ class RegisterStore:
             return
         raw_lines = self.journal_path.read_text(encoding="utf-8").splitlines()
         if raw_lines:
-            first = json.loads(raw_lines[0] or "{}")
-            # Version gate BEFORE any migration guess: a header claiming a
-            # newer schema is refused outright, never "migrated" downward.
-            if first.get("kind") == "header":
-                claimed = int(first.get("payload", {}).get("schema_version", 0))
-                if claimed > SCHEMA_VERSION:
-                    raise CorruptStateError(
-                        f"journal schema version {claimed} is newer than supported "
-                        f"{SCHEMA_VERSION} — refusing to read"
-                    )
-            if "sha" not in first and first.get("kind") != "header":
-                self._migrate_v0(raw_lines)
-                raw_lines = self.journal_path.read_text(encoding="utf-8").splitlines()
+            # A torn FIRST line (crash during the first-ever append) must fall
+            # through to the integrity loop, which recovers trailing tears —
+            # never a raw JSONDecodeError (review finding #2).
+            try:
+                first = json.loads(raw_lines[0] or "{}")
+                if not isinstance(first, dict) or not isinstance(first.get("payload", {}), dict):
+                    first = None
+            except json.JSONDecodeError:
+                first = None
+            if first is not None:
+                # Version gate BEFORE any migration guess: a header claiming a
+                # newer schema is refused outright, never "migrated" downward.
+                if first.get("kind") == "header":
+                    claimed = int(first.get("payload", {}).get("schema_version", 0))
+                    if claimed > SCHEMA_VERSION:
+                        raise CorruptStateError(
+                            f"journal schema version {claimed} is newer than supported "
+                            f"{SCHEMA_VERSION} — refusing to read"
+                        )
+                if "sha" not in first and first.get("kind") != "header":
+                    self._migrate_v0(raw_lines)
+                    raw_lines = self.journal_path.read_text(encoding="utf-8").splitlines()
         parsed: list[dict[str, Any]] = []
         for i, line in enumerate(raw_lines):
             try:
@@ -233,17 +246,24 @@ class RegisterStore:
         }
         header["sha"] = self._event_sha(header)
         migrated.append(header)
-        for line in raw_lines:
+        for i, line in enumerate(raw_lines):
             if not line.strip():
                 continue
-            old = json.loads(line)
-            event = {
-                "v": SCHEMA_VERSION,
-                "seq": len(migrated),
-                "kind": str(old["kind"]),
-                "at": str(old.get("at", "")),
-                "payload": dict(old["payload"]),
-            }
+            try:
+                old = json.loads(line)
+                event = {
+                    "v": SCHEMA_VERSION,
+                    "seq": len(migrated),
+                    "kind": str(old["kind"]),
+                    "at": str(old.get("at", "")),
+                    "payload": dict(old["payload"]),
+                }
+            except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
+                if i == len(raw_lines) - 1:
+                    break  # torn v0 tail: recover to the last valid event
+                raise CorruptStateError(
+                    f"v0 journal event {i} is unreadable and not the trailing line"
+                ) from exc
             event["sha"] = self._event_sha(event)
             migrated.append(event)
         self._rewrite(migrated)
@@ -359,6 +379,9 @@ class RegisterStore:
                     fresh = [o for o in observations if int(o["seq"]) > last_seq]
                     if fresh:
                         base.status = TaskStatus.INBOX
+                        # Resurfaced work is NOT complete: stale completion
+                        # evidence must not travel with it (review finding #7).
+                        base.evidence_of_completion = ""
             tasks.append(base)
         tasks.sort(key=lambda t: t.id)
         return tasks

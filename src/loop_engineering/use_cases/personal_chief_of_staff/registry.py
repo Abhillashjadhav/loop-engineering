@@ -45,9 +45,20 @@ def _merge(primary: Task, other: Task) -> Task:
         primary.waiting_on = other.waiting_on
     if not primary.project and other.project:
         primary.project = other.project
-    # If either twin is a firm commitment, the survivor is not left in inbox.
-    if TaskStatus.ACTIVE in (primary.status, other.status) and primary.status is TaskStatus.INBOX:
-        primary.status = TaskStatus.ACTIVE
+    # Status precedence is CONSERVATIVE (persistence review finding #3): a
+    # dedup cluster containing a terminal member stays terminal (keeping its
+    # completion evidence), and a cluster containing an INBOX member stays
+    # INBOX — confirmation is required; a merge must never silently activate
+    # work the user completed, rejected, or has not yet confirmed.
+    statuses = (primary.status, other.status)
+    if TaskStatus.DONE in statuses:
+        primary.status = TaskStatus.DONE
+        if not primary.evidence_of_completion and other.evidence_of_completion:
+            primary.evidence_of_completion = other.evidence_of_completion
+    elif TaskStatus.DROPPED in statuses:
+        primary.status = TaskStatus.DROPPED
+    elif TaskStatus.INBOX in statuses:
+        primary.status = TaskStatus.INBOX
     return primary
 
 
