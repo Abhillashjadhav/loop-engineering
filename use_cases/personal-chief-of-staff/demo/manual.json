@@ -1,0 +1,18 @@
+[
+  {
+    "source_type": "manual",
+    "reference": "manual:dentist",
+    "title": "Overdue: reschedule dentist",
+    "body": "I need to reschedule the dentist appointment by 2026-07-15.",
+    "timestamp": "2026-07-10T09:00:00+00:00",
+    "meta": {"estimated_minutes": 10, "energy": "low"}
+  },
+  {
+    "source_type": "manual",
+    "reference": "manual:blocked-design",
+    "title": "Blocked: PEOS diagram waiting on reviewer",
+    "body": "I need to update the PEOS architecture diagram. Blocked on feedback, waiting on Priya.",
+    "timestamp": "2026-07-14T09:00:00+00:00",
+    "meta": {"project": "PEOS", "waiting_on": "Priya", "estimated_minutes": 30}
+  }
+]

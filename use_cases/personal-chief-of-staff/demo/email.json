@@ -1,0 +1,34 @@
+[
+  {
+    "source_type": "email",
+    "reference": "gmail:demo-interview",
+    "title": "Principal AI PM — onsite Tuesday 09:30",
+    "body": "Confirming your Principal AI Product Manager interview on 2026-07-21. I need to prepare a 20-minute product teardown by 2026-07-20.",
+    "timestamp": "2026-07-16T14:00:00+00:00",
+    "meta": {"external_commitment": true, "estimated_minutes": 90, "energy": "high"}
+  },
+  {
+    "source_type": "email",
+    "reference": "gmail:demo-recruiter",
+    "title": "Re: Director AI Product role",
+    "body": "Thanks for the chat. I will send my updated resume and two references by 2026-07-18.",
+    "timestamp": "2026-07-16T15:00:00+00:00",
+    "meta": {"external_commitment": true, "estimated_minutes": 30}
+  },
+  {
+    "source_type": "email",
+    "reference": "gmail:demo-newsletter",
+    "title": "This week in AI",
+    "body": "Here are five interesting papers and a nice photo of a cat. FYI only, no action needed.",
+    "timestamp": "2026-07-16T16:00:00+00:00",
+    "meta": {}
+  },
+  {
+    "source_type": "email",
+    "reference": "gmail:demo-conference",
+    "title": "CFP closing soon — AI Eng Summit",
+    "body": "I need to submit a talk proposal on evals for the AI Engineering Summit by 2026-07-25.",
+    "timestamp": "2026-07-15T10:00:00+00:00",
+    "meta": {"estimated_minutes": 60, "energy": "medium"}
+  }
+]

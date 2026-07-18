@@ -1,0 +1,10 @@
+[
+  {
+    "source_type": "chat_context",
+    "reference": "claude:project-checkpoint",
+    "title": "PEOS project checkpoint",
+    "body": "Next step: I will complete the pm-evals Web dashboard wiring. Decision: no new repositories.",
+    "timestamp": "2026-07-15T20:00:00+00:00",
+    "meta": {"project": "pm-evals", "estimated_minutes": 60}
+  }
+]

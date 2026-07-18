@@ -1,0 +1,35 @@
+[
+  {
+    "event_id": "cal:standup",
+    "title": "Team standup",
+    "start": "2026-07-17T09:00:00+00:00",
+    "end": "2026-07-17T09:30:00+00:00",
+    "attendees": ["team@example.com"],
+    "flexibility": "fixed"
+  },
+  {
+    "event_id": "cal:recruiter-call",
+    "title": "Recruiter screen — Director AI Product",
+    "start": "2026-07-17T11:00:00+00:00",
+    "end": "2026-07-17T11:45:00+00:00",
+    "attendees": ["recruiter@example.com"],
+    "flexibility": "fixed",
+    "preparation_tasks": ["review role JD"]
+  },
+  {
+    "event_id": "cal:lunch",
+    "title": "Lunch",
+    "start": "2026-07-17T13:00:00+00:00",
+    "end": "2026-07-17T14:00:00+00:00",
+    "attendees": [],
+    "flexibility": "movable"
+  },
+  {
+    "event_id": "cal:1on1",
+    "title": "Mentor 1:1",
+    "start": "2026-07-17T16:00:00+00:00",
+    "end": "2026-07-17T16:30:00+00:00",
+    "attendees": ["mentor@example.com"],
+    "flexibility": "fixed"
+  }
+]

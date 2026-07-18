@@ -28,6 +28,7 @@ from loop_engineering.use_cases.github_authority_audit.datasource import (
     LiveDataSource,
 )
 from loop_engineering.use_cases.github_authority_audit.runner import AuditUseCase
+from loop_engineering.use_cases.personal_chief_of_staff import cli as cos_cli
 from loop_engineering.verification import e2e_reviewer
 
 CONTRACTS_DIR = Path("contracts")
@@ -282,6 +283,10 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--interrupt-after", type=int, default=None, help=argparse.SUPPRESS)
     _add_common(p)
     p.set_defaults(func=cmd_audit_github)
+
+    p = sub.add_parser("chief-of-staff", help="personal chief of staff (private use case)")
+    cos_cli.add_arguments(p)
+    p.set_defaults(func=lambda a: cos_cli.cmd(a))
 
     return parser
 

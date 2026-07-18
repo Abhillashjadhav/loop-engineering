@@ -1,0 +1,52 @@
+# Personal Operating Contract (locked context — versioned). This is the
+# committed TEMPLATE with the default goal registry and prohibited actions;
+# a real per-user contract with private decisions lives under config/private/
+# and is never committed. Amend via a versioned goal-contract flow
+# (approver + reason + new version), never in-place for a running day.
+version: 1
+approved_by: abhillash
+approved_at: "2026-07-17T00:00:00+00:00"
+
+goals:
+  - {id: G1, priority: 1, title: "Land a Principal/Director/Sr Director AI Product role"}
+  - {id: G2, priority: 2, title: "Complete Production Engineering OS V3 and pm-evals Web"}
+  - {id: G3, priority: 3, title: "Complete and meaningfully package existing technical products"}
+  - {id: G4, priority: 4, title: "Build visible technical authority and distribution"}
+  - {id: G5, priority: 5, title: "Secure conference/podcast/community/institute speaking"}
+  - {id: G6, priority: 6, title: "Complete existing work without unnecessary new repositories"}
+  - {id: G7, priority: 7, title: "Maintain health, personal commitments, sustainable capacity"}
+
+approved_priorities:
+  - external deadlines and commitments
+  - interviews, applications, recruiters, job-search outcomes
+  - completion of meaningful products and projects
+  - speaking, distribution, and authority-building
+  - blocked dependencies and people waiting
+  - administration and maintenance
+
+rejected_ideas:
+  - creating new repositories for work that fits an existing repo
+  - automatic LinkedIn publishing
+
+project_boundaries:
+  - no new repositories without explicit approval
+  - cohort audit and completed audits are frozen — do not modify
+
+# Fail-closed: these action types can never auto-execute in safe mode.
+prohibited_without_approval:
+  - send_email
+  - forward_email
+  - cancel_meeting
+  - move_external_meeting
+  - delete_data
+  - publish_content
+  - apply_to_job
+  - submit_conference_application
+  - create_external_commitment
+  - merge_code
+  - destructive_github
+  - linkedin_publish
+
+confirm_threshold: 0.6   # tasks below this confidence go to the inbox for confirmation
+
+north_star: "High-value outcomes completed per week without missed external commitments."

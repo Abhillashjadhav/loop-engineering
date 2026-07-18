@@ -1,0 +1,26 @@
+[
+  {
+    "source_type": "github",
+    "reference": "Abhillashjadhav/pm-evals#41",
+    "title": "Review requested: web UI scaffold",
+    "body": "A collaborator requested your review on the pm-evals Web PR.",
+    "timestamp": "2026-07-14T09:00:00+00:00",
+    "meta": {"kind": "review_request", "project": "pm-evals", "waiting_on": "Dana", "estimated_minutes": 45, "stale": false}
+  },
+  {
+    "source_type": "github",
+    "reference": "Abhillashjadhav/production-engineering-os#88",
+    "title": "Finish PEOS V3 scheduler module",
+    "body": "Open PR with the unfinished Production Engineering OS V3 scheduler.",
+    "timestamp": "2026-07-13T09:00:00+00:00",
+    "meta": {"kind": "open_pr", "project": "PEOS", "estimated_minutes": 120, "stale": false}
+  },
+  {
+    "source_type": "github",
+    "reference": "Abhillashjadhav/old-experiment#3",
+    "title": "Ancient WIP branch",
+    "body": "An open PR with no activity for 8 months.",
+    "timestamp": "2025-11-01T09:00:00+00:00",
+    "meta": {"kind": "open_pr", "project": "old-experiment", "stale": true}
+  }
+]
