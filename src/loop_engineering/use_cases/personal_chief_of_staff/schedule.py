@@ -82,6 +82,8 @@ def free_gaps(
     end = _dt(f"{day}T{work_end}:00+00:00")
     busy: list[tuple[datetime, datetime]] = []
     for e in events:
+        if not e.busy:  # transparent/free events never consume free time
+            continue
         e_start, e_end = _dt(e.start), _dt(e.end)
         lo, hi = max(e_start, start), min(e_end, end)
         if lo < hi:  # the event overlaps the working window

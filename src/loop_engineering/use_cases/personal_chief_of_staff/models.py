@@ -175,6 +175,13 @@ class CalendarItem:
     source: SourceType = SourceType.CALENDAR
     preparation_tasks: list[str] = field(default_factory=list)
     followup_tasks: list[str] = field(default_factory=list)
+    # Live-calendar provenance (additive; defaults preserve fixture semantics).
+    timezone: str = ""
+    all_day: bool = False
+    busy: bool = True  # False = transparent/free — never blocks free time
+    event_status: str = "confirmed"
+    recurring_event_id: str = ""
+    retrieved_at: str = ""
 
     @property
     def has_external_attendees(self) -> bool:

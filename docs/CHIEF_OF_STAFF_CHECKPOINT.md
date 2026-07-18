@@ -123,3 +123,54 @@ conflict detection (`expected=` → ConflictError); checkpoint + artifact
 history; schema versioning with v0→v1 migration and newer-version refusal.
 Runner takes `store=`; CLI persists by default (`--no-persist` to opt out).
 18 planted-failure tests in `tests/chief_of_staff/test_store.py`.
+
+## Google Calendar live read-only adapter (follow-up PR)
+
+`adapters/google_calendar.py` — CalendarAdapter-protocol implementation over
+the Calendar v3 REST API, least-privilege `calendar.readonly` scope, token +
+config under `config/private/` (fail-closed guard). LIVE is claimed only
+after a real read executes; no write path exists (`create_focus_block`
+raises). Injectable GET-only transport; typed redacted errors (auth/
+permission/rate-limit/unavailable/malformed — no token, body, or event
+content in any message). Normalization: pagination + cross-page dedup,
+all-day, overnight, DST offsets, recurrence identity, cancelled excluded,
+transparent events not busy (busy-aware free_gaps), untitled placeholder,
+deterministic ordering, retrieval provenance on every item. CLI: extended
+`status`, new `check-calendar` (read-only), `--calendar auto|live|fixture`
+(auto = live only when configured; the label always says which). 27
+tests-first cases in `tests/chief_of_staff/test_google_calendar.py`.
+
+## Independent review (PR #18) — outcome
+
+Fresh-context read-only review of the calendar adapter returned
+REQUEST_CHANGES with 2 blocking findings at `440db59`, both PoC-confirmed
+and fixed with regression tests at `a0a8f8f`:
+
+- finding 1: a repeated `nextPageToken` looped forever — now each calendar
+  tracks seen tokens and a `MAX_PAGES` cap; a repeat or overflow raises
+  `MalformedResponseError` instead of hanging.
+- finding 2: a token file with the `scope` field omitted passed the scope
+  check (fail-open) — now an undeclared scope raises
+  `CalendarPermissionError` (fail-closed), same as a too-broad scope.
+
+Round 2 returned APPROVE at `a0a8f8f`. GitHub CI then failed on the fresh
+checkout only: `git check-ignore` cannot match the dir-only pattern
+`/config/private/` for a path whose directory does not exist, so a fresh
+clone crashed on read-only `status` — a genuine latent bug masked locally
+by the dirs existing. Fixed at `18f4d82` (`_is_git_ignored(..., as_dir=True)`
+retry on the parent; hermetic CLI tests; fresh-checkout regression test).
+Because that delta touches the safety-critical privacy guard, a dedicated
+fresh-context delta review re-verified it: **APPROVE stands at `18f4d82`** —
+fail-closed preserved (missing boundary still raises; tracked or
+index-present files always refuse), original bug reproduced against the old
+code, new regression test fails on the old implementation, all gates green.
+
+Residual (documented, non-blocking): a deliberate `.gitignore`
+restructuring using a contents glob plus a negation
+(`/config/private/*` + `!config/private/foo.json`) could let `private_path`
+pass an untracked-but-trackable file. It cannot arise from accidental
+drift, is independently blocked here by the `**/private/` catch-all, is
+caught by `test_no_private_paths_are_tracked_in_repo` the moment such a
+file is tracked, and self-heals to fail-closed once tracked. Follow-up
+hardening candidate: also require the file-level check to pass when the
+file exists.
