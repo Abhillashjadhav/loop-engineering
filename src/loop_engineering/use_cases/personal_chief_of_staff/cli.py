@@ -25,6 +25,9 @@ from loop_engineering.use_cases.personal_chief_of_staff.adapters.fixtures import
     FixtureCalendarAdapter,
     FixtureSourceAdapter,
 )
+from loop_engineering.use_cases.personal_chief_of_staff.adapters.google_calendar import (
+    GoogleCalendarAdapter,
+)
 from loop_engineering.use_cases.personal_chief_of_staff.dashboard import render_dashboard
 from loop_engineering.use_cases.personal_chief_of_staff.execute import (
     approve_and_create_focus_blocks,
@@ -43,16 +46,40 @@ DEMO_DIR = Path("use_cases/personal-chief-of-staff/demo")
 SOURCE_NAMES = ("email", "github", "drive", "chat_context", "manual")
 
 
-def _build(data_dir: Path, mode: AdapterMode) -> ChiefOfStaff:
+def _calendar_adapter(args: argparse.Namespace, data_dir: Path, mode: AdapterMode):  # type: ignore[no-untyped-def]
+    """Choose the calendar source honestly.
+
+    'fixture' → the fixture adapter (labeled FIXTURE). 'live' → the Google
+    adapter, whose failures surface loudly. 'auto' → live ONLY when
+    credentials are present and usable; otherwise fixture — the choice is
+    what the status/mode labels report, never a silent LIVE claim.
+    """
+    choice = getattr(args, "calendar", "auto")
+    if choice == "fixture":
+        return FixtureCalendarAdapter(data_dir, mode=mode)
+    google = GoogleCalendarAdapter(now_iso=args.as_of)
+    if choice == "live":
+        return google
+    return (
+        google if google.status()["authenticated"] else FixtureCalendarAdapter(data_dir, mode=mode)
+    )
+
+
+def _build(
+    data_dir: Path, mode: AdapterMode, args: argparse.Namespace | None = None
+) -> ChiefOfStaff:
     sources = [FixtureSourceAdapter(name, data_dir, mode=mode) for name in SOURCE_NAMES]
-    calendar = FixtureCalendarAdapter(data_dir, mode=mode)
+    if args is None:
+        calendar = FixtureCalendarAdapter(data_dir, mode=mode)
+    else:
+        calendar = _calendar_adapter(args, data_dir, mode)
     return ChiefOfStaff(sources, calendar)
 
 
 def _run(args: argparse.Namespace) -> RunResult:
     data_dir = Path(args.data) if args.data else DEMO_DIR
     mode = AdapterMode.MANUAL_IMPORT if args.data else AdapterMode.FIXTURE
-    cos = _build(data_dir, mode)
+    cos = _build(data_dir, mode, args)
     # Prior decision context feeds drift protection: past prohibited actions
     # must not reappear as next steps (review finding #3).
     prior = load_latest_checkpoint()
@@ -71,13 +98,40 @@ def _run(args: argparse.Namespace) -> RunResult:
 def cmd(args: argparse.Namespace) -> int:
     sub = args.cos_command
     if sub == "status":
-        cos = _build(Path(args.data) if args.data else DEMO_DIR, AdapterMode.FIXTURE)
+        cos = _build(Path(args.data) if args.data else DEMO_DIR, AdapterMode.FIXTURE, args)
         print("Chief of Staff — adapter status")
         for row in cos.adapter_status():
             print(f"  [{row['mode']:<13}] {row['name']}")
             if row["mode"] in ("UNAVAILABLE", "MANUAL_IMPORT"):
                 print(f"      setup: {row['setup']}")
+        google = GoogleCalendarAdapter(now_iso=args.as_of)
+        st = google.status()
+        print("Google Calendar (live, read-only):")
+        print(f"  mode: {st['mode']} · auth: {st['auth_state']}")
+        print(
+            f"  last successful read: {st['last_read_at'] or '(never this session)'} · "
+            f"calendars: {st['calendars_read']} · events: {st['events_read']}"
+        )
+        if st["remediation"]:
+            print(f"  remediation: {st['remediation']}")
         return 0
+
+    if sub == "check-calendar":
+        google = GoogleCalendarAdapter(now_iso=args.as_of)
+        if not google.status()["authenticated"]:
+            print("Google Calendar: UNAVAILABLE (not configured) — read-only check skipped")
+            print(f"  remediation: {google.setup_instructions()}")
+            return 0
+        report = google.connection_check()
+        if report["ok"]:
+            print(
+                f"Google Calendar: LIVE — read {report['events_read']} event(s) "
+                f"at {report['last_read_at']} (read-only)"
+            )
+            return 0
+        print(f"Google Calendar: check FAILED — {report['error']}")
+        print(f"  remediation: {report['remediation']}")
+        return 1
 
     result = _run(args)
 
@@ -154,6 +208,12 @@ def add_arguments(p: argparse.ArgumentParser) -> None:
     p.add_argument("cos_command")
     p.add_argument("when", nargs="?", default="morning", help="for 'brief': morning|midday|evening")
     p.add_argument("--data", default=None, help="private import dir (default: synthetic demo)")
+    p.add_argument(
+        "--calendar",
+        choices=("auto", "live", "fixture"),
+        default="auto",
+        help="calendar source: auto = live when configured, else fixture (labeled honestly)",
+    )
     p.add_argument(
         "--no-persist",
         dest="no_persist",

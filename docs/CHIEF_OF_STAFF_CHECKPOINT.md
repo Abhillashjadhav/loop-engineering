@@ -123,3 +123,19 @@ conflict detection (`expected=` → ConflictError); checkpoint + artifact
 history; schema versioning with v0→v1 migration and newer-version refusal.
 Runner takes `store=`; CLI persists by default (`--no-persist` to opt out).
 18 planted-failure tests in `tests/chief_of_staff/test_store.py`.
+
+## Google Calendar live read-only adapter (follow-up PR)
+
+`adapters/google_calendar.py` — CalendarAdapter-protocol implementation over
+the Calendar v3 REST API, least-privilege `calendar.readonly` scope, token +
+config under `config/private/` (fail-closed guard). LIVE is claimed only
+after a real read executes; no write path exists (`create_focus_block`
+raises). Injectable GET-only transport; typed redacted errors (auth/
+permission/rate-limit/unavailable/malformed — no token, body, or event
+content in any message). Normalization: pagination + cross-page dedup,
+all-day, overnight, DST offsets, recurrence identity, cancelled excluded,
+transparent events not busy (busy-aware free_gaps), untitled placeholder,
+deterministic ordering, retrieval provenance on every item. CLI: extended
+`status`, new `check-calendar` (read-only), `--calendar auto|live|fixture`
+(auto = live only when configured; the label always says which). 27
+tests-first cases in `tests/chief_of_staff/test_google_calendar.py`.

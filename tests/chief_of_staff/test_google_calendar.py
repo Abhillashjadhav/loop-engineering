@@ -33,7 +33,7 @@ from loop_engineering.use_cases.personal_chief_of_staff.privacy import PrivacyVi
 from loop_engineering.use_cases.personal_chief_of_staff.schedule import free_gaps
 
 NOW = "2026-07-20T06:00:00+00:00"
-SECRET_TOKEN = "ya29.SECRET-DO-NOT-LOG"  # noqa: S105 - synthetic test credential
+SECRET_TOKEN = "ya29.SECRET-DO-NOT-LOG"
 
 
 @pytest.fixture
@@ -112,8 +112,14 @@ def test_live_read_normalizes_and_flips_mode_to_live(repo: Path) -> None:
                 "items": [
                     gevent(
                         "e1",
-                        {"dateTime": "2026-07-20T09:00:00-07:00", "timeZone": "America/Los_Angeles"},
-                        {"dateTime": "2026-07-20T09:45:00-07:00", "timeZone": "America/Los_Angeles"},
+                        {
+                            "dateTime": "2026-07-20T09:00:00-07:00",
+                            "timeZone": "America/Los_Angeles",
+                        },
+                        {
+                            "dateTime": "2026-07-20T09:45:00-07:00",
+                            "timeZone": "America/Los_Angeles",
+                        },
                         attendees=[{"email": "r@x.com"}],
                     )
                 ]
@@ -144,12 +150,23 @@ def test_pagination_and_cross_page_duplicate_dedup(repo: Path) -> None:
         repo,
         [
             {"items": [e_dup], "nextPageToken": "p2"},
-            {"items": [e_dup, gevent("e2", {"dateTime": "2026-07-20T12:00:00+00:00"}, {"dateTime": "2026-07-20T13:00:00+00:00"})]},
+            {
+                "items": [
+                    e_dup,
+                    gevent(
+                        "e2",
+                        {"dateTime": "2026-07-20T12:00:00+00:00"},
+                        {"dateTime": "2026-07-20T13:00:00+00:00"},
+                    ),
+                ]
+            },
         ],
         log,
     )
     items = a.events()
-    assert [i.event_id.split(":")[-1] for i in items] == ["dup", "e2"], "duplicate across pages kept"
+    assert [i.event_id.split(":")[-1] for i in items] == ["dup", "e2"], (
+        "duplicate across pages kept"
+    )
     assert any("pageToken=p2" in u for u in log), "second page never requested"
 
 
@@ -195,8 +212,14 @@ def test_timezone_and_dst_boundary_preserved(repo: Path) -> None:
                 "items": [
                     gevent(
                         "dst",
-                        {"dateTime": "2026-11-01T01:30:00-07:00", "timeZone": "America/Los_Angeles"},
-                        {"dateTime": "2026-11-01T02:30:00-08:00", "timeZone": "America/Los_Angeles"},
+                        {
+                            "dateTime": "2026-11-01T01:30:00-07:00",
+                            "timeZone": "America/Los_Angeles",
+                        },
+                        {
+                            "dateTime": "2026-11-01T02:30:00-08:00",
+                            "timeZone": "America/Los_Angeles",
+                        },
                     )
                 ]
             }
@@ -243,8 +266,17 @@ def test_cancelled_events_excluded(repo: Path) -> None:
         [
             {
                 "items": [
-                    gevent("ok", {"dateTime": "2026-07-20T09:00:00+00:00"}, {"dateTime": "2026-07-20T10:00:00+00:00"}),
-                    gevent("gone", {"dateTime": "2026-07-20T11:00:00+00:00"}, {"dateTime": "2026-07-20T12:00:00+00:00"}, status="cancelled"),
+                    gevent(
+                        "ok",
+                        {"dateTime": "2026-07-20T09:00:00+00:00"},
+                        {"dateTime": "2026-07-20T10:00:00+00:00"},
+                    ),
+                    gevent(
+                        "gone",
+                        {"dateTime": "2026-07-20T11:00:00+00:00"},
+                        {"dateTime": "2026-07-20T12:00:00+00:00"},
+                        status="cancelled",
+                    ),
                 ]
             }
         ],
@@ -280,8 +312,16 @@ def test_overlapping_events_both_preserved_and_both_block(repo: Path) -> None:
         [
             {
                 "items": [
-                    gevent("a", {"dateTime": "2026-07-21T09:00:00+00:00"}, {"dateTime": "2026-07-21T11:00:00+00:00"}),
-                    gevent("b", {"dateTime": "2026-07-21T10:00:00+00:00"}, {"dateTime": "2026-07-21T12:00:00+00:00"}),
+                    gevent(
+                        "a",
+                        {"dateTime": "2026-07-21T09:00:00+00:00"},
+                        {"dateTime": "2026-07-21T11:00:00+00:00"},
+                    ),
+                    gevent(
+                        "b",
+                        {"dateTime": "2026-07-21T10:00:00+00:00"},
+                        {"dateTime": "2026-07-21T12:00:00+00:00"},
+                    ),
                 ]
             }
         ],
@@ -295,7 +335,18 @@ def test_overlapping_events_both_preserved_and_both_block(repo: Path) -> None:
 def test_untitled_event_gets_placeholder(repo: Path) -> None:
     a = adapter(
         repo,
-        [{"items": [gevent("u1", {"dateTime": "2026-07-20T09:00:00+00:00"}, {"dateTime": "2026-07-20T10:00:00+00:00"}, summary=None)]}],
+        [
+            {
+                "items": [
+                    gevent(
+                        "u1",
+                        {"dateTime": "2026-07-20T09:00:00+00:00"},
+                        {"dateTime": "2026-07-20T10:00:00+00:00"},
+                        summary=None,
+                    )
+                ]
+            }
+        ],
     )
     assert a.events()[0].title == "(untitled)"
 
@@ -304,8 +355,16 @@ def test_repeated_identical_reads_materially_identical(repo: Path) -> None:
     pages = [
         {
             "items": [
-                gevent("z", {"dateTime": "2026-07-20T09:00:00+00:00"}, {"dateTime": "2026-07-20T10:00:00+00:00"}),
-                gevent("a", {"dateTime": "2026-07-20T11:00:00+00:00"}, {"dateTime": "2026-07-20T12:00:00+00:00"}),
+                gevent(
+                    "z",
+                    {"dateTime": "2026-07-20T09:00:00+00:00"},
+                    {"dateTime": "2026-07-20T10:00:00+00:00"},
+                ),
+                gevent(
+                    "a",
+                    {"dateTime": "2026-07-20T11:00:00+00:00"},
+                    {"dateTime": "2026-07-20T12:00:00+00:00"},
+                ),
             ]
         }
     ]
@@ -351,7 +410,17 @@ def test_insufficient_scope_refused_upfront(repo: Path) -> None:
 
 def test_403_maps_to_permission_error(repo: Path) -> None:
     with pytest.raises(CalendarPermissionError):
-        adapter(repo, [{"__status__": 403, "__body__": json.dumps({"error": {"errors": [{"reason": "insufficientPermissions"}]}})}]).events()
+        adapter(
+            repo,
+            [
+                {
+                    "__status__": 403,
+                    "__body__": json.dumps(
+                        {"error": {"errors": [{"reason": "insufficientPermissions"}]}}
+                    ),
+                }
+            ],
+        ).events()
 
 
 def test_rate_limit_maps_to_rate_limit_error(repo: Path) -> None:
@@ -399,7 +468,9 @@ def test_private_boundary_enforced_for_config(tmp_path: Path) -> None:
 def test_write_attempt_is_blocked(repo: Path) -> None:
     """Planted: any outbound calendar write must be refused."""
     a = adapter(repo, [{"items": []}])
-    block = CalendarItem("f1", "[Focus] X", "2026-07-21T09:00:00+00:00", "2026-07-21T10:00:00+00:00")
+    block = CalendarItem(
+        "f1", "[Focus] X", "2026-07-21T09:00:00+00:00", "2026-07-21T10:00:00+00:00"
+    )
     with pytest.raises(ReadOnlyAdapterError):
         a.create_focus_block(block)
 
@@ -417,7 +488,20 @@ def test_transport_urls_are_read_only_gets(repo: Path) -> None:
 
 
 def test_status_reports_honest_state(repo: Path) -> None:
-    a = adapter(repo, [{"items": [gevent("e1", {"dateTime": "2026-07-20T09:00:00+00:00"}, {"dateTime": "2026-07-20T09:30:00+00:00"})]}])
+    a = adapter(
+        repo,
+        [
+            {
+                "items": [
+                    gevent(
+                        "e1",
+                        {"dateTime": "2026-07-20T09:00:00+00:00"},
+                        {"dateTime": "2026-07-20T09:30:00+00:00"},
+                    )
+                ]
+            }
+        ],
+    )
     before = a.status()
     assert before["mode"] != "LIVE" and before["authenticated"] is True
     a.events()
