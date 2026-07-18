@@ -12,7 +12,7 @@ import json
 from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from loop_engineering.use_cases.personal_chief_of_staff import briefs as briefs_mod
 from loop_engineering.use_cases.personal_chief_of_staff.adapters.base import (
@@ -38,6 +38,9 @@ from loop_engineering.use_cases.personal_chief_of_staff.models import (
 from loop_engineering.use_cases.personal_chief_of_staff.prioritize import prioritize
 from loop_engineering.use_cases.personal_chief_of_staff.registry import TaskRegister
 from loop_engineering.use_cases.personal_chief_of_staff.schedule import propose_schedule
+
+if TYPE_CHECKING:
+    from loop_engineering.use_cases.personal_chief_of_staff.store import RegisterStore
 
 
 def _safe_proposals_for(tasks: list[Task]) -> list[ActionProposal]:
@@ -143,10 +146,21 @@ class ChiefOfStaff:
         day: str,
         as_of: str,
         prior_checkpoint: DecisionCheckpoint | None = None,
+        store: RegisterStore | None = None,
     ) -> RunResult:
         # 1. ingest + discover
         raw = [item for a in self.sources for item in a.fetch()]
         tasks = discover(raw, as_of)
+        # 1b. cross-run persistence: observations land in the append-only
+        #     private journal (idempotent), and the working set becomes the
+        #     PERSISTED register view — statuses, decisions, and provenance
+        #     recorded in earlier runs survive into this one.
+        if store is not None:
+            store.ingest(tasks, as_of)
+            if prior_checkpoint is None:
+                history = store.checkpoints()
+                prior_checkpoint = history[-1] if history else None
+            tasks = store.view()
         # 2. consolidate (dedup preserving provenance)
         register = TaskRegister(tasks)
         # link goals deterministically by keyword (kept simple + auditable)
@@ -167,6 +181,11 @@ class ChiefOfStaff:
         safe_result = execute_safe(proposals, self.contract)
         # 7. checkpoint
         checkpoint = build_checkpoint(as_of, scored, self.contract)
+        if store is not None:
+            # Checkpoint history + generated artifacts survive across runs.
+            store.append_checkpoint(checkpoint, at=as_of)
+            for executed in safe_result.executed:
+                store.append_artifact(executed.to_dict(), at=as_of)
         # 8. briefs
         overdue = register.overdue(day)
         blocked = register.blocked()
