@@ -609,7 +609,9 @@ def _cli_args(**overrides: object):  # type: ignore[no-untyped-def]
     return argparse.Namespace(**base)
 
 
-def test_cli_auto_falls_back_to_fixture_when_unconfigured() -> None:
+def test_cli_auto_falls_back_to_fixture_when_unconfigured(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     from loop_engineering.use_cases.personal_chief_of_staff.adapters.fixtures import (
         FixtureCalendarAdapter,
     )
@@ -618,7 +620,11 @@ def test_cli_auto_falls_back_to_fixture_when_unconfigured() -> None:
         _calendar_adapter,
     )
 
-    # The real repo has no google token → auto must yield the FIXTURE adapter.
+    # Hermetic: a scratch repo with the boundary but NO token — regardless of
+    # whether the developer machine has real credentials configured.
+    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True)
+    (tmp_path / ".gitignore").write_text("/config/private/\n/runs/private/\n", encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
     chosen = _calendar_adapter(_cli_args(), DEMO_DIR, AdapterMode.FIXTURE)
     assert isinstance(chosen, FixtureCalendarAdapter)
     assert chosen.mode is AdapterMode.FIXTURE  # labeled honestly, never LIVE
@@ -634,12 +640,17 @@ def test_cli_live_choice_requires_explicit_as_of() -> None:
         _calendar_adapter(_cli_args(calendar="live"), DEMO_DIR, AdapterMode.FIXTURE)
 
 
-def test_cli_live_choice_returns_google_adapter_with_explicit_as_of() -> None:
+def test_cli_live_choice_returns_google_adapter_with_explicit_as_of(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     from loop_engineering.use_cases.personal_chief_of_staff.cli import (
         DEMO_DIR,
         _calendar_adapter,
     )
 
+    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True)
+    (tmp_path / ".gitignore").write_text("/config/private/\n/runs/private/\n", encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
     chosen = _calendar_adapter(
         _cli_args(calendar="live", as_of="2026-07-20T06:00:00+00:00"),
         DEMO_DIR,

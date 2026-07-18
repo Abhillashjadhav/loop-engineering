@@ -27,14 +27,22 @@ def repo_root(start: Path | None = None) -> Path:
     return here
 
 
-def _is_git_ignored(path: Path, root: Path) -> bool:
-    """True if git would ignore ``path`` (so it can hold private content)."""
+def _is_git_ignored(path: Path, root: Path, as_dir: bool = False) -> bool:
+    """True if git would ignore ``path`` (so it can hold private content).
+
+    ``as_dir`` appends a trailing slash so directory-only gitignore patterns
+    (``/config/private/``) match even when the directory does not exist yet —
+    git cannot infer directory-ness for absent paths, so a fresh checkout
+    (where private dirs are never committed, hence never present) would
+    otherwise fail the boundary check spuriously.
+    """
     try:
         rel = path.resolve().relative_to(root)
     except ValueError:
         return False
+    candidate = str(rel) + ("/" if as_dir else "")
     result = subprocess.run(
-        ["git", "check-ignore", "-q", str(rel)],
+        ["git", "check-ignore", "-q", candidate],
         cwd=root,
         capture_output=True,
     )
@@ -61,8 +69,11 @@ def private_path(relative: str, *, root: Path | None = None, ensure_parent: bool
     if ensure_parent:
         target.parent.mkdir(parents=True, exist_ok=True)
     # Assert the boundary really is ignored (fail closed if .gitignore drifted).
-    check = target if target.exists() else target.parent
-    if not _is_git_ignored(check, base):
+    # Non-existent paths (fresh checkout, read-only lookups) are checked as
+    # the file itself and as the parent DIRECTORY (trailing slash) so
+    # dir-only ignore patterns still match; a missing boundary still raises.
+    ignored = _is_git_ignored(target, base) or _is_git_ignored(target.parent, base, as_dir=True)
+    if not ignored:
         raise PrivacyViolation(
             f"private root for {relative!r} is not git-ignored — refusing to write "
             "personal content to a tracked path; restore the .gitignore boundary"

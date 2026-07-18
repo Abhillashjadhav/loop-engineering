@@ -48,3 +48,15 @@ def test_private_path_fails_closed_when_boundary_missing(tmp_path: Path) -> None
 
 def test_repo_root_finds_git_dir() -> None:
     assert (repo_root() / ".git").exists()
+
+
+def test_fresh_checkout_without_private_dirs_is_readable(tmp_path: Path) -> None:
+    """CI regression: on a fresh clone the private dirs do not exist, and the
+    dir-only gitignore pattern must still satisfy the boundary check for
+    read-only lookups (ensure_parent=False) — while a missing boundary
+    still fails closed."""
+    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True)
+    (tmp_path / ".gitignore").write_text("/config/private/\n", encoding="utf-8")
+    # No config/private directory on disk — exactly the fresh-checkout state.
+    p = private_path("config/private/google_calendar.json", root=tmp_path, ensure_parent=False)
+    assert not p.exists()
