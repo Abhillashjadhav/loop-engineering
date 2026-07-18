@@ -533,3 +533,143 @@ def test_fixture_adapter_behavior_unchanged(repo: Path) -> None:
     events = f.events()
     assert len(events) == 4  # demo calendar unchanged
     assert all(e.busy for e in events)  # new field defaults keep old semantics
+
+
+# --- Review round 2: blocking-finding regressions ----------------------------
+
+
+def test_repeating_page_token_raises_instead_of_looping(repo: Path) -> None:
+    """Finding 1: a server that repeats nextPageToken must be a typed error,
+    never an infinite request loop."""
+    calls = {"n": 0}
+
+    def stuck_transport(url: str, headers: dict[str, str]) -> tuple[int, str]:
+        calls["n"] += 1
+        return 200, json.dumps({"items": [], "nextPageToken": "same-forever"})
+
+    a = GoogleCalendarAdapter(root=repo, transport=stuck_transport, now_iso=NOW)
+    with pytest.raises(MalformedResponseError, match=r"page token|pagination"):
+        a.events()
+    assert calls["n"] <= 3, f"planted: runaway pagination made {calls['n']} requests"
+    assert a.mode is not AdapterMode.LIVE
+
+
+def test_missing_scope_fails_closed(repo: Path) -> None:
+    """Finding 2: an undeclared token scope must be refused, not assumed."""
+    tok = repo / "config/private/google_calendar_token.json"
+    data = json.loads(tok.read_text())
+    del data["scope"]
+    tok.write_text(json.dumps(data), encoding="utf-8")
+    a = adapter(repo, [{"items": []}])
+    with pytest.raises(CalendarPermissionError, match="not declared"):
+        a.events()
+    assert a.mode is not AdapterMode.LIVE, "planted: undeclared scope reached LIVE"
+
+
+def test_hybrid_all_day_event_is_typed_malformed(repo: Path) -> None:
+    """Finding 3: date/dateTime mix must fail loudly at normalization,
+    not detonate later inside scheduling."""
+    hybrid = {
+        "id": "hy1",
+        "status": "confirmed",
+        "start": {"date": "2026-07-21"},
+        "end": {"dateTime": "2026-07-21T10:00:00+00:00"},
+    }
+    with pytest.raises(MalformedResponseError, match="mixes all-day"):
+        adapter(repo, [{"items": [hybrid]}]).events()
+
+
+def test_empty_calendar_list_never_claims_live(repo: Path) -> None:
+    """Finding 4: zero configured calendars must not stamp a LIVE read."""
+    cfg = repo / "config/private/google_calendar.json"
+    cfg.write_text(json.dumps({"calendar_ids": []}), encoding="utf-8")
+    a = adapter(repo, [{"items": []}])
+    with pytest.raises(MalformedResponseError, match="no calendars"):
+        a.events()
+    assert a.mode is not AdapterMode.LIVE, "planted: LIVE claimed with zero reads"
+
+
+# --- CLI wiring (finding 6) --------------------------------------------------
+
+
+def _cli_args(**overrides: object):  # type: ignore[no-untyped-def]
+    import argparse
+
+    from loop_engineering.use_cases.personal_chief_of_staff.cli import DEFAULT_AS_OF
+
+    base: dict[str, object] = {
+        "calendar": "auto",
+        "as_of": DEFAULT_AS_OF,
+        "data": None,
+        "no_persist": True,
+        "day": "2026-07-17",
+        "run_id": "cli-test",
+    }
+    base.update(overrides)
+    return argparse.Namespace(**base)
+
+
+def test_cli_auto_falls_back_to_fixture_when_unconfigured() -> None:
+    from loop_engineering.use_cases.personal_chief_of_staff.adapters.fixtures import (
+        FixtureCalendarAdapter,
+    )
+    from loop_engineering.use_cases.personal_chief_of_staff.cli import (
+        DEMO_DIR,
+        _calendar_adapter,
+    )
+
+    # The real repo has no google token → auto must yield the FIXTURE adapter.
+    chosen = _calendar_adapter(_cli_args(), DEMO_DIR, AdapterMode.FIXTURE)
+    assert isinstance(chosen, FixtureCalendarAdapter)
+    assert chosen.mode is AdapterMode.FIXTURE  # labeled honestly, never LIVE
+
+
+def test_cli_live_choice_requires_explicit_as_of() -> None:
+    from loop_engineering.use_cases.personal_chief_of_staff.cli import (
+        DEMO_DIR,
+        _calendar_adapter,
+    )
+
+    with pytest.raises(SystemExit, match="explicit --as-of"):
+        _calendar_adapter(_cli_args(calendar="live"), DEMO_DIR, AdapterMode.FIXTURE)
+
+
+def test_cli_live_choice_returns_google_adapter_with_explicit_as_of() -> None:
+    from loop_engineering.use_cases.personal_chief_of_staff.cli import (
+        DEMO_DIR,
+        _calendar_adapter,
+    )
+
+    chosen = _calendar_adapter(
+        _cli_args(calendar="live", as_of="2026-07-20T06:00:00+00:00"),
+        DEMO_DIR,
+        AdapterMode.FIXTURE,
+    )
+    assert isinstance(chosen, GoogleCalendarAdapter)
+    assert chosen.mode is not AdapterMode.LIVE  # unauthenticated, never LIVE
+
+
+def test_cli_approve_schedule_refuses_live_calendar(capsys: pytest.CaptureFixture[str]) -> None:
+    from loop_engineering.use_cases.personal_chief_of_staff.cli import cmd
+
+    rc = cmd(
+        _cli_args(
+            cos_command="approve-schedule",
+            when="morning",
+            calendar="live",
+            as_of="2026-07-20T06:00:00+00:00",
+        )
+    )
+    assert rc == 2, "planted: approve-schedule accepted --calendar live"
+    out = capsys.readouterr().out
+    assert "read-only" in out
+
+
+def test_cli_approve_schedule_fixture_states_no_real_write(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    from loop_engineering.use_cases.personal_chief_of_staff.cli import cmd
+
+    rc = cmd(_cli_args(cos_command="approve-schedule", when="morning", calendar="fixture"))
+    assert rc == 0
+    assert "no real calendar write occurred" in capsys.readouterr().out

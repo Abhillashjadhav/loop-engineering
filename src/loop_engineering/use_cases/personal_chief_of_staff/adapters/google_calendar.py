@@ -43,6 +43,7 @@ CONFIG_REL = "config/private/google_calendar.json"
 TOKEN_REL = "config/private/google_calendar_token.json"
 LAST_READ_REL = "runs/private/cos/state/calendar-last-read.json"
 PAGE_SIZE = 250
+MAX_PAGES = 100  # hard cap per calendar: typed error, never a runaway loop
 
 
 class CalendarAuthError(RuntimeError):
@@ -62,7 +63,7 @@ class CalendarUnavailableError(RuntimeError):
 
 
 class MalformedResponseError(RuntimeError):
-    """The API returned data that could not be parsed safely."""
+    """Response or configuration data that cannot be used safely."""
 
 
 class ReadOnlyAdapterError(RuntimeError):
@@ -142,7 +143,14 @@ class GoogleCalendarAdapter:
 
     def _check_scope(self) -> None:
         scope = str(self._token.get("scope", "")) if self._token else ""
-        if scope and READONLY_SCOPE not in scope.split():
+        if not scope.strip():
+            # Fail CLOSED: an undeclared scope is not assumed least-privilege
+            # (review finding #2).
+            raise CalendarPermissionError(
+                "token scope not declared — this adapter is least-privilege only; "
+                f"re-issue the token with {READONLY_SCOPE!r} and record the scope field"
+            )
+        if READONLY_SCOPE not in scope.split():
             raise CalendarPermissionError(
                 "token scope is not least-privilege: expected "
                 f"{READONLY_SCOPE!r}; re-issue the token with the read-only scope"
@@ -182,9 +190,21 @@ class GoogleCalendarAdapter:
         items: list[CalendarItem] = []
         seen_ids: set[str] = set()
         calendar_ids = [str(c) for c in self._config.get("calendar_ids", ["primary"])]
+        if not calendar_ids:
+            raise MalformedResponseError(
+                f"no calendars configured — add at least one entry to calendar_ids in {CONFIG_REL}"
+            )
         for calendar_id in calendar_ids:
             page_token = ""
+            seen_tokens: set[str] = set()
+            pages = 0
             while True:
+                pages += 1
+                if pages > MAX_PAGES:
+                    raise MalformedResponseError(
+                        f"calendar {calendar_id!r}: exceeded {MAX_PAGES} pages — "
+                        "refusing a runaway pagination loop (review finding #1)"
+                    )
                 params = {
                     "timeMin": window_start,
                     "timeMax": window_end,
@@ -209,6 +229,12 @@ class GoogleCalendarAdapter:
                 page_token = str(payload.get("nextPageToken", "") or "")
                 if not page_token:
                     break
+                if page_token in seen_tokens:
+                    raise MalformedResponseError(
+                        f"calendar {calendar_id!r}: server repeated page token — "
+                        "refusing an infinite pagination loop (review finding #1)"
+                    )
+                seen_tokens.add(page_token)
         items.sort(key=lambda i: (i.start, i.event_id))
         self._last_read_at = self._now_iso
         self._events_read = len(items)
@@ -298,9 +324,20 @@ class GoogleCalendarAdapter:
         start_obj = raw.get("start", {}) or {}
         end_obj = raw.get("end", {}) or {}
         all_day = "date" in start_obj
+        if all_day != ("date" in end_obj):
+            raise MalformedResponseError(
+                f"calendar {calendar_id!r}: event {raw_id!r} mixes all-day and "
+                "timed start/end (review finding #3)"
+            )
         if all_day:
-            start = f"{start_obj.get('date', '')}T00:00:00+00:00"
-            end = f"{end_obj.get('date', '')}T00:00:00+00:00"
+            start_date = str(start_obj.get("date", "") or "")
+            end_date = str(end_obj.get("date", "") or "")
+            if not start_date or not end_date:
+                raise MalformedResponseError(
+                    f"calendar {calendar_id!r}: event {raw_id!r} has an empty all-day date"
+                )
+            start = f"{start_date}T00:00:00+00:00"
+            end = f"{end_date}T00:00:00+00:00"
         else:
             start = str(start_obj.get("dateTime", ""))
             end = str(end_obj.get("dateTime", ""))

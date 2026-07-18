@@ -43,6 +43,7 @@ from loop_engineering.use_cases.personal_chief_of_staff.runner import (
 from loop_engineering.use_cases.personal_chief_of_staff.store import RegisterStore
 
 DEMO_DIR = Path("use_cases/personal-chief-of-staff/demo")
+DEFAULT_AS_OF = "2026-07-17T08:00:00+00:00"
 SOURCE_NAMES = ("email", "github", "drive", "chat_context", "manual")
 
 
@@ -57,6 +58,11 @@ def _calendar_adapter(args: argparse.Namespace, data_dir: Path, mode: AdapterMod
     choice = getattr(args, "calendar", "auto")
     if choice == "fixture":
         return FixtureCalendarAdapter(data_dir, mode=mode)
+    if choice == "live" and args.as_of == DEFAULT_AS_OF:
+        raise SystemExit(
+            "--calendar live requires an explicit --as-of (the demo default is a "
+            "frozen clock; a live read window must be anchored to your real time)"
+        )
     google = GoogleCalendarAdapter(now_iso=args.as_of)
     if choice == "live":
         return google
@@ -133,6 +139,15 @@ def cmd(args: argparse.Namespace) -> int:
         print(f"  remediation: {report['remediation']}")
         return 1
 
+    if sub == "approve-schedule" and getattr(args, "calendar", "auto") == "live":
+        print(
+            "approve-schedule cannot write to the live calendar: the Google "
+            "adapter is strictly read-only in this version. Re-run without "
+            "--calendar live to record fixture blocks, or wait for the "
+            "approval-gated write capability."
+        )
+        return 2
+
     result = _run(args)
 
     if sub == "ingest":
@@ -166,6 +181,10 @@ def cmd(args: argparse.Namespace) -> int:
         calendar = FixtureCalendarAdapter(data_dir)
         created = approve_and_create_focus_blocks(result.schedule, calendar, approved=True)
         print(f"approved — created {len(created)} focus block(s): {', '.join(created)}")
+        print(
+            "note: FIXTURE only — no real calendar write occurred; live focus-block "
+            "creation is a separate approval-gated capability."
+        )
         return 0
     if sub == "execute-safe":
         r = result.safe_result
@@ -221,5 +240,5 @@ def add_arguments(p: argparse.ArgumentParser) -> None:
         help="stateless run: skip the private cross-run register journal",
     )
     p.add_argument("--day", default="2026-07-17")
-    p.add_argument("--as-of", dest="as_of", default="2026-07-17T08:00:00+00:00")
+    p.add_argument("--as-of", dest="as_of", default=DEFAULT_AS_OF)
     p.add_argument("--run-id", dest="run_id", default="cos-demo")
