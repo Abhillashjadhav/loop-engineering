@@ -83,12 +83,41 @@ def execute_safe(proposals: list[ActionProposal], contract: OperatingContract) -
             continue
         if requirement is ApprovalRequirement.NONE:
             p.status = ProposalStatus.EXECUTED
-            p.execution_evidence = f"safe action performed locally: {p.action_type} → {p.target}"
+            # The evidence IS the generated artifact (deterministic draft
+            # content, persisted with the run record) — never a bare claim of
+            # performance with nothing behind it (review finding #7).
+            p.execution_evidence = _render_artifact(p)
             result.executed.append(p)
         else:
             p.status = ProposalStatus.PROPOSED
             result.requires_approval.append(p)
     return result
+
+
+def _render_artifact(p: ActionProposal) -> str:
+    """Deterministic draft/prep content for a safe action. Stored on the
+    proposal and persisted in the private run record by ``write_private``."""
+    if p.action_type in ("gmail_draft", "waiting_on_followup_draft", "speaking_followup_draft"):
+        return (
+            f"DRAFT (not sent) to {p.target}:\n"
+            f"Subject: Follow-up — {p.reason}\n"
+            f"Hi {p.target}, checking in on the above. {p.expected_result}."
+        )
+    if p.action_type == "interview_prep_session":
+        return (
+            f"PREP SESSION for {p.target}: 1) product teardown outline "
+            "2) metrics story 3) role-specific questions 4) 20-min dry run."
+        )
+    if p.action_type == "github_issue_proposal":
+        return (
+            f"ISSUE DRAFT (not created) for {p.target}:\n"
+            f"Title: {p.reason}\nChecklist: [ ] scope [ ] change [ ] test [ ] verify"
+        )
+    if p.action_type == "meeting_brief":
+        return f"MEETING BRIEF for {p.target}: context, attendees, goals, open questions."
+    if p.action_type == "reminder":
+        return f"REMINDER set locally: {p.reason}"
+    return f"PREPARED (local artifact): {p.action_type} → {p.target}: {p.expected_result}"
 
 
 def approve_and_create_focus_blocks(

@@ -46,6 +46,50 @@ _DEADLINE = re.compile(
     re.I,
 )
 
+_WEEKDAYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
+
+
+def _normalize_deadline(raw: str, as_of_iso: str) -> str | None:
+    """Normalize an extracted deadline cue to an ISO date (review finding #2).
+
+    Every stored deadline is ISO ``YYYY-MM-DD`` so downstream comparisons
+    (overdue detection, priority, merge-earliest) are well-defined. Relative
+    forms resolve deterministically against the supplied ``as_of`` clock —
+    normalization of stated text, never invention. Unparseable cues return
+    None (no deadline) rather than a guess.
+    """
+    from datetime import date, timedelta
+
+    token = raw.strip().lower()
+    today = date.fromisoformat(as_of_iso[:10])
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", token):
+        return token
+    if token == "today":
+        return today.isoformat()
+    if token == "tomorrow":
+        return (today + timedelta(days=1)).isoformat()
+    if token == "next week":
+        return (today + timedelta(days=7)).isoformat()
+    for i, prefix in enumerate(_WEEKDAYS):
+        if token.startswith(prefix):
+            ahead = (i - today.weekday()) % 7 or 7  # next occurrence, 1..7 days out
+            return (today + timedelta(days=ahead)).isoformat()
+    m = re.fullmatch(r"(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?", token)
+    if m:
+        month, dom = int(m.group(1)), int(m.group(2))
+        year = int(m.group(3)) if m.group(3) else today.year
+        if year < 100:
+            year += 2000
+        try:
+            candidate = date(year, month, dom)
+        except ValueError:
+            return None  # not a real date — record nothing rather than guess
+        if not m.group(3) and candidate < today:
+            candidate = date(year + 1, month, dom)
+        return candidate.isoformat()
+    return None
+
+
 _WAITING = re.compile(r"\bwaiting (?:on|for)\s+([A-Z][a-z]+)", re.I)
 
 
@@ -135,7 +179,7 @@ def discover_from_item(item: RawItem, now_iso: str) -> list[Task]:
         deadline = None
         dm = _DEADLINE.search(sentence)
         if dm:
-            deadline = dm.group(1)
+            deadline = _normalize_deadline(dm.group(1), now_iso)
         wm = _WAITING.search(sentence)
         waiting_on = wm.group(1) if wm else str(item.meta.get("waiting_on", ""))
         status = TaskStatus.WAITING if waiting_on else TaskStatus.ACTIVE

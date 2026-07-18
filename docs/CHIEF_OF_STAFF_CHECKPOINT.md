@@ -74,3 +74,40 @@ git checkout claude/personal-chief-of-staff-mvp
 python -m pytest tests/chief_of_staff -q
 loop-engineering chief-of-staff dashboard --run-id resume
 ```
+
+## Independent review (PR #14) — outcome
+
+Fresh-context read-only review returned REQUEST_CHANGES with 3 blocking
+findings; all fixed with regression tests (`tests/chief_of_staff/test_review_fixes.py`):
+
+1. `free_gaps` matched events by start-date string, so overnight/offset
+   events were treated as free time → now interval-intersection in absolute
+   time.
+2. Non-ISO deadline cues ("12/1", "tomorrow", "friday") were stored raw and
+   compared lexicographically → now normalized to ISO at extraction,
+   deterministically against the run clock; unparseable cues store None.
+3. The prior-checkpoint prohibited-action guard was dead code (never loaded,
+   literal snake_case match) → checkpoint-latest.json persisted + loaded each
+   run, token-based matching that fires on natural language.
+
+Also fixed from the review: non-actionable (blocked/waiting/inbox/done)
+tasks no longer consume focus blocks (finding 5), and executed safe actions
+now carry the generated artifact as evidence instead of a bare "performed"
+claim (finding 7 — honesty rule).
+
+## Follow-up backlog (non-blocking review findings, deliberately deferred)
+
+- finding 4: buffer also before the first block of a gap / before meetings
+- finding 6: `_merge` should keep max(urgency/impact/strategic_value/energy)
+  and non-empty blocked_by/description from the losing twin
+- finding 8: load `operating-contract.yaml` (and a private per-user contract)
+  instead of hardcoded `OperatingContract()` defaults
+- finding 9: blocked/waiting categorization should win over keyword bands;
+  extend displacement detection beyond admin-vs-job
+- finding 10: fail loudly (or mark source UNAVAILABLE) when a data dir/source
+  file is missing instead of silently returning []
+- finding 11: privacy root check by path components; PrivacyViolation on
+  symlink escape; mkdir after ignore check
+- finding 12: `_WAITING` should not capture stopwords ("waiting for the…")
+- finding 13: real midday slipped/new-urgent diffing; call `carried_forward`
+- plus: cross-run register persistence, live adapters (separate PRs)

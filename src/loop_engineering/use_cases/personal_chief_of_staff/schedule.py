@@ -71,13 +71,22 @@ class ProposedSchedule:
 def free_gaps(
     events: list[CalendarItem], day: str, work_start: str = "09:00", work_end: str = "18:00"
 ) -> list[tuple[datetime, datetime]]:
-    """Free intervals inside working hours, with existing meetings removed."""
+    """Free intervals inside working hours, with existing meetings removed.
+
+    Events are matched by INTERVAL INTERSECTION with the working window in
+    absolute (timezone-aware) time — never by start-date string equality — so
+    overnight/multi-day events and events expressed in other UTC offsets
+    still block the time they actually cover (review finding #1).
+    """
     start = _dt(f"{day}T{work_start}:00+00:00")
     end = _dt(f"{day}T{work_end}:00+00:00")
-    busy = sorted(
-        ((_dt(e.start), _dt(e.end)) for e in events if _dt(e.start).date().isoformat() == day),
-        key=lambda x: x[0],
-    )
+    busy: list[tuple[datetime, datetime]] = []
+    for e in events:
+        e_start, e_end = _dt(e.start), _dt(e.end)
+        lo, hi = max(e_start, start), min(e_end, end)
+        if lo < hi:  # the event overlaps the working window
+            busy.append((lo, hi))
+    busy.sort(key=lambda x: x[0])
     gaps: list[tuple[datetime, datetime]] = []
     cursor = start
     for b_start, b_end in busy:

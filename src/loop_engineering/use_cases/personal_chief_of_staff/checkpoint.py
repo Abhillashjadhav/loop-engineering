@@ -64,8 +64,12 @@ def drift_check(
         # Prior prohibited actions must never reappear as next steps.
     if prior:
         for prohibited in prior.prohibited_actions:
+            # Token match, not literal snake_case substring: "send_email"
+            # must catch "Send the follow-up email…" (review finding #3).
+            tokens = [t for t in prohibited.lower().replace("_", " ").split() if t]
             for st in scored:
-                if prohibited.lower() in f"{st.task.title}".lower():
+                blob = f"{st.task.title} {st.task.description}".lower()
+                if tokens and all(t in blob for t in tokens):
                     violations.append(
                         f"task {st.task.id!r} revisits a prohibited action {prohibited!r}"
                     )

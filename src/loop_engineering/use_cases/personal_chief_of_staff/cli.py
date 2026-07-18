@@ -34,6 +34,7 @@ from loop_engineering.use_cases.personal_chief_of_staff.privacy import private_p
 from loop_engineering.use_cases.personal_chief_of_staff.runner import (
     ChiefOfStaff,
     RunResult,
+    load_latest_checkpoint,
     write_private,
 )
 
@@ -51,7 +52,10 @@ def _run(args: argparse.Namespace) -> RunResult:
     data_dir = Path(args.data) if args.data else DEMO_DIR
     mode = AdapterMode.MANUAL_IMPORT if args.data else AdapterMode.FIXTURE
     cos = _build(data_dir, mode)
-    return cos.run(run_id=args.run_id, day=args.day, as_of=args.as_of)
+    # Prior decision context feeds drift protection: past prohibited actions
+    # must not reappear as next steps (review finding #3).
+    prior = load_latest_checkpoint()
+    return cos.run(run_id=args.run_id, day=args.day, as_of=args.as_of, prior_checkpoint=prior)
 
 
 def cmd(args: argparse.Namespace) -> int:
@@ -114,7 +118,14 @@ def cmd(args: argparse.Namespace) -> int:
         out = private_path(f"runs/private/cos/{result.run_id}/checkpoint.json")
         import json
 
-        out.write_text(json.dumps(cp.to_dict(), indent=2, sort_keys=True), encoding="utf-8")
+        payload = json.dumps(cp.to_dict(), indent=2, sort_keys=True)
+        out.write_text(payload, encoding="utf-8")
+        # Refresh the stable prior-context file the next run loads.
+        from loop_engineering.use_cases.personal_chief_of_staff.runner import (
+            LATEST_CHECKPOINT,
+        )
+
+        private_path(LATEST_CHECKPOINT).write_text(payload, encoding="utf-8")
         print(f"checkpoint written → {out} (private)")
         print(f"  digest: {cp.context_digest}")
         return 0

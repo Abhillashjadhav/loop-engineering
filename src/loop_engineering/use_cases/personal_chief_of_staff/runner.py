@@ -31,6 +31,7 @@ from loop_engineering.use_cases.personal_chief_of_staff.execute import (
 from loop_engineering.use_cases.personal_chief_of_staff.models import (
     ActionProposal,
     ApprovalRequirement,
+    DecisionCheckpoint,
     Task,
     TaskStatus,
 )
@@ -136,7 +137,13 @@ class ChiefOfStaff:
         )
         return rows
 
-    def run(self, run_id: str, day: str, as_of: str) -> RunResult:
+    def run(
+        self,
+        run_id: str,
+        day: str,
+        as_of: str,
+        prior_checkpoint: DecisionCheckpoint | None = None,
+    ) -> RunResult:
         # 1. ingest + discover
         raw = [item for a in self.sources for item in a.fetch()]
         tasks = discover(raw, as_of)
@@ -146,11 +153,15 @@ class ChiefOfStaff:
         _link_goals(register.tasks, self.contract)
         # 3. prioritize
         scored = prioritize(register.tasks, self.contract, day)
-        # 4. drift check (context-drift protection)
-        drift = drift_check(scored, self.contract)
-        # 5. schedule (real free time only)
+        # 4. drift check (context-drift protection) against the PRIOR
+        #    checkpoint too, so past prohibited decisions cannot silently
+        #    reappear as next steps (review finding #3).
+        drift = drift_check(scored, self.contract, prior=prior_checkpoint)
+        # 5. schedule (real free time only) — only actionable work is packed;
+        #    blocked/waiting/inbox/done tasks never consume focus blocks.
         events = self.calendar.events()
-        schedule = propose_schedule(scored, events, day)
+        schedulable = [st for st in scored if st.task.status is TaskStatus.ACTIVE]
+        schedule = propose_schedule(schedulable, events, day)
         # 6. safe actions (fail-closed gate)
         proposals = _safe_proposals_for(register.tasks)
         safe_result = execute_safe(proposals, self.contract)
@@ -230,8 +241,14 @@ def _link_goals(tasks: list[Task], contract: OperatingContract) -> None:
             t.goal_ids = linked
 
 
+LATEST_CHECKPOINT = "runs/private/cos/checkpoint-latest.json"
+
+
 def write_private(result: RunResult, root: Path | None = None) -> Path:
-    """Write briefs + run JSON under runs/private/ (gitignored). Returns dir."""
+    """Write briefs + run JSON under runs/private/ (gitignored). Returns dir.
+
+    Also refreshes the stable ``checkpoint-latest.json`` so the NEXT run can
+    load it as its prior decision context (review finding #3)."""
     from loop_engineering.use_cases.personal_chief_of_staff.privacy import private_path
 
     base = f"runs/private/cos/{result.run_id}"
@@ -240,4 +257,30 @@ def write_private(result: RunResult, root: Path | None = None) -> Path:
     for name, text in result.briefs.items():
         bp = private_path(f"{base}/brief-{name}.md", root=root)
         bp.write_text(text, encoding="utf-8")
+    latest = private_path(LATEST_CHECKPOINT, root=root)
+    latest.write_text(
+        json.dumps(result.checkpoint.to_dict(), indent=2, sort_keys=True), encoding="utf-8"
+    )
     return out.parent
+
+
+def load_latest_checkpoint(root: Path | None = None) -> DecisionCheckpoint | None:
+    """Load the persisted prior checkpoint, or None when none exists yet."""
+    from loop_engineering.use_cases.personal_chief_of_staff.privacy import private_path
+
+    try:
+        path = private_path(LATEST_CHECKPOINT, root=root, ensure_parent=False)
+    except Exception:
+        return None
+    if not path.is_file():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return DecisionCheckpoint(
+        timestamp=str(data.get("timestamp", "")),
+        approved_decisions=[str(x) for x in data.get("approved_decisions", [])],
+        rejected_ideas=[str(x) for x in data.get("rejected_ideas", [])],
+        open_questions=[str(x) for x in data.get("open_questions", [])],
+        prohibited_actions=[str(x) for x in data.get("prohibited_actions", [])],
+        next_steps=[str(x) for x in data.get("next_steps", [])],
+        context_digest=str(data.get("context_digest", "")),
+    )
