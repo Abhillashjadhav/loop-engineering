@@ -1,0 +1,92 @@
+goal_id: portfolio-packaging-star-growth-v1
+version: 1
+goal_statement: Repackage and improve discovery of Abhillash Jadhav's five public
+  portfolio repositories so first-time visitors understand the value quickly, reach
+  a verified result with minimal setup, and voluntarily star the repositories.
+expected_output:
+  deliverables:
+  - locked portfolio hierarchy and unified positioning
+  - outcome-first public storefront for each of five repositories
+  - visual proof assets and inspectable sample outputs
+  - clean-checkout quickstarts with continuous verification
+  - cross-repository discovery and trust system
+  - baseline and post-change star-growth scorecard
+  format_notes: Seven bounded loops; each independently useful change ships through
+    a focused pull request.
+north_star_metric:
+  name: human_active_minutes_saved_per_successfully_verified_goal
+  baseline_manual_minutes: 2400
+  market_outcome: net_new_github_stars_across_five_repositories
+  measurement_window_days: 30
+leading_metrics:
+- first-time visitor time to identify the product and intended user
+- percentage of clean checkouts reaching first useful output within five minutes
+- quickstart command success rate
+- visitor-to-star conversion where GitHub traffic data is available
+- repository-to-repository referral clicks
+- forks, clones, releases, and issue participation
+- human interventions required per completed packaging loop
+scope:
+- lock one coherent portfolio hierarchy and positioning system
+- repackage AI-PM-essential-skills as the current plugin marketplace and distribution
+  hub
+- make pm-evals the flagship product with visible output and a five-minute verified
+  demo
+- make loop-engineering concrete through a failure-recovery-evidence hero use case
+- reduce PM-agent-OS catalogue complexity to three obvious jobs-to-be-done
+- expose useful sample output and bounded dry-run value for Linkedin-research-posts
+- apply cross-repository discovery, trust, release, and stranger-test gates
+exclusions:
+- buying, exchanging, fabricating, or coercively soliciting stars
+- treating star count as proof of engineering quality
+- adding unrelated capabilities solely to create launch noise
+- hiding limitations, synthetic-data boundaries, or unsupported claims
+allowed_actions:
+- read public repository content and public benchmark repositories
+- write documentation, examples, tests, metadata, visual assets, and packaging code
+- create focused branches, pull requests, issues, and releases
+- run deterministic tests, clean-checkout smoke tests, and link checks
+- record public star baselines and later observations
+forbidden_actions:
+- fake stars, star exchanges, paid engagement, bots, or misleading promotion
+- destructive repository operations unrelated to an approved focused PR
+- weakening privacy, security, evidence, or CI gates for easier demos
+- claiming production validation from synthetic demonstrations
+- merging a loop that fails its declared quickstart or evidence gate
+data_sources:
+- Abhillashjadhav public GitHub repositories
+- public repository metadata and GitHub traffic data when available
+- Shubhamsaboo/awesome-llm-apps as packaging and discovery inspiration
+- deterministic clean-checkout and synthetic-demo outputs
+evidence_requirements:
+  normal_claim_min_sources: 2
+  high_impact_claim_min_sources: 3
+success_checks:
+- each repository states one user, one problem, one outcome, and one immediate action
+  above the fold
+- each flagship quickstart is continuously verified from a clean checkout
+- users can inspect a meaningful sample output before configuring a live model
+- portfolio profile and repositories use one non-conflicting hierarchy
+- all synthetic, live, validated, and unvalidated claims remain explicit
+- each product loop produces at least one focused reviewable PR
+- star baseline is recorded before distribution changes and measured again after 30
+  days
+goal_match_threshold: 80
+replication_count: 3
+budget:
+  max_iterations: 70
+  max_task_attempts: 3
+stop_conditions:
+- budget exhausted
+- same packaging failure repeats twice without new evidence
+- a quickstart remains broken after three repair attempts
+- a privacy, security, or evidence gate fails
+- a change requires unsupported product claims
+escalation_conditions:
+- product hierarchy cannot be reconciled without retiring or splitting a repository
+- live GitHub traffic or star baseline cannot be accessed
+- visual assets require owner-provided private material
+- repository change would materially alter product scope rather than packaging
+approved_at: '2026-07-22T07:00:00+00:00'
+approved_by: Abhillash Jadhav
+canonical_digest: sha256:71799b64d3cb7f4aef6bc981cc04bdb4010e2576c3ecf2ad64be6a0e2315486d
