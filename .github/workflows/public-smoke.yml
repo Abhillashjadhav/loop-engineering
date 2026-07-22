@@ -1,0 +1,37 @@
+name: Public smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-quickstart:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install from a clean checkout
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+      - name: Run documented public demo
+        run: |
+          loop-engineering audit-github \
+            --subjects examples/subjects.synthetic.yaml \
+            --fixtures evals/fixtures/github
+      - name: Run repository checks
+        run: |
+          python -m pytest
+          ruff check src tests
+          ruff format --check src tests
+          python -m mypy
+          python -m build
