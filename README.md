@@ -1,144 +1,132 @@
 # Loop Engineering
 
-A self-verifying autonomous goal loop. You hand it **one** locked goal —
-statement, expected output, North Star Metric, scope, permissions,
-verification rules, budget — and it plans atomic tasks, executes them one at a
-time, independently verifies every step, checks itself for goal drift,
-triangulates every material claim, stress-tests its own conclusion six ways,
-repairs its own gaps, and ships the result with an **Accuracy Evidence Pack**
-that explains why the output can be trusted — or stops loudly with the exact
-reason it can't.
+**A deterministic runtime for executing a locked goal, verifying every task independently, recovering from failure, and delivering an evidence-backed result.**
 
-The North Star is `human_active_minutes_saved_per_successfully_verified_goal`.
-Raw speed without verified completion is not success.
+Give it a goal contract. It plans atomic tasks, executes one at a time, verifies each result, checks for goal drift, resumes safely after interruption, and either ships an Accuracy Evidence Pack or stops with the exact unblock requirement.
 
-## How it works
+## Try it in five minutes
 
-```
-goal.yaml ──init──▶ digest-locked contract (immutable during a run)
-                      │
-                      ▼
-              planner: atomic tasks (each with a pass condition
-              defined BEFORE execution)
-                      │
-        ┌─────────────▼──────────────┐
-        │  one task at a time        │◀── recovery controller
-        │  execute ─▶ Loop 1 verify  │    (requeue / repair tasks /
-        │  (executor never verifies  │     circuit breakers with
-        │   its own work)            │     blocking reports)
-        └─────────────┬──────────────┘
-                      ▼
-   Loop 2: plan/goal-drift check (< 5% or halt)
-   Loop 3: independent evidence verification per material claim
-           (2 origins normal, 3 high-impact, README ≠ corroboration,
-            absence claims need search coverage)
-   Loop 4: six-run stability (standard, fresh plan, reordered sources,
-           skeptical, conclusion-blind, replication) — disagreement is
-           preserved, never averaged
-                      ▼
-   End-to-End Goal Reviewer (fresh context, read-only)
-     Gate A: process completeness   Gate B: goal-match 0–100
-     80+ GOAL_MATCH · 70–79 deliver with caveats · <70 auto-repair
-     interrupted/incomplete runs can NEVER be delivered as success
-                      ▼
-   outputs/<goal-id>/ — Accuracy Evidence Pack + Learning Receipt
-```
-
-Every state write is atomic (`os.replace`); a killed run resumes from the
-first task that is not both executed **and** verified, repeating no verified
-work and skipping nothing. Circuit breakers stop the loop on repeated
-actions without new evidence, repeated failures, stalled progress, attempt
-limits, budget exhaustion, forbidden actions, inaccessible sources, or
-unresolved identity — always with a `BLOCKED.md` naming the exact unblock
-requirement. It never terminates silently.
-
-## Quickstart
+Requires Python 3.11+.
 
 ```bash
+git clone https://github.com/Abhillashjadhav/loop-engineering.git
+cd loop-engineering
+python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
-# full synthetic demo (offline, deterministic)
+# Offline deterministic demonstration
 loop-engineering audit-github \
   --subjects examples/subjects.synthetic.yaml \
   --fixtures evals/fixtures/github
 
-# inspect the result
 cat outputs/github-authority-audit-synthetic/accuracy-evidence.md
-
-# the general flow for any goal
-loop-engineering init examples/goal.synthetic.yaml
-loop-engineering plan github-authority-audit-synthetic --fixtures evals/fixtures/github
-loop-engineering run  github-authority-audit-synthetic --fixtures evals/fixtures/github
-loop-engineering status <run-id>
-loop-engineering verify <run-id>      # read-only Gate A recheck
-loop-engineering report <run-id>
-loop-engineering resume <run-id>      # after any interruption
 ```
 
-In Claude Code, `/loop-engineer` is the single entry point (modes: start,
-status, resume, report, verify-only, use-case <name>); it orchestrates while
-the Python CLI validates state and policy.
+The bundled audit uses synthetic fixtures and is intended to demonstrate the runtime. It is not a live assessment of any person or repository.
 
-## First use case: public GitHub authority audit
+## What the runtime guarantees
 
-`use_cases/github-authority-audit/` audits whether a public GitHub portfolio
-demonstrates substantive GenAI proficiency, human reasoning, education/curation
-value, distribution strength, AI-assisted-but-useful creation, or
-shallow/templated work — from public artifacts only, with hard fairness rules:
+- **Locked goal:** the approved contract is digest-checked and cannot drift silently.
+- **Atomic execution:** only one task runs at a time; pass conditions exist before execution.
+- **Independent verification:** an executor cannot verify its own output.
+- **Crash-safe resume:** verified work is preserved; executed-but-unverified work is repeated.
+- **Bounded recovery:** retries, budgets, and circuit breakers prevent indefinite loops.
+- **Honest completion:** interrupted, incomplete, or unsupported work cannot be delivered as success.
+- **Evidence-backed output:** every completed run includes verification results, unresolved uncertainty, and a learning receipt.
 
-- identity requires ≥ 2 corroborating public attributes (a URL proves nothing);
-- forks are excluded from authored-code scoring; popularity is a reach signal,
-  never quality; AI assistance is **not** slop;
-- a shallow/templated label requires slop risk ≥ 70 **and** confidence ≥ 70
-  **and** a recorded counter-evidence review;
-- exact AI-authorship percentages are rejected outright — only conservative
-  ranges with confidence (`estimated_ai_assisted_code_share_range`);
-- what cannot be concluded is stated explicitly.
+The North Star is `human_active_minutes_saved_per_successfully_verified_goal`. Speed without verified completion does not count.
 
-The two initial live subjects are configured in `examples/subjects.yaml`. The
-live path requires an environment permitted to fetch public GitHub data (or
-pre-fetched snapshots); it fails loudly rather than inventing results.
+## How it works
+
+```mermaid
+flowchart TD
+    A[Locked goal contract] --> B[Atomic plan]
+    B --> C[Execute one task]
+    C --> D[Independent task verification]
+    D -->|fail| E[Bounded recovery or BLOCKED]
+    D -->|pass| F[Goal-drift and evidence checks]
+    F --> G[End-to-end goal review]
+    G -->|deliverable| H[Accuracy Evidence Pack]
+    G -->|not proven| E
+```
+
+A successful run produces:
+
+- final output;
+- task and event ledgers;
+- per-task verification results;
+- claim-to-evidence matrix;
+- goal-drift and end-to-end review;
+- unresolved uncertainties;
+- Accuracy Evidence Pack and Learning Receipt.
+
+## General workflow
+
+```bash
+loop-engineering init examples/goal.synthetic.yaml
+loop-engineering plan github-authority-audit-synthetic --fixtures evals/fixtures/github
+loop-engineering run github-authority-audit-synthetic --fixtures evals/fixtures/github
+loop-engineering status <run-id>
+loop-engineering verify <run-id>
+loop-engineering report <run-id>
+loop-engineering resume <run-id>
+```
+
+## Included use cases
+
+### Public GitHub Authority Audit
+
+A synthetic, evidence-policy demonstration used by CI. The repository-quality labels are experimental use-case outputs, not claims about private competence, intent, or exact human/AI authorship. Live retrieval is not performed by the deterministic Python runtime.
+
+### Personal Chief of Staff
+
+A private-data workflow for source-backed task discovery, prioritization, briefs, safe scheduling proposals, and approval-gated actions. Run the synthetic demo:
+
+```bash
+loop-engineering chief-of-staff status
+loop-engineering chief-of-staff tasks
+loop-engineering chief-of-staff brief morning
+loop-engineering chief-of-staff schedule
+```
+
+See [`use_cases/personal-chief-of-staff/README.md`](use_cases/personal-chief-of-staff/README.md).
 
 ## Repository map
 
-| Path | What it is |
+| Path | Purpose |
 |---|---|
-| `schemas/` | JSON Schemas: goal contract, task, verification, run state |
-| `src/loop_engineering/contracts/` | digest-locked immutable goal contract |
-| `src/loop_engineering/planning/` | plan validation, coverage, goal-drift math |
-| `src/loop_engineering/runtime/` | engine, state, ledgers, queue, budget, checkpoints, duplicate detection, circuit breakers |
-| `src/loop_engineering/verification/` | Loops 1–4 + end-to-end reviewer |
-| `src/loop_engineering/recovery/` | failure routing, repair tasks |
-| `src/loop_engineering/reporting/` | metrics, Accuracy Evidence Pack, Learning Receipt |
-| `src/loop_engineering/use_cases/` | use-case modules (github_authority_audit) |
-| `use_cases/github-authority-audit/` | use-case config, rubric, docs |
-| `.claude/` | `/loop-engineer` skill + 8 role agents |
-| `evals/` | agent eval fixtures + synthetic GitHub fixtures |
-| `examples/` | goal contracts and subject files |
-| `tests/` | 100+ deterministic tests incl. E2E, resume, and repair demos |
+| `src/loop_engineering/contracts/` | Locked goal contracts |
+| `src/loop_engineering/planning/` | Atomic planning and drift coverage |
+| `src/loop_engineering/runtime/` | Engine, state, queue, budgets, checkpoints, circuit breakers |
+| `src/loop_engineering/verification/` | Task, drift, evidence, stability, and end-to-end review |
+| `src/loop_engineering/recovery/` | Failure routing and repair tasks |
+| `src/loop_engineering/reporting/` | Metrics, evidence packs, and learning receipts |
+| `src/loop_engineering/use_cases/` | Reusable use-case modules |
+| `tests/` | Deterministic unit, failure, resume, and end-to-end tests |
 
-## Checks
+## Validation
 
 ```bash
-python -m pytest        # all tests (live tests excluded by default)
-ruff check src tests && ruff format --check src tests
-python -m mypy          # strict
+python -m pytest
+ruff check src tests
+ruff format --check src tests
+python -m mypy
 python -m build
 ```
 
-Adding a use case = adding a module under `src/loop_engineering/use_cases/`
-plus config under `use_cases/<name>/`. The runtime is never rewritten.
+CI runs the same quality gates and the offline synthetic demonstration.
 
-## V1 limitations
+## Current limitations
 
-- Live web/GitHub retrieval is delegated to the Claude Code skill layer
-  (snapshots into a fixture directory); the Python runtime is deliberately
-  offline and deterministic.
-- The live audit of the two named subjects has not been executed in this
-  environment (GitHub access here is repo-scoped); the system ships with the
-  synthetic demonstration and the live goal contract ready to run. The exact
-  missing evidence and unblock paths are recorded in
-  [docs/live-audit-blocked.md](docs/live-audit-blocked.md).
-- Six-run stability variants share the deterministic scoring core; stance and
-  ordering vary per variant. With LLM executors the variance will be larger —
-  the comparison machinery is built for that.
+- The deterministic runtime does not fetch live web or GitHub data.
+- The GitHub audit is an experimental example and should not be treated as a definitive judgment of a person.
+- Stability variants share the deterministic scoring core; they test conclusion robustness, not ground truth.
+- Live connectors for the Personal Chief of Staff are intentionally limited and approval-gated.
+
+## Contributing
+
+Focused pull requests are welcome. Include a reproducible failure or use case, deterministic tests, documented trade-offs, and an honest limitation statement. Never commit private data, credentials, or generated run outputs containing sensitive information.
+
+## License
+
+MIT.
