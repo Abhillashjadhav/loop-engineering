@@ -151,6 +151,23 @@ loop-engineering chief-of-staff schedule
 
 See [`use_cases/personal-chief-of-staff/README.md`](use_cases/personal-chief-of-staff/README.md).
 
+## Loop Engineering and Graph Engineering
+
+Loop Engineering and Graph Engineering address different reliability boundaries.
+
+| Layer | Use it for | Reliability contract |
+|---|---|---|
+| **Loop Engineering** | One durable autonomous unit pursuing one locked outcome | Atomic execution, independent verification, drift detection, bounded recovery, crash-safe resume, and evidence-backed completion |
+| **Graph Engineering** | Multiple guarded loops or workers that must branch, exchange typed state, and converge | Explicit topology, typed handoffs, permissions, budgets, conditional edges, deterministic joins, failure routing, and accountable approval gates |
+
+Use one loop when the work has one objective and one recurring context. Use a graph when independently verifiable branches must run separately and their outputs must satisfy an explicit join policy before the workflow can proceed.
+
+A graph does not replace the loop. A graph node may itself be a guarded loop: the loop makes each autonomous unit reliable; the graph makes coordination between units reliable.
+
+The shipped [`agent-graph-designer`](https://github.com/Abhillashjadhav/AI-PM-essential-skills/tree/main/agent-graph-designer) plugin qualifies `LOOP_SUFFICIENT` versus `GRAPH_REQUIRED` and produces a machine-readable graph contract, synchronized architecture, vendor-neutral runner skeleton, bounded recovery rules, and a named human approval boundary.
+
+> **Keep the loop; engineer the graph around it.**
+
 ## Use Loop Engineering when
 
 - work spans many tasks and can drift while executing;
