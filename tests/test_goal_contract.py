@@ -2,11 +2,17 @@
 
 from __future__ import annotations
 
+from importlib.resources import files
+
 import pytest
 from tests.conftest import make_contract_draft
 
 from loop_engineering.contracts import goal_contract
 from loop_engineering.domain.errors import ContractViolation
+
+
+def test_runtime_schema_is_bundled_with_package() -> None:
+    assert files("loop_engineering").joinpath("schemas", "goal-contract.schema.json").is_file()
 
 
 def test_canonical_digest_is_deterministic_and_order_independent() -> None:

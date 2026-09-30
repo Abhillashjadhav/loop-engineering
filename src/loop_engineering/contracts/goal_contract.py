@@ -11,6 +11,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
@@ -20,13 +21,15 @@ import yaml
 from loop_engineering.domain.errors import ContractViolation
 from loop_engineering.domain.models import utc_now
 
-_SCHEMA_PATH = Path(__file__).resolve().parents[3] / "schemas" / "goal-contract.schema.json"
-
 DIGEST_FIELD = "canonical_digest"
 
 
 def _schema() -> dict[str, Any]:
-    with _SCHEMA_PATH.open(encoding="utf-8") as fh:
+    with (
+        files("loop_engineering")
+        .joinpath("schemas", "goal-contract.schema.json")
+        .open(encoding="utf-8") as fh
+    ):
         loaded: dict[str, Any] = json.load(fh)
     return loaded
 

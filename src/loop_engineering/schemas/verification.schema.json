@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Abhillashjadhav/loop-engineering/schemas/verification.schema.json",
+  "title": "VerificationResult",
+  "description": "Result of one verification check (any of the four loops or the E2E reviewer).",
+  "type": "object",
+  "required": ["verification_id", "loop", "subject_id", "verifier_role", "passed", "checks", "verified_at"],
+  "properties": {
+    "verification_id": { "type": "string", "minLength": 1 },
+    "loop": {
+      "enum": ["loop1_task", "loop2_drift", "loop3_evidence", "loop4_stability", "e2e_review"]
+    },
+    "subject_id": {
+      "type": "string",
+      "description": "Task id, stage id, claim id, run id, or output id being verified."
+    },
+    "verifier_role": {
+      "type": "string",
+      "description": "Role performing the verification. Must never equal the executor role for the same subject."
+    },
+    "executor_role": { "type": ["string", "null"] },
+    "passed": { "type": "boolean" },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "passed"],
+        "properties": {
+          "name": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "detail": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "artifact_digest": { "type": ["string", "null"] },
+    "failure_reason": { "type": ["string", "null"] },
+    "verified_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

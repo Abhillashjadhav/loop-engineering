@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
@@ -86,3 +87,53 @@ def test_live_mode_fails_loudly_without_network_access(workdir: Path, capsys) ->
 def test_unknown_run_id_is_clear_error(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
     assert main(["status", "run-nope"]) == 2
     assert "cannot resolve run" in capsys.readouterr().err
+
+
+def test_init_missing_goal_file_reports_controlled_error(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(["init", "nonexistent-goal.yaml"]) == 2
+    assert "cannot read goal file" in capsys.readouterr().err
+
+
+def test_report_never_displays_another_runs_success_pack(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    goal_runs = workdir / "runs" / "github-authority-audit-synthetic"
+    first = next(goal_runs.iterdir()).name
+    assert main(["report", first]) == 0
+    assert "# Accuracy Evidence" in capsys.readouterr().out
+
+    assert main(common("audit-github", "--goal-file", GOAL, "--interrupt-after", "2")) == 2
+    capsys.readouterr()
+    second = next(path.name for path in goal_runs.iterdir() if path.name != first)
+    assert main(["report", second]) != 0
+    out = capsys.readouterr().out
+    assert "INTERRUPTED" in out
+    assert "# Accuracy Evidence" not in out
+
+
+def test_report_checks_pack_run_and_contract_identity(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    goal_runs = workdir / "runs" / "github-authority-audit-synthetic"
+    first = next(goal_runs.iterdir()).name
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    second = next(path.name for path in goal_runs.iterdir() if path.name != first)
+    assert main(["report", first]) == 1
+    assert "# Accuracy Evidence" not in capsys.readouterr().out
+    assert main(["report", second]) == 0
+    assert "# Accuracy Evidence" in capsys.readouterr().out
+
+    metadata_path = (
+        workdir / "outputs" / "github-authority-audit-synthetic" / "accuracy-evidence.json"
+    )
+    original = metadata_path.read_text()
+    metadata = json.loads(original)
+    for field, replacement in (("run_id", first), ("contract_digest", "sha256:wrong")):
+        changed = {**metadata, field: replacement}
+        metadata_path.write_text(json.dumps(changed))
+        assert main(["report", second]) == 1
+        assert "# Accuracy Evidence" not in capsys.readouterr().out
+    metadata_path.unlink()
+    assert main(["report", second]) == 1
+    assert "# Accuracy Evidence" not in capsys.readouterr().out

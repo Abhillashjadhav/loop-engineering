@@ -233,6 +233,7 @@ def build_pack(p: PackInputs, outputs_root: str | Path) -> Path:
 
     accuracy_json = {
         "goal_id": p.contract["goal_id"],
+        "run_id": p.state.run_id,
         "contract_digest": p.contract["canonical_digest"],
         "gate_a": p.gate_a.to_dict(),
         "gate_b": p.gate_b.to_dict(),

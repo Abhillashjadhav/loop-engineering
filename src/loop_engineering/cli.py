@@ -18,7 +18,7 @@ import yaml
 
 from loop_engineering.contracts import goal_contract
 from loop_engineering.domain.errors import LoopEngineeringError
-from loop_engineering.domain.models import TaskStatus
+from loop_engineering.domain.models import RunStatus, TaskStatus
 from loop_engineering.runtime.engine import Engine
 from loop_engineering.runtime.ledger import RunLedger
 from loop_engineering.runtime.state import load_state
@@ -68,7 +68,12 @@ def _resolve_run_dir(run_ref: str, runs_root: str) -> Path:
 
 
 def cmd_init(args: argparse.Namespace) -> int:
-    draft = goal_contract.load_unlocked(args.goal_file)
+    try:
+        draft = goal_contract.load_unlocked(args.goal_file)
+    except OSError as exc:
+        raise LoopEngineeringError(
+            f"cannot read goal file {args.goal_file}: {exc.strerror}"
+        ) from exc
     locked = goal_contract.lock(draft)
     out = Path(args.out) if args.out else CONTRACTS_DIR / f"{locked['goal_id']}.locked.yaml"
     goal_contract.save(locked, out)
@@ -151,7 +156,7 @@ def cmd_status(args: argparse.Namespace) -> int:
 
 
 def cmd_verify(args: argparse.Namespace) -> int:
-    """Read-only re-verification: recompute Gate A from persisted records."""
+    """Recompute recorded Gate A process completeness, without re-hashing artifact bytes."""
     run_directory = _resolve_run_dir(args.run_id, args.runs_root)
     state = load_state(run_directory)
     from loop_engineering.runtime.checkpoint import (
@@ -187,15 +192,29 @@ def cmd_report(args: argparse.Namespace) -> int:
     state = load_state(run_directory)
     pack = Path(args.outputs_root) / state.goal_id
     print(f"run:    {run_directory} ({state.status.value})")
-    if (pack / "accuracy-evidence.md").is_file():
+    if state.status != RunStatus.COMPLETE:
+        blocked = run_directory / "reports" / "BLOCKED.md"
+        if blocked.is_file():
+            print(blocked.read_text(encoding="utf-8"))
+        else:
+            print("this run is not complete; no accuracy evidence pack is available for it")
+        return 1
+    metadata_path = pack / "accuracy-evidence.json"
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        metadata = None
+    if (
+        isinstance(metadata, dict)
+        and metadata.get("goal_id") == state.goal_id
+        and metadata.get("run_id") == state.run_id
+        and metadata.get("contract_digest") == state.contract_digest
+        and (pack / "accuracy-evidence.md").is_file()
+    ):
         print(f"pack:   {pack}")
         print((pack / "accuracy-evidence.md").read_text(encoding="utf-8"))
         return 0
-    blocked = run_directory / "reports" / "BLOCKED.md"
-    if blocked.is_file():
-        print(blocked.read_text(encoding="utf-8"))
-    else:
-        print("no evidence pack and no blocking report — run may be in progress")
+    print("no evidence pack matches this run and contract (legacy or replaced pack)")
     return 1
 
 
@@ -268,7 +287,9 @@ def build_parser() -> argparse.ArgumentParser:
     _add_common(p, subjects=False)
     p.set_defaults(func=cmd_status)
 
-    p = sub.add_parser("verify", help="read-only process-completeness verification")
+    p = sub.add_parser(
+        "verify", help="re-check Gate A from persisted records (not artifact-byte integrity)"
+    )
     p.add_argument("run_id")
     _add_common(p, subjects=False)
     p.set_defaults(func=cmd_verify)
