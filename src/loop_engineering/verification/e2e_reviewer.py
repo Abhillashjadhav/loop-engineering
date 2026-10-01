@@ -145,7 +145,11 @@ def review_process(
     )
 
     evidence_dir = run_dir / "evidence"
-    evidence_files = list(evidence_dir.rglob("*")) if evidence_dir.exists() else []
+    evidence_files = (
+        [path for path in evidence_dir.rglob("*") if path.is_file()]
+        if evidence_dir.exists()
+        else []
+    )
     digests_missing = [
         t.task_id for t in tasks if t.status == TaskStatus.VERIFIED and not t.artifact_digest
     ]

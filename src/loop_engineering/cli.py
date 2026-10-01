@@ -9,6 +9,7 @@ reports.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -35,22 +36,67 @@ CONTRACTS_DIR = Path("contracts")
 
 
 def _load_subjects(path: str | Path) -> list[dict[str, Any]]:
-    with Path(path).open(encoding="utf-8") as fh:
-        data = yaml.safe_load(fh)
-    subjects = data.get("subjects", []) if isinstance(data, dict) else []
-    if not subjects:
-        raise LoopEngineeringError(f"no subjects found in {path}")
-    return [dict(s) for s in subjects]
+    try:
+        with Path(path).open(encoding="utf-8") as fh:
+            data = yaml.safe_load(fh)
+    except OSError as exc:
+        raise LoopEngineeringError(
+            f"cannot read subjects file {path}: {exc.strerror or type(exc).__name__}"
+        ) from exc
+    except UnicodeError as exc:
+        raise LoopEngineeringError(f"subjects file {path} is not valid UTF-8") from exc
+    except yaml.YAMLError as exc:
+        raise LoopEngineeringError(f"subjects file {path} has invalid YAML syntax") from exc
+    subjects = data.get("subjects") if isinstance(data, dict) else None
+    if not isinstance(subjects, list) or not subjects:
+        raise LoopEngineeringError(f"subjects file {path} needs a nonempty subjects list")
+    validated: list[dict[str, Any]] = []
+    for index, subject in enumerate(subjects, start=1):
+        if not isinstance(subject, dict):
+            raise LoopEngineeringError(f"subjects file {path}: entry {index} must be a mapping")
+        for name in ("slug", "display_name", "candidate_login"):
+            value = subject.get(name)
+            if not isinstance(value, str) or not value.strip():
+                raise LoopEngineeringError(
+                    f"subjects file {path}: entry {index} needs a nonempty {name}"
+                )
+        attributes = subject.get("expected_attributes", {})
+        if not isinstance(attributes, dict):
+            raise LoopEngineeringError(
+                f"subjects file {path}: entry {index} expected_attributes must be a mapping"
+            )
+        validated.append(dict(subject))
+    return validated
 
 
-def _data_source(args: argparse.Namespace) -> GitHubDataSource:
-    if getattr(args, "fixtures", None):
-        return FixtureDataSource(args.fixtures)
+def _load_unlocked_goal(path: str | Path) -> dict[str, Any]:
+    return goal_contract.load_unlocked(path)
+
+
+def _data_source(
+    args: argparse.Namespace, subjects: list[dict[str, Any]], *, require_source: bool
+) -> GitHubDataSource:
+    fixtures = getattr(args, "fixtures", None)
+    live = bool(getattr(args, "live", False))
+    if fixtures and live:
+        raise LoopEngineeringError("--fixtures and --live are conflicting source choices")
+    if fixtures:
+        source = FixtureDataSource(fixtures)
+        source.validate_for(subjects)
+        return source
+    if live and require_source:
+        raise LoopEngineeringError(
+            "live GitHub access is not available in this CLI; "
+            "provide public snapshots with --fixtures"
+        )
+    if require_source:
+        raise LoopEngineeringError("an offline snapshot source is required; pass --fixtures")
     return LiveDataSource()
 
 
-def _use_case(args: argparse.Namespace) -> AuditUseCase:
-    return AuditUseCase(_data_source(args), _load_subjects(args.subjects))
+def _use_case(args: argparse.Namespace, *, require_source: bool = True) -> AuditUseCase:
+    subjects = _load_subjects(args.subjects)
+    return AuditUseCase(_data_source(args, subjects, require_source=require_source), subjects)
 
 
 def _resolve_run_dir(run_ref: str, runs_root: str) -> Path:
@@ -68,12 +114,7 @@ def _resolve_run_dir(run_ref: str, runs_root: str) -> Path:
 
 
 def cmd_init(args: argparse.Namespace) -> int:
-    try:
-        draft = goal_contract.load_unlocked(args.goal_file)
-    except OSError as exc:
-        raise LoopEngineeringError(
-            f"cannot read goal file {args.goal_file}: {exc.strerror}"
-        ) from exc
+    draft = _load_unlocked_goal(args.goal_file)
     locked = goal_contract.lock(draft)
     out = Path(args.out) if args.out else CONTRACTS_DIR / f"{locked['goal_id']}.locked.yaml"
     goal_contract.save(locked, out)
@@ -94,7 +135,7 @@ def _contract_for(goal_id: str, contracts_dir: str) -> dict[str, Any]:
 
 def cmd_plan(args: argparse.Namespace) -> int:
     contract = _contract_for(args.goal_id, args.contracts_dir)
-    use_case = _use_case(args)
+    use_case = _use_case(args, require_source=False)
     tasks = use_case.build_plan(contract, {})
     print(f"plan for {contract['goal_id']} ({len(tasks)} atomic tasks):")
     for t in tasks:
@@ -132,9 +173,13 @@ def cmd_run(args: argparse.Namespace) -> int:
 
 def cmd_resume(args: argparse.Namespace) -> int:
     run_directory = _resolve_run_dir(args.run_id, args.runs_root)
-    engine = Engine.resume(
-        run_directory, _use_case(args), config={"outputs_root": args.outputs_root}
-    )
+    if args.subjects is None:
+        raise LoopEngineeringError(
+            "resume requires the original --subjects and --fixtures paths; "
+            "inputs are not saved in this run"
+        )
+    use_case = _use_case(args)
+    engine = Engine.resume(run_directory, use_case, config={"outputs_root": args.outputs_root})
     print(f"resuming run: {run_directory}")
     return _run_engine(engine)
 
@@ -204,15 +249,23 @@ def cmd_report(args: argparse.Namespace) -> int:
         metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         metadata = None
+    markdown_path = pack / "accuracy-evidence.md"
+    try:
+        markdown = markdown_path.read_text(encoding="utf-8") if markdown_path.is_file() else ""
+    except OSError:
+        markdown = ""
     if (
         isinstance(metadata, dict)
         and metadata.get("goal_id") == state.goal_id
         and metadata.get("run_id") == state.run_id
         and metadata.get("contract_digest") == state.contract_digest
-        and (pack / "accuracy-evidence.md").is_file()
+        and metadata.get("accuracy_markdown_sha256")
+        == "sha256:" + hashlib.sha256(markdown.encode("utf-8")).hexdigest()
+        and f"**Run ID:** `{state.run_id}`" in markdown.splitlines()
+        and f"**Contract digest:** `{state.contract_digest}`" in markdown.splitlines()
     ):
         print(f"pack:   {pack}")
-        print((pack / "accuracy-evidence.md").read_text(encoding="utf-8"))
+        print(markdown)
         return 0
     print("no evidence pack matches this run and contract (legacy or replaced pack)")
     return 1
@@ -223,12 +276,13 @@ def cmd_audit_github(args: argparse.Namespace) -> int:
     goal_file = args.goal_file or (
         "examples/goal.synthetic.yaml" if args.fixtures else "examples/goal.yaml"
     )
-    draft = goal_contract.load_unlocked(goal_file)
+    draft = _load_unlocked_goal(goal_file)
     contract = goal_contract.lock(draft)
+    use_case = _use_case(args)
     goal_contract.save(contract, Path(args.contracts_dir) / f"{contract['goal_id']}.locked.yaml")
     engine = Engine(
         contract,
-        _use_case(args),
+        use_case,
         runs_root=args.runs_root,
         config={"outputs_root": args.outputs_root},
     )
@@ -236,12 +290,12 @@ def cmd_audit_github(args: argparse.Namespace) -> int:
     return _run_engine(engine, args.interrupt_after)
 
 
-def _add_common(p: argparse.ArgumentParser, subjects: bool = True) -> None:
+def _add_common(p: argparse.ArgumentParser, subjects: bool = True, *, resume: bool = False) -> None:
     p.add_argument("--runs-root", default="runs")
     p.add_argument("--outputs-root", default="outputs")
     p.add_argument("--contracts-dir", default=str(CONTRACTS_DIR))
     if subjects:
-        p.add_argument("--subjects", default="examples/subjects.synthetic.yaml")
+        p.add_argument("--subjects", default=None if resume else "examples/subjects.synthetic.yaml")
         p.add_argument(
             "--fixtures",
             default=None,
@@ -279,7 +333,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p = sub.add_parser("resume", help="resume an interrupted run")
     p.add_argument("run_id")
-    _add_common(p)
+    _add_common(p, resume=True)
     p.set_defaults(func=cmd_resume)
 
     p = sub.add_parser("status", help="show run state and task statuses")

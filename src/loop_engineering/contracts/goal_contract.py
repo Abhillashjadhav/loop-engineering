@@ -11,6 +11,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import math
 from importlib.resources import files
 from pathlib import Path
 from typing import Any
@@ -36,7 +37,42 @@ def _schema() -> dict[str, Any]:
 
 def canonical_json(data: dict[str, Any]) -> str:
     """Canonical encoding: sorted keys, compact separators, ensure_ascii."""
-    return json.dumps(data, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
+    _require_json_domain(data, "goal contract")
+    return json.dumps(
+        data, sort_keys=True, separators=(",", ":"), ensure_ascii=True, allow_nan=False
+    )
+
+
+def _require_json_domain(value: Any, label: str) -> None:
+    """Reject YAML-only types and aliases with cycles; never coerce contract values."""
+
+    active: set[int] = set()
+    pending: list[tuple[Any, bool]] = [(value, False)]
+    while pending:
+        item, leaving = pending.pop()
+        if leaving:
+            active.remove(id(item))
+            continue
+        if item is None or type(item) in (str, int, bool):
+            continue
+        if type(item) is float:
+            if not math.isfinite(item):
+                raise ContractViolation(f"{label} contains a non-finite number")
+            continue
+        if not isinstance(item, (dict, list)):
+            raise ContractViolation(
+                f"{label} contains a value outside the JSON contract domain: {type(item).__name__}"
+            )
+        if id(item) in active:
+            raise ContractViolation(f"{label} contains a recursive YAML alias")
+        active.add(id(item))
+        pending.append((item, True))
+        if isinstance(item, dict):
+            if any(type(key) is not str for key in item):
+                raise ContractViolation(f"{label} contains a non-string mapping key")
+            pending.extend((child, False) for child in item.values())
+        else:
+            pending.extend((child, False) for child in item)
 
 
 def compute_digest(contract: dict[str, Any]) -> str:
@@ -114,8 +150,7 @@ def amend(
 def load(path: str | Path) -> dict[str, Any]:
     """Load a locked contract from YAML/JSON and verify schema + digest."""
     p = Path(path)
-    with p.open(encoding="utf-8") as fh:
-        data = yaml.safe_load(fh) if p.suffix in {".yaml", ".yml"} else json.load(fh)
+    data = _read_contract(p, "locked contract")
     if not isinstance(data, dict):
         raise ContractViolation(f"{p} does not contain a contract mapping")
     validate(data)
@@ -126,10 +161,26 @@ def load(path: str | Path) -> dict[str, Any]:
 def load_unlocked(path: str | Path) -> dict[str, Any]:
     """Load a draft contract (no digest yet) for `init` to lock."""
     p = Path(path)
-    with p.open(encoding="utf-8") as fh:
-        data = yaml.safe_load(fh) if p.suffix in {".yaml", ".yml"} else json.load(fh)
+    data = _read_contract(p, "goal")
     if not isinstance(data, dict):
         raise ContractViolation(f"{p} does not contain a contract mapping")
+    return data
+
+
+def _read_contract(path: Path, role: str) -> Any:
+    """Translate only file and parser failures, leaving validation defects visible."""
+    kind = "YAML" if path.suffix in {".yaml", ".yml"} else "JSON"
+    try:
+        with path.open(encoding="utf-8") as fh:
+            data = yaml.safe_load(fh) if kind == "YAML" else json.load(fh)
+    except OSError as exc:
+        reason = exc.strerror or type(exc).__name__
+        raise ContractViolation(f"cannot read {role} file {path}: {reason}") from exc
+    except UnicodeError as exc:
+        raise ContractViolation(f"{role} file {path} is not valid UTF-8") from exc
+    except (yaml.YAMLError, json.JSONDecodeError) as exc:
+        raise ContractViolation(f"{role} file {path} has invalid {kind} syntax") from exc
+    _require_json_domain(data, f"{role} file {path}")
     return data
 
 

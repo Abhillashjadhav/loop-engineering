@@ -137,3 +137,79 @@ def test_report_checks_pack_run_and_contract_identity(workdir: Path, capsys) -> 
     metadata_path.unlink()
     assert main(["report", second]) == 1
     assert "# Accuracy Evidence" not in capsys.readouterr().out
+
+
+def test_report_rejects_stale_markdown_even_with_current_json(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    pack = workdir / "outputs" / "github-authority-audit-synthetic"
+    old_markdown = (pack / "accuracy-evidence.md").read_text(encoding="utf-8")
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    new_run = max(
+        (workdir / "runs" / "github-authority-audit-synthetic").iterdir(),
+        key=lambda path: path.stat().st_mtime_ns,
+    ).name
+    assert main(["report", new_run]) == 0
+    capsys.readouterr()
+    (pack / "accuracy-evidence.md").write_text(old_markdown, encoding="utf-8")
+    assert main(["report", new_run]) == 1
+    assert "# Accuracy Evidence" not in capsys.readouterr().out
+
+
+def test_report_rejects_changed_markdown_with_matching_identity(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    run_id = next((workdir / "runs" / "github-authority-audit-synthetic").iterdir()).name
+    markdown_path = (
+        workdir / "outputs" / "github-authority-audit-synthetic" / "accuracy-evidence.md"
+    )
+    markdown = markdown_path.read_text(encoding="utf-8")
+    assert "Verdict: **COMPLETE**" in markdown
+    markdown_path.write_text(
+        markdown.replace("Verdict: **COMPLETE**", "Verdict: **FAILED**"),
+        encoding="utf-8",
+    )
+    assert main(["report", run_id]) == 1
+    assert "# Accuracy Evidence" not in capsys.readouterr().out
+
+
+def test_report_handles_missing_or_unreadable_markdown(workdir: Path, capsys, monkeypatch) -> None:  # type: ignore[no-untyped-def]
+    assert main(common("audit-github", "--goal-file", GOAL)) == 0
+    capsys.readouterr()
+    run_id = next((workdir / "runs" / "github-authority-audit-synthetic").iterdir()).name
+    markdown_path = (
+        workdir / "outputs" / "github-authority-audit-synthetic" / "accuracy-evidence.md"
+    )
+    real_read_text = Path.read_text
+
+    def unreadable(path: Path, *args: object, **kwargs: object) -> str:
+        if path.resolve() == markdown_path:
+            raise PermissionError("read denied")
+        return real_read_text(path, *args, **kwargs)
+
+    with monkeypatch.context() as patcher:
+        patcher.setattr(Path, "read_text", unreadable)
+        assert main(["report", run_id]) == 1
+        assert "# Accuracy Evidence" not in capsys.readouterr().out
+    markdown_path.unlink()
+    assert main(["report", run_id]) == 1
+    assert "# Accuracy Evidence" not in capsys.readouterr().out
+
+
+def test_missing_subjects_are_controlled_errors(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(["init", GOAL]) == 0
+    capsys.readouterr()
+    for command in ("plan", "run"):
+        assert main([command, "github-authority-audit-synthetic", "--subjects", "absent.yaml"]) == 2
+        assert "cannot read subjects file" in capsys.readouterr().err
+    assert main(common("audit-github", "--goal-file", GOAL, "--interrupt-after", "1")) == 2
+    capsys.readouterr()
+    run_id = next((workdir / "runs" / "github-authority-audit-synthetic").iterdir()).name
+    assert main(["resume", run_id, "--subjects", "absent.yaml"]) == 2
+    assert "cannot read subjects file" in capsys.readouterr().err
+
+
+def test_audit_missing_goal_is_controlled_error(workdir: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+    assert main(common("audit-github", "--goal-file", "absent.yaml")) == 2
+    assert "cannot read goal file" in capsys.readouterr().err

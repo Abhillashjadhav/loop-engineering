@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 from typing import Any, Protocol
 
-from loop_engineering.domain.errors import LiveAccessUnavailable
+from loop_engineering.domain.errors import LiveAccessUnavailable, LoopEngineeringError
 
 
 class GitHubDataSource(Protocol):
@@ -38,7 +38,52 @@ class FixtureDataSource:
     def __init__(self, root: str | Path) -> None:
         self.root = Path(root)
         if not self.root.is_dir():
-            raise FileNotFoundError(f"fixture root does not exist: {self.root}")
+            raise LoopEngineeringError(
+                f"fixture source directory is missing or unreadable: {self.root}"
+            )
+
+    def validate_for(self, subjects: list[dict[str, Any]]) -> None:
+        """Check supplied snapshot files before a CLI command creates or resumes a run."""
+
+        parsed: dict[Path, Any] = {}
+        for path in sorted(self.root.rglob("*.json")):
+            try:
+                parsed[path] = self._load(path)
+            except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+                raise LoopEngineeringError(
+                    f"fixture source {path} is unreadable or invalid JSON"
+                ) from exc
+
+        def require(path: Path, kind: type) -> Any:
+            value = parsed.get(path)
+            if not isinstance(value, kind):
+                raise LoopEngineeringError(
+                    f"fixture source {path} is missing or has the wrong shape"
+                )
+            return value
+
+        for subject in subjects:
+            login = str(subject["candidate_login"])
+            slug = str(subject["slug"])
+            require(self.root / "profiles" / f"{login}.json", dict)
+            pages = sorted((self.root / "repos" / login).glob("page-*.json"))
+            if not pages:
+                raise LoopEngineeringError(
+                    f"fixture source has no repository pages for {login} under {self.root}"
+                )
+            for page in pages:
+                records = require(page, list)
+                if not all(isinstance(item, dict) for item in records):
+                    raise LoopEngineeringError(f"fixture source {page} needs repository mappings")
+            candidates_path = self.root / "candidates" / f"{slug}.json"
+            if candidates_path.exists():
+                candidates = require(candidates_path, list)
+                if not all(isinstance(item, str) and item.strip() for item in candidates):
+                    raise LoopEngineeringError(
+                        f"fixture source {candidates_path} needs candidate login strings"
+                    )
+                for candidate in candidates:
+                    require(self.root / "profiles" / f"{candidate}.json", dict)
 
     def _load(self, path: Path) -> Any:
         with path.open(encoding="utf-8") as fh:

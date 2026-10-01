@@ -124,6 +124,23 @@ def test_gate_a_evidence_missing(tmp_path: Path) -> None:
     assert result.verdict == GateAVerdict.EVIDENCE_MISSING
 
 
+def test_gate_a_directories_do_not_count_as_evidence(tmp_path: Path) -> None:
+    evidence = tmp_path / "evidence"
+    (evidence / "source").mkdir(parents=True)
+    (evidence / "checks").mkdir()
+    result = review_process(
+        make_state(RunStatus.COMPLETE),
+        [verified_task("a")],
+        full_verifications(["a"]),
+        tmp_path,
+        stability_required=False,
+    )
+    assert result.verdict == GateAVerdict.EVIDENCE_MISSING
+    assert "evidence files: 0" in next(
+        check.detail for check in result.checks if check.name == "evidence_files_and_digests_exist"
+    )
+
+
 def test_gate_a_requires_loop4_when_stability_required(tmp_path: Path) -> None:
     result = review_process(
         make_state(RunStatus.COMPLETE),
