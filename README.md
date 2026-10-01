@@ -33,8 +33,8 @@ outputs/<goal-id>/
 ├── accuracy-evidence.md
 ├── accuracy-evidence.json
 ├── claim-evidence-matrix.csv
-├── verification-results.json
-├── end-to-end-review.json
+├── verification-results.jsonl
+├── end-to-end-goal-review.md
 ├── unresolved-uncertainties.md
 └── learning-receipt.md
 ```
@@ -123,12 +123,16 @@ loop-engineering plan github-authority-audit-synthetic \
 loop-engineering run github-authority-audit-synthetic \
   --fixtures evals/fixtures/github
 
-# Inspect, re-verify, report, or safely resume
+# Inspect, re-check recorded process completeness, report, or safely resume
 loop-engineering status <run-id>
 loop-engineering verify <run-id>
 loop-engineering report <run-id>
-loop-engineering resume <run-id>
+loop-engineering resume <run-id> \
+  --subjects examples/subjects.synthetic.yaml \
+  --fixtures evals/fixtures/github
 ```
+
+For an offline run, resume with the same fixture source and subjects used to start it. `verify` re-checks Gate A from persisted run records; it does not re-hash current artifact bytes or establish current-byte integrity.
 
 A goal contract defines the outcome, deliverables, metrics, scope, exclusions, allowed and forbidden actions, evidence requirements, budgets, stop conditions, escalation rules, and approval record.
 

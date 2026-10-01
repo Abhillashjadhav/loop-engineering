@@ -31,7 +31,10 @@ jobs:
       - name: Run repository checks
         run: |
           python -m pytest
-          ruff check src tests
-          ruff format --check src tests
+          ruff check src tests scripts/smoke_installed_wheel.py
+          ruff format --check src tests scripts/smoke_installed_wheel.py
           python -m mypy
-          python -m build
+      - name: Build wheel
+        run: python -m build --wheel
+      - name: CLI smoke from isolated built wheel
+        run: python scripts/smoke_installed_wheel.py dist

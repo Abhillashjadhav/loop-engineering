@@ -8,6 +8,7 @@ prove.
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import shutil
 from dataclasses import dataclass, field
@@ -102,6 +103,7 @@ def _accuracy_markdown(p: PackInputs) -> str:
         "**Expected deliverables:** " + ", ".join(contract["expected_output"]["deliverables"]),
         "",
         f"**Contract digest:** `{contract['canonical_digest']}`",
+        f"**Run ID:** `{p.state.run_id}`",
         "",
         "## Process completeness (Gate A)",
         "",
@@ -229,11 +231,15 @@ def build_pack(p: PackInputs, outputs_root: str | Path) -> Path:
     out.mkdir(parents=True, exist_ok=True)
 
     _write(out / "final-output.md", p.final_output_markdown)
-    _write(out / "accuracy-evidence.md", _accuracy_markdown(p))
+    accuracy_markdown = _accuracy_markdown(p)
+    _write(out / "accuracy-evidence.md", accuracy_markdown)
 
     accuracy_json = {
         "goal_id": p.contract["goal_id"],
+        "run_id": p.state.run_id,
         "contract_digest": p.contract["canonical_digest"],
+        "accuracy_markdown_sha256": "sha256:"
+        + hashlib.sha256(accuracy_markdown.encode("utf-8")).hexdigest(),
         "gate_a": p.gate_a.to_dict(),
         "gate_b": p.gate_b.to_dict(),
         "north_star": p.north_star.to_dict(),

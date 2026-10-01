@@ -32,7 +32,7 @@ loop-engineering = "loop_engineering.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-loop_engineering = ["py.typed"]
+loop_engineering = ["py.typed", "schemas/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
